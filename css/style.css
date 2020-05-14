@@ -1,0 +1,318 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: 微軟正黑體;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 8000px;
+}
+
+section h2 {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+section h2:before {
+  content: "";
+  display: inline-block;
+  background-color: #FA9C25;
+  width: 15px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%);
+}
+
+.lookmore {
+  background-color: #FA9C25;
+  color: #fff;
+  display: block;
+  margin-left: auto;
+  margin-top: 5px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.list .newpostlistdate, .list .newpostlisttitle {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.list .newpostlistdate {
+  color: #FA9C25;
+}
+
+.list .newpostlisttitle {
+  color: #000;
+}
+
+.list .newpostlisttext {
+  margin-bottom: 0;
+}
+
+.list hr {
+  border: 1px solid #FA9C25;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#searchandlogin {
+  background-color: #F7C280;
+  padding: 10px 120px;
+  margin: 0;
+}
+
+#searchandlogin .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+#searchandlogin .search h4 {
+  margin: 10px;
+  text-align: center;
+}
+
+#searchandlogin .search span {
+  margin-bottom: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+  color: #f24;
+  font-weight: 600;
+  text-align: center;
+}
+
+#searchandlogin .login {
+  margin: 10px;
+}
+
+#searchandlogin .login .members, #searchandlogin .login .organizations, #searchandlogin .login .business {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 0;
+  margin: 5px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  #searchandlogin {
+    padding: 10px 20px;
+  }
+  #searchandlogin .login {
+    display: none;
+  }
+}
+
+#newpost {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#newpost .newpostpic {
+  padding: 10px;
+}
+
+#newpost .newpostpic .card .card-title {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+#newpost .newpostpic .card .newpostcarddate {
+  color: #FA9C25;
+}
+
+#newpost .newpostpic .card .newpostcardtitle {
+  color: #000;
+}
+
+#newpost .newpostpic .card .card-text {
+  margin-bottom: 0;
+}
+
+#newpost .newpostlist {
+  padding: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  #newpost .newpostlist.col-12.col-md-7 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+#donate {
+  padding-left: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#donate .list {
+  padding: 0;
+}
+
+#donate .list .donatetitle, #donate .list .donateorg {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 0;
+  color: #FA9C25;
+}
+
+#donate .list .donateorg {
+  font-size: 18px;
+  color: #000;
+}
+
+#donate .list .donatenumber {
+  margin-bottom: 0;
+}
+
+#donate .list hr {
+  border: 1px solid #FA9C25;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  #donate {
+    padding: 15px;
+  }
+}
+
+#bank {
+  padding-right: 0;
+  padding-left: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#bank .list {
+  padding: 0;
+}
+
+#bank .list .jobname, #bank .list .joborg {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 0;
+  font-size: 20px;
+  color: #FA9C25;
+}
+
+#bank .list .joborg {
+  font-size: 18px;
+  color: #000;
+}
+
+#bank .list .jobtext {
+  margin-bottom: 0;
+}
+
+#bank .list .donatenumber {
+  margin-bottom: 0;
+}
+
+#bank .list hr {
+  border: 1px solid #FA9C25;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  #bank {
+    padding: 15px;
+  }
+  #bank .col-12.col-md-6 {
+    padding: 0;
+  }
+}
+
+.shopbgc {
+  background-color: #F7C280;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#shop {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#shop .good {
+  margin: 10px;
+}
+
+#shop .good .shoptitle {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+#shop .good .card-text {
+  margin-bottom: 0;
+}
+
+#shop .lookmore {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+#news {
+  margin-right: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#news .list {
+  padding: 0;
+}
+
+@media screen and (max-width: 576px) {
+  #news {
+    margin-left: 15px;
+  }
+}
+
+#help {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#help .list {
+  padding: 0;
+}
+
+#scholarship {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+}
+
+#scholarship .list {
+  padding: 0;
+}
+
+@media screen and (max-width: 576px) {
+  #scholarship {
+    margin-right: 15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
