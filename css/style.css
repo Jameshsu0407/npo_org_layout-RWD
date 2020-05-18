@@ -73,6 +73,13 @@ section h2:before {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 576px) {
+  .container {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
 #top-ads {
   margin: 0;
 }
@@ -195,6 +202,8 @@ section h2:before {
 
 @media screen and (max-width: 576px) {
   #donate {
+    margin-top: 0;
+    margin-bottom: 0;
     padding: 15px;
   }
 }
@@ -248,6 +257,8 @@ section h2:before {
 
 @media screen and (max-width: 576px) {
   #bank {
+    margin-top: 0;
+    margin-bottom: 0;
     padding: 15px;
   }
   #bank .col-12.col-md-6 {
