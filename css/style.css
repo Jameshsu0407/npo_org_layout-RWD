@@ -161,6 +161,9 @@ section h2:before {
 }
 
 @media screen and (max-width: 576px) {
+  #newpost {
+    margin-top: 50px;
+  }
   #newpost .newpostlist.col-12.col-md-7 {
     padding-right: 0;
     padding-left: 0;
@@ -344,26 +347,68 @@ footer {
   margin-top: 50px;
   background-color: #F7C280;
   width: 100%;
-  padding: 30px 0;
+  padding: 30px 0 0 0;
 }
 
 footer .footer-left p {
   margin: 0;
 }
 
-footer .supports {
+footer .footer-left .supports {
   display: flex;
   justify-content: center;
   padding: 0;
 }
 
-footer .supports .pic {
+footer .footer-left .supports .pic {
   display: flex;
   justify-content: start;
   padding: 5px;
 }
 
-footer .supports .pic img {
+footer .footer-left .supports .pic img {
   width: 100%;
+}
+
+footer .footer-right {
+  position: relative;
+}
+
+footer .footer-right .npotimes {
+  text-align: right;
+}
+
+footer .footer-right .bottom-bar {
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer .phone-bottom-bar {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  footer .footer-left {
+    text-align: center;
+    padding: 15px;
+  }
+  footer .footer-left .supports {
+    display: none;
+  }
+  footer .footer-right .npotimes {
+    text-align: center;
+  }
+  footer .footer-right .bottom-bar {
+    display: none;
+  }
+  footer .phone-bottom-bar {
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    margin: 10px 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
