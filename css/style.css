@@ -127,7 +127,7 @@ section h2:before {
 }
 
 #newpost .newpostpic {
-  padding: 10px;
+  padding: 0;
 }
 
 #newpost .newpostpic .card .card-title {
@@ -145,11 +145,12 @@ section h2:before {
 }
 
 #newpost .newpostpic .card .card-text {
+  padding-top: 5px;
   margin-bottom: 0;
 }
 
 #newpost .newpostlist {
-  padding: 10px;
+  padding: 0 20px;
 }
 
 @media screen and (max-width: 576px) {
