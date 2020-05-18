@@ -1,4 +1,4 @@
-$('#ads').slick({
+$('#top-ads').slick({
     arrows: false,
     autoplay: true,
     autoplaySpeed: 2000,

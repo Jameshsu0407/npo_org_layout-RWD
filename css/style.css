@@ -16,6 +16,11 @@ body {
   height: 8000px;
 }
 
+section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 section h2 {
   font-weight: 700;
   font-size: 30px;
@@ -72,6 +77,10 @@ section h2:before {
   margin-bottom: 10px;
 }
 
+#top-ads {
+  margin: 0;
+}
+
 #searchandlogin {
   background-color: #F7C280;
   padding: 10px 120px;
@@ -121,11 +130,6 @@ section h2:before {
   }
 }
 
-#newpost {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
 #newpost .newpostpic {
   padding: 0;
 }
@@ -162,8 +166,8 @@ section h2:before {
 
 #donate {
   padding-left: 0;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 #donate .list {
@@ -174,6 +178,7 @@ section h2:before {
   font-weight: 600;
   font-size: 20px;
   margin-bottom: 0;
+  padding: 2px 0;
   color: #FA9C25;
 }
 
@@ -201,8 +206,8 @@ section h2:before {
 #bank {
   padding-right: 0;
   padding-left: 50px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 #bank .list {
@@ -213,8 +218,17 @@ section h2:before {
   font-weight: 600;
   font-size: 20px;
   margin-bottom: 0;
-  font-size: 20px;
+  padding: 2px 0;
   color: #FA9C25;
+}
+
+#bank .list .job-type {
+  background-color: #FA9C25;
+  padding: 1px 8px;
+  border-radius: 15px;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
 }
 
 #bank .list .joborg {
@@ -251,11 +265,6 @@ section h2:before {
   padding-bottom: 20px;
 }
 
-#shop {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
 #shop .good {
   margin: 10px;
 }
@@ -276,10 +285,14 @@ section h2:before {
   margin-top: 20px;
 }
 
+@media screen and (max-width: 576px) {
+  .shopbgc {
+    background-color: #fff;
+  }
+}
+
 #news {
   margin-right: 15px;
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 #news .list {
@@ -292,18 +305,11 @@ section h2:before {
   }
 }
 
-#help {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
 #help .list {
   padding: 0;
 }
 
 #scholarship {
-  margin-top: 30px;
-  margin-bottom: 30px;
   margin-left: 15px;
 }
 

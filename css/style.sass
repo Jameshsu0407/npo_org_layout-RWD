@@ -18,7 +18,16 @@ html,body
     padding: 0
 body
     height: 8000px
+=mtb
+    margin-top: 50px
+    margin-bottom: 50px
+=title
+    font-weight: 600
+    font-size: 20px 
+    margin-bottom: 0 
+
 section
+    +mtb
     h2
         font-weight: 700
         font-size: 30px
@@ -35,13 +44,7 @@ section
             left: -10px
             transform: translateY(-50%)
 
-=mtb
-    margin-top: 30px
-    margin-bottom: 30px
-=title
-    font-weight: 600
-    font-size: 20px 
-    margin-bottom: 0 
+
 .lookmore
     background-color: $color_dark_orange
     color: $color_white
@@ -64,6 +67,11 @@ section
         border: 1px solid $color_dark_orange
         margin-top: 10px
         margin-bottom: 10px
+// -----------------------------------------------------
+// 上層廣告
+#top-ads
+    margin: 0
+
 // -----------------------------------------------------
 // 登錄、搜尋區塊
 #searchandlogin
@@ -101,7 +109,7 @@ section
 // -----------------------------------------------------
 // 最新活動
 #newpost
-    +mtb
+    // +mtb
     .newpostpic
         padding: 0
         .card
@@ -130,6 +138,7 @@ section
         padding: 0
         .donatetitle,.donateorg
             +title
+            padding: 2px 0
             color: $color_dark_orange
         .donateorg
             font-size: 18px
@@ -151,13 +160,18 @@ section
     +mtb
     .list
         padding: 0
-        // .pill
-        //     display: inline-block
-        //     background-color: $color_dark_orange
         .jobname,.joborg
             +title
-            font-size: 20px
+            padding: 2px 0
             color: $color_dark_orange
+        .job-type
+            background-color: $color_dark_orange
+            padding: 1px 8px
+            border-radius: 15px
+            color: white
+            font-weight: 500
+            font-size: 15px
+            
         .joborg
             font-size: 18px
             color: #000
@@ -182,7 +196,7 @@ section
     padding-top: 20px
     padding-bottom: 20px
 #shop
-    +mtb
+    // +mtb
     .good
         margin: 10px
         .shoptitle
@@ -193,11 +207,14 @@ section
         margin-right: auto
         margin-left: auto
         margin-top: 20px
+@media screen and ( max-width: 576px )
+    .shopbgc
+        background-color: #fff
 // -----------------------------------------------------
-// 公益新訊
+// 公益新訊、急難救助、獎助學金
 #news
     margin-right: 15px
-    +mtb
+    // +mtb
     .list
         padding: 0
 @media screen and ( max-width: 576px )
@@ -205,16 +222,19 @@ section
         margin-left: 15px
 
 #help
-    +mtb
+    // +mtb
     .list
         padding: 0
 
 
 #scholarship
-    +mtb
+    // +mtb
     margin-left: 15px
     .list
         padding: 0
 @media screen and ( max-width: 576px )
     #scholarship
         margin-right: 15px
+// -----------------------------------------------------
+// 底部廣告
+#bottom_ads
