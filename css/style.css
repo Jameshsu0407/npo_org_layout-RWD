@@ -1,5 +1,6 @@
 @charset "UTF-8";
 * {
+  border: 1px solid #000;
   box-sizing: border-box;
 }
 
@@ -193,7 +194,7 @@ section h2:before {
 
 #donate .list {
   padding: 0;
-  border-bottom: 2px solid #FA9C25;
+  border-bottom: 1px solid #d4d4d4;
 }
 
 #donate .list .donatetitle, #donate .list .donateorg, #donate .list .donatenumber {
@@ -232,7 +233,7 @@ section h2:before {
 
 #bank .list-wrap .list {
   padding: 0;
-  border-bottom: 2px solid #FA9C25;
+  border-bottom: 1px solid #d4d4d4;
 }
 
 #bank .list-wrap .list .jobname, #bank .list-wrap .list .joborg, #bank .list-wrap .list .jobtext {
@@ -337,9 +338,14 @@ section h2:before {
   padding: 0;
 }
 
+#news .list span {
+  margin: 20px 0;
+  color: #343A40;
+}
+
 #news .list .text {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #help .list {
