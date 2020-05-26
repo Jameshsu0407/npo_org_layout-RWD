@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -117,13 +117,16 @@
 
     <div class="login row">
       <div class="col-4">
-        <h4 class="members">一般會員登錄</h4>
+        <img src="./img/members.png" alt="">
+        <!-- <h4 class="members">一般會員登錄</h4> -->
       </div>
       <div class="col-4">
-        <h4 class="organizations">機構專區登錄</h4>
+        <img src="./img/organizations.png" alt="">
+        <!-- <h4 class="organizations">機構專區登錄</h4> -->
       </div>
       <div class="col-4">
-        <h4 class="business">企業專區登錄</h4>
+        <img src="./img/business.png" alt="">
+        <!-- <h4 class="business">企業專區登錄</h4> -->
       </div>
     </div>
 
@@ -134,32 +137,39 @@
     <!-- 最新活動 -->
     <div class="row">
       <!-- 最新活動 開始 -->
-      <div id="newpost" class="row col-12">
+      <div id="newpost" class="col-12">
         <h2 class="col-12">最新活動</h2>
         <!-- 左側卡片 -->
         <div id="activity_card" class="newpostpic col-12 col-md-5">
-          
+
           <div class="card">
-            <img src="https://fakeimg.pl/350x250/" class="card-img-top" alt="...">
+            <!-- <img src="https://fakeimg.pl/350x250/" class="card-img-top" alt="..."> -->
+            <img src="./img/activitypic/act1.png" alt="">
             <div class="card-body">
-              <h3 class="card-title text-truncate"><span class="newpostcarddate">2020-05-23</span><span class="newpostcardtitle">&nbsp;&nbsp;志工特殊訓練-穿越時空到未來</span></h3>
-              <p class="card-text">正值青春年華的你/妳，能想像50年後的自己會是什麼樣子嗎?趕快來~~~變裝體驗爺奶生活+欣賞不老超級任務</p>
+              <h3 class="card-title text-truncate"><span class="date">2020-06-20</span>&nbsp;「任林電影院」6/12週五電影賞析</h3>
+              <p class="card-text">致，我最愛的家人』，從簡單易懂的電影中，看見豐富無比的課題，透過帶領人的引導，輕鬆聊聊影片與自己產生的共鳴，短短三個小時帶給您一想不到的生命學習。</p>
             </div>
           </div>
 
           <div class="card">
-            <img src="https://fakeimg.pl/350x250/" class="card-img-top" alt="...">
+            <!-- <img src="https://fakeimg.pl/350x250/" class="card-img-top" alt="..."> -->
+            <img src="./img/activitypic/act2.png" alt="">
             <div class="card-body">
-              <h3 class="card-title text-truncate"><span class="newpostcarddate">2020-05-23</span><span class="newpostcardtitle">&nbsp;&nbsp;109年桃園市NPO知識學院 開課啦！</span></h3>
-              <p class="card-text">透過專業引導了解NPO的多元發展性！融合學術與工具，從基礎打造好功夫！充實自我、展現團隊、發揮影響力！歡迎NPO相關人員或有興趣者一同進入NPO知識學院</p>
+              <h3 class="card-title text-truncate"><span class="date">2020-05-04</span>&nbsp「共脩此生」任林讀書會</h3>
+              <p class="card-text">
+                任林社區讀書會是一個跳脫傳統平面閱讀性質框架與限制的讀書會，在每次兩小時的團體時間裡，我們邀請您一起輕鬆聊聊現在、分享自己，透過讀書會帶領人的引導，幫助學員學習自我覺察，覺察自己舊有的經驗背景、信念如何影響自己的一生。
+              </p>
             </div>
           </div>
 
           <div class="card">
-            <img src="https://fakeimg.pl/350x250/" class="card-img-top" alt="...">
+            <!-- <img src="https://fakeimg.pl/350x250/" class="card-img-top" alt="..."> -->
+            <img src="./img/activitypic/act3.png" alt="">
             <div class="card-body">
-              <h3 class="card-title text-truncate"><span class="newpostcarddate">2020-05-23</span><span class="newpostcardtitle">&nbsp;&nbsp;「自組團隊提案說明會」- 志願服務與生存價值</span></h3>
-              <p class="card-text">本場次為青年志工培力工作坊，109年度青年發展署提供「獎勵青年自組團隊參與志工行動計畫」方案，獎勵青年勇於付諸行動、鼓勵青年投入服務活動</p>
+              <h3 class="card-title text-truncate"><span class="date">2020-05-12</span>&nbsp;「孩子的心，我懂」任林讀書會</h3>
+              <p class="card-text">
+                任林社區讀書會是一個跳脫傳統平面閱讀性質框架與限制的讀書會，在每次兩小時的團體時間裡，我們邀請您一起輕鬆聊聊現在、分享自己，透過讀書會帶領人的引導，幫助學員學習自我覺察，覺察自己舊有的經驗背景、信念如何影響自己的一生。
+              </p>
             </div>
           </div>
 
@@ -167,134 +177,121 @@
         <!-- 右側活動說明 -->
         <div class="newpostlist col-12 col-md-7">
           <div class="list">
-            <h3 class="text-truncate"><span class="newpostlistdate">2020-05-23</span></span><span class="newpostlisttitle">&nbsp;&nbsp;志工特殊訓練-穿越時空到未來</span>
+            <h3 class="text-truncate title"><span class="date">2020-05-23</span>&nbsp;志工特殊訓練-穿越時空到未來
             </h3>
-            <p class="newpostlisttext text-truncate">正值青春年華的你/妳，能想像50年後的自己會是什麼樣子嗎?趕快來~~~變裝體驗爺奶生活+欣賞不老超級任務</p>
-            <hr>
+            <p class="text text-truncate">正值青春年華的你/妳，能想像50年後的自己會是什麼樣子嗎?趕快來~~~變裝體驗爺奶生活+欣賞不老超級任務</p>
           </div>
           <div class="list">
-            <h3 class="text-truncate"><span class="newpostlistdate">2020-05-28</span><span class="newpostlisttitle">&nbsp;&nbsp;109年桃園市NPO知識學院 開課啦！</span></h3>
-            <p class="newpostlisttext text-truncate">透過專業引導了解NPO的多元發展性！融合學術與工具，從基礎打造好功夫！充實自我、展現團隊、發揮影響力！</p>
-            <hr>
+            <h3 class="text-truncate title"><span class="date">2020-05-28</span>&nbsp;109年桃園市NPO知識學院 開課啦！</span></h3>
+            <p class="text text-truncate">透過專業引導了解NPO的多元發展性！融合學術與工具，從基礎打造好功夫！充實自我、展現團隊、發揮影響力！</p>
           </div>
           <div class="list">
-            <h3 class="text-truncate"><span class="newpostlistdate">2020-05-30</span><span class="newpostlisttitle">&nbsp;&nbsp;「自組團隊提案說明會」- 志願服務與生存價值</span>
+            <h3 class="text-truncate title"><span class="date">2020-05-30</span>&nbsp;「自組團隊提案說明會」- 志願服務與生存價值</span>
             </h3>
-            <p class="newpostlisttext text-truncate">本場次為青年志工培力工作坊，109年度青年發展署提供「獎勵青年自組團隊參與志工行動計畫」方案，獎勵青年勇於付諸行動、鼓勵青年投入服務活動</p>
-            <hr>
+            <p class="text text-truncate">本場次為青年志工培力工作坊，109年度青年發展署提供「獎勵青年自組團隊參與志工行動計畫」方案，獎勵青年勇於付諸行動、鼓勵青年投入服務活動</p>
           </div>
           <div class="list">
-            <h3 class="text-truncate"><span class="newpostlistdate">2020-05-30</span><span class="newpostlisttitle">&nbsp;&nbsp;2020後現代治療系列—搞懂敘事治療</span>
+            <h3 class="text-truncate title"><span class="date">2020-05-30</span>&nbsp;2020後現代治療系列—搞懂敘事治療</span>
             </h3>
-            <p class="newpostlisttext text-truncate">生命是一連串故事的組合，故事裡夾藏著多元的可能。面臨挑戰的人，不吐不快的心聲猶似迴盪在心版上的低音，悶響著。</p>
-            <hr>
+            <p class="text text-truncate">生命是一連串故事的組合，故事裡夾藏著多元的可能。面臨挑戰的人，不吐不快的心聲猶似迴盪在心版上的低音，悶響著。</p>
           </div>
           <div class="list">
-            <h3 class="text-truncate"><span class="newpostlistdate">2020-05-01</span><span class="newpostlisttitle">&nbsp;&nbsp;薄荷食物銀行5月疫情陪你度過</span>
+            <h3 class="text-truncate title"><span class="date">2020-05-01</span>&nbsp;薄荷食物銀行5月疫情陪你度過</span>
             </h3>
-            <p class="newpostlisttext text-truncate">五月份持續發放，雖然疫情較穩定，但還是有非常多家庭面臨減班、放無薪假，甚至沒工作，經濟頓時失去來源，或低收入戶家庭本身經濟不好加上大環境影響</p>
-            <hr>
+            <p class="text text-truncate">五月份持續發放，雖然疫情較穩定，但還是有非常多家庭面臨減班、放無薪假，甚至沒工作，經濟頓時失去來源，或低收入戶家庭本身經濟不好加上大環境影響</p>
           </div>
         </div>
         <button type="button" class="btn btn-sm lookmore">查看更多</button>
       </div>
       <!-- 最新活動 結束 -->
 
-    </div>
 
-    <!-- 物資募集＋人力銀行 -->
-    <div class="row">
+      <!-- 物資募集＋人力銀行 -->
       <!-- 物資募集 開始 -->
-      <div id="donate" class="row col-12 col-md-4">
+      <div id="donate" class="col-12 col-md-4">
         <h2 class="col-12">物資募集</h2>
         <!-- list -->
-        <div class="list col-12">
-          <h3 class="donatetitle text-truncate">分離式冷氣機</h3>
-          <h4 class="donateorg text-truncate">社團法人大臺南熱蘭遮失智症協會</h4>
-          <p class="donatenumber text-truncate">數量：<span>2</span>個</p>
-          <hr>
+        <div class="list-wrap">
+          <div class="list col-12">
+            <h3 class="donatetitle text-truncate">分離式冷氣機</h3>
+            <h4 class="donateorg text-truncate">社團法人大臺南熱蘭遮失智症協會</h4>
+            <p class="donatenumber text-truncate">數量：<span>2</span>個</p>
+          </div>
+          <div class="list col-12">
+            <h3 class="donatetitle text-truncate">攝影器材</h3>
+            <h4 class="donateorg text-truncate">中華民國更生少年關懷協會</h4>
+            <p class="donatenumber text-truncate">數量：<span>2</span>個</p>
+          </div>
+          <div class="list col-12">
+            <h3 class="donatetitle text-truncate">白米</h3>
+            <h4 class="donateorg text-truncate">屏東縣關懷弱勢福利促進協會</h4>
+            <p class="donatenumber text-truncate">數量：<span>60</span>公斤</p>
+          </div>
+          <div class="list col-12">
+            <h3 class="donatetitle text-truncate">浴巾</h3>
+            <h4 class="donateorg text-truncate">屏東基督教勝利之家</h4>
+            <p class="donatenumber text-truncate">數量：<span>100</span>條</p>
+          </div>
         </div>
-        <div class="list col-12">
-          <h3 class="donatetitle text-truncate">攝影器材</h3>
-          <h4 class="donateorg text-truncate">中華民國更生少年關懷協會</h4>
-          <p class="donatenumber text-truncate">數量：<span>2</span>個</p>
-          <hr>
-        </div>
-        <div class="list col-12">
-          <h3 class="donatetitle text-truncate">白米</h3>
-          <h4 class="donateorg text-truncate">屏東縣關懷弱勢福利促進協會</h4>
-          <p class="donatenumber text-truncate">數量：<span>60</span>公斤</p>
-          <hr>
-        </div>
-        <div class="list col-12">
-          <h3 class="donatetitle text-truncate">浴巾</h3>
-          <h4 class="donateorg text-truncate">屏東基督教勝利之家</h4>
-          <p class="donatenumber text-truncate">數量：<span>100</span>條</p>
-          <hr>
-        </div>
+        
         <button type="button" class="btn btn-sm lookmore">查看更多</button>
       </div>
       <!-- 物資募集 結束 -->
 
       <!-- 人力銀行 開始 -->
-      <div id="bank" class="row col-12 col-md-8">
+      <div id="bank" class="col-12 col-md-8">
         <h2 class="col-12">人力銀行</h2>
-        <!-- left list -->
-        <div class="col-12 col-md-6 left">
-
-          <div class="list col-12">
-            <h3 class="jobname text-truncate"><span class="job-type">正職</span>&nbsp;&nbsp;居服督導</h3>
-            <h4 class="joborg text-truncate">財團法人老五老基金會</h4>
-            <p class="jobtext text-truncate">負責南投縣信義鄉和水里鄉長照業務</p>
-            <hr>
+        <div class="list-wrap">
+          <!-- left list -->
+          <div class="col-12 col-md-6">
+            <div class="list col-12">
+              <h3 class="jobname text-truncate"><span class="job-type">正職</span>&nbsp;居服督導</h3>
+              <h4 class="joborg text-truncate">財團法人老五老基金會</h4>
+              <p class="jobtext text-truncate">負責南投縣信義鄉和水里鄉長照業務</p>
+            </div>
+            <div class="list col-12">
+              <h3 class="jobname text-truncate"><span class="job-type">正職</span>&nbsp;黎明教養院班導1名</h3>
+              <h4 class="joborg text-truncate">財團法人台灣基督教門諾會附設花</h4>
+              <p class="jobtext text-truncate">黎明教養院班導1名(薪資30000元-35000元)</p>
+            </div>
+            <div class="list col-12">
+              <h3 class="jobname text-truncate"><span class="job-type">兼職</span>&nbsp;社工員</h3>
+              <h4 class="joborg text-truncate">社團法人臺北市觀音線心理暨社會</h4>
+              <p class="jobtext text-truncate">長者社團與團體活動方案規劃、執行與成果報告</p>
+            </div>
+            <div class="list col-12">
+              <h3 class="jobname text-truncate"><span class="job-type">兼職</span>&nbsp;國文-課輔老師</h3>
+              <h4 class="joborg text-truncate">米可之家</h4>
+              <p class="jobtext text-truncate">補救教學之課業輔導</p>
+            </div>
           </div>
-          <div class="list col-12">
-            <h3 class="jobname text-truncate"><span class="job-type">正職</span>&nbsp;&nbsp;黎明教養院班導1名</h3>
-            <h4 class="joborg text-truncate">財團法人台灣基督教門諾會附設花</h4>
-            <p class="jobtext text-truncate">黎明教養院班導1名(薪資30000元-35000元)</p>
-            <hr>
-          </div>
-          <div class="list col-12">
-            <h3 class="jobname text-truncate"><span class="job-type">兼職</span>&nbsp;&nbsp;社工員</h3>
-            <h4 class="joborg text-truncate">社團法人臺北市觀音線心理暨社會</h4>
-            <p class="jobtext text-truncate">長者社團與團體活動方案規劃、執行與成果報告</p>
-            <hr>
-          </div>
-          <div class="list col-12">
-            <h3 class="jobname text-truncate"><span class="job-type">兼職</span>&nbsp;&nbsp;國文-課輔老師</h3>
-            <h4 class="joborg text-truncate">米可之家</h4>
-            <p class="jobtext text-truncate">補救教學之課業輔導</p>
-            <hr>
-          </div>
-        </div>
-
-        <!-- right list -->
-        <div class="col-12 col-md-6 right">
-          <div class="list col-12">
-            <h3 class="jobname text-truncate"><span class="job-type">志工</span>&nbsp;&nbsp;冷氣修繕志工</h3>
-            <h4 class="joborg text-truncate">財團法人高雄市私立星星兒社會福</h4>
-            <p class="jobtext text-truncate">夏天將至，炎熱的高溫已讓機構中的服務對象受不了，教室中的冷氣有一台壞掉了，導致服務對象的情緒越來越不穩定，若您有修理冷氣的專長，也願意到星星兒的家來看看，歡迎您來協助我們檢測及維修冷氣</p>
-            <hr>
-          </div>
-          <div class="list col-12">
-            <h3 class="jobname text-truncate"><span class="job-type">志工</span>&nbsp;&nbsp;樂齡志工</h3>
-            <h4 class="joborg text-truncate">董氏基金會</h4>
-            <p class="jobtext text-truncate">50歲以上，以65歲以上為優先。表達能力佳、熱愛學習、有服務熱忱、喜愛團體合作、分享經驗，並針對志工工作項目有專長或具濃厚興趣者。</p>
-            <hr>
-          </div>
-          <div class="list col-12">
-            <h3 class="jobname text-truncate"><span class="job-type">志工</span>&nbsp;&nbsp;蒲公英希望基地籌備志工</h3>
-            <h4 class="joborg text-truncate">財團法人蒲公英希望基金會</h4>
-            <p class="jobtext text-truncate">打造一個充份利用自然資源、永續循環、自給自足，讓一般低收戶也能供得起的生活環境!</p>
-            <hr>
-          </div>
-          <div class="list col-12">
-            <h3 class="jobname text-truncate"><span class="job-type">志工</span>&nbsp;&nbsp;餐飲服務送餐志工</h3>
-            <h4 class="joborg text-truncate">財團法人新北市私立雙連社會福利</h4>
-            <p class="jobtext text-truncate">老人及身障者送餐服務</p>
-            <hr>
+          <!-- right list -->
+          <div class="col-12 col-md-6">
+            <div class="list col-12">
+              <h3 class="jobname text-truncate"><span class="job-type">志工</span>&nbsp;冷氣修繕志工</h3>
+              <h4 class="joborg text-truncate">財團法人高雄市私立星星兒社會福</h4>
+              <p class="jobtext text-truncate">
+                夏天將至，炎熱的高溫已讓機構中的服務對象受不了，教室中的冷氣有一台壞掉了，導致服務對象的情緒越來越不穩定，若您有修理冷氣的專長，也願意到星星兒的家來看看，歡迎您來協助我們檢測及維修冷氣</p>
+            </div>
+            <div class="list col-12">
+              <h3 class="jobname text-truncate"><span class="job-type">志工</span>&nbsp;樂齡志工</h3>
+              <h4 class="joborg text-truncate">董氏基金會</h4>
+              <p class="jobtext text-truncate">50歲以上，以65歲以上為優先。表達能力佳、熱愛學習、有服務熱忱、喜愛團體合作、分享經驗，並針對志工工作項目有專長或具濃厚興趣者。</p>
+            </div>
+            <div class="list col-12">
+              <h3 class="jobname text-truncate"><span class="job-type">志工</span>&nbsp;蒲公英希望基地籌備志工</h3>
+              <h4 class="joborg text-truncate">財團法人蒲公英希望基金會</h4>
+              <p class="jobtext text-truncate">打造一個充份利用自然資源、永續循環、自給自足，讓一般低收戶也能供得起的生活環境!</p>
+            </div>
+            <div class="list col-12">
+              <h3 class="jobname text-truncate"><span class="job-type">志工</span>&nbsp;餐飲服務送餐志工</h3>
+              <h4 class="joborg text-truncate">財團法人新北市私立雙連社會福利</h4>
+              <p class="jobtext text-truncate">老人及身障者送餐服務</p>
+            </div>
           </div>
         </div>
+        
+
         <button type="button" class="btn btn-sm lookmore">查看更多</button>
       </div>
       <!-- 人力銀行 結束 -->
@@ -307,7 +304,7 @@
     <section class="container">
       <div class="row">
         <!-- 公益商城 -->
-        <div id="shop" class="row col-12">
+        <div id="shop" class="col-12">
           <h2 class="col-12">公益商城</h2>
 
           <div class="col-12 col-sm-6 col-lg-3">
@@ -346,7 +343,7 @@
               </div>
             </div>
           </div>
-          <button type="button" class="btn btn-sm lookmore lookmorecenter">查看更多</button>
+          <button type="button" class="btn btn-sm lookmore">查看更多</button>
         </div>
       </div>
     </section>
@@ -356,97 +353,96 @@
   <section class="container">
     <div class="row">
       <!-- 公益新訊 開始 -->
-      <div id="news" class="row col-12 col-md-4">
+      <div id="news" class="col-12 col-md-4">
         <h2 class="col-12">公益新訊</h2>
         <!-- list -->
         <div class="list col-12">
-          <h3 class="text-truncate"><span class="newpostlistdate">2020/04/13
-            <span class="newpostlisttitle">&nbsp;&nbsp;第四屆「堉璘台灣奉獻獎」公開徵選</span>
+          <h3 class="title text-truncate"><span class="date">2020/04/13</span>&nbsp;第四屆「堉璘台灣奉獻獎」公開徵選</span>
           </h3>
-          <p class="newpostlisttext text-truncate">為鼓勵在各領域無私為台灣奉獻的個人或單位，公益信託林堉璘宏泰教育文化公益基金攜手林堉璘宏泰教育基金會成立了「堉璘台灣奉獻獎」，自2017年起每年辦理一次，得主可獲得3000萬獎金進而擴大自身影響力。 </p>
-          <hr>
+          <p class="text text-truncate">
+            為鼓勵在各領域無私為台灣奉獻的個人或單位，公益信託林堉璘宏泰教育文化公益基金攜手林堉璘宏泰教育基金會成立了「堉璘台灣奉獻獎」，自2017年起每年辦理一次，得主可獲得3000萬獎金進而擴大自身影響力。 </p>
         </div>
         <div class="list col-12">
-          <h3 class="text-truncate"><span class="newpostlistdate">2020/04/13<span class="newpostlisttitle">&nbsp;&nbsp;吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</span>
+          <h3 class="title text-truncate"><span class="date">2020/04/13</span>&nbsp;吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</span>
           </h3>
-          <p class="newpostlisttext text-truncate">近日因新型冠狀病毒疫情緊張，台灣進入半鎖國狀態，糧食自給率更形重要。然而，目前台灣約有13萬家違章工廠佔據農地，而根據台灣環境資訊協會研究調查，自2011年起，每年平均新增約5,000到6,000家，然而2017年農委會核定的「保護農地－拆除農地上新增違規工廠行動方案」卻僅拆除16家。</p>
-          <hr>
+          <p class="text text-truncate">
+            近日因新型冠狀病毒疫情緊張，台灣進入半鎖國狀態，糧食自給率更形重要。然而，目前台灣約有13萬家違章工廠佔據農地，而根據台灣環境資訊協會研究調查，自2011年起，每年平均新增約5,000到6,000家，然而2017年農委會核定的「保護農地－拆除農地上新增違規工廠行動方案」卻僅拆除16家。
         </div>
         <div class="list col-12">
-          <h3 class="text-truncate"><span class="newpostlistdate">2019/12/19<span class="newpostlisttitle">&nbsp;&nbsp;堉璘台灣奉獻獎公布 2019 年獲獎名單</span>
+          <h3 class="title text-truncate"><span class="date">2019/12/19</span>&nbsp;堉璘台灣奉獻獎公布 2019 年獲獎名單</span>
           </h3>
-          <p class="newpostlisttext text-truncate">（2019/12/17，台北訊）基於「取之於社會，用之於社會」的理念而成立的堉璘台灣奉獻 獎，今日公布第三屆獲獎名單並於新北市淡水美麗新淡海影城舉行頒獎典禮。</p>
-          <hr>
+          <p class="text text-truncate">（2019/12/17，台北訊）基於「取之於社會，用之於社會」的理念而成立的堉璘台灣奉獻
+            獎，今日公布第三屆獲獎名單並於新北市淡水美麗新淡海影城舉行頒獎典禮。</p>
         </div>
         <div class="list col-12">
-          <h3 class="text-truncate"><span class="newpostlistdate">2019/12/03<span class="newpostlisttitle">&nbsp;&nbsp;2020年全聯實物銀行徵選開放線上申請!(12/1-12/31)</span>
+          <h3 class="title text-truncate"><span class="date">2019/12/03</span>&nbsp;2020年全聯實物銀行徵選開放線上申請!(12/1-12/31)</span>
           </h3>
-          <p class="newpostlisttext text-truncate">2020年全聯物資銀行_「實物銀行」徵選開放線上申請囉!2019年12月1日起開放非營利組織進行提案，每年度將有三個合作機會，每間單位可獲得超過百萬物資(依單位需求提供)。</p>
-          <hr>
+          <p class="text text-truncate">
+            2020年全聯物資銀行_「實物銀行」徵選開放線上申請囉!2019年12月1日起開放非營利組織進行提案，每年度將有三個合作機會，每間單位可獲得超過百萬物資(依單位需求提供)。</p>
         </div>
         <button type="button" class="btn btn-sm lookmore">查看更多</button>
       </div>
       <!-- 公益新訊 結束 -->
 
       <!-- 急難救助 開始 -->
-      <div id="help" class="row col-12 col-md-4">
+      <div id="help" class="col-12 col-md-4">
         <h2 class="col-12">急難救助</h2>
         <!-- list -->
         <div class="list col-12">
-          <h3 class="text-truncate"><span class="newpostlistdate">2020-05-28<span class="newpostlisttitle">&nbsp;&nbsp;Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+          <h3 class="title text-truncate"><span class="date">2020-05-28</span>&nbsp;Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
           </h3>
-          <p class="newpostlisttext text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe qui quo, possimus eius accusamus.</p>
-          <hr>
+          <p class="text text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe
+            qui quo, possimus eius accusamus.</p>
         </div>
         <div class="list col-12">
-          <h3 class="text-truncate"><span class="newpostlistdate">2020-05-28<span class="newpostlisttitle">&nbsp;&nbsp;Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+          <h3 class="title text-truncate"><span class="date">2020-05-28</span>&nbsp;Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
           </h3>
-          <p class="newpostlisttext text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe qui quo, possimus eius accusamus.</p>
-          <hr>
+          <p class="text text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe
+            qui quo, possimus eius accusamus.</p>
         </div>
         <div class="list col-12">
-          <h3 class="text-truncate"><span class="newpostlistdate">2020-05-28<span class="newpostlisttitle">&nbsp;&nbsp;Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+          <h3 class="title text-truncate"><span class="date">2020-05-28</span>&nbsp;Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
           </h3>
-          <p class="newpostlisttext text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe qui quo, possimus eius accusamus.</p>
-          <hr>
+          <p class="text text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe
+            qui quo, possimus eius accusamus.</p>
         </div>
         <div class="list col-12">
-          <h3 class="text-truncate"><span class="newpostlistdate">2020-05-28<span class="newpostlisttitle">&nbsp;&nbsp;Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+          <h3 class="title text-truncate"><span class="date">2020-05-28</span>&nbsp;Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
           </h3>
-          <p class="newpostlisttext text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe qui quo, possimus eius accusamus.</p>
-          <hr>
+          <p class="text text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe
+            qui quo, possimus eius accusamus.</p>
         </div>
         <button type="button" class="btn btn-sm lookmore">查看更多</button>
       </div>
       <!-- 急難救助 結束 -->
 
       <!-- 獎助學金 開始 -->
-      <div id="scholarship" class="row col-12 col-md-4">
+      <div id="scholarship" class="col-12 col-md-4">
         <h2 class="col-12">獎助學金</h2>
         <!-- list -->
         <div class="list col-12">
-          <h3 class="text-truncate"><span class="newpostlistdate">2020-05-28<span class="newpostlisttitle">&nbsp;&nbsp;Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+          <h3 class="title text-truncate"><span class="date">2020-05-28</span>&nbsp;Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
           </h3>
-          <p class="newpostlisttext text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe qui quo, possimus eius accusamus.</p>
-          <hr>
+          <p class="text text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe
+            qui quo, possimus eius accusamus.</p>
         </div>
         <div class="list col-12">
-          <h3 class="text-truncate"><span class="newpostlistdate">2020-05-28<span class="newpostlisttitle">&nbsp;&nbsp;Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+          <h3 class="title text-truncate"><span class="date">2020-05-28</span>&nbsp;Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
           </h3>
-          <p class="newpostlisttext text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe qui quo, possimus eius accusamus.</p>
-          <hr>
+          <p class="text text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe
+            qui quo, possimus eius accusamus.</p>
         </div>
         <div class="list col-12">
-          <h3 class="text-truncate"><span class="newpostlistdate">2020-05-28<span class="newpostlisttitle">&nbsp;&nbsp;Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+          <h3 class="title text-truncate"><span class="date">2020-05-28</span>&nbsp;Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
           </h3>
-          <p class="newpostlisttext text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe qui quo, possimus eius accusamus.</p>
-          <hr>
+          <p class="text text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe
+            qui quo, possimus eius accusamus.</p>
         </div>
         <div class="list col-12">
-          <h3 class="text-truncate"><span class="newpostlistdate">2020-05-28<span class="newpostlisttitle">&nbsp;&nbsp;Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+          <h3 class="title text-truncate"><span class="date">2020-05-28</span>&nbsp;Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
           </h3>
-          <p class="newpostlisttext text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe qui quo, possimus eius accusamus.</p>
-          <hr>
+          <p class="text text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe
+            qui quo, possimus eius accusamus.</p>
         </div>
         <button type="button" class="btn btn-sm lookmore">查看更多</button>
       </div>
@@ -455,19 +451,23 @@
     </div>
   </section>
 
+  <!-- 底部廣告 -->
   <section id="bottom_ads" class="container">
     <div class="row">
 
       <div class="pic col-12 col-md-4">
-        <img src="https://fakeimg.pl/350x150/" alt="">
+        <!-- <img src="https://fakeimg.pl/350x150/" alt=""> -->
+        <img src="./img/ads/ad1.png" alt="">
       </div>
 
       <div class="pic col-12 col-md-4">
-        <img src="https://fakeimg.pl/350x150/" alt="">
+        <!-- <img src="https://fakeimg.pl/350x150/" alt=""> -->
+        <img src="./img/ads/ad2.png" alt="">
       </div>
 
       <div class="pic col-12 col-md-4">
-        <img src="https://fakeimg.pl/350x150/" alt="">
+        <!-- <img src="https://fakeimg.pl/350x150/" alt=""> -->
+        <img src="./img/ads/ad3.png" alt="">
       </div>
 
     </div>
@@ -497,23 +497,27 @@
         <p class="copyright-zh">財團法人喜瑪拉雅研究發展基金會建置 網軟股份有限公司營運維護</p>
         <p class="copyright-en">Copyright © 2020 Taiwan NPO Information Platform. All Rights Reserved. </p>
         <div class="supports col-12">
-          <div class="pic col-4">
-            <img src="https://fakeimg.pl/100x60/" alt="">
+          <div class="logo col-4">
+            <!-- <img src="https://fakeimg.pl/100x60/" alt=""> -->
+            <img src="./img/logo/logo1.png" alt="">
           </div>
-          <div class="pic col-4">
-            <img src="https://fakeimg.pl/100x60/" alt="">
+          <div class="logo col-4">
+            <!-- <img src="https://fakeimg.pl/100x60/" alt=""> -->
+            <img src="./img/logo/logo2.png" alt="">
           </div>
-          <div class="pic col-4">
-            <img src="https://fakeimg.pl/100x60/" alt="">
+          <div class="logo col-4">
+            <!-- <img src="https://fakeimg.pl/100x60/" alt=""> -->
+            <img src="./img/logo/logo3.png" alt="">
           </div>
         </div>
       </div>
-      
+
 
       <div class="footer-right col-12 col-sm-6 order-1 order-sm-2">
         <p class="npotimes">NPOTIMES電子報訂閱</p>
         <div class="input-group">
-          <input type="text" class="form-control" placeholder="請輸入電子信箱" aria-label="搜尋組織" aria-describedby="button-addon2">
+          <input type="text" class="form-control" placeholder="請輸入電子信箱" aria-label="搜尋組織"
+            aria-describedby="button-addon2">
           <div class="input-group-append">
             <button class="btn btn-outline-secondary" type="button" id="button-addon2">搜尋</button>
           </div>
@@ -529,7 +533,7 @@
         <div class="col-3">關於我們</div>
         <div class="col-3">使用說明</div>
         <div class="col-3">服務條款</div>
-        <div class="col-3">隱私政策</div>
+        <div class="col-3">隱私權政策</div>
       </div>
     </div>
   </div>

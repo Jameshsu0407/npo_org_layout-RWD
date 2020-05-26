@@ -41,34 +41,26 @@ section h2:before {
   color: #fff;
   display: block;
   margin-left: auto;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
-.row {
-  display: flex;
-  justify-content: center;
+.list {
+  border-bottom: 2px solid #FA9C25;
 }
 
-.list .newpostlistdate, .list .newpostlisttitle {
+.list .title {
   font-weight: 600;
   font-size: 20px;
   margin-bottom: 0;
 }
 
-.list .newpostlistdate {
+.list .date {
   color: #FA9C25;
+  font-size: 16px;
+  font-weight: 500;
 }
 
-.list .newpostlisttitle {
-  color: #000;
-}
-
-.list .newpostlisttext {
-  margin-bottom: 0;
-}
-
-.list hr {
-  border: 1px solid #FA9C25;
+.list .text {
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -112,16 +104,11 @@ section h2:before {
 }
 
 #searchandlogin .login {
-  margin: 10px;
+  margin: 20px;
 }
 
-#searchandlogin .login .members, #searchandlogin .login .organizations, #searchandlogin .login .business {
-  text-align: center;
-  background-color: #fff;
-  padding: 20px;
-  margin-bottom: 0;
-  margin: 5px;
-  font-weight: 600;
+#searchandlogin .login img {
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -133,8 +120,17 @@ section h2:before {
   }
 }
 
+#newpost {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 #newpost .newpostpic {
   padding: 0;
+}
+
+#newpost .newpostpic .card img {
+  width: 100%;
 }
 
 #newpost .newpostpic .card .card-title {
@@ -143,21 +139,32 @@ section h2:before {
   margin-bottom: 0;
 }
 
-#newpost .newpostpic .card .newpostcarddate {
+#newpost .newpostpic .card .date {
   color: #FA9C25;
+  font-size: 16px;
+  font-weight: 500;
 }
 
-#newpost .newpostpic .card .newpostcardtitle {
-  color: #000;
-}
-
-#newpost .newpostpic .card .card-text {
+#newpost .newpostpic .card p.card-text {
   padding-top: 5px;
   margin-bottom: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  white-space: normal;
+  line-height: 30px;
+  height: 88px;
 }
 
 #newpost .newpostlist {
   padding: 0 20px;
+}
+
+#newpost .newpostlist .list {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 576px) {
@@ -171,36 +178,34 @@ section h2:before {
 }
 
 #donate {
-  padding-left: 0;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
-#donate .list {
-  padding: 0;
+#donate .list-wrap {
+  display: flex;
+  flex-direction: column;
 }
 
-#donate .list .donatetitle, #donate .list .donateorg {
+#donate .list {
+  padding: 0;
+  border-bottom: 2px solid #FA9C25;
+}
+
+#donate .list .donatetitle, #donate .list .donateorg, #donate .list .donatenumber {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#donate .list .donatetitle {
   font-weight: 600;
   font-size: 20px;
   margin-bottom: 0;
-  padding: 2px 0;
   color: #FA9C25;
 }
 
-#donate .list .donateorg {
-  font-size: 18px;
-  color: #000;
-}
-
-#donate .list .donatenumber {
-  margin-bottom: 0;
-}
-
-#donate .list hr {
-  border: 1px solid #FA9C25;
-  margin-top: 10px;
-  margin-bottom: 10px;
+#donate .list .donateorg, #donate .list .donatenumber {
+  font-size: 16px;
 }
 
 @media screen and (max-width: 576px) {
@@ -212,50 +217,43 @@ section h2:before {
 }
 
 #bank {
-  padding-right: 0;
-  padding-left: 50px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
-#bank .list {
-  padding: 0;
+#bank .list-wrap {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-#bank .list .jobname, #bank .list .joborg {
+#bank .list-wrap .list {
+  padding: 0;
+  border-bottom: 2px solid #FA9C25;
+}
+
+#bank .list-wrap .list .jobname, #bank .list-wrap .list .joborg, #bank .list-wrap .list .jobtext {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#bank .list-wrap .list .jobname {
   font-weight: 600;
   font-size: 20px;
   margin-bottom: 0;
-  padding: 2px 0;
   color: #FA9C25;
 }
 
-#bank .list .job-type {
+#bank .list-wrap .list .joborg, #bank .list-wrap .list .jobtext {
+  font-size: 16px;
+}
+
+#bank .list-wrap .list .job-type {
   background-color: #FA9C25;
   padding: 1px 8px;
   border-radius: 15px;
   color: white;
   font-weight: 500;
-  font-size: 15px;
-}
-
-#bank .list .joborg {
-  font-size: 18px;
-  color: #000;
-}
-
-#bank .list .jobtext {
-  margin-bottom: 0;
-}
-
-#bank .list .donatenumber {
-  margin-bottom: 0;
-}
-
-#bank .list hr {
-  border: 1px solid #FA9C25;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  font-size: 12px;
 }
 
 @media screen and (max-width: 576px) {
@@ -271,65 +269,91 @@ section h2:before {
 
 .shopbgc {
   background-color: #F7C280;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
-#shop .good {
-  margin: 10px;
+#shop {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-#shop .good .shoptitle {
+#shop .good .card-body {
+  padding: 10px;
+}
+
+#shop .good .card-body .shoptitle {
   font-weight: 600;
   font-size: 20px;
-  margin-bottom: 0;
-}
-
-#shop .good .card-text {
   margin-bottom: 0;
 }
 
 #shop .lookmore {
   margin-right: auto;
   margin-left: auto;
-  margin-top: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .good {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 576px) {
   .shopbgc {
     background-color: #fff;
   }
-}
-
-#news {
-  margin-right: 15px;
-}
-
-#news .list {
-  padding: 0;
-}
-
-@media screen and (max-width: 576px) {
-  #news {
-    margin-left: 15px;
+  .shopbgc .good {
+    margin-bottom: 10px;
+  }
+  #shop {
+    padding: 15px;
+    margin: 0;
+  }
+  #shop .lookmore {
+    margin: initial;
+    margin-top: 10px;
+    margin-left: auto;
   }
 }
 
-#help .list {
+#news .list {
+  margin-top: 20px;
+  margin-bottom: 20px;
   padding: 0;
 }
 
-#scholarship {
-  margin-left: 15px;
+#news .list .text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#help .list {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+#help .list .text {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #scholarship .list {
+  margin-top: 20px;
+  margin-bottom: 20px;
   padding: 0;
 }
 
+#scholarship .list .text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 576px) {
-  #scholarship {
-    margin-right: 15px;
+  #news, #help, #scholarship {
+    margin: 0;
+    padding: 15px;
   }
 }
 
@@ -343,6 +367,13 @@ section h2:before {
   width: 100%;
 }
 
+@media screen and (max-width: 576px) {
+  #bottom_ads {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
 footer {
   margin-top: 50px;
   background-color: #F7C280;
@@ -352,6 +383,7 @@ footer {
 
 footer .footer-left p {
   margin: 0;
+  padding: 0 15px;
 }
 
 footer .footer-left .supports {
@@ -360,14 +392,15 @@ footer .footer-left .supports {
   padding: 0;
 }
 
-footer .footer-left .supports .pic {
+footer .footer-left .supports .logo {
   display: flex;
   justify-content: start;
-  padding: 5px;
+  align-items: center;
 }
 
-footer .footer-left .supports .pic img {
+footer .footer-left .supports .logo img {
   width: 100%;
+  margin: 10px 0;
 }
 
 footer .footer-right {
@@ -409,6 +442,7 @@ footer .phone-bottom-bar {
     bottom: 0;
     width: 100%;
     margin: 10px 0;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

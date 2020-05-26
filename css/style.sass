@@ -24,6 +24,13 @@ html,body
     font-weight: 600
     font-size: 20px 
     margin-bottom: 0 
+=date
+    color: $color_dark_orange
+    font-size: 16px
+    font-weight: 500
+=text-space
+    margin-top: 10px
+    margin-bottom: 10px
 
 section
     +mtb
@@ -48,23 +55,16 @@ section
     color: $color_white
     display: block
     margin-left: auto
-    margin-top: 5px
-.row
-    display: flex
-    justify-content: center
+    margin-top: 10px
+
 .list
-    .newpostlistdate,.newpostlisttitle
+    border-bottom: 2px solid $color_dark_orange
+    .title
         +title
-    .newpostlistdate
-        color: $color_dark_orange
-    .newpostlisttitle
-        color: #000
-    .newpostlisttext
-        margin-bottom: 0
-    hr
-        border: 1px solid $color_dark_orange
-        margin-top: 10px
-        margin-bottom: 10px
+    .date
+        +date
+    .text
+        +text-space
 @media screen and ( max-width: 576px )
     .container
         margin-top: 0
@@ -96,14 +96,9 @@ section
             font-weight: 600
             text-align: center
     .login
-        margin: 10px
-        .members,.organizations,.business
-            text-align: center
-            background-color: $color_white
-            padding: 20px
-            margin-bottom: 0
-            margin: 5px
-            font-weight: 600
+        margin: 20px
+        img
+            width: 100%
     @media screen and ( max-width: 768px )
         padding: 10px 20px
         .login
@@ -111,21 +106,35 @@ section
 // -----------------------------------------------------
 // 最新活動
 #newpost
-    // +mtb
+    display: flex
+    flex-wrap: wrap
     .newpostpic
         padding: 0
         .card
+            img
+                width: 100%
             .card-title
                 +title
-            .newpostcarddate
-                color: $color_dark_orange
-            .newpostcardtitle
-                color: #000
-            .card-text
+            .date
+                +date
+            p.card-text
                 padding-top: 5px 
                 margin-bottom: 0
+                overflow: hidden
+                white-space: nowrap
+                text-overflow: ellipsis
+                display: -webkit-box
+                -webkit-line-clamp: 3
+                -webkit-box-orient: vertical
+                white-space: normal
+                line-height: 30px
+                height: 88px
     .newpostlist
         padding: 0 20px
+        .list
+            margin-top: 20px
+            margin-bottom: 20px
+
 @media screen and ( max-width: 576px )
     #newpost
         margin-top: 50px
@@ -135,23 +144,21 @@ section
 // -----------------------------------------------------
 // 物資募集
 #donate
-    padding-left: 0
     +mtb
+    .list-wrap
+        display: flex
+        flex-direction: column
     .list
         padding: 0
-        .donatetitle,.donateorg
+        border-bottom: 2px solid $color_dark_orange
+        .donatetitle,.donateorg,.donatenumber
+            +text-space
+        .donatetitle
             +title
-            padding: 2px 0
             color: $color_dark_orange
-        .donateorg
-            font-size: 18px
-            color: #000
-        .donatenumber
-            margin-bottom: 0
-        hr
-            border: 1px solid $color_dark_orange
-            margin-top: 10px
-            margin-bottom: 10px
+        .donateorg,.donatenumber
+            font-size: 16px       
+        
 @media screen and ( max-width: 576px )
     #donate
         margin-top: 0
@@ -160,34 +167,27 @@ section
 // -----------------------------------------------------
 // 人力銀行
 #bank
-    padding-right: 0
-    padding-left: 50px
     +mtb
-    .list
-        padding: 0
-        .jobname,.joborg
-            +title
-            padding: 2px 0
-            color: $color_dark_orange
-        .job-type
-            background-color: $color_dark_orange
-            padding: 1px 8px
-            border-radius: 15px
-            color: white
-            font-weight: 500
-            font-size: 15px
-            
-        .joborg
-            font-size: 18px
-            color: #000
-        .jobtext
-            margin-bottom: 0
-        .donatenumber
-            margin-bottom: 0
-        hr
-            border: 1px solid $color_dark_orange
-            margin-top: 10px
-            margin-bottom: 10px
+    .list-wrap
+        display: flex
+        flex-wrap: wrap
+        .list
+            padding: 0
+            border-bottom: 2px solid $color_dark_orange
+            .jobname,.joborg,.jobtext
+                +text-space
+            .jobname
+                +title
+                color: $color_dark_orange
+            .joborg,.jobtext
+                font-size: 16px 
+            .job-type
+                background-color: $color_dark_orange
+                padding: 1px 8px
+                border-radius: 15px
+                color: white
+                font-weight: 500
+                font-size: 12px
 
 @media screen and ( max-width: 576px )
     #bank
@@ -200,47 +200,66 @@ section
 // 公益商城
 .shopbgc
     background-color: $color_orange
-    padding-top: 20px
-    padding-bottom: 20px
 #shop
-    // +mtb
+    +mtb
+    display: flex
+    flex-wrap: wrap
     .good
-        margin: 10px
-        .shoptitle
-            +title
-        .card-text
-            margin-bottom: 0
+        .card-body
+            padding: 10px
+            .shoptitle
+                +title
     .lookmore
         margin-right: auto
         margin-left: auto
-        margin-top: 20px
+@media screen and ( max-width: 992px )
+    .good
+        margin-bottom: 10px
 @media screen and ( max-width: 576px )
     .shopbgc
         background-color: #fff
+        .good
+            margin-bottom: 10px
+    #shop
+        padding: 15px
+        margin: 0
+        .lookmore
+            margin: initial
+            margin-top: 10px
+            margin-left: auto
+
+        
+
 // -----------------------------------------------------
 // 公益新訊、急難救助、獎助學金
 #news
-    margin-right: 15px
-    // +mtb
     .list
+        margin-top: 20px
+        margin-bottom: 20px
         padding: 0
-@media screen and ( max-width: 576px )
-    #news
-        margin-left: 15px
-
+        .text
+            margin-top: 20px
+            margin-bottom: 20px
 #help
-    // +mtb
     .list
+        margin-top: 20px
+        margin-bottom: 20px
         padding: 0
-
+        .text
+            margin-top: 20px
+            margin-bottom: 20px
 #scholarship
-    // +mtb
-    margin-left: 15px
     .list
+        margin-top: 20px
+        margin-bottom: 20px
         padding: 0
+        .text
+            margin-top: 20px
+            margin-bottom: 20px
 @media screen and ( max-width: 576px )
-    #scholarship
-        margin-right: 15px
+    #news,#help,#scholarship
+        margin: 0
+        padding: 15px
 // -----------------------------------------------------
 // 底部廣告
 #bottom_ads
@@ -250,7 +269,9 @@ section
         padding: 10px
         img
             width: 100%
-            
+@media screen and ( max-width: 576px )
+    #bottom_ads
+        +mtb          
 
 // -----------------------------------------------------
 // footer
@@ -262,16 +283,19 @@ footer
     .footer-left
         p
             margin: 0
+            padding: 0 15px
         .supports
             display: flex
             justify-content: center
             padding: 0
-            .pic
+            .logo
                 display: flex
                 justify-content: start
-                padding: 5px
+                align-items: center
                 img
                     width: 100%
+                    margin: 10px 0
+
     .footer-right
         position: relative
         .npotimes
@@ -301,6 +325,7 @@ footer
             bottom: 0
             width: 100%
             margin: 10px 0
+            text-align: center
             
             
     
