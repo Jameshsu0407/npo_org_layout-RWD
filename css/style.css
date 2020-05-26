@@ -282,6 +282,16 @@ section h2:before {
   flex-wrap: wrap;
 }
 
+#shop .good {
+  border: none;
+  background-color: transparent;
+  text-align: center;
+}
+
+#shop .good img {
+  box-shadow: 8px 10px 8px rgba(0, 0, 0, 0.15);
+}
+
 #shop .good .card-body {
   padding: 10px;
 }
