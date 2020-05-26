@@ -1,7 +1,7 @@
 // 定義顏色
 $color_dark_orange: #FA9C25
 $color_orange: #F7C280
-$color_gray: #EAF2EF
+$color_gray: #d4d4d4
 $color_black: #343A40
 $color_white: #fff
 
@@ -36,18 +36,18 @@ section
     +mtb
     h2
         font-weight: 700
-        font-size: 30px
+        font-size: 24px
         margin-bottom: 10px
         position: relative
         &:before
             content: ""
             display: inline-block
             background-color: $color_dark_orange
-            width: 15px
-            height: 30px
+            width: 12px
+            height: 28px
             position: absolute
             top: 50%
-            left: -10px
+            left: -5px
             transform: translateY(-50%)
 
 .lookmore
@@ -58,7 +58,7 @@ section
     margin-top: 10px
 
 .list
-    border-bottom: 2px solid $color_dark_orange
+    border-bottom: 1px solid $color_gray
     .title
         +title
     .date
@@ -111,6 +111,7 @@ section
     .newpostpic
         padding: 0
         .card
+            border: none
             img
                 width: 100%
             .card-title
@@ -132,8 +133,8 @@ section
     .newpostlist
         padding: 0 20px
         .list
-            margin-top: 20px
-            margin-bottom: 20px
+            padding-top: 20px
+            padding-bottom: 10px
 
 @media screen and ( max-width: 576px )
     #newpost
