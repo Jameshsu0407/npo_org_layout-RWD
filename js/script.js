@@ -14,3 +14,12 @@ $('#activity_card').slick({
     // centerMode: true,
     arrows: false
 });
+
+$(function () {
+    $('#bootnavbar').bootnavbar({
+      //options
+
+      //animation: false
+
+    });
+})

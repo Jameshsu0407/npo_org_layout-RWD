@@ -13,12 +13,14 @@
   <!-- slick -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-  <!-- multi-nav -->
-  <link href="css/bootstrap-4-navbar.css" rel="stylesheet">
+  <!-- animate -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <!-- bootsnavbar -->
+  <link rel="stylesheet" href="./css/bootnavbar.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="bootnavbar">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -31,11 +33,30 @@
             aria-haspopup="true" aria-expanded="false">
             最新消息
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">公益新訊</a>
-            <a class="dropdown-item" href="#">最新活動</a>
-            <a class="dropdown-item" href="#">公益影片</a>
-          </div>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">公益新訊</a></li>
+            <li><a class="dropdown-item" href="#">最新活動</a></li>
+            <li><a class="dropdown-item" href="#">公益影片</a></li>
+            <li class="nav-item dropdown">
+              <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </li>
 
         <li class="nav-item dropdown">
@@ -43,11 +64,11 @@
             aria-haspopup="true" aria-expanded="false">
             扶助專區
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">扶助機構</a>
-            <a class="dropdown-item" href="#">急難救助</a>
-            <a class="dropdown-item" href="#">獎助學金</a>
-          </div>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">扶助機構</a></li>
+            <li><a class="dropdown-item" href="#">急難救助</a></li>
+            <li><a class="dropdown-item" href="#">獎助學金</a></li>
+          </ul>
         </li>
 
         <li class="nav-item dropdown">
@@ -55,10 +76,10 @@
             aria-haspopup="true" aria-expanded="false">
             物資募集
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">物資募集</a>
-            <a class="dropdown-item" href="#">企業提供</a>
-          </div>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">物資募集</a></li>
+            <li><a class="dropdown-item" href="#">企業提供</a></li>
+          </ul>
         </li>
 
         <li class="nav-item dropdown">
@@ -66,11 +87,11 @@
             aria-haspopup="true" aria-expanded="false">
             人力銀行
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">志工招募</a>
-            <a class="dropdown-item" href="#">全職工作</a>
-            <a class="dropdown-item" href="#">兼職工作</a>
-          </div>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">志工招募</a></li>
+            <li><a class="dropdown-item" href="#">全職工作</a></li>
+            <li><a class="dropdown-item" href="#">兼職工作</a></li>
+          </ul>
         </li>
 
         <li class="nav-item">
@@ -86,14 +107,12 @@
             aria-haspopup="true" aria-expanded="false">
             支援服務
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">廣告刊登</a>
-            <a class="dropdown-item" href="#">合作提案</a>
-          </div>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">廣告刊登</a></li>
+            <li><a class="dropdown-item" href="#">合作提案</a></li>
+          </ul>
         </li>
-
       </ul>
-
     </div>
   </nav>
 
@@ -233,7 +252,7 @@
             <p class="donatenumber text-truncate">數量：<span>100</span>條</p>
           </div>
         </div>
-        
+
         <button type="button" class="btn btn-sm lookmore">查看更多</button>
       </div>
       <!-- 物資募集 結束 -->
@@ -290,7 +309,7 @@
             </div>
           </div>
         </div>
-        
+
 
         <button type="button" class="btn btn-sm lookmore">查看更多</button>
       </div>
@@ -335,8 +354,8 @@
               <p class="text">NT$1500</p>
             </div>
           </div>
-          
-          
+
+
           <button type="button" class="btn btn-sm lookmore">查看更多</button>
         </div>
       </div>
@@ -383,25 +402,29 @@
         <h2 class="col-12">急難救助</h2>
         <!-- list -->
         <div class="list col-12">
-          <h3 class="title text-truncate"><span class="date">2020-05-28</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+          <h3 class="title text-truncate"><span class="date">2020-05-28</span>Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit.</span>
           </h3>
           <p class="text text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe
             qui quo, possimus eius accusamus.</p>
         </div>
         <div class="list col-12">
-          <h3 class="title text-truncate"><span class="date">2020-05-28</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+          <h3 class="title text-truncate"><span class="date">2020-05-28</span>Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit.</span>
           </h3>
           <p class="text text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe
             qui quo, possimus eius accusamus.</p>
         </div>
         <div class="list col-12">
-          <h3 class="title text-truncate"><span class="date">2020-05-28</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+          <h3 class="title text-truncate"><span class="date">2020-05-28</span>Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit.</span>
           </h3>
           <p class="text text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe
             qui quo, possimus eius accusamus.</p>
         </div>
         <div class="list col-12">
-          <h3 class="title text-truncate"><span class="date">2020-05-28</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+          <h3 class="title text-truncate"><span class="date">2020-05-28</span>Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit.</span>
           </h3>
           <p class="text text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe
             qui quo, possimus eius accusamus.</p>
@@ -415,25 +438,29 @@
         <h2 class="col-12">獎助學金</h2>
         <!-- list -->
         <div class="list col-12">
-          <h3 class="title text-truncate"><span class="date">2020-05-28</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+          <h3 class="title text-truncate"><span class="date">2020-05-28</span>Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit.</span>
           </h3>
           <p class="text text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe
             qui quo, possimus eius accusamus.</p>
         </div>
         <div class="list col-12">
-          <h3 class="title text-truncate"><span class="date">2020-05-28</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+          <h3 class="title text-truncate"><span class="date">2020-05-28</span>Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit.</span>
           </h3>
           <p class="text text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe
             qui quo, possimus eius accusamus.</p>
         </div>
         <div class="list col-12">
-          <h3 class="title text-truncate"><span class="date">2020-05-28</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+          <h3 class="title text-truncate"><span class="date">2020-05-28</span>Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit.</span>
           </h3>
           <p class="text text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe
             qui quo, possimus eius accusamus.</p>
         </div>
         <div class="list col-12">
-          <h3 class="title text-truncate"><span class="date">2020-05-28</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+          <h3 class="title text-truncate"><span class="date">2020-05-28</span>Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit.</span>
           </h3>
           <p class="text text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe
             qui quo, possimus eius accusamus.</p>
@@ -481,8 +508,9 @@
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <!-- script -->
   <script src="./js/script.js"></script>
-  <!-- multi-nav -->
-  <script src="js/bootstrap-4-navbar.js"></script>
+  <!-- bootnavbar -->
+  <script src="./js/bootnavbar.js"></script>
+
 
 </body>
 
