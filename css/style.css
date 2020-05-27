@@ -1,11 +1,16 @@
 @charset "UTF-8";
 * {
-  border: 1px solid #000;
   box-sizing: border-box;
 }
 
 * {
   font-family: 微軟正黑體;
+}
+
+*:focus, *:checked {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 html, body {
@@ -84,10 +89,9 @@ section h2:before {
 }
 
 #searchandlogin .search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #searchandlogin .search h4 {
@@ -104,20 +108,44 @@ section h2:before {
   text-align: center;
 }
 
+#searchandlogin .search .input-group, #searchandlogin .search .orgnum {
+  margin: auto;
+}
+
 #searchandlogin .login {
-  margin: 20px;
+  padding: 0 250px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #searchandlogin .login img {
   width: 100%;
 }
 
+@media screen and (max-width: 1200px) {
+  #searchandlogin .login {
+    padding: 0 200px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #searchandlogin .orgnum {
+    padding-bottom: 10px;
+  }
+  #searchandlogin .login {
+    padding: 0 100px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #searchandlogin {
     padding: 10px 20px;
   }
+}
+
+@media screen and (max-width: 576px) {
   #searchandlogin .login {
-    display: none;
+    padding: 0;
   }
 }
 
@@ -257,7 +285,7 @@ section h2:before {
   padding: 1px 8px;
   border-radius: 15px;
   color: white;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 12px;
 }
 
@@ -284,23 +312,19 @@ section h2:before {
 }
 
 #shop .good {
-  border: none;
-  background-color: transparent;
   text-align: center;
+  flex-direction: column;
 }
 
 #shop .good img {
   box-shadow: 8px 10px 8px rgba(0, 0, 0, 0.15);
 }
 
-#shop .good .card-body {
-  padding: 10px;
-}
-
-#shop .good .card-body .shoptitle {
+#shop .good .title {
   font-weight: 600;
   font-size: 18px;
   margin-bottom: 0;
+  padding-top: 20px;
 }
 
 #shop .lookmore {
@@ -333,41 +357,48 @@ section h2:before {
 }
 
 #news .list {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 0;
+  padding: 10px 0 7px 0;
 }
 
 #news .list span {
-  margin: 20px 0;
-  color: #343A40;
+  margin: 8px 0;
+  display: block;
+  color: #F7C280;
 }
 
 #news .list .text {
-  margin-top: 10px;
+  margin-top: 8px;
   margin-bottom: 10px;
 }
 
 #help .list {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 0;
+  padding: 10px 0 7px 0;
+}
+
+#help .list span {
+  margin: 8px 0;
+  display: block;
+  color: #F7C280;
 }
 
 #help .list .text {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 8px;
+  margin-bottom: 10px;
 }
 
 #scholarship .list {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 0;
+  padding: 10px 0 7px 0;
+}
+
+#scholarship .list span {
+  margin: 8px 0;
+  display: block;
+  color: #F7C280;
 }
 
 #scholarship .list .text {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 8px;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 576px) {

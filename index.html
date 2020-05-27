@@ -13,6 +13,8 @@
   <!-- slick -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <!-- multi-nav -->
+  <link href="css/bootstrap-4-navbar.css" rel="stylesheet">
 </head>
 
 <body>
@@ -105,29 +107,27 @@
 
   <section id="searchandlogin" class="container-fluid">
 
-    <div class="search row">
-      <h4 class="col-12 col-md-5">登錄組織共<span>66666</span>個</h4>
-      <div class="input-group col-12 col-md-7">
-        <input type="text" class="form-control" placeholder="搜尋組織" aria-label="搜尋組織" aria-describedby="button-addon2">
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">搜尋</button>
-        </div>
+    <div class="login">
+      <div class="col-4">
+        <img src="./img/1.png" alt="">
+      </div>
+      <div class="col-4">
+        <img src="./img/2.png" alt="">
+      </div>
+      <div class="col-4">
+        <img src="./img/3.png" alt="">
       </div>
     </div>
 
-    <div class="login row">
-      <div class="col-4">
-        <img src="./img/members.png" alt="">
-        <!-- <h4 class="members">一般會員登錄</h4> -->
+    <div class="search">
+      <h4 class="col-12 col-lg-5 orgnum">登錄組織共<span>66666</span>個</h4>
+      <div class="input-group col-12 col-lg-7">
+        <input type="text" class="form-control" placeholder="搜尋組織" aria-label="搜尋組織" aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn lookmore" type="button" id="button-addon2" style="margin-top: 0;">搜尋</button>
+        </div>
       </div>
-      <div class="col-4">
-        <img src="./img/organizations.png" alt="">
-        <!-- <h4 class="organizations">機構專區登錄</h4> -->
-      </div>
-      <div class="col-4">
-        <img src="./img/business.png" alt="">
-        <!-- <h4 class="business">企業專區登錄</h4> -->
-      </div>
+
     </div>
 
   </section>
@@ -308,41 +308,35 @@
           <h2 class="col-12">公益商城</h2>
 
           <div class="col-12 col-sm-6 col-lg-3">
-            <div class="good card">
-              <img class="card-img-top" src="https://fakeimg.pl/400x400/" alt="">
-              <div class="card-body">
-                <h3 class="card-title shoptitle">商品標題</h3>
-                <p class="card-text">NT$1500</p>
-              </div>
+            <div class="good">
+              <img class="img-fluid" src="https://fakeimg.pl/400x400/" alt="">
+              <h3 class="title">商品標題</h3>
+              <p class="text">NT$1500</p>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-lg-3">
-            <div class="good card">
-              <img class="card-img-top" src="https://fakeimg.pl/400x400/" alt="">
-              <div class="card-body">
-                <h3 class="card-title shoptitle">商品標題</h3>
-                <p class="card-text">NT$1500</p>
-              </div>
+            <div class="good">
+              <img class="img-fluid" src="https://fakeimg.pl/400x400/" alt="">
+              <h3 class="title">商品標題</h3>
+              <p class="text">NT$1500</p>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-lg-3">
-            <div class="good card">
-              <img class="card-img-top" src="https://fakeimg.pl/400x400/" alt="">
-              <div class="card-body">
-                <h3 class="card-title shoptitle">商品標題</h3>
-                <p class="card-text">NT$1500</p>
-              </div>
+            <div class="good">
+              <img class="img-fluid" src="https://fakeimg.pl/400x400/" alt="">
+              <h3 class="title">商品標題</h3>
+              <p class="text">NT$1500</p>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-lg-3">
-            <div class="good card">
-              <img class="card-img-top" src="https://fakeimg.pl/400x400/" alt="">
-              <div class="card-body">
-                <h3 class="card-title shoptitle">商品標題</h3>
-                <p class="card-text">NT$1500</p>
-              </div>
+            <div class="good">
+              <img class="img-fluid" src="https://fakeimg.pl/400x400/" alt="">
+              <h3 class="title">商品標題</h3>
+              <p class="text">NT$1500</p>
             </div>
           </div>
+          
+          
           <button type="button" class="btn btn-sm lookmore">查看更多</button>
         </div>
       </div>
@@ -357,26 +351,25 @@
         <h2 class="col-12">公益新訊</h2>
         <!-- list -->
         <div class="list col-12">
-          <span class="yyy">2020/04/13</span>
-          <h3 class="title text-truncate">第四屆「堉璘台灣奉獻獎」公開徵選</span>
+          <h3 class="title text-truncate"><span class="date">2020/04/13</span>第四屆「堉璘台灣奉獻獎」公開徵選</span>
           </h3>
           <p class="text text-truncate">
             為鼓勵在各領域無私為台灣奉獻的個人或單位，公益信託林堉璘宏泰教育文化公益基金攜手林堉璘宏泰教育基金會成立了「堉璘台灣奉獻獎」，自2017年起每年辦理一次，得主可獲得3000萬獎金進而擴大自身影響力。 </p>
         </div>
         <div class="list col-12">
-          <h3 class="title text-truncate"><span class="date">2020/04/13</span>&nbsp;吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</span>
+          <h3 class="title text-truncate"><span class="date">2020/04/13</span>吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</span>
           </h3>
           <p class="text text-truncate">
             近日因新型冠狀病毒疫情緊張，台灣進入半鎖國狀態，糧食自給率更形重要。然而，目前台灣約有13萬家違章工廠佔據農地，而根據台灣環境資訊協會研究調查，自2011年起，每年平均新增約5,000到6,000家，然而2017年農委會核定的「保護農地－拆除農地上新增違規工廠行動方案」卻僅拆除16家。
         </div>
         <div class="list col-12">
-          <h3 class="title text-truncate"><span class="date">2019/12/19</span>&nbsp;堉璘台灣奉獻獎公布 2019 年獲獎名單</span>
+          <h3 class="title text-truncate"><span class="date">2019/12/19</span>堉璘台灣奉獻獎公布 2019 年獲獎名單</span>
           </h3>
           <p class="text text-truncate">（2019/12/17，台北訊）基於「取之於社會，用之於社會」的理念而成立的堉璘台灣奉獻
             獎，今日公布第三屆獲獎名單並於新北市淡水美麗新淡海影城舉行頒獎典禮。</p>
         </div>
         <div class="list col-12">
-          <h3 class="title text-truncate"><span class="date">2019/12/03</span>&nbsp;2020年全聯實物銀行徵選開放線上申請!(12/1-12/31)</span>
+          <h3 class="title text-truncate"><span class="date">2019/12/03</span>2020年全聯實物銀行徵選開放線上申請!(12/1-12/31)</span>
           </h3>
           <p class="text text-truncate">
             2020年全聯物資銀行_「實物銀行」徵選開放線上申請囉!2019年12月1日起開放非營利組織進行提案，每年度將有三個合作機會，每間單位可獲得超過百萬物資(依單位需求提供)。</p>
@@ -390,25 +383,25 @@
         <h2 class="col-12">急難救助</h2>
         <!-- list -->
         <div class="list col-12">
-          <h3 class="title text-truncate"><span class="date">2020-05-28</span>&nbsp;Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+          <h3 class="title text-truncate"><span class="date">2020-05-28</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
           </h3>
           <p class="text text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe
             qui quo, possimus eius accusamus.</p>
         </div>
         <div class="list col-12">
-          <h3 class="title text-truncate"><span class="date">2020-05-28</span>&nbsp;Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+          <h3 class="title text-truncate"><span class="date">2020-05-28</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
           </h3>
           <p class="text text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe
             qui quo, possimus eius accusamus.</p>
         </div>
         <div class="list col-12">
-          <h3 class="title text-truncate"><span class="date">2020-05-28</span>&nbsp;Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+          <h3 class="title text-truncate"><span class="date">2020-05-28</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
           </h3>
           <p class="text text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe
             qui quo, possimus eius accusamus.</p>
         </div>
         <div class="list col-12">
-          <h3 class="title text-truncate"><span class="date">2020-05-28</span>&nbsp;Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+          <h3 class="title text-truncate"><span class="date">2020-05-28</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
           </h3>
           <p class="text text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe
             qui quo, possimus eius accusamus.</p>
@@ -422,25 +415,25 @@
         <h2 class="col-12">獎助學金</h2>
         <!-- list -->
         <div class="list col-12">
-          <h3 class="title text-truncate"><span class="date">2020-05-28</span>&nbsp;Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+          <h3 class="title text-truncate"><span class="date">2020-05-28</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
           </h3>
           <p class="text text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe
             qui quo, possimus eius accusamus.</p>
         </div>
         <div class="list col-12">
-          <h3 class="title text-truncate"><span class="date">2020-05-28</span>&nbsp;Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+          <h3 class="title text-truncate"><span class="date">2020-05-28</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
           </h3>
           <p class="text text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe
             qui quo, possimus eius accusamus.</p>
         </div>
         <div class="list col-12">
-          <h3 class="title text-truncate"><span class="date">2020-05-28</span>&nbsp;Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+          <h3 class="title text-truncate"><span class="date">2020-05-28</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
           </h3>
           <p class="text text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe
             qui quo, possimus eius accusamus.</p>
         </div>
         <div class="list col-12">
-          <h3 class="title text-truncate"><span class="date">2020-05-28</span>&nbsp;Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+          <h3 class="title text-truncate"><span class="date">2020-05-28</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
           </h3>
           <p class="text text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe
             qui quo, possimus eius accusamus.</p>
@@ -488,6 +481,8 @@
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <!-- script -->
   <script src="./js/script.js"></script>
+  <!-- multi-nav -->
+  <script src="js/bootstrap-4-navbar.js"></script>
 
 </body>
 
