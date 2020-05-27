@@ -78,6 +78,15 @@ section h2:before {
   }
 }
 
+.dropdown-menu > li a:hover, .dropdown-menu > li.show {
+  background: #d4d4d4 !important;
+  color: #343A40 !important;
+}
+
+.dropdown-menu > li a {
+  color: #343A40 !important;
+}
+
 #top-ads {
   margin: 0;
 }
