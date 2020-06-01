@@ -492,6 +492,10 @@ footer .footer-right .supports {
   margin-bottom: 15px;
 }
 
+footer .footer-right .supports .logo {
+  padding: 5px;
+}
+
 footer .footer-right .supports .logo img {
   width: 100%;
 }
