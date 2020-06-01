@@ -6,17 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>公益資訊中心</title>
   <!-- BT4 -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!-- css -->
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
   <!-- slick -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/slick-theme.css">
   <!-- animate -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="./css/animate.css">
   <!-- bootsnavbar -->
   <link rel="stylesheet" href="./css/bootnavbar.css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="./css/fontawesome.css">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -28,8 +29,8 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav mx-auto">
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+        <li class="nav-item dropdown" id="first">
+          <a class="nav-link dropdown-toggle drop1" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             最新消息
           </a>
@@ -37,8 +38,8 @@
             <li><a class="dropdown-item" href="#">公益新訊</a></li>
             <li><a class="dropdown-item" href="#">最新活動</a></li>
             <li><a class="dropdown-item" href="#">公益影片</a></li>
-            <li class="nav-item dropdown">
-              <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            <li class="nav-item dropdown" id="second">
+              <a class="dropdown-item dropdown-toggle drop2" href="#" id="navbarDropdown" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Dropdown
               </a>
@@ -60,7 +61,7 @@
         </li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+          <a class="nav-link dropdown-toggle drop1" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             扶助專區
           </a>
@@ -72,7 +73,7 @@
         </li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+          <a class="nav-link dropdown-toggle drop1" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             物資募集
           </a>
@@ -83,7 +84,7 @@
         </li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+          <a class="nav-link dropdown-toggle drop1" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             人力銀行
           </a>
@@ -103,7 +104,7 @@
         </li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+          <a class="nav-link dropdown-toggle drop1" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             支援服務
           </a>
@@ -494,18 +495,59 @@
     </div>
   </section>
 
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="footer-left col-12 col-md-5 order-2 order-sm-1">
+          <p class="copyright-zh">財團法人喜瑪拉雅研究發展基金會建置 網軟股份有限公司營運維護</p>
+          <p class="copyright-en">Copyright © 2020 Taiwan NPO Information Platform. All Rights Reserved. </p>
+          
+        </div>
+  
+  
+        <div class="footer-right col-12 col-md-7 order-1 order-sm-2">
+          <p class="npotimes">NPOTIMES電子報訂閱</p>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="請輸入電子信箱" aria-label="搜尋組織"
+              aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" id="button-addon2">搜尋</button>
+            </div>
+          </div>
+          <div class="supports">
+            <div class="logo col-4">
+              <!-- <img src="https://fakeimg.pl/100x60/" alt=""> -->
+              <img src="./img/logo/logo1.png" alt="">
+            </div>
+            <div class="logo col-4">
+              <!-- <img src="https://fakeimg.pl/100x60/" alt=""> -->
+              <img src="./img/logo/logo2.png" alt="">
+            </div>
+            <div class="logo col-4">
+              <!-- <img src="https://fakeimg.pl/100x60/" alt=""> -->
+              <img src="./img/logo/logo3.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="bottom-bar col-12 col-md-8 order-3 mx-auto">
+          <div class="col-3">關於我們</div>
+          <div class="col-3">使用說明</div>
+          <div class="col-3">服務條款</div>
+          <div class="col-3">隱私權政策</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- jq -->
+  <script src="./js/jquery.js"></script>
   <!-- BT4 -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+  <script src="./js/bootstrap.js"></script>
+  <script src="./js/bootstrap.bundle.js"></script>
   <!-- slick -->
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/slick.js"></script>
   <!-- script -->
   <script src="./js/script.js"></script>
   <!-- bootnavbar -->
@@ -514,53 +556,6 @@
 
 </body>
 
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="footer-left col-12 col-sm-6 order-2 order-sm-1">
-        <p class="copyright-zh">財團法人喜瑪拉雅研究發展基金會建置 網軟股份有限公司營運維護</p>
-        <p class="copyright-en">Copyright © 2020 Taiwan NPO Information Platform. All Rights Reserved. </p>
-        <div class="supports col-12">
-          <div class="logo col-4">
-            <!-- <img src="https://fakeimg.pl/100x60/" alt=""> -->
-            <img src="./img/logo/logo1.png" alt="">
-          </div>
-          <div class="logo col-4">
-            <!-- <img src="https://fakeimg.pl/100x60/" alt=""> -->
-            <img src="./img/logo/logo2.png" alt="">
-          </div>
-          <div class="logo col-4">
-            <!-- <img src="https://fakeimg.pl/100x60/" alt=""> -->
-            <img src="./img/logo/logo3.png" alt="">
-          </div>
-        </div>
-      </div>
 
-
-      <div class="footer-right col-12 col-sm-6 order-1 order-sm-2">
-        <p class="npotimes">NPOTIMES電子報訂閱</p>
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="請輸入電子信箱" aria-label="搜尋組織"
-            aria-describedby="button-addon2">
-          <div class="input-group-append">
-            <button class="btn btn-outline-secondary" type="button" id="button-addon2">搜尋</button>
-          </div>
-        </div>
-        <div class="bottom-bar row ">
-          <div class="col-3">關於我們</div>
-          <div class="col-3">使用說明</div>
-          <div class="col-3">服務條款</div>
-          <div class="col-3">隱私權政策</div>
-        </div>
-      </div>
-      <div class="phone-bottom-bar row order-3">
-        <div class="col-3">關於我們</div>
-        <div class="col-3">使用說明</div>
-        <div class="col-3">服務條款</div>
-        <div class="col-3">隱私權政策</div>
-      </div>
-    </div>
-  </div>
-</footer>
 
 </html>

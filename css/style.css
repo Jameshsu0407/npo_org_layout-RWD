@@ -1,5 +1,6 @@
 @charset "UTF-8";
 * {
+  border: 1px solid #000;
   box-sizing: border-box;
 }
 
@@ -85,6 +86,36 @@ section h2:before {
 
 .dropdown-menu > li a {
   color: #343A40 !important;
+}
+
+.dropdown-toggle::after {
+  border: none !important;
+}
+
+.drop1::after, .drop2::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f107";
+  display: inline-block;
+  vertical-align: initial;
+}
+
+@media screen and (max-width: 992px) {
+  .drop1:after {
+    content: "\f105";
+  }
+  #first.show .drop1:after {
+    content: "\f107";
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .drop2:after {
+    content: "\f105";
+  }
+  .drop2 .dropdown-menu.show .drop2::after {
+    content: "\f107";
+  }
 }
 
 #top-ads {
@@ -438,66 +469,48 @@ footer {
   margin-top: 50px;
   background-color: #F7C280;
   width: 100%;
-  padding: 30px 0 0 0;
+  padding: 30px 0;
 }
 
 footer .footer-left p {
-  margin: 0;
-  padding: 0 15px;
-}
-
-footer .footer-left .supports {
-  display: flex;
-  justify-content: center;
   padding: 0;
-}
-
-footer .footer-left .supports .logo {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-}
-
-footer .footer-left .supports .logo img {
-  width: 100%;
-  margin: 10px 0;
-}
-
-footer .footer-right {
-  position: relative;
+  margin-bottom: 15px;
 }
 
 footer .footer-right .npotimes {
   text-align: right;
+  margin-bottom: 15px;
 }
 
-footer .footer-right .bottom-bar {
-  text-align: center;
-  padding: 5px;
-  position: absolute;
-  bottom: 0;
+footer .footer-right .input-group {
+  margin-bottom: 15px;
+}
+
+footer .footer-right .supports {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+footer .footer-right .supports .logo img {
   width: 100%;
 }
 
-footer .phone-bottom-bar {
-  display: none;
+footer .bottom-bar {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 5px 0;
 }
 
 @media screen and (max-width: 576px) {
   footer .footer-left {
     text-align: center;
-    padding: 15px;
-  }
-  footer .footer-left .supports {
-    display: none;
   }
   footer .footer-right .npotimes {
     text-align: center;
   }
-  footer .footer-right .bottom-bar {
-    display: none;
-  }
-  footer .phone-bottom-bar {
+  footer .bottom-bar {
     display: flex;
     bottom: 0;
     width: 100%;
