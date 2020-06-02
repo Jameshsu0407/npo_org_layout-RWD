@@ -122,70 +122,52 @@ section h2:before {
 }
 
 #searchandlogin {
-  background-color: #F7C280;
-  padding: 10px 120px;
-  margin: 0;
-}
-
-#searchandlogin .search {
-  margin: 10px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#searchandlogin .search h4 {
-  margin: 10px;
-  text-align: center;
-}
-
-#searchandlogin .search span {
-  margin-bottom: 10px;
-  margin-left: 2px;
-  margin-right: 2px;
-  color: #f24;
-  font-weight: 600;
-  text-align: center;
-}
-
-#searchandlogin .search .input-group, #searchandlogin .search .orgnum {
-  margin: auto;
+  margin: 20px 0;
 }
 
 #searchandlogin .login {
-  padding: 0 250px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-display: row;
+  text-align: center;
 }
 
-#searchandlogin .login img {
-  width: 100%;
+#searchandlogin .login .login-btn {
+  color: #F7C280;
+  transition: 0.5s;
 }
 
-@media screen and (max-width: 1200px) {
-  #searchandlogin .login {
-    padding: 0 200px;
-  }
+#searchandlogin .login .login-btn:hover {
+  color: #FA9C25;
 }
 
-@media screen and (max-width: 992px) {
-  #searchandlogin .orgnum {
-    padding-bottom: 10px;
-  }
-  #searchandlogin .login {
-    padding: 0 100px;
-  }
+#searchandlogin .login .login-btn i {
+  font-size: 50px;
+  margin: 10px;
 }
 
-@media screen and (max-width: 768px) {
-  #searchandlogin {
-    padding: 10px 20px;
-  }
+#searchandlogin .login .user, #searchandlogin .login .org {
+  border-right: 1px solid #F7C280;
 }
 
-@media screen and (max-width: 576px) {
-  #searchandlogin .login {
-    padding: 0;
-  }
+#searchandlogin .login .search {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#searchandlogin .login .search .orgnum {
+  text-align: center;
+  color: #000;
+  padding: 5px;
+}
+
+#searchandlogin .login .search span {
+  color: #f24;
+  font-weight: 600;
+  text-align: center;
 }
 
 #newpost {
