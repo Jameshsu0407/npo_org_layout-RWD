@@ -1,6 +1,5 @@
 @charset "UTF-8";
 * {
-  border: 1px solid #000;
   box-sizing: border-box;
 }
 
@@ -808,7 +807,7 @@ li a {
 #bottom_ads .pic {
   display: flex;
   justify-content: center;
-  padding: 10px;
+  padding: 15px;
 }
 
 #bottom_ads .pic img {
