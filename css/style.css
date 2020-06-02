@@ -148,6 +148,16 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
   }
 }
 
+.navbar-brand {
+  padding: 0;
+}
+
+@media screen and (max-width: 350px) {
+  .navbar-brand {
+    width: 250px;
+  }
+}
+
 .navbar-brand > img {
   width: 100%;
 }
@@ -158,6 +168,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
 
 .navbar-socail li.sub-drop-down-menu-top {
   display: inline-block;
+  margin: 0 10px;
 }
 
 @media (max-width: 992px) {
@@ -476,12 +487,12 @@ li a {
 
 #top-ads {
   margin: 0;
-  padding-top: 110px;
+  padding-top: 125px;
 }
 
 @media (max-width: 992px) {
   #top-ads {
-    padding-top: 123px;
+    padding-top: 135px;
   }
 }
 
