@@ -1,5 +1,6 @@
 @charset "UTF-8";
 * {
+  border: 1px solid #000;
   box-sizing: border-box;
 }
 
@@ -818,6 +819,9 @@ li a {
   #bottom_ads {
     margin-top: 50px;
     margin-bottom: 50px;
+  }
+  #bottom_ads .pic img {
+    width: 80%;
   }
 }
 
