@@ -878,6 +878,7 @@ footer .bottom-bar {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  align-items: center;
   padding: 5px 0;
 }
 
@@ -892,8 +893,10 @@ footer .bottom-bar {
     display: flex;
     bottom: 0;
     width: 100%;
-    margin: 10px 0;
     text-align: center;
+  }
+  footer .bottom-bar .col-3 {
+    padding: 0 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */
