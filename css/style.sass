@@ -82,6 +82,8 @@ a
         color: darken($color_gray,20%)
 // -----------------------------------------------------
 // 導覽列
+#navbar
+    transition: 0.5s
 .top-nav
     padding: 0
 .main-nav
@@ -93,25 +95,25 @@ a
 @media screen and ( max-width: 992px )
     .dropdown
         padding: 0
-
+// 下拉選單箭頭
 .dropdown-toggle::after
     content: ""
     border: none
     position: absolute
     top: 50%
     transform: translateY(-53%)
-    right: -14px
+    right: -13px
 /*nav*/
 .navbar 
     padding: 0
 // 第二層選單的寬度
 nav.navbar.bootsnav li.dropdown ul.dropdown-menu
     min-width: 100px
-
+// 選單樣式
 .navbar-nav
     align-items: center !important
     li
-        padding: 8px 15px 0 8px
+        padding: 8px 12px 0 12px
 @media screen and ( max-width: 992px )
     .navbar-nav
         display: block

@@ -88,6 +88,10 @@ a:active, a:focus, a:hover {
   color: #a1a1a1;
 }
 
+#navbar {
+  transition: 0.5s;
+}
+
 .top-nav {
   padding: 0;
 }
@@ -116,7 +120,7 @@ a:active, a:focus, a:hover {
   position: absolute;
   top: 50%;
   transform: translateY(-53%);
-  right: -14px;
+  right: -13px;
 }
 
 /*nav*/
@@ -133,7 +137,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
 }
 
 .navbar-nav li {
-  padding: 8px 15px 0 8px;
+  padding: 8px 12px 0 12px;
 }
 
 @media screen and (max-width: 992px) {

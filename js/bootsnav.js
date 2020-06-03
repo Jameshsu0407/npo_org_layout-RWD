@@ -121,7 +121,7 @@
                 // Add Class to body
                 $("nav.navbar.bootsnav").find("ul.nav").wrap("<div class='wrap-full-menu'></div>");
                 $(".wrap-full-menu").wrap("<div class='nav-full'></div>");
-                $("ul.nav.navbar-nav").prepend("<li class='close-full-menu'><a href='#'><i class='fa fa-times'></i></a></li>");
+                $("ul.nav.navbar-nav").prepend("<li class='close-full-menu'><a href='#'><i class='fa fa-bars'></i></a></li>");
             }else if( getNav.hasClass("navbar-mobile")){
                 getNav.removeClass("no-full");
             }else{
@@ -307,7 +307,7 @@
                         e.stopPropagation();
                         $(this).closest("li.dropdown").find(".dropdown-menu").first().stop().fadeToggle();
                         $(".navbar-toggle").each(function(){
-                            $(".fa", this).removeClass("fa-times");
+                            $(".fa", this).removeClass("fa-bars");
                             $(".fa", this).addClass("fa-bars");
                             $(".navbar-collapse").removeClass("in");
                             $(".navbar-collapse").removeClass("on");
@@ -326,7 +326,7 @@
                     $(this).off("click");
                     $(this).on("click", function(){
                         $(".fa", this).toggleClass("fa-bars");
-                        $(".fa", this).toggleClass("fa-times");
+                        $(".fa", this).toggleClass("fa-bars");
                         cleanOpen();
                     });
                 });
@@ -550,7 +550,7 @@
 
                     // Toggle Bars
                     $(".navbar-toggle").each(function(){
-                        $(".fa", this).removeClass("fa-times");
+                        $(".fa", this).removeClass("fa-bars");
                         $(".fa", this).addClass("fa-bars");
                     });
 
@@ -609,7 +609,7 @@
         
         // Toggle Bars
         $(".navbar-toggle").each(function(){
-            $(".fa", this).removeClass("fa-times");
+            $(".fa", this).removeClass("fa-bars");
             $(".fa", this).addClass("fa-bars");
             $(this).removeClass("fixed");
         });        
