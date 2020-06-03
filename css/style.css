@@ -4,7 +4,7 @@
 }
 
 * {
-  font-family: 微軟正黑體;
+  font-family: '微軟正黑體','標楷體','Arial';
 }
 
 *:focus, *:checked {
@@ -129,7 +129,7 @@ a:active, a:focus, a:hover {
 }
 
 nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
-  min-width: 100px;
+  min-width: 110px;
 }
 
 .navbar-nav {
@@ -715,8 +715,17 @@ li a {
   flex-direction: column;
 }
 
-#shop .good img {
+#shop .good .pic {
+  overflow: hidden;
+}
+
+#shop .good .pic img {
   box-shadow: 8px 10px 8px rgba(0, 0, 0, 0.15);
+}
+
+#shop .good .pic img:hover {
+  transition: 0.5s;
+  transform: rotate(10deg) scale(1.2);
 }
 
 #shop .good .title {

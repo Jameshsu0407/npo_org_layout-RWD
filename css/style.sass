@@ -12,7 +12,7 @@ $color_white: #fff
 // -----------------------------------------------------
 // 共同樣式、mixin
 *
-    font-family: 微軟正黑體
+    font-family: '微軟正黑體','標楷體','Arial'
     &:focus,&:checked
         outline: none !important
         border: none !important
@@ -108,7 +108,7 @@ a
     padding: 0
 // 第二層選單的寬度
 nav.navbar.bootsnav li.dropdown ul.dropdown-menu
-    min-width: 100px
+    min-width: 110px
 // 選單樣式
 .navbar-nav
     align-items: center !important
@@ -479,13 +479,6 @@ li
                 white-space: normal
                 line-height: 30px
                 height: 88px
-                // overflow: hidden
-                // display: -webkit-box
-                // -webkit-box-orient: vertical
-                // // Chrome&Safari
-                // -webkit-line-clamp: 3
-                // line-height: 30px
-                // height: 88px
     .newpostlist
         padding: 0 20px
         .list
@@ -564,8 +557,13 @@ li
     .good
         text-align: center
         flex-direction: column
-        img
-            box-shadow: 8px 10px 8px rgba(0,0,0,.15)
+        .pic
+            overflow: hidden
+            img
+                box-shadow: 8px 10px 8px rgba(0,0,0,.15)
+                &:hover
+                    transition: 0.5s
+                    transform: rotate(10deg) scale(1.2)
         .title
             +title
             padding-top: 20px
