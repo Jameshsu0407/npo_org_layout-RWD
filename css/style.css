@@ -112,6 +112,16 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
   position: relative;
 }
 
+.bg-yellow {
+  background-color: #ffd56f;
+}
+
+.top-search .input-group-addon {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
 #navbar.navbar.bootsnav {
   transition: 0.5s;
   padding: 0;
@@ -326,43 +336,6 @@ ul.nav.navbar-nav li ul.dropdown-menu li.drop-item a:hover {
   width: 100%;
 }
 
-.bg-yellow {
-  background-color: #ffd56f;
-}
-
-/*圖片自動縮放*/
-img {
-  vertical-align: middle;
-  margin: auto;
-  max-width: 100%;
-}
-
-/*nav*/
-.navbar-header button span {
-  position: absolute;
-  top: 8px;
-  bottom: 0;
-  width: 16px;
-  height: 3px;
-  background: #777;
-  margin-bottom: 2px;
-  display: block;
-  transition: 0.3s;
-  border-radius: 5px;
-}
-
-.navbar-header button:hover {
-  cursor: pointer;
-}
-
-.navbar-header button {
-  border: none;
-}
-
-.navbar-header button:focus {
-  outline: none;
-}
-
 @media (max-width: 992px) {
   nav.navbar.bootsnav ul.nav > li > a {
     font-weight: normal;
@@ -384,15 +357,6 @@ img {
   .navbar-expand-lg .navbar-nav > li {
     margin-left: 0px;
   }
-}
-
-.navbar-toggler {
-  padding: 0.25rem 0.75rem;
-  font-size: 1.25rem;
-  line-height: 1;
-  background-color: transparent;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
 }
 
 @media (min-width: 768px) {

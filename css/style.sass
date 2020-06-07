@@ -99,6 +99,14 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu
         padding: 0
     a
         position: relative
+// 顏色
+.bg-yellow 
+	background-color: $color_yellow
+// icon排列
+.top-search .input-group-addon
+    padding: 0
+    display: flex
+    align-items: center
 
 // 最上方導覽列最外層樣式
 #navbar.navbar.bootsnav
@@ -184,7 +192,7 @@ ul.drop-down-menu-top
                     &:hover
                         color: $color_yellow	
 
-// 沒有下拉式的nav
+// 沒有下拉式的nav調整
 li.no-dropdown
     a
         // 壓過bootsnav樣式
@@ -192,7 +200,6 @@ li.no-dropdown
         @media screen and ( max-width: 992px )
             //  壓過電腦版padding:0的important
             padding: 10px 0 !important
-
 // 選單樣式
 ul.nav.navbar-nav
     align-items: center
@@ -238,7 +245,7 @@ ul.nav.navbar-nav
                     @media screen and ( max-width: 992px )
                         // 壓過bootsnav樣式
                         color: $color_black !important
-// 選單樣式
+// 手機、平板選單樣式
 @media screen and ( max-width: 992px )
     ul.nav.navbar-nav
         display: block
@@ -259,58 +266,7 @@ ul.nav.navbar-nav
                 width: 250px
             img
                 width: 100%
-     
 
-// ------------------------------------list-inline
-// .list-inline
-// 	padding-left: 0
-// 	list-style: none
-// 	margin-left: -5px
-
-// .list-inline_01 > li 
-// 	display: inline-block
-// 	font-size: 1.25rem
-// 	color: #8b8b8b
-// 	padding: 10px
-// 	border-bottom: #ccc 1px dashed
-
-// .list-inline_01 > li > a 
-// 	color: #8b8b8b
-
-// .list-inline_01 > li > a:hover 
-// 	color: #e70014
-// ------------------------------------list-inline
-
-.bg-yellow 
-	background-color: $color_yellow
-
-/*圖片自動縮放*/
-img 
-	vertical-align: middle
-	margin: auto
-	max-width: 100%
-
-/*nav*/
-.navbar-header button span 
-	position: absolute
-	top: 8px
-	bottom: 0
-	width: 16px
-	height: 3px
-	background: #777
-	margin-bottom: 2px
-	display: block
-	transition: 0.3s
-	border-radius: 5px
-
-.navbar-header button:hover 
-	cursor: pointer
-
-.navbar-header button 
-	border: none
-
-.navbar-header button:focus 
-	outline: none
 
 @media (max-width: 992px) 
 	nav.navbar.bootsnav ul.nav > li > a 
@@ -330,14 +286,6 @@ img
 
 	.navbar-expand-lg .navbar-nav > li 
 		margin-left: 0px
-
-.navbar-toggler 
-	padding: 0.25rem 0.75rem
-	font-size: 1.25rem
-	line-height: 1
-	background-color: transparent
-	border: 1px solid transparent
-	border-radius: 0.25rem
 
 @media (min-width: 768px) 
 	.navbar-toggle 
@@ -363,9 +311,26 @@ img
 	flex-grow: 0
 	-ms-flex-align: center
 	align-items: center
-// li
-//     a
-//         padding: 0 !important
+
+// ------------------------------------list-inline
+// .list-inline
+// 	padding-left: 0
+// 	list-style: none
+// 	margin-left: -5px
+
+// .list-inline_01 > li 
+// 	display: inline-block
+// 	font-size: 1.25rem
+// 	color: #8b8b8b
+// 	padding: 10px
+// 	border-bottom: #ccc 1px dashed
+
+// .list-inline_01 > li > a 
+// 	color: #8b8b8b
+
+// .list-inline_01 > li > a:hover 
+// 	color: #e70014
+// ------------------------------------list-inline
 
 // --------------------------------------最上方導覽列二層之後的東西 
 // ul.drop-down-menu-top ul ul
