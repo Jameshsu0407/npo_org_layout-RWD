@@ -41,7 +41,7 @@ html,body
     margin-bottom: 10px
 
 section
-    +mtb
+    // +mtb
     h2
         font-weight: 700
         font-size: 24px
@@ -498,6 +498,7 @@ ul.nav.navbar-nav
 // 公益商城
 .shopbgc
     background-color: $color_orange
+    +mtb
 #shop
     +mtb
     display: flex
@@ -539,6 +540,7 @@ ul.nav.navbar-nav
 // -----------------------------------------------------
 // 公益新訊、急難救助、獎助學金
 #news
+    +mtb
     .list
         padding: 10px 0 7px 0
         span
@@ -549,6 +551,7 @@ ul.nav.navbar-nav
             margin-top: 8px
             margin-bottom: 10px
 #help
+    +mtb
     .list
         padding: 10px 0 7px 0
         span
@@ -559,6 +562,7 @@ ul.nav.navbar-nav
             margin-top: 8px
             margin-bottom: 10px
 #scholarship
+    +mtb
     .list
         padding: 10px 0 7px 0
         span
@@ -578,7 +582,7 @@ ul.nav.navbar-nav
     .pic
         display: flex
         justify-content: center
-        // padding: 15px
+        +mtb
         img
             width: 100%
 @media screen and ( max-width: 576px )
@@ -644,6 +648,20 @@ footer
             text-align: center
             .col-3
                 padding: 0 5px
-            
-            
-    
+// -----------------------------------------------------        
+// 2關於我們
+#about_us
+    .content_top
+        margin-top: 150px
+        h2.content_title
+            &::before
+                display: none
+        span.content_path
+            color: lighten($color_black,10% )
+        p
+            margin-top: 20px
+// -----------------------------------------------------        
+// 9.1廣告刊登
+
+// -----------------------------------------------------        
+// 9.2合作提案

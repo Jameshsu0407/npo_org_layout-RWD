@@ -19,11 +19,6 @@ html, body {
   position: relative;
 }
 
-section {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
 section h2 {
   font-weight: 700;
   font-size: 24px;
@@ -632,6 +627,8 @@ ul.nav.navbar-nav li ul.dropdown-menu li.drop-item a:hover {
 
 .shopbgc {
   background-color: #F7C280;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 #shop {
@@ -695,6 +692,11 @@ ul.nav.navbar-nav li ul.dropdown-menu li.drop-item a:hover {
   }
 }
 
+#news {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 #news .list {
   padding: 10px 0 7px 0;
 }
@@ -710,6 +712,11 @@ ul.nav.navbar-nav li ul.dropdown-menu li.drop-item a:hover {
   margin-bottom: 10px;
 }
 
+#help {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 #help .list {
   padding: 10px 0 7px 0;
 }
@@ -723,6 +730,11 @@ ul.nav.navbar-nav li ul.dropdown-menu li.drop-item a:hover {
 #help .list .text {
   margin-top: 8px;
   margin-bottom: 10px;
+}
+
+#scholarship {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 #scholarship .list {
@@ -750,6 +762,8 @@ ul.nav.navbar-nav li ul.dropdown-menu li.drop-item a:hover {
 #bottom_ads .pic {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 #bottom_ads .pic img {
@@ -845,5 +859,21 @@ footer .bottom-bar a:hover {
   footer .bottom-bar .col-3 {
     padding: 0 5px;
   }
+}
+
+#about_us .content_top {
+  margin-top: 150px;
+}
+
+#about_us .content_top h2.content_title::before {
+  display: none;
+}
+
+#about_us .content_top span.content_path {
+  color: #4b545c;
+}
+
+#about_us .content_top p {
+  margin-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */

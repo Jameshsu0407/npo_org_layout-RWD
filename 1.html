@@ -73,7 +73,7 @@
           aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa fa-bars fa-lg"></i>
         </button>
-        <a class="navbar-brand" href="index.html"><img src="./img/logo/NPOlogo.png"></a>
+        <a class="navbar-brand" href="./1.html"><img src="./img/logo/NPOlogo.png"></a>
       </div>
 
       <!-- End Header Navigation -->
@@ -562,7 +562,7 @@
         </div>
         <div class="bottom-bar col-12 col-md-8 order-3 mx-auto">
           <div class="col-3">
-            <a href="#">
+            <a href="./2.html">
               關於我們
             </a>
           </div>
@@ -601,7 +601,6 @@
   <!-- back to top -->
   <script>
     mybutton = document.getElementById("backToTop");
-    window.onscroll = function () { scrollFunction() };
 
     function scrollFunction() {
       if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -618,9 +617,16 @@
   <!-- 手機版視窗滾動收回導覽列 -->
   <script>
     var prevScrollpos = window.pageYOffset;
-    window.onscroll = function () {
+    function removeShow() {
       var element = document.getElementById("navbar-menu");
       element.classList.remove("show");
+    }
+  </script>
+
+  <script>
+    window.onscroll = function(){
+      scrollFunction();
+      removeShow();
     }
   </script>
 
