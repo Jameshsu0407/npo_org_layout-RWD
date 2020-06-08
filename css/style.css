@@ -79,13 +79,12 @@ section h2:before {
 }
 
 a {
-  color: #B5B8A3;
+  color: #343A40;
 }
 
 a:active, a:focus, a:hover {
   text-decoration: none;
   outline: none;
-  color: #868a6b;
 }
 
 ul {
@@ -715,7 +714,6 @@ ul.nav.navbar-nav li ul.dropdown-menu li.drop-item a:hover {
 #bottom_ads .pic {
   display: flex;
   justify-content: center;
-  padding: 15px;
 }
 
 #bottom_ads .pic img {
@@ -728,10 +726,10 @@ ul.nav.navbar-nav li ul.dropdown-menu li.drop-item a:hover {
     margin-bottom: 50px;
   }
   #bottom_ads .pic {
-    padding: 30px;
+    padding: 30px 0;
   }
   #bottom_ads .pic img {
-    height: 100%;
+    width: 100%;
   }
 }
 
@@ -756,6 +754,10 @@ footer .footer-right .input-group {
   margin-bottom: 15px;
 }
 
+footer .footer-right .input-group #suscribe {
+  margin: 0;
+}
+
 footer .footer-right .supports {
   display: flex;
   flex-wrap: wrap;
@@ -776,6 +778,14 @@ footer .bottom-bar {
   text-align: center;
   align-items: center;
   padding: 5px 0;
+}
+
+footer .bottom-bar a {
+  transition: 0.5s;
+}
+
+footer .bottom-bar a:hover {
+  color: #fff;
 }
 
 @media screen and (max-width: 576px) {
