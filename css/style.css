@@ -16,6 +16,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 section {
@@ -91,6 +92,32 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+#backToTop {
+  position: fixed;
+  right: 50px;
+  bottom: 100px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+#backToTop .circle {
+  width: 100px;
+  height: 100px;
+  background-image: url(../img/gototop.png);
+  background-size: cover;
+}
+
+@media screen and (max-width: 576px) {
+  #backToTop {
+    right: 10px;
+    bottom: 40px;
+  }
+  #backToTop .circle {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
@@ -443,6 +470,15 @@ ul.nav.navbar-nav li ul.dropdown-menu li.drop-item a:hover {
   text-align: center;
 }
 
+@media screen and (max-width: 576px) {
+  #searchandlogin .login .login-btn a h4 {
+    font-size: 20px;
+  }
+  #searchandlogin .login .login-btn a i {
+    font-size: 35px;
+  }
+}
+
 #newpost {
   display: flex;
   flex-wrap: wrap;
@@ -737,7 +773,11 @@ footer {
   margin-top: 50px;
   background-color: #F7C280;
   width: 100%;
-  padding: 50px 0;
+  padding: 50px 0 20px 0;
+}
+
+footer .footer-left {
+  padding-top: 40px;
 }
 
 footer .footer-left p {
@@ -777,7 +817,8 @@ footer .bottom-bar {
   flex-wrap: wrap;
   text-align: center;
   align-items: center;
-  padding: 5px 0;
+  padding: 20px 0 0 0;
+  max-width: 500px;
 }
 
 footer .bottom-bar a {
@@ -785,7 +826,7 @@ footer .bottom-bar a {
 }
 
 footer .bottom-bar a:hover {
-  color: #fff;
+  color: #FA9C25;
 }
 
 @media screen and (max-width: 576px) {

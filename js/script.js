@@ -17,9 +17,7 @@ $('#activity_card').slick({
 
 $(function () {
     $('#bootnavbar').bootnavbar({
-      //options
-
-      //animation: false
-
     });
 })
+
+
