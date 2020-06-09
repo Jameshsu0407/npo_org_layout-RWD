@@ -16,8 +16,8 @@ $color_white: #fff
 *
     font-family: '微軟正黑體','標楷體','Arial'
     &:focus,&:checked
-        outline: none !important
-        border: none !important
+        outline: none
+        border: none
         box-shadow: none !important
             
 html,body
@@ -586,10 +586,10 @@ ul.nav.navbar-nav
         img
             width: 100%
 @media screen and ( max-width: 576px )
-    #bottom_ads
-        +mtb   
+    #bottom_ads 
         .pic
             padding: 30px 0
+            margin: 0
             img
                 width: 100%  
 
@@ -662,6 +662,49 @@ footer
             margin-top: 20px
 // -----------------------------------------------------        
 // 9.1廣告刊登
-
+#post_ads
+    .content_top
+        margin-top: 150px
+        h2.content_title
+            &::before
+                display: none
+        span.content_path
+            color: lighten($color_black,10% )
+        p
+            margin-top: 20px
 // -----------------------------------------------------        
-// 9.2合作提案
+// 9.2合作提案、9.3線上客服
+#coorperate,#online_service
+    .content_top
+        margin-top: 150px
+        h2.content_title
+            &::before
+                display: none
+        span.content_path
+            color: lighten($color_black,10% )
+        p
+            margin-top: 20px
+        .box
+            display: flex
+            flex-wrap: wrap
+            textarea,input
+                border: 1px solid $color_gray
+                transition: 0.5s
+                &:focus,&:active
+                    border-color: $color_dark_orange
+            .btns
+                display: flex
+                justify-content: flex-end
+                @media screen and ( max-width: 576px )
+                    justify-content: center
+                .cooperate_button,.online_service_button
+                    display: block
+                    background-color: $color_dark_orange
+                    padding: 5px 40px
+                    margin: 0 15px
+                #cooperate_reset,#online_service_reset
+                    background-color: $color_light_gray
+                #cooperate_submit,#online_service_submit
+                    color: $color_white
+// -----------------------------------------------------        
+// 

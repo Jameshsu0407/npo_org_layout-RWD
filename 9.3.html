@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>關於我們</title>
+  <title>線上客服</title>
   <!-- BT4 -->
   <link rel="stylesheet" href="./css/bootstrap.css">
   <!-- slick -->
@@ -139,12 +139,60 @@
 
   </nav>
 
-  <section class="container" id="about_us">
+  <section class="container" id="online_service">
     <div class="row">
       <div class="content_top col-12">
-        <h2 class="content_title col-12">關於我們</h2>
-        <span class="content_path col-12">首頁 > 關於我們</span>
-        <p class="col-12">單元頁，放內文Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse est modi maiores explicabo, facilis tenetur quae quod ab? Esse minima, voluptatibus repellendus totam, voluptates velit aperiam nihil tempore sequi suscipit iure id, aut fugiat impedit aspernatur enim laborum soluta? Repellendus laborum corporis expedita, vitae ullam error deleniti non sit neque beatae optio dicta perspiciatis amet saepe, necessitatibus consequatur tempora? Aspernatur rerum nulla reprehenderit enim incidunt amet consequatur soluta earum perspiciatis voluptatem modi velit, repudiandae id facilis beatae saepe voluptate quisquam nisi porro, magni maxime nihil officiis. Tenetur hic sapiente numquam possimus totam fugiat amet at cumque perspiciatis, quas animi reiciendis!</p>
+        <h2 class="content_title col-12">線上客服</h2>
+        <span class="content_path col-12">首頁 > 支援服務 > 線上客服</span>
+        <p class="col-12">
+          1．台灣公益資訊中心僅提供網站會員自行刊登徵才、活動、物資訊息等服務，不提供代刊服務，不便之處還請見諒。<br>
+          2．一般使用者或會員若有任何網站使用操作問題及建議，歡迎來信諮詢，我們將竭誠為您服務。<br>
+          3．會員來信請註明貴單位名稱與機構代碼，以利中心同仁為您服務。<br>
+          4．網站內容部分均屬會員提供發佈，若對內容有任何問題，煩請直接與發佈內容的會員團體聯繫，謝謝您的配合。</p>
+        <form class="box">
+          <!-- left box -->
+          <div class="left-box col-12 col-md-6">
+            <div class="form-group col-12">
+              <label>名字</label>
+              <input type="text" class="form-control" placeholder="請輸入姓名" required="required">
+            </div>
+            <div class="form-group col-12">
+              <label>Email</label>
+              <input type="email" class="form-control" placeholder="請輸入Email" required="required">
+            </div>
+            <div class="form-group col-12">
+              <label>機構代碼</label>
+              <input type="number" class="form-control" placeholder="請輸入機構代碼" required="required">
+            </div>
+            <div class="form-group col-12">
+              <label>單位名稱</label>
+              <input type="text" class="form-control" placeholder="請輸入單位名稱" required="required">
+            </div>
+          </div>
+          <!-- right box -->
+          <div class="right-box col-12 col-md-6">
+            <div class="form-group col-12">
+              <label>主旨</label>
+              <input type="text" class="form-control" placeholder="請輸入主旨" required="required">
+            </div>
+            <div class="form-group col-12">
+              <label>說明</label>
+              <textarea class="form-control" cols="30" rows="5" placeholder="請輸入想說的內容" required="required"></textarea>
+            </div>
+            <div class="form-group col-8">
+              <label>驗證碼</label>
+              <input type="text" class="form-control" required="required">
+            </div>
+          </div>
+          <!-- button -->
+          <div class="btns col-12">
+            <button class="btn online_service_button" type="reset" id="online_service_reset">取消</button>
+            <button class="btn online_service_button" type="submit" id="online_service_submit">送出</button>
+          </div>
+          
+          
+          
+        </form>
       </div>
       
     </div>

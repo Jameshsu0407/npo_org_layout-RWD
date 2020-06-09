@@ -8,8 +8,8 @@
 }
 
 *:focus, *:checked {
-  outline: none !important;
-  border: none !important;
+  outline: none;
+  border: none;
   box-shadow: none !important;
 }
 
@@ -771,12 +771,9 @@ ul.nav.navbar-nav li ul.dropdown-menu li.drop-item a:hover {
 }
 
 @media screen and (max-width: 576px) {
-  #bottom_ads {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
   #bottom_ads .pic {
     padding: 30px 0;
+    margin: 0;
   }
   #bottom_ads .pic img {
     width: 100%;
@@ -875,5 +872,77 @@ footer .bottom-bar a:hover {
 
 #about_us .content_top p {
   margin-top: 20px;
+}
+
+#post_ads .content_top {
+  margin-top: 150px;
+}
+
+#post_ads .content_top h2.content_title::before {
+  display: none;
+}
+
+#post_ads .content_top span.content_path {
+  color: #4b545c;
+}
+
+#post_ads .content_top p {
+  margin-top: 20px;
+}
+
+#coorperate .content_top, #online_service .content_top {
+  margin-top: 150px;
+}
+
+#coorperate .content_top h2.content_title::before, #online_service .content_top h2.content_title::before {
+  display: none;
+}
+
+#coorperate .content_top span.content_path, #online_service .content_top span.content_path {
+  color: #4b545c;
+}
+
+#coorperate .content_top p, #online_service .content_top p {
+  margin-top: 20px;
+}
+
+#coorperate .content_top .box, #online_service .content_top .box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#coorperate .content_top .box textarea, #coorperate .content_top .box input, #online_service .content_top .box textarea, #online_service .content_top .box input {
+  border: 1px solid #B5B8A3;
+  transition: 0.5s;
+}
+
+#coorperate .content_top .box textarea:focus, #coorperate .content_top .box textarea:active, #coorperate .content_top .box input:focus, #coorperate .content_top .box input:active, #online_service .content_top .box textarea:focus, #online_service .content_top .box textarea:active, #online_service .content_top .box input:focus, #online_service .content_top .box input:active {
+  border-color: #FA9C25;
+}
+
+#coorperate .content_top .box .btns, #online_service .content_top .box .btns {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 576px) {
+  #coorperate .content_top .box .btns, #online_service .content_top .box .btns {
+    justify-content: center;
+  }
+}
+
+#coorperate .content_top .box .btns .cooperate_button, #coorperate .content_top .box .btns .online_service_button, #online_service .content_top .box .btns .cooperate_button, #online_service .content_top .box .btns .online_service_button {
+  display: block;
+  background-color: #FA9C25;
+  padding: 5px 40px;
+  margin: 0 15px;
+}
+
+#coorperate .content_top .box .btns #cooperate_reset, #coorperate .content_top .box .btns #online_service_reset, #online_service .content_top .box .btns #cooperate_reset, #online_service .content_top .box .btns #online_service_reset {
+  background-color: #d4d4d4;
+}
+
+#coorperate .content_top .box .btns #cooperate_submit, #coorperate .content_top .box .btns #online_service_submit, #online_service .content_top .box .btns #cooperate_submit, #online_service .content_top .box .btns #online_service_submit {
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
