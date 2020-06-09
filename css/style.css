@@ -929,6 +929,55 @@ footer .bottom-bar a:hover {
   background-color: initial;
 }
 
+#npo_list .content_top {
+  margin-top: 150px;
+}
+
+#npo_list .content_top h2.content_title::before {
+  display: none;
+}
+
+#npo_list .content_top span.content_path {
+  color: #4b545c;
+}
+
+#npo_list .content_top p {
+  margin-top: 20px;
+}
+
+#npo_list .content_top .table {
+  margin-top: 20px;
+}
+
+#npo_list .content_top .table .thead-color {
+  background-color: #F7C280;
+}
+
+#npo_list .content_top .table .clickable-row {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#npo_list .content_top .table .clickable-row:hover {
+  color: #FA9C25;
+}
+
+#npo_list .content_top .page {
+  display: flex;
+  justify-content: center;
+}
+
+#npo_list .content_top .page li.page-item a.page-link {
+  transition: 0.5s;
+  color: #B5B8A3;
+}
+
+#npo_list .content_top .page li.page-item a.page-link:hover {
+  color: #FA9C25;
+  border-color: #FA9C25;
+  background-color: initial;
+}
+
 #post_ads .content_top {
   margin-top: 150px;
 }
