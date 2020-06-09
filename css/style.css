@@ -925,6 +925,8 @@ footer .bottom-bar a:hover {
 
 #welfare_shop .content_top .page li.page-item a.page-link:hover {
   color: #FA9C25;
+  border-color: #FA9C25;
+  background-color: initial;
 }
 
 #post_ads .content_top {
