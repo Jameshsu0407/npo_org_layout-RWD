@@ -945,4 +945,10 @@ footer .bottom-bar a:hover {
 #coorperate .content_top .box .btns #cooperate_submit, #coorperate .content_top .box .btns #online_service_submit, #online_service .content_top .box .btns #cooperate_submit, #online_service .content_top .box .btns #online_service_submit {
   color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+  #coorperate .left-box, #coorperate .right-box, #online_service .left-box, #online_service .right-box {
+    padding: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */
