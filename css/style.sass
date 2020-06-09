@@ -533,9 +533,7 @@ ul.nav.navbar-nav
         .lookmore
             margin: initial
             margin-top: 10px
-            margin-left: auto
-
-        
+            margin-left: auto    
 
 // -----------------------------------------------------
 // 公益新訊、急難救助、獎助學金
@@ -660,6 +658,43 @@ footer
             color: lighten($color_black,10% )
         p
             margin-top: 20px
+// -----------------------------------------------------        
+// 7公益商城
+#welfare_shop
+    .content_top
+        margin-top: 150px
+        h2.content_title
+            &::before
+                display: none
+        span.content_path
+            color: lighten($color_black,10% )
+        .products
+            display: flex
+            flex-wrap: wrap
+            margin-top: 20px
+            text-align: center
+            .title
+                +title
+                padding-top: 20px
+            .pic
+                overflow: hidden
+                img
+                    box-shadow: 8px 10px 8px rgba(0,0,0,.15)
+                    &:hover
+                        transition: 0.5s
+                        transform: rotate(10deg) scale(1.2)
+        .page
+            display: flex
+            justify-content: center
+            li.page-item
+                a.page-link
+                    transition: 0.5s
+                    color: $color_gray
+                    &:hover
+                        color: $color_dark_orange
+
+
+
 // -----------------------------------------------------        
 // 9.1廣告刊登
 #post_ads

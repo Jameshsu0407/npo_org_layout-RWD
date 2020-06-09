@@ -874,6 +874,59 @@ footer .bottom-bar a:hover {
   margin-top: 20px;
 }
 
+#welfare_shop .content_top {
+  margin-top: 150px;
+}
+
+#welfare_shop .content_top h2.content_title::before {
+  display: none;
+}
+
+#welfare_shop .content_top span.content_path {
+  color: #4b545c;
+}
+
+#welfare_shop .content_top .products {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#welfare_shop .content_top .products .title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 0;
+  padding-top: 20px;
+}
+
+#welfare_shop .content_top .products .pic {
+  overflow: hidden;
+}
+
+#welfare_shop .content_top .products .pic img {
+  box-shadow: 8px 10px 8px rgba(0, 0, 0, 0.15);
+}
+
+#welfare_shop .content_top .products .pic img:hover {
+  transition: 0.5s;
+  transform: rotate(10deg) scale(1.2);
+}
+
+#welfare_shop .content_top .page {
+  display: flex;
+  justify-content: center;
+}
+
+#welfare_shop .content_top .page li.page-item a.page-link {
+  transition: 0.5s;
+  color: #B5B8A3;
+}
+
+#welfare_shop .content_top .page li.page-item a.page-link:hover {
+  color: #FA9C25;
+}
+
 #post_ads .content_top {
   margin-top: 150px;
 }
