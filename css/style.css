@@ -945,6 +945,19 @@ footer .bottom-bar a:hover {
   margin-top: 20px;
 }
 
+#npo_list .content_top .selector {
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  background-color: #F7C280;
+}
+
+#npo_list .content_top .selector .select_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 #npo_list .content_top .table {
   margin-top: 20px;
 }
