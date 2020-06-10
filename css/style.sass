@@ -87,10 +87,24 @@ ul
 	margin: 0
 	padding: 0
 	list-style: none
-// 手機樣式內容的padding為0
+
+// 手機樣式控制
 @media screen and ( max-width: 576px )
     .content_top
         padding: 0
+    // 在手機上不顯示
+    .off
+        display: none
+// 麵包屑樣式
+.breadcrumb
+    background-color: initial
+    border-radius: initial
+    padding-top: 0
+    padding-bottom: 0
+    a
+        transition: 0.5s
+        &:hover
+            color: $color_dark_orange
 // -----------------------------------------------------
 // backtotop
 #backToTop
@@ -130,7 +144,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu
     padding: 0
     display: flex
     align-items: center
-
 // 最上方導覽列最外層樣式
 #navbar.navbar.bootsnav
     transition: 0.5s
@@ -145,7 +158,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu
                     // 上方縮圖到中間
                     text-align: center
                     padding: 5px 0
-
 // 最上方導覽列共同樣式
 ul.drop-down-menu-top
     font-size: 13px
@@ -168,8 +180,7 @@ ul.drop-down-menu-top
         display: block
         padding: 0
         text-decoration: none
-        line-height: 35px
-                
+        line-height: 35px             
 // 最上方導覽列個別樣式
 ul.drop-down-menu-top
     li.sub-drop-down-menu-top
@@ -214,7 +225,6 @@ ul.drop-down-menu-top
                     line-height: 35px
                     &:hover
                         color: $color_yellow	
-
 // 沒有下拉式的nav調整
 li.no-dropdown
     a
@@ -277,7 +287,6 @@ ul.nav.navbar-nav
             ul.dropdown-menu
                 li
                     padding: 10px !important
-
 // 主要導覽列
 .main-nav
     padding: 10px 0
@@ -289,44 +298,31 @@ ul.nav.navbar-nav
                 width: 250px
             img
                 width: 100%
-
-
 @media (max-width: 992px) 
 	nav.navbar.bootsnav ul.nav > li > a 
 		font-weight: normal
 	
 	.navbar-expand-lg .navbar-nav > li 
 		margin-left: 30px
-
 @media (max-width: 992px) 
 	nav.navbar.bootsnav .navbar-collapse.collapse.show 
 		display: block !important
 		overflow-x: hidden
-
 	nav.navbar.bootsnav .navbar-nav 
 		padding-top: 25px
 		margin-left: 0px
-
 	.navbar-expand-lg .navbar-nav > li 
 		margin-left: 0px
-
 @media (min-width: 768px) 
 	.navbar-toggle 
 		display: none
-
-// @media (min-width: 992px)
-// 	.navbar-expand-lg .navbar-collapse
-// 		margin-top: 15px
-
 /*手機logo區塊*/
 @media (max-width: 992px) 
 	.navbar .container 
 		display: block
-
 @media (max-width: 992px)
     nav.navbar.bootsnav .navbar-nav > li > a
         border-top: none
-
 .navbar-collapse 
 	-ms-flex-preferred-size: 100%
 	flex-basis: 100%
@@ -334,23 +330,6 @@ ul.nav.navbar-nav
 	flex-grow: 0
 	-ms-flex-align: center
 	align-items: center
-
-// --------------------------------------最上方導覽列二層之後的東西 
-// ul.drop-down-menu-top ul ul
-// 	// 第三層以後的選單出現位置與第二層不同
-// 	z-index: 999
-// 	top: 10px
-// 	left: 90%
-
-// ul.drop-down-menu-top li:hover > ul ul
-// 	// 滑鼠滑入之後、次選單之後的選單依舊隱藏
-// 	left: 99999px
-
-// ul.drop-down-menu-top ul li:hover > ul
-// 	// 第二層之後的選單展開位置
-// 	left: 90%
-// --------------------------------------最上方導覽列二層之後的東西 
-
 // -----------------------------------------------------
 // 上層廣告
 #top-ads
@@ -393,7 +372,6 @@ ul.nav.navbar-nav
                 color: #f24
                 font-weight: 600
                 text-align: center
-
 @media screen and ( max-width: 576px )
     #searchandlogin
         .login
@@ -402,8 +380,7 @@ ul.nav.navbar-nav
                     h4
                         font-size: 20px
                     i
-                        font-size: 35px
-        
+                        font-size: 35px    
 // -----------------------------------------------------
 // 最新活動
 #newpost
@@ -436,7 +413,6 @@ ul.nav.navbar-nav
         .list
             padding-top: 20px
             padding-bottom: 10px
-
 @media screen and ( max-width: 576px )
     #newpost
         margin-top: 50px
@@ -459,8 +435,7 @@ ul.nav.navbar-nav
             +title
             color: $color_dark_orange
         .donateorg,.donatenumber
-            font-size: 16px       
-        
+            font-size: 16px             
 @media screen and ( max-width: 576px )
     #donate
         margin-top: 0
@@ -490,7 +465,6 @@ ul.nav.navbar-nav
                 color: white
                 font-weight: 600
                 font-size: 12px
-
 @media screen and ( max-width: 576px )
     #bank
         margin-top: 0
@@ -538,7 +512,6 @@ ul.nav.navbar-nav
             margin: initial
             margin-top: 10px
             margin-left: auto    
-
 // -----------------------------------------------------
 // 公益新訊、急難救助、獎助學金
 #news
@@ -703,10 +676,47 @@ footer
                         color: $color_dark_orange
                         border-color: $color_dark_orange
                         background-color: initial
-@media screen and ( max-width: 768px )
-    #npo_donate
-        .off
-            display: none
+// -----------------------------------------------------        
+// 5.2企業提供
+#npo_donate
+    .content_top
+        margin-top: 150px
+        h2.content_title
+            &::before
+                display: none
+        span.content_path
+            color: lighten($color_black,10% )
+        p
+            margin-top: 20px
+        .selector
+            padding: 15px 20px
+            margin-bottom: 20px
+            background-color: $color_orange
+            .select_wrap
+                display: flex
+                flex-wrap: wrap
+                margin-top: 5px
+                margin-bottom: 5px
+        .table
+            margin-top: 20px
+            .thead-color
+                background-color: $color_orange
+            .clickable-row
+                cursor: pointer
+                transition: 0.5s
+                &:hover
+                    color: $color_dark_orange
+        .page
+            display: flex
+            justify-content: center
+            li.page-item
+                a.page-link
+                    transition: 0.5s
+                    color: $color_gray
+                    &:hover
+                        color: $color_dark_orange
+                        border-color: $color_dark_orange
+                        background-color: initial
 // -----------------------------------------------------        
 // 7公益商城
 #welfare_shop
@@ -794,7 +804,6 @@ footer
                         color: $color_dark_orange
                         border-color: $color_dark_orange
                         background-color: initial
-
 // -----------------------------------------------------        
 // 9.1廣告刊登
 #post_ads
