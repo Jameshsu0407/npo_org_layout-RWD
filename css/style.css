@@ -89,10 +89,11 @@ ul {
   list-style: none;
 }
 
+.content_top {
+  padding: 0;
+}
+
 @media screen and (max-width: 576px) {
-  .content_top {
-    padding: 0;
-  }
   .off {
     display: none;
   }
@@ -896,6 +897,74 @@ footer .bottom-bar a:hover {
 
 #about_us .content_top p {
   margin-top: 20px;
+}
+
+#npo_video .content_top {
+  margin-top: 150px;
+}
+
+#npo_video .content_top h2.content_title::before {
+  display: none;
+}
+
+#npo_video .content_top span.content_path {
+  color: #4b545c;
+}
+
+#npo_video .content_top .selector {
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: #F7C280;
+}
+
+#npo_video .content_top .selector .select_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#npo_video .content_top .videos_img {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+#npo_video .content_top .videos_img .title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 0;
+  padding-top: 20px;
+}
+
+#npo_video .content_top .videos_img .pic {
+  overflow: hidden;
+}
+
+#npo_video .content_top .videos_img .pic img {
+  box-shadow: 8px 10px 8px rgba(0, 0, 0, 0.15);
+}
+
+#npo_video .content_top .videos_img .pic img:hover {
+  transition: 0.5s;
+  transform: rotate(10deg) scale(1.2);
+}
+
+#npo_video .content_top .page {
+  display: flex;
+  justify-content: center;
+}
+
+#npo_video .content_top .page li.page-item a.page-link {
+  transition: 0.5s;
+  color: #B5B8A3;
+}
+
+#npo_video .content_top .page li.page-item a.page-link:hover {
+  color: #FA9C25;
+  border-color: #FA9C25;
+  background-color: initial;
 }
 
 #npo_donate .content_top {
