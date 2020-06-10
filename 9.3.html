@@ -22,8 +22,8 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-  <a onclick="topFunction()" id="backToTop">
+<body id="top">
+  <a href="#top" id="backToTop">
     <div class="circle"></div>
   </a>
   <nav id="navbar" class="navbar navbar-expand-lg navbar-fixed bootsnav bg-white">
@@ -304,23 +304,6 @@
   <script src="./js/bootsnav.js"></script>
   <!-- script -->
   <script src="./js/script.js"></script>
-  <!-- back to top -->
-  <script>
-    mybutton = document.getElementById("backToTop");
-    window.onscroll = function () { scrollFunction() };
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-    function topFunction() {
-      document.body.scrollTop = 0; 
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  </script>
   <!-- 手機版視窗滾動收回導覽列 -->
   <script>
     var prevScrollpos = window.pageYOffset;
@@ -329,16 +312,13 @@
       element.classList.remove("show");
     }
   </script>
-
+  <!-- window.onscroll -->
   <script>
     window.onscroll = function(){
       scrollFunction();
       removeShow();
     }
   </script>
-
 </body>
-
-
 
 </html>
