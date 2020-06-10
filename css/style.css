@@ -880,6 +880,74 @@ footer .bottom-bar a:hover {
   margin-top: 20px;
 }
 
+#npo_donate .content_top {
+  margin-top: 150px;
+}
+
+#npo_donate .content_top h2.content_title::before {
+  display: none;
+}
+
+#npo_donate .content_top span.content_path {
+  color: #4b545c;
+}
+
+#npo_donate .content_top p {
+  margin-top: 20px;
+}
+
+#npo_donate .content_top .selector {
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  background-color: #F7C280;
+}
+
+#npo_donate .content_top .selector .select_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#npo_donate .content_top .table {
+  margin-top: 20px;
+}
+
+#npo_donate .content_top .table .thead-color {
+  background-color: #F7C280;
+}
+
+#npo_donate .content_top .table .clickable-row {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#npo_donate .content_top .table .clickable-row:hover {
+  color: #FA9C25;
+}
+
+#npo_donate .content_top .page {
+  display: flex;
+  justify-content: center;
+}
+
+#npo_donate .content_top .page li.page-item a.page-link {
+  transition: 0.5s;
+  color: #B5B8A3;
+}
+
+#npo_donate .content_top .page li.page-item a.page-link:hover {
+  color: #FA9C25;
+  border-color: #FA9C25;
+  background-color: initial;
+}
+
+@media screen and (max-width: 768px) {
+  #npo_donate .off {
+    display: none;
+  }
+}
+
 #welfare_shop .content_top {
   margin-top: 150px;
 }

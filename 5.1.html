@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>關於我們</title>
+  <title>物資募集</title>
   <!-- BT4 -->
   <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/">
   <!-- slick -->
   <link rel="stylesheet" href="./css/slick.css">
   <link rel="stylesheet" href="./css/slick-theme.css">
@@ -139,14 +140,197 @@
 
   </nav>
 
-  <section class="container" id="about_us">
+  <section class="container" id="npo_donate">
     <div class="row">
       <div class="content_top col-12">
-        <h2 class="content_title col-12">關於我們</h2>
-        <span class="content_path col-12">首頁 > 關於我們</span>
-        <p class="col-12">單元頁，放內文Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse est modi maiores explicabo, facilis tenetur quae quod ab? Esse minima, voluptatibus repellendus totam, voluptates velit aperiam nihil tempore sequi suscipit iure id, aut fugiat impedit aspernatur enim laborum soluta? Repellendus laborum corporis expedita, vitae ullam error deleniti non sit neque beatae optio dicta perspiciatis amet saepe, necessitatibus consequatur tempora? Aspernatur rerum nulla reprehenderit enim incidunt amet consequatur soluta earum perspiciatis voluptatem modi velit, repudiandae id facilis beatae saepe voluptate quisquam nisi porro, magni maxime nihil officiis. Tenetur hic sapiente numquam possimus totam fugiat amet at cumque perspiciatis, quas animi reiciendis!</p>
+        <h2 class="content_title col-12">物資募集</h2>
+        <span class="content_path col-12">首頁 > 物資募集</span>
+        <div class="table col-12">
+          <form class="form-inline col-12 selector">
+            <div class="select_wrap col-8 col-md-4">
+              <input type="text" class="form-control col-12" placeholder="請輸入物資">
+            </div>
+            <div class="select_wrap col-4 col-md-2">
+              <select class="custom-select col-12 welfare_type">
+                <option selected disabled>請選擇類型</option>
+                <option>食品</option>
+                <option>餐廚</option>
+                <option>衣物</option>
+                <option>鞋襪</option>
+                <option>家具</option>
+              </select>
+            </div>
+            <div class="select_wrap col-4 col-md-2">
+              <select class="custom-select col-12 region">
+                <option selected disabled>請選擇年份</option>
+                <option>2020</option>
+                <option>2019</option>
+                <option>2018</option>
+                <option>2017</option>
+                <option>2016</option>
+              </select>
+            </div>
+            <div class="select_wrap col-4 col-md-2">
+              <select class="custom-select col-12 welfare_type">
+                <option selected disabled>請選擇月份</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+              </select>
+            </div>
+            <div class="select_wrap col-4 col-md-2">
+              <button type="button" class="btn lookmore col-12 m-0" type="submit">送出</button>
+            </div>
+          </form>
+          <table class="col-12">
+            <thead class="thead-color text-center">
+              <tr>
+                <th scope="col">物資類型</th>
+                <th scope="col">物資名稱</th>
+                <th scope="col" class="off">開始日期</th>
+                <th scope="col" class="off">結束日期</th>
+                <th scope="col">募集地區</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class='clickable-row' data-href='#'>
+                <th scope="row" class="text-center">家電</th>
+                <th class="text-center">筆記型電腦</th>
+                <td class="text-center off">2020/06/05</td>
+                <td class="text-center off">2020/06/19</td>
+                <td class="text-center">台北市</td>
+              </tr>
+              <tr class='clickable-row' data-href='#'>
+                <th scope="row" class="text-center">家電</th>
+                <th class="text-center">冰箱</th>
+                <td class="text-center off">2020/06/05</td>
+                <td class="text-center off">2020/06/19</td>
+                <td class="text-center">台南市</td>
+              </tr>
+              <tr class='clickable-row' data-href='#'>
+                <th scope="row" class="text-center">家電</th>
+                <th class="text-center">除濕機</th>
+                <td class="text-center off">2020/06/04</td>
+                <td class="text-center off">2020/07/30</td>
+                <td class="text-center">雲林縣</td>
+              </tr>
+              <tr class='clickable-row' data-href='#'>
+                <th scope="row" class="text-center">家電</th>
+                <th class="text-center">分離式冷氣機</th>
+                <td class="text-center off">2020/06/04</td>
+                <td class="text-center off">2020/07/30</td>
+                <td class="text-center">雲林縣</td>
+              </tr>
+              <tr class='clickable-row' data-href='#'>
+                <th scope="row" class="text-center">衛生</th>
+                <th class="text-center">成人紙尿褲(L-XL)、替換式小尿片</th>
+                <td class="text-center off">2020/06/02</td>
+                <td class="text-center off">2020/07/28</td>
+                <td class="text-center">彰化縣</td>
+              </tr>
+              <tr class='clickable-row' data-href='#'>
+                <th scope="row" class="text-center">食品</th>
+                <th class="text-center">三多奶蛋白/三多優蛋白/一般奶粉</th>
+                <td class="text-center off">2020/06/02</td>
+                <td class="text-center off">2020/07/28</td>
+                <td class="text-center">彰化縣</td>
+              </tr>
+              <tr class='clickable-row' data-href='#'>
+                <th scope="row" class="text-center">3C</th>
+                <th class="text-center">二手筆電</th>
+                <td class="text-center off">2020/05/29</td>
+                <td class="text-center off">2020/06/26</td>
+                <td class="text-center">屏東縣</td>
+              </tr>
+              <tr class='clickable-row' data-href='#'>
+                <th scope="row" class="text-center">衛生</th>
+                <th class="text-center">浴巾</th>
+                <td class="text-center off">2020/05/29</td>
+                <td class="text-center off">2020/06/12</td>
+                <td class="text-center">屏東縣</td>
+              </tr>
+              <tr class='clickable-row' data-href='#'>
+                <th scope="row" class="text-center">食品</th>
+                <th class="text-center">豆漿、牛奶等飲品</th>
+                <td class="text-center off">2020/05/29</td>
+                <td class="text-center off">2020/06/12</td>
+                <td class="text-center">屏東縣</td>
+              </tr>
+              <tr class='clickable-row' data-href='#'>
+                <th scope="row" class="text-center">3C</th>
+                <th class="text-center">碎紙機</th>
+                <td class="text-center off">2020/05/28</td>
+                <td class="text-center off">2020/06/11</td>
+                <td class="text-center">高雄市</td>
+              </tr>
+              <tr class='clickable-row' data-href='#'>
+                <th scope="row" class="text-center">3C</th>
+                <th class="text-center">手提式行動擴音機</th>
+                <td class="text-center off">2020/05/28</td>
+                <td class="text-center off">2020/06/11</td>
+                <td class="text-center">高雄市</td>
+              </tr>
+              <tr class='clickable-row' data-href='#'>
+                <th scope="row" class="text-center">3C</th>
+                <th class="text-center">A4護貝機</th>
+                <td class="text-center off">2020/05/28</td>
+                <td class="text-center off">2020/06/11</td>
+                <td class="text-center">高雄市</td>
+              </tr>
+              <tr class='clickable-row' data-href='#'>
+                <th scope="row" class="text-center">文具</th>
+                <th class="text-center">A4護貝膠膜</th>
+                <td class="text-center off">2020/05/28</td>
+                <td class="text-center off">2020/06/11</td>
+                <td class="text-center">高雄市</td>
+              </tr>
+              <tr class='clickable-row' data-href='#'>
+                <th scope="row" class="text-center">家電</th>
+                <th class="text-center">16吋立扇電風扇</th>
+                <td class="text-center off">2020/05/26</td>
+                <td class="text-center off">2020/07/21</td>
+                <td class="text-center">宜蘭縣</td>
+              </tr>
+              <tr class='clickable-row' data-href='#'>
+                <th scope="row" class="text-center">食品</th>
+                <th class="text-center">米、麵、罐頭、泡麵、即時調理包</th>
+                <td class="text-center off">2020/05/26</td>
+                <td class="text-center off">2020/07/21</td>
+                <td class="text-center">桃園市</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+        <nav aria-label="Page navigation example" class="page">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      
+
     </div>
   </section>
 
@@ -264,7 +448,7 @@
       }
     }
     function topFunction() {
-      document.body.scrollTop = 0; 
+      document.body.scrollTop = 0;
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   </script>
@@ -278,7 +462,7 @@
   </script>
 
   <script>
-    window.onscroll = function(){
+    window.onscroll = function () {
       scrollFunction();
       removeShow();
     }
