@@ -89,6 +89,12 @@ ul {
   list-style: none;
 }
 
+@media screen and (max-width: 576px) {
+  .content_top {
+    padding: 0;
+  }
+}
+
 #backToTop {
   position: fixed;
   right: 50px;
@@ -884,6 +890,20 @@ footer .bottom-bar a:hover {
 
 #welfare_shop .content_top span.content_path {
   color: #4b545c;
+}
+
+#welfare_shop .content_top .selector {
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: #F7C280;
+}
+
+#welfare_shop .content_top .selector .select_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 #welfare_shop .content_top .products {

@@ -87,6 +87,10 @@ ul
 	margin: 0
 	padding: 0
 	list-style: none
+// 手機樣式內容的padding為0
+@media screen and ( max-width: 576px )
+    .content_top
+        padding: 0
 // -----------------------------------------------------
 // backtotop
 #backToTop
@@ -668,6 +672,16 @@ footer
                 display: none
         span.content_path
             color: lighten($color_black,10% )
+        .selector
+            padding: 15px 20px
+            margin-bottom: 20px
+            margin-top: 20px
+            background-color: $color_orange
+            .select_wrap
+                display: flex
+                flex-wrap: wrap
+                margin-top: 5px
+                margin-bottom: 5px
         .products
             display: flex
             flex-wrap: wrap
