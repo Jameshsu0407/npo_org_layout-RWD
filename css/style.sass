@@ -287,7 +287,7 @@ ul.nav.navbar-nav
             padding: 10px
             ul.dropdown-menu
                 li
-                    padding: 10px !important
+                    padding: 10px 0 !important
 // 主要導覽列
 .main-nav
     padding: 10px 0
@@ -336,28 +336,26 @@ ul.dropdown-menu
     li.dropdown
         padding: 0
         margin: 0
-        @media screen and ( max-width: 576px )
-            border-bottom: 1px solid #d4d4d4
+        @media screen and ( max-width: 992px )
+            padding: 0 !important
         a.dropdown-toggle
             display: block
             padding: 10px !important
             color: $color_black !important
             text-align: center
             transition: 0.5s
-            @media screen and ( max-width: 576px )
-                text-align: left
+            @media screen and ( max-width: 992px )
+                text-align: left !important
                 padding-left: 0 !important
-                border: none !important
+                padding: 10px 0 !important
             &:hover
                 background-color: initial !important
                 color: $color_dark_orange !important
             &::before
                 position: absolute
                 right: 10px
-                @media screen and ( max-width: 576px )
+                @media screen and ( max-width: 992px )
                     right: 0
-                
-
 // -----------------------------------------------------
 // 上層廣告
 #top-ads
