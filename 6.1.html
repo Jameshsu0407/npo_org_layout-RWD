@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>非營利組織</title>
+  <title>志工招募</title>
   <!-- BT4 -->
   <link rel="stylesheet" href="./css/bootstrap.css">
   <link rel="stylesheet" href="./css/">
@@ -108,8 +108,8 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">人力銀行</a>
             <ul class="dropdown-menu">
               <li class="drop-item"><a href="6.1.html">志工招募</a></li>
-              <li class="drop-item"><a href="6.2.html">全職工作</a></li>
-              <li class="drop-item"><a href="6.3.html">兼職工作</a></li>
+              <li class="drop-item"><a href="index.html">全職工作</a></li>
+              <li class="drop-item"><a href="index.html">兼職工作</a></li>
             </ul>
           </li>
           <li class="no-dropdown"><a href="7.html">公益商城</a></li>
@@ -140,39 +140,48 @@
 
   </nav>
 
-  <section class="container" id="npo_list">
+  <section class="container" id="bank_volunteer">
     <div class="row">
       <div class="content_top col-12">
-        <h2 class="content_title col-12">非營利組織名錄</h2>
+        <h2 class="content_title col-12">志工招募</h2>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="1.html">首頁</a></li>
-            <li class="breadcrumb-item active" aria-current="page">非營利組織名錄</li>
+            <li class="breadcrumb-item active" aria-current="page">志工招募</li>
           </ol>
         </nav>
         <div class="table col-12">
           <form class="form-inline col-12 selector">
             <div class="select_wrap col-12 col-md-4">
-              <input type="text" class="form-control col-12" placeholder="請輸入非營利組織">
+              <input type="text" class="form-control col-12" placeholder="請輸入職務名稱">
             </div>
-            <div class="select_wrap col-12 col-md-3">
-              <select class="custom-select col-12">
-                <option selected disabled>請輸入地區</option>
-                <option>北部</option>
-                <option>中部</option>
-                <option>南部</option>
-                <option>東部</option>
-                <option>全國性</option>
+            <div class="select_wrap col-12 col-md-2">
+              <select class="custom-select col-12 welfare_type">
+                <option selected disabled>職務類別</option>
+                <option>社工</option>
+                <option>行政</option>
+                <option>會計</option>
+                <option>資訊</option>
+                <option>美工</option>
               </select>
             </div>
-            <div class="select_wrap col-12 col-md-3">
+            <div class="select_wrap col-12 col-md-2">
               <select class="custom-select col-12">
-                <option selected disabled>請輸入類型</option>
+                <option selected disabled>組織屬性</option>
                 <option>綜合性服務</option>
                 <option>兒童青少年福利</option>
                 <option>婦女福利</option>
                 <option>老人福利</option>
                 <option>身心障礙福利</option>
+              </select>
+            </div>
+            <div class="select_wrap col-12 col-md-2">
+              <select class="custom-select col-12">
+                <option selected disabled>工作地點</option>
+                <option>台北市</option>
+                <option>新北市</option>
+                <option>桃園市</option>
+                <option>我都行</option>
               </select>
             </div>
             <div class="select_wrap col-12 col-md-2">
@@ -182,72 +191,103 @@
           <table class="col-12">
             <thead class="thead-color text-center">
               <tr>
-                <th scope="col">非營利組織</th>
-                <th scope="col">地區</th>
+                <th scope="col" class="off">刊登日期</th>
+                <th scope="col">職務名稱</th>
+                <th scope="col" class="">組織名稱</th>
+                <th scope="col" class="type_width">工作地區</th>
               </tr>
             </thead>
             <tbody>
               <tr class='clickable-row' data-href='#'>
-                <th scope="row">中華全球生命教育推動協會</th>
-                <td class="text-center">北區+中區+南區+東部</td>
+                <th scope="row" class="text-center off">2020/06/15</th>
+                <th class="text-center">社工-福安兒服中心</th>
+                <td class="text-center">靖娟兒童安全文教基金會</td>
+                <td class="text-center">台北市</td>
               </tr>
               <tr class='clickable-row' data-href='#'>
-                <th scope="row">社團法人中華民國教會人權促進聯盟</th>
-                <td class="text-center">全國性</td>
+                <th scope="row" class="text-center off">2020/06/15</th>
+                <th class="text-center">社工員-131親子館</th>
+                <td class="text-center">靖娟兒童安全文教基金會</td>
+                <td class="text-center">台北市</td>
               </tr>
               <tr class='clickable-row' data-href='#'>
-                <th scope="row">社團法人新竹市教保人員協會</th>
-                <td class="text-center">全國性</td>
+                <th scope="row" class="text-center off">2020/06/15</th>
+                <th class="text-center">社工/育兒輔導員-桃</th>
+                <td class="text-center">靖娟兒童安全文教基金會</td>
+                <td class="text-center">台北市</td>
               </tr>
               <tr class='clickable-row' data-href='#'>
-                <th scope="row">社團法人正念助人學會</th>
-                <td class="text-center">全球性, 全國性</td>
+                <th scope="row" class="text-center off">2020/06/13</th>
+                <th class="text-center">社工員</th>
+                <td class="text-center">台北市私立松湛園老人養護所</td>
+                <td class="text-center">新北市</td>
               </tr>
               <tr class='clickable-row' data-href='#'>
-                <th scope="row">台灣公益資訊中心</th>
-                <td class="text-center">全國性</td>
-              </tr>
-              <tr class='clickable-row' data-href='#'>
-                <th scope="row">財團法人台灣基督教恩惠福音會湖光基督教會</th>
-                <td class="text-center">北區</td>
-              </tr>
-              <tr class='clickable-row' data-href='#'>
-                <th scope="row">社團法人多扶無障礙生活與交通發展協會</th>
-                <td class="text-center">全國性</td>
-              </tr>
-              <tr class='clickable-row' data-href='#'>
-                <th scope="row">社團法人宜蘭縣善集合教育文化學會</th>
-                <td class="text-center">宜蘭縣</td>
-              </tr>
-              <tr class='clickable-row' data-href='#'>
-                <th scope="row">中華佛寺福臨文教慈善協會</th>
-                <td class="text-center">全國性</td>
-              </tr>
-              <tr class='clickable-row' data-href='#'>
-                <th scope="row">社團法人台灣公益聯盟</th>
-                <td class="text-center">全國性</td>
-              </tr>
-              <tr class='clickable-row' data-href='#'>
-                <th scope="row">社團法人為你社區服務協會</th>
-                <td class="text-center">全國性</td>
-              </tr>
-              <tr class='clickable-row' data-href='#'>
-                <th scope="row">社團法人臺東縣友善關懷協會</th>
-                <td class="text-center">台東縣</td>
-              </tr>
-              <tr class='clickable-row' data-href='#'>
-                <th scope="row">桃園市行者無疆社會實踐協會</th>
+                <th scope="row" class="text-center off">2020/06/12</th>
+                <th class="text-center">親密關係暴力社工員-</th>
+                <td class="text-center">社團法人榮欣社會福利服務促進協</td>
                 <td class="text-center">桃園市</td>
               </tr>
               <tr class='clickable-row' data-href='#'>
-                <th scope="row">伊甸基金會新北市私立居家式服務類長期照顧服務機構</th>
-                <td class="text-center">北區</td>
+                <th scope="row" class="text-center off">2020/06/12</th>
+                <th class="text-center">老人保護社工員-</th>
+                <td class="text-center">社團法人榮欣社會福利服務促進協</td>
+                <td class="text-center">桃園市</td>
               </tr>
               <tr class='clickable-row' data-href='#'>
-                <th scope="row">財團法人宜學教育基金會</th>
-                <td class="text-center">東部</td>
+                <th scope="row" class="text-center off">2020/06/11</th>
+                <th class="text-center">基隆A單位個管員-</th>
+                <td class="text-center">財團法人台北市中國基督教靈糧世</td>
+                <td class="text-center">基隆市</td>
               </tr>
-
+              <tr class='clickable-row' data-href='#'>
+                <th scope="row" class="text-center off">2020/06/11</th>
+                <th class="text-center">社工幹事-</th>
+                <td class="text-center">台北市晚晴婦女協會</td>
+                <td class="text-center">台北市</td>
+              </tr>
+              <tr class='clickable-row' data-href='#'>
+                <th scope="row" class="text-center off">2020/06/15</th>
+                <th class="text-center">社工員-131親子館</th>
+                <td class="text-center">靖娟兒童安全文教基金會</td>
+                <td class="text-center">台北市</td>
+              </tr>
+              <tr class='clickable-row' data-href='#'>
+                <th scope="row" class="text-center off">2020/06/15</th>
+                <th class="text-center">社工/育兒輔導員-桃</th>
+                <td class="text-center">靖娟兒童安全文教基金會</td>
+                <td class="text-center">台北市</td>
+              </tr>
+              <tr class='clickable-row' data-href='#'>
+                <th scope="row" class="text-center off">2020/06/13</th>
+                <th class="text-center">社工員</th>
+                <td class="text-center">台北市私立松湛園老人養護所</td>
+                <td class="text-center">新北市</td>
+              </tr>
+              <tr class='clickable-row' data-href='#'>
+                <th scope="row" class="text-center off">2020/06/12</th>
+                <th class="text-center">親密關係暴力社工員-</th>
+                <td class="text-center">社團法人榮欣社會福利服務促進協</td>
+                <td class="text-center">桃園市</td>
+              </tr>
+              <tr class='clickable-row' data-href='#'>
+                <th scope="row" class="text-center off">2020/06/12</th>
+                <th class="text-center">老人保護社工員-</th>
+                <td class="text-center">社團法人榮欣社會福利服務促進協</td>
+                <td class="text-center">桃園市</td>
+              </tr>
+              <tr class='clickable-row' data-href='#'>
+                <th scope="row" class="text-center off">2020/06/11</th>
+                <th class="text-center">基隆A單位個管員-</th>
+                <td class="text-center">財團法人台北市中國基督教靈糧世</td>
+                <td class="text-center">基隆市</td>
+              </tr>
+              <tr class='clickable-row' data-href='#'>
+                <th scope="row" class="text-center off">2020/06/11</th>
+                <th class="text-center">社工幹事-</th>
+                <td class="text-center">台北市晚晴婦女協會</td>
+                <td class="text-center">台北市</td>
+              </tr>
 
             </tbody>
           </table>
@@ -393,5 +433,7 @@
   </script>
 
 </body>
+
+
 
 </html>
