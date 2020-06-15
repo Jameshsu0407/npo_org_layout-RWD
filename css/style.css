@@ -1063,12 +1063,22 @@ footer .bottom-bar a:hover {
   margin-bottom: 5px;
 }
 
+@media screen and (max-width: 576px) {
+  #npo_donate .content_top .selector .select_wrap {
+    padding: 0;
+  }
+}
+
 #npo_donate .content_top .table {
   margin-top: 20px;
 }
 
 #npo_donate .content_top .table .thead-color {
   background-color: #F7C280;
+}
+
+#npo_donate .content_top .table .thead-color .type_width {
+  min-width: 90px;
 }
 
 #npo_donate .content_top .table .clickable-row {
@@ -1125,12 +1135,22 @@ footer .bottom-bar a:hover {
   margin-bottom: 5px;
 }
 
+@media screen and (max-width: 576px) {
+  #npo_donate .content_top .selector .select_wrap {
+    padding: 0;
+  }
+}
+
 #npo_donate .content_top .table {
   margin-top: 20px;
 }
 
 #npo_donate .content_top .table .thead-color {
   background-color: #F7C280;
+}
+
+#npo_donate .content_top .table .thead-color .type_width {
+  min-width: 90px;
 }
 
 #npo_donate .content_top .table .clickable-row {
@@ -1182,6 +1202,12 @@ footer .bottom-bar a:hover {
   flex-wrap: wrap;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+@media screen and (max-width: 576px) {
+  #welfare_shop .content_top .selector .select_wrap {
+    padding: 0;
+  }
 }
 
 #welfare_shop .content_top .products {
@@ -1254,6 +1280,12 @@ footer .bottom-bar a:hover {
   flex-wrap: wrap;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+@media screen and (max-width: 576px) {
+  #npo_list .content_top .selector .select_wrap {
+    padding: 0;
+  }
 }
 
 #npo_list .content_top .table {
