@@ -1250,6 +1250,150 @@ footer .bottom-bar a:hover {
   background-color: initial;
 }
 
+#bank_full_work .content_top {
+  margin-top: 150px;
+}
+
+#bank_full_work .content_top h2.content_title::before {
+  display: none;
+}
+
+#bank_full_work .content_top span.content_path {
+  color: #4b545c;
+}
+
+#bank_full_work .content_top p {
+  margin-top: 20px;
+}
+
+#bank_full_work .content_top .selector {
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  background-color: #F7C280;
+}
+
+#bank_full_work .content_top .selector .select_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 576px) {
+  #bank_full_work .content_top .selector .select_wrap {
+    padding: 0;
+  }
+}
+
+#bank_full_work .content_top .table {
+  margin-top: 20px;
+}
+
+#bank_full_work .content_top .table .thead-color {
+  background-color: #F7C280;
+}
+
+#bank_full_work .content_top .table .thead-color .type_width {
+  min-width: 90px;
+}
+
+#bank_full_work .content_top .table .clickable-row {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#bank_full_work .content_top .table .clickable-row:hover {
+  color: #FA9C25;
+}
+
+#bank_full_work .content_top .page {
+  display: flex;
+  justify-content: center;
+}
+
+#bank_full_work .content_top .page li.page-item a.page-link {
+  transition: 0.5s;
+  color: #B5B8A3;
+}
+
+#bank_full_work .content_top .page li.page-item a.page-link:hover {
+  color: #FA9C25;
+  border-color: #FA9C25;
+  background-color: initial;
+}
+
+#bank_part_time .content_top {
+  margin-top: 150px;
+}
+
+#bank_part_time .content_top h2.content_title::before {
+  display: none;
+}
+
+#bank_part_time .content_top span.content_path {
+  color: #4b545c;
+}
+
+#bank_part_time .content_top p {
+  margin-top: 20px;
+}
+
+#bank_part_time .content_top .selector {
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  background-color: #F7C280;
+}
+
+#bank_part_time .content_top .selector .select_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 576px) {
+  #bank_part_time .content_top .selector .select_wrap {
+    padding: 0;
+  }
+}
+
+#bank_part_time .content_top .table {
+  margin-top: 20px;
+}
+
+#bank_part_time .content_top .table .thead-color {
+  background-color: #F7C280;
+}
+
+#bank_part_time .content_top .table .thead-color .type_width {
+  min-width: 90px;
+}
+
+#bank_part_time .content_top .table .clickable-row {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#bank_part_time .content_top .table .clickable-row:hover {
+  color: #FA9C25;
+}
+
+#bank_part_time .content_top .page {
+  display: flex;
+  justify-content: center;
+}
+
+#bank_part_time .content_top .page li.page-item a.page-link {
+  transition: 0.5s;
+  color: #B5B8A3;
+}
+
+#bank_part_time .content_top .page li.page-item a.page-link:hover {
+  color: #FA9C25;
+  border-color: #FA9C25;
+  background-color: initial;
+}
+
 #welfare_shop .content_top {
   margin-top: 150px;
 }
