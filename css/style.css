@@ -929,6 +929,12 @@ footer .bottom-bar a:hover {
   margin-bottom: 5px;
 }
 
+@media screen and (max-width: 576px) {
+  #npo_activities .content_top .selector .select_wrap {
+    padding: 0;
+  }
+}
+
 #npo_activities .content_top .table {
   margin-top: 20px;
 }
