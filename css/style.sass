@@ -331,6 +331,33 @@ ul.nav.navbar-nav
 	flex-grow: 0
 	-ms-flex-align: center
 	align-items: center
+// 第三層樣式
+ul.dropdown-menu
+    li.dropdown
+        padding: 0
+        margin: 0
+        @media screen and ( max-width: 576px )
+            border-bottom: 1px solid #d4d4d4
+        a.dropdown-toggle
+            display: block
+            padding: 10px !important
+            color: $color_black !important
+            text-align: center
+            transition: 0.5s
+            @media screen and ( max-width: 576px )
+                text-align: left
+                padding-left: 0 !important
+                border: none !important
+            &:hover
+                background-color: initial !important
+                color: $color_dark_orange !important
+            &::before
+                position: absolute
+                right: 10px
+                @media screen and ( max-width: 576px )
+                    right: 0
+                
+
 // -----------------------------------------------------
 // 上層廣告
 #top-ads
@@ -636,6 +663,100 @@ footer
             color: lighten($color_black,10% )
         p
             margin-top: 20px
+// -----------------------------------------------------        
+// 3.1公益新訊
+#npo_news
+    .content_top
+        margin-top: 150px
+        h2.content_title
+            &::before
+                display: none
+        span.content_path
+            color: lighten($color_black,10% )
+        p
+            margin-top: 20px
+        .selector
+            padding: 15px 20px
+            margin-bottom: 20px
+            background-color: $color_orange
+            .select_wrap
+                display: flex
+                flex-wrap: wrap
+                margin-top: 5px
+                margin-bottom: 5px
+                @media screen and ( max-width: 576px )
+                    padding: 0
+        .table
+            margin-top: 20px
+            display: flex
+            flex-wrap: wrap
+            .post_box_left
+                padding-left: 0
+                @media screen and ( max-width: 768px )
+                    padding: 0
+            .post_box_right
+                padding-right: 0
+                @media screen and ( max-width: 768px )
+                    padding: 0
+            .post
+                display: flex
+                flex-wrap: wrap
+                border: 1px solid $color_light_gray
+                box-shadow: 8px 10px 8px rgba(0,0,0,0.1)
+                transition: 0.5s
+                margin-bottom: 30px
+                border-radius: 5px
+                &:hover
+                    transform: scale(1.03)
+                .post_left
+                    position: relative
+                    display: flex
+                    align-items: center
+                    padding: 0
+                    .time_box
+                        position: absolute
+                        background-color: rgba(247,194 ,128 ,0.8 )
+                        top: 0
+                        padding: 5px
+                        span
+                            color: $color_white
+                            text-align: center
+                            display: block
+                            text-align: center
+                        span.year
+                            font-size: 14px
+                            margin-bottom: -5px
+                        span.date
+                            font-size: 20px
+                            font-weight: 700
+                .post_right
+                    h3
+                        +title
+                        margin: 10px 0
+                    p
+                        margin: 10px 0
+                        overflow: hidden
+                        white-space: nowrap
+                        text-overflow: ellipsis
+                        display: -webkit-box
+                        -webkit-line-clamp: 3
+                        -webkit-box-orient: vertical
+                        white-space: normal
+                        line-height: 25px
+                        height: 80px
+                
+                
+        .page
+            display: flex
+            justify-content: center
+            li.page-item
+                a.page-link
+                    transition: 0.5s
+                    color: $color_gray
+                    &:hover
+                        color: $color_dark_orange
+                        border-color: $color_dark_orange
+                        background-color: initial
 // -----------------------------------------------------        
 // 3.2最新活動
 #npo_activities
@@ -1095,5 +1216,3 @@ footer
     #coorperate,#online_service
         .left-box,.right-box
             padding: 0
-// -----------------------------------------------------        
-// 
