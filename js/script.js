@@ -15,6 +15,29 @@ $('#activity_card').slick({
     arrows: false
 });
 
+$('#bottom_ads').slick({
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2
+            }
+
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+    ]
+});
+
 $(function () {
     $('#bootnavbar').bootnavbar({
     });
