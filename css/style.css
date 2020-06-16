@@ -1219,6 +1219,153 @@ footer .bottom-bar a:hover {
   background-color: initial;
 }
 
+#npo_allowance_calendar .content_top {
+  margin-top: 150px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#npo_allowance_calendar .content_top h2.content_title::before {
+  display: none;
+}
+
+.content_left {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .content_left {
+    margin-bottom: 30px;
+  }
+}
+
+.content_left .fc-left h2 {
+  font-size: 24px;
+}
+
+.content_left .fc-left h2::before {
+  display: none;
+}
+
+.content_left .fc {
+  cursor: pointer;
+}
+
+.content_left .fc-day-header {
+  cursor: initial;
+}
+
+.content_left .fc-sun, .content_left .fc-sat {
+  background-color: #fafafa;
+}
+
+.content_left .fc-today-button.fc-button:disabled {
+  background-color: #f5b668;
+  border: none;
+}
+
+.content_left .fc-button {
+  background-color: #F7C280;
+  border: 1px solid #f5b668;
+  transition: 0.5s;
+}
+
+.content_left .fc-button:hover, .content_left .fc-button:focus {
+  background-color: #FA9C25;
+  border: 1px solid #f9910c;
+}
+
+.content_left .fc-highlight {
+  background-color: #fcf8e3;
+  opacity: 1;
+}
+
+.content_left .fc-event {
+  background-color: #FA9C25;
+  border: none !important;
+  cursor: initial;
+}
+
+.content_left .fc-toolbar.fc-header-toolbar {
+  margin-bottom: 10px;
+}
+
+.content_right {
+  height: 450.469px;
+  overflow: scroll;
+}
+
+.content_right .comming_allowance {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #fafafa;
+  padding: 25px 15px;
+  margin-bottom: 20px;
+  transition: 0.5s;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 992px) {
+  .content_right .comming_allowance {
+    margin-bottom: 30px;
+  }
+}
+
+.content_right .comming_allowance:hover {
+  transform: scale(1.02);
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content_right .comming_allowance .col-3 {
+  padding: 0;
+}
+
+.content_right .comming_allowance .col-3 .date {
+  font-weight: 700;
+  font-size: 60px;
+  display: block;
+  text-align: center;
+  color: #FA9C25;
+}
+
+.content_right .comming_allowance .col-3 .month {
+  font-size: 20px;
+  display: block;
+  text-align: center;
+}
+
+.content_right .comming_allowance h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.content_right .comming_allowance p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  white-space: normal;
+  line-height: 28px;
+  height: 55px;
+  margin-bottom: 0;
+}
+
+.content_right .comming_allowance span {
+  display: block;
+  text-align: right;
+  margin-top: 5px;
+}
+
+.content_right .comming_allowance span a {
+  transition: 0.5s;
+}
+
+.content_right .comming_allowance span a:hover {
+  color: #F7C280;
+}
+
 #npo_donate .content_top {
   margin-top: 150px;
 }

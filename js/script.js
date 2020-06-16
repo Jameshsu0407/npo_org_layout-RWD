@@ -1,9 +1,10 @@
+// 首頁上方輪播圖
 $('#top-ads').slick({
     arrows: false,
     autoplay: true,
     autoplaySpeed: 2000,
 });
-
+// 首頁活動輪播圖
 $('#activity_card').slick({
     speed: 500,
     slidesToShow: 1,
@@ -14,7 +15,7 @@ $('#activity_card').slick({
     // centerMode: true,
     arrows: false
 });
-
+// 底部廣告輪播圖
 $('#bottom_ads').slick({
     arrows: false,
     autoplay: true,
@@ -38,6 +39,7 @@ $('#bottom_ads').slick({
     ]
 });
 
+// 導覽列初始化
 $(function () {
     $('#bootnavbar').bootnavbar({
     });
@@ -74,5 +76,4 @@ $(window).scroll(function(){
         $('#backToTop').fadeOut();
     }
 });
-
 
