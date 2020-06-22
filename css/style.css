@@ -91,6 +91,7 @@ ul {
 
 .content_top {
   padding: 0;
+  margin-bottom: 50px;
 }
 
 @media screen and (max-width: 576px) {
@@ -1259,6 +1260,78 @@ footer .bottom-bar a:hover {
   background-color: initial;
 }
 
+#npo_allowance_announcement .content_top {
+  margin-top: 150px;
+}
+
+#npo_allowance_announcement .content_top h2.content_title::before {
+  display: none;
+}
+
+#npo_allowance_announcement .content_top span.content_path {
+  color: #4b545c;
+}
+
+#npo_allowance_announcement .content_top p {
+  margin-top: 20px;
+}
+
+#npo_allowance_announcement .content_top .selector {
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  background-color: #F7C280;
+}
+
+#npo_allowance_announcement .content_top .selector .select_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 576px) {
+  #npo_allowance_announcement .content_top .selector .select_wrap {
+    padding: 0;
+  }
+}
+
+#npo_allowance_announcement .content_top .table {
+  margin-top: 20px;
+}
+
+#npo_allowance_announcement .content_top .table .thead-color {
+  background-color: #F7C280;
+}
+
+#npo_allowance_announcement .content_top .table .thead-color .type_width {
+  min-width: 90px;
+}
+
+#npo_allowance_announcement .content_top .table .clickable-row {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#npo_allowance_announcement .content_top .table .clickable-row:hover {
+  color: #FA9C25;
+}
+
+#npo_allowance_announcement .content_top .page {
+  display: flex;
+  justify-content: center;
+}
+
+#npo_allowance_announcement .content_top .page li.page-item a.page-link {
+  transition: 0.5s;
+  color: #B5B8A3;
+}
+
+#npo_allowance_announcement .content_top .page li.page-item a.page-link:hover {
+  color: #FA9C25;
+  border-color: #FA9C25;
+  background-color: initial;
+}
+
 #npo_allowance_calendar .content_top, #npo_scholarship_calendar .content_top {
   margin-top: 150px;
   margin-bottom: 50px;
@@ -1399,7 +1472,7 @@ footer .bottom-bar a:hover {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  display: -webkit-box;
+  display: block;
   -webkit-line-clamp: 2;
   white-space: normal;
   line-height: 28px;
