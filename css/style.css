@@ -1223,37 +1223,37 @@ footer .bottom-bar a:hover {
   background-color: initial;
 }
 
-#npo_allowance_list .content_top, #npo_rescue_list .content_top {
+#npo_allowance_list .content_top, #npo_rescue_list .content_top, #npo_scholarship_list .content_top {
   margin-top: 150px;
   margin-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
 }
 
-#npo_allowance_list .content_top h2.content_title::before, #npo_rescue_list .content_top h2.content_title::before {
+#npo_allowance_list .content_top h2.content_title::before, #npo_rescue_list .content_top h2.content_title::before, #npo_scholarship_list .content_top h2.content_title::before {
   display: none;
 }
 
-#npo_allowance_list .content_top .allowance_list, #npo_allowance_list .content_top .rescue_list, #npo_rescue_list .content_top .allowance_list, #npo_rescue_list .content_top .rescue_list {
+#npo_allowance_list .content_top .allowance_list, #npo_allowance_list .content_top .rescue_list, #npo_allowance_list .content_top .scholarship_list, #npo_rescue_list .content_top .allowance_list, #npo_rescue_list .content_top .rescue_list, #npo_rescue_list .content_top .scholarship_list, #npo_scholarship_list .content_top .allowance_list, #npo_scholarship_list .content_top .rescue_list, #npo_scholarship_list .content_top .scholarship_list {
   display: flex;
   flex-wrap: wrap;
 }
 
-#npo_allowance_list .content_top .allowance_list .org_pic, #npo_allowance_list .content_top .rescue_list .org_pic, #npo_rescue_list .content_top .allowance_list .org_pic, #npo_rescue_list .content_top .rescue_list .org_pic {
+#npo_allowance_list .content_top .allowance_list .org_pic, #npo_allowance_list .content_top .rescue_list .org_pic, #npo_allowance_list .content_top .scholarship_list .org_pic, #npo_rescue_list .content_top .allowance_list .org_pic, #npo_rescue_list .content_top .rescue_list .org_pic, #npo_rescue_list .content_top .scholarship_list .org_pic, #npo_scholarship_list .content_top .allowance_list .org_pic, #npo_scholarship_list .content_top .rescue_list .org_pic, #npo_scholarship_list .content_top .scholarship_list .org_pic {
   padding: 15px;
 }
 
-#npo_allowance_list .content_top .page, #npo_rescue_list .content_top .page {
+#npo_allowance_list .content_top .page, #npo_rescue_list .content_top .page, #npo_scholarship_list .content_top .page {
   margin: auto;
   margin-top: 30px;
 }
 
-#npo_allowance_list .content_top .page li.page-item a.page-link, #npo_rescue_list .content_top .page li.page-item a.page-link {
+#npo_allowance_list .content_top .page li.page-item a.page-link, #npo_rescue_list .content_top .page li.page-item a.page-link, #npo_scholarship_list .content_top .page li.page-item a.page-link {
   transition: 0.5s;
   color: #B5B8A3;
 }
 
-#npo_allowance_list .content_top .page li.page-item a.page-link:hover, #npo_rescue_list .content_top .page li.page-item a.page-link:hover {
+#npo_allowance_list .content_top .page li.page-item a.page-link:hover, #npo_rescue_list .content_top .page li.page-item a.page-link:hover, #npo_scholarship_list .content_top .page li.page-item a.page-link:hover {
   color: #FA9C25;
   border-color: #FA9C25;
   background-color: initial;
