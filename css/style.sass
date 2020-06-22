@@ -854,6 +854,10 @@ footer
     margin-bottom: 20px
     @media screen and ( max-width: 992px )
         margin-bottom: 30px
+    .fc-scroller.fc-day-grid-container
+        @media screen and ( max-width: 992px )
+            height: auto !important
+            overflow: initial !important
     .fc-left
         h2
             font-size: 24px
@@ -889,6 +893,9 @@ footer
 .content_right
     height: 450.469px
     overflow: scroll
+    @media screen and ( max-width: 992px )
+        overflow: initial
+        height: auto
     .comming_allowance
         display: flex
         flex-wrap: wrap

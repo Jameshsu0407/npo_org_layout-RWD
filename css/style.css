@@ -1239,6 +1239,13 @@ footer .bottom-bar a:hover {
   }
 }
 
+@media screen and (max-width: 992px) {
+  .content_left .fc-scroller.fc-day-grid-container {
+    height: auto !important;
+    overflow: initial !important;
+  }
+}
+
 .content_left .fc-left h2 {
   font-size: 24px;
 }
@@ -1293,6 +1300,13 @@ footer .bottom-bar a:hover {
 .content_right {
   height: 450.469px;
   overflow: scroll;
+}
+
+@media screen and (max-width: 992px) {
+  .content_right {
+    overflow: initial;
+    height: auto;
+  }
 }
 
 .content_right .comming_allowance {
