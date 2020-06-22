@@ -939,6 +939,11 @@ footer .bottom-bar a:hover {
   color: #4b545c;
 }
 
+#about_us .content_top img {
+  display: block;
+  margin: auto;
+}
+
 #about_us .content_top p {
   margin-top: 20px;
 }
