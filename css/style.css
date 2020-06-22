@@ -828,6 +828,10 @@ ul.dropdown-menu li.dropdown a.dropdown-toggle::before {
   }
 }
 
+#bottom_ads {
+  padding: 0;
+}
+
 @media screen and (max-width: 576px) {
   #bottom_ads {
     margin-top: 20px;
@@ -835,7 +839,7 @@ ul.dropdown-menu li.dropdown a.dropdown-toggle::before {
 }
 
 #bottom_ads img {
-  padding: 15px 7.5px;
+  padding: 15px;
 }
 
 @media screen and (max-width: 576px) {
@@ -1219,13 +1223,14 @@ footer .bottom-bar a:hover {
   background-color: initial;
 }
 
-#npo_allowance_calendar .content_top {
+#npo_allowance_calendar .content_top, #npo_scholarship_calendar .content_top {
   margin-top: 150px;
+  margin-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
 }
 
-#npo_allowance_calendar .content_top h2.content_title::before {
+#npo_allowance_calendar .content_top h2.content_title::before, #npo_scholarship_calendar .content_top h2.content_title::before {
   display: none;
 }
 

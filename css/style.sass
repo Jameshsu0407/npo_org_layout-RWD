@@ -580,10 +580,11 @@ ul.dropdown-menu
 // -----------------------------------------------------
 // 底部廣告
 #bottom_ads
+    padding: 0
     @media screen and ( max-width: 576px )
         margin-top: 20px
     img
-        padding: 15px 7.5px
+        padding: 15px
         @media screen and ( max-width: 576px )
             padding: 0
 // -----------------------------------------------------
@@ -841,10 +842,11 @@ footer
                         border-color: $color_dark_orange
                         background-color: initial
 // -----------------------------------------------------        
-// 4.1.3補助行事曆
-#npo_allowance_calendar
+// 4.1.3補助行事曆 4.3.3獎助行事曆
+#npo_allowance_calendar,#npo_scholarship_calendar
     .content_top
         margin-top: 150px
+        margin-bottom: 50px
         display: flex
         flex-wrap: wrap
         h2.content_title
@@ -944,9 +946,6 @@ footer
                 transition: 0.5s
                 &:hover
                     color: $color_orange
-            
-
-
 // -----------------------------------------------------        
 // 5.1物資募集
 #npo_donate
