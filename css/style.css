@@ -142,6 +142,126 @@ ul {
   }
 }
 
+#social_share .fb {
+  background-color: #4267B2;
+  border-radius: 5px 0 0 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: -79px;
+  top: 140px;
+  z-index: 999;
+  transition: 0.5s;
+}
+
+#social_share .fb:hover {
+  right: 0;
+}
+
+#social_share .fb i {
+  color: #fff;
+  font-size: 30px;
+}
+
+#social_share .fb p {
+  color: #fff;
+  margin: 0;
+  margin: 0 0 0 12px;
+  font-weight: 600;
+}
+
+#social_share .line {
+  background-color: #66C411;
+  border-radius: 5px 0 0 5px;
+  padding: 10px 12.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: -75px;
+  top: 190px;
+  z-index: 999;
+  transition: 0.5s;
+}
+
+#social_share .line:hover {
+  right: 0;
+}
+
+#social_share .line i {
+  color: #fff;
+  font-size: 30px;
+}
+
+#social_share .line p {
+  color: #fff;
+  margin: 0;
+  margin: 0 0 0 12px;
+  font-weight: 600;
+}
+
+#social_share .twitter {
+  background-color: #3AA1F2;
+  border-radius: 5px 0 0 5px;
+  padding: 10px 12.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: -83px;
+  top: 240px;
+  z-index: 999;
+  transition: 0.5s;
+}
+
+#social_share .twitter:hover {
+  right: 0;
+}
+
+#social_share .twitter i {
+  color: #fff;
+  font-size: 30px;
+}
+
+#social_share .twitter p {
+  color: #fff;
+  margin: 0;
+  margin: 0 0 0 12px;
+  font-weight: 600;
+}
+
+#social_share .weibo {
+  background-color: #E73E33;
+  border-radius: 5px 0 0 5px;
+  padding: 10px 12.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: -83px;
+  top: 290px;
+  z-index: 999;
+  transition: 0.5s;
+}
+
+#social_share .weibo:hover {
+  right: 0;
+}
+
+#social_share .weibo i {
+  color: #fff;
+  font-size: 30px;
+}
+
+#social_share .weibo p {
+  color: #fff;
+  margin: 0;
+  margin: 0 0 0 12px;
+  font-weight: 600;
+}
+
 nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
   min-width: 110px;
 }
