@@ -151,9 +151,21 @@ ul {
   align-items: center;
   position: fixed;
   right: -79px;
-  top: 140px;
+  top: 125px;
   z-index: 999;
   transition: 0.5s;
+}
+
+@media screen and (max-width: 992px) {
+  #social_share .fb {
+    top: 145px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #social_share .fb {
+    top: 135px;
+  }
 }
 
 #social_share .fb:hover {
@@ -181,9 +193,21 @@ ul {
   align-items: center;
   position: fixed;
   right: -75px;
-  top: 190px;
+  top: 175px;
   z-index: 999;
   transition: 0.5s;
+}
+
+@media screen and (max-width: 992px) {
+  #social_share .line {
+    top: 195px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #social_share .line {
+    top: 185px;
+  }
 }
 
 #social_share .line:hover {
@@ -211,9 +235,21 @@ ul {
   align-items: center;
   position: fixed;
   right: -83px;
-  top: 240px;
+  top: 225px;
   z-index: 999;
   transition: 0.5s;
+}
+
+@media screen and (max-width: 992px) {
+  #social_share .twitter {
+    top: 245px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #social_share .twitter {
+    top: 235px;
+  }
 }
 
 #social_share .twitter:hover {
@@ -241,9 +277,21 @@ ul {
   align-items: center;
   position: fixed;
   right: -83px;
-  top: 290px;
+  top: 275px;
   z-index: 999;
   transition: 0.5s;
+}
+
+@media screen and (max-width: 992px) {
+  #social_share .weibo {
+    top: 295px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #social_share .weibo {
+    top: 285px;
+  }
 }
 
 #social_share .weibo:hover {
