@@ -2260,6 +2260,48 @@ footer .bottom-bar a:hover {
   }
 }
 
+#useing_documentation .content_top {
+  margin-top: 150px;
+}
+
+#useing_documentation .content_top h2.content_title::before {
+  display: none;
+}
+
+#useing_documentation .content_top span.content_path {
+  color: #4b545c;
+}
+
+#useing_documentation .content_top h3 {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d4d4d4;
+  margin-top: 30px;
+}
+
+#useing_documentation .content_top h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#useing_documentation .content_top p {
+  margin-top: 20px;
+}
+
+#useing_documentation .content_top ul {
+  list-style: initial;
+  list-style-position: inside;
+}
+
+#useing_documentation .content_top .table {
+  margin: 20px 0;
+}
+
+#useing_documentation .content_top .table .thead-color {
+  background-color: #F7C280;
+}
+
 #service_list .content_top {
   margin-top: 150px;
 }
