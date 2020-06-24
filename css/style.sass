@@ -546,8 +546,13 @@ ul.dropdown-menu
         padding: 0
         .card
             border: none
-            img
-                width: 100%
+            .pic
+                width: 450px
+                height: 260px
+                display: flex
+                justify-content: center
+                img
+                    height: 100%
             .card-title
                 +title
             .date
@@ -642,8 +647,12 @@ ul.dropdown-menu
         flex-direction: column
         .pic
             overflow: hidden
+            width: 250px
+            height: 250px
+            display: flex
+            justify-content: center
             img
-                box-shadow: 8px 10px 8px rgba(0,0,0,.15)
+                height: 100%
                 &:hover
                     transition: 0.5s
                     transform: rotate(10deg) scale(1.2)
