@@ -266,6 +266,12 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu
     padding: 0
     display: flex
     align-items: center
+// 導覽列所有a的hover
+nav#navbar
+    a
+        transition: 0.5s
+        &:hover
+            color: $color_dark_orange !important
 // 最上方導覽列最外層樣式
 #navbar.navbar.bootsnav
     transition: 0.5s
@@ -409,6 +415,9 @@ ul.nav.navbar-nav
             ul.dropdown-menu
                 li
                     padding: 10px 0 !important
+                    a
+                        &:hover
+                            color: #000
 // 主要導覽列
 .main-nav
     padding: 10px 0
