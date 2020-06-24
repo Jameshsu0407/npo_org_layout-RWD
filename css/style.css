@@ -100,25 +100,40 @@ ul {
   }
 }
 
-.breadcrumb {
-  background-color: initial;
-  border-radius: initial;
-  padding-top: 0;
-  padding-bottom: 0;
+#page {
+  display: flex;
+  justify-content: center;
 }
 
-.breadcrumb a {
+#page ul.pagination li {
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#page ul.pagination li a i {
   transition: 0.5s;
 }
 
-.breadcrumb a:hover {
+#page ul.pagination li a i:hover {
+  font-size: 25px;
   color: #FA9C25;
+}
+
+#page ul.pagination li a input {
+  width: 40px;
+}
+
+#page ul.pagination li select {
+  -webkit-appearance: none;
+  border: none;
 }
 
 #backToTop {
   display: none;
   position: fixed;
-  right: 50px;
+  right: 5px;
   bottom: 100px;
   z-index: 999;
   cursor: pointer;
@@ -2358,5 +2373,180 @@ footer .bottom-bar a:hover {
 #privacy .content_top ul {
   list-style: initial;
   list-style-position: inside;
+}
+
+.org_same_list .content_top {
+  margin-top: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.org_same_list .content_top .left .pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin: 0 auto 15px auto;
+}
+
+.org_same_list .content_top .left .pic img {
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.org_same_list .content_top .left .profile h3 {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #FA9C25;
+}
+
+.org_same_list .content_top .left .off {
+  display: block;
+}
+
+@media screen and (max-width: 992px) {
+  .org_same_list .content_top .left .off {
+    display: none;
+  }
+}
+
+.org_same_list .content_top .right .phone_top_nav {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .org_same_list .content_top .right .phone_top_nav {
+    display: block;
+  }
+}
+
+.org_same_list .content_top .right .pc_top_nav {
+  padding-bottom: 75px;
+  border-bottom: 2px solid #F7C280;
+  display: block;
+}
+
+@media screen and (max-width: 992px) {
+  .org_same_list .content_top .right .pc_top_nav {
+    display: none;
+  }
+}
+
+.org_same_list .content_top .right .pc_top_nav .col-2 {
+  float: left;
+  padding: 0 7.5px;
+}
+
+.org_same_list .content_top .right .pc_top_nav .col-2 a {
+  transition: 0.5s;
+}
+
+.org_same_list .content_top .right .pc_top_nav .col-2 a:hover {
+  color: #FA9C25;
+}
+
+.org_same_list .content_top .right .pc_top_nav .col-2 a h3 {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#org_newpost_list .content {
+  margin-top: 30px;
+}
+
+#org_newpost_list .content a:hover {
+  color: #343A40;
+}
+
+#org_newpost_list .content a .post {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #d4d4d4;
+  transition: 0.5s;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+#org_newpost_list .content a .post:hover {
+  transform: scale(1.03);
+}
+
+#org_newpost_list .content a .post .post_left {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+#org_newpost_list .content a .post .post_left .time_box {
+  position: absolute;
+  background-color: rgba(247, 194, 128, 0.8);
+  top: 0;
+  padding: 5px;
+}
+
+#org_newpost_list .content a .post .post_left .time_box span {
+  color: #fff;
+  text-align: center;
+  display: block;
+  text-align: center;
+}
+
+#org_newpost_list .content a .post .post_left .time_box span.year {
+  font-size: 14px;
+  margin-bottom: -5px;
+}
+
+#org_newpost_list .content a .post .post_left .time_box span.date {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#org_newpost_list .content a .post .post_left .pic {
+  width: 240.81px;
+  height: 135.45px;
+  display: flex;
+  justify-content: center;
+}
+
+#org_newpost_list .content a .post .post_left .pic img {
+  height: 100%;
+}
+
+#org_newpost_list .content a .post .post_right {
+  padding-right: 0;
+}
+
+#org_newpost_list .content a .post .post_right h3 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 0;
+  margin: 10px 0;
+}
+
+#org_newpost_list .content a .post .post_right p {
+  margin: 10px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  white-space: normal;
+  line-height: 25px;
+  height: 78px;
+}
+
+@media screen and (max-width: 576px) {
+  #org_newpost_list .content a .post .post_right p {
+    -webkit-line-clamp: 2;
+  }
 }
 /*# sourceMappingURL=style.css.map */

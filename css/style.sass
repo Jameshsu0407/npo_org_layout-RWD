@@ -11,6 +11,8 @@ $color_white: #fff
 *
     // border: 1px solid #000
     box-sizing: border-box
+// nav#navbar
+//     display: none
 // -----------------------------------------------------
 // 共同樣式、mixin
 *
@@ -18,8 +20,7 @@ $color_white: #fff
     &:focus,&:checked
         outline: none
         border: none
-        box-shadow: none !important
-            
+        box-shadow: none !important        
 html,body
     margin: 0
     padding: 0
@@ -96,22 +97,34 @@ ul
     // 在手機上不顯示
     .off
         display: none
-// 麵包屑樣式
-.breadcrumb
-    background-color: initial
-    border-radius: initial
-    padding-top: 0
-    padding-bottom: 0
-    a
-        transition: 0.5s
-        &:hover
-            color: $color_dark_orange
+// -----------------------------------------------------
+// page
+#page
+    display: flex
+    justify-content: center
+    ul.pagination
+        li
+            margin: 0 20px
+            display: flex
+            justify-content: center
+            align-items: center
+            a
+                i
+                    transition: 0.5s
+                    &:hover
+                        font-size: 25px
+                        color: $color_dark_orange
+                input
+                    width: 40px
+            select
+                -webkit-appearance: none
+                border: none
 // -----------------------------------------------------
 // backtotop
 #backToTop
     display: none
     position: fixed
-    right: 50px
+    right: 5px
     bottom: 100px
     z-index: 999
     cursor: pointer
@@ -1574,4 +1587,123 @@ footer
         ul
             list-style: initial
             list-style-position: inside
-        
+// -----------------------------------------------------        
+// 組織-*-列表共同樣式
+.org_same_list    
+    .content_top
+        margin-top: 150px
+        display: flex
+        flex-wrap: wrap
+        width: 100%
+        .left
+            .pic
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 300px
+                height: 300px
+                display: block
+                margin: 0 auto 15px auto
+                img
+                    height: 100%
+                    display: block
+                    margin: 0 auto
+            .profile
+                h3
+                    font-size: 18px
+                    font-weight: 600
+                    padding-bottom: 10px
+                    border-bottom: 1px solid $color_dark_orange
+            .off
+                display: block
+                @media screen and ( max-width: 992px )
+                    display: none
+        .right
+            .phone_top_nav
+                display: none
+                @media screen and ( max-width: 992px )
+                    display: block
+
+            .pc_top_nav
+                padding-bottom: 75px
+                border-bottom: 2px solid $color_orange
+                display: block
+                @media screen and ( max-width: 992px )
+                    display: none
+                .col-2
+                    float: left
+                    padding: 0 7.5px
+                    a
+                        transition: 0.5s
+                        &:hover
+                            color: $color_dark_orange
+                        h3
+                            font-size: 18px
+                            font-weight: 600
+                            text-align: center
+                            margin-bottom: 15px
+// -----------------------------------------------------        
+// 12.1組織-公益新訊-列表                           
+#org_newpost_list
+    .content
+        margin-top: 30px
+        a
+            &:hover
+                color: $color_black
+            .post
+                display: flex
+                flex-wrap: wrap
+                border: 1px solid $color_light_gray
+                transition: 0.5s
+                margin-bottom: 30px
+                border-radius: 5px
+                padding: 15px
+                &:hover
+                    transform: scale(1.03)
+                .post_left
+                    position: relative
+                    display: flex
+                    align-items: center
+                    padding: 0
+                    .time_box
+                        position: absolute
+                        background-color: rgba(247,194 ,128 ,0.8 )
+                        top: 0
+                        padding: 5px
+                        span
+                            color: $color_white
+                            text-align: center
+                            display: block
+                            text-align: center
+                        span.year
+                            font-size: 14px
+                            margin-bottom: -5px
+                        span.date
+                            font-size: 20px
+                            font-weight: 700
+                    .pic
+                        width: 240.81px
+                        height: 135.45px
+                        display: flex
+                        justify-content: center
+                        img
+                            height: 100%
+                .post_right
+                    padding-right: 0
+                    h3
+                        +title
+                        margin: 10px 0
+                    p
+                        margin: 10px 0
+                        overflow: hidden
+                        white-space: nowrap
+                        text-overflow: ellipsis
+                        display: -webkit-box
+                        -webkit-line-clamp: 3
+                        -webkit-box-orient: vertical
+                        white-space: normal
+                        line-height: 25px
+                        height: 78px
+                        @media screen and ( max-width: 576px )
+                            -webkit-line-clamp: 2
+
