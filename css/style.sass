@@ -1810,4 +1810,37 @@ footer
                         white-space: normal
                         line-height: 25px
                         height: 78px
-        
+// -----------------------------------------------------        
+// 12.8組織-志工招募-列表                           
+#org_volunteer_list
+    .content
+        margin-top: 30px
+        a
+            &:hover
+                color: $color_black
+            .post
+                display: flex
+                flex-wrap: wrap
+                border: 1px solid $color_light_gray
+                transition: 0.5s
+                margin-bottom: 30px
+                border-radius: 5px
+                padding: 15px
+                &:hover
+                    transform: scale(1.03)
+                h3
+                    +title  
+                    color: $color_dark_orange
+                p
+                    margin-bottom: 10px 
+                p.content
+                    margin: 10px 0
+                    overflow: hidden
+                    white-space: nowrap
+                    text-overflow: ellipsis
+                    display: -webkit-box
+                    -webkit-line-clamp: 2
+                    -webkit-box-orient: vertical
+                    white-space: normal
+                    line-height: 25px
+                    height: 50px
