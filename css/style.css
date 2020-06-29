@@ -94,7 +94,7 @@ ul {
   margin-bottom: 50px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .off {
     display: none;
   }
@@ -1349,28 +1349,6 @@ footer .bottom-bar a:hover {
   width: 120px;
 }
 
-@media screen and (max-width: 768px) {
-  #npo_activities .content_top .table .off {
-    display: none;
-  }
-}
-
-#npo_activities .content_top .page {
-  display: flex;
-  justify-content: center;
-}
-
-#npo_activities .content_top .page li.page-item a.page-link {
-  transition: 0.5s;
-  color: #B5B8A3;
-}
-
-#npo_activities .content_top .page li.page-item a.page-link:hover {
-  color: #FA9C25;
-  border-color: #FA9C25;
-  background-color: initial;
-}
-
 #npo_video .content_top {
   margin-top: 150px;
 }
@@ -1421,22 +1399,6 @@ footer .bottom-bar a:hover {
 #npo_video .content_top .videos_img .pic img:hover {
   transition: 0.5s;
   transform: rotate(10deg) scale(1.2);
-}
-
-#npo_video .content_top .page {
-  display: flex;
-  justify-content: center;
-}
-
-#npo_video .content_top .page li.page-item a.page-link {
-  transition: 0.5s;
-  color: #B5B8A3;
-}
-
-#npo_video .content_top .page li.page-item a.page-link:hover {
-  color: #FA9C25;
-  border-color: #FA9C25;
-  background-color: initial;
 }
 
 #npo_allowance_list .content_top, #npo_rescue_list .content_top, #npo_scholarship_list .content_top {
@@ -1527,22 +1489,6 @@ footer .bottom-bar a:hover {
 
 #npo_allowance_announcement .content_top .table .clickable-row:hover, #npo_rescue_announcement .content_top .table .clickable-row:hover, #npo_scholarship_announcement .content_top .table .clickable-row:hover {
   color: #FA9C25;
-}
-
-#npo_allowance_announcement .content_top .page, #npo_rescue_announcement .content_top .page, #npo_scholarship_announcement .content_top .page {
-  display: flex;
-  justify-content: center;
-}
-
-#npo_allowance_announcement .content_top .page li.page-item a.page-link, #npo_rescue_announcement .content_top .page li.page-item a.page-link, #npo_scholarship_announcement .content_top .page li.page-item a.page-link {
-  transition: 0.5s;
-  color: #B5B8A3;
-}
-
-#npo_allowance_announcement .content_top .page li.page-item a.page-link:hover, #npo_rescue_announcement .content_top .page li.page-item a.page-link:hover, #npo_scholarship_announcement .content_top .page li.page-item a.page-link:hover {
-  color: #FA9C25;
-  border-color: #FA9C25;
-  background-color: initial;
 }
 
 #npo_allowance_calendar .content_top, #npo_scholarship_calendar .content_top {
@@ -1743,6 +1689,7 @@ footer .bottom-bar a:hover {
 }
 
 #npo_donate .content_top .table {
+  table-layout: fixed;
   margin-top: 20px;
 }
 
@@ -1751,7 +1698,7 @@ footer .bottom-bar a:hover {
 }
 
 #npo_donate .content_top .table .thead-color .type_width {
-  min-width: 90px;
+  width: 120px;
 }
 
 #npo_donate .content_top .table .clickable-row {
@@ -1761,22 +1708,6 @@ footer .bottom-bar a:hover {
 
 #npo_donate .content_top .table .clickable-row:hover {
   color: #FA9C25;
-}
-
-#npo_donate .content_top .page {
-  display: flex;
-  justify-content: center;
-}
-
-#npo_donate .content_top .page li.page-item a.page-link {
-  transition: 0.5s;
-  color: #B5B8A3;
-}
-
-#npo_donate .content_top .page li.page-item a.page-link:hover {
-  color: #FA9C25;
-  border-color: #FA9C25;
-  background-color: initial;
 }
 
 #npo_donate .content_top {
@@ -1823,7 +1754,7 @@ footer .bottom-bar a:hover {
 }
 
 #npo_donate .content_top .table .thead-color .type_width {
-  min-width: 90px;
+  width: 120px;
 }
 
 #npo_donate .content_top .table .clickable-row {
@@ -1833,22 +1764,6 @@ footer .bottom-bar a:hover {
 
 #npo_donate .content_top .table .clickable-row:hover {
   color: #FA9C25;
-}
-
-#npo_donate .content_top .page {
-  display: flex;
-  justify-content: center;
-}
-
-#npo_donate .content_top .page li.page-item a.page-link {
-  transition: 0.5s;
-  color: #B5B8A3;
-}
-
-#npo_donate .content_top .page li.page-item a.page-link:hover {
-  color: #FA9C25;
-  border-color: #FA9C25;
-  background-color: initial;
 }
 
 #bank_volunteer .content_top {
@@ -1907,22 +1822,6 @@ footer .bottom-bar a:hover {
   color: #FA9C25;
 }
 
-#bank_volunteer .content_top .page {
-  display: flex;
-  justify-content: center;
-}
-
-#bank_volunteer .content_top .page li.page-item a.page-link {
-  transition: 0.5s;
-  color: #B5B8A3;
-}
-
-#bank_volunteer .content_top .page li.page-item a.page-link:hover {
-  color: #FA9C25;
-  border-color: #FA9C25;
-  background-color: initial;
-}
-
 #bank_full_work .content_top {
   margin-top: 150px;
 }
@@ -1979,22 +1878,6 @@ footer .bottom-bar a:hover {
   color: #FA9C25;
 }
 
-#bank_full_work .content_top .page {
-  display: flex;
-  justify-content: center;
-}
-
-#bank_full_work .content_top .page li.page-item a.page-link {
-  transition: 0.5s;
-  color: #B5B8A3;
-}
-
-#bank_full_work .content_top .page li.page-item a.page-link:hover {
-  color: #FA9C25;
-  border-color: #FA9C25;
-  background-color: initial;
-}
-
 #bank_part_time .content_top {
   margin-top: 150px;
 }
@@ -2049,22 +1932,6 @@ footer .bottom-bar a:hover {
 
 #bank_part_time .content_top .table .clickable-row:hover {
   color: #FA9C25;
-}
-
-#bank_part_time .content_top .page {
-  display: flex;
-  justify-content: center;
-}
-
-#bank_part_time .content_top .page li.page-item a.page-link {
-  transition: 0.5s;
-  color: #B5B8A3;
-}
-
-#bank_part_time .content_top .page li.page-item a.page-link:hover {
-  color: #FA9C25;
-  border-color: #FA9C25;
-  background-color: initial;
 }
 
 #welfare_shop .content_top {
@@ -2126,22 +1993,6 @@ footer .bottom-bar a:hover {
   transform: rotate(10deg) scale(1.2);
 }
 
-#welfare_shop .content_top .page {
-  display: flex;
-  justify-content: center;
-}
-
-#welfare_shop .content_top .page li.page-item a.page-link {
-  transition: 0.5s;
-  color: #B5B8A3;
-}
-
-#welfare_shop .content_top .page li.page-item a.page-link:hover {
-  color: #FA9C25;
-  border-color: #FA9C25;
-  background-color: initial;
-}
-
 #npo_list .content_top {
   margin-top: 150px;
 }
@@ -2192,22 +2043,6 @@ footer .bottom-bar a:hover {
 
 #npo_list .content_top .table .clickable-row:hover {
   color: #FA9C25;
-}
-
-#npo_list .content_top .page {
-  display: flex;
-  justify-content: center;
-}
-
-#npo_list .content_top .page li.page-item a.page-link {
-  transition: 0.5s;
-  color: #B5B8A3;
-}
-
-#npo_list .content_top .page li.page-item a.page-link:hover {
-  color: #FA9C25;
-  border-color: #FA9C25;
-  background-color: initial;
 }
 
 #post_ads .content_top {
@@ -2747,46 +2582,25 @@ footer .bottom-bar a:hover {
   height: 78px;
 }
 
-#org_allowance_list .content .table {
+#org_allowance_list .content .table, #org_rescue_list .content .table, #org_scholarship_list .content .table {
   margin-top: 20px;
   table-layout: fixed;
 }
 
-#org_allowance_list .content .table .thead-color {
+#org_allowance_list .content .table .thead-color, #org_rescue_list .content .table .thead-color, #org_scholarship_list .content .table .thead-color {
   background-color: #F7C280;
 }
 
-#org_allowance_list .content .table .thead-color .type_width {
+#org_allowance_list .content .table .thead-color .type_width, #org_rescue_list .content .table .thead-color .type_width, #org_scholarship_list .content .table .thead-color .type_width {
   width: 120px;
 }
 
-#org_allowance_list .content .table .clickable-row {
+#org_allowance_list .content .table .clickable-row, #org_rescue_list .content .table .clickable-row, #org_scholarship_list .content .table .clickable-row {
   cursor: pointer;
   transition: 0.5s;
 }
 
-#org_allowance_list .content .table .clickable-row:hover {
-  color: #FA9C25;
-}
-
-#org_rescue_list .content .table {
-  margin-top: 20px;
-}
-
-#org_rescue_list .content .table .thead-color {
-  background-color: #F7C280;
-}
-
-#org_rescue_list .content .table .thead-color .type_width {
-  min-width: 90px;
-}
-
-#org_rescue_list .content .table .clickable-row {
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-#org_rescue_list .content .table .clickable-row:hover {
+#org_allowance_list .content .table .clickable-row:hover, #org_rescue_list .content .table .clickable-row:hover, #org_scholarship_list .content .table .clickable-row:hover {
   color: #FA9C25;
 }
 /*# sourceMappingURL=style.css.map */

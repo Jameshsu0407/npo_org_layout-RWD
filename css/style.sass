@@ -93,7 +93,7 @@ ul
     padding: 0
     margin-bottom: 50px
 // 手機樣式控制
-@media screen and ( max-width: 576px )
+@media screen and ( max-width: 768px )
     // 在手機上不顯示
     .off
         display: none
@@ -921,21 +921,6 @@ footer
                     color: $color_dark_orange
             .type_width
                 width: 120px
-            @media screen and ( max-width: 768px )
-                .off
-                    display: none
-                
-        .page
-            display: flex
-            justify-content: center
-            li.page-item
-                a.page-link
-                    transition: 0.5s
-                    color: $color_gray
-                    &:hover
-                        color: $color_dark_orange
-                        border-color: $color_dark_orange
-                        background-color: initial
 // -----------------------------------------------------        
 // 3.3公益影片
 #npo_video
@@ -971,17 +956,6 @@ footer
                     &:hover
                         transition: 0.5s
                         transform: rotate(10deg) scale(1.2)
-        .page
-            display: flex
-            justify-content: center
-            li.page-item
-                a.page-link
-                    transition: 0.5s
-                    color: $color_gray
-                    &:hover
-                        color: $color_dark_orange
-                        border-color: $color_dark_orange
-                        background-color: initial
 // -----------------------------------------------------        
 // 4.1.1補助機構 4.2.1救助機構 4.3.1獎助機構
 #npo_allowance_list,#npo_rescue_list,#npo_scholarship_list
@@ -1042,17 +1016,6 @@ footer
                 transition: 0.5s
                 &:hover
                     color: $color_dark_orange
-        .page
-            display: flex
-            justify-content: center
-            li.page-item
-                a.page-link
-                    transition: 0.5s
-                    color: $color_gray
-                    &:hover
-                        color: $color_dark_orange
-                        border-color: $color_dark_orange
-                        background-color: initial
 // -----------------------------------------------------        
 // 4.1.3補助行事曆 4.3.3獎助行事曆
 #npo_allowance_calendar,#npo_scholarship_calendar
@@ -1182,27 +1145,17 @@ footer
                 @media screen and ( max-width: 576px )
                     padding: 0
         .table
+            table-layout: fixed
             margin-top: 20px
             .thead-color
                 background-color: $color_orange
                 .type_width
-                    min-width: 90px
+                    width: 120px
             .clickable-row
                 cursor: pointer
                 transition: 0.5s
                 &:hover
                     color: $color_dark_orange
-        .page
-            display: flex
-            justify-content: center
-            li.page-item
-                a.page-link
-                    transition: 0.5s
-                    color: $color_gray
-                    &:hover
-                        color: $color_dark_orange
-                        border-color: $color_dark_orange
-                        background-color: initial
 // -----------------------------------------------------        
 // 5.2企業提供
 #npo_donate
@@ -1231,23 +1184,12 @@ footer
             .thead-color
                 background-color: $color_orange
                 .type_width
-                    min-width: 90px
+                    width: 120px
             .clickable-row
                 cursor: pointer
                 transition: 0.5s
                 &:hover
                     color: $color_dark_orange
-        .page
-            display: flex
-            justify-content: center
-            li.page-item
-                a.page-link
-                    transition: 0.5s
-                    color: $color_gray
-                    &:hover
-                        color: $color_dark_orange
-                        border-color: $color_dark_orange
-                        background-color: initial
 // -----------------------------------------------------        
 // 6.1志工招募
 #bank_volunteer
@@ -1282,17 +1224,6 @@ footer
                 transition: 0.5s
                 &:hover
                     color: $color_dark_orange
-        .page
-            display: flex
-            justify-content: center
-            li.page-item
-                a.page-link
-                    transition: 0.5s
-                    color: $color_gray
-                    &:hover
-                        color: $color_dark_orange
-                        border-color: $color_dark_orange
-                        background-color: initial
 // -----------------------------------------------------        
 // 6.2全職工作
 #bank_full_work
@@ -1327,17 +1258,6 @@ footer
                 transition: 0.5s
                 &:hover
                     color: $color_dark_orange
-        .page
-            display: flex
-            justify-content: center
-            li.page-item
-                a.page-link
-                    transition: 0.5s
-                    color: $color_gray
-                    &:hover
-                        color: $color_dark_orange
-                        border-color: $color_dark_orange
-                        background-color: initial
 // -----------------------------------------------------        
 // 6.3兼職工作
 #bank_part_time
@@ -1372,17 +1292,6 @@ footer
                 transition: 0.5s
                 &:hover
                     color: $color_dark_orange
-        .page
-            display: flex
-            justify-content: center
-            li.page-item
-                a.page-link
-                    transition: 0.5s
-                    color: $color_gray
-                    &:hover
-                        color: $color_dark_orange
-                        border-color: $color_dark_orange
-                        background-color: initial
 // -----------------------------------------------------        
 // 7公益商城
 #welfare_shop
@@ -1420,17 +1329,6 @@ footer
                     &:hover
                         transition: 0.5s
                         transform: rotate(10deg) scale(1.2)
-        .page
-            display: flex
-            justify-content: center
-            li.page-item
-                a.page-link
-                    transition: 0.5s
-                    color: $color_gray
-                    &:hover
-                        color: $color_dark_orange
-                        border-color: $color_dark_orange
-                        background-color: initial
 // -----------------------------------------------------        
 // 8非營利組織名錄
 #npo_list
@@ -1463,17 +1361,6 @@ footer
                 transition: 0.5s
                 &:hover
                     color: $color_dark_orange
-        .page
-            display: flex
-            justify-content: center
-            li.page-item
-                a.page-link
-                    transition: 0.5s
-                    color: $color_gray
-                    &:hover
-                        color: $color_dark_orange
-                        border-color: $color_dark_orange
-                        background-color: initial
 // -----------------------------------------------------        
 // 9.1廣告刊登
 #post_ads
@@ -1846,8 +1733,8 @@ footer
                         line-height: 25px
                         height: 78px
 // -----------------------------------------------------        
-// 12.4組織-補助公告-列表                           
-#org_allowance_list
+// 12.4組織-補助公告-列表 12.5組織-救助公告-列表                           
+#org_allowance_list,#org_rescue_list,#org_scholarship_list
     .content
         .table
             margin-top: 20px
@@ -1863,17 +1750,5 @@ footer
                     color: $color_dark_orange
 // -----------------------------------------------------        
 // 12.5組織-救助公告-列表                           
-#org_rescue_list
-    .content
-        .table
-            margin-top: 20px
-            .thead-color
-                background-color: $color_orange
-                .type_width
-                    min-width: 90px
-            .clickable-row
-                cursor: pointer
-                transition: 0.5s
-                &:hover
-                    color: $color_dark_orange
+
         
