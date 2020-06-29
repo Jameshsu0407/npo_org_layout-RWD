@@ -1853,7 +1853,7 @@ footer
                     line-height: 25px
                     height: 50px
 // -----------------------------------------------------        
-// 12.8組織-志工招募-列表                           
+// 12.9組織-全職工作-列表                           
 #org_full_work_list
     .content
         margin-top: 30px
@@ -1886,7 +1886,8 @@ footer
                     white-space: normal
                     line-height: 25px
                     height: 50px
-// 12.8組織-志工招募-列表                           
+// ----------------------------------------------------- 
+// 12.10組織-兼職工作-列表                           
 #org_part_time_list
     .content
         margin-top: 30px
@@ -1919,3 +1920,29 @@ footer
                     white-space: normal
                     line-height: 25px
                     height: 50px
+// ----------------------------------------------------- 
+// 12.11組織-公益商城-列表
+#org_shop_list
+    .content
+        margin-top: 30px
+        display: flex
+        flex-wrap: wrap
+        .col-12.col-lg-6
+            display: flex
+            justify-content: center
+            .good
+                text-align: center
+                .pic
+                    overflow: hidden
+                    width: 250px
+                    height: 250px
+                    display: flex
+                    justify-content: center
+                    img
+                        height: 100%
+                        &:hover
+                            transition: 0.5s
+                            transform: rotate(10deg) scale(1.2)
+                h3
+                    +title
+                    margin: 10px 0

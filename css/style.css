@@ -2835,4 +2835,43 @@ footer .bottom-bar a:hover {
   line-height: 25px;
   height: 50px;
 }
+
+#org_shop_list .content {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#org_shop_list .content .col-12.col-lg-6 {
+  display: flex;
+  justify-content: center;
+}
+
+#org_shop_list .content .col-12.col-lg-6 .good {
+  text-align: center;
+}
+
+#org_shop_list .content .col-12.col-lg-6 .good .pic {
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+#org_shop_list .content .col-12.col-lg-6 .good .pic img {
+  height: 100%;
+}
+
+#org_shop_list .content .col-12.col-lg-6 .good .pic img:hover {
+  transition: 0.5s;
+  transform: rotate(10deg) scale(1.2);
+}
+
+#org_shop_list .content .col-12.col-lg-6 .good h3 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 0;
+  margin: 10px 0;
+}
 /*# sourceMappingURL=style.css.map */
