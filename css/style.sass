@@ -1749,6 +1749,65 @@ footer
                 &:hover
                     color: $color_dark_orange
 // -----------------------------------------------------        
-// 12.5組織-救助公告-列表                           
-
+// 12.7組織-物資募集-列表                           
+#org_donate_list
+    .content
+        margin-top: 30px
+        a
+            &:hover
+                color: $color_black
+            .post
+                display: flex
+                flex-wrap: wrap
+                border: 1px solid $color_light_gray
+                transition: 0.5s
+                margin-bottom: 30px
+                border-radius: 5px
+                padding: 15px
+                &:hover
+                    transform: scale(1.03)
+                .post_left
+                    position: relative
+                    display: flex
+                    align-items: center
+                    padding: 0
+                    .time_box
+                        position: absolute
+                        background-color: rgba(247,194 ,128 ,0.8 )
+                        top: 0
+                        padding: 5px
+                        span
+                            color: $color_white
+                            text-align: center
+                            display: block
+                            text-align: center
+                        span.year
+                            font-size: 14px
+                            margin-bottom: -5px
+                        span.date
+                            font-size: 20px
+                            font-weight: 700
+                    .pic
+                        width: 240.81px
+                        height: 135.45px
+                        display: flex
+                        justify-content: center
+                        img
+                            height: 100%
+                .post_right
+                    padding-right: 0
+                    h3
+                        +title
+                        margin: 10px 0
+                    p
+                        margin: 10px 0
+                        overflow: hidden
+                        white-space: nowrap
+                        text-overflow: ellipsis
+                        display: -webkit-box
+                        -webkit-line-clamp: 2
+                        -webkit-box-orient: vertical
+                        white-space: normal
+                        line-height: 25px
+                        height: 78px
         

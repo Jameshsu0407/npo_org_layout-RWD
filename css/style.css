@@ -2603,4 +2603,91 @@ footer .bottom-bar a:hover {
 #org_allowance_list .content .table .clickable-row:hover, #org_rescue_list .content .table .clickable-row:hover, #org_scholarship_list .content .table .clickable-row:hover {
   color: #FA9C25;
 }
+
+#org_donate_list .content {
+  margin-top: 30px;
+}
+
+#org_donate_list .content a:hover {
+  color: #343A40;
+}
+
+#org_donate_list .content a .post {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #d4d4d4;
+  transition: 0.5s;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+#org_donate_list .content a .post:hover {
+  transform: scale(1.03);
+}
+
+#org_donate_list .content a .post .post_left {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+#org_donate_list .content a .post .post_left .time_box {
+  position: absolute;
+  background-color: rgba(247, 194, 128, 0.8);
+  top: 0;
+  padding: 5px;
+}
+
+#org_donate_list .content a .post .post_left .time_box span {
+  color: #fff;
+  text-align: center;
+  display: block;
+  text-align: center;
+}
+
+#org_donate_list .content a .post .post_left .time_box span.year {
+  font-size: 14px;
+  margin-bottom: -5px;
+}
+
+#org_donate_list .content a .post .post_left .time_box span.date {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#org_donate_list .content a .post .post_left .pic {
+  width: 240.81px;
+  height: 135.45px;
+  display: flex;
+  justify-content: center;
+}
+
+#org_donate_list .content a .post .post_left .pic img {
+  height: 100%;
+}
+
+#org_donate_list .content a .post .post_right {
+  padding-right: 0;
+}
+
+#org_donate_list .content a .post .post_right h3 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 0;
+  margin: 10px 0;
+}
+
+#org_donate_list .content a .post .post_right p {
+  margin: 10px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  white-space: normal;
+  line-height: 25px;
+  height: 78px;
+}
 /*# sourceMappingURL=style.css.map */
