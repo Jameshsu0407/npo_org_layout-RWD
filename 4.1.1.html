@@ -170,70 +170,101 @@
     <div class="row">
       <div class="content_top col-12">
         <h2 class="content_title col-12">補助機構</h2>
-        <div class="allowance_list">
-          <div class="col-4 org_pic">
-            <a href="#">
-              <img src="https://fakeimg.pl/350x160/">
+        <div class="allowance_list col-12">
+
+          <div class="pic col-12 col-lg-4">
+            <a href="12.12.html">
+              <img src="https://fakeimg.pl/350x150/" class="img-fluid">
             </a>
           </div>
-          <div class="col-4 org_pic">
-            <a href="#">
-              <img src="https://fakeimg.pl/350x160/">
+
+          <div class="pic col-12 col-lg-4">
+            <a href="12.12.html">
+              <img src="https://fakeimg.pl/1000x200/" class="img-fluid">
             </a>
           </div>
-          <div class="col-4 org_pic">
-            <a href="#">
-              <img src="https://fakeimg.pl/350x160/">
+
+          <div class="pic col-12 col-lg-4">
+            <a href="12.12.html">
+              <img src="https://fakeimg.pl/200x1000/" class="img-fluid">
             </a>
           </div>
-          <div class="col-4 org_pic">
-            <a href="#">
-              <img src="https://fakeimg.pl/350x160/">
+
+          <div class="pic col-12 col-lg-4">
+            <a href="12.12.html">
+              <img src="https://fakeimg.pl/800x800/" class="img-fluid">
             </a>
           </div>
-          <div class="col-4 org_pic">
-            <a href="#">
-              <img src="https://fakeimg.pl/350x160/">
+
+          <div class="pic col-12 col-lg-4">
+            <a href="12.12.html">
+              <img src="https://fakeimg.pl/350x150/" class="img-fluid">
             </a>
           </div>
-          <div class="col-4 org_pic">
-            <a href="#">
-              <img src="https://fakeimg.pl/350x160/">
+
+          <div class="pic col-12 col-lg-4">
+            <a href="12.12.html">
+              <img src="https://fakeimg.pl/350x150/" class="img-fluid">
             </a>
           </div>
-          <div class="col-4 org_pic">
-            <a href="#">
-              <img src="https://fakeimg.pl/350x160/">
+
+          <div class="pic col-12 col-lg-4">
+            <a href="12.12.html">
+              <img src="https://fakeimg.pl/350x150/" class="img-fluid">
             </a>
           </div>
-          <div class="col-4 org_pic">
-            <a href="#">
-              <img src="https://fakeimg.pl/350x160/">
+
+          <div class="pic col-12 col-lg-4">
+            <a href="12.12.html">
+              <img src="https://fakeimg.pl/350x150/" class="img-fluid">
             </a>
           </div>
-          <div class="col-4 org_pic">
-            <a href="#">
-              <img src="https://fakeimg.pl/350x160/">
+
+          <div class="pic col-12 col-lg-4">
+            <a href="12.12.html">
+              <img src="https://fakeimg.pl/350x150/" class="img-fluid">
             </a>
           </div>
-          <div class="col-4 org_pic">
-            <a href="#">
-              <img src="https://fakeimg.pl/350x160/">
+
+          <div class="pic col-12 col-lg-4">
+            <a href="12.12.html">
+              <img src="https://fakeimg.pl/350x150/" class="img-fluid">
             </a>
           </div>
-          <div class="col-4 org_pic">
-            <a href="#">
-              <img src="https://fakeimg.pl/350x160/">
+
+          <div class="pic col-12 col-lg-4">
+            <a href="12.12.html">
+              <img src="https://fakeimg.pl/350x150/" class="img-fluid">
             </a>
           </div>
-          <div class="col-4 org_pic">
-            <a href="#">
-              <img src="https://fakeimg.pl/350x160/">
+
+          <div class="pic col-12 col-lg-4">
+            <a href="12.12.html">
+              <img src="https://fakeimg.pl/350x150/" class="img-fluid">
             </a>
           </div>
+
+          <div class="pic col-12 col-lg-4">
+            <a href="12.12.html">
+              <img src="https://fakeimg.pl/350x150/" class="img-fluid">
+            </a>
+          </div>
+
+          <div class="pic col-12 col-lg-4">
+            <a href="12.12.html">
+              <img src="https://fakeimg.pl/350x150/" class="img-fluid">
+            </a>
+          </div>
+
+          <div class="pic col-12 col-lg-4">
+            <a href="12.12.html">
+              <img src="https://fakeimg.pl/350x150/" class="img-fluid">
+            </a>
+          </div>
+
         </div>
         <!--分頁-->
-        <div id="page">
+        <div id="page" class="col-12">
           <ul class="pagination">
             <li><a href='#'><i class="fa fa-angle-double-left fa-lg" aria-hidden="true"></i><span
                   class="sr-only">第一頁</span></a></li>
@@ -381,7 +412,7 @@
     document.addEventListener('DOMContentLoaded', function () {
       var calendarEl = document.getElementById('calendar');
       var calendar = new FullCalendar.Calendar(calendarEl, {
-        plugins: ['interaction','dayGrid'],
+        plugins: ['interaction', 'dayGrid'],
         fixedWeekCount: false,
         selectable: true,
         events: [
