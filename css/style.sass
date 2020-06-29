@@ -911,7 +911,7 @@ footer
                     padding: 0
         .table
             margin-top: 20px
-           
+            table-layout: fixed
             .thead-color
                 background-color: $color_orange
             .clickable-row
@@ -920,7 +920,10 @@ footer
                 &:hover
                     color: $color_dark_orange
             .type_width
-                min-width: 90px
+                width: 120px
+            @media screen and ( max-width: 768px )
+                .off
+                    display: none
                 
         .page
             display: flex

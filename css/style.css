@@ -1329,6 +1329,7 @@ footer .bottom-bar a:hover {
 
 #npo_activities .content_top .table {
   margin-top: 20px;
+  table-layout: fixed;
 }
 
 #npo_activities .content_top .table .thead-color {
@@ -1345,7 +1346,13 @@ footer .bottom-bar a:hover {
 }
 
 #npo_activities .content_top .table .type_width {
-  min-width: 90px;
+  width: 120px;
+}
+
+@media screen and (max-width: 768px) {
+  #npo_activities .content_top .table .off {
+    display: none;
+  }
 }
 
 #npo_activities .content_top .page {
