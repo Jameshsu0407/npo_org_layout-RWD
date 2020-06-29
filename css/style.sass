@@ -1031,10 +1031,11 @@ footer
                     padding: 0
         .table
             margin-top: 20px
+            table-layout: fixed
             .thead-color
                 background-color: $color_orange
                 .type_width
-                    min-width: 90px
+                    width: 120px
             .clickable-row
                 cursor: pointer
                 transition: 0.5s
@@ -1843,3 +1844,35 @@ footer
                         white-space: normal
                         line-height: 25px
                         height: 78px
+// -----------------------------------------------------        
+// 12.4組織-補助公告-列表                           
+#org_allowance_list
+    .content
+        .table
+            margin-top: 20px
+            table-layout: fixed
+            .thead-color
+                background-color: $color_orange
+                .type_width
+                    width: 120px
+            .clickable-row
+                cursor: pointer
+                transition: 0.5s
+                &:hover
+                    color: $color_dark_orange
+// -----------------------------------------------------        
+// 12.5組織-救助公告-列表                           
+#org_rescue_list
+    .content
+        .table
+            margin-top: 20px
+            .thead-color
+                background-color: $color_orange
+                .type_width
+                    min-width: 90px
+            .clickable-row
+                cursor: pointer
+                transition: 0.5s
+                &:hover
+                    color: $color_dark_orange
+        

@@ -1505,6 +1505,7 @@ footer .bottom-bar a:hover {
 
 #npo_allowance_announcement .content_top .table, #npo_rescue_announcement .content_top .table, #npo_scholarship_announcement .content_top .table {
   margin-top: 20px;
+  table-layout: fixed;
 }
 
 #npo_allowance_announcement .content_top .table .thead-color, #npo_rescue_announcement .content_top .table .thead-color, #npo_scholarship_announcement .content_top .table .thead-color {
@@ -1512,7 +1513,7 @@ footer .bottom-bar a:hover {
 }
 
 #npo_allowance_announcement .content_top .table .thead-color .type_width, #npo_rescue_announcement .content_top .table .thead-color .type_width, #npo_scholarship_announcement .content_top .table .thead-color .type_width {
-  min-width: 90px;
+  width: 120px;
 }
 
 #npo_allowance_announcement .content_top .table .clickable-row, #npo_rescue_announcement .content_top .table .clickable-row, #npo_scholarship_announcement .content_top .table .clickable-row {
@@ -2740,5 +2741,48 @@ footer .bottom-bar a:hover {
   white-space: normal;
   line-height: 25px;
   height: 78px;
+}
+
+#org_allowance_list .content .table {
+  margin-top: 20px;
+  table-layout: fixed;
+}
+
+#org_allowance_list .content .table .thead-color {
+  background-color: #F7C280;
+}
+
+#org_allowance_list .content .table .thead-color .type_width {
+  width: 120px;
+}
+
+#org_allowance_list .content .table .clickable-row {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#org_allowance_list .content .table .clickable-row:hover {
+  color: #FA9C25;
+}
+
+#org_rescue_list .content .table {
+  margin-top: 20px;
+}
+
+#org_rescue_list .content .table .thead-color {
+  background-color: #F7C280;
+}
+
+#org_rescue_list .content .table .thead-color .type_width {
+  min-width: 90px;
+}
+
+#org_rescue_list .content .table .clickable-row {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#org_rescue_list .content .table .clickable-row:hover {
+  color: #FA9C25;
 }
 /*# sourceMappingURL=style.css.map */
