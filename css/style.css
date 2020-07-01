@@ -944,6 +944,7 @@ ul.dropdown-menu li.dropdown a.dropdown-toggle::before {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 #shop .good .pic img:hover {
@@ -2028,6 +2029,7 @@ footer .bottom-bar a:hover {
 
 #welfare_shop .content_top .products .good {
   text-align: center;
+  margin: 10px 0;
 }
 
 #welfare_shop .content_top .products .good .pic {
@@ -2038,6 +2040,7 @@ footer .bottom-bar a:hover {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 #welfare_shop .content_top .products .good .pic img:hover {
@@ -2932,6 +2935,7 @@ footer .bottom-bar a:hover {
 
 #org_shop_list .content .col-12.col-lg-6 .good {
   text-align: center;
+  bottom: 10px 0;
 }
 
 #org_shop_list .content .col-12.col-lg-6 .good .pic {
@@ -2941,6 +2945,7 @@ footer .bottom-bar a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 #org_shop_list .content .col-12.col-lg-6 .good .pic img:hover {
