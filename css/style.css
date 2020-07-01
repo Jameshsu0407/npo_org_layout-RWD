@@ -132,6 +132,7 @@ ul {
 #page ul.pagination li select {
   -webkit-appearance: none;
   border: none;
+  cursor: pointer;
 }
 
 #backToTop {
@@ -2027,8 +2028,6 @@ footer .bottom-bar a:hover {
 
 #welfare_shop .content_top .products .good {
   text-align: center;
-  width: 250px;
-  height: 250px;
 }
 
 #welfare_shop .content_top .products .good .pic {
