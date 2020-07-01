@@ -963,6 +963,8 @@ footer
                 flex-wrap: wrap
                 margin-top: 5px
                 margin-bottom: 5px
+                @media screen and ( max-width: 576px )
+                    padding: 0
         .videos_img
             display: flex
             flex-wrap: wrap
@@ -1402,9 +1404,13 @@ footer
                 @media screen and ( max-width: 576px )
                     padding: 0
         .table
+            table-layout: fixed
             margin-top: 20px
             .thead-color
                 background-color: $color_orange
+                @media screen and ( max-width: 576px )
+                    .type_width
+                        width: 120px
             .clickable-row
                 cursor: pointer
                 transition: 0.5s

@@ -1409,6 +1409,12 @@ footer .bottom-bar a:hover {
   margin-bottom: 5px;
 }
 
+@media screen and (max-width: 576px) {
+  #npo_video .content_top .selector .select_wrap {
+    padding: 0;
+  }
+}
+
 #npo_video .content_top .videos_img {
   display: flex;
   flex-wrap: wrap;
@@ -2099,11 +2105,18 @@ footer .bottom-bar a:hover {
 }
 
 #npo_list .content_top .table {
+  table-layout: fixed;
   margin-top: 20px;
 }
 
 #npo_list .content_top .table .thead-color {
   background-color: #F7C280;
+}
+
+@media screen and (max-width: 576px) {
+  #npo_list .content_top .table .thead-color .type_width {
+    width: 120px;
+  }
 }
 
 #npo_list .content_top .table .clickable-row {
