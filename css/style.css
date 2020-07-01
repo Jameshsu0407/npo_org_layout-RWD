@@ -756,9 +756,14 @@ ul.dropdown-menu li.dropdown a.dropdown-toggle::before {
   height: 260px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-#newpost .newpostpic .card .pic img {
+#newpost .newpostpic .card .pic .width_100 {
+  width: 100%;
+}
+
+#newpost .newpostpic .card .pic .height_100 {
   height: 100%;
 }
 
@@ -920,15 +925,20 @@ ul.dropdown-menu li.dropdown a.dropdown-toggle::before {
   height: 250px;
   display: flex;
   justify-content: center;
-}
-
-#shop .good .pic img {
-  height: 100%;
+  align-items: center;
 }
 
 #shop .good .pic img:hover {
   transition: 0.5s;
   transform: rotate(10deg) scale(1.2);
+}
+
+#shop .good .pic .width_100 {
+  width: 100%;
+}
+
+#shop .good .pic .height_100 {
+  height: 100%;
 }
 
 #shop .good .title {
@@ -1231,7 +1241,7 @@ footer .bottom-bar a:hover {
 #npo_news .content_top .content a .post .post_left .time_box {
   position: absolute;
   background-color: rgba(247, 194, 128, 0.8);
-  top: 0;
+  top: 5px;
   padding: 5px;
 }
 
@@ -1253,13 +1263,18 @@ footer .bottom-bar a:hover {
 }
 
 #npo_news .content_top .content a .post .post_left .pic {
-  width: 240.81px;
-  height: 135.45px;
+  width: 220px;
+  height: 112.5px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-#npo_news .content_top .content a .post .post_left .pic img {
+#npo_news .content_top .content a .post .post_left .pic .width_100 {
+  width: 100%;
+}
+
+#npo_news .content_top .content a .post .post_left .pic .height_100 {
   height: 100%;
 }
 
@@ -1390,15 +1405,25 @@ footer .bottom-bar a:hover {
 
 #npo_video .content_top .videos_img .pic {
   overflow: hidden;
-}
-
-#npo_video .content_top .videos_img .pic img {
-  box-shadow: 8px 10px 8px rgba(0, 0, 0, 0.15);
+  width: 350px;
+  height: 219.625px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 #npo_video .content_top .videos_img .pic img:hover {
   transition: 0.5s;
   transform: rotate(10deg) scale(1.2);
+}
+
+#npo_video .content_top .videos_img .pic .width_100 {
+  width: 100%;
+}
+
+#npo_video .content_top .videos_img .pic .height_100 {
+  height: 100%;
 }
 
 #npo_allowance_list .content_top, #npo_rescue_list .content_top, #npo_scholarship_list .content_top {
@@ -1425,12 +1450,17 @@ footer .bottom-bar a:hover {
 }
 
 #npo_allowance_list .content_top .allowance_list .pic a, #npo_allowance_list .content_top .rescue_list .pic a, #npo_allowance_list .content_top .scholarship_list .pic a, #npo_rescue_list .content_top .allowance_list .pic a, #npo_rescue_list .content_top .rescue_list .pic a, #npo_rescue_list .content_top .scholarship_list .pic a, #npo_scholarship_list .content_top .allowance_list .pic a, #npo_scholarship_list .content_top .rescue_list .pic a, #npo_scholarship_list .content_top .scholarship_list .pic a {
-  width: 350px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-#npo_allowance_list .content_top .allowance_list .pic a img, #npo_allowance_list .content_top .rescue_list .pic a img, #npo_allowance_list .content_top .scholarship_list .pic a img, #npo_rescue_list .content_top .allowance_list .pic a img, #npo_rescue_list .content_top .rescue_list .pic a img, #npo_rescue_list .content_top .scholarship_list .pic a img, #npo_scholarship_list .content_top .allowance_list .pic a img, #npo_scholarship_list .content_top .rescue_list .pic a img, #npo_scholarship_list .content_top .scholarship_list .pic a img {
+#npo_allowance_list .content_top .allowance_list .pic a .width_100, #npo_allowance_list .content_top .rescue_list .pic a .width_100, #npo_allowance_list .content_top .scholarship_list .pic a .width_100, #npo_rescue_list .content_top .allowance_list .pic a .width_100, #npo_rescue_list .content_top .rescue_list .pic a .width_100, #npo_rescue_list .content_top .scholarship_list .pic a .width_100, #npo_scholarship_list .content_top .allowance_list .pic a .width_100, #npo_scholarship_list .content_top .rescue_list .pic a .width_100, #npo_scholarship_list .content_top .scholarship_list .pic a .width_100 {
+  width: 100%;
+}
+
+#npo_allowance_list .content_top .allowance_list .pic a .height_100, #npo_allowance_list .content_top .rescue_list .pic a .height_100, #npo_allowance_list .content_top .scholarship_list .pic a .height_100, #npo_rescue_list .content_top .allowance_list .pic a .height_100, #npo_rescue_list .content_top .rescue_list .pic a .height_100, #npo_rescue_list .content_top .scholarship_list .pic a .height_100, #npo_scholarship_list .content_top .allowance_list .pic a .height_100, #npo_scholarship_list .content_top .rescue_list .pic a .height_100, #npo_scholarship_list .content_top .scholarship_list .pic a .height_100 {
   height: 100%;
 }
 
@@ -1985,15 +2015,20 @@ footer .bottom-bar a:hover {
   height: 250px;
   display: flex;
   justify-content: center;
-}
-
-#welfare_shop .content_top .products .good .pic img {
-  height: 100%;
+  align-items: center;
 }
 
 #welfare_shop .content_top .products .good .pic img:hover {
   transition: 0.5s;
   transform: rotate(10deg) scale(1.2);
+}
+
+#welfare_shop .content_top .products .good .pic .width_100 {
+  width: 100%;
+}
+
+#welfare_shop .content_top .products .good .pic .height_100 {
+  height: 100%;
 }
 
 #welfare_shop .content_top .products .good h3 {

@@ -551,7 +551,10 @@ ul.dropdown-menu
                 height: 260px
                 display: flex
                 justify-content: center
-                img
+                align-items: center
+                .width_100
+                    width: 100%
+                .height_100
                     height: 100%
             .card-title
                 +title
@@ -651,11 +654,15 @@ ul.dropdown-menu
             height: 250px
             display: flex
             justify-content: center
+            align-items: center
             img
-                height: 100%
                 &:hover
                     transition: 0.5s
                     transform: rotate(10deg) scale(1.2)
+            .width_100
+                width: 100%
+            .height_100
+                height: 100%
         .title
             +title
             padding-top: 20px
@@ -848,7 +855,7 @@ footer
                         .time_box
                             position: absolute
                             background-color: rgba(247,194 ,128 ,0.8 )
-                            top: 0
+                            top: 5px
                             padding: 5px
                             span
                                 color: $color_white
@@ -862,11 +869,14 @@ footer
                                 font-size: 20px
                                 font-weight: 700
                         .pic
-                            width: 240.81px
-                            height: 135.45px
+                            width: 220px
+                            height: 112.5px
                             display: flex
                             justify-content: center
-                            img
+                            align-items: center
+                            .width_100
+                                width: 100%
+                            .height_100
                                 height: 100%
                     .post_right
                         padding-right: 0
@@ -951,11 +961,20 @@ footer
                 padding-top: 20px
             .pic
                 overflow: hidden
+                width: 350px
+                height: 219.625px
+                display: flex
+                justify-content: center
+                align-items: center
+                margin: 0 auto
                 img
-                    box-shadow: 8px 10px 8px rgba(0,0,0,.15)
                     &:hover
                         transition: 0.5s
                         transform: rotate(10deg) scale(1.2)
+                .width_100
+                    width: 100%
+                .height_100
+                    height: 100%
 // -----------------------------------------------------        
 // 4.1.1補助機構 4.2.1救助機構 4.3.1獎助機構
 #npo_allowance_list,#npo_rescue_list,#npo_scholarship_list
@@ -976,10 +995,13 @@ footer
                 justify-content: center
                 margin-bottom: 30px
                 a
-                    width: 350px
                     display: flex
                     justify-content: center
-                    img
+                    align-items: center
+                    flex-direction: column
+                    .width_100
+                        width: 100%
+                    .height_100
                         height: 100%
 // -----------------------------------------------------        
 // 4.1.2補助公告 4.2.2救助公告 4.3.2獎助公告
@@ -1329,11 +1351,15 @@ footer
                     height: 250px
                     display: flex
                     justify-content: center
+                    align-items: center
                     img
-                        height: 100%
                         &:hover
                             transition: 0.5s
                             transform: rotate(10deg) scale(1.2)
+                    .width_100
+                        width: 100%
+                    .height_100
+                        height: 100%
                 h3
                     +title
                     margin: 10px 0
