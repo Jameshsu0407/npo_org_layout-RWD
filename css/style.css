@@ -100,6 +100,10 @@ ul {
   }
 }
 
+.clickable-row {
+  cursor: pointer !important;
+}
+
 #page {
   display: flex;
   justify-content: center;
@@ -752,11 +756,24 @@ ul.dropdown-menu li.dropdown a.dropdown-toggle::before {
 }
 
 #newpost .newpostpic .card .pic {
-  width: 450px;
-  height: 260px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  width: 400px;
+  height: 225px;
+}
+
+@media screen and (max-width: 576px) {
+  #newpost .newpostpic .card .pic {
+    width: 320px;
+    height: 180px;
+  }
+}
+
+#newpost .newpostpic .card .pic img {
+  display: block;
+  margin: 0 auto;
 }
 
 #newpost .newpostpic .card .pic .width_100 {
@@ -916,7 +933,6 @@ ul.dropdown-menu li.dropdown a.dropdown-toggle::before {
 
 #shop .good {
   text-align: center;
-  flex-direction: column;
 }
 
 #shop .good .pic {
@@ -926,6 +942,7 @@ ul.dropdown-menu li.dropdown a.dropdown-toggle::before {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 #shop .good .pic img:hover {
@@ -941,11 +958,11 @@ ul.dropdown-menu li.dropdown a.dropdown-toggle::before {
   height: 100%;
 }
 
-#shop .good .title {
+#shop .good h3 {
   font-weight: 600;
   font-size: 18px;
   margin-bottom: 0;
-  padding-top: 20px;
+  margin: 10px 0;
 }
 
 #shop .lookmore {
@@ -1403,14 +1420,23 @@ footer .bottom-bar a:hover {
   padding-top: 20px;
 }
 
+#npo_video .content_top .videos_img .title, #npo_video .content_top .videos_img .text {
+  text-align: center;
+  cursor: pointer;
+}
+
 #npo_video .content_top .videos_img .pic {
   overflow: hidden;
-  width: 350px;
-  height: 219.625px;
+  width: 320px;
+  height: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+}
+
+#npo_video .content_top .videos_img .pic img {
+  cursor: pointer;
 }
 
 #npo_video .content_top .videos_img .pic img:hover {
@@ -1442,14 +1468,14 @@ footer .bottom-bar a:hover {
 }
 
 #npo_allowance_list .content_top .allowance_list .pic, #npo_allowance_list .content_top .rescue_list .pic, #npo_allowance_list .content_top .scholarship_list .pic, #npo_rescue_list .content_top .allowance_list .pic, #npo_rescue_list .content_top .rescue_list .pic, #npo_rescue_list .content_top .scholarship_list .pic, #npo_scholarship_list .content_top .allowance_list .pic, #npo_scholarship_list .content_top .rescue_list .pic, #npo_scholarship_list .content_top .scholarship_list .pic {
-  width: 350px;
-  height: 150px;
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
 }
 
 #npo_allowance_list .content_top .allowance_list .pic a, #npo_allowance_list .content_top .rescue_list .pic a, #npo_allowance_list .content_top .scholarship_list .pic a, #npo_rescue_list .content_top .allowance_list .pic a, #npo_rescue_list .content_top .rescue_list .pic a, #npo_rescue_list .content_top .scholarship_list .pic a, #npo_scholarship_list .content_top .allowance_list .pic a, #npo_scholarship_list .content_top .rescue_list .pic a, #npo_scholarship_list .content_top .scholarship_list .pic a {
+  width: 350px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2006,7 +2032,8 @@ footer .bottom-bar a:hover {
 
 #welfare_shop .content_top .products .good {
   text-align: center;
-  flex-direction: column;
+  width: 250px;
+  height: 250px;
 }
 
 #welfare_shop .content_top .products .good .pic {
@@ -2016,6 +2043,7 @@ footer .bottom-bar a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 #welfare_shop .content_top .products .good .pic img:hover {

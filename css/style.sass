@@ -97,6 +97,9 @@ ul
     // 在手機上不顯示
     .off
         display: none
+// 寫在物件上的連結
+.clickable-row
+    cursor: pointer !important
 // -----------------------------------------------------
 // page
 #page
@@ -547,11 +550,18 @@ ul.dropdown-menu
         .card
             border: none
             .pic
-                width: 450px
-                height: 260px
                 display: flex
                 justify-content: center
                 align-items: center
+                margin: 0 auto
+                width: 400px
+                height: 225px
+                @media screen and ( max-width: 576px )
+                    width: 320px
+                    height: 180px
+                img
+                    display: block
+                    margin: 0 auto
                 .width_100
                     width: 100%
                 .height_100
@@ -647,7 +657,6 @@ ul.dropdown-menu
     flex-wrap: wrap
     .good
         text-align: center
-        flex-direction: column
         .pic
             overflow: hidden
             width: 250px
@@ -655,6 +664,7 @@ ul.dropdown-menu
             display: flex
             justify-content: center
             align-items: center
+            margin: 0 auto
             img
                 &:hover
                     transition: 0.5s
@@ -663,9 +673,9 @@ ul.dropdown-menu
                 width: 100%
             .height_100
                 height: 100%
-        .title
+        h3
             +title
-            padding-top: 20px
+            margin: 10px 0
     .lookmore
         margin-right: auto
         margin-left: auto
@@ -959,15 +969,19 @@ footer
             .title
                 +title
                 padding-top: 20px
+            .title,.text
+                text-align: center
+                cursor: pointer
             .pic
                 overflow: hidden
-                width: 350px
-                height: 219.625px
+                width: 320px
+                height: 180px
                 display: flex
                 justify-content: center
                 align-items: center
                 margin: 0 auto
                 img
+                    cursor: pointer
                     &:hover
                         transition: 0.5s
                         transform: rotate(10deg) scale(1.2)
@@ -989,12 +1003,13 @@ footer
             display: flex
             flex-wrap: wrap
             .pic
-                width: 350px
-                height: 150px
+                
                 display: flex
                 justify-content: center
                 margin-bottom: 30px
                 a
+                    width: 350px
+                    height: 150px
                     display: flex
                     justify-content: center
                     align-items: center
@@ -1344,7 +1359,8 @@ footer
             flex-wrap: wrap
             .good
                 text-align: center
-                flex-direction: column
+                width: 250px
+                height: 250px
                 .pic
                     overflow: hidden
                     width: 250px
@@ -1352,6 +1368,7 @@ footer
                     display: flex
                     justify-content: center
                     align-items: center
+                    margin: 0 auto
                     img
                         &:hover
                             transition: 0.5s
