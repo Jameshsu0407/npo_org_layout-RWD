@@ -2258,14 +2258,20 @@ footer .bottom-bar a:hover {
   align-items: center;
   width: 300px;
   height: 300px;
-  display: block;
-  margin: 0 auto 15px auto;
+  margin: 0 auto 30px auto;
 }
 
 .org_same_list .content_top .left .pic img {
-  height: 100%;
   display: block;
   margin: 0 auto;
+}
+
+.org_same_list .content_top .left .pic .width_100 {
+  width: 100%;
+}
+
+.org_same_list .content_top .left .pic .height_100 {
+  height: 100%;
 }
 
 .org_same_list .content_top .left .profile h3 {
@@ -2389,9 +2395,14 @@ footer .bottom-bar a:hover {
   height: 135.45px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-#org_newpost_list .content a .post .post_left .pic img {
+#org_newpost_list .content a .post .post_left .pic .width_100 {
+  width: 100%;
+}
+
+#org_newpost_list .content a .post .post_left .pic .height_100 {
   height: 100%;
 }
 
@@ -2476,9 +2487,14 @@ footer .bottom-bar a:hover {
   height: 135.45px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-#org_activities_list .content a .post .post_left .pic img {
+#org_activities_list .content a .post .post_left .pic .width_100 {
+  width: 100%;
+}
+
+#org_activities_list .content a .post .post_left .pic .height_100 {
   height: 100%;
 }
 
@@ -2563,9 +2579,14 @@ footer .bottom-bar a:hover {
   height: 135.45px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-#org_video_list .content a .post .post_left .pic img {
+#org_video_list .content a .post .post_left .pic .width_100 {
+  width: 100%;
+}
+
+#org_video_list .content a .post .post_left .pic .height_100 {
   height: 100%;
 }
 
@@ -2672,9 +2693,14 @@ footer .bottom-bar a:hover {
   height: 135.45px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-#org_donate_list .content a .post .post_left .pic img {
+#org_donate_list .content a .post .post_left .pic .width_100 {
+  width: 100%;
+}
+
+#org_donate_list .content a .post .post_left .pic .height_100 {
   height: 100%;
 }
 
@@ -2857,15 +2883,20 @@ footer .bottom-bar a:hover {
   height: 250px;
   display: flex;
   justify-content: center;
-}
-
-#org_shop_list .content .col-12.col-lg-6 .good .pic img {
-  height: 100%;
+  align-items: center;
 }
 
 #org_shop_list .content .col-12.col-lg-6 .good .pic img:hover {
   transition: 0.5s;
   transform: rotate(10deg) scale(1.2);
+}
+
+#org_shop_list .content .col-12.col-lg-6 .good .pic .width_100 {
+  width: 100%;
+}
+
+#org_shop_list .content .col-12.col-lg-6 .good .pic .height_100 {
+  height: 100%;
 }
 
 #org_shop_list .content .col-12.col-lg-6 .good h3 {

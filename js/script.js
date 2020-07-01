@@ -77,4 +77,19 @@ $(window).scroll(function(){
     }
 });
 
+// 調整圖片不符規定尺寸時留白部分
+$( ".fixed_size" ).each(function (i) {
+    var pic_width= $(this).width();
+    var pic_height= $(this).height();
+    
+    if(pic_width > pic_height){
+        $(this).addClass('width_100');
+        $(this).removeClass('height_100');
+       
+    }
+    else if(pic_width <= pic_height){
+        $(this).addClass('height_100');
+        $(this).removeClass('width_100');
+    }
+})
 
