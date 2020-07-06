@@ -11,6 +11,9 @@ $color_white: #fff
 *
     // border: 1px solid #000
     box-sizing: border-box
+    a
+        &:hover
+            color: $color_black
 // nav#navbar
 //     display: none
 // -----------------------------------------------------
@@ -145,7 +148,7 @@ ul
             height: 70px
 // -----------------------------------------------------
 // 社群分享
-#social_share
+#pc_social_share
     .fb
         background-color: #4267B2
         border-radius: 5px 0 0 5px
@@ -250,6 +253,44 @@ ul
             margin: 0
             margin: 0 0 0 12px
             font-weight: 600
+#phone_social_share
+    display: flex
+    justify-content: flex-end
+    .fb,.line,.twitter,.weibo
+        display: inline-block
+        border-radius: 5px
+        padding: 5px
+        margin: 10px 0 10px 10px
+        i
+            font-size: 30px
+            color: #fff
+    .fb
+        background-color: #4267B2
+    .line
+        background-color: #66C411
+        padding: 5px 8px
+    .twitter
+        background-color: #3AA1F2
+    .weibo
+        background-color: #E73E33
+// -----------------------------------------------------
+// 回上一頁
+#back
+    display: flex
+    justify-content: center
+    margin-top: 50px
+    a
+        &:hover
+            color: $color_black
+            h4
+                background-color: lighten($color_yellow , 10%)
+        h4
+            background-color: $color_yellow
+            display: inline
+            padding: 10px 20px
+            border-radius: 25px
+            +title
+            transition: 0.5s      
 // -----------------------------------------------------
 // 導覽列
 // 第二層選單的寬度，修改bootsnav樣式
@@ -2032,3 +2073,90 @@ footer
             margin: 20px 0
         .subject
             line-height: 32px
+// ----------------------------------------------------- 
+// 12.1.1組織-公益新訊-單元頁
+#org_newpost_unit
+    #pc_social_share
+        display: block
+        @media screen and ( max-width: 992px )
+            display: none
+    #phone_social_share
+        display: none
+        @media screen and ( max-width: 992px )
+            display: flex
+    .content
+        h3
+            +title
+            margin-top: 20px
+        span
+            font-size: 14px
+            color: $color_gray
+        p
+            margin-top: 20px
+// ----------------------------------------------------- 
+// 12.2.1組織-最新活動-單元頁
+#org_activities_unit
+    #pc_social_share
+        display: block
+        @media screen and ( max-width: 992px )
+            display: none
+    #phone_social_share
+        display: none
+        @media screen and ( max-width: 992px )
+            display: flex
+    .content
+        h3
+            +title
+            margin-top: 20px
+        span
+            font-size: 14px
+            color: $color_gray
+        .pic
+            width: 720px
+            height: 405px
+            @media screen and ( max-width: 1200px )
+                width: 560px
+                height: 315px
+            @media screen and ( max-width: 992px )
+                width: 640px
+                height: 360px
+            @media screen and ( max-width: 768px )
+                width: 480px
+                height: 270px
+            @media screen and ( max-width: 576px )
+                width: 400px
+                height: 225px
+            @media screen and ( max-width: 450px )
+                width: 360px
+                height: 202.5px
+            @media screen and ( max-width: 400px )
+                width: 340px
+                height: 191.25px
+            @media screen and ( max-width: 375px )
+                width: 320px
+                height: 180px
+            @media screen and ( max-width: 360px )
+                width: 280px
+                height: 157.5px
+            @media screen and ( max-width: 320px )
+                width: 240px
+                height: 135px
+            display: flex
+            justify-content: center
+            align-items: center
+            margin: 0 auto
+            margin-top: 10px
+            margin-bottom: 10px
+            .width_100
+                width: 100%
+            .height_100
+                height: 100%
+        h4
+            +title
+            padding: 12px 0 12px 20px
+            border-bottom: 1px solid $color_gray
+        .map
+            margin: 20px 0
+        #back
+            h4
+                padding: 10px 20px

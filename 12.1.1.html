@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>組織-機構介紹</title>
+  <title>組織-公益新訊-單元頁</title>
   <!-- BT4 -->
   <link rel="stylesheet" href="./css/bootstrap.css">
   <!-- slick -->
@@ -162,7 +162,7 @@
     </div>
   </nav>
 
-  <section class="container org_same_list" id="org_intro_list">
+  <section class="container org_same_list" id="org_newpost_unit">
     <div class="row">
       <div class="content_top">
         <div class="col-12 col-lg-4 left">
@@ -188,27 +188,10 @@
           </div>
         </div>
         <div class="col-12 col-lg-8 right">
-          <!-- 手機版導覽列 -->
-          <div class="phone_top_nav ">
-            <select class="form-control select_css" onchange="location.href=this.options[this.selectedIndex].value">
-              <option value="12.1.html">公益新訊</option>
-              <option value="12.2.html">最新活動</option>
-              <option value="12.3.html">公益影片</option>
-              <option value="12.4.html">補助公告</option>
-              <option value="12.5.html">救助公告</option>
-              <option value="12.6.html">獎助公告</option>
-              <option value="12.7.html">物資募集</option>
-              <option value="12.8.html">志工招募</option>
-              <option value="12.9.html">全職工作</option>
-              <option value="12.10.html">兼職工作</option>
-              <option value="12.11.html">公益商城</option>
-              <option selected="selected" value="12.12.html">機構介紹</option>
-            </select>
-          </div>
           <!-- pc版導覽列 -->
           <div class="pc_top_nav">
             <div class="col-2">
-              <a href="12.1.html">
+              <a href="12.1.html" class="actived">
                 <h3>公益新訊</h3>
               </a>
             </div>
@@ -263,61 +246,99 @@
               </a>
             </div>
             <div class="col-2">
-              <a href="12.12.html" class="actived">
+              <a href="12.12.html">
                 <h3>機構介紹</h3>
               </a>
             </div>
           </div>
-          <!-- 內文 -->
-          <div class="content">
-            <h3>聯絡資訊</h3>
-            <h4>機構名稱：財團法人嘉宜社會福利基金會</h4>
-            <h4>機構代碼：7575</h4>
-            <h4>執行長：謝玉琳</h4>
-            <h4>聯絡人：楊淳華</h4>
-            <h4>電話：03-4228-2292-48</h4>
-            <h4>傳真：03-4279-938</h4>
-            <h4>網址：<a href="#">點我前往</a></h4>
-            <h4>電子郵件：liehho0016@hlh.org.tw</h4>
-            <h4>地址：桃園市中壢區中豐路63號1樓
-              <div class="embed-responsive embed-responsive-16by9 map">
-                <iframe class="embed-responsive-item"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.041949327373!2d121.52049035066808!3d25.066567283878328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x140dd0f467a85e51%3A0x721f721f1255cf08!2z57ay6Luf6IKh5Lu95pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1592899753483!5m2!1szh-TW!2stw"></iframe>
+          <!-- pc版社群分享-->
+          <div id="pc_social_share">
+            <a href="#">
+              <div class="fb">
+                <i class="fab fa-facebook"></i>
+                <p>臉書分享</p>
               </div>
-            </h4>
-            <h3>資本資料</h3>
-            <h4>創辦人：嘉宜投資股份有限公司</h4>
-            <h4>成立日期：2007/4/25</h4>
-            <h4>許可機關：內政部</h4>
-            <h4 class="subject">成立主旨：本會以辦理社會福利慈善事業為目的。辦理下列各項目的業務：<br>
-              一、關於國內外災變之賑濟及捐助事項。<br>
-              二、關於醫療救助(含長照醫護)事項。<br>
-              三、關於兒童、老人、婦女及身心障礙等社會福利捐助事項。<br>
-              四、關於設置清寒學生獎助學金事項。<br>
-              五、關於急難救助事項。<br>
-              六、關於環境自然生態保護事項。<br>
-              七、接受主管機關指導辦理事項。<br>
-              八、關於其他社會公益事項。
-            </h4>
-            <h4>工作重點：低收入戶補助、志願服務、社區補助</h4>
-            <h4>服務區域：綜合性服務</h4>
-            <h4>服務對象：
-              性別：不限
-              年齡：不限
-            </h4>
-            <h4>
-              服務項目：個案管理、急難救助、醫療補助、生活扶助、志願服務、社區服務
-            </h4>
+            </a>
+            <a href="#">
+              <div class="line">
+                <i class="fab fa-line"></i>
+                <p>line分享</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="twitter">
+                <i class="fab fa-twitter"></i>
+                <p>推特分享</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="weibo">
+                <i class="fab fa-weibo"></i>
+                <p>微博分享</p>
+              </div>
+            </a>
+          </div>
+            <!-- pc版社群分享 -->
 
-            <h3>扶助資訊</h3>
-            <h4>
-              內文主題：內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
-            </h4>
-
+            <!-- 內文 -->
+            <div class="content">
+              <!-- 手機版社群分享-->
+              <div id="phone_social_share">
+                <a href="#">
+                  <div class="fb" title="臉書分享">
+                    <i class="fab fa-facebook"></i>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="line" title="line分享">
+                    <i class="fab fa-line"></i>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="twitter" title="推特分享">
+                    <i class="fab fa-twitter"></i>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="weibo" title="微博分享">
+                    <i class="fab fa-weibo"></i>
+                  </div>
+                </a>
+              </div>
+              <!-- 手機版社群分享 -->
+              <h3>第四屆「堉璘台灣奉獻獎」公開徵選</h3>
+              <span>2020/04/13</span>
+              <p>為鼓勵在各領域無私為台灣奉獻的個人或單位，公益信託林堉璘宏泰教育文化公益基金攜手林堉璘宏泰教育基金會成立了「堉璘台灣奉獻獎」，自2017年起每年辦理一次，得主可獲得3000萬獎金進而擴大自身影響力。</p>
+              <p>
+                今年獎項進入第四屆，自5/1至5/31止受理報名，我們期待「堉璘台灣奉獻獎」不只是一個獎項，更能傳遞「每一個人都可以無私的奉獻」，讓不同領域的努力都被肯定及看見，進而達到獎項所要推動的台灣共好願景，因此，我們誠摯的邀請貴單位報名遴選，也期盼透過您的協助宣傳，邀請默默付出的奉獻者報名獎項，讓更多散佈在台灣各角落的奉獻精神被看見
+              </p>
+              <p>
+                這4年來，我們看到了許多「致力於解決台灣社會問題、持續推動台灣進步」的人物或團體，他們在不同的領域、不同的角落，為台灣社會無私的奉獻，這正是公益信託林堉璘宏泰教育文化公益基金與林堉璘宏泰教育基金會想表達的教育意義。
+              </p>
+              <p>
+                我們認為，教育存在各個角落，而不僅僅只有在書本上、校園裡。從歷屆得主身上就能看到不同的教育內涵，例如第一屆堉璘台灣奉獻獎得主劉民和牧師，數十年來成功助人戒毒，並輔導戒毒者透過團體生活與他人互動關係中找出價值並肯定自我，同時以生命重建為輔導目標規劃就業與成長課程，幫助戒毒成功者繼續成為助人戒毒者，正是反毒教育最好的典範；第二屆堉璘台灣奉獻獎得主莊宏達醫師，以專業和愛心擁抱身障兒童，規劃早期療育服務課程並提供相關資源與諮詢，以及規劃家長教養相關講座和家長成長團體，讓這些兒童的家庭獲得盼望，這也是生命教育很重要的一環。
+              </p>
+              <p>
+                去年，第三屆堉璘台灣奉獻獎得主賴美智，她以特殊教育給予心智障礙孩子應有的尊重和受教機會，因應每個孩子的狀況及需求，給予個別化訓練，甚至有部分孩子發展出工作技能。也讓家長有喘息機會。不論是對於這些被幫助的孩子或是一般大眾而言，也是極有意義的教育內涵。
+              </p>
+              <p>
+                不僅如此，過去三屆也累積了14名堉璘台灣鼓勵獎得主，涉及領域包含戒毒、身障關懷、教育翻轉、高齡社會、貧窮問題等，已有超過10萬人次受惠，超過200萬人次關注，每個單位或個人，發揮自己的專業與努力，默默付出實踐「每個人都可以無私的奉獻」，期待台灣更好。
+              </p>
+              <p>
+                我們希望除了透過「堉璘台灣奉獻獎」支持不同領域中默默奉獻的團隊持續投入、做的更好，也希望這些團隊或個人的付出與服務被看見，影響更多人也起身行動，促進台灣更好；不要覺得自己的力量很微小，因為「每個人都可以無私的奉獻」。
+              </p>
+              <p>第四屆「堉璘台灣奉獻獎」自5/1至5/31止受理報名(採線上報名，可推薦或自薦)。詳細報名資料請洽(02)2718-2358或請上官網（https://www.ylledu.org.tw/）查詢。</p>
+              <!-- 回上一頁 -->
+              <div id="back">
+                <a href="12.1.html">
+                  <h4>回上一頁</h4>
+                </a>
+              </div>
+              <!-- 回上一頁 -->
+            </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
 
   <!-- 底部廣告 -->
