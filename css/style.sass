@@ -290,7 +290,8 @@ ul
             padding: 10px 20px
             border-radius: 25px
             +title
-            transition: 0.5s      
+            transition: 0.5s
+            border-bottom: 1px solid $color_gray   
 // -----------------------------------------------------
 // 導覽列
 // 第二層選單的寬度，修改bootsnav樣式
@@ -2156,6 +2157,29 @@ footer
             padding: 12px 0 12px 20px
             border-bottom: 1px solid $color_gray
         .map
+            margin: 20px 0
+        #back
+            h4
+                padding: 10px 20px
+// ----------------------------------------------------- 
+// 12.3.1組織-公益影片-單元頁
+#org_video_unit
+    #pc_social_share
+        display: block
+        @media screen and ( max-width: 992px )
+            display: none
+    #phone_social_share
+        display: none
+        @media screen and ( max-width: 992px )
+            display: flex
+    .content
+        h3
+            +title
+            margin-top: 20px
+        span
+            font-size: 14px
+            color: $color_gray
+        .video
             margin: 20px 0
         #back
             h4
