@@ -14,6 +14,8 @@ $color_white: #fff
     a
         &:hover
             color: $color_black
+    h4
+        line-height: 28px
 // nav#navbar
 //     display: none
 // -----------------------------------------------------
@@ -2156,6 +2158,7 @@ footer
             +title
             padding: 12px 0 12px 20px
             border-bottom: 1px solid $color_gray
+            line-height: 28px
         .map
             margin: 20px 0
         #back
@@ -2204,6 +2207,41 @@ footer
             color: $color_gray
             display: block
             margin-bottom: 20px
+        #back
+            h4
+                padding: 10px 20px
+// ----------------------------------------------------- 
+// 12.7.1組織-物資募集-單元頁
+#org_donate_unit
+    #pc_social_share
+        display: block
+        @media screen and ( max-width: 992px )
+            display: none
+    #phone_social_share
+        display: none
+        @media screen and ( max-width: 992px )
+            display: flex
+    .content
+        h3
+            +title
+            margin-top: 20px
+        span
+            font-size: 14px
+            color: $color_gray
+            display: block
+            margin-bottom: 20px
+        h4
+            +title
+            padding: 12px 0 12px 20px
+            border-bottom: 1px solid $color_gray
+            line-height: 28px
+            span
+                color: $color_dark_orange
+                margin: 0
+                font-size: 20px
+                display: inline-block
+        .map
+            margin: 20px 0
         #back
             h4
                 padding: 10px 20px

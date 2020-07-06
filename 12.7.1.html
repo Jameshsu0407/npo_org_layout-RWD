@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>組織-物資募集-列表</title>
+  <title>組織-物資募集-單元頁</title>
   <!-- BT4 -->
   <link rel="stylesheet" href="./css/bootstrap.css">
   <!-- slick -->
@@ -162,7 +162,7 @@
     </div>
   </nav>
 
-  <section class="container org_same_list" id="org_donate_list">
+  <section class="container org_same_list" id="org_donate_unit">
     <div class="row">
       <div class="content_top">
         <div class="col-12 col-lg-4 left">
@@ -188,23 +188,6 @@
           </div>
         </div>
         <div class="col-12 col-lg-8 right">
-          <!-- 手機版導覽列 -->
-          <div class="phone_top_nav ">
-            <select class="form-control select_css" onchange="location.href=this.options[this.selectedIndex].value">
-              <option value="12.1.html">公益新訊</option>
-              <option value="12.2.html">最新活動</option>
-              <option value="12.3.html">公益影片</option>
-              <option value="12.4.html">補助公告</option>
-              <option value="12.5.html">救助公告</option>
-              <option value="12.6.html">獎助公告</option>
-              <option selected="selected" value="12.7.html">物資募集</option>
-              <option value="12.8.html">志工招募</option>
-              <option value="12.9.html">全職工作</option>
-              <option value="12.10.html">兼職工作</option>
-              <option value="12.11.html">公益商城</option>
-              <option value="12.12.html">機構介紹</option>
-            </select>
-          </div>
           <!-- pc版導覽列 -->
           <div class="pc_top_nav">
             <div class="col-2">
@@ -268,155 +251,111 @@
               </a>
             </div>
           </div>
+          <!-- pc版社群分享-->
+          <div id="pc_social_share">
+            <a href="#">
+              <div class="fb">
+                <i class="fab fa-facebook"></i>
+                <p>臉書分享</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="line">
+                <i class="fab fa-line"></i>
+                <p>line分享</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="twitter">
+                <i class="fab fa-twitter"></i>
+                <p>推特分享</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="weibo">
+                <i class="fab fa-weibo"></i>
+                <p>微博分享</p>
+              </div>
+            </a>
+          </div>
+          <!-- pc版社群分享 -->
+
           <!-- 內文 -->
           <div class="content">
-            <a href="12.7.1.html">
-              <div class="post col-12">
-                <div class="col-6 col-md-5 col-lg-4 post_left">
-                  <div class="time_box">
-                    <span class="year">2020</span>
-                    <span class="date">06/15</span>
-                  </div>
-                  <!-- 建議尺寸800x450 -->
-                  <div class="pic">
-                    <img src="https://fakeimg.pl/800x450/" class="img-fluid fixed_size">
-                  </div>
+            <!-- 手機版社群分享-->
+            <div id="phone_social_share">
+              <a href="#">
+                <div class="fb" title="臉書分享">
+                  <i class="fab fa-facebook"></i>
                 </div>
-                <div class="col-6 col-md-7 col-lg-8 post_right">
-                  <h3>標題標題標題</h3>
-                  <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+              </a>
+              <a href="#">
+                <div class="line" title="line分享">
+                  <i class="fab fa-line"></i>
                 </div>
-              </div>
-            </a>
-
-            <a href="12.7.1.html">
-              <div class="post col-12">
-                <div class="col-6 col-md-5 col-lg-4 post_left">
-                  <div class="time_box">
-                    <span class="year">2020</span>
-                    <span class="date">06/15</span>
-                  </div>
-                  <!-- 建議尺寸800x450 -->
-                  <div class="pic">
-                    <img src="https://fakeimg.pl/300x1000/" class="img-fluid fixed_size">
-                  </div>
+              </a>
+              <a href="#">
+                <div class="twitter" title="推特分享">
+                  <i class="fab fa-twitter"></i>
                 </div>
-                <div class="col-6 col-md-7 col-lg-8 post_right">
-                  <h3>標題標題標題</h3>
-                  <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+              </a>
+              <a href="#">
+                <div class="weibo" title="微博分享">
+                  <i class="fab fa-weibo"></i>
                 </div>
-              </div>
-            </a>
-
-            <a href="12.7.1.html">
-              <div class="post col-12">
-                <div class="col-6 col-md-5 col-lg-4 post_left">
-                  <div class="time_box">
-                    <span class="year">2020</span>
-                    <span class="date">06/15</span>
-                  </div>
-                  <!-- 建議尺寸800x450 -->
-                  <div class="pic">
-                    <img src="https://fakeimg.pl/1000x300/" class="img-fluid fixed_size">
-                  </div>
-                </div>
-                <div class="col-6 col-md-7 col-lg-8 post_right">
-                  <h3>標題標題標題</h3>
-                  <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
-                </div>
-              </div>
-            </a>
-
-            <a href="12.7.1.html">
-              <div class="post col-12">
-                <div class="col-6 col-md-5 col-lg-4 post_left">
-                  <div class="time_box">
-                    <span class="year">2020</span>
-                    <span class="date">06/15</span>
-                  </div>
-                  <!-- 建議尺寸800x450 -->
-                  <div class="pic">
-                    <img src="https://fakeimg.pl/550x550/" class="img-fluid fixed_size">
-                  </div>
-                </div>
-                <div class="col-6 col-md-7 col-lg-8 post_right">
-                  <h3>標題標題標題</h3>
-                  <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
-                </div>
-              </div>
-            </a>
-
-            <a href="12.7.1.html">
-              <div class="post col-12">
-                <div class="col-6 col-md-5 col-lg-4 post_left">
-                  <div class="time_box">
-                    <span class="year">2020</span>
-                    <span class="date">06/15</span>
-                  </div>
-                  <!-- 建議尺寸800x450 -->
-                  <div class="pic">
-                    <img src="./img/videos/v1.jpg" class="img-fluid fixed_size" alt="">
-                  </div>
-                </div>
-                <div class="col-6 col-md-7 col-lg-8 post_right">
-                  <h3>標題標題標題</h3>
-                  <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
-                </div>
-              </div>
-            </a>
-
-            <!--分頁-->
-            <div id="page">
-              <ul class="pagination">
-                <li><a href='#'><i class="fa fa-angle-double-left fa-lg" aria-hidden="true"></i><span
-                      class="sr-only">第一頁</span></a></li>
-                <li><a href='#'><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i><span
-                      class="sr-only">上一頁</span></a></li>
-
-                <!-- 使用者輸入 -->
-                <!-- <li><a><input type="text" placeholder="" size="1">&nbsp;&nbsp;<span>/&nbsp;&nbsp;15</span></a></li> -->
-                <!-- select -->
-                <li>
-                  <select class=" select_css" onchange="location.href=this.options[this.selectedIndex].value">
-                    <option selected="selected" value="#">1</option>
-                    <option value="#">2</option>
-                    <option value="#">3</option>
-                    <option value="#">4</option>
-                    <option value="#">5</option>
-                    <option value="#">6</option>
-                    <option value="#">7</option>
-                    <option value="#">8</option>
-                    <option value="#">9</option>
-                    <option value="#">10</option>
-                    <option value="#">11</option>
-                    <option value="#">12</option>
-                    <option value="#">13</option>
-                    <option value="#">14</option>
-                    <option value="#">15</option>
-                  </select>
-                  &nbsp;&nbsp;<span>/&nbsp;&nbsp;15</span>
-                </li>
-
-                <li><a href='#'><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i><span
-                      class="sr-only">下一頁</span></a></li>
-                <li><a href='#'><i class="fa fa-angle-double-right fa-lg" aria-hidden="true"></i><span
-                      class="sr-only">最後一頁</span></a></li>
-              </ul>
+              </a>
             </div>
-            <!--//分頁-->
+            <!-- 手機版社群分享 -->
+            <h3>募集：分離式冷氣機購置</h3>
+            <span>2020/06/27</span>
+            <h4>物資類別：家電</h4>
+            <h4>物資名稱：募集：分離式冷氣機購置</h4>
+            <h4>數量：2</h4>
+            <h4>地區：屏東縣</h4>
+            <h4>類型：兒童青少年福利、老人福利、身心障礙福利</h4>
+            <h4>聯絡人：曾珠敏</h4>
+            <h4>電話：08-8356800</h4>
+            <h4>地點：東港鎮興東路412號
+              <div class="embed-responsive embed-responsive-16by9 map">
+                <iframe class="embed-responsive-item"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.041949327373!2d121.52049035066808!3d25.066567283878328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x140dd0f467a85e51%3A0x721f721f1255cf08!2z57ay6Luf6IKh5Lu95pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1592899753483!5m2!1szh-TW!2stw"></iframe>
+              </div>
+            </h4>
+            <h4>詳細說明：<br>
+              屏東縣夏天高溫酷熱難耐，協會服務地單靠增加電風扇降溫，顯然不足。為增進對身心障礙者之照顧品質，特募集兩臺分離式變頻冷氣機安裝使用。<br>
+              經費需求：分離式變頻冷氣機兩臺（2*3萬5=7萬元）<br>
+              捐款銀行：彰化銀行 東港分行<br>
+              捐款帳號：009-8317-0101012800<br>
+              戶名：屏東縣關懷弱勢福利促進協會<br>
+              電話：08-8356800<br>
+              E-mail:fuli6800@gmail.com
+            </h4>
+            <h4><a href="#"><span>我要捐贈</span></a></h4>
+
+            <!-- 回上一頁 -->
+            <div id="back">
+              <a href="12.7.html">
+                <h4>回列表頁</h4>
+              </a>
+            </div>
+            <!-- 回上一頁 -->
           </div>
         </div>
       </div>
     </div>
   </section>
 
-<!-- 底部廣告 -->
-<section id="bottom_ads" class="container">
-  <img src="https://fakeimg.pl/350x150/" class="img-fluid clickable-row" data-href='https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&gclsrc=aw.ds'>
-  <img src="./img/ads/ad1.png" class="img-fluid clickable-row" data-href='https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&gclsrc=aw.ds'>
-  <img src="./img/ads/ad2.png" class="img-fluid clickable-row" data-href='https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&gclsrc=aw.ds'>
-  <img src="./img/ads/ad3.png" class="img-fluid clickable-row" data-href='https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&gclsrc=aw.ds'>
-</section>
+  <!-- 底部廣告 -->
+  <section id="bottom_ads" class="container">
+    <img src="https://fakeimg.pl/350x150/" class="img-fluid clickable-row"
+      data-href='https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&gclsrc=aw.ds'>
+    <img src="./img/ads/ad1.png" class="img-fluid clickable-row"
+      data-href='https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&gclsrc=aw.ds'>
+    <img src="./img/ads/ad2.png" class="img-fluid clickable-row"
+      data-href='https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&gclsrc=aw.ds'>
+    <img src="./img/ads/ad3.png" class="img-fluid clickable-row"
+      data-href='https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&gclsrc=aw.ds'>
+  </section>
   <!-- footer -->
   <footer>
     <div class="container">
