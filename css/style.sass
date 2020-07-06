@@ -2092,8 +2092,8 @@ footer
         span
             font-size: 14px
             color: $color_gray
-        p
-            margin-top: 20px
+            display: block
+            margin-bottom: 20px
 // ----------------------------------------------------- 
 // 12.2.1組織-最新活動-單元頁
 #org_activities_unit
@@ -2112,6 +2112,8 @@ footer
         span
             font-size: 14px
             color: $color_gray
+            display: block
+            margin-bottom: 20px
         .pic
             width: 720px
             height: 405px
@@ -2146,8 +2148,6 @@ footer
             justify-content: center
             align-items: center
             margin: 0 auto
-            margin-top: 10px
-            margin-bottom: 10px
             .width_100
                 width: 100%
             .height_100
@@ -2179,8 +2179,31 @@ footer
         span
             font-size: 14px
             color: $color_gray
-        .video
-            margin: 20px 0
+            display: block
+            margin-bottom: 20px
+        #back
+            h4
+                padding: 10px 20px
+// ----------------------------------------------------- 
+// 12.4.1組織-補助公告-單元頁
+#org_allowance_unit
+    #pc_social_share
+        display: block
+        @media screen and ( max-width: 992px )
+            display: none
+    #phone_social_share
+        display: none
+        @media screen and ( max-width: 992px )
+            display: flex
+    .content
+        h3
+            +title
+            margin-top: 20px
+        span
+            font-size: 14px
+            color: $color_gray
+            display: block
+            margin-bottom: 20px
         #back
             h4
                 padding: 10px 20px
