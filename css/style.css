@@ -3276,41 +3276,41 @@ footer .bottom-bar a:hover {
   padding: 10px 20px;
 }
 
-#org_allowance_unit #pc_social_share {
+#org_allowance_unit #pc_social_share, #org_rescue_unit #pc_social_share {
   display: block;
 }
 
 @media screen and (max-width: 992px) {
-  #org_allowance_unit #pc_social_share {
+  #org_allowance_unit #pc_social_share, #org_rescue_unit #pc_social_share {
     display: none;
   }
 }
 
-#org_allowance_unit #phone_social_share {
+#org_allowance_unit #phone_social_share, #org_rescue_unit #phone_social_share {
   display: none;
 }
 
 @media screen and (max-width: 992px) {
-  #org_allowance_unit #phone_social_share {
+  #org_allowance_unit #phone_social_share, #org_rescue_unit #phone_social_share {
     display: flex;
   }
 }
 
-#org_allowance_unit .content h3 {
+#org_allowance_unit .content h3, #org_rescue_unit .content h3 {
   font-weight: 600;
   font-size: 18px;
   margin-bottom: 0;
   margin-top: 20px;
 }
 
-#org_allowance_unit .content span {
+#org_allowance_unit .content span, #org_rescue_unit .content span {
   font-size: 14px;
   color: #B5B8A3;
   display: block;
   margin-bottom: 20px;
 }
 
-#org_allowance_unit .content #back h4 {
+#org_allowance_unit .content #back h4, #org_rescue_unit .content #back h4 {
   padding: 10px 20px;
 }
 /*# sourceMappingURL=style.css.map */
