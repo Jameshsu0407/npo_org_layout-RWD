@@ -259,10 +259,13 @@ ul
     display: flex
     justify-content: flex-end
     .fb,.line,.twitter,.weibo
-        display: inline-block
+        // display: inline-block
         border-radius: 5px
         padding: 5px
         margin: 10px 0 10px 10px
+        display: flex
+        justify-content: center
+        align-items: center
         i
             font-size: 30px
             color: #fff
@@ -270,7 +273,7 @@ ul
         background-color: #4267B2
     .line
         background-color: #66C411
-        padding: 5px 8px
+        padding: 5px 7px
     .twitter
         background-color: #3AA1F2
     .weibo
@@ -2248,6 +2251,39 @@ footer
 // ----------------------------------------------------- 
 // 12.8.1組織-志工招募-單元頁
 #org_volunteer_unit
+    #pc_social_share
+        display: block
+        @media screen and ( max-width: 992px )
+            display: none
+    #phone_social_share
+        display: none
+        @media screen and ( max-width: 992px )
+            display: flex
+    .content
+        h3
+            +title
+            padding: 10px 0
+        h4
+            +title
+            padding: 12px 0 12px 20px
+            border-bottom: 1px solid $color_gray
+            span
+                color: $color_dark_orange
+                margin: 0
+                font-size: 18px
+                display: inline-block
+        .title
+            +title
+            margin-top: 30px
+            border-bottom: 1px solid $color_dark_orange
+        .map
+            margin: 20px 0
+        #back
+            h4
+                padding: 10px 20px
+// ----------------------------------------------------- 
+// 12.9.1組織-全職工作-單元頁
+#org_full_work_unit
     #pc_social_share
         display: block
         @media screen and ( max-width: 992px )
