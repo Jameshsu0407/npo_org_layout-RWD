@@ -2314,3 +2314,36 @@ footer
         #back
             h4
                 padding: 10px 20px
+// ----------------------------------------------------- 
+// 12.10.1組織-兼職工作-單元頁
+#org_part_time_unit
+    #pc_social_share
+        display: block
+        @media screen and ( max-width: 992px )
+            display: none
+    #phone_social_share
+        display: none
+        @media screen and ( max-width: 992px )
+            display: flex
+    .content
+        h3
+            +title
+            padding: 10px 0
+        h4
+            +title
+            padding: 12px 0 12px 20px
+            border-bottom: 1px solid $color_gray
+            span
+                color: $color_dark_orange
+                margin: 0
+                font-size: 18px
+                display: inline-block
+        .title
+            +title
+            margin-top: 30px
+            border-bottom: 1px solid $color_dark_orange
+        .map
+            margin: 20px 0
+        #back
+            h4
+                padding: 10px 20px
