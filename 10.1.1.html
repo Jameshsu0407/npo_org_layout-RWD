@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>公益商城</title>
+  <title>線上客服</title>
   <!-- BT4 -->
   <link rel="stylesheet" href="./css/bootstrap.css">
   <!-- slick -->
@@ -162,278 +162,61 @@
     </div>
   </nav>
 
-  <section class="container" id="welfare_shop">
+  <section class="container" id="online_service">
     <div class="row">
       <div class="content_top col-12">
-        <h2 class="content_title col-12">公益商城</h2>
-        <div class="col-12">
-          <form class="form-inline col-12 selector">
-            <div class="select_wrap col-12 col-md-4">
-              <input type="text" class="form-control col-12" placeholder="請輸入商品名稱">
+        <h2 class="content_title col-12">線上客服</h2>
+        <p class="col-12">
+          1．台灣公益資訊中心僅提供網站會員自行刊登徵才、活動、物資訊息等服務，不提供代刊服務，不便之處還請見諒。<br>
+          2．一般使用者或會員若有任何網站使用操作問題及建議，歡迎來信諮詢，我們將竭誠為您服務。<br>
+          3．會員來信請註明貴單位名稱與機構代碼，以利中心同仁為您服務。<br>
+          4．網站內容部分均屬會員提供發佈，若對內容有任何問題，煩請直接與發佈內容的會員團體聯繫，謝謝您的配合。</p>
+        <form class="box">
+          <!-- left box -->
+          <div class="left-box col-12 col-md-6">
+            <div class="form-group col-12">
+              <label>名字</label>
+              <input type="text" class="form-control" placeholder="請輸入姓名" required="required">
             </div>
-            <div class="select_wrap col-12 col-md-3">
-              <select class="custom-select col-12">
-                <option selected disabled>請選擇商品類別</option>
-                <option>食品</option>
-                <option>衣物</option>
-                <option>用品</option>
-                <option>書籍</option>
-                <option>配件</option>
-              </select>
+            <div class="form-group col-12">
+              <label>Email</label>
+              <input type="email" class="form-control" placeholder="請輸入Email" required="required">
             </div>
-            <div class="select_wrap col-12 col-md-3">
-              <select class="custom-select col-12">
-                <option selected disabled>請選擇機構類別</option>
-                <option>綜合性服務</option>
-                <option>兒童青少年福利</option>
-                <option>婦女福利</option>
-                <option>老人福利</option>
-                <option>身心障礙福利</option>
-              </select>
+            <div class="form-group col-12">
+              <label>機構代碼</label>
+              <input type="number" class="form-control" placeholder="請輸入機構代碼" required="required">
             </div>
-            <div class="select_wrap col-12 col-md-2">
-              <button type="button" class="btn lookmore col-12 m-0" type="submit">送出</button>
+            <div class="form-group col-12">
+              <label>單位名稱</label>
+              <input type="text" class="form-control" placeholder="請輸入單位名稱" required="required">
             </div>
-          </form>
-        </div>
-
-        <div class="products">
-
-          <div class="col-12 col-md-6 col-xl-3">
-            <a href="https://shopee.tw/" target="_blank">
-              <div class="good">
-                <div class="pic">
-                  <img src="https://fakeimg.pl/800x800/" class="img-fluid fixed_size">
-                </div>
-                <h3 class="title">手工餅乾</h3>
-                <p class="text">NT$150</p>
-              </div>
-            </a>
           </div>
-
-          <div class="col-12 col-md-6 col-xl-3">
-            <a href="https://shopee.tw/" target="_blank">
-              <div class="good">
-                <div class="pic">
-                  <img src="https://fakeimg.pl/1000x200/" class="img-fluid fixed_size">
-                </div>
-                <h3 class="title">手工餅乾</h3>
-                <p class="text">NT$150</p>
-              </div>
-            </a>
+          <!-- right box -->
+          <div class="right-box col-12 col-md-6">
+            <div class="form-group col-12">
+              <label>主旨</label>
+              <input type="text" class="form-control" placeholder="請輸入主旨" required="required">
+            </div>
+            <div class="form-group col-12">
+              <label>說明</label>
+              <textarea class="form-control" cols="30" rows="5" placeholder="請輸入想說的內容" required="required"></textarea>
+            </div>
+            <div class="form-group col-8">
+              <label>驗證碼</label>
+              <input type="text" class="form-control" required="required">
+            </div>
           </div>
-
-          <div class="col-12 col-md-6 col-xl-3">
-            <a href="https://shopee.tw/" target="_blank">
-              <div class="good">
-                <div class="pic">
-                  <img src="https://fakeimg.pl/200x1000/" class="img-fluid fixed_size">
-                </div>
-                <h3 class="title">手工餅乾</h3>
-                <p class="text">NT$150</p>
-              </div>
-            </a>
+          <!-- button -->
+          <div class="btns col-12">
+            <button class="btn online_service_button" type="reset" id="online_service_reset">取消</button>
+            <button class="btn online_service_button" type="submit" id="online_service_submit">送出</button>
           </div>
-
-          <div class="col-12 col-md-6 col-xl-3">
-            <a href="https://shopee.tw/" target="_blank">
-              <div class="good">
-                <div class="pic">
-                  <img src="https://fakeimg.pl/800x450/" class="img-fluid fixed_size">
-                </div>
-                <h3 class="title">手工餅乾</h3>
-                <p class="text">NT$150</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-12 col-md-6 col-xl-3">
-            <a href="https://shopee.tw/" target="_blank">
-              <div class="good">
-                <div class="pic">
-                  <img src="./img/product/pd1.jpg" class="img-fluid fixed_size">
-                </div>
-                <h3 class="title">手工餅乾</h3>
-                <p class="text">NT$150</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-12 col-md-6 col-xl-3">
-            <a href="https://shopee.tw/" target="_blank">
-              <div class="good">
-                <div class="pic">
-                  <img src="./img/product/pd2.jpg" class="img-fluid fixed_size">
-                </div>
-                <h3 class="title">手工餅乾</h3>
-                <p class="text">NT$150</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-12 col-md-6 col-xl-3">
-            <a href="https://shopee.tw/" target="_blank">
-              <div class="good">
-                <div class="pic">
-                  <img src="./img/product/pd3.jpg" class="img-fluid fixed_size">
-                </div>
-                <h3 class="title">手工餅乾</h3>
-                <p class="text">NT$150</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-12 col-md-6 col-xl-3">
-            <a href="https://shopee.tw/" target="_blank">
-              <div class="good">
-                <div class="pic">
-                  <img src="./img/product/pd4.jpg" class="img-fluid fixed_size">
-                </div>
-                <h3 class="title">手工餅乾</h3>
-                <p class="text">NT$150</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-12 col-md-6 col-xl-3">
-            <a href="https://shopee.tw/" target="_blank">
-              <div class="good">
-                <div class="pic">
-                  <img src="./img/product/pd1.jpg" class="img-fluid fixed_size">
-                </div>
-                <h3 class="title">手工餅乾</h3>
-                <p class="text">NT$150</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-12 col-md-6 col-xl-3">
-            <a href="https://shopee.tw/" target="_blank">
-              <div class="good">
-                <div class="pic">
-                  <img src="./img/product/pd2.jpg" class="img-fluid fixed_size">
-                </div>
-                <h3 class="title">手工餅乾</h3>
-                <p class="text">NT$150</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-12 col-md-6 col-xl-3">
-            <a href="https://shopee.tw/" target="_blank">
-              <div class="good">
-                <div class="pic">
-                  <img src="./img/product/pd3.jpg" class="img-fluid fixed_size">
-                </div>
-                <h3 class="title">手工餅乾</h3>
-                <p class="text">NT$150</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-12 col-md-6 col-xl-3">
-            <a href="https://shopee.tw/" target="_blank">
-              <div class="good">
-                <div class="pic">
-                  <img src="./img/product/pd4.jpg" class="img-fluid fixed_size">
-                </div>
-                <h3 class="title">手工餅乾</h3>
-                <p class="text">NT$150</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-12 col-md-6 col-xl-3">
-            <a href="https://shopee.tw/" target="_blank">
-              <div class="good">
-                <div class="pic">
-                  <img src="./img/product/pd1.jpg" class="img-fluid fixed_size">
-                </div>
-                <h3 class="title">手工餅乾</h3>
-                <p class="text">NT$150</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-12 col-md-6 col-xl-3">
-            <a href="https://shopee.tw/" target="_blank">
-              <div class="good">
-                <div class="pic">
-                  <img src="./img/product/pd2.jpg" class="img-fluid fixed_size">
-                </div>
-                <h3 class="title">手工餅乾</h3>
-                <p class="text">NT$150</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-12 col-md-6 col-xl-3">
-            <a href="https://shopee.tw/" target="_blank">
-              <div class="good">
-                <div class="pic">
-                  <img src="./img/product/pd3.jpg" class="img-fluid fixed_size">
-                </div>
-                <h3 class="title">手工餅乾</h3>
-                <p class="text">NT$150</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-12 col-md-6 col-xl-3">
-            <a href="https://shopee.tw/" target="_blank">
-              <div class="good">
-                <div class="pic">
-                  <img src="./img/product/pd4.jpg" class="img-fluid fixed_size">
-                </div>
-                <h3 class="title">手工餅乾</h3>
-                <p class="text">NT$150</p>
-              </div>
-            </a>
-          </div>
-
-
-        </div>
-        <!--分頁-->
-        <div id="page">
-          <ul class="pagination">
-            <li><a href='#'><i class="fa fa-angle-double-left fa-lg" aria-hidden="true"></i><span
-                  class="sr-only">第一頁</span></a></li>
-            <li><a href='#'><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i><span
-                  class="sr-only">上一頁</span></a></li>
-
-            <!-- 使用者輸入 -->
-            <!-- <li><a><input type="text" placeholder="" size="1">&nbsp;&nbsp;<span>/&nbsp;&nbsp;15</span></a></li> -->
-            <!-- select -->
-            <li>
-              <select class=" select_css" onchange="location.href=this.options[this.selectedIndex].value">
-                <option selected="selected" value="#">1</option>
-                <option value="#">2</option>
-                <option value="#">3</option>
-                <option value="#">4</option>
-                <option value="#">5</option>
-                <option value="#">6</option>
-                <option value="#">7</option>
-                <option value="#">8</option>
-                <option value="#">9</option>
-                <option value="#">10</option>
-                <option value="#">11</option>
-                <option value="#">12</option>
-                <option value="#">13</option>
-                <option value="#">14</option>
-                <option value="#">15</option>
-              </select>
-              &nbsp;&nbsp;<span>/&nbsp;&nbsp;15</span>
-            </li>
-
-            <li><a href='#'><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i><span
-                  class="sr-only">下一頁</span></a></li>
-            <li><a href='#'><i class="fa fa-angle-double-right fa-lg" aria-hidden="true"></i><span
-                  class="sr-only">最後一頁</span></a></li>
-          </ul>
-        </div>
-        <!--//分頁-->
+          
+          
+          
+        </form>
       </div>
-
+      
     </div>
   </section>
 
@@ -516,23 +299,6 @@
   <script src="./js/bootsnav.js"></script>
   <!-- script -->
   <script src="./js/script.js"></script>
-  <!-- back to top -->
-  <script>
-    mybutton = document.getElementById("backToTop");
-    window.onscroll = function () { scrollFunction() };
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-    function topFunction() {
-      document.body.scrollTop = 0;
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  </script>
   <!-- 手機版視窗滾動收回導覽列 -->
   <script>
     var prevScrollpos = window.pageYOffset;
@@ -543,7 +309,8 @@
   </script>
   <!-- window.onscroll -->
   <script>
-    window.onscroll = function () {
+    window.onscroll = function(){
+      scrollFunction();
       removeShow();
     }
   </script>
