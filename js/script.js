@@ -1,10 +1,21 @@
-// 初始化
-$(function () {
+// // 初始化
+// $(function () {
+//     // 導覽列初始化
+//     $('#bootnavbar').bootnavbar();
+//     // selectpicker初始化
+//     $('select').selectpicker();
+// })
+
+$(document).ready(function($) {
+    // 列表點選連結
+    $(".clickable-row").click(function() {
+        window.document.location = $(this).data("href");
+    });
     // 導覽列初始化
     $('#bootnavbar').bootnavbar();
     // selectpicker初始化
     $('select').selectpicker();
-})
+});
 
 // 首頁上方輪播圖
 $('#top-ads').slick({
@@ -78,12 +89,12 @@ $('#bottom_ads').slick({
     ]
 });
 
-// 列表點選連結
-$(document).ready(function($) {
-    $(".clickable-row").click(function() {
-        window.document.location = $(this).data("href");
-    });
-});
+// // 列表點選連結
+// $(document).ready(function($) {
+//     $(".clickable-row").click(function() {
+//         window.document.location = $(this).data("href");
+//     });
+// });
 
 // goToElement
 $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function (t) {
