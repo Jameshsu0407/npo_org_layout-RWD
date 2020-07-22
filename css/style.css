@@ -1217,20 +1217,6 @@ footer .footer-right .input-group #suscribe {
   margin: 0;
 }
 
-footer .footer-right .supports {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 15px;
-}
-
-footer .footer-right .supports .logo {
-  padding: 5px;
-}
-
-footer .footer-right .supports .logo img {
-  width: 100%;
-}
-
 footer .bottom-bar {
   display: flex;
   flex-wrap: wrap;
@@ -1248,8 +1234,13 @@ footer .bottom-bar a:hover {
   color: #FA9C25;
 }
 
-@media screen and (max-width: 576px) {
-  footer .footer-left {
+footer .copyright {
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  footer .footer-left p {
     text-align: center;
   }
   footer .footer-right .npotimes {
@@ -1376,13 +1367,54 @@ footer .bottom-bar a:hover {
   padding: 15px;
 }
 
-#intersoft .content_top .value .col-12.col-lg-4 {
+#intersoft .content_top .value p {
+  margin: 0;
+}
+
+#intersoft .content_top #back {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#himalaya_pic {
+  padding: 0;
+  padding-top: 125px;
+}
+
+#himalaya .content_top {
   display: flex;
   flex-wrap: wrap;
 }
 
-#intersoft .content_top .value p {
-  margin: 0;
+#himalaya .content_top h2.content_title {
+  margin-top: 20px;
+}
+
+#himalaya .content_top h2.content_title::before {
+  display: none;
+}
+
+#himalaya .content_top h3 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-bottom: 16px;
+}
+
+#himalaya .content_top p {
+  line-height: 1.5;
+}
+
+#himalaya .content_top ul {
+  list-style: initial;
+  list-style-position: inside;
+}
+
+#himalaya .content_top #back {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 #npo_news .content_top {

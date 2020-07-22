@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		title 喜瑪拉雅基金會
+		//- 匯入連結
+		include header.pug
+	body#top
+		//- 匯入導覽列+gototop
+		include nav.pug
+		section#himalaya_pic.container-fluid
+			img.img-fluid(src="./img/about/himalaya/himalaya_pic.jpg", alt="")
+		section#himalaya.container
+			.row
+				.content_top.col-12
+					h2.content_title.col-12 喜瑪拉雅基金會
+					h3.col-12 本會宗旨
+					p.col-12 喜瑪拉雅研究發展基金會成立於1990年，希望在服務公益組織及人才培育的領域，奉獻棉薄的力量；期待年輕的一代，不但能迎接新時代的挑戰，而且在人類社會中成為進步的動力，對促進世界文化融合作出貢獻。
+					h3.col-12 工作重點
+					ul.col-12
+						li 公益服務：整合公益團體的相關資源，促進社會各界關心公益團體或探討相關議題，結合學者專家的知識和社會大眾的愛心，創造和增加公共利益。
+						li 資訊服務：協助公益團體解決資訊化問題，減少公益團體的數位落差，提昇公益團體善用資訊科技及經營管理的能力。
+						li 其他專題研究發展、公益慈善、經濟金融之合作專案。
+					#back
+							a(href="http://www.himalaya.org.tw/" target="_blank")
+								h4 了解更多
+
+					
+				
+
+		//- 匯入底部廣告
+		include footer_ad.pug
+		//- 匯入footer+script
+		include footer.pug

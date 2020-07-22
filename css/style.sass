@@ -866,15 +866,6 @@ footer
             margin-bottom: 15px
             #suscribe
                 margin: 0
-            
-        .supports
-            display: flex
-            flex-wrap: wrap
-            margin-bottom: 15px
-            .logo
-                padding: 5px
-                img
-                    width: 100%
     .bottom-bar
         display: flex
         flex-wrap: wrap
@@ -886,10 +877,14 @@ footer
             transition: 0.5s
             &:hover
                 color: $color_dark_orange
-@media screen and ( max-width: 576px )
+    .copyright
+        text-align: center
+        margin-top: 10px
+@media screen and ( max-width: 992px )
     footer
         .footer-left
-            text-align: center
+            p
+                text-align: center
         .footer-right
             .npotimes
                 text-align: center
@@ -968,11 +963,37 @@ footer
                     display: flex
                     flex-wrap: wrap
                     padding: 15px
-            .col-12.col-lg-4
-                display: flex
-                flex-wrap: wrap
             p
                 margin: 0
+        #back
+            display: block
+            margin: 0 auto
+            margin-top: 20px
+// -----------------------------------------------------        
+// 2.3.3喜瑪拉雅基金會
+#himalaya_pic
+    padding: 0
+    padding-top: 125px
+#himalaya
+    .content_top
+        display: flex
+        flex-wrap: wrap
+        h2.content_title
+            margin-top: 20px
+            &::before
+                display: none
+        h3
+            +title
+            margin-bottom: 16px
+        p
+            line-height: 1.5
+        ul
+            list-style: initial 
+            list-style-position: inside
+        #back
+            display: block
+            margin: 0 auto
+            margin-top: 20px
 
 
 // -----------------------------------------------------        

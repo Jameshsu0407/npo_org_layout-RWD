@@ -918,29 +918,25 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="footer-left col-12 col-md-5 order-2 order-sm-1">
+          <div class="footer-left col-12 col-lg-5">
             <p class="copyright-zh">財團法人喜瑪拉雅研究發展基金會建置<br>網軟股份有限公司營運維護</p>
-            <p class="copyright-en">Copyright © 2020 Taiwan NPO Information Platform. All Rights Reserved. </p>
-            <!-- <p>瀏覽人數：<span>66666</span>人</p>-->
           </div>
-          <div class="footer-right col-12 col-md-7 order-1 order-sm-2">
+          <div class="footer-right col-12 col-lg-7">
             <p class="npotimes">NPOTIMES電子報訂閱</p>
             <div class="input-group">
-              <input class="form-control" type="email" placeholder="請輸入電子信箱" aria-label="搜尋組織" aria-describedby="button-addon2">
+              <input class="form-control" type="email" placeholder="請輸入電子信箱">
               <div class="input-group-append">
                 <button class="btn lookmore" id="suscribe" type="button">訂閱！</button>
               </div>
             </div>
-            <div class="supports">
-              <div class="logo col-4"><a href="http://www.himalaya.org.tw" target="_blank"><img src="./img/logo/logo1.png" alt="喜瑪拉亞基金會"></a></div>
-              <div class="logo col-4"><a href="https://www.gss.com.tw" target="_blank"><img src="./img/logo/logo2.png" alt="叡揚資訊"></a></div>
-              <div class="logo col-4"><a href="http://www.intersoft.com.tw/RWD01/default.aspx?rand=637272093166089184" target="_blank"><img src="./img/logo/logo3.png" alt="網軟"></a></div>
-            </div>
           </div>
-          <div class="bottom-bar col-12 col-md-8 order-3 mx-auto">
+          <div class="bottom-bar col-12 col-md-8 mx-auto">
             <div class="col-4"><a href="11.1.html">使用說明</a></div>
             <div class="col-4"><a href="11.2.html">服務條款</a></div>
             <div class="col-4"><a href="11.3.html">隱私權政策</a></div>
+          </div>
+          <div class="copyright col-12">
+            <p class="copyright-en">Copyright © 2020 Taiwan NPO Information Platform. All Rights Reserved. </p>
           </div>
         </div>
       </div>
@@ -968,36 +964,32 @@
     <script>
       var prevScrollpos = window.pageYOffset;
       function removeShow() {
-      var element = document.getElementById("navbar-menu");
-      element.classList.remove("show");
+          var element = document.getElementById("navbar-menu");
+          element.classList.remove("show");
       }
     </script>
     <!-- window.scroll-->
     <script>
       window.onscroll = function () {
-      removeShow();
+          removeShow();
       }
     </script>
     <!-- fullcalendar初始化-->
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-      var calendarEl = document.getElementById('calendar');
-      var calendar = new FullCalendar.Calendar(calendarEl, {
-      plugins: ['interaction','dayGrid'],
-      fixedWeekCount: false,
-      selectable: true,
-      events: [
-      {
-      start: '2020-06-18'
-      },
-      {
-      start: '2020-06-22'
-      }
-      ]
-      });
-      calendar.render();
-      // 中文語系
-      calendar.setOption('locale', 'zh-tw');
+          var calendarEl = document.getElementById('calendar');
+          var calendar = new FullCalendar.Calendar(calendarEl, {
+              plugins: ['interaction','dayGrid'],
+              fixedWeekCount: false,
+              selectable: true,
+              events: [
+                  {start: '2020-06-18'},
+                  {start: '2020-06-22'}
+              ]
+              });
+          calendar.render();
+          // 中文語系
+          calendar.setOption('locale', 'zh-tw');
       });
     </script>
   </body>
