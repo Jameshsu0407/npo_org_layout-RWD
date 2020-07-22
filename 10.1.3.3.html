@@ -272,21 +272,19 @@
       });
     </script>
     <script>
-      if ($(window).width() > 767) {
-          var prevScrollpos = window.pageYOffset;
-          window.onscroll = function () {
-              var currentScrollPos = window.pageYOffset;
-              if (prevScrollpos < 0){
-                  document.getElementById("navbar").style.top = "0";
-              }
-              else if (prevScrollpos > currentScrollPos) {
-                  document.getElementById("navbar").style.top = "0";
-              }
-              else {
-                  document.getElementById("navbar").style.top = "-135px";
-              }
-          prevScrollpos = currentScrollPos;
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+          var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos < 0){
+              document.getElementById("navbar").style.top = "0";
           }
+          else if (prevScrollpos > currentScrollPos) {
+              document.getElementById("navbar").style.top = "0";
+          }
+          else {
+              document.getElementById("navbar").style.top = "-135px";
+          }
+      prevScrollpos = currentScrollPos;
       }
     </script>
   </body>
