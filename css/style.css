@@ -499,7 +499,12 @@ nav#navbar a:hover {
 @media screen and (max-width: 992px) {
   #navbar.navbar.bootsnav .navbar-top .top-nav .navbar-socail {
     text-align: center;
-    padding: 5px 0;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  #navbar.navbar.bootsnav .navbar-top .top-nav .navbar-socail {
+    padding: 2.5px 0;
   }
 }
 
