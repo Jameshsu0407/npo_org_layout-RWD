@@ -44,13 +44,7 @@ script(src="./js/interaction.main.js")
 script(src="./js/bootstrap-select.js")
 // script
 script(src="./js/script.js")
-// 手機版視窗滾動收回導覽列
-script.
-    var prevScrollpos = window.pageYOffset;
-    function removeShow() {
-        var element = document.getElementById("navbar-menu");
-        element.classList.remove("show");
-    }
+
 // window.scroll
 script.
     window.onscroll = function () {
@@ -73,10 +67,12 @@ script.
         // 中文語系
         calendar.setOption('locale', 'zh-tw');
     });
+// 滑動
 script.
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function () {
         var currentScrollPos = window.pageYOffset;
+        // 下滑隱藏導覽列
         if (prevScrollpos < 0){
             document.getElementById("navbar").style.top = "0";
         }
@@ -86,5 +82,8 @@ script.
         else {
             document.getElementById("navbar").style.top = "-135px";
         }
-    prevScrollpos = currentScrollPos;
+        prevScrollpos = currentScrollPos;
+        // 手機版視窗滾動收回導覽列
+        var element = document.getElementById("navbar-menu");
+        element.classList.remove("show");
     }

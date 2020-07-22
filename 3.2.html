@@ -397,14 +397,6 @@
     <script src="./js/bootstrap-select.js"></script>
     <!-- script-->
     <script src="./js/script.js"></script>
-    <!-- 手機版視窗滾動收回導覽列-->
-    <script>
-      var prevScrollpos = window.pageYOffset;
-      function removeShow() {
-          var element = document.getElementById("navbar-menu");
-          element.classList.remove("show");
-      }
-    </script>
     <!-- window.scroll-->
     <script>
       window.onscroll = function () {
@@ -429,10 +421,12 @@
           calendar.setOption('locale', 'zh-tw');
       });
     </script>
+    <!-- 滑動-->
     <script>
       var prevScrollpos = window.pageYOffset;
       window.onscroll = function () {
           var currentScrollPos = window.pageYOffset;
+          // 下滑隱藏導覽列
           if (prevScrollpos < 0){
               document.getElementById("navbar").style.top = "0";
           }
@@ -442,7 +436,10 @@
           else {
               document.getElementById("navbar").style.top = "-135px";
           }
-      prevScrollpos = currentScrollPos;
+          prevScrollpos = currentScrollPos;
+          // 手機版視窗滾動收回導覽列
+          var element = document.getElementById("navbar-menu");
+          element.classList.remove("show");
       }
     </script>
   </body>
