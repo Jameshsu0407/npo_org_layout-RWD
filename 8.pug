@@ -1,0 +1,95 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		title 非營利組織名錄
+		//- 匯入連結
+		include header.pug
+	body#top
+		//- 匯入導覽列+gototop
+		include nav.pug
+
+		section#npo_list.container
+			.row
+				.content_top.col-12
+					h2.content_title.col-12 非營利組織名錄
+					.table.col-12
+						form.form-inline.col-12.selector
+							.select_wrap.col-12.col-md-4
+								input.form-control.col-12(type="text" placeholder="請輸入非營利組織")
+							.select_wrap.col-12.col-md-3
+								select.custom-select.col-12
+									option(selected="" disabled="") 請輸入地區
+									option 北部
+									option 中部
+									option 南部
+									option 東部
+									option 全國性
+							.select_wrap.col-12.col-md-3
+								select.custom-select.col-12
+									option(selected="" disabled="") 請輸入類型
+									option 綜合性服務
+									option 兒童青少年福利
+									option 婦女福利
+									option 老人福利
+									option 身心障礙福利
+							.select_wrap.col-12.col-md-2
+								button.btn.lookmore.col-12.m-0(type="button") 送出
+						table.table.col-12
+							thead.thead-color.text-center
+								tr
+									th(scope="col") 非營利組織
+									th.type_width(scope="col") 地區
+							tbody
+								tr.clickable-row(data-href="12.12.html")
+									th.text-truncate(scope="row") 中華全球生命教育推動協會
+									td.text-center.text-truncate 北區+中區+南區+東部
+								tr.clickable-row(data-href="12.12.html")
+									th.text-truncate(scope="row") 社團法人中華民國教會人權促進聯盟
+									td.text-center.text-truncate 全國性
+								tr.clickable-row(data-href="12.12.html")
+									th.text-truncate(scope="row") 社團法人新竹市教保人員協會
+									td.text-center.text-truncate 全國性
+								tr.clickable-row(data-href="12.12.html")
+									th.text-truncate(scope="row") 社團法人正念助人學會
+									td.text-center.text-truncate 全球性, 全國性
+								tr.clickable-row(data-href="12.12.html")
+									th.text-truncate(scope="row") 台灣公益資訊中心
+									td.text-center.text-truncate 全國性
+								tr.clickable-row(data-href="12.12.html")
+									th.text-truncate(scope="row") 財團法人台灣基督教恩惠福音會湖光基督教會
+									td.text-center.text-truncate 北區
+								tr.clickable-row(data-href="12.12.html")
+									th.text-truncate(scope="row") 社團法人多扶無障礙生活與交通發展協會
+									td.text-center.text-truncate 全國性
+								tr.clickable-row(data-href="12.12.html")
+									th.text-truncate(scope="row") 社團法人宜蘭縣善集合教育文化學會
+									td.text-center.text-truncate 宜蘭縣
+								tr.clickable-row(data-href="12.12.html")
+									th.text-truncate(scope="row") 中華佛寺福臨文教慈善協會
+									td.text-center.text-truncate 全國性
+								tr.clickable-row(data-href="12.12.html")
+									th.text-truncate(scope="row") 社團法人台灣公益聯盟
+									td.text-center.text-truncate 全國性
+								tr.clickable-row(data-href="12.12.html")
+									th.text-truncate(scope="row") 社團法人為你社區服務協會
+									td.text-center.text-truncate 全國性
+								tr.clickable-row(data-href="12.12.html")
+									th.text-truncate(scope="row") 社團法人臺東縣友善關懷協會
+									td.text-center.text-truncate 台東縣
+								tr.clickable-row(data-href="12.12.html")
+									th.text-truncate(scope="row") 桃園市行者無疆社會實踐協會
+									td.text-center.text-truncate 桃園市
+								tr.clickable-row(data-href="12.12.html")
+									th.text-truncate(scope="row") 伊甸基金會新北市私立居家式服務類長期照顧服務機構
+									td.text-center.text-truncate 北區
+								tr.clickable-row(data-href="12.12.html")
+									th.text-truncate(scope="row") 財團法人宜學教育基金會
+									td.text-center.text-truncate 東部
+					include page.pug
+		
+		//- 匯入底部廣告
+		include footer_ad.pug
+		//- 匯入footer+script
+		include footer.pug

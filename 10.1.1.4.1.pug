@@ -1,0 +1,199 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		title 前台-機構-公益影片-新增
+		//- 匯入連結
+		include header.pug
+	body#top
+		//- 匯入導覽列+gototop
+		include nav.pug
+
+		section#font_end_org_video_add.member_same.container
+			.row
+				.content_top.col-12
+					h2.content_title.col-12 公益影片
+					// 左側
+					.left.col-12.col-lg-3
+						// pc版導覽列
+						ul.pc_nav
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.1.1.html") 修改組織基本資料
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.1.2.html") 公益新訊
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.1.3.html") 最新活動
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.1.4.html") 公益影片
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.1.5.html") 補助公告
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.1.6.html") 救助公告
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.1.7.html") 獎助公告
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.1.8.html") 物資需求
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.1.9.html") 志工招募
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.1.10.html") 全職工作
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.1.11.html") 兼職工作
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.1.12.html") 公益商城
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.1.13.html") 組織使用者維護
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.1.14.html") 修改密碼
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.html") 登出
+						// 手機版導覽列
+						select.selectpicker.phone_nav(onchange="location.href=this.options[this.selectedIndex].value")
+							option(value="10.1.1.1.html") 修改組織基本資料
+							option(value="10.1.1.2.html")  公益新訊
+							option(value="10.1.1.3.html")  最新活動
+							option(value="10.1.1.4.html" selected)  公益影片
+							option(value="10.1.1.5.html")  補助公告
+							option(value="10.1.1.6.html")  救助公告
+							option(value="10.1.1.7.html")  獎助公告
+							option(value="10.1.1.8.html")  物資需求
+							option(value="10.1.1.9.html")  志工招募
+							option(value="10.1.1.10.html")  全職工作
+							option(value="10.1.1.11.html")  兼職工作
+							option(value="10.1.1.12.html")  公益商城
+							option(value="10.1.1.13.html")  組織使用者維護
+							option(value="10.1.1.14.html")  修改密碼
+							option(value="10.1.html")  登出
+					// 右側
+					.right.col-12.col-lg-9
+						form.video_add
+							
+							// 必填
+							.col-12
+								.form-group
+									label 刊登日期
+									input.form-control(type="date")
+							
+							.col-12
+									.form-group
+										label 上傳圖片
+										.custom-file
+											input.custom-file-input(type="file")
+											label.custom-file-label 圖片建議尺寸800X450px
+							// 必填
+							.col-12
+								.form-group
+									label 刊登天數
+									.post_duration
+										.form-check
+											input.form-check-input(type="radio" name="post_duration")
+											label.form-check-label 14天
+										.form-check
+											input.form-check-input(type="radio" name="post_duration")
+											label.form-check-label 28天
+										.form-check
+											input.form-check-input(type="radio" name="post_duration")
+											label.form-check-label 56天
+							// 必填
+							.col-12
+								label 影片屬性
+								.video_characteristic
+									.form-group.form-check
+										input.form-check-input(type="checkbox")
+										label.form-check-label 綜合性服務
+									.form-group.form-check
+										input.form-check-input(type="checkbox")
+										label.form-check-label 兒童青少年福利	
+									.form-group.form-check
+										input.form-check-input(type="checkbox")
+										label.form-check-label 婦女福利
+									.form-group.form-check
+										input.form-check-input(type="checkbox")
+										label.form-check-label 老人福利
+									.form-group.form-check
+										input.form-check-input(type="checkbox")
+										label.form-check-label 身心障礙福利
+									.form-group.form-check
+										input.form-check-input(type="checkbox")
+										label.form-check-label 家庭福利 
+									.form-group.form-check
+										input.form-check-input(type="checkbox")
+										label.form-check-label 動物保護
+									.form-group.form-check
+										input.form-check-input(type="checkbox")
+										label.form-check-label 性別平等
+									.form-group.form-check
+										input.form-check-input(type="checkbox")
+										label.form-check-label 健康醫療
+									.form-group.form-check
+										input.form-check-input(type="checkbox")
+										label.form-check-label 心理衛生
+									.form-group.form-check
+										input.form-check-input(type="checkbox")
+										label.form-check-label 文化藝術
+									.form-group.form-check
+										input.form-check-input(type="checkbox")
+										label.form-check-label 教育與科學
+									.form-group.form-check
+										input.form-check-input(type="checkbox")
+										label.form-check-label 國際合作交流
+									.form-group.form-check
+										input.form-check-input(type="checkbox")
+										label.form-check-label 人權和平
+									.form-group.form-check
+										input.form-check-input(type="checkbox")
+										label.form-check-label 環境保護
+									.form-group.form-check
+										input.form-check-input(type="checkbox")
+										label.form-check-label 消費者保護
+									.form-group.form-check
+										input.form-check-input(type="checkbox")
+										label.form-check-label 社區規劃(營造)
+									.form-group.form-check
+										input.form-check-input(type="checkbox")
+										label.form-check-label 政府單位
+							// 必填
+							.col-12
+								.form-group
+									label 影片標題
+									input.form-control(type="text")
+							// 必填
+							.col-12
+								.form-group
+									label Youtube連結
+									input.form-control(type="text" placeholder="在Youtubeu影片按右鍵，點選複製嵌入程式碼並將它貼上")
+							.col-12
+								.form-group
+									label 詳細說明
+									textarea.form-control(rows="5")
+							// 必填
+							.input-group.mb-3
+								.input-group-prepend
+									span.input-group-text 驗證碼
+								input.form-control(type="text" placeholder="請輸入驗證碼")
+								.input-group-append
+									a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")
+										img.checkpin(src="./img/checkpin.png", alt="")
+							button.btn.login_button(type="button" onclick="javascript:location.href=''") 送出
+
+
+		//- 匯入底部廣告
+		include footer_ad.pug
+		//- 匯入footer+script
+		include footer.pug

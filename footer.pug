@@ -1,0 +1,89 @@
+// footer
+footer
+    .container
+        .row
+            .footer-left.col-12.col-md-5.order-2.order-sm-1
+                p.copyright-zh
+                    | 財團法人喜瑪拉雅研究發展基金會建置
+                    br
+                    | 網軟股份有限公司營運維護
+                p.copyright-en Copyright © 2020 Taiwan NPO Information Platform. All Rights Reserved. 
+                // <p>瀏覽人數：<span>66666</span>人</p>
+            .footer-right.col-12.col-md-7.order-1.order-sm-2
+                p.npotimes NPOTIMES電子報訂閱
+                .input-group
+                    input.form-control(type="email" placeholder="請輸入電子信箱" aria-label="搜尋組織" aria-describedby="button-addon2")
+                    .input-group-append
+                        button#suscribe.btn.lookmore(type="button") 訂閱！
+                .supports
+                    .logo.col-4
+                        a(href="http://www.himalaya.org.tw" target="_blank")
+                            img(src="./img/logo/logo1.png" alt="喜瑪拉亞基金會")
+                    .logo.col-4
+                        a(href="https://www.gss.com.tw" target="_blank")
+                            img(src="./img/logo/logo2.png" alt="叡揚資訊")
+                    .logo.col-4
+                        a(href="http://www.intersoft.com.tw/RWD01/default.aspx?rand=637272093166089184" target="_blank")
+                            img(src="./img/logo/logo3.png" alt="網軟")
+            .bottom-bar.col-12.col-md-8.order-3.mx-auto
+                .col-4
+                    a(href="11.1.html")
+                        | 使用說明
+                .col-4
+                    a(href="11.2.html")
+                        | 服務條款
+                .col-4
+                    a(href="11.3.html")
+                        | 隱私權政策
+// jq
+script(src="./js/jquery.js")
+// BT4
+script(src="./js/popper.min.js")
+script(src="./js/bootstrap.js")
+script(src="./js/bootstrap.bundle.js")
+// slick
+script(src="./js/slick.js")
+// bootnav
+script(src="./js/bootsnav.js")
+// fullcalendar
+script(src="./js/core.main.js")
+script(src="./js/daygrid.main.js")
+script(src="./js/locales-all.js")
+script(src="./js/interaction.main.js")
+// bootstrap-select
+script(src="./js/bootstrap-select.js")
+// script
+script(src="./js/script.js")
+// 手機版視窗滾動收回導覽列
+script.
+    var prevScrollpos = window.pageYOffset;
+    function removeShow() {
+    var element = document.getElementById("navbar-menu");
+    element.classList.remove("show");
+    }
+// window.scroll
+script.
+    window.onscroll = function () {
+    removeShow();
+    }
+// fullcalendar初始化
+script.
+    document.addEventListener('DOMContentLoaded', function () {
+    var calendarEl = document.getElementById('calendar');
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+    plugins: ['interaction','dayGrid'],
+    fixedWeekCount: false,
+    selectable: true,
+    events: [
+    {
+    start: '2020-06-18'
+    },
+    {
+    start: '2020-06-22'
+    }
+    ]
+    });
+    calendar.render();
+    // 中文語系
+    calendar.setOption('locale', 'zh-tw');
+    });

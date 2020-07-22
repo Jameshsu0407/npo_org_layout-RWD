@@ -1,0 +1,58 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		title 會員申請流程說明
+		//- 匯入連結
+		include header.pug
+	body#top
+		//- 匯入導覽列+gototop
+		include nav.pug
+
+		section#register_explanation.member_same.container
+			.row
+				.content_top.col-12
+					h2.content_title.col-12 會員申請流程說明
+					// 左側
+					.left.col-12.col-lg-3
+						// pc版導覽列
+						ul.pc_nav
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.html") 會員登錄
+							li
+								i.fa.fa-caret-right
+								a(href="10.2.html") 會員申請流程說明
+							li
+								i.fa.fa-caret-right
+								a(href="10.3.html") 申請會員
+						// 手機版導覽列
+						select.selectpicker.phone_nav(onchange="location.href=this.options[this.selectedIndex].value")
+							option(value="10.1.html") 會員登錄
+							option(value="10.2.html"  selected)  會員申請流程說明
+							option(value="10.3.html")  申請會員
+
+					// 右側
+					.right.col-12.col-lg-9
+						.org_explanation
+							h2 機構專區
+							p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus sunt in, consequatur provident quod assumenda architecto qui, unde eum, dolorem labore fugit officia consectetur est eligendi minus incidunt sit corrupti!
+							img.img-fluid(src="https://fakeimg.pl/800x450/", alt="")
+						.com_explanation
+							h2 企業專區
+							p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus sunt in, consequatur provident quod assumenda architecto qui, unde eum, dolorem labore fugit officia consectetur est eligendi minus incidunt sit corrupti!
+							img.img-fluid(src="https://fakeimg.pl/800x450/", alt="")
+						.com_explanation
+							h2 一般會員
+							p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus sunt in, consequatur provident quod assumenda architecto qui, unde eum, dolorem labore fugit officia consectetur est eligendi minus incidunt sit corrupti!
+							img.img-fluid(src="https://fakeimg.pl/800x450/", alt="")
+						.form-group.form-check
+							input.form-check-input(type="checkbox")
+							label.form-check-label 我已閱讀
+						button.btn(onclick="javascript:location.href='10.3.html'") 送出
+
+		//- 匯入底部廣告
+		include footer_ad.pug
+		//- 匯入footer+script
+		include footer.pug

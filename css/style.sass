@@ -1,6 +1,6 @@
 // 定義顏色
 $color_dark_orange: #FA9C25
-$color_orange: #F7C280
+$color_orange: #ffc47c
 $color_yellow: #ffd56f 
 $color_gray: #B5B8A3
 $color_light_gray: #d4d4d4
@@ -24,8 +24,10 @@ $color_white: #fff
     font-family: '微軟正黑體','標楷體','Arial'
     &:focus,&:checked
         outline: none
-        border: none
-        box-shadow: none !important        
+        // border: none
+        box-shadow: none !important  
+        -webkit-appearance: none  
+        -moz-appearance: none    
 html,body
     margin: 0
     padding: 0
@@ -105,6 +107,37 @@ ul
 // 寫在物件上的連結
 .clickable-row
     cursor: pointer !important
+select,textarea,input,.form-control
+    border: 1px solid $color_light_gray
+    transition: 0.5s
+    &:focus,&:active
+        border-color: $color_dark_orange
+// select預設樣式
+.dropdown.bootstrap-select
+    button.dropdown-toggle
+        &:active
+            background-color: transparent
+            border-color: $color_dark_orange
+        &:focus
+            outline: none !important
+            border-color: $color_dark_orange !important
+        background-color: transparent
+        border: 1px solid $color_light_gray
+        padding-right: 15px
+    .dropdown-menu.show
+        padding: 0
+        margin: 0
+        ul.dropdown-menu.inner.show
+            li
+                a.dropdown-item
+                    &:active
+                        background-color: lighten($color_orange,10% )
+                    color: $color_black
+                    padding: 10px 12px
+                a.dropdown-item.active
+                    background-color: lighten($color_orange,10% )
+                    &:active
+                        background-color: lighten($color_orange,10% )
 // -----------------------------------------------------
 // page
 #page
@@ -120,7 +153,6 @@ ul
                 i
                     transition: 0.5s
                     &:hover
-                        font-size: 25px
                         color: $color_dark_orange
                 input
                     width: 40px
@@ -160,7 +192,7 @@ ul
         align-items: center
         position: fixed
         right: -79px
-        top: 125px
+        top: 135px
         @media screen and ( max-width: 992px )
             top: 145px
         @media screen and ( max-width: 768px )
@@ -186,7 +218,7 @@ ul
         align-items: center
         position: fixed
         right: -75px
-        top: 175px
+        top: 185px
         @media screen and ( max-width: 992px )
             top: 195px
         @media screen and ( max-width: 768px )
@@ -212,7 +244,7 @@ ul
         align-items: center
         position: fixed
         right: -83px
-        top: 225px
+        top: 235px
         @media screen and ( max-width: 992px )
             top: 245px
         @media screen and ( max-width: 768px )
@@ -238,7 +270,7 @@ ul
         align-items: center
         position: fixed
         right: -83px
-        top: 275px
+        top: 285px
         @media screen and ( max-width: 992px )
             top: 295px
         @media screen and ( max-width: 768px )
@@ -475,11 +507,18 @@ ul.nav.navbar-nav
     .navbar-header
         button.navbar-toggle
         a.navbar-brand
-            padding: 0
-            @media screen and ( max-width: 350px )
-                width: 250px
+            // padding: 0
+            // @media screen and ( max-width: 350px )
+            //     width: 250px
+            // img
+            //     width: 100%
             img
-                width: 100%
+                object-fit: contain
+                width: 290px
+                height: 70px
+                @media screen and ( max-width: 340px )
+                    width: 220px
+                    height: 70px
 @media (max-width: 992px) 
 	nav.navbar.bootsnav ul.nav > li > a 
 		font-weight: normal
@@ -549,12 +588,14 @@ ul.dropdown-menu
 // 登錄、搜尋區塊
 #searchandlogin
     margin: 20px 0
+    @media screen and ( max-width: 992px )
+        padding: 0
     .login
         display: flex
         flex-wrap: wrap
         justify-content: center
         align-items: center
-        font-display: row
+        flex-direction: row
         text-align: center
         .login-btn
             a
@@ -565,9 +606,11 @@ ul.dropdown-menu
                 i
                     font-size: 50px
                     margin: 10px
-        .user,.org
+        .org,.business
             border-right: 1px solid $color_orange
         .search
+            @media screen and ( max-width: 992px )
+                margin: 20px 0 0 0
             display: flex
             align-items: center
             flex-direction: column
@@ -587,7 +630,16 @@ ul.dropdown-menu
                     h4
                         font-size: 20px
                     i
-                        font-size: 35px    
+                        font-size: 35px
+@media screen and ( max-width: 400px )
+    #searchandlogin
+        .login
+            .login-btn
+                a
+                    h4
+                        font-size: 14px
+                    i
+                        font-size: 30px    
 // -----------------------------------------------------
 // 最新活動
 #newpost
@@ -597,23 +649,31 @@ ul.dropdown-menu
         padding: 0
         .card
             border: none
+            // .pic
+            //     display: flex
+            //     justify-content: center
+            //     align-items: center
+            //     margin: 0 auto
+            //     width: 400px
+            //     height: 225px
+            //     @media screen and ( max-width: 576px )
+            //         width: 320px
+            //         height: 180px
+            //     img
+            //         display: block
+            //         margin: 0 auto
+            //     .width_100
+            //         width: 100%
+            //     .height_100
+            //         height: 100%
             .pic
                 display: flex
                 justify-content: center
                 align-items: center
-                margin: 0 auto
-                width: 400px
-                height: 225px
-                @media screen and ( max-width: 576px )
-                    width: 320px
-                    height: 180px
                 img
-                    display: block
-                    margin: 0 auto
-                .width_100
-                    width: 100%
-                .height_100
-                    height: 100%
+                    object-fit: contain
+                    width: 400px
+                    height: 225px
             .card-title
                 +title
             .date
@@ -696,53 +756,46 @@ ul.dropdown-menu
             padding: 0
 // -----------------------------------------------------
 // 公益商城
-.shopbgc
-    background-color: $color_orange
-    +mtb
 #shop
     +mtb
-    display: flex
-    flex-wrap: wrap
-    .good
-        text-align: center
-        .pic
-            overflow: hidden
-            width: 250px
-            height: 250px
+    .shop_slick
+        display: flex
+        flex-direction: row
+        .card
             display: flex
             justify-content: center
-            align-items: center
-            margin: 0 auto
-            margin-bottom: 20px
-            img
-                &:hover
+            border: none
+            .pic
+                object-fit: contain
+                width: 250px
+                height: 250px
+                @media screen and ( max-width: 1200px )
+                    width: 220px
+                    height: 220px
+                display: block
+                margin: 0 auto
+                overflow: hidden
+                
+                img
+                    object-fit: contain
+                    width: 250px
+                    height: 250px
+                    @media screen and ( max-width: 1200px )
+                        width: 220px
+                        height: 220px
                     transition: 0.5s
-                    transform: rotate(10deg) scale(1.2)
-            .width_100
-                width: 100%
-            .height_100
-                height: 100%
-        h3
-            +title
-            margin: 10px 0
-    .lookmore
-        margin-right: auto
-        margin-left: auto
-@media screen and ( max-width: 992px )
-    .good
-        margin-bottom: 10px
-@media screen and ( max-width: 576px )
-    .shopbgc
-        background-color: #fff
-        .good
-            margin-bottom: 10px
-    #shop
-        padding: 15px
-        margin: 0
-        .lookmore
-            margin: initial
-            margin-top: 10px
-            margin-left: auto    
+                    &:hover
+                        transform: rotate(10deg) scale(1.2)
+            h3.title
+                +title
+                text-align: center
+                margin: 20px 0 10px 0
+            p.text
+                text-align: center
+                
+
+ 
+  
 // -----------------------------------------------------
 // 公益新訊、急難救助、獎助學金
 #news
@@ -848,7 +901,7 @@ footer
             .col-4
                 padding: 0 5px
 // -----------------------------------------------------        
-// 2關於我們
+// 2.1關於我們
 #about_us
     .content_top
         margin-top: 150px
@@ -862,6 +915,66 @@ footer
             margin: auto
         p
             margin-top: 20px
+// -----------------------------------------------------        
+// 2.2創辦人理念
+#founder_pic
+    padding: 135px 0 0 0
+#founder
+    .content_top
+        h2.content_title
+            margin-top: 20px
+            &::before
+                display: none
+        h3
+            +title
+            margin-bottom: 16px
+        h4
+            +title
+            &::before
+                font-family: 'FontAwesome'
+                content: "\f192"
+                margin-right: 5px
+        p
+            line-height: 1.5
+// -----------------------------------------------------        
+// 2.3.1網軟
+#intersoft
+    .content_top
+        margin-top: 125px
+        display: flex
+        flex-wrap: wrap
+        h2.content_title
+            margin-top: 20px
+            &::before
+                display: none
+        h3
+            +title
+            margin-bottom: 16px
+        p
+            line-height: 1.5
+        .office
+            @media screen and ( max-width: 992px )
+                margin-bottom: 15px
+        .value
+            margin-top: 20px
+            display: flex
+            flex-wrap: wrap
+            .col-12.col-lg-8
+                display: flex
+                flex-wrap: wrap
+                @media screen and ( max-width: 768px )
+                    padding: 0
+                .value_group
+                    display: flex
+                    flex-wrap: wrap
+                    padding: 15px
+            .col-12.col-lg-4
+                display: flex
+                flex-wrap: wrap
+            p
+                margin: 0
+
+
 // -----------------------------------------------------        
 // 3.1公益新訊
 #npo_news
@@ -1065,6 +1178,8 @@ footer
                     width: 100%
                 .height_100
                     height: 100%
+        #page
+            margin: 0 auto
 // -----------------------------------------------------        
 // 4.1.2補助公告 4.2.2救助公告 4.3.2獎助公告
 #npo_allowance_announcement,#npo_rescue_announcement,#npo_scholarship_announcement
@@ -1111,100 +1226,100 @@ footer
         h2.content_title
             &::before
                 display: none
-.content_left
-    margin-bottom: 20px
-    @media screen and ( max-width: 992px )
-        margin-bottom: 30px
-    .fc-scroller.fc-day-grid-container
-        @media screen and ( max-width: 992px )
-            height: auto !important
-            overflow: initial !important
-    .fc-left
-        h2
-            font-size: 24px
-            &::before
-                display: none
-    .fc
-        cursor: pointer
-    .fc-day-header
-        cursor: initial
-    .fc-sun,.fc-sat
-        background-color: lighten($color_light_gray,15% )
-
-    .fc-today-button.fc-button
-        &:disabled
-            background-color: darken($color_orange,5% )
-            border: none
-    .fc-button
-        background-color: $color_orange
-        border: 1px solid darken($color_orange,5% )
-        transition: 0.5s
-        &:hover,&:focus
-            background-color: $color_dark_orange
-            border: 1px solid darken($color_dark_orange,5% )
-    .fc-highlight
-        background-color: #fcf8e3
-        opacity: 1
-    .fc-event
-        background-color: $color_dark_orange
-        border: none !important
-        cursor: initial
-    .fc-toolbar.fc-header-toolbar
-        margin-bottom: 10px
-.content_right
-    height: 450.469px
-    overflow: scroll
-    @media screen and ( max-width: 992px )
-        overflow: initial
-        height: auto
-    .comming_allowance
-        display: flex
-        flex-wrap: wrap
-        align-items: center
-        background-color: lighten($color_light_gray,15% )
-        padding: 25px 15px
+    .content_left
         margin-bottom: 20px
         @media screen and ( max-width: 992px )
             margin-bottom: 30px
-        transition: 0.5s
-        box-shadow: 5px 5px rgba(0, 0,0 ,0.1 )
-        &:hover
-            transform: scale(1.02)
-            box-shadow: 10px 10px rgba(0, 0,0 ,0.1 ) 
-        .col-3
-            padding: 0
-            .date
+        .fc-scroller.fc-day-grid-container
+            @media screen and ( max-width: 992px )
+                height: auto !important
+                overflow: initial !important
+        .fc-left
+            h2
+                font-size: 24px
+                &::before
+                    display: none
+        .fc
+            cursor: pointer
+        .fc-day-header
+            cursor: initial
+        .fc-sun,.fc-sat
+            background-color: lighten($color_light_gray,15% )
+
+        .fc-today-button.fc-button
+            &:disabled
+                background-color: darken($color_orange,5% )
+                border: none
+        .fc-button
+            background-color: $color_orange
+            border: 1px solid darken($color_orange,5% )
+            transition: 0.5s
+            &:hover,&:focus
+                background-color: $color_dark_orange
+                border: 1px solid darken($color_dark_orange,5% )
+        .fc-highlight
+            background-color: #fcf8e3
+            opacity: 1
+        .fc-event
+            background-color: $color_dark_orange
+            border: none !important
+            cursor: initial
+        .fc-toolbar.fc-header-toolbar
+            margin-bottom: 10px
+    .content_right
+        height: 450.469px
+        overflow: scroll
+        @media screen and ( max-width: 992px )
+            overflow: initial
+            height: auto
+        .comming_allowance
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            background-color: lighten($color_light_gray,15% )
+            padding: 25px 15px
+            margin-bottom: 20px
+            @media screen and ( max-width: 992px )
+                margin-bottom: 30px
+            transition: 0.5s
+            box-shadow: 5px 5px rgba(0, 0,0 ,0.1 )
+            &:hover
+                transform: scale(1.02)
+                box-shadow: 10px 10px rgba(0, 0,0 ,0.1 ) 
+            .col-3
+                padding: 0
+                .date
+                    font-weight: 700
+                    font-size: 60px
+                    display: block
+                    text-align: center
+                    color: $color_dark_orange
+                .month
+                    font-size: 20px
+                    display: block
+                    text-align: center
+            h3
+                font-size: 24px
                 font-weight: 700
-                font-size: 60px
+            p
+                overflow: hidden
+                white-space: nowrap
+                text-overflow: ellipsis
                 display: block
-                text-align: center
-                color: $color_dark_orange
-            .month
-                font-size: 20px
+                -webkit-line-clamp: 2
+                -webkit-box-orient: vertical
+                white-space: normal
+                line-height: 28px
+                height: 55px
+                margin-bottom: 0
+            span
                 display: block
-                text-align: center
-        h3
-            font-size: 24px
-            font-weight: 700
-        p
-            overflow: hidden
-            white-space: nowrap
-            text-overflow: ellipsis
-            display: block
-            -webkit-line-clamp: 2
-            -webkit-box-orient: vertical
-            white-space: normal
-            line-height: 28px
-            height: 55px
-            margin-bottom: 0
-        span
-            display: block
-            text-align: right
-            margin-top: 5px
-            a
-                transition: 0.5s
-                &:hover
-                    color: $color_orange
+                text-align: right
+                margin-top: 5px
+                a
+                    transition: 0.5s
+                    &:hover
+                        color: $color_orange
 // -----------------------------------------------------        
 // 5.1物資募集
 #npo_donate
@@ -1522,8 +1637,3253 @@ footer
         .left-box,.right-box
             padding: 0
 // -----------------------------------------------------        
-// 10.1.1會員登錄
+// 10.X會員共用
+.member_same
+    .content_top
+        margin-top: 150px
+        display: flex
+        flex-wrap: wrap
+        h2.content_title
+            &::before
+                display: none
+        .left
+            // pc版導覽列
+            ul.pc_nav
+                li
+                    padding: 20px 0
+                    border-bottom: 1px solid $color_gray
+                    &:hover
+                        a,i
+                            color: $color_dark_orange
+                    i
+                        transition: 0.5s
+                        margin-right: 10px
+                    a
+                        font-size: 18px
+                        font-weight: 600
+                        transition: 0.5s
+                @media screen and ( max-width: 992px )
+                    display: none
+            // 手機版導覽列
+            .dropdown.bootstrap-select.phone_nav
+                display: none
+                @media screen and ( max-width: 992px )
+                    display: block
+                    margin: 0 auto
+                    margin-bottom: 1rem
+                    width: 60%
+                @media screen and ( max-width: 768px )
+                    width: 80%
+                @media screen and ( max-width: 576px )
+                    width: 100% 
+// -----------------------------------------------------        
+// 10.1會員登錄
+#all_login
+    .right
+        display: flex
+        justify-content: center
+        align-items: center
+        form
+            width: 60%
+            @media screen and ( max-width: 768px )
+                width: 80%
+            @media screen and ( max-width: 576px )
+                width: 100%
+            // 會員下拉選單
+            .dropdown.bootstrap-select
+                button.dropdown-toggle
+                    &:active
+                        background-color: transparent
+                        border-color: $color_dark_orange
+                    &:focus
+                        outline: none !important
+                        border-color: $color_dark_orange !important
+                    background-color: transparent
+                    border: 1px solid $color_light_gray
+                    padding-right: 15px
+                    // 第一層的圖示
+                    i
+                        width: 20px
+                .dropdown-menu.show
+                    padding: 0
+                    margin: 0
+                    ul.dropdown-menu.inner.show
+                        li
+                            a.dropdown-item
+                                &:active
+                                    background-color: lighten($color_yellow,10% )
+                                color: $color_black
+                                padding: 10px 12px
+                                // 第二層的圖示
+                                span.fas,span.far
+                                    width: 20px
+                            a.dropdown-item.active
+                                background-color: lighten($color_yellow,10% )
+                                &:active
+                                    background-color: lighten($color_yellow,10% )
+            // input格式
+            .input-group
+                .input-group-text
+                    border: none
+                    width: 100px
+                    background-color: lighten($color_yellow,10% )
+                // 查詢代碼、密碼、email
+                .search
+                    background-color: $color_light_gray
+                    font-size: 12px
+                    text-align: center
+                    line-height: 24px
+                    transition: 0.5s
+                    width: 85px
+                    &:hover
+                        background-color: lighten($color_light_gray,10% )
+            .checkpin_switch
+                position: relative
+                width: 85px
+                .checkpin
+                    width: 70%
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%,-50%)
+            // 登錄按鈕
+            .login_button
+                display: block
+                margin: 0 auto
+                margin-bottom: 20px
+                padding: 4px 25px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+            // 忘記帳號
+            .org_login_forgot_email,.com_login_forgot_email,.member_login_forgot_email
+                h3
+                    +title
+                    margin-bottom: 10px
+                p
+                    line-height: 2
+                .custom-file
+                    input.custom-file-input
+                        cursor: pointer
+                    label.custom-file-label
+                        &::after
+                            content: "選擇檔案"
+                        &:focus
+                            border: 1px solid $color_dark_orange
+                    .custom-file-input:focus ~ .custom-file-label
+                        border-color: $color_light_gray
+                        box-shadow: none
+            // 忘記密碼
+            .org_login_forgot_password,.com_login_forgot_password,.member_login_forgot_password
+                h3
+                    +title
+                    margin-bottom: 10px
+// -----------------------------------------------------        
+// 10.1.1.1前台-機構-修改組織基本資料 
+#font_end_org_information
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .right
+        h3
+            +title
+            margin-bottom: 10px
+        .dropdown.bootstrap-select
+            button.dropdown-toggle
+                &:active
+                    background-color: transparent
+                    border-color: $color_dark_orange
+                &:focus
+                    outline: none !important
+                    border-color: $color_dark_orange !important
+                background-color: transparent
+                border: 1px solid $color_light_gray
+                padding-right: 15px
+                // 第一層的圖示
+                i
+                    width: 20px
+            .dropdown-menu.show
+                padding: 0
+                margin: 0
+                ul.dropdown-menu.inner.show
+                    li
+                        a.dropdown-item
+                            &:active
+                                background-color: lighten($color_yellow,10% )
+                            color: $color_black
+                            padding: 10px 12px
+                            // 第二層的圖示
+                            span.fas,span.far
+                                width: 20px
+                        a.dropdown-item.active
+                            background-color: lighten($color_yellow,10% )
+                            &:active
+                                background-color: lighten($color_yellow,10% )
+        .input-group
+            width: calc( 100% - 30px )
+            @media screen and ( max-width: 992px )
+                width: 60%
+            @media screen and ( max-width: 768px )
+                width: 80%
+            @media screen and ( max-width: 576px )
+                width: 100%
+            margin: 0 auto
+            .input-group-text
+                border: none
+                width: 100px
+                background-color: lighten($color_yellow,10% )
+        .register_form
+            display: flex
+            flex-wrap: wrap
+            .col-12.col-md-6,.col-12
+                @media screen and ( max-width: 768px )
+                    padding: 0
+            .one_line
+                display: flex
+                flex-wrap: wrap
+                padding: 0
+                .form-group.col-6,.form-group.col-3
+                    @media screen and ( max-width: 768px )
+                        padding-left: 0 
+            // 上傳檔案
+            .custom-file
+                input.custom-file-input
+                        cursor: pointer
+                label
+                    cursor: pointer
+                    &::after
+                        content: "選擇檔案"
+                .custom-file-input:focus ~ .custom-file-label
+                        border-color: $color_light_gray
+                        box-shadow: none
+            .form-check-input
+                &:focus,&:checked
+                    -webkit-appearance: checkbox
+            .region,.service
+                display: flex
+                flex-wrap: wrap
+                .form-group
+                    margin: 10px
+            .gender
+                position: absolute
+                top: 32px
+                left: 60px
+            .age
+                position: absolute
+                top: 64px
+                left: 60px
+            .gender,.age
+                .form-check
+                    display: inline-block
+                .age_range
+                    display: inline-block
+                    input
+                        display: inline-block
+                        width: 50px
+                        height: 25px
+                        &:focus
+                            border: 1px solid $color_dark_orange
+            .checkpin_switch
+                position: relative
+                width: 85px
+                .checkpin
+                    width: 70%
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%,-50%)
+            .login_button
+                display: block
+                margin: 0 auto
+                margin-bottom: 20px
+                padding: 4px 25px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+// -----------------------------------------------------        
+// 10.1.1.2前台-機構-公益新訊-列表
+#font_end_org_newpost_list
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .top_information
+        position: relative
+        h4
+            +title
+        .right_1
+            display: flex
+            align-items: center
+            position: absolute
+            top: 0
+            right: 0
+            @media screen and ( max-width: 768px )
+                position: static
+                margin: 5px 0
+            span
+                font-weight: 600
+                margin: 0 5px
+                @media screen and ( max-width: 768px )
+                    margin: 0
+            select.post_year
+                margin: 0 5px
+                &:focus
+                    border: 1px solid $color_light_gray
+            button.btn
+                display: inline-block
+                margin: 0 0 0 5px
+                padding: 2px 10px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+        .right_2
+            position: absolute
+            top: 30px
+            right: 0
+            @media screen and ( max-width: 768px )
+                position: static
+                margin: 5px 0
+            .max_piece,.now_piece
+                margin: 0 10px
+                color: red
+    .warring_rule
+        margin: 20px 0
+        padding: 8px 15px
+        background-color: lighten($color_yellow,10% )
+        border-radius: 5px
+        h4
+            +title
+            text-align: center
+            color: red
+        p
+            padding: 5px 0
+            margin: 0
+    table.table
+        margin-top: 20px
+        table-layout: fixed
+        .thead-color
+            .type_width
+                width: 120px
+        .clickable-row
+            cursor: pointer
+    #page
+        ul.pagination
+            li
+                a
+                    i
+                        &:hover
+                            color: $color_yellow
+// 10.1.1.2.1前台-機構-獎助公告-新增
+#font_end_org_newpost_add
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .right
+        // 包整個表單
+        .newpost_add
+            display: flex
+            flex-wrap: wrap
+            margin: 10px 0
+            .col-12
+                @media screen and ( max-width: 576px )
+                    padding: 0
 
+            // radio 刊登天數、物資類別、地區
+            .post_duration,.type,.region
+                .form-check
+                    display: inline-block
+                    position: relative
+                    margin: 5px 5px 5px 0
+                    .need_admission
+                        position: absolute
+                        top: 50%
+                        transform: translateY(-50%) 
+                        left: 110px
+                        height: 30px
+                        width: 80px
+            // check 類型
+            .donate_characteristic
+                display: flex
+                flex-wrap: wrap
+                margin-bottom: 16px
+                .form-group.form-check
+                    margin: 5px 10px 5px 0
+            // 上傳檔案
+            .custom-file
+                input.custom-file-input
+                        cursor: pointer
+                label
+                    cursor: pointer
+                    &::after
+                        content: "選擇檔案"
+                .custom-file-input:focus ~ .custom-file-label
+                        border-color: $color_light_gray
+                        box-shadow: none
+            .form-check-input
+                &:focus,&:checked
+                    -webkit-appearance: checkbox
+            // 驗證碼
+            .input-group
+                width: calc( 100% - 30px )
+                @media screen and ( max-width: 992px )
+                    width: 60%
+                @media screen and ( max-width: 768px )
+                    width: 80%
+                @media screen and ( max-width: 576px )
+                    width: 100%
+                margin: 0 auto
+                .input-group-text
+                    border: none
+                    width: 100px
+                    background-color: lighten($color_yellow,10% )
+            .checkpin_switch
+                position: relative
+                width: 85px
+                .checkpin
+                    width: 70%
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%,-50%)
+            .login_button
+                display: block
+                margin: 0 auto
+                margin-bottom: 20px
+                padding: 4px 25px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+// ----------------------------------------------------- 
+// 10.1.1.3前台-機構-最新活動-列表
+#font_end_org_activities_list
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .top_information
+        position: relative
+        h4
+            +title
+        .right_1
+            display: flex
+            align-items: center
+            position: absolute
+            top: 0
+            right: 0
+            @media screen and ( max-width: 768px )
+                position: static
+                margin: 5px 0
+            span
+                font-weight: 600
+                margin: 0 5px
+                @media screen and ( max-width: 768px )
+                    margin: 0
+            select.post_year
+                margin: 0 5px
+                &:focus
+                    border: 1px solid $color_light_gray
+            button.btn
+                display: inline-block
+                margin: 0 0 0 5px
+                padding: 2px 10px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+        .right_2
+            position: absolute
+            top: 30px
+            right: 0
+            @media screen and ( max-width: 768px )
+                position: static
+                margin: 5px 0
+            .max_piece,.now_piece
+                margin: 0 10px
+                color: red
+    .warring_rule
+        margin: 20px 0
+        padding: 8px 15px
+        background-color: lighten($color_yellow,10% )
+        border-radius: 5px
+        h4
+            +title
+            text-align: center
+            color: red
+    table.table
+        margin-top: 20px
+        table-layout: fixed
+        .thead-color
+            .type_width
+                width: 120px
+        .clickable-row
+            cursor: pointer
+    #page
+        ul.pagination
+            li
+                a
+                    i
+                        &:hover
+                            color: $color_yellow
+// -----------------------------------------------------        
+// 10.1.1.3.1前台-機構-最新活動-新增
+#font_end_org_activities_add
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .right
+        // 包整個表單
+        .activities_add
+            display: flex
+            flex-wrap: wrap
+            margin: 10px 0
+            .col-12
+                @media screen and ( max-width: 576px )
+                    padding: 0
+
+            // radio 刊登天數、活動類型、活動費用
+            .post_duration,.activities_type,.admission
+                .form-check
+                    display: inline-block
+                    position: relative
+                    margin: 5px 5px 5px 0
+                    .need_admission
+                        position: absolute
+                        top: 50%
+                        transform: translateY(-50%) 
+                        left: 110px
+                        height: 30px
+                        width: 80px
+            // check 活動屬性、地區
+            .activities_characteristic,.region
+                display: flex
+                flex-wrap: wrap
+                margin-bottom: 16px
+                .form-group.form-check
+                    margin: 5px 10px 5px 0
+            // 上傳檔案
+            .custom-file
+                input.custom-file-input
+                        cursor: pointer
+                label
+                    cursor: pointer
+                    &::after
+                        content: "選擇檔案"
+                .custom-file-input:focus ~ .custom-file-label
+                        border-color: $color_light_gray
+                        box-shadow: none
+            .form-check-input
+                &:focus,&:checked
+                    -webkit-appearance: checkbox
+            // 驗證碼
+            .input-group
+                width: calc( 100% - 30px )
+                @media screen and ( max-width: 992px )
+                    width: 60%
+                @media screen and ( max-width: 768px )
+                    width: 80%
+                @media screen and ( max-width: 576px )
+                    width: 100%
+                margin: 0 auto
+                .input-group-text
+                    border: none
+                    width: 100px
+                    background-color: lighten($color_yellow,10% )
+            .checkpin_switch
+                position: relative
+                width: 85px
+                .checkpin
+                    width: 70%
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%,-50%)
+            .login_button
+                display: block
+                margin: 0 auto
+                margin-bottom: 20px
+                padding: 4px 25px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+// -----------------------------------------------------        
+// 10.1.1.4前台-機構-公益影片-列表
+#font_end_org_video_list
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .top_information
+        position: relative
+        h4
+            +title
+        .right_1
+            display: flex
+            align-items: center
+            position: absolute
+            top: 0
+            right: 0
+            @media screen and ( max-width: 768px )
+                position: static
+                margin: 5px 0
+            span
+                font-weight: 600
+                margin: 0 5px
+                @media screen and ( max-width: 768px )
+                    margin: 0
+            select.post_year
+                margin: 0 5px
+                &:focus
+                    border: 1px solid $color_light_gray
+            button.btn
+                display: inline-block
+                margin: 0 0 0 5px
+                padding: 2px 10px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+        .right_2
+            position: absolute
+            top: 30px
+            right: 0
+            @media screen and ( max-width: 768px )
+                position: static
+                margin: 5px 0
+            .max_piece,.now_piece
+                margin: 0 10px
+                color: red
+    .warring_rule
+        margin: 20px 0
+        padding: 8px 15px
+        background-color: lighten($color_yellow,10% )
+        border-radius: 5px
+        h4
+            +title
+            text-align: center
+            color: red
+        p
+            padding: 5px 0
+            margin: 0
+    table.table
+        margin-top: 20px
+        table-layout: fixed
+        .thead-color
+            .type_width
+                width: 120px
+        .clickable-row
+            cursor: pointer
+    #page
+        ul.pagination
+            li
+                a
+                    i
+                        &:hover
+                            color: $color_yellow
+// -----------------------------------------------------        
+// 10.1.1.4.1前台-機構-公益影片-新增
+#font_end_org_video_add
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .right
+        // 包整個表單
+        .video_add
+            display: flex
+            flex-wrap: wrap
+            margin: 10px 0
+            .col-12
+                @media screen and ( max-width: 576px )
+                    padding: 0
+
+            // radio 刊登天數
+            .post_duration
+                .form-check
+                    display: inline-block
+                    position: relative
+                    margin: 5px 5px 5px 0
+                    .need_admission
+                        position: absolute
+                        top: 50%
+                        transform: translateY(-50%) 
+                        left: 110px
+                        height: 30px
+                        width: 80px
+            // check 影片屬性
+            .video_characteristic
+                display: flex
+                flex-wrap: wrap
+                margin-bottom: 16px
+                .form-group.form-check
+                    margin: 5px 10px 5px 0
+            // 上傳檔案
+            .custom-file
+                input.custom-file-input
+                        cursor: pointer
+                label
+                    cursor: pointer
+                    &::after
+                        content: "選擇檔案"
+                .custom-file-input:focus ~ .custom-file-label
+                        border-color: $color_light_gray
+                        box-shadow: none
+            .form-check-input
+                &:focus,&:checked
+                    -webkit-appearance: checkbox
+            // 驗證碼
+            .input-group
+                width: calc( 100% - 30px )
+                @media screen and ( max-width: 992px )
+                    width: 60%
+                @media screen and ( max-width: 768px )
+                    width: 80%
+                @media screen and ( max-width: 576px )
+                    width: 100%
+                margin: 0 auto
+                .input-group-text
+                    border: none
+                    width: 100px
+                    background-color: lighten($color_yellow,10% )
+            .checkpin_switch
+                position: relative
+                width: 85px
+                .checkpin
+                    width: 70%
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%,-50%)
+            .login_button
+                display: block
+                margin: 0 auto
+                margin-bottom: 20px
+                padding: 4px 25px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+// ----------------------------------------------------- 
+// 10.1.1.5前台-機構-補助公告-列表
+#font_end_org_allowance_announcement_list
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .top_information
+        position: relative
+        h4
+            +title
+        .right_1
+            display: flex
+            align-items: center
+            position: absolute
+            top: 0
+            right: 0
+            @media screen and ( max-width: 768px )
+                position: static
+                margin: 5px 0
+            span
+                font-weight: 600
+                margin: 0 5px
+                @media screen and ( max-width: 768px )
+                    margin: 0
+            select.post_year
+                margin: 0 5px
+                &:focus
+                    border: 1px solid $color_light_gray
+            button.btn
+                display: inline-block
+                margin: 0 0 0 5px
+                padding: 2px 10px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+        .right_2
+            position: absolute
+            top: 30px
+            right: 0
+            @media screen and ( max-width: 768px )
+                position: static
+                margin: 5px 0
+            .max_piece,.now_piece
+                margin: 0 10px
+                color: red
+    .warring_rule
+        margin: 20px 0
+        padding: 8px 15px
+        background-color: lighten($color_yellow,10% )
+        border-radius: 5px
+        h4
+            +title
+            text-align: center
+            color: red
+    table.table
+        margin-top: 20px
+        table-layout: fixed
+        .thead-color
+            .type_width
+                width: 120px
+        .clickable-row
+            cursor: pointer
+    #page
+        ul.pagination
+            li
+                a
+                    i
+                        &:hover
+                            color: $color_yellow
+// -----------------------------------------------------        
+// 10.1.1.5.1前台-機構-補助公告-新增
+#font_end_org_allowance_announcement_add
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .right
+        // 包整個表單
+        .allowance_announcement_add
+            display: flex
+            flex-wrap: wrap
+            margin: 10px 0
+            .col-12
+                @media screen and ( max-width: 576px )
+                    padding: 0
+
+            // radio 刊登天數、物資類別、地區
+            .post_duration,.type,.region
+                .form-check
+                    display: inline-block
+                    position: relative
+                    margin: 5px 5px 5px 0
+                    .need_admission
+                        position: absolute
+                        top: 50%
+                        transform: translateY(-50%) 
+                        left: 110px
+                        height: 30px
+                        width: 80px
+            // check 類型
+            .donate_characteristic
+                display: flex
+                flex-wrap: wrap
+                margin-bottom: 16px
+                .form-group.form-check
+                    margin: 5px 10px 5px 0
+            // 上傳檔案
+            .custom-file
+                input.custom-file-input
+                        cursor: pointer
+                label
+                    cursor: pointer
+                    &::after
+                        content: "選擇檔案"
+                .custom-file-input:focus ~ .custom-file-label
+                        border-color: $color_light_gray
+                        box-shadow: none
+            .form-check-input
+                &:focus,&:checked
+                    -webkit-appearance: checkbox
+            // 驗證碼
+            .input-group
+                width: calc( 100% - 30px )
+                @media screen and ( max-width: 992px )
+                    width: 60%
+                @media screen and ( max-width: 768px )
+                    width: 80%
+                @media screen and ( max-width: 576px )
+                    width: 100%
+                margin: 0 auto
+                .input-group-text
+                    border: none
+                    width: 100px
+                    background-color: lighten($color_yellow,10% )
+            .checkpin_switch
+                position: relative
+                width: 85px
+                .checkpin
+                    width: 70%
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%,-50%)
+            .login_button
+                display: block
+                margin: 0 auto
+                margin-bottom: 20px
+                padding: 4px 25px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+// ----------------------------------------------------- 
+// 10.1.1.6前台-機構-救助公告-列表
+#font_end_org_rescue_announcement_list
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .top_information
+        position: relative
+        h4
+            +title
+        .right_1
+            display: flex
+            align-items: center
+            position: absolute
+            top: 0
+            right: 0
+            @media screen and ( max-width: 768px )
+                position: static
+                margin: 5px 0
+            span
+                font-weight: 600
+                margin: 0 5px
+                @media screen and ( max-width: 768px )
+                    margin: 0
+            select.post_year
+                margin: 0 5px
+                &:focus
+                    border: 1px solid $color_light_gray
+            button.btn
+                display: inline-block
+                margin: 0 0 0 5px
+                padding: 2px 10px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+        .right_2
+            position: absolute
+            top: 30px
+            right: 0
+            @media screen and ( max-width: 768px )
+                position: static
+                margin: 5px 0
+            .max_piece,.now_piece
+                margin: 0 10px
+                color: red
+    .warring_rule
+        margin: 20px 0
+        padding: 8px 15px
+        background-color: lighten($color_yellow,10% )
+        border-radius: 5px
+        h4
+            +title
+            text-align: center
+            color: red
+    table.table
+        margin-top: 20px
+        table-layout: fixed
+        .thead-color
+            .type_width
+                width: 120px
+        .clickable-row
+            cursor: pointer
+    #page
+        ul.pagination
+            li
+                a
+                    i
+                        &:hover
+                            color: $color_yellow
+// -----------------------------------------------------        
+// 10.1.1.6.1前台-機構-救助公告-新增
+#font_end_org_rescue_announcement_add
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .right
+        // 包整個表單
+        .rescue_announcement_add
+            display: flex
+            flex-wrap: wrap
+            margin: 10px 0
+            .col-12
+                @media screen and ( max-width: 576px )
+                    padding: 0
+
+            // radio 刊登天數、物資類別、地區
+            .post_duration,.type,.region
+                .form-check
+                    display: inline-block
+                    position: relative
+                    margin: 5px 5px 5px 0
+                    .need_admission
+                        position: absolute
+                        top: 50%
+                        transform: translateY(-50%) 
+                        left: 110px
+                        height: 30px
+                        width: 80px
+            // check 類型
+            .donate_characteristic
+                display: flex
+                flex-wrap: wrap
+                margin-bottom: 16px
+                .form-group.form-check
+                    margin: 5px 10px 5px 0
+            // 上傳檔案
+            .custom-file
+                input.custom-file-input
+                        cursor: pointer
+                label
+                    cursor: pointer
+                    &::after
+                        content: "選擇檔案"
+                .custom-file-input:focus ~ .custom-file-label
+                        border-color: $color_light_gray
+                        box-shadow: none
+            .form-check-input
+                &:focus,&:checked
+                    -webkit-appearance: checkbox
+            // 驗證碼
+            .input-group
+                width: calc( 100% - 30px )
+                @media screen and ( max-width: 992px )
+                    width: 60%
+                @media screen and ( max-width: 768px )
+                    width: 80%
+                @media screen and ( max-width: 576px )
+                    width: 100%
+                margin: 0 auto
+                .input-group-text
+                    border: none
+                    width: 100px
+                    background-color: lighten($color_yellow,10% )
+            .checkpin_switch
+                position: relative
+                width: 85px
+                .checkpin
+                    width: 70%
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%,-50%)
+            .login_button
+                display: block
+                margin: 0 auto
+                margin-bottom: 20px
+                padding: 4px 25px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+// ----------------------------------------------------- 
+// 10.1.1.7前台-機構-獎助公告-列表
+#font_end_org_scholarship_announcement_list
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .top_information
+        position: relative
+        h4
+            +title
+        .right_1
+            display: flex
+            align-items: center
+            position: absolute
+            top: 0
+            right: 0
+            @media screen and ( max-width: 768px )
+                position: static
+                margin: 5px 0
+            span
+                font-weight: 600
+                margin: 0 5px
+                @media screen and ( max-width: 768px )
+                    margin: 0
+            select.post_year
+                margin: 0 5px
+                &:focus
+                    border: 1px solid $color_light_gray
+            button.btn
+                display: inline-block
+                margin: 0 0 0 5px
+                padding: 2px 10px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+        .right_2
+            position: absolute
+            top: 30px
+            right: 0
+            @media screen and ( max-width: 768px )
+                position: static
+                margin: 5px 0
+            .max_piece,.now_piece
+                margin: 0 10px
+                color: red
+    .warring_rule
+        margin: 20px 0
+        padding: 8px 15px
+        background-color: lighten($color_yellow,10% )
+        border-radius: 5px
+        h4
+            +title
+            text-align: center
+            color: red
+    table.table
+        margin-top: 20px
+        table-layout: fixed
+        .thead-color
+            .type_width
+                width: 120px
+        .clickable-row
+            cursor: pointer
+    #page
+        ul.pagination
+            li
+                a
+                    i
+                        &:hover
+                            color: $color_yellow
+// -----------------------------------------------------        
+// 10.1.1.7.1前台-機構-獎助公告-新增
+#font_end_org_scholarship_announcement_add
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .right
+        // 包整個表單
+        .scholarship_announcement_add
+            display: flex
+            flex-wrap: wrap
+            margin: 10px 0
+            .col-12
+                @media screen and ( max-width: 576px )
+                    padding: 0
+
+            // radio 刊登天數、物資類別、地區
+            .post_duration,.type,.region
+                .form-check
+                    display: inline-block
+                    position: relative
+                    margin: 5px 5px 5px 0
+                    .need_admission
+                        position: absolute
+                        top: 50%
+                        transform: translateY(-50%) 
+                        left: 110px
+                        height: 30px
+                        width: 80px
+            // check 類型
+            .donate_characteristic
+                display: flex
+                flex-wrap: wrap
+                margin-bottom: 16px
+                .form-group.form-check
+                    margin: 5px 10px 5px 0
+            // 上傳檔案
+            .custom-file
+                input.custom-file-input
+                        cursor: pointer
+                label
+                    cursor: pointer
+                    &::after
+                        content: "選擇檔案"
+                .custom-file-input:focus ~ .custom-file-label
+                        border-color: $color_light_gray
+                        box-shadow: none
+            .form-check-input
+                &:focus,&:checked
+                    -webkit-appearance: checkbox
+            // 驗證碼
+            .input-group
+                width: calc( 100% - 30px )
+                @media screen and ( max-width: 992px )
+                    width: 60%
+                @media screen and ( max-width: 768px )
+                    width: 80%
+                @media screen and ( max-width: 576px )
+                    width: 100%
+                margin: 0 auto
+                .input-group-text
+                    border: none
+                    width: 100px
+                    background-color: lighten($color_yellow,10% )
+            .checkpin_switch
+                position: relative
+                width: 85px
+                .checkpin
+                    width: 70%
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%,-50%)
+            .login_button
+                display: block
+                margin: 0 auto
+                margin-bottom: 20px
+                padding: 4px 25px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+// ----------------------------------------------------- 
+// 10.1.1.8前台-機構-物資需求-列表
+#font_end_org_donate_list
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .top_information
+        position: relative
+        h4
+            +title
+        .right_1
+            display: flex
+            align-items: center
+            position: absolute
+            top: 0
+            right: 0
+            @media screen and ( max-width: 768px )
+                position: static
+                margin: 5px 0
+            span
+                font-weight: 600
+                margin: 0 5px
+                @media screen and ( max-width: 768px )
+                    margin: 0
+            select.post_year
+                margin: 0 5px
+                &:focus
+                    border: 1px solid $color_light_gray
+            button.btn
+                display: inline-block
+                margin: 0 0 0 5px
+                padding: 2px 10px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+        .right_2
+            position: absolute
+            top: 30px
+            right: 0
+            @media screen and ( max-width: 768px )
+                position: static
+                margin: 5px 0
+            .max_piece,.now_piece
+                margin: 0 10px
+                color: red
+    .warring_rule
+        margin: 20px 0
+        padding: 8px 15px
+        background-color: lighten($color_yellow,10% )
+        border-radius: 5px
+        h4
+            +title
+            text-align: center
+            color: red
+    table.table
+        margin-top: 20px
+        table-layout: fixed
+        .thead-color
+            .type_width
+                width: 120px
+        .clickable-row
+            cursor: pointer
+    #page
+        ul.pagination
+            li
+                a
+                    i
+                        &:hover
+                            color: $color_yellow
+// -----------------------------------------------------        
+// 10.1.1.8.1前台-機構-物資需求-新增
+#font_end_org_donate_add
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .right
+        // 包整個表單
+        .donate_add
+            display: flex
+            flex-wrap: wrap
+            margin: 10px 0
+            .col-12
+                @media screen and ( max-width: 576px )
+                    padding: 0
+
+            // radio 刊登天數、物資類別、地區
+            .post_duration,.type,.region
+                .form-check
+                    display: inline-block
+                    position: relative
+                    margin: 5px 5px 5px 0
+                    .need_admission
+                        position: absolute
+                        top: 50%
+                        transform: translateY(-50%) 
+                        left: 110px
+                        height: 30px
+                        width: 80px
+            // check 類型
+            .donate_characteristic
+                display: flex
+                flex-wrap: wrap
+                margin-bottom: 16px
+                .form-group.form-check
+                    margin: 5px 10px 5px 0
+            // 上傳檔案
+            .custom-file
+                input.custom-file-input
+                        cursor: pointer
+                label
+                    cursor: pointer
+                    &::after
+                        content: "選擇檔案"
+                .custom-file-input:focus ~ .custom-file-label
+                        border-color: $color_light_gray
+                        box-shadow: none
+            .form-check-input
+                &:focus,&:checked
+                    -webkit-appearance: checkbox
+            // 驗證碼
+            .input-group
+                width: calc( 100% - 30px )
+                @media screen and ( max-width: 992px )
+                    width: 60%
+                @media screen and ( max-width: 768px )
+                    width: 80%
+                @media screen and ( max-width: 576px )
+                    width: 100%
+                margin: 0 auto
+                .input-group-text
+                    border: none
+                    width: 100px
+                    background-color: lighten($color_yellow,10% )
+            .checkpin_switch
+                position: relative
+                width: 85px
+                .checkpin
+                    width: 70%
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%,-50%)
+            .login_button
+                display: block
+                margin: 0 auto
+                margin-bottom: 20px
+                padding: 4px 25px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+// ----------------------------------------------------- 
+// 10.1.1.9前台-機構-志工招募-列表
+#font_end_org_volunteer_list
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .top_information
+        position: relative
+        h4
+            +title
+        .right_1
+            display: flex
+            align-items: center
+            position: absolute
+            top: 0
+            right: 0
+            @media screen and ( max-width: 768px )
+                position: static
+                margin: 5px 0
+            span
+                font-weight: 600
+                margin: 0 5px
+                @media screen and ( max-width: 768px )
+                    margin: 0
+            select.post_year
+                margin: 0 5px
+                &:focus
+                    border: 1px solid $color_light_gray
+            button.btn
+                display: inline-block
+                margin: 0 0 0 5px
+                padding: 2px 10px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+        .right_2
+            position: absolute
+            top: 30px
+            right: 0
+            @media screen and ( max-width: 768px )
+                position: static
+                margin: 5px 0
+            .max_piece,.now_piece
+                margin: 0 10px
+                color: red
+    .warring_rule
+        margin: 20px 0
+        padding: 8px 15px
+        background-color: lighten($color_yellow,10% )
+        border-radius: 5px
+        h4
+            +title
+            text-align: center
+            color: red
+        p
+            text-align: center
+            margin-bottom: 10px
+    table.table
+        margin-top: 20px
+        table-layout: fixed
+        .thead-color
+            .type_width
+                width: 120px
+        .clickable-row
+            cursor: pointer
+    #page
+        ul.pagination
+            li
+                a
+                    i
+                        &:hover
+                            color: $color_yellow
+// -----------------------------------------------------        
+// 10.1.1.9.1前台-機構-志工招募-新增
+#font_end_org_volunteer_add
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .right
+        // 包整個表單
+        .volunteer_add
+            display: flex
+            flex-wrap: wrap
+            margin: 10px 0
+            .col-12
+                @media screen and ( max-width: 576px )
+                    padding: 0
+
+            // radio 刊登天數、性別、職務類別、服務性質
+            .post_duration,.gender,.work_type,.service_type
+                .form-check
+                    display: inline-block
+                    position: relative
+                    margin: 5px 5px 5px 0
+            // check 類型
+            .region
+                display: flex
+                flex-wrap: wrap
+                margin-bottom: 16px
+                .foreign
+                    display: inline-block
+                    .foreign_input
+                        display: inline-block
+                        height: 30px
+                        width: 80px
+
+                .form-group.form-check
+                    margin: 5px 10px 5px 0
+            .form-check-input
+                &:focus,&:checked
+                    -webkit-appearance: checkbox
+            // 驗證碼
+            .input-group
+                width: calc( 100% - 30px )
+                @media screen and ( max-width: 992px )
+                    width: 60%
+                @media screen and ( max-width: 768px )
+                    width: 80%
+                @media screen and ( max-width: 576px )
+                    width: 100%
+                margin: 0 auto
+                .input-group-text
+                    border: none
+                    width: 100px
+                    background-color: lighten($color_yellow,10% )
+            .checkpin_switch
+                position: relative
+                width: 85px
+                .checkpin
+                    width: 70%
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%,-50%)
+            .login_button
+                display: block
+                margin: 0 auto
+                margin-bottom: 20px
+                padding: 4px 25px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+// ----------------------------------------------------- 
+// 10.1.1.10前台-機構-全職工作-列表
+#font_end_org_full_work_list
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .top_information
+        position: relative
+        h4
+            +title
+        .right_1
+            display: flex
+            align-items: center
+            position: absolute
+            top: 0
+            right: 0
+            @media screen and ( max-width: 768px )
+                position: static
+                margin: 5px 0
+            span
+                font-weight: 600
+                margin: 0 5px
+                @media screen and ( max-width: 768px )
+                    margin: 0
+            select.post_year
+                margin: 0 5px
+                &:focus
+                    border: 1px solid $color_light_gray
+            button.btn
+                display: inline-block
+                margin: 0 0 0 5px
+                padding: 2px 10px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+        .right_2
+            position: absolute
+            top: 30px
+            right: 0
+            @media screen and ( max-width: 768px )
+                position: static
+                margin: 5px 0
+            .max_piece,.now_piece
+                margin: 0 10px
+                color: red
+    .warring_rule
+        margin: 20px 0
+        padding: 8px 15px
+        background-color: lighten($color_yellow,10% )
+        border-radius: 5px
+        h4
+            +title
+            text-align: center
+            color: red
+        p
+            text-align: center
+            margin-bottom: 10px
+    table.table
+        margin-top: 20px
+        table-layout: fixed
+        .thead-color
+            .type_width
+                width: 120px
+        .clickable-row
+            cursor: pointer
+    #page
+        ul.pagination
+            li
+                a
+                    i
+                        &:hover
+                            color: $color_yellow
+// -----------------------------------------------------        
+// 10.1.1.10.1前台-機構-全職工作-新增
+#font_end_org_full_work_add
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .right
+        // 包整個表單
+        .full_work_add
+            display: flex
+            flex-wrap: wrap
+            margin: 10px 0
+            .col-12
+                @media screen and ( max-width: 576px )
+                    padding: 0
+
+            // radio 刊登天數、性別、職務類別
+            .post_duration,.gender,.work_type
+                .form-check
+                    display: inline-block
+                    position: relative
+                    margin: 5px 5px 5px 0
+            // check 地區
+            .region
+                display: flex
+                flex-wrap: wrap
+                margin-bottom: 16px
+                .foreign
+                    display: inline-block
+                    .foreign_input
+                        display: inline-block
+                        height: 30px
+                        width: 80px
+
+                .form-group.form-check
+                    margin: 5px 10px 5px 0
+            .form-check-input
+                &:focus,&:checked
+                    -webkit-appearance: checkbox
+            // 驗證碼
+            .input-group
+                width: calc( 100% - 30px )
+                @media screen and ( max-width: 992px )
+                    width: 60%
+                @media screen and ( max-width: 768px )
+                    width: 80%
+                @media screen and ( max-width: 576px )
+                    width: 100%
+                margin: 0 auto
+                .input-group-text
+                    border: none
+                    width: 100px
+                    background-color: lighten($color_yellow,10% )
+            .checkpin_switch
+                position: relative
+                width: 85px
+                .checkpin
+                    width: 70%
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%,-50%)
+            .login_button
+                display: block
+                margin: 0 auto
+                margin-bottom: 20px
+                padding: 4px 25px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+// ----------------------------------------------------- 
+// 10.1.1.11前台-機構-兼職工作-列表
+#font_end_org_part_time_list
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .top_information
+        position: relative
+        h4
+            +title
+        .right_1
+            display: flex
+            align-items: center
+            position: absolute
+            top: 0
+            right: 0
+            @media screen and ( max-width: 768px )
+                position: static
+                margin: 5px 0
+            span
+                font-weight: 600
+                margin: 0 5px
+                @media screen and ( max-width: 768px )
+                    margin: 0
+            select.post_year
+                margin: 0 5px
+                &:focus
+                    border: 1px solid $color_light_gray
+            button.btn
+                display: inline-block
+                margin: 0 0 0 5px
+                padding: 2px 10px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+        .right_2
+            position: absolute
+            top: 30px
+            right: 0
+            @media screen and ( max-width: 768px )
+                position: static
+                margin: 5px 0
+            .max_piece,.now_piece
+                margin: 0 10px
+                color: red
+    .warring_rule
+        margin: 20px 0
+        padding: 8px 15px
+        background-color: lighten($color_yellow,10% )
+        border-radius: 5px
+        h4
+            +title
+            text-align: center
+            color: red
+        p
+            text-align: center
+            margin-bottom: 10px
+    table.table
+        margin-top: 20px
+        table-layout: fixed
+        .thead-color
+            .type_width
+                width: 120px
+        .clickable-row
+            cursor: pointer
+    #page
+        ul.pagination
+            li
+                a
+                    i
+                        &:hover
+                            color: $color_yellow
+// -----------------------------------------------------        
+// 10.1.1.11.1前台-機構-兼職工作-新增
+#font_end_org_part_time_add
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .right
+        // 包整個表單
+        .part_time_add
+            display: flex
+            flex-wrap: wrap
+            margin: 10px 0
+            .col-12
+                @media screen and ( max-width: 576px )
+                    padding: 0
+
+            // radio 刊登天數、性別、職務類別
+            .post_duration,.gender,.work_type
+                .form-check
+                    display: inline-block
+                    position: relative
+                    margin: 5px 5px 5px 0
+            // check 地區
+            .region
+                display: flex
+                flex-wrap: wrap
+                margin-bottom: 16px
+                .foreign
+                    display: inline-block
+                    .foreign_input
+                        display: inline-block
+                        height: 30px
+                        width: 80px
+
+                .form-group.form-check
+                    margin: 5px 10px 5px 0
+            .form-check-input
+                &:focus,&:checked
+                    -webkit-appearance: checkbox
+            // 驗證碼
+            .input-group
+                width: calc( 100% - 30px )
+                @media screen and ( max-width: 992px )
+                    width: 60%
+                @media screen and ( max-width: 768px )
+                    width: 80%
+                @media screen and ( max-width: 576px )
+                    width: 100%
+                margin: 0 auto
+                .input-group-text
+                    border: none
+                    width: 100px
+                    background-color: lighten($color_yellow,10% )
+            .checkpin_switch
+                position: relative
+                width: 85px
+                .checkpin
+                    width: 70%
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%,-50%)
+            .login_button
+                display: block
+                margin: 0 auto
+                margin-bottom: 20px
+                padding: 4px 25px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+// ----------------------------------------------------- 
+// 10.1.1.12前台-機構-公益商城-列表
+#font_end_org_shop_list
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .top_information
+        position: relative
+        h4
+            +title
+        .right_1
+            display: flex
+            align-items: center
+            position: absolute
+            top: 0
+            right: 0
+            @media screen and ( max-width: 768px )
+                position: static
+                margin: 5px 0
+            span
+                font-weight: 600
+                margin: 0 5px
+                @media screen and ( max-width: 768px )
+                    margin: 0
+            select.post_year
+                margin: 0 5px
+                &:focus
+                    border: 1px solid $color_light_gray
+            button.btn
+                display: inline-block
+                margin: 0 0 0 5px
+                padding: 2px 10px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+        .right_2
+            position: absolute
+            top: 30px
+            right: 0
+            @media screen and ( max-width: 768px )
+                position: static
+                margin: 5px 0
+            .max_piece,.now_piece
+                margin: 0 10px
+                color: red
+    .warring_rule
+        margin: 20px 0
+        padding: 8px 15px
+        background-color: lighten($color_yellow,10% )
+        border-radius: 5px
+        h4
+            +title
+            text-align: center
+            color: red
+        p
+            text-align: center
+            margin-bottom: 10px
+    table.table
+        margin-top: 20px
+        table-layout: fixed
+        .thead-color
+            .type_width
+                width: 120px
+        .clickable-row
+            cursor: pointer
+    #page
+        ul.pagination
+            li
+                a
+                    i
+                        &:hover
+                            color: $color_yellow
+// -----------------------------------------------------        
+// 10.1.1.12.1前台-機構-公益商城-新增
+#font_end_org_shop_add
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .right
+        // 包整個表單
+        .shop_add
+            display: flex
+            flex-wrap: wrap
+            margin: 10px 0
+            .col-12
+                @media screen and ( max-width: 576px )
+                    padding: 0
+
+            // radio 刊登天數
+            .post_duration
+                .form-check
+                    display: inline-block
+                    position: relative
+                    margin: 5px 5px 5px 0
+            // 上傳檔案
+            .custom-file
+                input.custom-file-input
+                        cursor: pointer
+                label
+                    cursor: pointer
+                    &::after
+                        content: "選擇檔案"
+                .custom-file-input:focus ~ .custom-file-label
+                        border-color: $color_light_gray
+                        box-shadow: none
+            .form-check-input
+                &:focus,&:checked
+                    -webkit-appearance: checkbox
+            // 驗證碼
+            .input-group
+                width: calc( 100% - 30px )
+                @media screen and ( max-width: 992px )
+                    width: 60%
+                @media screen and ( max-width: 768px )
+                    width: 80%
+                @media screen and ( max-width: 576px )
+                    width: 100%
+                margin: 0 auto
+                .input-group-text
+                    border: none
+                    width: 100px
+                    background-color: lighten($color_yellow,10% )
+            .checkpin_switch
+                position: relative
+                width: 85px
+                .checkpin
+                    width: 70%
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%,-50%)
+            .login_button
+                display: block
+                margin: 0 auto
+                margin-bottom: 20px
+                padding: 4px 25px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+// ----------------------------------------------------- 
+// 10.1.1.13前台-機構-組織使用者維護-列表
+#font_end_org_acount_maintain_list
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .right
+        .top_information
+            position: relative
+            h4
+                +title
+            .right_2
+                position: absolute
+                top: 30px
+                right: 0
+                @media screen and ( max-width: 768px )
+                    position: static
+                    margin: 5px 0
+                .max_piece,.now_piece
+                    margin: 0 10px
+                    color: red
+        .warring_rule
+            margin: 20px 0
+            padding: 8px 15px
+            background-color: lighten($color_yellow,10% )
+            border-radius: 5px
+            h4
+                +title
+                text-align: center
+                color: red
+            p
+                text-align: center
+                margin-bottom: 10px
+        table.table
+            margin-top: 20px
+            table-layout: fixed
+            .thead-color
+                .type_width
+                    width: 120px
+            .clickable-row
+                cursor: pointer
+        button.btn
+            display: block
+            margin: 0 auto
+            padding: 2px 10px
+            background-color: $color_yellow
+            transition: 0.5s
+            &:hover
+                background-color: lighten($color_yellow,10% )
+// -----------------------------------------------------        
+// 10.1.1.13.1前台-機構-組織使用者維護-新增、10.1.1.13.2前台-機構-組織使用者維護-修改
+#font_end_org_acount_maintain_add,#font_end_org_acount_maintain_fixed
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .right
+        // 包整個表單
+        .acount_maintain_add
+            display: flex
+            flex-wrap: wrap
+            margin: 10px 0
+            h4
+                +title
+                margin-bottom: 10px
+            .col-12
+                @media screen and ( max-width: 576px )
+                    padding: 0
+
+            // radio 刊登天數、活動類型、活動費用
+            .post_duration,.activities_type,.admission
+                .form-check
+                    display: inline-block
+                    position: relative
+                    margin: 5px 5px 5px 0
+                    .need_admission
+                        position: absolute
+                        top: 50%
+                        transform: translateY(-50%) 
+                        left: 110px
+                        height: 30px
+                        width: 80px
+            // check 活動屬性、地區
+            .activities_characteristic,.region
+                display: flex
+                flex-wrap: wrap
+                margin-bottom: 16px
+                .form-group.form-check
+                    margin: 5px 10px 5px 0
+            // 上傳檔案
+            .custom-file
+                input.custom-file-input
+                        cursor: pointer
+                label
+                    cursor: pointer
+                    &::after
+                        content: "選擇檔案"
+                .custom-file-input:focus ~ .custom-file-label
+                        border-color: $color_light_gray
+                        box-shadow: none
+            .form-check-input
+                &:focus,&:checked
+                    -webkit-appearance: checkbox
+            // 驗證碼
+            .input-group
+                width: calc( 100% - 30px )
+                @media screen and ( max-width: 992px )
+                    width: 60%
+                @media screen and ( max-width: 768px )
+                    width: 80%
+                @media screen and ( max-width: 576px )
+                    width: 100%
+                margin: 0 auto
+                .input-group-text
+                    border: none
+                    width: 100px
+                    background-color: lighten($color_yellow,10% )
+            .checkpin_switch
+                position: relative
+                width: 85px
+                .checkpin
+                    width: 70%
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%,-50%)
+            .login_button
+                display: block
+                margin: 0 auto
+                margin-bottom: 20px
+                padding: 4px 25px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+// -----------------------------------------------------        
+// 10.1.1.14前台-機構-修改密碼 
+#font_end_org_reset_password
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .top_information
+        h4
+            +title
+    form
+        margin: 20px 0px
+        .input-group
+            width: 60%
+            @media screen and ( max-width: 768px )
+                width: 80%
+            @media screen and ( max-width: 576px )
+                width: 100%
+            margin: 0 auto
+            span.input-group-text
+                background-color: lighten($color_yellow,10% )
+            .checkpin_switch
+                position: relative
+                width: 85px
+                .checkpin
+                    width: 70%
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%,-50%)
+        .submit
+            background-color: $color_yellow
+            transition: 0.5s
+            display: block
+            margin: 0 auto
+            &:hover   
+                background-color: lighten($color_yellow,10%)
+// -----------------------------------------------------        
+// 10.1.2.1前台-企業-修改公司基本資料
+#font_end_com_information
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .right
+        h3
+            +title
+            margin-bottom: 10px
+        .dropdown.bootstrap-select
+            button.dropdown-toggle
+                &:active
+                    background-color: transparent
+                    border-color: $color_dark_orange
+                &:focus
+                    outline: none !important
+                    border-color: $color_dark_orange !important
+                background-color: transparent
+                border: 1px solid $color_light_gray
+                padding-right: 15px
+                // 第一層的圖示
+                i
+                    width: 20px
+            .dropdown-menu.show
+                padding: 0
+                margin: 0
+                ul.dropdown-menu.inner.show
+                    li
+                        a.dropdown-item
+                            &:active
+                                background-color: lighten($color_yellow,10% )
+                            color: $color_black
+                            padding: 10px 12px
+                            // 第二層的圖示
+                            span.fas,span.far
+                                width: 20px
+                        a.dropdown-item.active
+                            background-color: lighten($color_yellow,10% )
+                            &:active
+                                background-color: lighten($color_yellow,10% )
+        .input-group
+            width: calc( 100% - 30px )
+            @media screen and ( max-width: 992px )
+                width: 60%
+            @media screen and ( max-width: 768px )
+                width: 80%
+            @media screen and ( max-width: 576px )
+                width: 100%
+            margin: 0 auto
+            .input-group-text
+                border: none
+                width: 100px
+                background-color: lighten($color_yellow,10% )
+        .register_form
+            display: flex
+            flex-wrap: wrap
+            .col-12.col-md-6,.col-12
+                @media screen and ( max-width: 768px )
+                    padding: 0
+            .one_line
+                display: flex
+                flex-wrap: wrap
+                padding: 0
+                .form-group.col-6,.form-group.col-3
+                    @media screen and ( max-width: 768px )
+                        padding-left: 0 
+            // 上傳檔案
+            .custom-file
+                input.custom-file-input
+                        cursor: pointer
+                label
+                    cursor: pointer
+                    &::after
+                        content: "選擇檔案"
+                .custom-file-input:focus ~ .custom-file-label
+                        border-color: $color_light_gray
+                        box-shadow: none
+            .form-check-input
+                &:focus,&:checked
+                    -webkit-appearance: checkbox
+            .region,.service
+                display: flex
+                flex-wrap: wrap
+                .form-group
+                    margin: 10px
+            .gender
+                position: absolute
+                top: 32px
+                left: 60px
+            .age
+                position: absolute
+                top: 64px
+                left: 60px
+            .gender,.age
+                .form-check
+                    display: inline-block
+                .age_range
+                    display: inline-block
+                    input
+                        display: inline-block
+                        width: 50px
+                        height: 25px
+                        &:focus
+                            border: 1px solid $color_dark_orange
+            .checkpin_switch
+                position: relative
+                width: 85px
+                .checkpin
+                    width: 70%
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%,-50%)
+            .login_button
+                display: block
+                margin: 0 auto
+                margin-bottom: 20px
+                padding: 4px 25px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+// ----------------------------------------------------- 
+// 10.1.2.2前台-企業-企業提供-列表
+#font_end_com_donate_list
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .top_information
+        position: relative
+        h4
+            +title
+        .right_1
+            display: flex
+            align-items: center
+            position: absolute
+            top: 0
+            right: 0
+            @media screen and ( max-width: 768px )
+                position: static
+                margin: 5px 0
+            span
+                font-weight: 600
+                margin: 0 5px
+                @media screen and ( max-width: 768px )
+                    margin: 0
+            select.post_year
+                margin: 0 5px
+                &:focus
+                    border: 1px solid $color_light_gray
+            button.btn
+                display: inline-block
+                margin: 0 0 0 5px
+                padding: 2px 10px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+        .right_2
+            position: absolute
+            top: 30px
+            right: 0
+            @media screen and ( max-width: 768px )
+                position: static
+                margin: 5px 0
+            .max_piece,.now_piece
+                margin: 0 10px
+                color: red
+    .warring_rule
+        margin: 20px 0
+        padding: 8px 15px
+        background-color: lighten($color_yellow,10% )
+        border-radius: 5px
+        h4
+            +title
+            text-align: center
+            color: red
+    table.table
+        margin-top: 20px
+        table-layout: fixed
+        .thead-color
+            .type_width
+                width: 120px
+        .clickable-row
+            cursor: pointer
+    #page
+        ul.pagination
+            li
+                a
+                    i
+                        &:hover
+                            color: $color_yellow
+// -----------------------------------------------------        
+// 10.1.2.2.1前台-企業-企業提供-新增
+#font_end_com_donate_add
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .right
+        // 包整個表單
+        .com_donate_add
+            display: flex
+            flex-wrap: wrap
+            margin: 10px 0
+            .col-12
+                @media screen and ( max-width: 576px )
+                    padding: 0
+
+            // radio 刊登天數、物資類別、地區
+            .post_duration,.type,.region
+                .form-check
+                    display: inline-block
+                    position: relative
+                    margin: 5px 5px 5px 0
+                    .need_admission
+                        position: absolute
+                        top: 50%
+                        transform: translateY(-50%) 
+                        left: 110px
+                        height: 30px
+                        width: 80px
+            // check 類型
+            .donate_characteristic
+                display: flex
+                flex-wrap: wrap
+                margin-bottom: 16px
+                .form-group.form-check
+                    margin: 5px 10px 5px 0
+            // 上傳檔案
+            .custom-file
+                input.custom-file-input
+                        cursor: pointer
+                label
+                    cursor: pointer
+                    &::after
+                        content: "選擇檔案"
+                .custom-file-input:focus ~ .custom-file-label
+                        border-color: $color_light_gray
+                        box-shadow: none
+            .form-check-input
+                &:focus,&:checked
+                    -webkit-appearance: checkbox
+            // 驗證碼
+            .input-group
+                width: calc( 100% - 30px )
+                @media screen and ( max-width: 992px )
+                    width: 60%
+                @media screen and ( max-width: 768px )
+                    width: 80%
+                @media screen and ( max-width: 576px )
+                    width: 100%
+                margin: 0 auto
+                .input-group-text
+                    border: none
+                    width: 100px
+                    background-color: lighten($color_yellow,10% )
+            .checkpin_switch
+                position: relative
+                width: 85px
+                .checkpin
+                    width: 70%
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%,-50%)
+            .login_button
+                display: block
+                margin: 0 auto
+                margin-bottom: 20px
+                padding: 4px 25px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+// ----------------------------------------------------- 
+// 10.1.2.3前台-企業-組織使用者維護-列表
+#font_end_com_acount_maintain_list
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .right
+        .top_information
+            position: relative
+            h4
+                +title
+            .right_2
+                position: absolute
+                top: 0
+                right: 0
+                @media screen and ( max-width: 768px )
+                    position: static
+                    margin: 5px 0
+                .max_piece,.now_piece
+                    margin: 0 10px
+                    color: red
+        .warring_rule
+            margin: 20px 0
+            padding: 8px 15px
+            background-color: lighten($color_yellow,10% )
+            border-radius: 5px
+            h4
+                +title
+                text-align: center
+                color: red
+            p
+                text-align: center
+                margin-bottom: 10px
+        table.table
+            margin-top: 20px
+            table-layout: fixed
+            .thead-color
+                .type_width
+                    width: 120px
+            .clickable-row
+                cursor: pointer
+        button.btn
+            display: block
+            margin: 0 auto
+            padding: 2px 10px
+            background-color: $color_yellow
+            transition: 0.5s
+            &:hover
+                background-color: lighten($color_yellow,10% )
+// -----------------------------------------------------        
+// 10.1.2.3.1前台-企業-組織使用者維護-新增、10.1.2.3.2前台-企業-組織使用者維護-修改
+#font_end_com_acount_maintain_add,#font_end_com_acount_maintain_fixed
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .right
+        // 包整個表單
+        .acount_maintain_add
+            display: flex
+            flex-wrap: wrap
+            margin: 10px 0
+            h4
+                +title
+                margin-bottom: 10px
+            .col-12
+                @media screen and ( max-width: 576px )
+                    padding: 0
+
+            // radio 刊登天數、活動類型、活動費用
+            .post_duration,.activities_type,.admission
+                .form-check
+                    display: inline-block
+                    position: relative
+                    margin: 5px 5px 5px 0
+                    .need_admission
+                        position: absolute
+                        top: 50%
+                        transform: translateY(-50%) 
+                        left: 110px
+                        height: 30px
+                        width: 80px
+            // check 活動屬性、地區
+            .activities_characteristic,.region
+                display: flex
+                flex-wrap: wrap
+                margin-bottom: 16px
+                .form-group.form-check
+                    margin: 5px 10px 5px 0
+            // 上傳檔案
+            .custom-file
+                input.custom-file-input
+                        cursor: pointer
+                label
+                    cursor: pointer
+                    &::after
+                        content: "選擇檔案"
+                .custom-file-input:focus ~ .custom-file-label
+                        border-color: $color_light_gray
+                        box-shadow: none
+            .form-check-input
+                &:focus,&:checked
+                    -webkit-appearance: checkbox
+            // 驗證碼
+            .input-group
+                width: calc( 100% - 30px )
+                @media screen and ( max-width: 992px )
+                    width: 60%
+                @media screen and ( max-width: 768px )
+                    width: 80%
+                @media screen and ( max-width: 576px )
+                    width: 100%
+                margin: 0 auto
+                .input-group-text
+                    border: none
+                    width: 100px
+                    background-color: lighten($color_yellow,10% )
+            .checkpin_switch
+                position: relative
+                width: 85px
+                .checkpin
+                    width: 70%
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%,-50%)
+            .login_button
+                display: block
+                margin: 0 auto
+                margin-bottom: 20px
+                padding: 4px 25px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+// -----------------------------------------------------        
+// 10.1.2.4前台-企業-修改密碼 
+#font_end_com_reset_password
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .top_information
+        h4
+            +title
+    form
+        margin: 20px 0px
+        .input-group
+            width: 60%
+            @media screen and ( max-width: 768px )
+                width: 80%
+            @media screen and ( max-width: 576px )
+                width: 100%
+            margin: 0 auto
+            span.input-group-text
+                background-color: lighten($color_yellow,10% )
+            .checkpin_switch
+                position: relative
+                width: 85px
+                .checkpin
+                    width: 70%
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%,-50%)
+        .submit
+            background-color: $color_yellow
+            transition: 0.5s
+            display: block
+            margin: 0 auto
+            &:hover   
+                background-color: lighten($color_yellow,10%)
+// -----------------------------------------------------        
+// 10.1.3.1前台-會員-修改基本資料 
+#font_end_member_information
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .right
+        h3
+            +title
+            margin-bottom: 10px
+        .dropdown.bootstrap-select
+            button.dropdown-toggle
+                &:active
+                    background-color: transparent
+                    border-color: $color_dark_orange
+                &:focus
+                    outline: none !important
+                    border-color: $color_dark_orange !important
+                background-color: transparent
+                border: 1px solid $color_light_gray
+                padding-right: 15px
+                // 第一層的圖示
+                i
+                    width: 20px
+            .dropdown-menu.show
+                padding: 0
+                margin: 0
+                ul.dropdown-menu.inner.show
+                    li
+                        a.dropdown-item
+                            &:active
+                                background-color: lighten($color_yellow,10% )
+                            color: $color_black
+                            padding: 10px 12px
+                            // 第二層的圖示
+                            span.fas,span.far
+                                width: 20px
+                        a.dropdown-item.active
+                            background-color: lighten($color_yellow,10% )
+                            &:active
+                                background-color: lighten($color_yellow,10% )
+        .input-group
+            width: calc( 100% - 30px )
+            @media screen and ( max-width: 992px )
+                width: 60%
+            @media screen and ( max-width: 768px )
+                width: 80%
+            @media screen and ( max-width: 576px )
+                width: 100%
+            margin: 0 auto
+            .input-group-text
+                border: none
+                width: 100px
+                background-color: lighten($color_yellow,10% )
+        .register_form
+            display: flex
+            flex-wrap: wrap
+            .col-12.col-md-6,.col-12
+                @media screen and ( max-width: 768px )
+                    padding: 0
+            .one_line
+                display: flex
+                flex-wrap: wrap
+                padding: 0
+                .form-group.col-6,.form-group.col-3
+                    @media screen and ( max-width: 768px )
+                        padding-left: 0 
+            // 上傳檔案
+            .custom-file
+                input.custom-file-input
+                        cursor: pointer
+                label
+                    cursor: pointer
+                    &::after
+                        content: "選擇檔案"
+                .custom-file-input:focus ~ .custom-file-label
+                        border-color: $color_light_gray
+                        box-shadow: none
+            .form-check-input
+                &:focus,&:checked
+                    -webkit-appearance: checkbox
+            .region,.service
+                display: flex
+                flex-wrap: wrap
+                .form-group
+                    margin: 10px
+            .gender
+                position: absolute
+                top: 32px
+                left: 60px
+            .age
+                position: absolute
+                top: 64px
+                left: 60px
+            .gender,.age
+                .form-check
+                    display: inline-block
+                .age_range
+                    display: inline-block
+                    input
+                        display: inline-block
+                        width: 50px
+                        height: 25px
+                        &:focus
+                            border: 1px solid $color_dark_orange
+            .checkpin_switch
+                position: relative
+                width: 85px
+                .checkpin
+                    width: 70%
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%,-50%)
+            .login_button
+                display: block
+                margin: 0 auto
+                margin-bottom: 20px
+                padding: 4px 25px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+// -----------------------------------------------------        
+// 10.1.1.10.1前台-會員-履歷登錄
+#font_end_member_resume
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .right
+        // 包整個表單
+        .member_resume
+            display: flex
+            flex-wrap: wrap
+            margin: 10px 0
+            h4
+                +title
+                margin-bottom: 10px
+            .col-12
+                @media screen and ( max-width: 576px )
+                    padding: 0
+
+            // radio 兵役狀況
+            .solider
+                .form-check
+                    display: inline-block
+                    position: relative
+                    margin: 5px 5px 5px 0
+
+                .form-group.form-check
+                    margin: 5px 10px 5px 0
+            .form-check-input
+                &:focus,&:checked
+                    -webkit-appearance: checkbox
+            // 上傳檔案
+            .custom-file
+                input.custom-file-input
+                        cursor: pointer
+                label
+                    cursor: pointer
+                    &::after
+                        content: "選擇檔案"
+                .custom-file-input:focus ~ .custom-file-label
+                        border-color: $color_light_gray
+                        box-shadow: none
+            // 驗證碼
+            .input-group
+                width: calc( 100% - 30px )
+                @media screen and ( max-width: 992px )
+                    width: 60%
+                @media screen and ( max-width: 768px )
+                    width: 80%
+                @media screen and ( max-width: 576px )
+                    width: 100%
+                margin: 0 auto
+                .input-group-text
+                    border: none
+                    width: 100px
+                    background-color: lighten($color_yellow,10% )
+            .checkpin_switch
+                position: relative
+                width: 85px
+                .checkpin
+                    width: 70%
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%,-50%)
+            .login_button
+                display: block
+                margin: 0 auto
+                margin-bottom: 20px
+                padding: 4px 25px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+// -----------------------------------------------------        
+// 10.1.3.3前台-會員-修改密碼 
+#font_end_member_reset_password
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .top_information
+        h4
+            +title
+    form
+        margin: 20px 0px
+        .input-group
+            width: 60%
+            @media screen and ( max-width: 768px )
+                width: 80%
+            @media screen and ( max-width: 576px )
+                width: 100%
+            margin: 0 auto
+            span.input-group-text
+                background-color: lighten($color_yellow,10% )
+            .checkpin_switch
+                position: relative
+                width: 85px
+                .checkpin
+                    width: 70%
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%,-50%)
+        .submit
+            background-color: $color_yellow
+            transition: 0.5s
+            display: block
+            margin: 0 auto
+            &:hover   
+                background-color: lighten($color_yellow,10%)
+// -----------------------------------------------------        
+// 10.2會員申請流程說明            
+#register_explanation
+    h2
+        &::before
+            display: none
+    .right
+        .org_explanation,.com_explanation,.member_explanation
+            margin-bottom: 20px
+        .form-check-input
+            &:focus,&:checked
+                -webkit-appearance: checkbox
+        button
+            display: block
+            margin: 0 auto
+            margin-bottom: 20px
+            padding: 4px 25px
+            background-color: $color_yellow
+            transition: 0.5s 
+            &:hover
+                background-color: lighten($color_yellow,10% )
+// -----------------------------------------------------        
+// 10.3申請會員
+#register
+    .right
+        h3
+            +title
+            margin-bottom: 10px
+        .dropdown.bootstrap-select
+            button.dropdown-toggle
+                &:active
+                    background-color: transparent
+                    border-color: $color_dark_orange
+                &:focus
+                    outline: none !important
+                    border-color: $color_dark_orange !important
+                background-color: transparent
+                border: 1px solid $color_light_gray
+                padding-right: 15px
+                // 第一層的圖示
+                i
+                    width: 20px
+            .dropdown-menu.show
+                padding: 0
+                margin: 0
+                ul.dropdown-menu.inner.show
+                    li
+                        a.dropdown-item
+                            &:active
+                                background-color: lighten($color_yellow,10% )
+                            color: $color_black
+                            padding: 10px 12px
+                            // 第二層的圖示
+                            span.fas,span.far
+                                width: 20px
+                        a.dropdown-item.active
+                            background-color: lighten($color_yellow,10% )
+                            &:active
+                                background-color: lighten($color_yellow,10% )
+        .input-group
+            width: calc( 100% - 30px )
+            @media screen and ( max-width: 992px )
+                width: 60%
+            @media screen and ( max-width: 768px )
+                width: 80%
+            @media screen and ( max-width: 576px )
+                width: 100%
+            margin: 0 auto
+            .input-group-text
+                border: none
+                width: 100px
+                background-color: lighten($color_yellow,10% )
+        // 機構註冊、企業註冊、一般會員、機構註冊-創建使用者 開始、企業註冊-創建使用者 開始
+        .org_register_form,.com_register_form,.member_register_form,.org_register_account,.com_register_account
+            display: flex
+            flex-wrap: wrap
+            .col-12.col-md-6,.col-12
+                @media screen and ( max-width: 768px )
+                    padding: 0
+            .one_line
+                display: flex
+                flex-wrap: wrap
+                padding: 0
+                .form-group.col-6,.form-group.col-3
+                    @media screen and ( max-width: 768px )
+                        padding-left: 0 
+            // 上傳檔案
+            .custom-file
+                input.custom-file-input
+                        cursor: pointer
+                label
+                    cursor: pointer
+                    &::after
+                        content: "選擇檔案"
+                .custom-file-input:focus ~ .custom-file-label
+                        border-color: $color_light_gray
+                        box-shadow: none 
+            .form-check-input
+                &:focus,&:checked
+                    -webkit-appearance: checkbox
+            .region,.service
+                display: flex
+                flex-wrap: wrap
+                .form-group
+                    margin: 10px
+            .gender
+                position: absolute
+                top: 32px
+                left: 60px
+            .age
+                position: absolute
+                top: 64px
+                left: 60px
+            .gender,.age
+                .form-check
+                    display: inline-block
+                .age_range
+                    display: inline-block
+                    input
+                        display: inline-block
+                        width: 50px
+                        height: 25px
+                        &:focus
+                            border: 1px solid $color_dark_orange
+            .checkpin_switch
+                position: relative
+                width: 85px
+                .checkpin
+                    width: 70%
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%,-50%)
+            .login_button
+                display: block
+                margin: 0 auto
+                margin-bottom: 20px
+                padding: 4px 25px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )               
 // -----------------------------------------------------        
 // 11.1使用說明
 #useing_documentation
@@ -1850,7 +5210,7 @@ footer
                         line-height: 25px
                         height: 78px
 // -----------------------------------------------------        
-// 12.4組織-補助公告-列表 12.5組織-救助公告-列表                           
+// 12.4組織-補助公告-列表 12.5組織-救助公告-列表 12.6組織-獎助公告-列表                           
 #org_allowance_list,#org_rescue_list,#org_scholarship_list
     .content
         .table
@@ -2418,7 +5778,7 @@ footer
                         line-height: 25px
                         height: 78px
 // ----------------------------------------------------- 
-// 12.7.1組織-物資募集-單元頁
+// 13.1.1組織-物資募集-單元頁
 #com_donate_unit
     .pc_top_nav
         padding-bottom: 30px

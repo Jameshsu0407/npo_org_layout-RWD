@@ -1,0 +1,124 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		title 公益影片
+		//- 匯入連結
+		include header.pug
+	body#top
+		//- 匯入導覽列+gototop
+		include nav.pug
+
+		section#npo_video.container
+			.row
+				.content_top.col-12
+					h2.content_title.col-12 公益影片
+					.col-12
+						form.form-inline.col-12.selector
+							.select_wrap.col-12.col-md-4
+								input.form-control.col-12(type="text" placeholder="請輸入影片名稱")
+							.select_wrap.col-12.col-md-3
+								select.custom-select.col-12
+									option(selected="" disabled="") 年份
+									option 2020
+									option 2019
+									option 2018
+									option 2017
+									option 2016
+							.select_wrap.col-12.col-md-3
+								select.custom-select.col-12
+									option(selected="" disabled="") 月份
+									option 1
+									option 2
+									option 3
+									option 4
+									option 5
+									option 6
+									option 7
+									option 8
+									option 9
+									option 10
+									option 11
+									option 12
+							.select_wrap.col-12.col-md-2
+								button.btn.lookmore.col-12.m-0(type="button") 送出
+					.videos_img
+						.col-12.col-md-6.col-xl-4
+							.good
+								.pic
+									img.img-fluid.fixed_size.clickable-row(src="https://fakeimg.pl/800x450/" data-href="12.3.1.html")
+								h3.title.clickable-row(data-href="12.3.1.html") 一日黑嘉嘉
+								p.text.clickable-row(data-href="12.3.1.html") 木曜四超完
+						.col-12.col-md-6.col-xl-4
+							.good
+								.pic
+									img.img-fluid.fixed_size.clickable-row(src="https://fakeimg.pl/1000x200/" data-href="12.3.1.html")
+								h3.title.clickable-row(data-href="12.3.1.html") 一日傘兵
+								p.text.clickable-row(data-href="12.3.1.html") 木曜四超完
+						.col-12.col-md-6.col-xl-4
+							.good
+								.pic
+									img.img-fluid.fixed_size.clickable-row(src="https://fakeimg.pl/200x1000/" data-href="12.3.1.html")
+								h3.title.clickable-row(data-href="12.3.1.html") 一日系列外傳之偶像救節目
+								p.text.clickable-row(data-href="12.3.1.html") 木曜四超完
+						.col-12.col-md-6.col-xl-4
+							.good
+								.pic
+									img.img-fluid.fixed_size.clickable-row(src="https://fakeimg.pl/550x550/" data-href="12.3.1.html")
+								h3.title.clickable-row(data-href="12.3.1.html") 一日黑嘉嘉
+								p.text.clickable-row(data-href="12.3.1.html") 木曜四超完
+						.col-12.col-md-6.col-xl-4
+							.good
+								.pic
+									img.img-fluid.fixed_size.clickable-row(src="./img/videos/v2.jpg" alt="" data-href="12.3.1.html")
+								h3.title.clickable-row(data-href="12.3.1.html") 一日傘兵
+								p.text.clickable-row(data-href="12.3.1.html") 木曜四超完
+						.col-12.col-md-6.col-xl-4
+							.good
+								.pic
+									img.img-fluid.fixed_size.clickable-row(src="./img/videos/v3.jpg" alt="" data-href="12.3.1.html")
+								h3.title.clickable-row(data-href="12.3.1.html") 一日系列外傳之偶像救節目
+								p.text.clickable-row(data-href="12.3.1.html") 木曜四超完
+						.col-12.col-md-6.col-xl-4
+							.good
+								.pic
+									img.img-fluid.fixed_size.clickable-row(src="./img/videos/v1.jpg" alt="" data-href="12.3.1.html")
+								h3.title.clickable-row(data-href="12.3.1.html") 一日黑嘉嘉
+								p.text.clickable-row(data-href="12.3.1.html") 木曜四超完
+						.col-12.col-md-6.col-xl-4
+							.good
+								.pic
+									img.img-fluid.fixed_size.clickable-row(src="./img/videos/v2.jpg" alt="" data-href="12.3.1.html")
+								h3.title.clickable-row(data-href="12.3.1.html") 一日傘兵
+								p.text.clickable-row(data-href="12.3.1.html") 木曜四超完
+						.col-12.col-md-6.col-xl-4
+							.good
+								.pic
+									img.img-fluid.fixed_size.clickable-row(src="./img/videos/v3.jpg" alt="" data-href="12.3.1.html")
+								h3.title.clickable-row(data-href="12.3.1.html") 一日系列外傳之偶像救節目
+								p.text.clickable-row(data-href="12.3.1.html") 木曜四超完
+						.col-12.col-md-6.col-xl-4
+							.good
+								.pic
+									img.img-fluid.fixed_size.clickable-row(src="https://fakeimg.pl/800x450/" alt="" data-href="12.3.1.html")
+								h3.title.clickable-row(data-href="12.3.1.html") 一日黑嘉嘉
+								p.text.clickable-row(data-href="12.3.1.html") 木曜四超完
+						.col-12.col-md-6.col-xl-4
+							.good
+								.pic
+									img.img-fluid.fixed_size.clickable-row(src="https://fakeimg.pl/800x450/" alt="" data-href="12.3.1.html")
+								h3.title.clickable-row(data-href="12.3.1.html") 一日傘兵
+								p.text.clickable-row(data-href="12.3.1.html") 木曜四超完
+						.col-12.col-md-6.col-xl-4
+							.good
+								.pic
+									img.img-fluid.fixed_size.clickable-row(src="https://fakeimg.pl/800x450/" alt="" data-href="12.3.1.html")
+								h3.title.clickable-row(data-href="12.3.1.html") 一日系列外傳之偶像救節目
+								p.text.clickable-row(data-href="12.3.1.html") 木曜四超完
+					include page.pug
+		
+		//- 匯入底部廣告
+		include footer_ad.pug
+		//- 匯入footer+script
+		include footer.pug

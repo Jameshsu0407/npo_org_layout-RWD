@@ -1,0 +1,147 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		title 組織-全職工作-單元頁
+		//- 匯入連結
+		include header.pug
+	body#top
+		//- 匯入導覽列+gototop
+		include nav.pug
+
+		section#org_full_work_unit.container.org_same_list
+			.row
+				.content_top
+					.col-12.col-lg-4.left
+						.pic
+							// <img src="./img/logo/org_logo.jpg" alt="" class="img-fluid fixed_size">
+							// <img src="https://fakeimg.pl/1000x300/" class="img-fluid fixed_size">
+							// <img src="https://fakeimg.pl/300x1000/" class="img-fluid fixed_size">
+							img.img-fluid.fixed_size(src="https://fakeimg.pl/800x800/")
+						.profile.off
+							h3 財團法人桃園市幸福社會福利基金會
+							h3 服務項目：其他
+							h3 聯絡人：陳正評
+							h3 聯絡電話：0938-938-938
+							h3 Email：sinfu@gmail.com
+							h3
+								| 網站：
+								a(href="") 幸福基金會官方網站
+							h3 地址：台北市中山區ＸＸＸＸＸ
+							h3
+								| 商城連結：
+								a(href="") 蝦皮商城
+							.embed-responsive.embed-responsive-16by9
+								iframe.embed-responsive-item(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.041949327373!2d121.52049035066808!3d25.066567283878328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x140dd0f467a85e51%3A0x721f721f1255cf08!2z57ay6Luf6IKh5Lu95pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1592899753483!5m2!1szh-TW!2stw")
+					.col-12.col-lg-8.right
+						// pc版導覽列
+						.pc_top_nav
+							.col-2
+								a(href="12.1.html")
+									h3 公益新訊
+							.col-2
+								a(href="12.2.html")
+									h3 最新活動
+							.col-2
+								a(href="12.3.html")
+									h3 公益影片
+							.col-2
+								a(href="12.4.html")
+									h3 補助公告
+							.col-2
+								a(href="12.5.html")
+									h3 救助公告
+							.col-2
+								a(href="12.6.html")
+									h3 獎助公告
+							.col-2
+								a(href="12.7.html")
+									h3 物資募集
+							.col-2
+								a(href="12.8.html")
+									h3 志工招募
+							.col-2
+								a.actived(href="12.9.html")
+									h3 全職工作
+							.col-2
+								a(href="12.10.html")
+									h3 兼職工作
+							.col-2
+								a(href="12.11.html")
+									h3 公益商城
+							.col-2
+								a(href="12.12.html")
+									h3 機構介紹
+						// pc版社群分享
+						include pc_social_share.pug
+
+						// 內文
+						.content
+							// 手機版社群分享
+							include phone_social_share.pug
+
+							h3 社團法人高雄市樂馨社會福利關懷協會招募居家督導員
+							span 2020/06/27
+							h3.title 職務說明
+							h4 機構名稱：社團法人高雄市樂馨社會福利關懷協會
+							h4 職務名稱：居家督導員
+							h4 職缺類別：全職人員
+							h4 職缺部門：居家服務
+							h4
+								| 工作內容：
+								br
+								|               1.老人及身心障礙者居家照顧服務業務
+								br
+								|               2.個案管理資源媒合及轉介
+								br
+								|               3.居家個案派案及家電訪
+								br
+								|               4.相關行政工作暨報表整理
+								br
+								|               5.系統執行登打及核銷
+								br
+								|               6.方案計畫攥寫、申請、核銷及執行
+								br
+								|               7.撰寫相關活動與執行
+								|               8.其他交辦事項
+							h4
+								| 其他需求：
+								br
+								|               1.專科以上學校社會工作、醫學、護理、職能治療、物理治療、營養、 藥學、公共衛生、老人照顧等相關系、、
+								|               學位學程、科畢業。
+								br
+								|               2.具居家服務督導員資格者佳
+								br
+								|               3.熟悉電腦文書處理軟體
+							h4
+								| 工作地點：高雄市三民區鼎和街5號
+								.embed-responsive.embed-responsive-16by9.map
+									iframe.embed-responsive-item(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.041949327373!2d121.52049035066808!3d25.066567283878328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x140dd0f467a85e51%3A0x721f721f1255cf08!2z57ay6Luf6IKh5Lu95pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1592899753483!5m2!1szh-TW!2stw")
+							h4 工作時間：7/29 8:40-12:00
+							h4 工作待遇：內文內文內文內文內文內文內文內文
+							h4 員工福利：時數證明
+							h4 休假制度：內文內文內文內文內文內文內文內文
+							h3.title 工作條件限制
+							h4 學歷/科系：內文內文內文內文內文內文內文內文
+							h4 工作經驗：內文內文內文內文內文內文內文內文
+							h4 具備駕照：具備機車駕照
+							h3.title 應徵方式
+							h4 聯絡人：張社工
+							h4 聯絡電話：02-33931661 12
+							h4 傳真：內文內文內文內文內文內文內文內文
+							h4 電子郵件：biggardenbiggarden@yahoo.com.tw
+							h4 備註：內文內文內文內文內文內文內文內文
+							h4
+								a(href="#")
+									span 我要應徵
+							// 回上一頁
+							#back
+								a(href="12.9.html")
+									h4 回列表頁
+							// 回上一頁
+
+		//- 匯入底部廣告
+		include footer_ad.pug
+		//- 匯入footer+script
+		include footer.pug

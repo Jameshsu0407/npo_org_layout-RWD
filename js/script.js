@@ -1,3 +1,11 @@
+// 初始化
+$(function () {
+    // 導覽列初始化
+    $('#bootnavbar').bootnavbar();
+    // selectpicker初始化
+    $('select').selectpicker();
+})
+
 // 首頁上方輪播圖
 $('#top-ads').slick({
     arrows: false,
@@ -15,6 +23,37 @@ $('#activity_card').slick({
     // centerMode: true,
     arrows: false
 });
+// 首頁商品輪播圖
+$('.shop_slick').slick({
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3
+            }
+
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2
+            }
+
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+    ]
+});
+
 // 底部廣告輪播圖
 $('#bottom_ads').slick({
     arrows: false,
@@ -39,12 +78,6 @@ $('#bottom_ads').slick({
     ]
 });
 
-// 導覽列初始化
-$(function () {
-    $('#bootnavbar').bootnavbar({
-    });
-})
-
 // 列表點選連結
 $(document).ready(function($) {
     $(".clickable-row").click(function() {
@@ -65,7 +98,7 @@ $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function (t) {
         }))
     }
 });
-
+// goToElement漸入漸出
 $(window).scroll(function(){
     if ($(this).scrollTop()>150){
         // $('#backToTop').css('display','block');
@@ -92,4 +125,10 @@ $( ".fixed_size" ).each(function (i) {
         $(this).removeClass('width_100');
     }
 })
+
+// 顯示上傳檔案名稱
+$('input[type="file"]').change(function(e){
+    var fileName = e.target.files[0].name;
+    $('.custom-file-label').html(fileName);
+});
 

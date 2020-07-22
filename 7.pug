@@ -1,0 +1,157 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		title 公益商城
+		//- 匯入連結
+		include header.pug
+	body#top
+		//- 匯入導覽列+gototop
+		include nav.pug
+
+		section#welfare_shop.container
+			.row
+				.content_top.col-12
+					h2.content_title.col-12 公益商城
+					.col-12
+						form.form-inline.col-12.selector
+							.select_wrap.col-12.col-md-4
+								input.form-control.col-12(type="text" placeholder="請輸入商品名稱")
+							.select_wrap.col-12.col-md-3
+								select.custom-select.col-12
+									option(selected="" disabled="") 請選擇商品類別
+									option 食品
+									option 衣物
+									option 用品
+									option 書籍
+									option 配件
+							.select_wrap.col-12.col-md-3
+								select.custom-select.col-12
+									option(selected="" disabled="") 請選擇機構類別
+									option 綜合性服務
+									option 兒童青少年福利
+									option 婦女福利
+									option 老人福利
+									option 身心障礙福利
+							.select_wrap.col-12.col-md-2
+								button.btn.lookmore.col-12.m-0(type="button") 送出
+					.products
+						.col-12.col-md-6.col-xl-3
+							a(href="https://shopee.tw/" target="_blank")
+								.good
+									.pic
+										img.img-fluid.fixed_size(src="https://fakeimg.pl/800x800/")
+									h3.title 手工餅乾
+									p.text NT$150
+						.col-12.col-md-6.col-xl-3
+							a(href="https://shopee.tw/" target="_blank")
+								.good
+									.pic
+										img.img-fluid.fixed_size(src="https://fakeimg.pl/1000x200/")
+									h3.title 手工餅乾
+									p.text NT$150
+						.col-12.col-md-6.col-xl-3
+							a(href="https://shopee.tw/" target="_blank")
+								.good
+									.pic
+										img.img-fluid.fixed_size(src="https://fakeimg.pl/200x1000/")
+									h3.title 手工餅乾
+									p.text NT$150
+						.col-12.col-md-6.col-xl-3
+							a(href="https://shopee.tw/" target="_blank")
+								.good
+									.pic
+										img.img-fluid.fixed_size(src="https://fakeimg.pl/800x450/")
+									h3.title 手工餅乾
+									p.text NT$150
+						.col-12.col-md-6.col-xl-3
+							a(href="https://shopee.tw/" target="_blank")
+								.good
+									.pic
+										img.img-fluid.fixed_size(src="./img/product/pd1.jpg")
+									h3.title 手工餅乾
+									p.text NT$150
+						.col-12.col-md-6.col-xl-3
+							a(href="https://shopee.tw/" target="_blank")
+								.good
+									.pic
+										img.img-fluid.fixed_size(src="./img/product/pd2.jpg")
+									h3.title 手工餅乾
+									p.text NT$150
+						.col-12.col-md-6.col-xl-3
+							a(href="https://shopee.tw/" target="_blank")
+								.good
+									.pic
+										img.img-fluid.fixed_size(src="./img/product/pd3.jpg")
+									h3.title 手工餅乾
+									p.text NT$150
+						.col-12.col-md-6.col-xl-3
+							a(href="https://shopee.tw/" target="_blank")
+								.good
+									.pic
+										img.img-fluid.fixed_size(src="./img/product/pd4.jpg")
+									h3.title 手工餅乾
+									p.text NT$150
+						.col-12.col-md-6.col-xl-3
+							a(href="https://shopee.tw/" target="_blank")
+								.good
+									.pic
+										img.img-fluid.fixed_size(src="./img/product/pd1.jpg")
+									h3.title 手工餅乾
+									p.text NT$150
+						.col-12.col-md-6.col-xl-3
+							a(href="https://shopee.tw/" target="_blank")
+								.good
+									.pic
+										img.img-fluid.fixed_size(src="./img/product/pd2.jpg")
+									h3.title 手工餅乾
+									p.text NT$150
+						.col-12.col-md-6.col-xl-3
+							a(href="https://shopee.tw/" target="_blank")
+								.good
+									.pic
+										img.img-fluid.fixed_size(src="./img/product/pd3.jpg")
+									h3.title 手工餅乾
+									p.text NT$150
+						.col-12.col-md-6.col-xl-3
+							a(href="https://shopee.tw/" target="_blank")
+								.good
+									.pic
+										img.img-fluid.fixed_size(src="./img/product/pd4.jpg")
+									h3.title 手工餅乾
+									p.text NT$150
+						.col-12.col-md-6.col-xl-3
+							a(href="https://shopee.tw/" target="_blank")
+								.good
+									.pic
+										img.img-fluid.fixed_size(src="./img/product/pd1.jpg")
+									h3.title 手工餅乾
+									p.text NT$150
+						.col-12.col-md-6.col-xl-3
+							a(href="https://shopee.tw/" target="_blank")
+								.good
+									.pic
+										img.img-fluid.fixed_size(src="./img/product/pd2.jpg")
+									h3.title 手工餅乾
+									p.text NT$150
+						.col-12.col-md-6.col-xl-3
+							a(href="https://shopee.tw/" target="_blank")
+								.good
+									.pic
+										img.img-fluid.fixed_size(src="./img/product/pd3.jpg")
+									h3.title 手工餅乾
+									p.text NT$150
+						.col-12.col-md-6.col-xl-3
+							a(href="https://shopee.tw/" target="_blank")
+								.good
+									.pic
+										img.img-fluid.fixed_size(src="./img/product/pd4.jpg")
+									h3.title 手工餅乾
+									p.text NT$150
+					include page.pug
+		
+		//- 匯入底部廣告
+		include footer_ad.pug
+		//- 匯入footer+script
+		include footer.pug

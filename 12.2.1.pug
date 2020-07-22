@@ -1,0 +1,128 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		title 組織-最新活動-單元頁
+		//- 匯入連結
+		include header.pug
+	body#top
+		//- 匯入導覽列+gototop
+		include nav.pug
+
+		section#org_activities_unit.container.org_same_list
+			.row
+				.content_top
+					.col-12.col-lg-4.left
+						.pic
+							// <img src="./img/logo/org_logo.jpg" alt="" class="img-fluid fixed_size">
+							// <img src="https://fakeimg.pl/1000x300/" class="img-fluid fixed_size">
+							// <img src="https://fakeimg.pl/300x1000/" class="img-fluid fixed_size">
+							img.img-fluid.fixed_size(src="https://fakeimg.pl/800x800/")
+						.profile.off
+							h3 財團法人桃園市幸福社會福利基金會
+							h3 服務項目：其他
+							h3 聯絡人：陳正評
+							h3 聯絡電話：0938-938-938
+							h3 Email：sinfu@gmail.com
+							h3
+								| 網站：
+								a(href="") 幸福基金會官方網站
+							h3 地址：台北市中山區ＸＸＸＸＸ
+							h3
+								| 商城連結：
+								a(href="") 蝦皮商城
+							.embed-responsive.embed-responsive-16by9
+								iframe.embed-responsive-item(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.041949327373!2d121.52049035066808!3d25.066567283878328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x140dd0f467a85e51%3A0x721f721f1255cf08!2z57ay6Luf6IKh5Lu95pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1592899753483!5m2!1szh-TW!2stw")
+					.col-12.col-lg-8.right
+						// pc版導覽列
+						.pc_top_nav
+							.col-2
+								a(href="12.1.html")
+									h3 公益新訊
+							.col-2
+								a.actived(href="12.2.html")
+									h3 最新活動
+							.col-2
+								a(href="12.3.html")
+									h3 公益影片
+							.col-2
+								a(href="12.4.html")
+									h3 補助公告
+							.col-2
+								a(href="12.5.html")
+									h3 救助公告
+							.col-2
+								a(href="12.6.html")
+									h3 獎助公告
+							.col-2
+								a(href="12.7.html")
+									h3 物資募集
+							.col-2
+								a(href="12.8.html")
+									h3 志工招募
+							.col-2
+								a(href="12.9.html")
+									h3 全職工作
+							.col-2
+								a(href="12.10.html")
+									h3 兼職工作
+							.col-2
+								a(href="12.11.html")
+									h3 公益商城
+							.col-2
+								a(href="12.12.html")
+									h3 機構介紹
+						// pc版社群分享
+						include pc_social_share.pug
+						// 內文
+						.content
+							// 手機版社群分享
+							include phone_social_share.pug
+
+							h3 高雄市鳥松區 . 長者健康促進站
+							span 2020/06/27
+							.pic
+								img.img-fluid.fixed_size(src="https://fakeimg.pl/800x450/")
+							h4 活動類型：活動
+							h4 活動屬性：老人福利
+							h4 活動主題：高雄市鳥松區 . 長者健康促進站
+							h4
+								| 活動主旨：
+								br
+								| * 協助長者從健康生活型態養成達到預防及延緩失能
+								br
+								|               * 鳥松衛生所結合【米迦勒社會福利協會】推廣規律運動、均衡飲食、預防失智等健康議題之相關課程
+							h4 主辦單位：米迦勒社會福利協會
+							h4 活動期間：2020/07/06 ~ 2020/10/31
+							h4 地區：高雄市
+							h4
+								| 活動地點：高雄市鳥松區昌明街15號
+								.embed-responsive.embed-responsive-16by9.map
+									iframe.embed-responsive-item(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.041949327373!2d121.52049035066808!3d25.066567283878328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x140dd0f467a85e51%3A0x721f721f1255cf08!2z57ay6Luf6IKh5Lu95pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1592899753483!5m2!1szh-TW!2stw")
+							h4 聯絡方式：03-372-1973
+							h4
+								| 活動內容：
+								br
+								|               * 每班招收10名長者
+								br
+								|               * 米班為每週一、迦班為每週三、樂班為每週四。
+								br
+								|               * (7/6~10/21) 09:00~12:00
+								br
+								|               * 供應點心、茶水及午餐
+							h4 參加對象：凡居住在或戶籍在鳥松區65歲以上的長輩，歡迎報名！
+							h4 活動費用：免費
+							h4
+								| 活動網站：
+								a(href="http://docs.google.com/forms/d/17avIPJ7i_6v7YoSGwFIyaIixVKwLZ5r3F8GYWc117vM/edit") 前往報名
+							// 回上一頁
+							#back
+								a(href="12.2.html")
+									h4 回列表頁
+							// 回上一頁
+
+		//- 匯入底部廣告
+		include footer_ad.pug
+		//- 匯入footer+script
+		include footer.pug

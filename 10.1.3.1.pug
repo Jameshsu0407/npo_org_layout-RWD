@@ -1,0 +1,80 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		title 前台-會員-修改基本資料
+		//- 匯入連結
+		include header.pug
+	body#top
+		//- 匯入導覽列+gototop
+		include nav.pug
+
+		section#font_end_member_information.member_same.container
+			.row
+				.content_top.col-12
+					h2.content_title.col-12 修改基本資料
+					// 左側
+					.left.col-12.col-lg-3
+						// pc版導覽列
+						ul.pc_nav
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.3.1.html") 修改基本資料
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.3.2.html") 履歷登錄
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.3.3.html") 修改密碼
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.html") 登出
+						// 手機版導覽列
+						select.selectpicker.phone_nav(onchange="location.href=this.options[this.selectedIndex].value")
+							option(value="10.1.3.1.html" selected) 修改基本資料
+							option(value="10.1.3.2.html")  履歷登錄
+							option(value="10.1.3.3.html")  修改密碼
+							option(value="10.1.html")  登出
+					// 右側
+					.right.col-12.col-lg-9
+						form
+							.register_form
+								// 必填
+								.col-12
+									.form-group
+										label 姓名
+										input.form-control(type="text")
+								// 必填
+								.col-12
+									.form-group
+										label 出生日期
+										input.form-control(type="date")
+								// 必填
+								.col-12
+									.form-group
+										label 電話
+										input.form-control(type="text")
+								// 必填
+								.col-12
+									.form-group
+										label Email
+										input.form-control(type="email")
+								.col-12
+									.form-group
+										label 備註
+										textarea.form-control(rows="5")
+								.input-group.mb-3
+									.input-group-prepend
+										span.input-group-text 驗證碼
+									input.form-control(type="text" placeholder="請輸入驗證碼")
+									.input-group-append
+										a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")
+											img.checkpin(src="./img/checkpin.png", alt="")
+								button.btn.login_button(type="button" onclick="javascript:location.href=''") 送出
+
+
+		//- 匯入底部廣告
+		include footer_ad.pug
+		//- 匯入footer+script
+		include footer.pug

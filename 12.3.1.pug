@@ -1,0 +1,97 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		title 組織-公益影片-單元頁
+		//- 匯入連結
+		include header.pug
+	body#top
+		//- 匯入導覽列+gototop
+		include nav.pug
+
+		section#org_video_unit.container.org_same_list
+			.row
+				.content_top
+					.col-12.col-lg-4.left
+						.pic
+							// <img src="./img/logo/org_logo.jpg" alt="" class="img-fluid fixed_size">
+							// <img src="https://fakeimg.pl/1000x300/" class="img-fluid fixed_size">
+							// <img src="https://fakeimg.pl/300x1000/" class="img-fluid fixed_size">
+							img.img-fluid.fixed_size(src="https://fakeimg.pl/800x800/")
+						.profile.off
+							h3 財團法人桃園市幸福社會福利基金會
+							h3 服務項目：其他
+							h3 聯絡人：陳正評
+							h3 聯絡電話：0938-938-938
+							h3 Email：sinfu@gmail.com
+							h3
+								| 網站：
+								a(href="") 幸福基金會官方網站
+							h3 地址：台北市中山區ＸＸＸＸＸ
+							h3
+								| 商城連結：
+								a(href="") 蝦皮商城
+							.embed-responsive.embed-responsive-16by9
+								iframe.embed-responsive-item(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.041949327373!2d121.52049035066808!3d25.066567283878328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x140dd0f467a85e51%3A0x721f721f1255cf08!2z57ay6Luf6IKh5Lu95pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1592899753483!5m2!1szh-TW!2stw")
+					.col-12.col-lg-8.right
+						// pc版導覽列
+						.pc_top_nav
+							.col-2
+								a(href="12.1.html")
+									h3 公益新訊
+							.col-2
+								a(href="12.2.html")
+									h3 最新活動
+							.col-2
+								a.actived(href="12.3.html")
+									h3 公益影片
+							.col-2
+								a(href="12.4.html")
+									h3 補助公告
+							.col-2
+								a(href="12.5.html")
+									h3 救助公告
+							.col-2
+								a(href="12.6.html")
+									h3 獎助公告
+							.col-2
+								a(href="12.7.html")
+									h3 物資募集
+							.col-2
+								a(href="12.8.html")
+									h3 志工招募
+							.col-2
+								a(href="12.9.html")
+									h3 全職工作
+							.col-2
+								a(href="12.10.html")
+									h3 兼職工作
+							.col-2
+								a(href="12.11.html")
+									h3 公益商城
+							.col-2
+								a(href="12.12.html")
+									h3 機構介紹
+						// pc版社群分享
+						include pc_social_share.pug
+
+						// 內文
+						.content
+							// 手機版社群分享
+							include phone_social_share.pug
+
+							h3 夫妻的經典語錄 Classic Couple Quotes
+							span 2020/06/27
+							.embed-responsive.embed-responsive-16by9.video
+								iframe.embed-responsive-item(src="https://www.youtube.com/embed/OtUD_5ZMVZ8" allowfullscreen="")
+							// 回上一頁
+							#back
+								a(href="12.3.html")
+									h4 回列表頁
+							// 回上一頁
+
+		//- 匯入底部廣告
+		include footer_ad.pug
+		//- 匯入footer+script
+		include footer.pug

@@ -1,0 +1,98 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		title 前台-企業-組織使用者維護-修改
+		//- 匯入連結
+		include header.pug
+	body#top
+		//- 匯入導覽列+gototop
+		include nav.pug
+
+		section#font_end_com_acount_maintain_fixed.member_same.container
+			.row
+				.content_top.col-12
+					h2.content_title.col-12 組織使用者維護
+					// 左側
+					.left.col-12.col-lg-3
+						// pc版導覽列
+						ul.pc_nav
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.2.1.html") 修改公司基本資料
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.2.2.html") 企業提供
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.2.3.html") 組織使用者維護
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.2.4.html") 修改密碼
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.html") 登出
+						// 手機版導覽列
+						select.selectpicker.phone_nav(onchange="location.href=this.options[this.selectedIndex].value")
+							option(value="10.1.2.1.html") 修改公司基本資料
+							option(value="10.1.2.2.html") 企業提供
+							option(value="10.1.2.3.html" selected) 組織使用者維護
+							option(value="10.1.2.4.html") 修改密碼
+							option(value="10.1.html")  登出
+					// 右側
+					.right.col-12.col-lg-9
+						form.acount_maintain_add
+							h4.col-12 最後登入時間&nbsp;&nbsp;2018/8/29 下午 03:27:06
+							h4.col-12 帳號狀態&nbsp;&nbsp;正常
+							// 必填
+							.col-12
+								.form-group
+									label 使用者名稱
+									input.form-control(type="text")
+							// 必填
+							.col-12
+								.form-group
+									label 職稱
+									input.form-control(type="text")
+							// 必填
+							.col-12
+								.form-group
+									label 電話
+									input.form-control(type="text")
+							// 必填
+							.col-12
+								.form-group
+									label Email
+									input.form-control(type="email")
+							//- // 必填
+							//- .col-12
+							//- 	.form-group
+							//- 		label 密碼
+							//- 		input.form-control(type="password")
+							//- // 必填
+							//- .col-12
+							//- 	.form-group
+							//- 		label 確認密碼
+							//- 		input.form-control(type="password")
+
+							.col-12
+								.form-group
+									label 傳真
+									input.form-control(type="text")
+							.col-12
+								.form-group
+									label 備註
+									textarea.form-control(rows="5")
+							.input-group.mb-3
+								.input-group-prepend
+									span.input-group-text 驗證碼
+								input.form-control(type="text" placeholder="請輸入驗證碼")
+								.input-group-append
+									a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")
+										img.checkpin(src="./img/checkpin.png", alt="")
+							button.btn.login_button(type="button" onclick="javascript:location.href=''") 修改
+		//- 匯入底部廣告
+		include footer_ad.pug
+		//- 匯入footer+script
+		include footer.pug

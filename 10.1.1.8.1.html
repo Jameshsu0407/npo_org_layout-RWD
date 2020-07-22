@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前台-機構-物資需求-新增</title>
+    <!-- BT4-->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- slick-->
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <!-- animate-->
+    <link rel="stylesheet" href="./css/animate.css">
+    <!-- bootsnav-->
+    <link rel="stylesheet" href="./css/bootsnav.css">
+    <!-- fontawesome-->
+    <link rel="stylesheet" href="./css/fontawesome.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- fullcalendar-->
+    <link rel="stylesheet" href="./css/core.main.css">
+    <link rel="stylesheet" href="./css/daygrid.main.css">
+    <!-- bootstrap-select-->
+    <link rel="stylesheet" href="./css/bootstrap-select.css">
+    <!-- css-->
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body id="top"><a id="backToTop" href="#top">
+      <div class="circle"></div></a>
+    <nav class="navbar navbar-expand-lg navbar-fixed bootsnav bg-white" id="navbar">
+      <div class="navbar-top bg-yellow">
+        <div class="container top-nav">
+          <div class="col-12">
+            <div class="navbar-socail sm-text-center">
+              <ul class="drop-down-menu-top">
+                <li class="sub-drop-down-menu-top"><a href="javascript:void(0);"><i class="fa fa-globe fa-lg" aria-hidden="true" title="語系"></i></a>
+                  <ul class="sec">
+                    <li><a href="">繁體版</a></li>
+                    <li><a href="">简体版</a></li>
+                    <!-- <li><a href="">English</a></li>-->
+                  </ul>
+                </li>
+                <li class="sub-drop-down-menu-top"><a href="10.1.html"><i class="fa fa-user fa-lg" aria-hidden="true" title="會員專區"></i></a></li>
+                <li class="sub-drop-down-menu-top"><a href="#"><i class="fa fa-sitemap fa-lg" aria-hidden="true" title="網站導覽"></i></a></li>
+                <div class="attr-nav">
+                  <li class="search"><a href="#"><i class="fa fa-search fa-lg" title="搜尋"></i></a></li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Start Top Search-->
+      <div class="top-search">
+        <div class="container">
+          <div class="input-group"><span class="input-group-addon"><i class="fa fa-search"></i></span>
+            <input class="form-control" type="text" placeholder="Search"><span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+          </div>
+        </div>
+      </div>
+      <!-- End Top Search-->
+      <div class="container main-nav">
+        <!-- Start Header Navigation-->
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars fa-lg"></i></button><a class="navbar-brand" href="1.html"><img src="./img/logo/NPOlogo.png"></a>
+        </div>
+        <!-- End Header Navigation-->
+        <!-- navbar menu-->
+        <div class="collapse navbar-collapse" id="navbar-menu">
+          <ul class="nav navbar-nav navbar-right" data-in="" data-out="">
+            <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">關於我們</a>
+              <ul class="dropdown-menu">
+                <li class="drop-item"><a href="2.1.html">關於我們</a></li>
+                <li class="drop-item"><a href="2.2.html">創辦人理念</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">合作夥伴</a>
+                  <ul class="dropdown-menu">
+                    <li class="drop-item"><a href="2.3.1.html">網軟</a></li>
+                    <li class="drop-item"><a href="2.3.2.html">叡揚資訊</a></li>
+                    <li class="drop-item"><a href="2.3.3.html">喜馬拉雅</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">最新消息</a>
+              <ul class="dropdown-menu">
+                <li class="drop-item"><a href="3.1.html">公益新訊</a></li>
+                <li class="drop-item"><a href="3.2.html">最新活動</a></li>
+                <li class="drop-item"><a href="3.3.html">公益影片</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">扶助專區</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">補助機構</a>
+                  <ul class="dropdown-menu">
+                    <li class="drop-item"><a href="4.1.1.html">補助機構</a></li>
+                    <li class="drop-item"><a href="4.1.2.html">補助公告</a></li>
+                    <li class="drop-item"><a href="4.1.3.html">補助行事曆</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">急難救助</a>
+                  <ul class="dropdown-menu">
+                    <li class="drop-item"><a href="4.2.1.html">救助機構</a></li>
+                    <li class="drop-item"><a href="4.2.2.html">救助公告</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">獎助學金</a>
+                  <ul class="dropdown-menu">
+                    <li class="drop-item"><a href="4.3.1.html">獎助機構</a></li>
+                    <li class="drop-item"><a href="4.3.2.html">獎助公告</a></li>
+                    <li class="drop-item"><a href="4.3.3.html">獎助行事曆</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">物資募集</a>
+              <ul class="dropdown-menu">
+                <li class="drop-item"><a href="5.1.html">物資募集</a></li>
+                <li class="drop-item"><a href="5.2.html">企業提供</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">人力銀行</a>
+              <ul class="dropdown-menu">
+                <li class="drop-item"><a href="6.1.html">志工招募</a></li>
+                <li class="drop-item"><a href="6.2.html">全職工作</a></li>
+                <li class="drop-item"><a href="6.3.html">兼職工作</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">非營利組織</a>
+              <ul class="dropdown-menu">
+                <li class="drop-item"><a href="8.html">組織名錄</a></li>
+                <li class="drop-item"><a href="7.html">公益商城</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">支援服務</a>
+              <ul class="dropdown-menu">
+                <li class="drop-item"><a href="9.1.html">廣告刊登</a></li>
+                <li class="drop-item"><a href="9.2.html">合作提案</a></li>
+                <li class="drop-item"><a href="9.3.html">線上客服</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="member_same container" id="font_end_org_donate_add">
+      <div class="row">
+        <div class="content_top col-12">
+          <h2 class="content_title col-12">物資需求</h2>
+          <!-- 左側-->
+          <div class="left col-12 col-lg-3">
+            <!-- pc版導覽列-->
+            <ul class="pc_nav">
+              <li><i class="fa fa-caret-right"></i><a href="10.1.1.1.html">修改組織基本資料</a></li>
+              <li><i class="fa fa-caret-right"></i><a href="10.1.1.2.html">公益新訊</a></li>
+              <li><i class="fa fa-caret-right"></i><a href="10.1.1.3.html">最新活動</a></li>
+              <li><i class="fa fa-caret-right"></i><a href="10.1.1.4.html">公益影片</a></li>
+              <li><i class="fa fa-caret-right"></i><a href="10.1.1.5.html">補助公告</a></li>
+              <li><i class="fa fa-caret-right"></i><a href="10.1.1.6.html">救助公告</a></li>
+              <li><i class="fa fa-caret-right"></i><a href="10.1.1.7.html">獎助公告</a></li>
+              <li><i class="fa fa-caret-right"></i><a href="10.1.1.8.html">物資需求</a></li>
+              <li><i class="fa fa-caret-right"></i><a href="10.1.1.9.html">志工招募</a></li>
+              <li><i class="fa fa-caret-right"></i><a href="10.1.1.10.html">全職工作</a></li>
+              <li><i class="fa fa-caret-right"></i><a href="10.1.1.11.html">兼職工作</a></li>
+              <li><i class="fa fa-caret-right"></i><a href="10.1.1.12.html">公益商城</a></li>
+              <li><i class="fa fa-caret-right"></i><a href="10.1.1.13.html">組織使用者維護</a></li>
+              <li><i class="fa fa-caret-right"></i><a href="10.1.1.14.html">修改密碼</a></li>
+              <li><i class="fa fa-caret-right"></i><a href="10.1.html">登出</a></li>
+            </ul>
+            <!-- 手機版導覽列-->
+            <select class="selectpicker phone_nav" onchange="location.href=this.options[this.selectedIndex].value">
+              <option value="10.1.1.1.html">修改組織基本資料</option>
+              <option value="10.1.1.2.html"> 公益新訊</option>
+              <option value="10.1.1.3.html"> 最新活動</option>
+              <option value="10.1.1.4.html"> 公益影片</option>
+              <option value="10.1.1.5.html"> 補助公告</option>
+              <option value="10.1.1.6.html"> 救助公告</option>
+              <option value="10.1.1.7.html"> 獎助公告</option>
+              <option value="10.1.1.8.html" selected> 物資需求</option>
+              <option value="10.1.1.9.html"> 志工招募</option>
+              <option value="10.1.1.10.html"> 全職工作</option>
+              <option value="10.1.1.11.html"> 兼職工作</option>
+              <option value="10.1.1.12.html"> 公益商城</option>
+              <option value="10.1.1.13.html"> 組織使用者維護</option>
+              <option value="10.1.1.14.html"> 修改密碼</option>
+              <option value="10.1.html"> 登出</option>
+            </select>
+          </div>
+          <!-- 右側-->
+          <div class="right col-12 col-lg-9">
+            <form class="donate_add">
+              <!-- 必填-->
+              <div class="col-12">
+                <div class="form-group">
+                  <label>刊登日期</label>
+                  <input class="form-control" type="date">
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label>上傳圖片</label>
+                  <div class="custom-file">
+                    <input class="custom-file-input" type="file">
+                    <label class="custom-file-label">圖片建議尺寸800X450px</label>
+                  </div>
+                </div>
+              </div>
+              <!-- 必填-->
+              <div class="col-12">
+                <div class="form-group">
+                  <label>刊登天數</label>
+                  <div class="post_duration">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="post_duration">
+                      <label class="form-check-label">14天</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="post_duration">
+                      <label class="form-check-label">28天</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="post_duration">
+                      <label class="form-check-label">56天</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 必填-->
+              <div class="col-12">
+                <div class="form-group">
+                  <label>物資類別</label>
+                  <div class="type">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="type">
+                      <label class="form-check-label">活動</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="type">
+                      <label class="form-check-label">餐廚</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="type">
+                      <label class="form-check-label">衣物</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="type">
+                      <label class="form-check-label">鞋襪</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="type">
+                      <label class="form-check-label">傢俱</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="type">
+                      <label class="form-check-label">寢飾</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="type">
+                      <label class="form-check-label">衛生</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="type">
+                      <label class="form-check-label">清潔</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="type">
+                      <label class="form-check-label">家電</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="type">
+                      <label class="form-check-label">3C</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="type">
+                      <label class="form-check-label">圖書</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="type">
+                      <label class="form-check-label">文具</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="type">
+                      <label class="form-check-label">娛樂</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="type">
+                      <label class="form-check-label">其他</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="type">
+                      <label class="form-check-label">輔具</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="type">
+                      <label class="form-check-label">運輸</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 必填-->
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label>物資名稱</label>
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <!-- 必填-->
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label>數量</label>
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <!-- 必填-->
+              <div class="col-12">
+                <div class="form-group">
+                  <label>地點</label>
+                  <input class="form-control" type="text" placeholder="本地址將作為GoogleMaps定位使用，請輸入完整的地址">
+                </div>
+              </div>
+              <!-- 必填-->
+              <div class="col-12">
+                <div class="form-group">
+                  <label>地區</label>
+                  <div class="region">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="region">
+                      <label class="form-check-label">台北市</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="region">
+                      <label class="form-check-label">新北市</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="region">
+                      <label class="form-check-label">基隆市</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="region">
+                      <label class="form-check-label">宜蘭縣</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="region">
+                      <label class="form-check-label">桃園市</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="region">
+                      <label class="form-check-label">新竹市</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="region">
+                      <label class="form-check-label">新竹縣</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="region">
+                      <label class="form-check-label">苗栗縣</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="region">
+                      <label class="form-check-label">台中市</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="region">
+                      <label class="form-check-label">彰化縣</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="region">
+                      <label class="form-check-label">南投縣</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="region">
+                      <label class="form-check-label">雲林縣</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="region">
+                      <label class="form-check-label">嘉義市</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="region">
+                      <label class="form-check-label">嘉義縣</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="region">
+                      <label class="form-check-label">台南市</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="region">
+                      <label class="form-check-label">高雄市</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="region">
+                      <label class="form-check-label">屏東縣</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="region">
+                      <label class="form-check-label">台東縣</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="region">
+                      <label class="form-check-label">花蓮縣</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="region">
+                      <label class="form-check-label">澎湖縣</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="region">
+                      <label class="form-check-label">金門縣</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="region">
+                      <label class="form-check-label">連江縣</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <label>類型</label>
+                <div class="donate_characteristic">
+                  <div class="form-group form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">綜合性服務</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">兒童青少年福利	</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">婦女福利</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">老人福利</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">身心障礙福利</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">家庭福利</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">健康醫療</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">心理衛生</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">社區規劃(營造)</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">環境保護</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">國際合作交流</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">教育與科學</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">文化藝術</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">人權和平</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">消費者保護</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">性別平等</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">政府單位</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">動物保護</label>
+                  </div>
+                </div>
+              </div>
+              <!-- 必填-->
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label>聯絡人</label>
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <!-- 必填-->
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label>電話</label>
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <!-- 必填-->
+              <div class="col-12">
+                <div class="form-group">
+                  <label>詳細說明</label>
+                  <textarea class="form-control" rows="5"></textarea>
+                </div>
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend"><span class="input-group-text">驗證碼</span></div>
+                <input class="form-control" type="text" placeholder="請輸入驗證碼">
+                <div class="input-group-append"><a class="checkpin_switch btn" href="#" title="按一下更改驗證碼"><img class="checkpin" src="./img/checkpin.png" alt=""></a></div>
+              </div>
+              <button class="btn login_button" type="button" onclick="javascript:location.href=''">送出</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 底部廣告-->
+    <section class="container" id="bottom_ads"><img class="img-fluid clickable-row" src="https://fakeimg.pl/350x150/" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad1.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad2.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad3.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"></section>
+    <!-- footer-->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="footer-left col-12 col-md-5 order-2 order-sm-1">
+            <p class="copyright-zh">財團法人喜瑪拉雅研究發展基金會建置<br>網軟股份有限公司營運維護</p>
+            <p class="copyright-en">Copyright © 2020 Taiwan NPO Information Platform. All Rights Reserved. </p>
+            <!-- <p>瀏覽人數：<span>66666</span>人</p>-->
+          </div>
+          <div class="footer-right col-12 col-md-7 order-1 order-sm-2">
+            <p class="npotimes">NPOTIMES電子報訂閱</p>
+            <div class="input-group">
+              <input class="form-control" type="email" placeholder="請輸入電子信箱" aria-label="搜尋組織" aria-describedby="button-addon2">
+              <div class="input-group-append">
+                <button class="btn lookmore" id="suscribe" type="button">訂閱！</button>
+              </div>
+            </div>
+            <div class="supports">
+              <div class="logo col-4"><a href="http://www.himalaya.org.tw" target="_blank"><img src="./img/logo/logo1.png" alt="喜瑪拉亞基金會"></a></div>
+              <div class="logo col-4"><a href="https://www.gss.com.tw" target="_blank"><img src="./img/logo/logo2.png" alt="叡揚資訊"></a></div>
+              <div class="logo col-4"><a href="http://www.intersoft.com.tw/RWD01/default.aspx?rand=637272093166089184" target="_blank"><img src="./img/logo/logo3.png" alt="網軟"></a></div>
+            </div>
+          </div>
+          <div class="bottom-bar col-12 col-md-8 order-3 mx-auto">
+            <div class="col-4"><a href="11.1.html">使用說明</a></div>
+            <div class="col-4"><a href="11.2.html">服務條款</a></div>
+            <div class="col-4"><a href="11.3.html">隱私權政策</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jq-->
+    <script src="./js/jquery.js"></script>
+    <!-- BT4-->
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <!-- slick-->
+    <script src="./js/slick.js"></script>
+    <!-- bootnav-->
+    <script src="./js/bootsnav.js"></script>
+    <!-- fullcalendar-->
+    <script src="./js/core.main.js"></script>
+    <script src="./js/daygrid.main.js"></script>
+    <script src="./js/locales-all.js"></script>
+    <script src="./js/interaction.main.js"></script>
+    <!-- bootstrap-select-->
+    <script src="./js/bootstrap-select.js"></script>
+    <!-- script-->
+    <script src="./js/script.js"></script>
+    <!-- 手機版視窗滾動收回導覽列-->
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      function removeShow() {
+      var element = document.getElementById("navbar-menu");
+      element.classList.remove("show");
+      }
+    </script>
+    <!-- window.scroll-->
+    <script>
+      window.onscroll = function () {
+      removeShow();
+      }
+    </script>
+    <!-- fullcalendar初始化-->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+      plugins: ['interaction','dayGrid'],
+      fixedWeekCount: false,
+      selectable: true,
+      events: [
+      {
+      start: '2020-06-18'
+      },
+      {
+      start: '2020-06-22'
+      }
+      ]
+      });
+      calendar.render();
+      // 中文語系
+      calendar.setOption('locale', 'zh-tw');
+      });
+    </script>
+  </body>
+</html>

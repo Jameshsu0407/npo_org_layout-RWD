@@ -1,0 +1,200 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		title 前台-機構-公益新訊-列表
+		//- 匯入連結
+		include header.pug
+	body#top
+		//- 匯入導覽列+gototop
+		include nav.pug
+
+		section#font_end_org_newpost_list.member_same.container
+			.row
+				.content_top.col-12
+					h2.content_title.col-12 公益新訊
+					// 左側
+					.left.col-12.col-lg-3
+						// pc版導覽列
+						ul.pc_nav
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.1.1.html") 修改組織基本資料
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.1.2.html") 公益新訊
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.1.3.html") 最新活動
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.1.4.html") 公益影片
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.1.5.html") 補助公告
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.1.6.html") 救助公告
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.1.7.html") 獎助公告
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.1.8.html") 物資需求
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.1.9.html") 志工招募
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.1.10.html") 全職工作
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.1.11.html") 兼職工作
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.1.12.html") 公益商城
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.1.13.html") 組織使用者維護
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.1.14.html") 修改密碼
+							li
+								i.fa.fa-caret-right
+								a(href="10.1.html") 登出
+						// 手機版導覽列
+						select.selectpicker.phone_nav(onchange="location.href=this.options[this.selectedIndex].value")
+							option(value="10.1.1.1.html") 修改組織基本資料
+							option(value="10.1.1.2.html"  selected)  公益新訊
+							option(value="10.1.1.3.html")  最新活動
+							option(value="10.1.1.4.html")  公益影片
+							option(value="10.1.1.5.html")  補助公告
+							option(value="10.1.1.6.html")  救助公告
+							option(value="10.1.1.7.html")  獎助公告
+							option(value="10.1.1.8.html")  物資需求
+							option(value="10.1.1.9.html")  志工招募
+							option(value="10.1.1.10.html")  全職工作
+							option(value="10.1.1.11.html")  兼職工作
+							option(value="10.1.1.12.html")  公益商城
+							option(value="10.1.1.13.html")  組織使用者維護
+							option(value="10.1.1.14.html")  修改密碼
+							option(value="10.1.html")  登出
+					// 右側
+					// 此頁將限制會員發放公益新訊，只部分開放合作機構能夠自行刊登新訊，所以我還是將頁面做出來
+					.right.col-12.col-lg-9
+						.top_information
+							h4 機構代碼&nbsp;&nbsp;176
+							h4 機構名稱&nbsp;&nbsp;喜瑪拉雅研究發展基金會
+							.right_1
+								span 年度
+								select.post_year
+									option 2020
+									option 2019
+									option 2018
+								button.btn.btn-sm(type="button" onclick="javascript:location.href='10.1.1.2.1.html'") 新增
+							.right_2
+								span 每月發佈限
+								span.max_piece 10
+								span 則, 本月已發佈
+								span.now_piece 0
+								span 則
+						.warring_rule
+							h4 注意事項
+							p 
+							|非合作機構無權自行刊登，若要發佈公益新訊請提供機構代碼、新訊主題、新訊內容，e-mail至
+							a(href="mailto:webmaster@npo.org.tw") webmaster@npo.org.tw
+							|，台灣公益資訊中心會於三個工作天內作審核、並協助刊登。
+						table.table.col-12
+							thead.thead-color.text-center
+								tr
+									th.type_width.off(scope="col") 類別
+									th(scope="col") 新訊標題
+									th(scope="col") 刊登時間
+									th.type_width(scope="col") 點閱次數
+							tbody
+								tr.clickable-row(data-href="10.1.1.2.1.html")
+									th.text-center.off(scope="row") 綜合性服務
+									th.text-center.text-truncate 第四屆「堉璘台灣奉獻獎」公開徵選
+									td.text-center.text-truncate 2020/04/13
+									td.text-center 107
+								tr.clickable-row(data-href="10.1.1.2.1.html")
+									th.text-center.off(scope="row") 綜合性服務
+									th.text-center.text-truncate 吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線
+									td.text-center.text-truncate 2020/04/13
+									td.text-center 52
+								tr.clickable-row(data-href="10.1.1.2.1.html")
+									th.text-center.off(scope="row") 綜合性服務
+									th.text-center.text-truncate 第四屆「堉璘台灣奉獻獎」公開徵選
+									td.text-center.text-truncate 2020/04/13
+									td.text-center 107
+								tr.clickable-row(data-href="10.1.1.2.1.html")
+									th.text-center.off(scope="row") 綜合性服務
+									th.text-center.text-truncate 吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線
+									td.text-center.text-truncate 2020/04/13
+									td.text-center 52
+								tr.clickable-row(data-href="10.1.1.2.1.html")
+									th.text-center.off(scope="row") 綜合性服務
+									th.text-center.text-truncate 第四屆「堉璘台灣奉獻獎」公開徵選
+									td.text-center.text-truncate 2020/04/13
+									td.text-center 107
+								tr.clickable-row(data-href="10.1.1.2.1.html")
+									th.text-center.off(scope="row") 綜合性服務
+									th.text-center.text-truncate 吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線
+									td.text-center.text-truncate 2020/04/13
+									td.text-center 52
+								tr.clickable-row(data-href="10.1.1.2.1.html")
+									th.text-center.off(scope="row") 綜合性服務
+									th.text-center.text-truncate 第四屆「堉璘台灣奉獻獎」公開徵選
+									td.text-center.text-truncate 2020/04/13
+									td.text-center 107
+								tr.clickable-row(data-href="10.1.1.2.1.html")
+									th.text-center.off(scope="row") 綜合性服務
+									th.text-center.text-truncate 吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線
+									td.text-center.text-truncate 2020/04/13
+									td.text-center 52
+								tr.clickable-row(data-href="10.1.1.2.1.html")
+									th.text-center.off(scope="row") 綜合性服務
+									th.text-center.text-truncate 第四屆「堉璘台灣奉獻獎」公開徵選
+									td.text-center.text-truncate 2020/04/13
+									td.text-center 107
+								tr.clickable-row(data-href="10.1.1.2.1.html")
+									th.text-center.off(scope="row") 綜合性服務
+									th.text-center.text-truncate 吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線
+									td.text-center.text-truncate 2020/04/13
+									td.text-center 52
+								tr.clickable-row(data-href="10.1.1.2.1.html")
+									th.text-center.off(scope="row") 綜合性服務
+									th.text-center.text-truncate 第四屆「堉璘台灣奉獻獎」公開徵選
+									td.text-center.text-truncate 2020/04/13
+									td.text-center 107
+								tr.clickable-row(data-href="10.1.1.2.1.html")
+									th.text-center.off(scope="row") 綜合性服務
+									th.text-center.text-truncate 吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線
+									td.text-center.text-truncate 2020/04/13
+									td.text-center 52
+								tr.clickable-row(data-href="10.1.1.2.1.html")
+									th.text-center.off(scope="row") 綜合性服務
+									th.text-center.text-truncate 第四屆「堉璘台灣奉獻獎」公開徵選
+									td.text-center.text-truncate 2020/04/13
+									td.text-center 107
+								tr.clickable-row(data-href="10.1.1.2.1.html")
+									th.text-center.off(scope="row") 綜合性服務
+									th.text-center.text-truncate 吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線
+									td.text-center.text-truncate 2020/04/13
+									td.text-center 52
+								tr.clickable-row(data-href="10.1.1.2.1.html")
+									th.text-center.off(scope="row") 綜合性服務
+									th.text-center.text-truncate 第四屆「堉璘台灣奉獻獎」公開徵選
+									td.text-center.text-truncate 2020/04/13
+									td.text-center 107
+						include page.pug
+
+
+
+
+
+		//- 匯入底部廣告
+		include footer_ad.pug
+		//- 匯入footer+script
+		include footer.pug

@@ -1,0 +1,59 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		title 線上客服
+		//- 匯入連結
+		include header.pug
+	body#top
+		//- 匯入導覽列+gototop
+		include nav.pug
+
+		section#online_service.container
+			.row
+				.content_top.col-12
+					h2.content_title.col-12 線上客服
+					p.col-12
+						| 1．台灣公益資訊中心僅提供網站會員自行刊登徵才、活動、物資訊息等服務，不提供代刊服務，不便之處還請見諒。
+						br
+						|           2．一般使用者或會員若有任何網站使用操作問題及建議，歡迎來信諮詢，我們將竭誠為您服務。
+						br
+						|           3．會員來信請註明貴單位名稱與機構代碼，以利中心同仁為您服務。
+						br
+						|           4．網站內容部分均屬會員提供發佈，若對內容有任何問題，煩請直接與發佈內容的會員團體聯繫，謝謝您的配合。
+					form.box
+						// left box
+						.left-box.col-12.col-md-6
+							.form-group.col-12
+								label 名字
+								input.form-control(type="text" placeholder="請輸入姓名" required="required")
+							.form-group.col-12
+								label Email
+								input.form-control(type="email" placeholder="請輸入Email" required="required")
+							.form-group.col-12
+								label 機構代碼
+								input.form-control(type="number" placeholder="請輸入機構代碼" required="required")
+							.form-group.col-12
+								label 單位名稱
+								input.form-control(type="text" placeholder="請輸入單位名稱" required="required")
+						// right box
+						.right-box.col-12.col-md-6
+							.form-group.col-12
+								label 主旨
+								input.form-control(type="text" placeholder="請輸入主旨" required="required")
+							.form-group.col-12
+								label 說明
+								textarea.form-control(cols="30" rows="5" placeholder="請輸入想說的內容" required="required")
+							.form-group.col-8
+								label 驗證碼
+								input.form-control(type="text" required="required")
+						// button
+						.btns.col-12
+							button#online_service_reset.btn.online_service_button(type="reset") 取消
+							button#online_service_submit.btn.online_service_button(type="submit") 送出
+
+		//- 匯入底部廣告
+		include footer_ad.pug
+		//- 匯入footer+script
+		include footer.pug

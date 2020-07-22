@@ -1,0 +1,52 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		title 廣告刊登
+		//- 匯入連結
+		include header.pug
+	body#top
+		//- 匯入導覽列+gototop
+		include nav.pug
+
+		section#post_ads.container
+			.row
+				.content_top.col-12
+					h2.content_title.col-12 廣告刊登
+					img(src="./img/logo/npo_ad.png" alt="")
+					p.col-12 台灣公益資訊中心免費提供已註冊本網站會員之公益團體發佈公益廣告。
+					h3.col-12 廣告內容
+					p.col-12 本網站提供會員發佈之廣告為：
+					p.col-12
+						| 1.非長期性的公益活動廣告。
+						br
+						|           2.即將成立或新成立的非營利組織廣告。
+					h3.col-12 廣告類型
+					p.col-12 本網站廣告共分為2種類型，分別為：
+					p.col-12
+						| 1.首頁上方圖形廣告 (寬1920px 高600px)
+						br
+						|           2.首頁/次頁圖形廣告 (寬350px 高150px)
+					p.col-12 圖檔格式請儲存為：
+					p.col-12
+						| 1.jpg
+						br
+						|           2.png
+					h3.col-12 廣告規範
+					p.col-12
+						| 1.本服務提供每個會員每月發佈5則公益廣告。
+						br
+						|           2.每則公益廣告託播期限為1個月。
+						br
+						|           3.本中心屬於非營利性質，故禁止發佈具有營利性質之公益廣告。
+						br
+						|           4.本中心保有所有會員發佈之廣告的審核權力。
+					p.col-12
+						| 請提供機構代碼、廣告主題、廣告圖檔、廣告刊登期間、廣告連結網址，e-mail至 
+						a(href="mailto:webmaster@npo.org.tw") webmaster@npo.org.tw
+						|，台灣公益資訊中心會於三個工作天內作審核、並協助刊登。
+		//- 匯入底部廣告
+		include footer_ad.pug
+		//- 匯入footer+script
+		include footer.pug
