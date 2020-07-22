@@ -1039,11 +1039,6 @@ ul.dropdown-menu li.dropdown a.dropdown-toggle::before {
   }
 }
 
-#shop {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
 #shop .shop_slick {
   display: flex;
   flex-direction: row;
@@ -1190,9 +1185,9 @@ ul.dropdown-menu li.dropdown a.dropdown-toggle::before {
 
 footer {
   margin-top: 0;
-  background-color: #ffc47c;
+  background-image: linear-gradient(180deg, #ffc47c -10%, #ffd56f 70%);
   width: 100%;
-  padding: 50px 0 20px 0;
+  padding: 30px 0 0 0;
 }
 
 footer .footer-left {
@@ -1237,6 +1232,12 @@ footer .bottom-bar a:hover {
 footer .copyright {
   text-align: center;
   margin-top: 10px;
+  background-color: #ffd56f;
+}
+
+footer .copyright p {
+  margin: 0;
+  padding: 8px 0;
 }
 
 @media screen and (max-width: 992px) {
