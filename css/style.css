@@ -595,16 +595,6 @@ ul.drop-down-menu-top li.sub-drop-down-menu-top ul.sec li a:hover {
   color: #ffd56f;
 }
 
-li.no-dropdown a {
-  padding: 0 !important;
-}
-
-@media screen and (max-width: 992px) {
-  li.no-dropdown a {
-    padding: 10px 0 !important;
-  }
-}
-
 ul.nav.navbar-nav {
   align-items: center;
 }
@@ -623,8 +613,22 @@ ul.nav.navbar-nav li a.dropdown-toggle {
   }
 }
 
+@media screen and (min-width: 992px) {
+  ul.nav.navbar-nav li a.dropdown-toggle {
+    font-size: 1.125rem;
+    letter-spacing: 1px;
+    padding: 20px 10px;
+    font-weight: 600;
+  }
+  ul.nav.navbar-nav li a.dropdown-toggle::after {
+    font-family: 'FontAwesome';
+    content: "\f0d7";
+    margin-left: 5px;
+    margin-top: 2px;
+  }
+}
+
 ul.nav.navbar-nav li a.dropdown-toggle::after {
-  content: "";
   border: none;
   position: absolute;
   top: 50%;
@@ -689,6 +693,10 @@ ul.nav.navbar-nav li ul.dropdown-menu li.drop-item a:hover {
 
 .main-nav {
   padding: 10px 0;
+}
+
+.main-nav .navbar-header button.navbar-toggle:focus {
+  outline: none;
 }
 
 .main-nav .navbar-header a.navbar-brand img {

@@ -401,23 +401,25 @@
     </script>
     <!-- 滑動-->
     <script>
-      var prevScrollpos = window.pageYOffset;
-      window.onscroll = function () {
-          var currentScrollPos = window.pageYOffset;
-          // 下滑隱藏導覽列
-          if (prevScrollpos < 0){
-              document.getElementById("navbar").style.top = "0";
+      if ($(window).width() < 992){
+          var prevScrollpos = window.pageYOffset;
+          window.onscroll = function () {
+              var currentScrollPos = window.pageYOffset;
+              // 下滑隱藏導覽列
+              if (prevScrollpos < 0){
+                  document.getElementById("navbar").style.top = "0";
+              }
+              else if (prevScrollpos > currentScrollPos) {
+                  document.getElementById("navbar").style.top = "0";
+              }
+              else {
+                  document.getElementById("navbar").style.top = "-135px";
+              }
+              prevScrollpos = currentScrollPos;
+              // 手機版視窗滾動收回導覽列
+              var element = document.getElementById("navbar-menu");
+              element.classList.remove("show");
           }
-          else if (prevScrollpos > currentScrollPos) {
-              document.getElementById("navbar").style.top = "0";
-          }
-          else {
-              document.getElementById("navbar").style.top = "-135px";
-          }
-          prevScrollpos = currentScrollPos;
-          // 手機版視窗滾動收回導覽列
-          var element = document.getElementById("navbar-menu");
-          element.classList.remove("show");
       }
     </script>
   </body>

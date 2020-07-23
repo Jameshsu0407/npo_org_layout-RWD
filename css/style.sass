@@ -437,29 +437,43 @@ ul.drop-down-menu-top
                     line-height: 35px
                     &:hover
                         color: $color_yellow	
-// 沒有下拉式的nav調整
-li.no-dropdown
-    a
-        // 壓過bootsnav樣式
-        padding: 0 !important
-        @media screen and ( max-width: 992px )
-            //  壓過電腦版padding:0的important
-            padding: 10px 0 !important
+// // 沒有下拉式的nav調整
+// li.no-dropdown
+//     a
+//         // 壓過bootsnav樣式
+//         padding: 0 !important
+//         @media screen and ( max-width: 992px )
+//             //  壓過電腦版padding:0的important
+//             padding: 10px 0 !important
+
 // 選單樣式
 ul.nav.navbar-nav
     align-items: center
     // 選單樣式
     li
         padding: 8px 12px 0 12px
+        // 電腦版第一層下拉式選單
         a.dropdown-toggle
             // 有下拉選單的，壓過bootsnav樣式
             padding: 0 !important
             @media screen and ( max-width: 992px )
                 // 壓過電腦版padding:0的important
                 padding: 10px 0 !important
+            @media screen and ( min-width: 992px )
+                // 壓過預設在小於1024px字型樣式不見
+                font-size: 1.125rem
+                letter-spacing: 1px
+                padding: 20px 10px
+                font-weight: 600
+                // 壓過預設在小於1024px就沒有三角形
+                &::after
+                    font-family: 'FontAwesome'
+                    content: "\f0d7"
+                    margin-left: 5px
+                    margin-top: 2px
             // 下拉選單箭頭
             &::after
-                content: ""
+                // content: ""
                 border: none
                 position: absolute
                 top: 50%
@@ -507,6 +521,9 @@ ul.nav.navbar-nav
     padding: 10px 0
     .navbar-header
         button.navbar-toggle
+            &:focus
+                // 漢堡不要有外框
+                outline: none
         a.navbar-brand
             // padding: 0
             // @media screen and ( max-width: 350px )
@@ -523,7 +540,6 @@ ul.nav.navbar-nav
 @media (max-width: 992px) 
 	nav.navbar.bootsnav ul.nav > li > a 
 		font-weight: normal
-	
 	.navbar-expand-lg .navbar-nav > li 
 		margin-left: 30px
 @media (max-width: 992px) 
