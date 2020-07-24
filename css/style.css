@@ -1206,13 +1206,25 @@ footer {
   padding: 30px 0 0 0;
 }
 
+@media screen and (max-width: 992px) {
+  footer {
+    padding: 10px 0 0 0;
+  }
+}
+
 footer .footer-left {
   padding-top: 40px;
 }
 
+@media screen and (max-width: 992px) {
+  footer .footer-left {
+    padding-top: 10px;
+  }
+}
+
 footer .footer-left p {
   padding: 0;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 footer .footer-right .npotimes {
@@ -8730,5 +8742,56 @@ footer .copyright p {
 
 #com_donate_unit .content #back h4 {
   padding: 10px 20px;
+}
+
+#site_tour .content_top {
+  margin-top: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#site_tour .content_top h2.content_title::before {
+  display: none;
+}
+
+#site_tour .content_top .sitemap_content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0;
+}
+
+#site_tour .content_top .sitemap_content .sidemap_list {
+  padding: 20px 15px 30px 15px;
+}
+
+#site_tour .content_top .sitemap_content .sidemap_list h3 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-bottom: 10px;
+}
+
+#site_tour .content_top .sitemap_content .sidemap_list ul li {
+  padding: 10px 0;
+  border-bottom: 1px dotted #B5B8A3;
+}
+
+#site_tour .content_top .sitemap_content .sidemap_list ul li a {
+  transition: 0.6s;
+}
+
+#site_tour .content_top .sitemap_content .sidemap_list ul li a:hover {
+  color: #FA9C25;
+}
+
+#site_tour .content_top .sitemap_content .sidemap_list ul li i {
+  margin-left: 10px;
+}
+
+#site_tour .content_top .sitemap_content .sidemap_list ul li i.sub {
+  margin-left: 25px;
 }
 /*# sourceMappingURL=style.css.map */

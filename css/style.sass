@@ -908,13 +908,16 @@ footer
     // box-shadow: 0px 0px 8px -1px
     background-image: linear-gradient( 180deg,  $color_orange -10%, $color_yellow 70% )
     width: 100%
-    
     padding: 30px 0 0 0
+    @media screen and ( max-width: 992px )
+        padding: 10px 0 0 0
     .footer-left
         padding-top: 40px
+        @media screen and ( max-width: 992px )
+            padding-top: 10px
         p
             padding: 0
-            margin-bottom: 15px
+            margin-bottom: 5px
 
     .footer-right
         .npotimes
@@ -5902,3 +5905,39 @@ footer
         #back
             h4
                 padding: 10px 20px
+// ----------------------------------------------------- 
+// 14網站導覽
+#site_tour
+    .content_top
+        margin-top: 150px
+        display: flex
+        flex-wrap: wrap
+        flex-direction: row
+        justify-content: center
+        h2.content_title
+            &::before
+                display: none
+        .sitemap_content
+            display: flex
+            flex-wrap: wrap
+            flex-direction: row
+            padding: 0
+            .sidemap_list
+                padding: 20px 15px 30px 15px
+                h3
+                    +title
+                    margin-bottom: 10px
+                ul
+                    li
+                        padding: 10px 0
+                        border-bottom: 1px dotted $color_gray
+                        a
+                            transition: 0.6s
+                            &:hover
+                                color: $color_dark_orange
+                        i
+                            margin-left: 10px
+                        i.sub
+                            margin-left: 25px
+
+   
