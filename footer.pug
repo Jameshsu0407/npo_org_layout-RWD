@@ -30,7 +30,7 @@ script(src="./js/jquery.js")
 // BT4
 script(src="./js/popper.min.js")
 script(src="./js/bootstrap.js")
-script(src="./js/bootstrap.bundle.js")
+//- script(src="./js/bootstrap.bundle.js")
 // slick
 script(src="./js/slick.js")
 // bootnav
@@ -45,16 +45,13 @@ script(src="./js/bootstrap-select.js")
 // script
 script(src="./js/script.js")
 
-// window.scroll
-script.
-    window.onscroll = function () {
-        removeShow();
-    }
+
 // fullcalendar初始化
 script.
     document.addEventListener('DOMContentLoaded', function () {
         var calendarEl = document.getElementById('calendar');
-        var calendar = new FullCalendar.Calendar(calendarEl, {
+        if (calendarEl != null){
+            var calendar = new FullCalendar.Calendar(calendarEl, {
             plugins: ['interaction','dayGrid'],
             fixedWeekCount: false,
             selectable: true,
@@ -63,9 +60,11 @@ script.
                 {start: '2020-06-22'}
             ]
             });
-        calendar.render();
-        // 中文語系
-        calendar.setOption('locale', 'zh-tw');
+            calendar.render();
+            // 中文語系
+            calendar.setOption('locale', 'zh-tw');
+        }
+        
     });
 // 滑動
 script.

@@ -109,17 +109,27 @@ ul
     cursor: pointer !important
 select,textarea,input,.form-control
     border: 1px solid $color_light_gray
+    outline: none !important
+    box-shadow: none !important
     transition: 0.5s
     &:focus,&:active
-        border-color: $color_dark_orange
+        border-color: $color_dark_orange !important
+        outline: none !important
+        box-shadow: none !important
 // select預設樣式
 .dropdown.bootstrap-select
+    &:focus
+        outline: none !important
+        box-shadow: none !important
     button.dropdown-toggle
+        outline: none !important
+        box-shadow: none !important
         &:active
             background-color: transparent
             border-color: $color_dark_orange
         &:focus
             outline: none !important
+            box-shadow: none !important
             border-color: $color_dark_orange !important
         background-color: transparent
         border: 1px solid $color_light_gray
@@ -138,6 +148,13 @@ select,textarea,input,.form-control
                     background-color: lighten($color_orange,10% )
                     &:active
                         background-color: lighten($color_orange,10% )
+// bootstrap-select取消外框
+.bootstrap-select > select.mobile-device:focus + .dropdown-toggle,
+.bootstrap-select .dropdown-toggle:focus 
+  outline: none !important
+  border: 1px solid $color_dark_orange
+
+
 // -----------------------------------------------------
 // page
 #page
@@ -446,19 +463,17 @@ ul.drop-down-menu-top
 //             //  壓過電腦版padding:0的important
 //             padding: 10px 0 !important
 
-// 選單樣式
+// pc版選單樣式
+// 第一層下拉式選單
 ul.nav.navbar-nav
     align-items: center
-    // 選單樣式
-    li
+    // 第一層下拉式選單內容
+    li.dropdown
         padding: 8px 12px 0 12px
-        // 電腦版第一層下拉式選單
         a.dropdown-toggle
             // 有下拉選單的，壓過bootsnav樣式
             padding: 0 !important
-            @media screen and ( max-width: 992px )
-                // 壓過電腦版padding:0的important
-                padding: 10px 0 !important
+            color: black
             @media screen and ( min-width: 992px )
                 // 壓過預設在小於1024px字型樣式不見
                 font-size: 1.125rem
@@ -473,26 +488,44 @@ ul.nav.navbar-nav
                     margin-top: 2px
             // 下拉選單箭頭
             &::after
-                // content: ""
                 border: none
                 position: absolute
                 top: 50%
                 transform: translateY(-53%)
                 right: -13px
+        // 第二層下拉式選單
         ul.dropdown-menu
             margin: 0
-            font-family: "微軟正黑體", "新細明體", "標楷體", Arial, "Noto Sans","Noto Serif"
             font-size: 1rem
             font-weight: bold
+            border-bottom: none
+            // 第二層選單內容
             li.drop-item
                 padding: 0
                 margin: 0
                 border-bottom: 1px solid $color_light_gray
                 text-align: center
-                @media screen and ( max-width: 992px )
-                    text-align: start
                 a
                     display: block
+                    color: black
+                    border-bottom: none
+                    padding: 10px
+                    width: 100%
+                    transition: 0.5s
+                    &:hover
+                        color: $color_dark_orange
+                        background-color: transparent
+            // 第二層下拉式選單內容
+            li.dropdown
+                padding: 10px
+                border-bottom: 1px solid $color_light_gray
+                a.dropdown-toggle
+                    color: black
+                    font-size: 16px
+                    display: block
+                    text-align: center
+                    @media screen and ( max-width: 992px )
+                        text-align: left
                     color: $color_black
                     border-bottom: none !important
                     padding: 10px
@@ -501,21 +534,54 @@ ul.nav.navbar-nav
                     &:hover
                         color: $color_dark_orange
                         background-color: transparent
-                    @media screen and ( max-width: 992px )
-                        // 壓過bootsnav樣式
-                        color: $color_black !important
+                    &::after
+                        content: ""
+                    &::before
+                        position: absolute
+                        right: 0
+                ul.dropdown-menu
+                    margin: 0
+                    font-size: 1rem
+                    font-weight: bold
+                    top: -1px
+                    // 第三層下拉式選單內容
+                    li.drop-item
+
 // 手機、平板選單樣式
 @media screen and ( max-width: 992px )
+    // 第一層下拉式選單
     ul.nav.navbar-nav
         display: block
-        li
-            padding: 10px
+        // 第一層下拉式選單內容
+        li.dropdown
+            padding: 0
+            a.dropdown-toggle
+                // 壓過pc的樣式
+                padding: 20px 0 !important
+            // 第二層下拉式選單
             ul.dropdown-menu
-                li
-                    padding: 10px 0 !important
+                display: block
+                // 第二層選單內容
+                li.drop-item
+                    padding: 0
+                    text-align: left
                     a
-                        &:hover
-                            color: #000
+                        // 壓過bootnav預設
+                        padding: 20px 0 !important
+                        border-bottom: none !important
+                        color: black !important
+                // 第二層下拉式選單內容
+                li.dropdown
+                    padding: 0px
+                    border-bottom: none !important
+                    a.dropdown-toggle
+                        border-bottom: 1px solid $color_light_gray !important
+                    ul.dropdown-menu
+                        li.drop-item
+
+
+
+
 // 主要導覽列
 .main-nav
     padding: 10px 0
@@ -537,11 +603,7 @@ ul.nav.navbar-nav
                 @media screen and ( max-width: 340px )
                     width: 220px
                     height: 70px
-@media (max-width: 992px) 
-	nav.navbar.bootsnav ul.nav > li > a 
-		font-weight: normal
-	.navbar-expand-lg .navbar-nav > li 
-		margin-left: 30px
+
 @media (max-width: 992px) 
 	nav.navbar.bootsnav .navbar-collapse.collapse.show 
 		display: block !important
@@ -568,39 +630,15 @@ ul.nav.navbar-nav
 	flex-grow: 0
 	-ms-flex-align: center
 	align-items: center
-// 第三層樣式
-ul.dropdown-menu
-    li.dropdown
-        padding: 0
-        margin: 0
-        @media screen and ( max-width: 992px )
-            padding: 0 !important
-        a.dropdown-toggle
-            display: block
-            padding: 10px !important
-            color: $color_black !important
-            text-align: center
-            transition: 0.5s
-            @media screen and ( max-width: 992px )
-                text-align: left !important
-                padding-left: 0 !important
-                padding: 10px 0 !important
-            &:hover
-                background-color: initial !important
-                color: $color_dark_orange !important
-            &::before
-                position: absolute
-                right: 10px
-                @media screen and ( max-width: 992px )
-                    right: 0
+
 // -----------------------------------------------------
 // 上層廣告
 #top-ads
 	margin: 0
 	padding-top: 125px
-@media (max-width: 992px)
-	#top-ads
-		padding-top: 135px
+// @media (max-width: 992px)
+// 	#top-ads
+// 		padding-top: 135px
 // -----------------------------------------------------
 // 登錄、搜尋區塊
 #searchandlogin
@@ -870,6 +908,7 @@ footer
     // box-shadow: 0px 0px 8px -1px
     background-image: linear-gradient( 180deg,  $color_orange -10%, $color_yellow 70% )
     width: 100%
+    
     padding: 30px 0 0 0
     .footer-left
         padding-top: 40px
@@ -1734,38 +1773,42 @@ footer
                 width: 80%
             @media screen and ( max-width: 576px )
                 width: 100%
-            // 會員下拉選單
-            .dropdown.bootstrap-select
-                button.dropdown-toggle
-                    &:active
+            select.selectpicker
+                &:active,&:focus
+                    outline: none !important
+                    box-shadow: none !important
+                // 會員下拉選單
+                .dropdown.bootstrap-select
+                    button.dropdown-toggle
+                        // &:active
+                        //     background-color: transparent
+                        //     border-color: $color_dark_orange
+                        // &:focus
+                        //     outline: none !important
+                        //     border-color: $color_dark_orange !important
                         background-color: transparent
-                        border-color: $color_dark_orange
-                    &:focus
-                        outline: none !important
-                        border-color: $color_dark_orange !important
-                    background-color: transparent
-                    border: 1px solid $color_light_gray
-                    padding-right: 15px
-                    // 第一層的圖示
-                    i
-                        width: 20px
-                .dropdown-menu.show
-                    padding: 0
-                    margin: 0
-                    ul.dropdown-menu.inner.show
-                        li
-                            a.dropdown-item
-                                &:active
+                        border: 1px solid $color_light_gray
+                        padding-right: 15px
+                        // 第一層的圖示
+                        i
+                            width: 20px
+                    .dropdown-menu
+                        padding: 0
+                        margin: 0
+                        ul.dropdown-menu.inner 
+                            li
+                                a.dropdown-item
+                                    &:active
+                                        background-color: lighten($color_yellow,10% )
+                                    color: $color_black
+                                    padding: 10px 12px
+                                    // 第二層的圖示
+                                    span.fas,span.far
+                                        width: 20px
+                                a.dropdown-item.active
                                     background-color: lighten($color_yellow,10% )
-                                color: $color_black
-                                padding: 10px 12px
-                                // 第二層的圖示
-                                span.fas,span.far
-                                    width: 20px
-                            a.dropdown-item.active
-                                background-color: lighten($color_yellow,10% )
-                                &:active
-                                    background-color: lighten($color_yellow,10% )
+                                    &:active
+                                        background-color: lighten($color_yellow,10% )
             // input格式
             .input-group
                 .input-group-text

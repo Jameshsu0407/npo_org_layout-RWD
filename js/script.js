@@ -1,20 +1,22 @@
-// // 初始化
-// $(function () {
-//     // 導覽列初始化
-//     $('#bootnavbar').bootnavbar();
-//     // selectpicker初始化
-//     $('select').selectpicker();
-// })
-
 $(document).ready(function($) {
     // 列表點選連結
     $(".clickable-row").click(function() {
         window.document.location = $(this).data("href");
     });
     // 導覽列初始化
-    $('#bootnavbar').bootnavbar();
-    // selectpicker初始化
-    $('select').selectpicker();
+    // $('#bootnavbar').bootnavbar();
+
+
+    // selectpicker手機原生選單
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+        $('.selectpicker').selectpicker('mobile');
+        // $.fn.selectpicker.Constructor.DEFAULTS.mobile = true;
+    } 
+    else{
+        selectpicker初始化
+        // $('.selectpicker').selectpicker().selectpicker("render");
+        $(".selectpicker").selectpicker("refresh");
+    }
 });
 
 // 首頁上方輪播圖
@@ -142,4 +144,3 @@ $('input[type="file"]').change(function(e){
     var fileName = e.target.files[0].name;
     $('.custom-file-label').html(fileName);
 });
-

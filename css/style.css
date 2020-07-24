@@ -115,14 +115,25 @@ ul {
 
 select, textarea, input, .form-control {
   border: 1px solid #d4d4d4;
+  outline: none !important;
+  box-shadow: none !important;
   transition: 0.5s;
 }
 
 select:focus, select:active, textarea:focus, textarea:active, input:focus, input:active, .form-control:focus, .form-control:active {
-  border-color: #FA9C25;
+  border-color: #FA9C25 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.dropdown.bootstrap-select:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .dropdown.bootstrap-select button.dropdown-toggle {
+  outline: none !important;
+  box-shadow: none !important;
   background-color: transparent;
   border: 1px solid #d4d4d4;
   padding-right: 15px;
@@ -135,6 +146,7 @@ select:focus, select:active, textarea:focus, textarea:active, input:focus, input
 
 .dropdown.bootstrap-select button.dropdown-toggle:focus {
   outline: none !important;
+  box-shadow: none !important;
   border-color: #FA9C25 !important;
 }
 
@@ -158,6 +170,12 @@ select:focus, select:active, textarea:focus, textarea:active, input:focus, input
 
 .dropdown.bootstrap-select .dropdown-menu.show ul.dropdown-menu.inner.show li a.dropdown-item.active:active {
   background-color: #ffdbaf;
+}
+
+.bootstrap-select > select.mobile-device:focus + .dropdown-toggle,
+.bootstrap-select .dropdown-toggle:focus {
+  outline: none !important;
+  border: 1px solid #FA9C25;
 }
 
 #page {
@@ -599,28 +617,23 @@ ul.nav.navbar-nav {
   align-items: center;
 }
 
-ul.nav.navbar-nav li {
+ul.nav.navbar-nav li.dropdown {
   padding: 8px 12px 0 12px;
 }
 
-ul.nav.navbar-nav li a.dropdown-toggle {
+ul.nav.navbar-nav li.dropdown a.dropdown-toggle {
   padding: 0 !important;
-}
-
-@media screen and (max-width: 992px) {
-  ul.nav.navbar-nav li a.dropdown-toggle {
-    padding: 10px 0 !important;
-  }
+  color: black;
 }
 
 @media screen and (min-width: 992px) {
-  ul.nav.navbar-nav li a.dropdown-toggle {
+  ul.nav.navbar-nav li.dropdown a.dropdown-toggle {
     font-size: 1.125rem;
     letter-spacing: 1px;
     padding: 20px 10px;
     font-weight: 600;
   }
-  ul.nav.navbar-nav li a.dropdown-toggle::after {
+  ul.nav.navbar-nav li.dropdown a.dropdown-toggle::after {
     font-family: 'FontAwesome';
     content: "\f0d7";
     margin-left: 5px;
@@ -628,7 +641,7 @@ ul.nav.navbar-nav li a.dropdown-toggle {
   }
 }
 
-ul.nav.navbar-nav li a.dropdown-toggle::after {
+ul.nav.navbar-nav li.dropdown a.dropdown-toggle::after {
   border: none;
   position: absolute;
   top: 50%;
@@ -636,28 +649,44 @@ ul.nav.navbar-nav li a.dropdown-toggle::after {
   right: -13px;
 }
 
-ul.nav.navbar-nav li ul.dropdown-menu {
+ul.nav.navbar-nav li.dropdown ul.dropdown-menu {
   margin: 0;
-  font-family: "微軟正黑體", "新細明體", "標楷體", Arial, "Noto Sans","Noto Serif";
   font-size: 1rem;
   font-weight: bold;
+  border-bottom: none;
 }
 
-ul.nav.navbar-nav li ul.dropdown-menu li.drop-item {
+ul.nav.navbar-nav li.dropdown ul.dropdown-menu li.drop-item {
   padding: 0;
   margin: 0;
   border-bottom: 1px solid #d4d4d4;
   text-align: center;
 }
 
-@media screen and (max-width: 992px) {
-  ul.nav.navbar-nav li ul.dropdown-menu li.drop-item {
-    text-align: start;
-  }
+ul.nav.navbar-nav li.dropdown ul.dropdown-menu li.drop-item a {
+  display: block;
+  color: black;
+  border-bottom: none;
+  padding: 10px;
+  width: 100%;
+  transition: 0.5s;
 }
 
-ul.nav.navbar-nav li ul.dropdown-menu li.drop-item a {
+ul.nav.navbar-nav li.dropdown ul.dropdown-menu li.drop-item a:hover {
+  color: #FA9C25;
+  background-color: transparent;
+}
+
+ul.nav.navbar-nav li.dropdown ul.dropdown-menu li.dropdown {
+  padding: 10px;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+ul.nav.navbar-nav li.dropdown ul.dropdown-menu li.dropdown a.dropdown-toggle {
+  color: black;
+  font-size: 16px;
   display: block;
+  text-align: center;
   color: #343A40;
   border-bottom: none !important;
   padding: 10px;
@@ -665,29 +694,61 @@ ul.nav.navbar-nav li ul.dropdown-menu li.drop-item a {
   transition: 0.5s;
 }
 
-ul.nav.navbar-nav li ul.dropdown-menu li.drop-item a:hover {
+@media screen and (max-width: 992px) {
+  ul.nav.navbar-nav li.dropdown ul.dropdown-menu li.dropdown a.dropdown-toggle {
+    text-align: left;
+  }
+}
+
+ul.nav.navbar-nav li.dropdown ul.dropdown-menu li.dropdown a.dropdown-toggle:hover {
   color: #FA9C25;
   background-color: transparent;
 }
 
-@media screen and (max-width: 992px) {
-  ul.nav.navbar-nav li ul.dropdown-menu li.drop-item a {
-    color: #343A40 !important;
-  }
+ul.nav.navbar-nav li.dropdown ul.dropdown-menu li.dropdown a.dropdown-toggle::after {
+  content: "";
+}
+
+ul.nav.navbar-nav li.dropdown ul.dropdown-menu li.dropdown a.dropdown-toggle::before {
+  position: absolute;
+  right: 0;
+}
+
+ul.nav.navbar-nav li.dropdown ul.dropdown-menu li.dropdown ul.dropdown-menu {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  top: -1px;
 }
 
 @media screen and (max-width: 992px) {
   ul.nav.navbar-nav {
     display: block;
   }
-  ul.nav.navbar-nav li {
-    padding: 10px;
+  ul.nav.navbar-nav li.dropdown {
+    padding: 0;
   }
-  ul.nav.navbar-nav li ul.dropdown-menu li {
-    padding: 10px 0 !important;
+  ul.nav.navbar-nav li.dropdown a.dropdown-toggle {
+    padding: 20px 0 !important;
   }
-  ul.nav.navbar-nav li ul.dropdown-menu li a:hover {
-    color: #000;
+  ul.nav.navbar-nav li.dropdown ul.dropdown-menu {
+    display: block;
+  }
+  ul.nav.navbar-nav li.dropdown ul.dropdown-menu li.drop-item {
+    padding: 0;
+    text-align: left;
+  }
+  ul.nav.navbar-nav li.dropdown ul.dropdown-menu li.drop-item a {
+    padding: 20px 0 !important;
+    border-bottom: none !important;
+    color: black !important;
+  }
+  ul.nav.navbar-nav li.dropdown ul.dropdown-menu li.dropdown {
+    padding: 0px;
+    border-bottom: none !important;
+  }
+  ul.nav.navbar-nav li.dropdown ul.dropdown-menu li.dropdown a.dropdown-toggle {
+    border-bottom: 1px solid #d4d4d4 !important;
   }
 }
 
@@ -709,15 +770,6 @@ ul.nav.navbar-nav li ul.dropdown-menu li.drop-item a:hover {
   .main-nav .navbar-header a.navbar-brand img {
     width: 220px;
     height: 70px;
-  }
-}
-
-@media (max-width: 992px) {
-  nav.navbar.bootsnav ul.nav > li > a {
-    font-weight: normal;
-  }
-  .navbar-expand-lg .navbar-nav > li {
-    margin-left: 30px;
   }
 }
 
@@ -760,58 +812,9 @@ ul.nav.navbar-nav li ul.dropdown-menu li.drop-item a:hover {
   align-items: center;
 }
 
-ul.dropdown-menu li.dropdown {
-  padding: 0;
-  margin: 0;
-}
-
-@media screen and (max-width: 992px) {
-  ul.dropdown-menu li.dropdown {
-    padding: 0 !important;
-  }
-}
-
-ul.dropdown-menu li.dropdown a.dropdown-toggle {
-  display: block;
-  padding: 10px !important;
-  color: #343A40 !important;
-  text-align: center;
-  transition: 0.5s;
-}
-
-@media screen and (max-width: 992px) {
-  ul.dropdown-menu li.dropdown a.dropdown-toggle {
-    text-align: left !important;
-    padding-left: 0 !important;
-    padding: 10px 0 !important;
-  }
-}
-
-ul.dropdown-menu li.dropdown a.dropdown-toggle:hover {
-  background-color: initial !important;
-  color: #FA9C25 !important;
-}
-
-ul.dropdown-menu li.dropdown a.dropdown-toggle::before {
-  position: absolute;
-  right: 10px;
-}
-
-@media screen and (max-width: 992px) {
-  ul.dropdown-menu li.dropdown a.dropdown-toggle::before {
-    right: 0;
-  }
-}
-
 #top-ads {
   margin: 0;
   padding-top: 125px;
-}
-
-@media (max-width: 992px) {
-  #top-ads {
-    padding-top: 135px;
-  }
 }
 
 #searchandlogin {
@@ -2554,49 +2557,44 @@ footer .copyright p {
   }
 }
 
-#all_login .right form .dropdown.bootstrap-select button.dropdown-toggle {
+#all_login .right form select.selectpicker:active, #all_login .right form select.selectpicker:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#all_login .right form select.selectpicker .dropdown.bootstrap-select button.dropdown-toggle {
   background-color: transparent;
   border: 1px solid #d4d4d4;
   padding-right: 15px;
 }
 
-#all_login .right form .dropdown.bootstrap-select button.dropdown-toggle:active {
-  background-color: transparent;
-  border-color: #FA9C25;
-}
-
-#all_login .right form .dropdown.bootstrap-select button.dropdown-toggle:focus {
-  outline: none !important;
-  border-color: #FA9C25 !important;
-}
-
-#all_login .right form .dropdown.bootstrap-select button.dropdown-toggle i {
+#all_login .right form select.selectpicker .dropdown.bootstrap-select button.dropdown-toggle i {
   width: 20px;
 }
 
-#all_login .right form .dropdown.bootstrap-select .dropdown-menu.show {
+#all_login .right form select.selectpicker .dropdown.bootstrap-select .dropdown-menu {
   padding: 0;
   margin: 0;
 }
 
-#all_login .right form .dropdown.bootstrap-select .dropdown-menu.show ul.dropdown-menu.inner.show li a.dropdown-item {
+#all_login .right form select.selectpicker .dropdown.bootstrap-select .dropdown-menu ul.dropdown-menu.inner li a.dropdown-item {
   color: #343A40;
   padding: 10px 12px;
 }
 
-#all_login .right form .dropdown.bootstrap-select .dropdown-menu.show ul.dropdown-menu.inner.show li a.dropdown-item:active {
+#all_login .right form select.selectpicker .dropdown.bootstrap-select .dropdown-menu ul.dropdown-menu.inner li a.dropdown-item:active {
   background-color: #ffe4a2;
 }
 
-#all_login .right form .dropdown.bootstrap-select .dropdown-menu.show ul.dropdown-menu.inner.show li a.dropdown-item span.fas, #all_login .right form .dropdown.bootstrap-select .dropdown-menu.show ul.dropdown-menu.inner.show li a.dropdown-item span.far {
+#all_login .right form select.selectpicker .dropdown.bootstrap-select .dropdown-menu ul.dropdown-menu.inner li a.dropdown-item span.fas, #all_login .right form select.selectpicker .dropdown.bootstrap-select .dropdown-menu ul.dropdown-menu.inner li a.dropdown-item span.far {
   width: 20px;
 }
 
-#all_login .right form .dropdown.bootstrap-select .dropdown-menu.show ul.dropdown-menu.inner.show li a.dropdown-item.active {
+#all_login .right form select.selectpicker .dropdown.bootstrap-select .dropdown-menu ul.dropdown-menu.inner li a.dropdown-item.active {
   background-color: #ffe4a2;
 }
 
-#all_login .right form .dropdown.bootstrap-select .dropdown-menu.show ul.dropdown-menu.inner.show li a.dropdown-item.active:active {
+#all_login .right form select.selectpicker .dropdown.bootstrap-select .dropdown-menu ul.dropdown-menu.inner li a.dropdown-item.active:active {
   background-color: #ffe4a2;
 }
 
