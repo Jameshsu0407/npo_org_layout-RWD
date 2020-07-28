@@ -166,7 +166,7 @@
               <li><i class="fa fa-caret-right"></i><a href="10.1.html">登出</a></li>
             </ul>
             <!-- 手機版導覽列-->
-            <select class="selectpicker phone_nav" onchange="location.href=this.options[this.selectedIndex].value">
+            <select class="selectpicker phone_nav" onchange="location.href=this.options[this.selectedIndex].value" data-size="5">
               <option value="10.1.1.1.html" selected>修改組織基本資料</option>
               <option value="10.1.1.2.html"> 公益新訊</option>
               <option value="10.1.1.3.html"> 最新活動</option>
@@ -384,7 +384,7 @@
                 <div class="col-12 col-md-6">
                   <div class="form-group">
                     <label>組織屬性</label>
-                    <select class="form-control">
+                    <select class="selectpicker form-control" data-size="5">
                       <option selected disabled>請選擇</option>
                       <option>粽合性服務</option>
                       <option>兒童青少年福利</option>
@@ -411,7 +411,7 @@
                 <div class="col-12 col-md-6">
                   <div class="form-group">
                     <label>性質</label>
-                    <select class="form-control">
+                    <select class="selectpicker form-control" data-size="5">
                       <option selected disabled>請選擇</option>
                       <option>(財團法人)基金會</option>
                       <option>(社團法人)協會</option>
@@ -978,7 +978,6 @@
               // 中文語系
               calendar.setOption('locale', 'zh-tw');
           }
-          
       });
     </script>
     <!-- 滑動-->

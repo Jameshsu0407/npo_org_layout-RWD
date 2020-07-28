@@ -166,7 +166,7 @@
               <li><i class="fa fa-caret-right"></i><a href="10.1.html">登出</a></li>
             </ul>
             <!-- 手機版導覽列-->
-            <select class="selectpicker phone_nav" onchange="location.href=this.options[this.selectedIndex].value">
+            <select class="selectpicker phone_nav" onchange="location.href=this.options[this.selectedIndex].value" data-size="5">
               <option value="10.1.1.1.html">修改組織基本資料</option>
               <option value="10.1.1.2.html" selected> 公益新訊</option>
               <option value="10.1.1.3.html"> 最新活動</option>
@@ -191,10 +191,13 @@
               <h4>機構代碼&nbsp;&nbsp;176</h4>
               <h4>機構名稱&nbsp;&nbsp;喜瑪拉雅研究發展基金會</h4>
               <div class="right_1"><span>年度</span>
-                <select class="post_year">
+                <select class="selectpicker post_year" data-size="5">
                   <option>2020</option>
                   <option>2019</option>
                   <option>2018</option>
+                  <option>2017</option>
+                  <option>2016</option>
+                  <option>2015</option>
                 </select>
                 <button class="btn btn-sm" type="button" onclick="javascript:location.href='10.1.1.2.1.html'">新增</button>
               </div>
@@ -408,7 +411,6 @@
               // 中文語系
               calendar.setOption('locale', 'zh-tw');
           }
-          
       });
     </script>
     <!-- 滑動-->

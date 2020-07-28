@@ -17,18 +17,18 @@ html(lang="en")
 					.table.col-12
 						form.form-inline.col-12.selector
 							.select_wrap.col-12.col-md-4
-								input.form-control.col-12(type="text" placeholder="請輸入關鍵字")
+								input.form-control.col-12(type="text" placeholder="請關鍵字")
 							.select_wrap.col-12.col-md-3
-								select.custom-select.col-12
-									option(selected="" disabled="") 請選擇年份
+								select.col-12.selectpicker(data-size="5")
+									option(selected="" disabled="") 年份
 									option 2020
 									option 2019
 									option 2018
 									option 2017
 									option 2016
 							.select_wrap.col-12.col-md-3
-								select.custom-select.col-12.welfare_type
-									option(selected="" disabled="") 請選擇月份
+								select.col-12.selectpicker(data-size="5")
+									option(selected="" disabled="") 月份
 									option 1
 									option 2
 									option 3

@@ -145,14 +145,14 @@
       <div class="row">
         <div class="content_top col-12">
           <h2 class="content_title col-12">補助公告</h2>
-          <div class="table col-12">
+          <div class="col-12">
             <form class="form-inline col-12 selector">
               <div class="select_wrap col-12 col-md-4">
-                <input class="form-control col-12" type="text" placeholder="請輸入關鍵字">
+                <input class="form-control col-12" type="text" placeholder="關鍵字">
               </div>
               <div class="select_wrap col-12 col-md-3">
-                <select class="custom-select col-12">
-                  <option selected="" disabled="">請選擇年份</option>
+                <select class="col-12 selectpicker" data-size="5">
+                  <option selected="" disabled="">年份</option>
                   <option>2020</option>
                   <option>2019</option>
                   <option>2018</option>
@@ -161,8 +161,8 @@
                 </select>
               </div>
               <div class="select_wrap col-12 col-md-3">
-                <select class="custom-select col-12 welfare_type">
-                  <option selected="" disabled="">請選擇月份</option>
+                <select class="col-12 selectpicker" data-size="5">
+                  <option selected="" disabled="">月份</option>
                   <option>1</option>
                   <option>2</option>
                   <option>3</option>
@@ -353,7 +353,6 @@
               // 中文語系
               calendar.setOption('locale', 'zh-tw');
           }
-          
       });
     </script>
     <!-- 滑動-->

@@ -27,11 +27,11 @@ $('#top-ads').slick({
 });
 // 首頁活動輪播圖
 $('#activity_card').slick({
-    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
+    adaptiveHeight: true,
     dots:true,
     // centerMode: true,
     arrows: false
@@ -40,7 +40,8 @@ $('#activity_card').slick({
 $('.shop_slick').slick({
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 2000,
+    adaptiveHeight: true,
+    autoplaySpeed: 5000,
     slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [
@@ -61,7 +62,8 @@ $('.shop_slick').slick({
         {
             breakpoint: 576,
             settings: {
-                slidesToShow: 1
+                slidesToShow: 1,
+                dots:true
             }
         }
     ]

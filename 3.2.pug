@@ -10,16 +10,16 @@ html(lang="en")
 		//- 匯入導覽列+gototop
 		include nav.pug
 
-		section#npo_news.container
+		section#npo_activities.container
 			.row
 				.content_top.col-12
 					h2.content_title.col-12 最新活動
 					.table.col-12
 						form.form-inline.col-12.selector
 							.select_wrap.col-12.col-md-4
-								input.form-control.col-12(type="text" placeholder="請輸入活動")
+								input.form-control.col-12(type="text" placeholder="關鍵字")
 							.select_wrap.col-12.col-md-2
-								select.custom-select.col-12
+								select.col-12.selectpicker(data-size="5")
 									option(selected="" disabled="") 類型
 									option 活動
 									option 研習
@@ -27,7 +27,7 @@ html(lang="en")
 									option 演講
 									option 座談
 							.select_wrap.col-12.col-md-2
-								select.custom-select.col-12
+								select.col-12.selectpicker(data-size="5")
 									option(selected="" disabled="") 年份
 									option 2020
 									option 2019
@@ -35,7 +35,7 @@ html(lang="en")
 									option 2017
 									option 2016
 							.select_wrap.col-12.col-md-2
-								select.custom-select.col-12.welfare_type
+								select.col-12.selectpicker(data-size="5")
 									option(selected="" disabled="") 月份
 									option 1
 									option 2
@@ -55,133 +55,125 @@ html(lang="en")
 						.col-12.col-lg-6
 							a(href="12.2.1.html")
 								.post
-									.col-6.col-md-5.post_left
+									.col-12.col-md-5.post_left
 										.time_box
 											span.year 2020
 											span.date 06/15
 										// 建議尺寸800x450
-										.pic
-											img.img-fluid.fixed_size(src="./img/videos/v1.jpg" alt="")
-									.col-6.col-md-7.post_right
+										img.img-fluid.fixed_size(src="https://fakeimg.pl/800x450/" alt="")
+									.col-12.col-md-7.post_right
 										h3 標題標題標題
 										p 內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
 						.col-12.col-lg-6
 							a(href="12.2.1.html")
 								.post
-									.col-6.col-md-5.post_left
+									.col-12.col-md-5.post_left
 										.time_box
 											span.year 2020
 											span.date 06/15
 										// 建議尺寸800x450
-										.pic
-											img.img-fluid.fixed_size(src="https://fakeimg.pl/800x450/")
-									.col-6.col-md-7.post_right
+										img.img-fluid.fixed_size(src="https://fakeimg.pl/550x550/" alt="")
+									.col-12.col-md-7.post_right
 										h3 標題標題標題
 										p 內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
 						.col-12.col-lg-6
 							a(href="12.2.1.html")
 								.post
-									.col-6.col-md-5.post_left
+									.col-12.col-md-5.post_left
 										.time_box
 											span.year 2020
 											span.date 06/15
 										// 建議尺寸800x450
-										.pic
-											img.img-fluid.fixed_size(src="https://fakeimg.pl/200x1000/")
-									.col-6.col-md-7.post_right
+										img.img-fluid.fixed_size(src="https://fakeimg.pl/1000x200/" alt="")
+									.col-12.col-md-7.post_right
 										h3 標題標題標題
 										p 內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
 						.col-12.col-lg-6
 							a(href="12.2.1.html")
 								.post
-									.col-6.col-md-5.post_left
+									.col-12.col-md-5.post_left
 										.time_box
 											span.year 2020
 											span.date 06/15
 										// 建議尺寸800x450
-										.pic
-											img.img-fluid.fixed_size(src="https://fakeimg.pl/1000x200/")
-									.col-6.col-md-7.post_right
+										img.img-fluid.fixed_size(src="https://fakeimg.pl/200x1000/" alt="")
+									.col-12.col-md-7.post_right
 										h3 標題標題標題
 										p 內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
 						.col-12.col-lg-6
 							a(href="12.2.1.html")
 								.post
-									.col-6.col-md-5.post_left
+									.col-12.col-md-5.post_left
 										.time_box
 											span.year 2020
 											span.date 06/15
 										// 建議尺寸800x450
-										.pic
-											img.img-fluid.fixed_size(src="https://fakeimg.pl/450x450/")
-									.col-6.col-md-7.post_right
+										img.img-fluid.fixed_size(src="https://fakeimg.pl/800x450/" alt="")
+									.col-12.col-md-7.post_right
 										h3 標題標題標題
 										p 內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
 						.col-12.col-lg-6
 							a(href="12.2.1.html")
 								.post
-									.col-6.col-md-5.post_left
+									.col-12.col-md-5.post_left
 										.time_box
 											span.year 2020
 											span.date 06/15
 										// 建議尺寸800x450
-										.pic
-											img.img-fluid.fixed_size(src="https://fakeimg.pl/100x100/")
-									.col-6.col-md-7.post_right
+										img.img-fluid.fixed_size(src="https://fakeimg.pl/800x450/" alt="")
+									.col-12.col-md-7.post_right
 										h3 標題標題標題
 										p 內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
 						.col-12.col-lg-6
 							a(href="12.2.1.html")
 								.post
-									.col-6.col-md-5.post_left
+									.col-12.col-md-5.post_left
 										.time_box
 											span.year 2020
 											span.date 06/15
 										// 建議尺寸800x450
-										.pic
-											img.img-fluid.fixed_size(src="https://fakeimg.pl/800x450/")
-									.col-6.col-md-7.post_right
+										img.img-fluid.fixed_size(src="https://fakeimg.pl/800x450/" alt="")
+									.col-12.col-md-7.post_right
 										h3 標題標題標題
 										p 內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
 						.col-12.col-lg-6
 							a(href="12.2.1.html")
 								.post
-									.col-6.col-md-5.post_left
+									.col-12.col-md-5.post_left
 										.time_box
 											span.year 2020
 											span.date 06/15
 										// 建議尺寸800x450
-										.pic
-											img.img-fluid.fixed_size(src="https://fakeimg.pl/800x450/")
-									.col-6.col-md-7.post_right
+										img.img-fluid.fixed_size(src="https://fakeimg.pl/800x450/" alt="")
+									.col-12.col-md-7.post_right
 										h3 標題標題標題
 										p 內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
 						.col-12.col-lg-6
 							a(href="12.2.1.html")
 								.post
-									.col-6.col-md-5.post_left
+									.col-12.col-md-5.post_left
 										.time_box
 											span.year 2020
 											span.date 06/15
 										// 建議尺寸800x450
-										.pic
-											img.img-fluid.fixed_size(src="https://fakeimg.pl/800x450/")
-									.col-6.col-md-7.post_right
+										img.img-fluid.fixed_size(src="https://fakeimg.pl/800x450/" alt="")
+									.col-12.col-md-7.post_right
 										h3 標題標題標題
 										p 內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
 						.col-12.col-lg-6
 							a(href="12.2.1.html")
 								.post
-									.col-6.col-md-5.post_left
+									.col-12.col-md-5.post_left
 										.time_box
 											span.year 2020
 											span.date 06/15
 										// 建議尺寸800x450
-										.pic
-											img.img-fluid.fixed_size(src="https://fakeimg.pl/800x450/")
-									.col-6.col-md-7.post_right
+										img.img-fluid.fixed_size(src="https://fakeimg.pl/800x450/" alt="")
+									.col-12.col-md-7.post_right
 										h3 標題標題標題
 										p 內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
+						
+						
 					//- 匯入分頁
 					include page.pug
 		
