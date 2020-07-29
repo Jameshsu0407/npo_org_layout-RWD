@@ -147,8 +147,29 @@
           <h2 class="content_title col-12">非營利組織名錄</h2>
           <div class="table col-12">
             <form class="form-inline col-12 selector">
-              <div class="select_wrap col-12 col-md-4">
-                <input class="form-control col-12" type="text" placeholder="關鍵字">
+              <div class="select_wrap col-12 col-md-3">
+                <select class="col-12 selectpicker" data-size="5">
+                  <option selected="" disabled="">組織類型</option>
+                  <option>綜合性服務</option>
+                  <option>兒童青少年福利</option>
+                  <option>婦女福利</option>
+                  <option>老人福利</option>
+                  <option>身心障礙福利</option>
+                  <option>家庭福利</option>
+                  <option>健康醫療</option>
+                  <option>心理衛生</option>
+                  <option>社區規劃(營造)</option>
+                  <option>環境保護</option>
+                  <option>國際合作交流</option>
+                  <option>教育與科學</option>
+                  <option>文化藝術</option>
+                  <option>人權和平</option>
+                  <option>消費者保護</option>
+                  <option>教育與科學</option>
+                  <option>性別平等</option>
+                  <option>政府單位</option>
+                  <option>動物保護</option>
+                </select>
               </div>
               <div class="select_wrap col-12 col-md-3">
                 <select class="col-12 selectpicker" data-size="5">
@@ -180,29 +201,8 @@
                   <option>連江縣</option>
                 </select>
               </div>
-              <div class="select_wrap col-12 col-md-3">
-                <select class="col-12 selectpicker" data-size="5">
-                  <option selected="" disabled="">類型</option>
-                  <option>綜合性服務</option>
-                  <option>兒童青少年福利</option>
-                  <option>婦女福利</option>
-                  <option>老人福利</option>
-                  <option>身心障礙福利</option>
-                  <option>家庭福利</option>
-                  <option>健康醫療</option>
-                  <option>心理衛生</option>
-                  <option>社區規劃(營造)</option>
-                  <option>環境保護</option>
-                  <option>國際合作交流</option>
-                  <option>教育與科學</option>
-                  <option>文化藝術</option>
-                  <option>人權和平</option>
-                  <option>消費者保護</option>
-                  <option>教育與科學</option>
-                  <option>性別平等</option>
-                  <option>政府單位</option>
-                  <option>動物保護</option>
-                </select>
+              <div class="select_wrap col-12 col-md-4">
+                <input class="form-control col-12" type="text" placeholder="關鍵字">
               </div>
               <div class="select_wrap col-12 col-md-2">
                 <button class="btn lookmore col-12 m-0" type="button">送出</button>
@@ -211,70 +211,86 @@
             <table class="table col-12">
               <thead class="thead-color text-center">
                 <tr>
-                  <th scope="col">非營利組織</th>
-                  <th class="type_width" scope="col">地區</th>
+                  <th class="type_width">組織類型</th>
+                  <th>非營利組織</th>
+                  <th class="type_width">地區</th>
                 </tr>
               </thead>
               <tbody>
                 <tr class="clickable-row" data-href="12.12.html">
-                  <th class="text-truncate" scope="row">中華全球生命教育推動協會</th>
+                  <th class="text-center text-truncate">綜合性服務</th>
+                  <td class="text-center text-truncat">中華全球生命教育推動協會</td>
                   <td class="text-center text-truncate">北區+中區+南區+東部</td>
                 </tr>
                 <tr class="clickable-row" data-href="12.12.html">
-                  <th class="text-truncate" scope="row">社團法人中華民國教會人權促進聯盟</th>
-                  <td class="text-center text-truncate">全國性</td>
-                </tr>
-                <tr class="clickable-row" data-href="12.12.html">
-                  <th class="text-truncate" scope="row">社團法人新竹市教保人員協會</th>
-                  <td class="text-center text-truncate">全國性</td>
-                </tr>
-                <tr class="clickable-row" data-href="12.12.html">
-                  <th class="text-truncate" scope="row">社團法人正念助人學會</th>
-                  <td class="text-center text-truncate">全球性, 全國性</td>
-                </tr>
-                <tr class="clickable-row" data-href="12.12.html">
-                  <th class="text-truncate" scope="row">台灣公益資訊中心</th>
-                  <td class="text-center text-truncate">全國性</td>
-                </tr>
-                <tr class="clickable-row" data-href="12.12.html">
-                  <th class="text-truncate" scope="row">財團法人台灣基督教恩惠福音會湖光基督教會</th>
+                  <th class="text-center text-truncate">綜合性服務</th>
+                  <td class="text-center text-truncat">新北市私立松樹老人長期照顧中心</td>
                   <td class="text-center text-truncate">北區</td>
                 </tr>
                 <tr class="clickable-row" data-href="12.12.html">
-                  <th class="text-truncate" scope="row">社團法人多扶無障礙生活與交通發展協會</th>
-                  <td class="text-center text-truncate">全國性</td>
+                  <th class="text-center text-truncate">身心障礙福利</th>
+                  <td class="text-center text-truncat">台灣博物館教育發展協會</td>
+                  <td class="text-center text-truncate">全球性</td>
                 </tr>
                 <tr class="clickable-row" data-href="12.12.html">
-                  <th class="text-truncate" scope="row">社團法人宜蘭縣善集合教育文化學會</th>
-                  <td class="text-center text-truncate">宜蘭縣</td>
-                </tr>
-                <tr class="clickable-row" data-href="12.12.html">
-                  <th class="text-truncate" scope="row">中華佛寺福臨文教慈善協會</th>
-                  <td class="text-center text-truncate">全國性</td>
-                </tr>
-                <tr class="clickable-row" data-href="12.12.html">
-                  <th class="text-truncate" scope="row">社團法人台灣公益聯盟</th>
-                  <td class="text-center text-truncate">全國性</td>
-                </tr>
-                <tr class="clickable-row" data-href="12.12.html">
-                  <th class="text-truncate" scope="row">社團法人為你社區服務協會</th>
-                  <td class="text-center text-truncate">全國性</td>
-                </tr>
-                <tr class="clickable-row" data-href="12.12.html">
-                  <th class="text-truncate" scope="row">社團法人臺東縣友善關懷協會</th>
-                  <td class="text-center text-truncate">台東縣</td>
-                </tr>
-                <tr class="clickable-row" data-href="12.12.html">
-                  <th class="text-truncate" scope="row">桃園市行者無疆社會實踐協會</th>
-                  <td class="text-center text-truncate">桃園市</td>
-                </tr>
-                <tr class="clickable-row" data-href="12.12.html">
-                  <th class="text-truncate" scope="row">伊甸基金會新北市私立居家式服務類長期照顧服務機構</th>
+                  <th class="text-center text-truncate">綜政府單位</th>
+                  <td class="text-center text-truncat">有限責任新北市全人長照服務勞動合作社</td>
                   <td class="text-center text-truncate">北區</td>
                 </tr>
                 <tr class="clickable-row" data-href="12.12.html">
-                  <th class="text-truncate" scope="row">財團法人宜學教育基金會</th>
-                  <td class="text-center text-truncate">東部</td>
+                  <th class="text-center text-truncate">性別平等</th>
+                  <td class="text-center text-truncat">財團法人新北市悅融社會福利基金會</td>
+                  <td class="text-center text-truncate">新北市</td>
+                </tr>
+                <tr class="clickable-row" data-href="12.12.html">
+                  <th class="text-center text-truncate">綜合性服務</th>
+                  <td class="text-center text-truncat">社團法人中華民國國際慈善文教協會</td>
+                  <td class="text-center text-truncate">全球性</td>
+                </tr>
+                <tr class="clickable-row" data-href="12.12.html">
+                  <th class="text-center text-truncate">身心障礙福利</th>
+                  <td class="text-center text-truncat">財團法人友友錦錄教育基金會</td>
+                  <td class="text-center text-truncate">中區+南區</td>
+                </tr>
+                <tr class="clickable-row" data-href="12.12.html">
+                  <th class="text-center text-truncate">性別平等</th>
+                  <td class="text-center text-truncat">社團法人中華民國反棄養寵物協會</td>
+                  <td class="text-center text-truncate">全國性</td>
+                </tr>
+                <tr class="clickable-row" data-href="12.12.html">
+                  <th class="text-center text-truncate">綜合性服務</th>
+                  <td class="text-center text-truncat">中華宗德倫理道德培育推廣協會</td>
+                  <td class="text-center text-truncate">中區+南區</td>
+                </tr>
+                <tr class="clickable-row" data-href="12.12.html">
+                  <th class="text-center text-truncate">性別平等</th>
+                  <td class="text-center text-truncat">山達基教會台北中心</td>
+                  <td class="text-center text-truncate">北區</td>
+                </tr>
+                <tr class="clickable-row" data-href="12.12.html">
+                  <th class="text-center text-truncate">綜合性服務</th>
+                  <td class="text-center text-truncat">藝術養生推廣協會</td>
+                  <td class="text-center text-truncate">北區+中區</td>
+                </tr>
+                <tr class="clickable-row" data-href="12.12.html">
+                  <th class="text-center text-truncate">綜合性服務</th>
+                  <td class="text-center text-truncat">社團法人中華民國學貓過貓咪中途愛心照護協會</td>
+                  <td class="text-center text-truncate">台北市</td>
+                </tr>
+                <tr class="clickable-row" data-href="12.12.html">
+                  <th class="text-center text-truncate">身心障礙福利</th>
+                  <td class="text-center text-truncat">財團法人新北市自強基督教板橋浸禮聖經會</td>
+                  <td class="text-center text-truncate">新北市</td>
+                </tr>
+                <tr class="clickable-row" data-href="12.12.html">
+                  <th class="text-center text-truncate">政府單位</th>
+                  <td class="text-center text-truncat">財團法人嘉宜社會福利基金會</td>
+                  <td class="text-center text-truncate">台北市</td>
+                </tr>
+                <tr class="clickable-row" data-href="12.12.html">
+                  <th class="text-center text-truncate">政府單位</th>
+                  <td class="text-center text-truncat">肯納園社會企業股份有限公司</td>
+                  <td class="text-center text-truncate">全國性		</td>
                 </tr>
               </tbody>
             </table>
@@ -372,8 +388,16 @@
               fixedWeekCount: false,
               selectable: true,
               events: [
-                  {start: '2020-06-18'},
-                  {start: '2020-06-22'}
+                  {   
+                      description: '蝦皮618活動！全館滿千送百',
+                      start: '2020-06-18',
+                      url:'#'
+                  },
+                  {
+                      description: 'WWDC 2020',
+                      start: '2020-06-22',
+                      url:'#'
+                  }
               ]
               });
               calendar.render();

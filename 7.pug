@@ -16,16 +16,6 @@ html(lang="en")
 					h2.content_title.col-12 公益商城
 					.col-12
 						form.form-inline.col-12.selector
-							.select_wrap.col-12.col-md-4
-								input.form-control.col-12(type="text" placeholder="關鍵字")
-							.select_wrap.col-12.col-md-3
-								select.col-12.selectpicker(data-size="5")
-									option(selected="" disabled="") 商品類別
-									option 食品
-									option 衣物
-									option 用品
-									option 書籍
-									option 配件
 							.select_wrap.col-12.col-md-3
 								select.col-12.selectpicker(data-size="5")
 									option(selected="" disabled="") 機構類別
@@ -48,6 +38,16 @@ html(lang="en")
 									option 性別平等
 									option 政府單位
 									option 動物保護
+							.select_wrap.col-12.col-md-3
+								select.col-12.selectpicker(data-size="5")
+									option(selected="" disabled="") 商品類別
+									option 食品
+									option 衣物
+									option 用品
+									option 書籍
+									option 配件
+							.select_wrap.col-12.col-md-4
+								input.form-control.col-12(type="text" placeholder="關鍵字")
 							.select_wrap.col-12.col-md-2
 								button.btn.lookmore.col-12.m-0(type="button") 送出
 					.products

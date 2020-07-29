@@ -145,11 +145,9 @@
       <div class="row">
         <div class="content_top">
           <div class="col-12 col-lg-4 left">
-            <div class="pic">
-              <!-- <img src="./img/logo/org_logo.jpg" alt="" class="img-fluid fixed_size">-->
-              <!-- <img src="https://fakeimg.pl/1000x300/" class="img-fluid fixed_size">-->
-              <!-- <img src="https://fakeimg.pl/300x1000/" class="img-fluid fixed_size">--><img class="img-fluid fixed_size" src="https://fakeimg.pl/800x800/">
-            </div>
+            <!-- <img src="./img/logo/org_logo.jpg" alt="" class="img-fluid fixed_size">-->
+            <!-- <img src="https://fakeimg.pl/1000x300/" class="img-fluid fixed_size">-->
+            <!-- <img src="https://fakeimg.pl/300x1000/" class="img-fluid fixed_size">--><img class="img-fluid fixed_size" src="https://fakeimg.pl/800x800/">
             <div class="profile off">
               <h3>財團法人桃園市幸福社會福利基金會</h3>
               <h3>服務項目：其他</h3>
@@ -167,7 +165,7 @@
           <div class="col-12 col-lg-8 right">
             <!-- 手機版導覽列-->
             <div class="phone_top_nav">
-              <select class="form-control select_css" onchange="location.href=this.options[this.selectedIndex].value">
+              <select class="form-control selectpicker" onchange="location.href=this.options[this.selectedIndex].value" data-size="5">
                 <option value="12.1.html">公益新訊</option>
                 <option value="12.2.html">最新活動</option>
                 <option value="12.3.html">公益影片</option>
@@ -211,54 +209,33 @@
             </div>
             <!-- 內文-->
             <div class="content">
-              <div class="col-12 col-lg-6"><a href="https://shopee.tw/" target="_blank">
-                  <div class="good">
-                    <div class="pic"><img class="img-fluid fixed_size" src="./img/product/pd2.jpg"></div>
-                    <h3 class="title">手工餅乾</h3>
-                    <p class="text">NT$150</p>
-                  </div></a></div>
-              <div class="col-12 col-lg-6"><a href="https://shopee.tw/" target="_blank">
-                  <div class="good">
-                    <div class="pic"><img class="img-fluid fixed_size" src="https://fakeimg.pl/800x800/"></div>
-                    <h3 class="title">手工餅乾</h3>
-                    <p class="text">NT$150</p>
-                  </div></a></div>
-              <div class="col-12 col-lg-6"><a href="https://shopee.tw/" target="_blank">
-                  <div class="good">
-                    <div class="pic"><img class="img-fluid fixed_size" src="https://fakeimg.pl/1000x200/"></div>
-                    <h3 class="title">手工餅乾</h3>
-                    <p class="text">NT$150</p>
-                  </div></a></div>
-              <div class="col-12 col-lg-6"><a href="https://shopee.tw/" target="_blank">
-                  <div class="good">
-                    <div class="pic"><img class="img-fluid fixed_size" src="https://fakeimg.pl/200x1000/"></div>
-                    <h3 class="title">手工餅乾</h3>
-                    <p class="text">NT$150</p>
-                  </div></a></div>
-              <div class="col-12 col-lg-6"><a href="https://shopee.tw/" target="_blank">
-                  <div class="good">
-                    <div class="pic"><img class="img-fluid fixed_size" src="https://fakeimg.pl/800x450/"></div>
-                    <h3 class="title">手工餅乾</h3>
-                    <p class="text">NT$150</p>
-                  </div></a></div>
-              <div class="col-12 col-lg-6"><a href="https://shopee.tw/" target="_blank">
-                  <div class="good">
-                    <div class="pic"><img class="img-fluid fixed_size" src="https://fakeimg.pl/800x800/"></div>
-                    <h3 class="title">手工餅乾</h3>
-                    <p class="text">NT$150</p>
-                  </div></a></div>
-              <div class="col-12 col-lg-6"><a href="https://shopee.tw/" target="_blank">
-                  <div class="good">
-                    <div class="pic"><img class="img-fluid fixed_size" src="https://fakeimg.pl/800x800/"></div>
-                    <h3 class="title">手工餅乾</h3>
-                    <p class="text">NT$150</p>
-                  </div></a></div>
-              <div class="col-12 col-lg-6"><a href="https://shopee.tw/" target="_blank">
-                  <div class="good">
-                    <div class="pic"><img class="img-fluid fixed_size" src="https://fakeimg.pl/800x800/"></div>
-                    <h3 class="title">手工餅乾</h3>
-                    <p class="text">NT$150</p>
-                  </div></a></div>
+              <div class="good_list col-12 col-md-6 col-lg-4"><a class="good" href="12.3.1.html">
+                  <div class="pic"><img class="img-fluid" src="https://fakeimg.pl/500x500/"></div>
+                  <h3 class="title">商品名稱</h3></a></div>
+              <div class="good_list col-12 col-md-6 col-lg-4"><a class="good" href="12.3.1.html">
+                  <div class="pic"><img class="img-fluid" src="https://fakeimg.pl/500x500/"></div>
+                  <h3 class="title">商品名稱</h3></a></div>
+              <div class="good_list col-12 col-md-6 col-lg-4"><a class="good" href="12.3.1.html">
+                  <div class="pic"><img class="img-fluid" src="https://fakeimg.pl/500x500/"></div>
+                  <h3 class="title">商品名稱</h3></a></div>
+              <div class="good_list col-12 col-md-6 col-lg-4"><a class="good" href="12.3.1.html">
+                  <div class="pic"><img class="img-fluid" src="https://fakeimg.pl/800x450/"></div>
+                  <h3 class="title">商品名稱</h3></a></div>
+              <div class="good_list col-12 col-md-6 col-lg-4"><a class="good" href="12.3.1.html">
+                  <div class="pic"><img class="img-fluid" src="https://fakeimg.pl/1000x200/"></div>
+                  <h3 class="title">商品名稱</h3></a></div>
+              <div class="good_list col-12 col-md-6 col-lg-4"><a class="good" href="12.3.1.html">
+                  <div class="pic"><img class="img-fluid" src="https://fakeimg.pl/200x1000/"></div>
+                  <h3 class="title">商品名稱</h3></a></div>
+              <div class="good_list col-12 col-md-6 col-lg-4"><a class="good" href="12.3.1.html">
+                  <div class="pic"><img class="img-fluid" src="https://fakeimg.pl/500x500/"></div>
+                  <h3 class="title">商品名稱</h3></a></div>
+              <div class="good_list col-12 col-md-6 col-lg-4"><a class="good" href="12.3.1.html">
+                  <div class="pic"><img class="img-fluid" src="https://fakeimg.pl/500x500/"></div>
+                  <h3 class="title">商品名稱</h3></a></div>
+              <div class="good_list col-12 col-md-6 col-lg-4"><a class="good" href="12.3.1.html">
+                  <div class="pic"><img class="img-fluid" src="https://fakeimg.pl/500x500/"></div>
+                  <h3 class="title">商品名稱</h3></a></div>
               <!-- 分頁-->
               <div id="page">
                 <ul class="pagination">
@@ -354,8 +331,16 @@
               fixedWeekCount: false,
               selectable: true,
               events: [
-                  {start: '2020-06-18'},
-                  {start: '2020-06-22'}
+                  {   
+                      description: '蝦皮618活動！全館滿千送百',
+                      start: '2020-06-18',
+                      url:'#'
+                  },
+                  {
+                      description: 'WWDC 2020',
+                      start: '2020-06-22',
+                      url:'#'
+                  }
               ]
               });
               calendar.render();

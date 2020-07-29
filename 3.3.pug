@@ -16,9 +16,29 @@ html(lang="en")
 					h2.content_title.col-12 公益影片
 					.col-12
 						form.form-inline.col-12.selector
-							.select_wrap.col-12.col-md-4
-								input.form-control.col-12(type="text" placeholder="關鍵字")
-							.select_wrap.col-12.col-md-3
+							.select_wrap.col-12.col-md-2
+								select.col-12.selectpicker(data-size="5")
+									option(selected="" disabled="") 影片屬性
+									option 綜合性服務
+									option 兒童青少年福利
+									option 婦女福利
+									option 老人福利
+									option 身心障礙福利
+									option 家庭福利
+									option 健康醫療
+									option 心理衛生
+									option 社區規劃(營造)
+									option 環境保護
+									option 國際合作交流
+									option 教育與科學
+									option 文化藝術
+									option 人權和平
+									option 消費者保護
+									option 教育與科學
+									option 性別平等
+									option 政府單位
+									option 動物保護
+							.select_wrap.col-12.col-md-2
 								select.col-12.selectpicker(data-size="5")
 									option(selected="" disabled="") 年份
 									option 2020
@@ -26,7 +46,7 @@ html(lang="en")
 									option 2018
 									option 2017
 									option 2016
-							.select_wrap.col-12.col-md-3
+							.select_wrap.col-12.col-md-2
 								select.col-12.selectpicker(data-size="5")
 									option(selected="" disabled="") 月份
 									option 1
@@ -41,6 +61,8 @@ html(lang="en")
 									option 10
 									option 11
 									option 12
+							.select_wrap.col-12.col-md-4
+								input.form-control.col-12(type="text" placeholder="關鍵字")
 							.select_wrap.col-12.col-md-2
 								button.btn.lookmore.col-12.m-0(type="button") 送出
 					.videos_img

@@ -147,8 +147,35 @@
           <h2 class="content_title col-12">兼職工作</h2>
           <div class="table col-12">
             <form class="form-inline col-12 selector">
-              <div class="select_wrap col-12 col-md-4">
-                <input class="form-control col-12" type="text" placeholder="關鍵字">
+              <div class="select_wrap col-12 col-md-2">
+                <select class="col-12 selectpicker" data-size="5">
+                  <option selected="" disabled="">工作地點</option>
+                  <option>全部</option>
+                  <option>全球性</option>
+                  <option>全國性</option>
+                  <option>基隆市</option>
+                  <option>新北市</option>
+                  <option>台北市</option>
+                  <option>桃園市</option>
+                  <option>新竹市</option>
+                  <option>新竹縣</option>
+                  <option>苗栗縣</option>
+                  <option>台中市</option>
+                  <option>彰化縣</option>
+                  <option>南投縣</option>
+                  <option>雲林縣</option>
+                  <option>嘉義市</option>
+                  <option>嘉義縣</option>
+                  <option>台南市</option>
+                  <option>高雄市</option>
+                  <option>屏東縣</option>
+                  <option>宜蘭縣</option>
+                  <option>花蓮縣</option>
+                  <option>台東縣</option>
+                  <option>澎湖縣</option>
+                  <option>金門縣</option>
+                  <option>連江縣</option>
+                </select>
               </div>
               <div class="select_wrap col-12 col-md-2">
                 <select class="col-12 selectpicker" data-size="5">
@@ -187,35 +214,8 @@
                   <option>動物保護</option>
                 </select>
               </div>
-              <div class="select_wrap col-12 col-md-2">
-                <select class="col-12 selectpicker" data-size="5">
-                  <option selected="" disabled="">工作地點</option>
-                  <option>全部</option>
-                  <option>全球性</option>
-                  <option>全國性</option>
-                  <option>基隆市</option>
-                  <option>新北市</option>
-                  <option>台北市</option>
-                  <option>桃園市</option>
-                  <option>新竹市</option>
-                  <option>新竹縣</option>
-                  <option>苗栗縣</option>
-                  <option>台中市</option>
-                  <option>彰化縣</option>
-                  <option>南投縣</option>
-                  <option>雲林縣</option>
-                  <option>嘉義市</option>
-                  <option>嘉義縣</option>
-                  <option>台南市</option>
-                  <option>高雄市</option>
-                  <option>屏東縣</option>
-                  <option>宜蘭縣</option>
-                  <option>花蓮縣</option>
-                  <option>台東縣</option>
-                  <option>澎湖縣</option>
-                  <option>金門縣</option>
-                  <option>連江縣</option>
-                </select>
+              <div class="select_wrap col-12 col-md-4">
+                <input class="form-control col-12" type="text" placeholder="關鍵字">
               </div>
               <div class="select_wrap col-12 col-md-2">
                 <button class="btn lookmore col-12 m-0" type="button">送出</button>
@@ -417,8 +417,16 @@
               fixedWeekCount: false,
               selectable: true,
               events: [
-                  {start: '2020-06-18'},
-                  {start: '2020-06-22'}
+                  {   
+                      description: '蝦皮618活動！全館滿千送百',
+                      start: '2020-06-18',
+                      url:'#'
+                  },
+                  {
+                      description: 'WWDC 2020',
+                      start: '2020-06-22',
+                      url:'#'
+                  }
               ]
               });
               calendar.render();

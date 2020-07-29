@@ -147,10 +147,31 @@
           <h2 class="content_title col-12">公益影片</h2>
           <div class="col-12">
             <form class="form-inline col-12 selector">
-              <div class="select_wrap col-12 col-md-4">
-                <input class="form-control col-12" type="text" placeholder="關鍵字">
+              <div class="select_wrap col-12 col-md-2">
+                <select class="col-12 selectpicker" data-size="5">
+                  <option selected="" disabled="">影片屬性</option>
+                  <option>綜合性服務</option>
+                  <option>兒童青少年福利</option>
+                  <option>婦女福利</option>
+                  <option>老人福利</option>
+                  <option>身心障礙福利</option>
+                  <option>家庭福利</option>
+                  <option>健康醫療</option>
+                  <option>心理衛生</option>
+                  <option>社區規劃(營造)</option>
+                  <option>環境保護</option>
+                  <option>國際合作交流</option>
+                  <option>教育與科學</option>
+                  <option>文化藝術</option>
+                  <option>人權和平</option>
+                  <option>消費者保護</option>
+                  <option>教育與科學</option>
+                  <option>性別平等</option>
+                  <option>政府單位</option>
+                  <option>動物保護</option>
+                </select>
               </div>
-              <div class="select_wrap col-12 col-md-3">
+              <div class="select_wrap col-12 col-md-2">
                 <select class="col-12 selectpicker" data-size="5">
                   <option selected="" disabled="">年份</option>
                   <option>2020</option>
@@ -160,7 +181,7 @@
                   <option>2016</option>
                 </select>
               </div>
-              <div class="select_wrap col-12 col-md-3">
+              <div class="select_wrap col-12 col-md-2">
                 <select class="col-12 selectpicker" data-size="5">
                   <option selected="" disabled="">月份</option>
                   <option>1</option>
@@ -176,6 +197,9 @@
                   <option>11</option>
                   <option>12</option>
                 </select>
+              </div>
+              <div class="select_wrap col-12 col-md-4">
+                <input class="form-control col-12" type="text" placeholder="關鍵字">
               </div>
               <div class="select_wrap col-12 col-md-2">
                 <button class="btn lookmore col-12 m-0" type="button">送出</button>
@@ -325,8 +349,16 @@
               fixedWeekCount: false,
               selectable: true,
               events: [
-                  {start: '2020-06-18'},
-                  {start: '2020-06-22'}
+                  {   
+                      description: '蝦皮618活動！全館滿千送百',
+                      start: '2020-06-18',
+                      url:'#'
+                  },
+                  {
+                      description: 'WWDC 2020',
+                      start: '2020-06-22',
+                      url:'#'
+                  }
               ]
               });
               calendar.render();

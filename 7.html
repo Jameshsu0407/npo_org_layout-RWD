@@ -147,19 +147,6 @@
           <h2 class="content_title col-12">公益商城</h2>
           <div class="col-12">
             <form class="form-inline col-12 selector">
-              <div class="select_wrap col-12 col-md-4">
-                <input class="form-control col-12" type="text" placeholder="關鍵字">
-              </div>
-              <div class="select_wrap col-12 col-md-3">
-                <select class="col-12 selectpicker" data-size="5">
-                  <option selected="" disabled="">商品類別</option>
-                  <option>食品</option>
-                  <option>衣物</option>
-                  <option>用品</option>
-                  <option>書籍</option>
-                  <option>配件</option>
-                </select>
-              </div>
               <div class="select_wrap col-12 col-md-3">
                 <select class="col-12 selectpicker" data-size="5">
                   <option selected="" disabled="">機構類別</option>
@@ -183,6 +170,19 @@
                   <option>政府單位</option>
                   <option>動物保護</option>
                 </select>
+              </div>
+              <div class="select_wrap col-12 col-md-3">
+                <select class="col-12 selectpicker" data-size="5">
+                  <option selected="" disabled="">商品類別</option>
+                  <option>食品</option>
+                  <option>衣物</option>
+                  <option>用品</option>
+                  <option>書籍</option>
+                  <option>配件</option>
+                </select>
+              </div>
+              <div class="select_wrap col-12 col-md-4">
+                <input class="form-control col-12" type="text" placeholder="關鍵字">
               </div>
               <div class="select_wrap col-12 col-md-2">
                 <button class="btn lookmore col-12 m-0" type="button">送出</button>
@@ -348,8 +348,16 @@
               fixedWeekCount: false,
               selectable: true,
               events: [
-                  {start: '2020-06-18'},
-                  {start: '2020-06-22'}
+                  {   
+                      description: '蝦皮618活動！全館滿千送百',
+                      start: '2020-06-18',
+                      url:'#'
+                  },
+                  {
+                      description: 'WWDC 2020',
+                      start: '2020-06-22',
+                      url:'#'
+                  }
               ]
               });
               calendar.render();

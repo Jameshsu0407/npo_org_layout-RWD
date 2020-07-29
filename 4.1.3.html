@@ -145,6 +145,7 @@
       <div class="row">
         <div class="content_top col-12">
           <h2 class="content_title col-12">補助行事曆</h2>
+          <!-- 點選橘色槓槓，右邊才會顯示該活動內容-->
           <div class="col-12 col-lg-6 content_left">
             <div id="calendar"></div>
           </div>
@@ -239,8 +240,16 @@
               fixedWeekCount: false,
               selectable: true,
               events: [
-                  {start: '2020-06-18'},
-                  {start: '2020-06-22'}
+                  {   
+                      description: '蝦皮618活動！全館滿千送百',
+                      start: '2020-06-18',
+                      url:'#'
+                  },
+                  {
+                      description: 'WWDC 2020',
+                      start: '2020-06-22',
+                      url:'#'
+                  }
               ]
               });
               calendar.render();
