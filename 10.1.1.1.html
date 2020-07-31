@@ -250,12 +250,14 @@
                   </div>
                 </div>
                 <!-- 必填-->
-                <div class="col-12 one_line">
-                  <div class="form-group col-6">
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
                     <label>電話</label>
                     <input class="form-control" type="text">
                   </div>
-                  <div class="form-group col-4">
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
                     <label>分機</label>
                     <input class="form-control" type="text">
                   </div>
@@ -275,13 +277,33 @@
                   </div>
                 </div>
                 <!-- 必填-->
-                <div class="col-12 one_line">
-                  <div class="form-group col-3">
+                <div class="col-6 col-md-3">
+                  <div class="form-group">
                     <label>地址(中)</label>
-                    <input class="form-control" id="inputCity" type="text" placeholder="郵遞區號">
+                    <select class="form-control selectpicker" data-size="5">
+                      <option selected disabled>縣市</option>
+                      <option>台北市</option>
+                      <option>新北市</option>
+                      <option>桃園市</option>
+                      <option>我都行</option>
+                    </select>
                   </div>
-                  <div class="form-group col-9">
-                    <label>地址(中)</label>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="form-group">
+                    <label class="invisiable">地址(中)</label>
+                    <select class="form-control selectpicker" data-size="5">
+                      <option selected disabled>行政區</option>
+                      <option>台中市</option>
+                      <option>台南市</option>
+                      <option>高雄市</option>
+                      <option>我都愛</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <label class="invisiable">地址(中)</label>
                     <input class="form-control" type="text">
                   </div>
                 </div>
@@ -319,13 +341,15 @@
                     <input class="form-control" type="text">
                   </div>
                 </div>
-                <div class="col-12 one_line">
-                  <div class="form-group col-6">
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
                     <label>郵政劃撥</label>
                     <input class="form-control" type="text" placeholder="帳號">
                   </div>
-                  <div class="form-group col-4">
-                    <label>郵政劃撥</label>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <label class="invisiable">郵政劃撥</label>
                     <input class="form-control" type="text" placeholder="戶名">
                   </div>
                 </div>
@@ -384,7 +408,7 @@
                 <div class="col-12 col-md-6">
                   <div class="form-group">
                     <label>組織屬性</label>
-                    <select class="selectpicker form-control" data-size="5">
+                    <select class="form-control selectpicker" data-size="5">
                       <option selected disabled>請選擇</option>
                       <option>粽合性服務</option>
                       <option>兒童青少年福利</option>
@@ -411,7 +435,7 @@
                 <div class="col-12 col-md-6">
                   <div class="form-group">
                     <label>性質</label>
-                    <select class="selectpicker form-control" data-size="5">
+                    <select class="form-control selectpicker" data-size="5">
                       <option selected disabled>請選擇</option>
                       <option>(財團法人)基金會</option>
                       <option>(社團法人)協會</option>
@@ -860,9 +884,9 @@
                         <input class="form-check-input" type="radio" name="age">
                         <label class="form-check-label">限</label>
                         <div class="age_range">
-                          <input type="text">
+                          <input class="form-control" type="text">
                           <label>歲至</label>
-                          <input type="text">
+                          <input class="form-control" type="text">
                           <label>歲</label>
                         </div>
                       </div>
@@ -879,7 +903,7 @@
                 <div class="col-12">
                   <div class="form-group">
                     <label>工作重點</label>
-                    <textarea class="form-control" rows="5" placeholder="必填"></textarea>
+                    <textarea class="form-control" rows="5"></textarea>
                   </div>
                 </div>
                 <div class="col-12">
@@ -913,7 +937,7 @@
       </div>
     </section>
     <!-- 底部廣告-->
-    <section class="container" id="bottom_ads"><img class="img-fluid clickable-row" src="https://fakeimg.pl/350x150/" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad1.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad2.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad3.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"></section>
+    <section class="container" id="bottom_ads"><img class="img-fluid clickable-row" src="./img/fakeimg/350x150.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad1.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad2.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad3.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"></section>
     <!-- footer-->
     <footer>
       <div class="container">

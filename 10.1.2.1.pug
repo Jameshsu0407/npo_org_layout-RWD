@@ -89,9 +89,27 @@ html(lang="en")
 										label 傳真
 										input.form-control(type="text")
 								// 必填
-								.col-12
+								.col-6.col-md-3
 									.form-group
-										label 地址
+										label 地址(中)
+										select.form-control.selectpicker(data-size="5")
+											option(selected disabled) 縣市
+											option 台北市
+											option 新北市
+											option 桃園市
+											option 我都行
+								.col-6.col-md-3
+									.form-group
+										label.invisiable 地址(中)
+										select.form-control.selectpicker(data-size="5")
+											option(selected disabled) 行政區
+											option 台中市
+											option 台南市
+											option 高雄市
+											option 我都愛
+								.col-12.col-md-6
+									.form-group
+										label.invisiable 地址(中)
 										input.form-control(type="text")
 								// 必填
 								.col-12

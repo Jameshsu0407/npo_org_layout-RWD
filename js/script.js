@@ -13,7 +13,7 @@ $(document).ready(function($) {
         // $.fn.selectpicker.Constructor.DEFAULTS.mobile = true;
     } 
     else{
-        selectpicker初始化
+        // selectpicker初始化
         // $('.selectpicker').selectpicker().selectpicker("render");
         $(".selectpicker").selectpicker("refresh");
     }

@@ -128,11 +128,12 @@ html(lang="en")
 										label 聯絡人(英)
 										input.form-control(type="text")
 								// 必填
-								.col-12.one_line
-									.form-group.col-6
+								.col-12.col-md-6
+									.form-group
 										label 電話
 										input.form-control(type="text")
-									.form-group.col-4
+								.col-12.col-md-6
+									.form-group
 										label 分機
 										input.form-control(type="text")
 								// 必填
@@ -146,12 +147,27 @@ html(lang="en")
 										label 統一編號
 										input.form-control(type="text")
 								// 必填
-								.col-12.one_line
-									.form-group.col-3
+								.col-6.col-md-3
+									.form-group
 										label 地址(中)
-										input#inputCity.form-control(type="text" placeholder="郵遞區號")
-									.form-group.col-9
-										label 地址(中)
+										select.form-control.selectpicker(data-size="5")
+											option(selected disabled) 縣市
+											option 台北市
+											option 新北市
+											option 桃園市
+											option 我都行
+								.col-6.col-md-3
+									.form-group
+										label.invisiable 地址(中)
+										select.form-control.selectpicker(data-size="5")
+											option(selected disabled) 行政區
+											option 台中市
+											option 台南市
+											option 高雄市
+											option 我都愛
+								.col-12.col-md-6
+									.form-group
+										label.invisiable 地址(中)
 										input.form-control(type="text")
 								.col-12
 									.form-group
@@ -177,12 +193,13 @@ html(lang="en")
 									.form-group
 										label 許可機關(英)
 										input.form-control(type="text")
-								.col-12.one_line
-									.form-group.col-6
+								.col-12.col-md-6
+									.form-group
 										label 郵政劃撥
 										input.form-control(type="text" placeholder="帳號")
-									.form-group.col-4
-										label 郵政劃撥
+								.col-12.col-md-6
+									.form-group
+										label.invisiable 郵政劃撥
 										input.form-control(type="text" placeholder="戶名")
 								.col-12
 									.form-group
@@ -223,7 +240,7 @@ html(lang="en")
 								.col-12.col-md-6
 									.form-group
 										label 組織屬性
-										select.selectpicker.form-control(data-size="5")
+										select.form-control.selectpicker(data-size="5")
 											option(selected disabled) 請選擇
 											option 粽合性服務
 											option 兒童青少年福利
@@ -247,7 +264,7 @@ html(lang="en")
 								.col-12.col-md-6
 									.form-group
 										label 性質
-										select.selectpicker.form-control(data-size="5")
+										select.form-control.selectpicker(data-size="5")
 											option(selected disabled) 請選擇
 											option (財團法人)基金會
 											option (社團法人)協會
@@ -586,9 +603,9 @@ html(lang="en")
 												input.form-check-input(type="radio" name="age")
 												label.form-check-label 限
 												.age_range
-													input(type="text")
+													input.form-control(type="text")
 													label 歲至
-													input(type="text")
+													input.form-control(type="text")
 													label 歲
 								.col-12
 									.form-group
@@ -598,7 +615,7 @@ html(lang="en")
 								.col-12
 									.form-group
 										label 工作重點
-										textarea.form-control(rows="5" placeholder="必填")
+										textarea.form-control(rows="5")
 								.col-12
 									.form-group
 										label 出版品

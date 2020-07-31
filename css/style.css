@@ -18,7 +18,6 @@
 *:focus, *:checked {
   outline: none;
   box-shadow: none !important;
-  -webkit-appearance: none;
   -moz-appearance: none;
 }
 
@@ -176,6 +175,10 @@ select:focus, select:active, textarea:focus, textarea:active, input:focus, input
 .bootstrap-select .dropdown-toggle:focus {
   outline: none !important;
   border: 1px solid #FA9C25;
+}
+
+.invisiable {
+  color: white;
 }
 
 #page {
@@ -945,9 +948,20 @@ ul.nav.navbar-nav li.dropdown ul.dropdown-menu li.dropdown ul.dropdown-menu {
 
 @media screen and (max-width: 576px) {
   #newpost .newpostpic .card .pic img {
-    width: 100%;
-    height: auto;
+    width: 463px;
+    height: 260.44px;
   }
+}
+
+@media screen and (max-width: 480px) {
+  #newpost .newpostpic .card .pic img {
+    width: 420px;
+    height: 236.25px;
+  }
+}
+
+#newpost .newpostpic .card .card-body {
+  overflow: hidden;
 }
 
 @media screen and (max-width: 992px) {
@@ -3185,18 +3199,6 @@ footer .copyright p {
   }
 }
 
-#font_end_org_information .right .register_form .one_line {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-}
-
-@media screen and (max-width: 768px) {
-  #font_end_org_information .right .register_form .one_line .form-group.col-6, #font_end_org_information .right .register_form .one_line .form-group.col-3 {
-    padding-left: 0;
-  }
-}
-
 #font_end_org_information .right .register_form .custom-file input.custom-file-input {
   cursor: pointer;
 }
@@ -3212,10 +3214,6 @@ footer .copyright p {
 #font_end_org_information .right .register_form .custom-file .custom-file-input:focus ~ .custom-file-label {
   border-color: #d4d4d4;
   box-shadow: none;
-}
-
-#font_end_org_information .right .register_form .form-check-input:focus, #font_end_org_information .right .register_form .form-check-input:checked {
-  -webkit-appearance: checkbox;
 }
 
 #font_end_org_information .right .register_form .region, #font_end_org_information .right .register_form .service {
@@ -3241,6 +3239,10 @@ footer .copyright p {
 
 #font_end_org_information .right .register_form .gender .form-check, #font_end_org_information .right .register_form .age .form-check {
   display: inline-block;
+}
+
+#font_end_org_information .right .register_form .gender .form-check:focus, #font_end_org_information .right .register_form .gender .form-check:checked, #font_end_org_information .right .register_form .age .form-check:focus, #font_end_org_information .right .register_form .age .form-check:checked {
+  -webkit-appearance: radio !important;
 }
 
 #font_end_org_information .right .register_form .gender .age_range, #font_end_org_information .right .register_form .age .age_range {
@@ -3510,10 +3512,6 @@ footer .copyright p {
 #font_end_org_newpost_add .right .newpost_add .custom-file .custom-file-input:focus ~ .custom-file-label {
   border-color: #d4d4d4;
   box-shadow: none;
-}
-
-#font_end_org_newpost_add .right .newpost_add .form-check-input:focus, #font_end_org_newpost_add .right .newpost_add .form-check-input:checked {
-  -webkit-appearance: checkbox;
 }
 
 #font_end_org_newpost_add .right .newpost_add .input-group {
@@ -3793,10 +3791,6 @@ footer .copyright p {
 #font_end_org_activities_add .right .activities_add .custom-file .custom-file-input:focus ~ .custom-file-label {
   border-color: #d4d4d4;
   box-shadow: none;
-}
-
-#font_end_org_activities_add .right .activities_add .form-check-input:focus, #font_end_org_activities_add .right .activities_add .form-check-input:checked {
-  -webkit-appearance: checkbox;
 }
 
 #font_end_org_activities_add .right .activities_add .input-group {
@@ -4083,10 +4077,6 @@ footer .copyright p {
   box-shadow: none;
 }
 
-#font_end_org_video_add .right .video_add .form-check-input:focus, #font_end_org_video_add .right .video_add .form-check-input:checked {
-  -webkit-appearance: checkbox;
-}
-
 #font_end_org_video_add .right .video_add .input-group {
   width: calc( 100% - 30px);
   margin: 0 auto;
@@ -4364,10 +4354,6 @@ footer .copyright p {
 #font_end_org_allowance_announcement_add .right .allowance_announcement_add .custom-file .custom-file-input:focus ~ .custom-file-label {
   border-color: #d4d4d4;
   box-shadow: none;
-}
-
-#font_end_org_allowance_announcement_add .right .allowance_announcement_add .form-check-input:focus, #font_end_org_allowance_announcement_add .right .allowance_announcement_add .form-check-input:checked {
-  -webkit-appearance: checkbox;
 }
 
 #font_end_org_allowance_announcement_add .right .allowance_announcement_add .input-group {
@@ -4649,10 +4635,6 @@ footer .copyright p {
   box-shadow: none;
 }
 
-#font_end_org_rescue_announcement_add .right .rescue_announcement_add .form-check-input:focus, #font_end_org_rescue_announcement_add .right .rescue_announcement_add .form-check-input:checked {
-  -webkit-appearance: checkbox;
-}
-
 #font_end_org_rescue_announcement_add .right .rescue_announcement_add .input-group {
   width: calc( 100% - 30px);
   margin: 0 auto;
@@ -4930,10 +4912,6 @@ footer .copyright p {
 #font_end_org_scholarship_announcement_add .right .scholarship_announcement_add .custom-file .custom-file-input:focus ~ .custom-file-label {
   border-color: #d4d4d4;
   box-shadow: none;
-}
-
-#font_end_org_scholarship_announcement_add .right .scholarship_announcement_add .form-check-input:focus, #font_end_org_scholarship_announcement_add .right .scholarship_announcement_add .form-check-input:checked {
-  -webkit-appearance: checkbox;
 }
 
 #font_end_org_scholarship_announcement_add .right .scholarship_announcement_add .input-group {
@@ -5215,10 +5193,6 @@ footer .copyright p {
   box-shadow: none;
 }
 
-#font_end_org_donate_add .right .donate_add .form-check-input:focus, #font_end_org_donate_add .right .donate_add .form-check-input:checked {
-  -webkit-appearance: checkbox;
-}
-
 #font_end_org_donate_add .right .donate_add .input-group {
   width: calc( 100% - 30px);
   margin: 0 auto;
@@ -5477,18 +5451,18 @@ footer .copyright p {
   display: inline-block;
 }
 
-#font_end_org_volunteer_add .right .volunteer_add .region .foreign .foreign_input {
-  display: inline-block;
-  height: 30px;
-  width: 80px;
+#font_end_org_volunteer_add .right .volunteer_add .region .foreign_input {
+  display: inline-block !important;
+  height: 25px;
+  width: 70px;
+}
+
+#font_end_org_volunteer_add .right .volunteer_add .region .foreign_input:focus {
+  border: 1px solid #FA9C25;
 }
 
 #font_end_org_volunteer_add .right .volunteer_add .region .form-group.form-check {
   margin: 5px 10px 5px 0;
-}
-
-#font_end_org_volunteer_add .right .volunteer_add .form-check-input:focus, #font_end_org_volunteer_add .right .volunteer_add .form-check-input:checked {
-  -webkit-appearance: checkbox;
 }
 
 #font_end_org_volunteer_add .right .volunteer_add .input-group {
@@ -5749,18 +5723,18 @@ footer .copyright p {
   display: inline-block;
 }
 
-#font_end_org_full_work_add .right .full_work_add .region .foreign .foreign_input {
-  display: inline-block;
-  height: 30px;
-  width: 80px;
+#font_end_org_full_work_add .right .full_work_add .region .foreign_input {
+  display: inline-block !important;
+  height: 25px;
+  width: 70px;
+}
+
+#font_end_org_full_work_add .right .full_work_add .region .foreign_input:focus {
+  border: 1px solid #FA9C25;
 }
 
 #font_end_org_full_work_add .right .full_work_add .region .form-group.form-check {
   margin: 5px 10px 5px 0;
-}
-
-#font_end_org_full_work_add .right .full_work_add .form-check-input:focus, #font_end_org_full_work_add .right .full_work_add .form-check-input:checked {
-  -webkit-appearance: checkbox;
 }
 
 #font_end_org_full_work_add .right .full_work_add .input-group {
@@ -6021,18 +5995,18 @@ footer .copyright p {
   display: inline-block;
 }
 
-#font_end_org_part_time_add .right .part_time_add .region .foreign .foreign_input {
-  display: inline-block;
-  height: 30px;
-  width: 80px;
+#font_end_org_part_time_add .right .part_time_add .region .foreign_input {
+  display: inline-block !important;
+  height: 25px;
+  width: 70px;
+}
+
+#font_end_org_part_time_add .right .part_time_add .region .foreign_input:focus {
+  border: 1px solid #FA9C25;
 }
 
 #font_end_org_part_time_add .right .part_time_add .region .form-group.form-check {
   margin: 5px 10px 5px 0;
-}
-
-#font_end_org_part_time_add .right .part_time_add .form-check-input:focus, #font_end_org_part_time_add .right .part_time_add .form-check-input:checked {
-  -webkit-appearance: checkbox;
 }
 
 #font_end_org_part_time_add .right .part_time_add .input-group {
@@ -6300,10 +6274,6 @@ footer .copyright p {
   box-shadow: none;
 }
 
-#font_end_org_shop_add .right .shop_add .form-check-input:focus, #font_end_org_shop_add .right .shop_add .form-check-input:checked {
-  -webkit-appearance: checkbox;
-}
-
 #font_end_org_shop_add .right .shop_add .input-group {
   width: calc( 100% - 30px);
   margin: 0 auto;
@@ -6525,10 +6495,6 @@ footer .copyright p {
 #font_end_org_acount_maintain_add .right .acount_maintain_add .custom-file .custom-file-input:focus ~ .custom-file-label, #font_end_org_acount_maintain_fixed .right .acount_maintain_add .custom-file .custom-file-input:focus ~ .custom-file-label {
   border-color: #d4d4d4;
   box-shadow: none;
-}
-
-#font_end_org_acount_maintain_add .right .acount_maintain_add .form-check-input:focus, #font_end_org_acount_maintain_add .right .acount_maintain_add .form-check-input:checked, #font_end_org_acount_maintain_fixed .right .acount_maintain_add .form-check-input:focus, #font_end_org_acount_maintain_fixed .right .acount_maintain_add .form-check-input:checked {
-  -webkit-appearance: checkbox;
 }
 
 #font_end_org_acount_maintain_add .right .acount_maintain_add .input-group, #font_end_org_acount_maintain_fixed .right .acount_maintain_add .input-group {
@@ -6795,10 +6761,6 @@ footer .copyright p {
 #font_end_com_information .right .register_form .custom-file .custom-file-input:focus ~ .custom-file-label {
   border-color: #d4d4d4;
   box-shadow: none;
-}
-
-#font_end_com_information .right .register_form .form-check-input:focus, #font_end_com_information .right .register_form .form-check-input:checked {
-  -webkit-appearance: checkbox;
 }
 
 #font_end_com_information .right .register_form .region, #font_end_com_information .right .register_form .service {
@@ -7090,10 +7052,6 @@ footer .copyright p {
   box-shadow: none;
 }
 
-#font_end_com_donate_add .right .com_donate_add .form-check-input:focus, #font_end_com_donate_add .right .com_donate_add .form-check-input:checked {
-  -webkit-appearance: checkbox;
-}
-
 #font_end_com_donate_add .right .com_donate_add .input-group {
   width: calc( 100% - 30px);
   margin: 0 auto;
@@ -7315,10 +7273,6 @@ footer .copyright p {
 #font_end_com_acount_maintain_add .right .acount_maintain_add .custom-file .custom-file-input:focus ~ .custom-file-label, #font_end_com_acount_maintain_fixed .right .acount_maintain_add .custom-file .custom-file-input:focus ~ .custom-file-label {
   border-color: #d4d4d4;
   box-shadow: none;
-}
-
-#font_end_com_acount_maintain_add .right .acount_maintain_add .form-check-input:focus, #font_end_com_acount_maintain_add .right .acount_maintain_add .form-check-input:checked, #font_end_com_acount_maintain_fixed .right .acount_maintain_add .form-check-input:focus, #font_end_com_acount_maintain_fixed .right .acount_maintain_add .form-check-input:checked {
-  -webkit-appearance: checkbox;
 }
 
 #font_end_com_acount_maintain_add .right .acount_maintain_add .input-group, #font_end_com_acount_maintain_fixed .right .acount_maintain_add .input-group {
@@ -7587,10 +7541,6 @@ footer .copyright p {
   box-shadow: none;
 }
 
-#font_end_member_information .right .register_form .form-check-input:focus, #font_end_member_information .right .register_form .form-check-input:checked {
-  -webkit-appearance: checkbox;
-}
-
 #font_end_member_information .right .register_form .region, #font_end_member_information .right .register_form .service {
   display: flex;
   flex-wrap: wrap;
@@ -7692,6 +7642,23 @@ footer .copyright p {
   }
 }
 
+#font_end_member_resume .right .member_resume .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item {
+  color: #343A40;
+  padding: 10px 12px;
+}
+
+#font_end_member_resume .right .member_resume .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item:active {
+  background-color: #ffe4a2;
+}
+
+#font_end_member_resume .right .member_resume .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item.active {
+  background-color: #ffe4a2;
+}
+
+#font_end_member_resume .right .member_resume .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item.active:active {
+  background-color: #ffe4a2;
+}
+
 #font_end_member_resume .right .member_resume .solider .form-check {
   display: inline-block;
   position: relative;
@@ -7700,10 +7667,6 @@ footer .copyright p {
 
 #font_end_member_resume .right .member_resume .solider .form-group.form-check {
   margin: 5px 10px 5px 0;
-}
-
-#font_end_member_resume .right .member_resume .form-check-input:focus, #font_end_member_resume .right .member_resume .form-check-input:checked {
-  -webkit-appearance: checkbox;
 }
 
 #font_end_member_resume .right .member_resume .custom-file input.custom-file-input {
@@ -7850,31 +7813,6 @@ footer .copyright p {
   background-color: #ffe4a2;
 }
 
-#register_explanation h2::before {
-  display: none;
-}
-
-#register_explanation .right .org_explanation, #register_explanation .right .com_explanation, #register_explanation .right .member_explanation {
-  margin-bottom: 20px;
-}
-
-#register_explanation .right .form-check-input:focus, #register_explanation .right .form-check-input:checked {
-  -webkit-appearance: checkbox;
-}
-
-#register_explanation .right button {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  padding: 4px 25px;
-  background-color: #ffd56f;
-  transition: 0.5s;
-}
-
-#register_explanation .right button:hover {
-  background-color: #ffe4a2;
-}
-
 #register .right h3 {
   font-weight: 600;
   font-size: 18px;
@@ -7957,6 +7895,39 @@ footer .copyright p {
   background-color: #ffe4a2;
 }
 
+@media screen and (max-width: 768px) {
+  #register .right .register_explanation .col-12 {
+    padding: 0;
+  }
+}
+
+#register .right .register_explanation .org_explanation p, #register .right .register_explanation .com_explanation p, #register .right .register_explanation .member_explanation p {
+  margin: 10px 0;
+}
+
+#register .right .register_explanation .form-check {
+  margin: 0 0 16px 15px;
+}
+
+@media screen and (max-width: 768px) {
+  #register .right .register_explanation .form-check {
+    padding: 0 0 16px 5px;
+  }
+}
+
+#register .right .register_explanation button.explanation_submit {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 4px 25px;
+  background-color: #ffd56f;
+  transition: 0.5s;
+}
+
+#register .right .register_explanation button.explanation_submit:hover {
+  background-color: #ffe4a2;
+}
+
 #register .right .org_register_form, #register .right .com_register_form, #register .right .member_register_form, #register .right .org_register_account, #register .right .com_register_account {
   display: flex;
   flex-wrap: wrap;
@@ -7965,18 +7936,6 @@ footer .copyright p {
 @media screen and (max-width: 768px) {
   #register .right .org_register_form .col-12.col-md-6, #register .right .org_register_form .col-12, #register .right .com_register_form .col-12.col-md-6, #register .right .com_register_form .col-12, #register .right .member_register_form .col-12.col-md-6, #register .right .member_register_form .col-12, #register .right .org_register_account .col-12.col-md-6, #register .right .org_register_account .col-12, #register .right .com_register_account .col-12.col-md-6, #register .right .com_register_account .col-12 {
     padding: 0;
-  }
-}
-
-#register .right .org_register_form .one_line, #register .right .com_register_form .one_line, #register .right .member_register_form .one_line, #register .right .org_register_account .one_line, #register .right .com_register_account .one_line {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-}
-
-@media screen and (max-width: 768px) {
-  #register .right .org_register_form .one_line .form-group.col-6, #register .right .org_register_form .one_line .form-group.col-3, #register .right .com_register_form .one_line .form-group.col-6, #register .right .com_register_form .one_line .form-group.col-3, #register .right .member_register_form .one_line .form-group.col-6, #register .right .member_register_form .one_line .form-group.col-3, #register .right .org_register_account .one_line .form-group.col-6, #register .right .org_register_account .one_line .form-group.col-3, #register .right .com_register_account .one_line .form-group.col-6, #register .right .com_register_account .one_line .form-group.col-3 {
-    padding-left: 0;
   }
 }
 
@@ -7995,10 +7954,6 @@ footer .copyright p {
 #register .right .org_register_form .custom-file .custom-file-input:focus ~ .custom-file-label, #register .right .com_register_form .custom-file .custom-file-input:focus ~ .custom-file-label, #register .right .member_register_form .custom-file .custom-file-input:focus ~ .custom-file-label, #register .right .org_register_account .custom-file .custom-file-input:focus ~ .custom-file-label, #register .right .com_register_account .custom-file .custom-file-input:focus ~ .custom-file-label {
   border-color: #d4d4d4;
   box-shadow: none;
-}
-
-#register .right .org_register_form .form-check-input:focus, #register .right .org_register_form .form-check-input:checked, #register .right .com_register_form .form-check-input:focus, #register .right .com_register_form .form-check-input:checked, #register .right .member_register_form .form-check-input:focus, #register .right .member_register_form .form-check-input:checked, #register .right .org_register_account .form-check-input:focus, #register .right .org_register_account .form-check-input:checked, #register .right .com_register_account .form-check-input:focus, #register .right .com_register_account .form-check-input:checked {
-  -webkit-appearance: checkbox;
 }
 
 #register .right .org_register_form .region, #register .right .org_register_form .service, #register .right .com_register_form .region, #register .right .com_register_form .service, #register .right .member_register_form .region, #register .right .member_register_form .service, #register .right .org_register_account .region, #register .right .org_register_account .service, #register .right .com_register_account .region, #register .right .com_register_account .service {
@@ -9053,84 +9008,38 @@ footer .copyright p {
   margin-bottom: 20px;
 }
 
-#org_activities_unit .content .pic {
+#org_activities_unit .content img {
+  object-fit: contain;
   width: 720px;
   height: 405px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
 }
 
 @media screen and (max-width: 1200px) {
-  #org_activities_unit .content .pic {
+  #org_activities_unit .content img {
     width: 560px;
     height: 315px;
   }
 }
 
 @media screen and (max-width: 992px) {
-  #org_activities_unit .content .pic {
+  #org_activities_unit .content img {
     width: 640px;
     height: 360px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #org_activities_unit .content .pic {
+  #org_activities_unit .content img {
     width: 480px;
     height: 270px;
   }
 }
 
 @media screen and (max-width: 576px) {
-  #org_activities_unit .content .pic {
-    width: 400px;
-    height: 225px;
+  #org_activities_unit .content img {
+    width: 100%;
+    height: auto;
   }
-}
-
-@media screen and (max-width: 450px) {
-  #org_activities_unit .content .pic {
-    width: 360px;
-    height: 202.5px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  #org_activities_unit .content .pic {
-    width: 340px;
-    height: 191.25px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  #org_activities_unit .content .pic {
-    width: 320px;
-    height: 180px;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  #org_activities_unit .content .pic {
-    width: 280px;
-    height: 157.5px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  #org_activities_unit .content .pic {
-    width: 240px;
-    height: 135px;
-  }
-}
-
-#org_activities_unit .content .pic .width_100 {
-  width: 100%;
-}
-
-#org_activities_unit .content .pic .height_100 {
-  height: 100%;
 }
 
 #org_activities_unit .content h4 {

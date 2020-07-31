@@ -26,12 +26,13 @@ $color_white: #fff
         outline: none
         // border: none
         box-shadow: none !important  
-        -webkit-appearance: none  
+        // -webkit-appearance: none  
         -moz-appearance: none    
 html,body
     margin: 0
     padding: 0
     position: relative
+
 
 =mtb
     margin-top: 50px
@@ -153,7 +154,8 @@ select,textarea,input,.form-control
 .bootstrap-select .dropdown-toggle:focus 
   outline: none !important
   border: 1px solid $color_dark_orange
-
+.invisiable
+    color: white
 
 // -----------------------------------------------------
 // page
@@ -579,10 +581,6 @@ ul.nav.navbar-nav
                         border-bottom: 1px solid $color_light_gray !important
                     ul.dropdown-menu
                         li.drop-item
-
-
-
-
 // 主要導覽列
 .main-nav
     padding: 10px 0
@@ -723,9 +721,13 @@ ul.nav.navbar-nav
                         width: 510px
                         height: 286.88px
                     @media screen and ( max-width: 576px )
-                        width: 100%
-                        height: auto
+                        width: 463px
+                        height: 260.44px
+                    @media screen and ( max-width: 480px )
+                        width: 420px
+                        height: 236.25px    
             .card-body
+                overflow: hidden
                 @media screen and ( max-width: 992px )
                     padding: 20px 0
                 .card-title
@@ -859,10 +861,6 @@ ul.nav.navbar-nav
                 margin: 20px 0 10px 0
             p.text
                 text-align: center
-                
-
- 
-  
 // -----------------------------------------------------
 // 公益新訊、急難救助、獎助學金
 #news
@@ -2089,13 +2087,6 @@ footer
             .col-12.col-md-6,.col-12
                 @media screen and ( max-width: 768px )
                     padding: 0
-            .one_line
-                display: flex
-                flex-wrap: wrap
-                padding: 0
-                .form-group.col-6,.form-group.col-3
-                    @media screen and ( max-width: 768px )
-                        padding-left: 0 
             // 上傳檔案
             .custom-file
                 input.custom-file-input
@@ -2106,10 +2097,7 @@ footer
                         content: "選擇檔案"
                 .custom-file-input:focus ~ .custom-file-label
                         border-color: $color_light_gray
-                        box-shadow: none
-            .form-check-input
-                &:focus,&:checked
-                    -webkit-appearance: checkbox
+                        box-shadow: none    
             .region,.service
                 display: flex
                 flex-wrap: wrap
@@ -2126,6 +2114,9 @@ footer
             .gender,.age
                 .form-check
                     display: inline-block
+                    .form-check-input
+                    &:focus,&:checked
+                        -webkit-appearance: radio !important
                 .age_range
                     display: inline-block
                     input
@@ -2314,7 +2305,7 @@ footer
                         box-shadow: none
             .form-check-input
                 &:focus,&:checked
-                    -webkit-appearance: checkbox
+                    
             // 驗證碼
             .input-group
                 width: calc( 100% - 30px )
@@ -2506,7 +2497,7 @@ footer
                         box-shadow: none
             .form-check-input
                 &:focus,&:checked
-                    -webkit-appearance: checkbox
+                    
             // 驗證碼
             .input-group
                 width: calc( 100% - 30px )
@@ -2701,7 +2692,7 @@ footer
                         box-shadow: none
             .form-check-input
                 &:focus,&:checked
-                    -webkit-appearance: checkbox
+                    
             // 驗證碼
             .input-group
                 width: calc( 100% - 30px )
@@ -2893,7 +2884,7 @@ footer
                         box-shadow: none
             .form-check-input
                 &:focus,&:checked
-                    -webkit-appearance: checkbox
+                    
             // 驗證碼
             .input-group
                 width: calc( 100% - 30px )
@@ -3085,7 +3076,7 @@ footer
                         box-shadow: none
             .form-check-input
                 &:focus,&:checked
-                    -webkit-appearance: checkbox
+                    
             // 驗證碼
             .input-group
                 width: calc( 100% - 30px )
@@ -3277,7 +3268,7 @@ footer
                         box-shadow: none
             .form-check-input
                 &:focus,&:checked
-                    -webkit-appearance: checkbox
+                    
             // 驗證碼
             .input-group
                 width: calc( 100% - 30px )
@@ -3469,7 +3460,7 @@ footer
                         box-shadow: none
             .form-check-input
                 &:focus,&:checked
-                    -webkit-appearance: checkbox
+                    
             // 驗證碼
             .input-group
                 width: calc( 100% - 30px )
@@ -3644,16 +3635,18 @@ footer
                 margin-bottom: 16px
                 .foreign
                     display: inline-block
-                    .foreign_input
-                        display: inline-block
-                        height: 30px
-                        width: 80px
+                .foreign_input
+                    display: inline-block !important
+                    height: 25px
+                    width: 70px
+                    &:focus
+                        border: 1px solid $color_dark_orange
 
                 .form-group.form-check
                     margin: 5px 10px 5px 0
             .form-check-input
                 &:focus,&:checked
-                    -webkit-appearance: checkbox
+                    
             // 驗證碼
             .input-group
                 width: calc( 100% - 30px )
@@ -3828,16 +3821,18 @@ footer
                 margin-bottom: 16px
                 .foreign
                     display: inline-block
-                    .foreign_input
-                        display: inline-block
-                        height: 30px
-                        width: 80px
+                .foreign_input
+                    display: inline-block !important
+                    height: 25px
+                    width: 70px
+                    &:focus
+                        border: 1px solid $color_dark_orange
 
                 .form-group.form-check
                     margin: 5px 10px 5px 0
             .form-check-input
                 &:focus,&:checked
-                    -webkit-appearance: checkbox
+                    
             // 驗證碼
             .input-group
                 width: calc( 100% - 30px )
@@ -4012,16 +4007,18 @@ footer
                 margin-bottom: 16px
                 .foreign
                     display: inline-block
-                    .foreign_input
-                        display: inline-block
-                        height: 30px
-                        width: 80px
+                .foreign_input
+                    display: inline-block !important
+                    height: 25px
+                    width: 70px
+                    &:focus
+                        border: 1px solid $color_dark_orange
 
                 .form-group.form-check
                     margin: 5px 10px 5px 0
             .form-check-input
                 &:focus,&:checked
-                    -webkit-appearance: checkbox
+                    
             // 驗證碼
             .input-group
                 width: calc( 100% - 30px )
@@ -4202,7 +4199,7 @@ footer
                         box-shadow: none
             .form-check-input
                 &:focus,&:checked
-                    -webkit-appearance: checkbox
+                    
             // 驗證碼
             .input-group
                 width: calc( 100% - 30px )
@@ -4356,7 +4353,7 @@ footer
                         box-shadow: none
             .form-check-input
                 &:focus,&:checked
-                    -webkit-appearance: checkbox
+                    
             // 驗證碼
             .input-group
                 width: calc( 100% - 30px )
@@ -4525,7 +4522,7 @@ footer
                         box-shadow: none
             .form-check-input
                 &:focus,&:checked
-                    -webkit-appearance: checkbox
+                    
             .region,.service
                 display: flex
                 flex-wrap: wrap
@@ -4727,7 +4724,7 @@ footer
                         box-shadow: none
             .form-check-input
                 &:focus,&:checked
-                    -webkit-appearance: checkbox
+                    
             // 驗證碼
             .input-group
                 width: calc( 100% - 30px )
@@ -4881,7 +4878,7 @@ footer
                         box-shadow: none
             .form-check-input
                 &:focus,&:checked
-                    -webkit-appearance: checkbox
+                    
             // 驗證碼
             .input-group
                 width: calc( 100% - 30px )
@@ -5050,7 +5047,7 @@ footer
                         box-shadow: none
             .form-check-input
                 &:focus,&:checked
-                    -webkit-appearance: checkbox
+                    
             .region,.service
                 display: flex
                 flex-wrap: wrap
@@ -5094,7 +5091,7 @@ footer
                 &:hover
                     background-color: lighten($color_yellow,10% )
 // -----------------------------------------------------        
-// 10.1.1.10.1前台-會員-履歷登錄
+// 10.1.3.2前台-會員-履歷登錄
 #font_end_member_resume
     .left
         .dropdown.bootstrap-select
@@ -5121,7 +5118,18 @@ footer
             .col-12
                 @media screen and ( max-width: 576px )
                     padding: 0
-
+            .dropdown.bootstrap-select
+                ul.dropdown-menu.inner.show
+                    li
+                        a.dropdown-item
+                            &:active
+                                background-color: lighten($color_yellow,10% )
+                            color: $color_black
+                            padding: 10px 12px
+                        a.dropdown-item.active
+                            background-color: lighten($color_yellow,10% )
+                            &:active
+                                background-color: lighten($color_yellow,10% )
             // radio 兵役狀況
             .solider
                 .form-check
@@ -5133,7 +5141,7 @@ footer
                     margin: 5px 10px 5px 0
             .form-check-input
                 &:focus,&:checked
-                    -webkit-appearance: checkbox
+                    
             // 上傳檔案
             .custom-file
                 input.custom-file-input
@@ -5224,28 +5232,7 @@ footer
             &:hover   
                 background-color: lighten($color_yellow,10%)
 // -----------------------------------------------------        
-// 10.2會員申請流程說明            
-#register_explanation
-    h2
-        &::before
-            display: none
-    .right
-        .org_explanation,.com_explanation,.member_explanation
-            margin-bottom: 20px
-        .form-check-input
-            &:focus,&:checked
-                -webkit-appearance: checkbox
-        button
-            display: block
-            margin: 0 auto
-            margin-bottom: 20px
-            padding: 4px 25px
-            background-color: $color_yellow
-            transition: 0.5s 
-            &:hover
-                background-color: lighten($color_yellow,10% )
-// -----------------------------------------------------        
-// 10.3申請會員
+// 10.2申請會員
 #register
     .right
         h3
@@ -5295,6 +5282,28 @@ footer
                 border: none
                 width: 100px
                 background-color: lighten($color_yellow,10% )
+        // 會員申請流程說明
+        .register_explanation
+            .col-12
+                @media screen and ( max-width: 768px )
+                    padding: 0
+            // 機構專區申請說明、企業專區申請說明 、一般會員申請說明
+            .org_explanation,.com_explanation,.member_explanation
+                p
+                    margin: 10px 0
+            .form-check
+                margin: 0 0 16px 15px
+                @media screen and ( max-width: 768px )
+                    padding: 0 0 16px 5px
+            button.explanation_submit
+                display: block
+                margin: 0 auto
+                margin-bottom: 20px
+                padding: 4px 25px
+                background-color: $color_yellow
+                transition: 0.5s 
+                &:hover
+                    background-color: lighten($color_yellow,10% )
         // 機構註冊、企業註冊、一般會員、機構註冊-創建使用者 開始、企業註冊-創建使用者 開始
         .org_register_form,.com_register_form,.member_register_form,.org_register_account,.com_register_account
             display: flex
@@ -5302,13 +5311,6 @@ footer
             .col-12.col-md-6,.col-12
                 @media screen and ( max-width: 768px )
                     padding: 0
-            .one_line
-                display: flex
-                flex-wrap: wrap
-                padding: 0
-                .form-group.col-6,.form-group.col-3
-                    @media screen and ( max-width: 768px )
-                        padding-left: 0 
             // 上傳檔案
             .custom-file
                 input.custom-file-input
@@ -5322,7 +5324,7 @@ footer
                         box-shadow: none 
             .form-check-input
                 &:focus,&:checked
-                    -webkit-appearance: checkbox
+                    
             .region,.service
                 display: flex
                 flex-wrap: wrap
@@ -5990,7 +5992,8 @@ footer
             color: $color_gray
             display: block
             margin-bottom: 20px
-        .pic
+        img
+            object-fit: contain
             width: 720px
             height: 405px
             @media screen and ( max-width: 1200px )
@@ -6003,31 +6006,9 @@ footer
                 width: 480px
                 height: 270px
             @media screen and ( max-width: 576px )
-                width: 400px
-                height: 225px
-            @media screen and ( max-width: 450px )
-                width: 360px
-                height: 202.5px
-            @media screen and ( max-width: 400px )
-                width: 340px
-                height: 191.25px
-            @media screen and ( max-width: 375px )
-                width: 320px
-                height: 180px
-            @media screen and ( max-width: 360px )
-                width: 280px
-                height: 157.5px
-            @media screen and ( max-width: 320px )
-                width: 240px
-                height: 135px
-            display: flex
-            justify-content: center
-            align-items: center
-            margin: 0 auto
-            .width_100
                 width: 100%
-            .height_100
-                height: 100%
+                height: auto
+
         h4
             +title
             padding: 12px 0 12px 20px
