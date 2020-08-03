@@ -29,7 +29,9 @@ $color_white: #fff
         // -webkit-appearance: none  
         -moz-appearance: none
     &:focus
-        outline: -webkit-focus-ring-color auto 1px !important
+        outline: $color_dark_orange auto 1px !important
+        @media screen and ( max-width: 992px )
+            outline: none !important
     
 html,body
     margin: 0
@@ -819,7 +821,6 @@ ul.nav.navbar-nav
 // -----------------------------------------------------
 // 公益商城
 #shop
-    // +mtb
     .shop_slick
         display: flex
         flex-direction: row
@@ -846,6 +847,7 @@ ul.nav.navbar-nav
                     width: 100%
                     height: auto
                 img
+                    overflow: hidden
                     object-fit: contain
                     width: 255px
                     height: 255px
@@ -2098,6 +2100,13 @@ footer
                 border: none
                 width: 100px
                 background-color: lighten($color_yellow,10% )
+        // 地址在手機尺寸顯示滿版
+        .col-6.col-md-3.left
+            @media screen and ( max-width: 768px )
+                padding-left: 0
+        .col-6.col-md-3.right
+            @media screen and ( max-width: 768px )
+                padding-right: 0
         .register_form
             display: flex
             flex-wrap: wrap
@@ -4513,6 +4522,13 @@ footer
                 border: none
                 width: 100px
                 background-color: lighten($color_yellow,10% )
+        // 地址在手機尺寸顯示滿版
+        .col-6.col-md-3.left
+            @media screen and ( max-width: 768px )
+                padding-left: 0
+        .col-6.col-md-3.right
+            @media screen and ( max-width: 768px )
+                padding-right: 0
         .register_form
             display: flex
             flex-wrap: wrap
@@ -5299,6 +5315,13 @@ footer
                 border: none
                 width: 100px
                 background-color: lighten($color_yellow,10% )
+        // 地址在手機尺寸顯示滿版
+        .col-6.col-md-3.left
+            @media screen and ( max-width: 768px )
+                padding-left: 0
+        .col-6.col-md-3.right
+            @media screen and ( max-width: 768px )
+                padding-right: 0
         // 會員申請流程說明
         .register_explanation
             .col-12

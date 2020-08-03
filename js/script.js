@@ -31,7 +31,7 @@ $('#activity_card').slick({
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
-    adaptiveHeight: true,
+    // adaptiveHeight: true,
     dots:true,
     // centerMode: true,
     arrows: false
@@ -40,7 +40,7 @@ $('#activity_card').slick({
 $('.shop_slick').slick({
     arrows: false,
     autoplay: true,
-    adaptiveHeight: true,
+    // adaptiveHeight: true,
     autoplaySpeed: 5000,
     slidesToShow: 4,
     slidesToScroll: 1,

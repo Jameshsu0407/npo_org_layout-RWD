@@ -21,7 +21,13 @@
 }
 
 *:focus {
-  outline: -webkit-focus-ring-color auto 1px !important;
+  outline: #FA9C25 auto 1px !important;
+}
+
+@media screen and (max-width: 992px) {
+  *:focus {
+    outline: none !important;
+  }
 }
 
 html, body {
@@ -1146,6 +1152,7 @@ ul.nav.navbar-nav li.dropdown ul.dropdown-menu li.dropdown ul.dropdown-menu {
 }
 
 #shop .shop_slick .card .pic img {
+  overflow: hidden;
   object-fit: contain;
   width: 255px;
   height: 255px;
@@ -3197,6 +3204,18 @@ footer .copyright p {
   border: none;
   width: 100px;
   background-color: #ffe4a2;
+}
+
+@media screen and (max-width: 768px) {
+  #font_end_org_information .right .col-6.col-md-3.left {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #font_end_org_information .right .col-6.col-md-3.right {
+    padding-right: 0;
+  }
 }
 
 #font_end_org_information .right .register_form {
@@ -6734,6 +6753,18 @@ footer .copyright p {
   background-color: #ffe4a2;
 }
 
+@media screen and (max-width: 768px) {
+  #font_end_com_information .right .col-6.col-md-3.left {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #font_end_com_information .right .col-6.col-md-3.right {
+    padding-right: 0;
+  }
+}
+
 #font_end_com_information .right .register_form {
   display: flex;
   flex-wrap: wrap;
@@ -7904,6 +7935,18 @@ footer .copyright p {
   border: none;
   width: 100px;
   background-color: #ffe4a2;
+}
+
+@media screen and (max-width: 768px) {
+  #register .right .col-6.col-md-3.left {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #register .right .col-6.col-md-3.right {
+    padding-right: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
