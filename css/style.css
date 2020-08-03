@@ -16,9 +16,12 @@
 }
 
 *:focus, *:checked {
-  outline: none;
   box-shadow: none !important;
   -moz-appearance: none;
+}
+
+*:focus {
+  outline: -webkit-focus-ring-color auto 1px !important;
 }
 
 html, body {
@@ -114,25 +117,14 @@ ul {
 
 select, textarea, input, .form-control {
   border: 1px solid #d4d4d4;
-  outline: none !important;
-  box-shadow: none !important;
   transition: 0.5s;
 }
 
 select:focus, select:active, textarea:focus, textarea:active, input:focus, input:active, .form-control:focus, .form-control:active {
   border-color: #FA9C25 !important;
-  outline: none !important;
-  box-shadow: none !important;
-}
-
-.dropdown.bootstrap-select:focus {
-  outline: none !important;
-  box-shadow: none !important;
 }
 
 .dropdown.bootstrap-select button.dropdown-toggle {
-  outline: none !important;
-  box-shadow: none !important;
   background-color: transparent;
   border: 1px solid #d4d4d4;
   padding-right: 15px;
@@ -144,8 +136,6 @@ select:focus, select:active, textarea:focus, textarea:active, input:focus, input
 }
 
 .dropdown.bootstrap-select button.dropdown-toggle:focus {
-  outline: none !important;
-  box-shadow: none !important;
   border-color: #FA9C25 !important;
 }
 
@@ -2949,6 +2939,27 @@ footer .copyright p {
   .member_same .content_top .left .dropdown.bootstrap-select.phone_nav {
     width: 100%;
   }
+}
+
+.member_same .content_top .left .dropdown.bootstrap-select.phone_nav ul.dropdown-menu.inner.show li a.dropdown-item {
+  color: #343A40;
+  padding: 10px 12px;
+}
+
+.member_same .content_top .left .dropdown.bootstrap-select.phone_nav ul.dropdown-menu.inner.show li a.dropdown-item:active {
+  background-color: #ffe4a2;
+}
+
+.member_same .content_top .left .dropdown.bootstrap-select.phone_nav ul.dropdown-menu.inner.show li a.dropdown-item span.fas, .member_same .content_top .left .dropdown.bootstrap-select.phone_nav ul.dropdown-menu.inner.show li a.dropdown-item span.far {
+  width: 20px;
+}
+
+.member_same .content_top .left .dropdown.bootstrap-select.phone_nav ul.dropdown-menu.inner.show li a.dropdown-item.active {
+  background-color: #ffe4a2;
+}
+
+.member_same .content_top .left .dropdown.bootstrap-select.phone_nav ul.dropdown-menu.inner.show li a.dropdown-item.active:active {
+  background-color: #ffe4a2;
 }
 
 #all_login .right {

@@ -146,3 +146,30 @@ $('input[type="file"]').change(function(e){
     var fileName = e.target.files[0].name;
     $('.custom-file-label').html(fileName);
 });
+
+// 無障礙導覽列下拉選單
+$(".tab-dropdown-menu1").on("focusout", "li:last", function (e) {
+    $(this).parents("ul.dropdown-menu").css("display", "none");
+    $(this)
+        .parents("li.tab-dropdown-menu1")
+        .removeClass("dropdown on")
+        .addClass("dropdown");
+});
+$(".tab-dropdown-menu2").on("focusout", "li:last", function (e) {
+    $(this).parents("ul.menu-default").css("display", "none");
+    $(this)
+        .parents("li.tab-dropdown-menu1")
+        .removeClass("dropdown on")
+        .addClass("dropdown");
+});
+$(".dropdown").on("focusin", "a", function (e) {
+    $(this)
+        .next("ul")
+        .css("display", "block")
+        .css("opacity", "1")
+        .parent(".dropdown")
+        .addClass("dropdown on")
+        .siblings(".dropdown")
+        .removeClass("dropdown on")
+        .addClass("dropdown");
+});

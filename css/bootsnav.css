@@ -421,7 +421,7 @@ body.on-side{
 }
 
 .side .widget ul.link li a:before{ /*側邊選單開啟,超連結前面加符號*/
-    font-family: 'FontAwesome';
+    font-family: 'Font Awesome 5 Free';
 	content:"\f105";
 	padding-right:0.4rem
 	}
@@ -544,7 +544,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     }
     
     nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after{
-        font-family: 'FontAwesome';
+        font-family: 'Font Awesome 5 Free';
         content: "\f0d7";
         margin-left: 5px;
         margin-top: 2px;
@@ -593,7 +593,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     
     /*箭頭向右*/
 	nav.navbar.bootsnav li.dropdown ul.dropdown-menu li.dropdown > a.dropdown-toggle:before{
-        font-family: 'FontAwesome';
+        font-family: 'Font Awesome 5 Free';
         float: right;
         content: "\f105";
         margin-top: 0;
@@ -601,7 +601,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     
     /*箭頭向左*/ 
 	/*nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li.dropdown > a.dropdown-toggle:before{
-        font-family: 'FontAwesome';
+        font-family: 'Font Awesome 5 Free';
         float: left;
         content: "\f104";
         margin-top: 0;
@@ -958,7 +958,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     }
     
     nav.bootsnav.navbar-sidebar ul.nav li.dropdown ul.dropdown-menu li.dropdown > a:before{
-        font-family: 'FontAwesome';
+        font-family: 'Font Awesome 5 Free';
         content: "\f105";
         float: right;
     }
@@ -990,7 +990,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     }
     
     nav.bootsnav.navbar-sidebar .dropdown .megamenu-content .col-menu .title:before{
-        font-family: 'FontAwesome';
+        font-family: 'Font Awesome 5 Free';
         content: "\f105";
         float: right;
     }
@@ -1067,11 +1067,12 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     }
     
     nav.navbar.bootsnav li.dropdown a.dropdown-toggle:before{
-        font-family: 'FontAwesome';
+        font-family: 'Font Awesome 5 Free';
         content: "\f105";
         float: right;
         font-size: 16px;
         margin-right: 15px;
+        font-weight: 900;
     }
     
     nav.navbar.bootsnav li.dropdown.on > a.dropdown-toggle:before{
@@ -1172,7 +1173,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     }
     
    nav.navbar.bootsnav .dropdown .megamenu-content .col-menu .title:before{
-        font-family: 'FontAwesome';
+        font-family: 'Font Awesome 5 Free';
         content: "\f105";
         float: right;
         font-size: 16px;
