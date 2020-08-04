@@ -1043,7 +1043,9 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     }
     
     nav.navbar.bootsnav.no-full .navbar-collapse{
-        max-height: 350px;
+        /* max-height: 350px; */
+        /* 手機版撐滿版 */
+        height: 100vh;
         overflow-y: auto !important;
     }
     

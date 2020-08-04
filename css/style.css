@@ -634,7 +634,7 @@ ul.nav.navbar-nav li.dropdown a.dropdown-toggle {
     font-weight: 600;
   }
   ul.nav.navbar-nav li.dropdown a.dropdown-toggle::after {
-    font-family: 'FontAwesome';
+    font-family: 'Font Awesome 5 Free';
     content: "\f0d7";
     margin-left: 5px;
     margin-top: 2px;
@@ -1416,7 +1416,7 @@ footer .copyright p {
 }
 
 #founder .content_top h4::before {
-  font-family: 'FontAwesome';
+  font-family: 'Font Awesome 5 Free';
   content: "\f192";
   margin-right: 5px;
 }
