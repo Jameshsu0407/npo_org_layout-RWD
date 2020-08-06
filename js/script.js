@@ -210,15 +210,12 @@ document.addEventListener('DOMContentLoaded', function () {
         selectable: true,
         longPressDelay: 0,
         contentHeight: 450,
-        // dateClick: function(date) {
-        //     alert("dataclick");
-        //     $('.fc-day[data-date="' + date.format('YYYY-MM-DD') + '"]').addClass("fc-highlight");
+        dateClick: function(date) {
+            window.location.href = "#";
+        },
+        // select: function(startDate, endDate) {
         //     window.location.href = "#";
         // },
-        dateClick: function(date) {
-        },
-        select: function(startDate, endDate) {
-        },
         events: [
             {   
                 description: '蝦皮618活動！全館滿千送百',
