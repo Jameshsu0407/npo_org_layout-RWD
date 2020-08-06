@@ -208,12 +208,12 @@ document.addEventListener('DOMContentLoaded', function () {
         showNonCurrentDates: false,
         fixedWeekCount: true,
         selectable: true,
-        longPressDelay: 5000,
-        // selectLongPressDelay: 0,
+        // longPressDelay: 2000,
+        selectLongPressDelay: 0,
         contentHeight: 450,
         dateClick: function(date) {
             window.location.href = "1.html";
-            alert("longPressDelay: 5000");
+            alert("selectLongPressDelay: 0");
         },
         // select: function(startDate, endDate) {
         //     window.location.href = "#";
