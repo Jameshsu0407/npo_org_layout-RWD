@@ -164,7 +164,6 @@ function FadeGoToTop() {
     }
 }
 
-
 // 顯示上傳檔案名稱
 $('input[type="file"]').change(function(e){
     var fileName = e.target.files[0].name;
@@ -199,3 +198,37 @@ if($(window).width()>992){
             .addClass("dropdown");
     }); 
 }
+
+// fullcalendar初始化
+document.addEventListener('DOMContentLoaded', function () {
+    var calendarEl = document.getElementById('calendar');
+    if (calendarEl != null){
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+        plugins: ['interaction','dayGrid'],
+        showNonCurrentDates: false,
+        fixedWeekCount: true,
+        selectable: true,
+        contentHeight: 450,
+        dateClick: function(info) {
+            alert("dataclick");
+            $('.fc-day[data-date="' + date.format('YYYY-MM-DD') + '"]').addClass("fc-highlight");
+            window.location.href = "#";
+        },
+        events: [
+            {   
+                description: '蝦皮618活動！全館滿千送百',
+                start: '2020-06-18',
+                url:'#'
+            },
+            {
+                description: 'WWDC 2020',
+                start: '2020-06-22',
+                url:'#'
+            }
+        ]
+        });
+        calendar.render();
+        // 中文語系
+        calendar.setOption('locale', 'zh-tw');
+    }
+});

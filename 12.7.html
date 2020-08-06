@@ -343,39 +343,5 @@
     <script src="./js/bootstrap-select.js"></script>
     <!-- script-->
     <script src="./js/script.js"></script>
-    <!-- fullcalendar初始化-->
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-          var calendarEl = document.getElementById('calendar');
-          if (calendarEl != null){
-              var calendar = new FullCalendar.Calendar(calendarEl, {
-              plugins: ['interaction','dayGrid'],
-              showNonCurrentDates: false,
-              fixedWeekCount: true,
-              selectable: true,
-              contentHeight: 450,
-              dateClick: function(info) {
-                  alert("dataclick");
-                  window.location.href = "#";
-              },
-              events: [
-                  {   
-                      description: '蝦皮618活動！全館滿千送百',
-                      start: '2020-06-18',
-                      url:'#'
-                  },
-                  {
-                      description: 'WWDC 2020',
-                      start: '2020-06-22',
-                      url:'#'
-                  }
-              ]
-              });
-              calendar.render();
-              // 中文語系
-              calendar.setOption('locale', 'zh-tw');
-          }
-      });
-    </script>
   </body>
 </html>
