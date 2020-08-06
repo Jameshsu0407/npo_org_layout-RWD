@@ -210,20 +210,24 @@ document.addEventListener('DOMContentLoaded', function () {
         selectable: true,
         longPressDelay: 0,
         contentHeight: 450,
-        dateClick: function(info) {
-            alert("dataclick");
-            $('.fc-day[data-date="' + date.format('YYYY-MM-DD') + '"]').addClass("fc-highlight");
-            window.location.href = "#";
+        // dateClick: function(date) {
+        //     alert("dataclick");
+        //     $('.fc-day[data-date="' + date.format('YYYY-MM-DD') + '"]').addClass("fc-highlight");
+        //     window.location.href = "#";
+        // },
+        dateClick: function(date) {
+        },
+        select: function(startDate, endDate) {
         },
         events: [
             {   
                 description: '蝦皮618活動！全館滿千送百',
-                start: '2020-06-18',
+                start: '2020-08-18',
                 url:'#'
             },
             {
                 description: 'WWDC 2020',
-                start: '2020-06-22',
+                start: '2020-08-22',
                 url:'#'
             }
         ]
