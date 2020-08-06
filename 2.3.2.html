@@ -206,16 +206,13 @@
           if (calendarEl != null){
               var calendar = new FullCalendar.Calendar(calendarEl, {
               plugins: ['interaction','dayGrid'],
-              fixedWeekCount: false,
+              showNonCurrentDates: false,
+              fixedWeekCount: true,
               selectable: true,
+              contentHeight: 450,
               dateClick: function(info) {
-                  alert('selected ' + info.startStr + ' to ' + info.endStr);
+                  alert("dataclick");
               },
-              //- navLinks: true,
-              //- navLinkDayClick: function(date, jsEvent) {
-              //-     console.log('day', date.toISOString());
-              //-     console.log('coords', jsEvent.pageX, jsEvent.pageY);
-              //- }
               events: [
                   {   
                       description: '蝦皮618活動！全館滿千送百',
@@ -233,37 +230,6 @@
               // 中文語系
               calendar.setOption('locale', 'zh-tw');
           }
-      
-          //- v5
-          //- var calendarEl = document.getElementById('calendar');
-      
-          //- var calendar = new FullCalendar.Calendar(calendarEl, {
-          //-     selectable: true,
-          //-     fixedWeekCount: true,
-      
-          //-     dateClick: function(info) {
-          //-         alert("dataClick");
-          //-     },
-          //-     select: function(info) {
-          //-         alert("Select");
-          //-     },
-          //-     events: [
-          //-         {   
-          //-             description: '蝦皮618活動！全館滿千送百',
-          //-             start: '2020-08-18',
-          //-             url:'#'
-          //-         },
-          //-         {
-          //-             description: 'WWDC 2020',
-          //-             start: '2020-06-22',
-          //-             url:'#'
-          //-         }
-          //-     ]
-          //- });
-      
-          //- calendar.render();
-          //- // 中文語系
-          //- calendar.setOption('locale', 'zh-tw');
       });
     </script>
     <!-- 滑動-->
@@ -280,7 +246,7 @@
                   document.getElementById("navbar").style.top = "0";
               }
               else {
-                  document.getElementById("navbar").style.top = "-135px";
+                  document.getElementById("navbar").style.top = "-35px";
               }
               prevScrollpos = currentScrollPos;
               //- // 手機版視窗滾動收回導覽列

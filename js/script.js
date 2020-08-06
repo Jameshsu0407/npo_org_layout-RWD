@@ -3,17 +3,13 @@ $(document).ready(function($) {
     $(".clickable-row").click(function() {
         window.document.location = $(this).data("href");
     });
-    // 導覽列初始化
-    // $('#bootnavbar').bootnavbar();
 
     // selectpicker手機原生選單
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
         $('.selectpicker').selectpicker('mobile');
-        // $.fn.selectpicker.Constructor.DEFAULTS.mobile = true;
     } 
     else{
         // selectpicker初始化
-        // $('.selectpicker').selectpicker().selectpicker("render");
         $(".selectpicker").selectpicker("refresh");
     }
 });
@@ -141,22 +137,6 @@ $(window).scroll(function(){
         $('#backToTop').fadeOut();
     }
 });
-
-// // 調整圖片不符規定尺寸時留白部分
-// $( ".fixed_size" ).each(function (i) {
-//     var pic_width= $(this).width();
-//     var pic_height= $(this).height();
-    
-//     if(pic_width > pic_height){
-//         $(this).addClass('width_100');
-//         $(this).removeClass('height_100');
-       
-//     }
-//     else if(pic_width <= pic_height){
-//         $(this).addClass('height_100');
-//         $(this).removeClass('width_100');
-//     }
-// })
 
 // 顯示上傳檔案名稱
 $('input[type="file"]').change(function(e){

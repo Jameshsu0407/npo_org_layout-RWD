@@ -2146,10 +2146,6 @@ footer .copyright p {
   display: none;
 }
 
-#npo_allowance_calendar .content_left #calendar, #npo_scholarship_calendar .content_left #calendar {
-  height: 500px;
-}
-
 #npo_allowance_calendar .content_left .fc, #npo_scholarship_calendar .content_left .fc {
   cursor: pointer;
 }
@@ -2190,7 +2186,7 @@ footer .copyright p {
 }
 
 #npo_allowance_calendar .content_right, #npo_scholarship_calendar .content_right {
-  height: 450.469px;
+  height: 500px;
   overflow: scroll;
 }
 
