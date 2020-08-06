@@ -2146,6 +2146,10 @@ footer .copyright p {
   display: none;
 }
 
+#npo_allowance_calendar .content_left #calendar, #npo_scholarship_calendar .content_left #calendar {
+  height: 500px;
+}
+
 #npo_allowance_calendar .content_left .fc, #npo_scholarship_calendar .content_left .fc {
   cursor: pointer;
 }
@@ -8024,12 +8028,12 @@ footer .copyright p {
   box-shadow: none;
 }
 
-#register .right .org_register_form .region, #register .right .org_register_form .service, #register .right .com_register_form .region, #register .right .com_register_form .service, #register .right .member_register_form .region, #register .right .member_register_form .service, #register .right .org_register_account .region, #register .right .org_register_account .service, #register .right .com_register_account .region, #register .right .com_register_account .service {
+#register .right .org_register_form .region, #register .right .org_register_form .service, #register .right .org_register_form .support, #register .right .com_register_form .region, #register .right .com_register_form .service, #register .right .com_register_form .support, #register .right .member_register_form .region, #register .right .member_register_form .service, #register .right .member_register_form .support, #register .right .org_register_account .region, #register .right .org_register_account .service, #register .right .org_register_account .support, #register .right .com_register_account .region, #register .right .com_register_account .service, #register .right .com_register_account .support {
   display: flex;
   flex-wrap: wrap;
 }
 
-#register .right .org_register_form .region .form-group, #register .right .org_register_form .service .form-group, #register .right .com_register_form .region .form-group, #register .right .com_register_form .service .form-group, #register .right .member_register_form .region .form-group, #register .right .member_register_form .service .form-group, #register .right .org_register_account .region .form-group, #register .right .org_register_account .service .form-group, #register .right .com_register_account .region .form-group, #register .right .com_register_account .service .form-group {
+#register .right .org_register_form .region .form-group, #register .right .org_register_form .service .form-group, #register .right .org_register_form .support .form-group, #register .right .com_register_form .region .form-group, #register .right .com_register_form .service .form-group, #register .right .com_register_form .support .form-group, #register .right .member_register_form .region .form-group, #register .right .member_register_form .service .form-group, #register .right .member_register_form .support .form-group, #register .right .org_register_account .region .form-group, #register .right .org_register_account .service .form-group, #register .right .org_register_account .support .form-group, #register .right .com_register_account .region .form-group, #register .right .com_register_account .service .form-group, #register .right .com_register_account .support .form-group {
   margin: 10px;
 }
 

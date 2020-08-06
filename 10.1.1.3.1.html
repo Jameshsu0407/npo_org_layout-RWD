@@ -16,8 +16,7 @@
     <!-- fontawesome v5.13-->
     <link rel="stylesheet" href="./css/fontawesome.css">
     <!-- fullcalendar v4.42-->
-    <link rel="stylesheet" href="./css/core.main.css">
-    <link rel="stylesheet" href="./css/daygrid.main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.2.0/main.min.css">
     <!-- bootstrap-select v1.13.14-->
     <link rel="stylesheet" href="./css/bootstrap-select.css">
     <!-- css-->
@@ -149,7 +148,6 @@
             <!-- pc版導覽列-->
             <ul class="pc_nav">
               <li><i class="fa fa-caret-right"></i><a href="10.1.1.1.html">修改組織基本資料</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.2.html">公益新訊</a></li>
               <li><i class="fa fa-caret-right"></i><a href="10.1.1.3.html">最新活動</a></li>
               <li><i class="fa fa-caret-right"></i><a href="10.1.1.4.html">公益影片</a></li>
               <li><i class="fa fa-caret-right"></i><a href="10.1.1.5.html">補助公告</a></li>
@@ -167,7 +165,6 @@
             <!-- 手機版導覽列-->
             <select class="selectpicker phone_nav" onchange="location.href=this.options[this.selectedIndex].value">
               <option value="10.1.1.1.html">修改組織基本資料</option>
-              <option value="10.1.1.2.html"> 公益新訊</option>
               <option value="10.1.1.3.html" selected> 最新活動</option>
               <option value="10.1.1.4.html"> 公益影片</option>
               <option value="10.1.1.5.html"> 補助公告</option>
@@ -593,40 +590,76 @@
     <!-- bootnav-->
     <script src="./js/bootsnav.js"></script>
     <!-- fullcalendar-->
-    <script src="./js/core.main.js"></script>
-    <script src="./js/daygrid.main.js"></script>
-    <script src="./js/locales-all.js"></script>
-    <script src="./js/interaction.main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.2.0/main.min.js"></script>
     <!-- bootstrap-select-->
     <script src="./js/bootstrap-select.js"></script>
+    <!-- touch UI-->
+    <script src="./js/jquery.ui.touch.js"></script>
     <!-- script-->
     <script src="./js/script.js"></script>
     <!-- fullcalendar初始化-->
     <script>
       document.addEventListener('DOMContentLoaded', function () {
+          //- var calendarEl = document.getElementById('calendar');
+          //- if (calendarEl != null){
+          //-     var calendar = new FullCalendar.Calendar(calendarEl, {
+          //-     plugins: ['interaction','dayGrid'],
+          //-     fixedWeekCount: false,
+          //-     selectable: true,
+          //-     dateClick: function(info) {
+          //-         alert('selected ' + info.startStr + ' to ' + info.endStr);
+          //-     },
+          //-     //- navLinks: true,
+          //-     //- navLinkDayClick: function(date, jsEvent) {
+          //-     //-     console.log('day', date.toISOString());
+          //-     //-     console.log('coords', jsEvent.pageX, jsEvent.pageY);
+          //-     //- }
+          //-     events: [
+          //-         {   
+          //-             description: '蝦皮618活動！全館滿千送百',
+          //-             start: '2020-06-18',
+          //-             url:'#'
+          //-         },
+          //-         {
+          //-             description: 'WWDC 2020',
+          //-             start: '2020-06-22',
+          //-             url:'#'
+          //-         }
+          //-     ]
+          //-     });
+          //-     calendar.render();
+          //-     // 中文語系
+          //-     calendar.setOption('locale', 'zh-tw');
+          //- }
           var calendarEl = document.getElementById('calendar');
-          if (calendarEl != null){
-              var calendar = new FullCalendar.Calendar(calendarEl, {
-              plugins: ['interaction','dayGrid'],
-              fixedWeekCount: false,
+      
+          var calendar = new FullCalendar.Calendar(calendarEl, {
               selectable: true,
-              events: [
-                  {   
-                      description: '蝦皮618活動！全館滿千送百',
-                      start: '2020-06-18',
-                      url:'#'
-                  },
-                  {
-                      description: 'WWDC 2020',
-                      start: '2020-06-22',
-                      url:'#'
-                  }
-              ]
-              });
-              calendar.render();
-              // 中文語系
-              calendar.setOption('locale', 'zh-tw');
-          }
+              fixedWeekCount: true,
+      
+              dateClick: function(info) {
+                  alert("dataClick");
+              },
+              select: function(info) {
+                  alert("Select");
+              },
+              //- events: [
+              //-     {   
+              //-         description: '蝦皮618活動！全館滿千送百',
+              //-         start: '2020-08-18',
+              //-         url:'#'
+              //-     },
+              //-     {
+              //-         description: 'WWDC 2020',
+              //-         start: '2020-06-22',
+              //-         url:'#'
+              //-     }
+              //- ]
+          });
+      
+          calendar.render();
+          // 中文語系
+          calendar.setOption('locale', 'zh-tw');
       });
     </script>
     <!-- 滑動-->
