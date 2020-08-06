@@ -5,7 +5,6 @@ $(document).ready(function($) {
     });
     // 導覽列初始化
     // $('#bootnavbar').bootnavbar();
-    // $('#calendar').addTouch();
 
     // selectpicker手機原生選單
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
