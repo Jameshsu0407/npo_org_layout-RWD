@@ -208,6 +208,7 @@ document.addEventListener('DOMContentLoaded', function () {
         showNonCurrentDates: false,
         fixedWeekCount: true,
         selectable: true,
+        longPressDelay: 0,
         contentHeight: 450,
         dateClick: function(info) {
             alert("dataclick");
