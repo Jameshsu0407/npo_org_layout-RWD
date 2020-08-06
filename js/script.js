@@ -113,7 +113,7 @@ $('body').on('click','.navbar-toggle',function(){
     }
 });
 
-// goToElement
+// GoToElement
 $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function (t) {
     if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
         var e = $(this.hash);
@@ -126,17 +126,44 @@ $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function (t) {
         }))
     }
 });
-// goToElement漸入漸出
-$(window).scroll(function(){
+
+// 當視窗滾動時
+$(window).scroll(function () {
+    // 滑動導覽列上縮
+    HideNav();
+    // GoToTop漸入漸出
+    FadeGoToTop();
+});
+
+// 滑動導覽列上縮
+// 一開始的高度
+var prevScrollpos=$(window).scrollTop();
+function HideNav() {
+    // 現在高度
+    var currentScrollPos = $(this).scrollTop();
+    if(currentScrollPos < 0){
+        $('#navbar').css('top', "0px");
+    }
+    else if(prevScrollpos > currentScrollPos){
+        $('#navbar').css('top', "0px");
+    }
+    else{
+        $('#navbar').css('top', "-35px");
+    }
+    // 現在的高度變成先前的高度
+    prevScrollpos = currentScrollPos;
+}
+
+// GoToTop漸入漸出
+function FadeGoToTop() {
     if ($(this).scrollTop()>150){
-        // $('#backToTop').css('display','block');
         $('#backToTop').fadeIn();
     }
     else{
-        // $('#backToTop').css('display','none');
         $('#backToTop').fadeOut();
     }
-});
+}
+
 
 // 顯示上傳檔案名稱
 $('input[type="file"]').change(function(e){
