@@ -395,6 +395,12 @@ nav#navbar
                     text-align: center
                 @media screen and ( max-width: 765px )
                     padding: 2.5px 0
+// 手機版下拉滿版選單
+nav.navbar.bootsnav.no-full .navbar-collapse
+    @media screen and ( max-width: 992px )
+        min-height: 20vh
+        max-height: 72vh
+
 // 最上方導覽列共同樣式
 ul.drop-down-menu-top
     font-size: 13px
@@ -461,15 +467,12 @@ ul.drop-down-menu-top
                     transition: 0.5s
                     line-height: 35px
                     &:hover
-                        color: $color_yellow	
-// // 沒有下拉式的nav調整
-// li.no-dropdown
-//     a
-//         // 壓過bootsnav樣式
-//         padding: 0 !important
-//         @media screen and ( max-width: 992px )
-//             //  壓過電腦版padding:0的important
-//             padding: 10px 0 !important
+                        color: $color_yellow
+    .attr-nav.sub-drop-down-menu-top
+        display: inline-block
+        position: static
+        float: none
+        margin-left: 10px
 
 // pc版選單樣式
 // 第一層下拉式選單

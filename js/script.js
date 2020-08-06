@@ -93,12 +93,30 @@ $('#bottom_ads').slick({
     ]
 });
 
-// // 列表點選連結
-// $(document).ready(function($) {
-//     $(".clickable-row").click(function() {
-//         window.document.location = $(this).data("href");
-//     });
-// });
+// 漢堡在點開時
+$('body').on('click','.navbar-toggle',function(){
+    // 注意，這邊抓到的狀態是上一個狀態
+    // 意思是：當按下button展開選單時我們以為show會出現，但是程式在show還沒出現時就已經進入if else裡面了
+    // 所以if else裡面的東西要寫反的
+    // if裡面放沒有show的
+    if($('#navbar-menu').hasClass('show')){
+        // 頁面可以滾動
+        $('body').css("overflow-y","auto");
+        $('body').css("overflow","auto");
+        // icon變成回漢堡
+        $('.navbar-toggle i').removeClass("fa-times");
+        $('.navbar-toggle i').addClass("fa-bars");
+    }
+    // else裡面放有show的
+    else{
+        // 底下頁面不會滑動
+        $('body').css("overflow-y","hidden");
+        $('body').css("overflow","hidden");
+        // icon變成叉叉
+        $('.navbar-toggle i').removeClass("fa-bars");
+        $('.navbar-toggle i').addClass("fa-times");
+    }
+});
 
 // goToElement
 $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function (t) {
@@ -147,29 +165,31 @@ $('input[type="file"]').change(function(e){
     $('.custom-file-label').html(fileName);
 });
 
-// 無障礙導覽列下拉選單
-$(".tab-dropdown-menu1").on("focusout", "li:last", function (e) {
-    $(this).parents("ul.dropdown-menu").css("display", "none");
-    $(this)
-        .parents("li.tab-dropdown-menu1")
-        .removeClass("dropdown on")
-        .addClass("dropdown");
-});
-$(".tab-dropdown-menu2").on("focusout", "li:last", function (e) {
-    $(this).parents("ul.menu-default").css("display", "none");
-    $(this)
-        .parents("li.tab-dropdown-menu1")
-        .removeClass("dropdown on")
-        .addClass("dropdown");
-});
-$(".dropdown").on("focusin", "a", function (e) {
-    $(this)
-        .next("ul")
-        .css("display", "block")
-        .css("opacity", "1")
-        .parent(".dropdown")
-        .addClass("dropdown on")
-        .siblings(".dropdown")
-        .removeClass("dropdown on")
-        .addClass("dropdown");
-});
+if($(window).width()>992){
+    // 無障礙導覽列下拉選單
+    $(".tab-dropdown-menu1").on("focusout", "li:last", function (e) {
+        $(this).parents("ul.dropdown-menu").css("display", "none");
+        $(this)
+            .parents("li.tab-dropdown-menu1")
+            .removeClass("dropdown on")
+            .addClass("dropdown");
+    });
+    $(".tab-dropdown-menu2").on("focusout", "li:last", function (e) {
+        $(this).parents("ul.menu-default").css("display", "none");
+        $(this)
+            .parents("li.tab-dropdown-menu1")
+            .removeClass("dropdown on")
+            .addClass("dropdown");
+    });
+    $(".dropdown").on("focusin", "a", function (e) {
+        $(this)
+            .next("ul")
+            .css("display", "block")
+            .css("opacity", "1")
+            .parent(".dropdown")
+            .addClass("dropdown on")
+            .siblings(".dropdown")
+            .removeClass("dropdown on")
+            .addClass("dropdown");
+    }); 
+}

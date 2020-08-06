@@ -526,6 +526,13 @@ nav#navbar a:hover {
   }
 }
 
+@media screen and (max-width: 992px) {
+  nav.navbar.bootsnav.no-full .navbar-collapse {
+    min-height: 20vh;
+    max-height: 72vh;
+  }
+}
+
 ul.drop-down-menu-top {
   font-size: 13px;
   height: 35px;
@@ -611,6 +618,13 @@ ul.drop-down-menu-top li.sub-drop-down-menu-top ul.sec li a {
 
 ul.drop-down-menu-top li.sub-drop-down-menu-top ul.sec li a:hover {
   color: #ffd56f;
+}
+
+ul.drop-down-menu-top .attr-nav.sub-drop-down-menu-top {
+  display: inline-block;
+  position: static;
+  float: none;
+  margin-left: 10px;
 }
 
 ul.nav.navbar-nav {
