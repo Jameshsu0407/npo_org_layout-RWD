@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', function () {
         longPressDelay: 0,
         contentHeight: 450,
         dateClick: function(date) {
-            window.location.href = "#";
+            window.location.href = "1.html";
         },
         // select: function(startDate, endDate) {
         //     window.location.href = "#";
