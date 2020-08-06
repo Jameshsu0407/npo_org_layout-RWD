@@ -212,7 +212,7 @@ document.addEventListener('DOMContentLoaded', function () {
         contentHeight: 450,
         dateClick: function(date) {
             window.location.href = "1.html";
-            alert("dateClick");
+            alert("selectLongPressDelay");
         },
         // select: function(startDate, endDate) {
         //     window.location.href = "#";
