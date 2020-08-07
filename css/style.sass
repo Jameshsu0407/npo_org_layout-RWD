@@ -1411,6 +1411,8 @@ footer
 // -----------------------------------------------------        
 // 4.1.3補助行事曆 4.3.3獎助行事曆
 #npo_allowance_calendar,#npo_scholarship_calendar
+    .selectedDate
+        background-color: rgba(255, 220, 40, 0.15)
     .content_top
         margin-top: 150px
         margin-bottom: 50px
@@ -1427,7 +1429,7 @@ footer
             @media screen and ( max-width: 992px )
                 height: auto !important
                 overflow: initial !important
-        .fc-left
+        .fc-toolbar-chunk
             h2
                 font-size: 24px
                 &::before

@@ -2110,6 +2110,10 @@ footer .copyright p {
   color: #FA9C25;
 }
 
+#npo_allowance_calendar .selectedDate, #npo_scholarship_calendar .selectedDate {
+  background-color: rgba(255, 220, 40, 0.15);
+}
+
 #npo_allowance_calendar .content_top, #npo_scholarship_calendar .content_top {
   margin-top: 150px;
   margin-bottom: 50px;
@@ -2138,11 +2142,11 @@ footer .copyright p {
   }
 }
 
-#npo_allowance_calendar .content_left .fc-left h2, #npo_scholarship_calendar .content_left .fc-left h2 {
+#npo_allowance_calendar .content_left .fc-toolbar-chunk h2, #npo_scholarship_calendar .content_left .fc-toolbar-chunk h2 {
   font-size: 24px;
 }
 
-#npo_allowance_calendar .content_left .fc-left h2::before, #npo_scholarship_calendar .content_left .fc-left h2::before {
+#npo_allowance_calendar .content_left .fc-toolbar-chunk h2::before, #npo_scholarship_calendar .content_left .fc-toolbar-chunk h2::before {
   display: none;
 }
 

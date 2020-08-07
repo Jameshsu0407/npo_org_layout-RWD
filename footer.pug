@@ -34,48 +34,9 @@ script(src="./js/slick.js")
 // bootnav
 script(src="./js/bootsnav.js")
 // fullcalendar
-script(src="./js/core.main.js")
-script(src="./js/daygrid.main.js")
 script(src="./js/locales-all.js")
-script(src="./js/interaction.main.js")
-//- script(src="https://cdn.jsdelivr.net/npm/fullcalendar@5.2.0/main.min.js")
+script(src="./js/main.js")
 // bootstrap-select
 script(src="./js/bootstrap-select.js")
 // script
 script(src="./js/script.js")
-
-
-//- // fullcalendar初始化
-//- script.
-//-     document.addEventListener('DOMContentLoaded', function () {
-//-         var calendarEl = document.getElementById('calendar');
-//-         if (calendarEl != null){
-//-             var calendar = new FullCalendar.Calendar(calendarEl, {
-//-             plugins: ['interaction','dayGrid'],
-//-             showNonCurrentDates: false,
-//-             fixedWeekCount: true,
-//-             selectable: true,
-//-             contentHeight: 450,
-//-             dateClick: function(info) {
-//-                 alert("dataclick");
-//-                 $('.fc-day[data-date="' + date.format('YYYY-MM-DD') + '"]').addClass("fc-state-highlight");
-//-                 window.location.href = "#";
-//-             },
-//-             events: [
-//-                 {   
-//-                     description: '蝦皮618活動！全館滿千送百',
-//-                     start: '2020-06-18',
-//-                     url:'#'
-//-                 },
-//-                 {
-//-                     description: 'WWDC 2020',
-//-                     start: '2020-06-22',
-//-                     url:'#'
-//-                 }
-//-             ]
-//-             });
-//-             calendar.render();
-//-             // 中文語系
-//-             calendar.setOption('locale', 'zh-tw');
-//-         }
-//-     });
