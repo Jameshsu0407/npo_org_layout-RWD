@@ -6834,6 +6834,103 @@ footer .copyright p {
   background-color: #ffe4a2;
 }
 
+#font_end_org_resume_search_list .left .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item {
+  color: #343A40;
+  padding: 10px 12px;
+}
+
+#font_end_org_resume_search_list .left .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item:active {
+  background-color: #ffe4a2;
+}
+
+#font_end_org_resume_search_list .left .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item.active {
+  background-color: #ffe4a2;
+}
+
+#font_end_org_resume_search_list .left .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item.active:active {
+  background-color: #ffe4a2;
+}
+
+#font_end_org_resume_search_list form.search {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#font_end_org_resume_search_list form.search .dropdown.bootstrap-select {
+  padding: 0;
+}
+
+#font_end_org_resume_search_list form.search .dropdown.bootstrap-select button.btn.dropdown-toggle {
+  background-color: transparent;
+}
+
+#font_end_org_resume_search_list form.search .dropdown.bootstrap-select button.btn.dropdown-toggle::after {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+}
+
+#font_end_org_resume_search_list form.search .dropdown.bootstrap-select .dropdown-menu a.dropdown-item:active {
+  background-color: #ffe4a2;
+}
+
+#font_end_org_resume_search_list form.search .dropdown.bootstrap-select .dropdown-menu a.dropdown-item.active {
+  background-color: #ffe4a2;
+}
+
+#font_end_org_resume_search_list form.search .dropdown.bootstrap-select .dropdown-menu a.dropdown-item.active:active {
+  background-color: #ffe4a2;
+}
+
+#font_end_org_resume_search_list form.search .submit {
+  background-color: #ffd56f;
+  transition: 0.5s;
+  display: block;
+  margin: 0 auto;
+}
+
+#font_end_org_resume_search_list form.search .submit:hover {
+  background-color: #ffe4a2;
+}
+
+#font_end_org_resume_search_list .warring_rule {
+  margin: 20px 0;
+  padding: 8px 15px;
+  background-color: #ffe4a2;
+  border-radius: 5px;
+}
+
+#font_end_org_resume_search_list .warring_rule h4 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 0;
+  text-align: center;
+  color: red;
+}
+
+#font_end_org_resume_search_list .warring_rule p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#font_end_org_resume_search_list table.table {
+  margin-top: 20px;
+  table-layout: fixed;
+}
+
+#font_end_org_resume_search_list table.table .thead-color .type_width {
+  width: 120px;
+}
+
+#font_end_org_resume_search_list table.table .clickable-row {
+  cursor: pointer;
+}
+
+#font_end_org_resume_search_list #page ul.pagination li a i:hover {
+  color: #ffd56f;
+}
+
 #font_end_com_information .left .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item {
   color: #343A40;
   padding: 10px 12px;
@@ -8754,8 +8851,6 @@ footer .copyright p {
 }
 
 #org_donate_list .content {
-  display: flex;
-  flex-wrap: wrap;
   margin-top: 30px;
 }
 
@@ -8764,8 +8859,6 @@ footer .copyright p {
 }
 
 #org_donate_list .content a .post {
-  display: flex;
-  flex-wrap: wrap;
   border: 1px solid #d4d4d4;
   transition: 0.5s;
   margin-bottom: 30px;
@@ -8777,114 +8870,30 @@ footer .copyright p {
   transform: scale(1.03);
 }
 
-#org_donate_list .content a .post .post_left {
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding: 0;
-}
-
-#org_donate_list .content a .post .post_left .time_box {
-  position: absolute;
-  background-color: rgba(247, 194, 128, 0.8);
-  top: 0;
-  padding: 5px;
-  z-index: 2;
-}
-
-@media screen and (max-width: 1200px) {
-  #org_donate_list .content a .post .post_left .time_box {
-    top: 10px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  #org_donate_list .content a .post .post_left .time_box {
-    top: 0;
-  }
-}
-
-#org_donate_list .content a .post .post_left .time_box span {
-  color: #fff;
-  text-align: center;
-  display: block;
-  text-align: center;
-}
-
-#org_donate_list .content a .post .post_left .time_box span.year {
-  font-size: 14px;
-  margin-bottom: -5px;
-}
-
-#org_donate_list .content a .post .post_left .time_box span.date {
-  font-size: 20px;
-  font-weight: 700;
-}
-
-#org_donate_list .content a .post .post_left img {
-  object-fit: contain;
-  width: 232.66px;
-  height: 130.86px;
-  position: relative;
-}
-
-@media screen and (max-width: 1200px) {
-  #org_donate_list .content a .post .post_left img {
-    width: 192.66px;
-    height: 108.36px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  #org_donate_list .content a .post .post_left img {
-    width: 274.16px;
-    height: 154.2px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #org_donate_list .content a .post .post_left img {
-    width: 478px;
-    height: 268.88px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  #org_donate_list .content a .post .post_left img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-#org_donate_list .content a .post .post_right {
-  padding-right: 0;
-}
-
-@media screen and (max-width: 768px) {
-  #org_donate_list .content a .post .post_right {
-    padding: 0;
-  }
-}
-
-#org_donate_list .content a .post .post_right h3 {
+#org_donate_list .content a .post h3 {
   font-weight: 600;
   font-size: 18px;
   margin-bottom: 0;
-  margin: 10px 0;
+  color: #FA9C25;
 }
 
-#org_donate_list .content a .post .post_right p {
+#org_donate_list .content a .post span.time {
+  font-size: 14px;
+  color: #B5B8A3;
+}
+
+#org_donate_list .content a .post p.content {
   margin: 10px 0;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   /* autoprefixer: off */
   white-space: normal;
   line-height: 25px;
-  height: 78px;
+  height: 50px;
 }
 
 #org_donate_list #page {
