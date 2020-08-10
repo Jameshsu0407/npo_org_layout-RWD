@@ -3333,34 +3333,34 @@ footer .copyright p {
   background-color: #ffe4a2;
 }
 
-#font_end_org_newpost_list .left .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item {
+#font_end_org_ad_list .left .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item {
   color: #343A40;
   padding: 10px 12px;
 }
 
-#font_end_org_newpost_list .left .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item:active {
+#font_end_org_ad_list .left .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item:active {
   background-color: #ffe4a2;
 }
 
-#font_end_org_newpost_list .left .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item.active {
+#font_end_org_ad_list .left .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item.active {
   background-color: #ffe4a2;
 }
 
-#font_end_org_newpost_list .left .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item.active:active {
+#font_end_org_ad_list .left .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item.active:active {
   background-color: #ffe4a2;
 }
 
-#font_end_org_newpost_list .top_information {
+#font_end_org_ad_list .top_information {
   position: relative;
 }
 
-#font_end_org_newpost_list .top_information h4 {
+#font_end_org_ad_list .top_information h4 {
   font-weight: 600;
   font-size: 18px;
   margin-bottom: 0;
 }
 
-#font_end_org_newpost_list .top_information .right_1 {
+#font_end_org_ad_list .top_information .right_1 {
   display: flex;
   align-items: center;
   position: absolute;
@@ -3369,32 +3369,32 @@ footer .copyright p {
 }
 
 @media screen and (max-width: 768px) {
-  #font_end_org_newpost_list .top_information .right_1 {
+  #font_end_org_ad_list .top_information .right_1 {
     position: static;
     margin: 5px 0;
   }
 }
 
-#font_end_org_newpost_list .top_information .right_1 span {
+#font_end_org_ad_list .top_information .right_1 span {
   font-weight: 600;
   margin: 0 5px;
 }
 
 @media screen and (max-width: 768px) {
-  #font_end_org_newpost_list .top_information .right_1 span {
+  #font_end_org_ad_list .top_information .right_1 span {
     margin: 0;
   }
 }
 
-#font_end_org_newpost_list .top_information .right_1 select.post_year {
+#font_end_org_ad_list .top_information .right_1 select.post_year {
   margin: 0 5px;
 }
 
-#font_end_org_newpost_list .top_information .right_1 select.post_year:focus {
+#font_end_org_ad_list .top_information .right_1 select.post_year:focus {
   border: 1px solid #d4d4d4;
 }
 
-#font_end_org_newpost_list .top_information .right_1 button.btn {
+#font_end_org_ad_list .top_information .right_1 button.btn {
   display: inline-block;
   margin: 0 0 0 5px;
   padding: 2px 10px;
@@ -3402,66 +3402,66 @@ footer .copyright p {
   transition: 0.5s;
 }
 
-#font_end_org_newpost_list .top_information .right_1 button.btn:hover {
+#font_end_org_ad_list .top_information .right_1 button.btn:hover {
   background-color: #ffe4a2;
 }
 
-#font_end_org_newpost_list .top_information .right_1 .dropdown.bootstrap-select.post_year button.btn.dropdown-toggle {
+#font_end_org_ad_list .top_information .right_1 .dropdown.bootstrap-select.post_year button.btn.dropdown-toggle {
   background-color: transparent;
   font-size: 0.875rem;
   line-height: 1.5;
   border-radius: 0.2rem;
 }
 
-#font_end_org_newpost_list .top_information .right_1 .dropdown.bootstrap-select.post_year button.btn.dropdown-toggle::after {
+#font_end_org_ad_list .top_information .right_1 .dropdown.bootstrap-select.post_year button.btn.dropdown-toggle::after {
   position: absolute;
   top: 50%;
   right: 8px;
   transform: translateY(-50%);
 }
 
-#font_end_org_newpost_list .top_information .right_1 .dropdown.bootstrap-select.post_year .dropdown-menu {
+#font_end_org_ad_list .top_information .right_1 .dropdown.bootstrap-select.post_year .dropdown-menu {
   left: -6px !important;
 }
 
-#font_end_org_newpost_list .top_information .right_1 .dropdown.bootstrap-select.post_year .dropdown-menu a.dropdown-item:active {
+#font_end_org_ad_list .top_information .right_1 .dropdown.bootstrap-select.post_year .dropdown-menu a.dropdown-item:active {
   background-color: #ffe4a2;
 }
 
-#font_end_org_newpost_list .top_information .right_1 .dropdown.bootstrap-select.post_year .dropdown-menu a.dropdown-item.active {
+#font_end_org_ad_list .top_information .right_1 .dropdown.bootstrap-select.post_year .dropdown-menu a.dropdown-item.active {
   background-color: #ffe4a2;
 }
 
-#font_end_org_newpost_list .top_information .right_1 .dropdown.bootstrap-select.post_year .dropdown-menu a.dropdown-item.active:active {
+#font_end_org_ad_list .top_information .right_1 .dropdown.bootstrap-select.post_year .dropdown-menu a.dropdown-item.active:active {
   background-color: #ffe4a2;
 }
 
-#font_end_org_newpost_list .top_information .right_2 {
+#font_end_org_ad_list .top_information .right_2 {
   position: absolute;
   top: 30px;
   right: 0;
 }
 
 @media screen and (max-width: 768px) {
-  #font_end_org_newpost_list .top_information .right_2 {
+  #font_end_org_ad_list .top_information .right_2 {
     position: static;
     margin: 5px 0;
   }
 }
 
-#font_end_org_newpost_list .top_information .right_2 .max_piece, #font_end_org_newpost_list .top_information .right_2 .now_piece {
+#font_end_org_ad_list .top_information .right_2 .max_piece, #font_end_org_ad_list .top_information .right_2 .now_piece {
   margin: 0 10px;
   color: red;
 }
 
-#font_end_org_newpost_list .warring_rule {
+#font_end_org_ad_list .warring_rule {
   margin: 20px 0;
   padding: 8px 15px;
   background-color: #ffe4a2;
   border-radius: 5px;
 }
 
-#font_end_org_newpost_list .warring_rule h4 {
+#font_end_org_ad_list .warring_rule h4 {
   font-weight: 600;
   font-size: 18px;
   margin-bottom: 0;
@@ -3469,25 +3469,24 @@ footer .copyright p {
   color: red;
 }
 
-#font_end_org_newpost_list .warring_rule p {
+#font_end_org_ad_list .warring_rule p {
   padding: 5px 0;
   margin: 0;
 }
 
-#font_end_org_newpost_list table.table {
+#font_end_org_ad_list table.table {
   margin-top: 20px;
-  table-layout: fixed;
 }
 
-#font_end_org_newpost_list table.table .thead-color .type_width {
+#font_end_org_ad_list table.table .thead-color .type_width {
   width: 120px;
 }
 
-#font_end_org_newpost_list table.table .clickable-row {
+#font_end_org_ad_list table.table .clickable-row {
   cursor: pointer;
 }
 
-#font_end_org_newpost_list #page ul.pagination li a i:hover {
+#font_end_org_ad_list #page ul.pagination li a i:hover {
   color: #ffd56f;
 }
 
@@ -3762,8 +3761,30 @@ footer .copyright p {
   width: 120px;
 }
 
+#font_end_org_activities_list table.table .thead-color .small_width {
+  width: 120px;
+}
+
+@media screen and (max-width: 576px) {
+  #font_end_org_activities_list table.table .thead-color .small_width {
+    width: 90px;
+  }
+}
+
 #font_end_org_activities_list table.table .clickable-row {
   cursor: pointer;
+}
+
+#font_end_org_activities_list table.table button.search_btn {
+  padding: 3px 15px;
+  background-color: #ffd56f;
+  border: none;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+#font_end_org_activities_list table.table button.search_btn:hover {
+  background-color: #ffe4a2;
 }
 
 #font_end_org_activities_list #page ul.pagination li a i:hover {
@@ -3894,6 +3915,147 @@ footer .copyright p {
 
 #font_end_org_activities_add .right .activities_add .login_button:hover {
   background-color: #ffe4a2;
+}
+
+#font_end_org_activities_excel .left .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item {
+  color: #343A40;
+  padding: 10px 12px;
+}
+
+#font_end_org_activities_excel .left .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item:active {
+  background-color: #ffe4a2;
+}
+
+#font_end_org_activities_excel .left .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item.active {
+  background-color: #ffe4a2;
+}
+
+#font_end_org_activities_excel .left .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item.active:active {
+  background-color: #ffe4a2;
+}
+
+#font_end_org_activities_excel .top_information {
+  position: relative;
+}
+
+#font_end_org_activities_excel .top_information h4 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+#font_end_org_activities_excel .top_information .right_1 {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#font_end_org_activities_excel .top_information .right_1 .excel {
+  background-color: #ffd56f;
+  padding: 3px 10px 3px 5px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+#font_end_org_activities_excel .top_information .right_1 .excel:hover {
+  background-color: #ffe4a2;
+}
+
+#font_end_org_activities_excel .top_information .right_1 .excel i {
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 768px) {
+  #font_end_org_activities_excel .top_information .right_1 {
+    position: static;
+    margin: 5px 0;
+  }
+}
+
+#font_end_org_activities_excel .top_information .right_1 span {
+  font-weight: 600;
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 768px) {
+  #font_end_org_activities_excel .top_information .right_1 span {
+    margin: 0;
+  }
+}
+
+#font_end_org_activities_excel .top_information .right_1 select.post_year {
+  margin: 0 5px;
+}
+
+#font_end_org_activities_excel .top_information .right_1 select.post_year:focus {
+  border: 1px solid #d4d4d4;
+}
+
+#font_end_org_activities_excel .top_information .right_1 button.btn {
+  display: inline-block;
+  margin: 0 0 0 5px;
+  padding: 2px 10px;
+  background-color: #ffd56f;
+  transition: 0.5s;
+}
+
+#font_end_org_activities_excel .top_information .right_1 button.btn:hover {
+  background-color: #ffe4a2;
+}
+
+#font_end_org_activities_excel .top_information .right_1 .dropdown.bootstrap-select.post_year button.btn.dropdown-toggle {
+  background-color: transparent;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+}
+
+#font_end_org_activities_excel .top_information .right_1 .dropdown.bootstrap-select.post_year button.btn.dropdown-toggle::after {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+}
+
+#font_end_org_activities_excel .top_information .right_1 .dropdown.bootstrap-select.post_year .dropdown-menu {
+  left: -6px !important;
+}
+
+#font_end_org_activities_excel .top_information .right_1 .dropdown.bootstrap-select.post_year .dropdown-menu a.dropdown-item:active {
+  background-color: #ffe4a2;
+}
+
+#font_end_org_activities_excel .top_information .right_1 .dropdown.bootstrap-select.post_year .dropdown-menu a.dropdown-item.active {
+  background-color: #ffe4a2;
+}
+
+#font_end_org_activities_excel .top_information .right_1 .dropdown.bootstrap-select.post_year .dropdown-menu a.dropdown-item.active:active {
+  background-color: #ffe4a2;
+}
+
+#font_end_org_activities_excel .warring_rule {
+  margin: 20px 0;
+  padding: 8px 15px;
+  background-color: #ffe4a2;
+  border-radius: 5px;
+}
+
+#font_end_org_activities_excel .warring_rule h4 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 0;
+  text-align: center;
+  color: red;
+}
+
+#font_end_org_activities_excel table.table {
+  margin-top: 20px;
+}
+
+#font_end_org_activities_excel #page ul.pagination li a i:hover {
+  color: #ffd56f;
 }
 
 #font_end_org_video_list .left .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item {

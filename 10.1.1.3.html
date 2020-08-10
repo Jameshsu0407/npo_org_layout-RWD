@@ -148,6 +148,7 @@
             <!-- pc版導覽列-->
             <ul class="pc_nav">
               <li><i class="fa fa-caret-right"></i><a href="10.1.1.1.html">修改組織基本資料</a></li>
+              <li><i class="fa fa-caret-right"></i><a href="10.1.1.2.html">廣告刊登</a></li>
               <li><i class="fa fa-caret-right"></i><a href="10.1.1.3.html">最新活動</a></li>
               <li><i class="fa fa-caret-right"></i><a href="10.1.1.4.html">公益影片</a></li>
               <li><i class="fa fa-caret-right"></i><a href="10.1.1.5.html">補助公告</a></li>
@@ -165,6 +166,7 @@
             <!-- 手機版導覽列-->
             <select class="selectpicker phone_nav" onchange="location.href=this.options[this.selectedIndex].value">
               <option value="10.1.1.1.html">修改組織基本資料</option>
+              <option value="10.1.1.2.html">廣告刊登</option>
               <option value="10.1.1.3.html" selected> 最新活動</option>
               <option value="10.1.1.4.html"> 公益影片</option>
               <option value="10.1.1.5.html"> 補助公告</option>
@@ -212,100 +214,146 @@
                 <tr>
                   <th class="type_width off" scope="col">類別</th>
                   <th scope="col">活動標題</th>
-                  <th scope="col">活動時間</th>
-                  <th class="type_width" scope="col">點閱次數</th>
+                  <th class="type_width" scope="col">活動時間</th>
+                  <th class="type_width off" scope="col">點閱次數</th>
+                  <th class="small_width" scope="col">報名人數</th>
                 </tr>
               </thead>
               <tbody>
-                <tr class="clickable-row" data-href="10.1.1.3.1.html">
-                  <th class="text-center off" scope="row">綜合性服務</th>
-                  <th class="text-center text-truncate">第四屆「堉璘台灣奉獻獎」公開徵選</th>
-                  <td class="text-center text-truncate">2020/04/13</td>
-                  <td class="text-center">107</td>
+                <tr>
+                  <th class="text-center off clickable-row" data-href="10.1.1.3.1.html" scope="row">綜合性服務</th>
+                  <th class="text-center text-truncate clickable-row" data-href="10.1.1.3.1.html">第四屆「堉璘台灣奉獻獎」公開徵選</th>
+                  <td class="text-center text-truncate clickable-row" data-href="10.1.1.3.1.html">2020/04/13</td>
+                  <td class="text-center off clickable-row" data-href="10.1.1.3.1.html">107</td>
+                  <td class="text-center clickable-row" data-href="10.1.1.3.2.html">
+                    <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
+                  </td>
                 </tr>
-                <tr class="clickable-row" data-href="10.1.1.3.1.html">
-                  <th class="text-center off" scope="row">綜合性服務</th>
-                  <th class="text-center text-truncate">吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</th>
-                  <td class="text-center text-truncate">2020/04/13</td>
-                  <td class="text-center">52</td>
+                <tr>
+                  <th class="text-center off clickable-row" data-href="10.1.1.3.1.html" scope="row">綜合性服務</th>
+                  <th class="text-center text-truncate clickable-row" data-href="10.1.1.3.1.html">吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</th>
+                  <td class="text-center text-truncate clickable-row" data-href="10.1.1.3.1.html">2020/04/13</td>
+                  <td class="text-center off clickable-row" data-href="10.1.1.3.1.html">52</td>
+                  <td class="text-center clickable-row" data-href="10.1.1.3.2.html">
+                    <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
+                  </td>
                 </tr>
-                <tr class="clickable-row" data-href="10.1.1.3.1.html">
-                  <th class="text-center off" scope="row">綜合性服務</th>
-                  <th class="text-center text-truncate">第四屆「堉璘台灣奉獻獎」公開徵選</th>
-                  <td class="text-center text-truncate">2020/04/13</td>
-                  <td class="text-center">107</td>
+                <tr>
+                  <th class="text-center off clickable-row" data-href="10.1.1.3.1.html" scope="row">綜合性服務</th>
+                  <th class="text-center text-truncate clickable-row" data-href="10.1.1.3.1.html">第四屆「堉璘台灣奉獻獎」公開徵選</th>
+                  <td class="text-center text-truncate clickable-row" data-href="10.1.1.3.1.html">2020/04/13</td>
+                  <td class="text-center off clickable-row" data-href="10.1.1.3.1.html">107</td>
+                  <td class="text-center clickable-row" data-href="10.1.1.3.2.html">
+                    <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
+                  </td>
                 </tr>
-                <tr class="clickable-row" data-href="10.1.1.3.1.html">
-                  <th class="text-center off" scope="row">綜合性服務</th>
-                  <th class="text-center text-truncate">吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</th>
-                  <td class="text-center text-truncate">2020/04/13</td>
-                  <td class="text-center">52</td>
+                <tr>
+                  <th class="text-center off clickable-row" data-href="10.1.1.3.1.html" scope="row">綜合性服務</th>
+                  <th class="text-center text-truncate clickable-row" data-href="10.1.1.3.1.html">吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</th>
+                  <td class="text-center text-truncate clickable-row" data-href="10.1.1.3.1.html">2020/04/13</td>
+                  <td class="text-center off clickable-row" data-href="10.1.1.3.1.html">52</td>
+                  <td class="text-center clickable-row" data-href="10.1.1.3.2.html">
+                    <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
+                  </td>
                 </tr>
-                <tr class="clickable-row" data-href="10.1.1.3.1.html">
-                  <th class="text-center off" scope="row">綜合性服務</th>
-                  <th class="text-center text-truncate">第四屆「堉璘台灣奉獻獎」公開徵選</th>
-                  <td class="text-center text-truncate">2020/04/13</td>
-                  <td class="text-center">107</td>
+                <tr>
+                  <th class="text-center off clickable-row" data-href="10.1.1.3.1.html" scope="row">綜合性服務</th>
+                  <th class="text-center text-truncate clickable-row" data-href="10.1.1.3.1.html">第四屆「堉璘台灣奉獻獎」公開徵選</th>
+                  <td class="text-center text-truncate clickable-row" data-href="10.1.1.3.1.html">2020/04/13</td>
+                  <td class="text-center off clickable-row" data-href="10.1.1.3.1.html">107</td>
+                  <td class="text-center clickable-row" data-href="10.1.1.3.2.html">
+                    <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
+                  </td>
                 </tr>
-                <tr class="clickable-row" data-href="10.1.1.3.1.html">
-                  <th class="text-center off" scope="row">綜合性服務</th>
-                  <th class="text-center text-truncate">吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</th>
-                  <td class="text-center text-truncate">2020/04/13</td>
-                  <td class="text-center">52</td>
+                <tr>
+                  <th class="text-center off clickable-row" data-href="10.1.1.3.1.html" scope="row">綜合性服務</th>
+                  <th class="text-center text-truncate clickable-row" data-href="10.1.1.3.1.html">吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</th>
+                  <td class="text-center text-truncate clickable-row" data-href="10.1.1.3.1.html">2020/04/13</td>
+                  <td class="text-center off clickable-row" data-href="10.1.1.3.1.html">52</td>
+                  <td class="text-center clickable-row" data-href="10.1.1.3.2.html">
+                    <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
+                  </td>
                 </tr>
-                <tr class="clickable-row" data-href="10.1.1.3.1.html">
-                  <th class="text-center off" scope="row">綜合性服務</th>
-                  <th class="text-center text-truncate">第四屆「堉璘台灣奉獻獎」公開徵選</th>
-                  <td class="text-center text-truncate">2020/04/13</td>
-                  <td class="text-center">107</td>
+                <tr>
+                  <th class="text-center off clickable-row" data-href="10.1.1.3.1.html" scope="row">綜合性服務</th>
+                  <th class="text-center text-truncate clickable-row" data-href="10.1.1.3.1.html">第四屆「堉璘台灣奉獻獎」公開徵選</th>
+                  <td class="text-center text-truncate clickable-row" data-href="10.1.1.3.1.html">2020/04/13</td>
+                  <td class="text-center off clickable-row" data-href="10.1.1.3.1.html">107</td>
+                  <td class="text-center clickable-row" data-href="10.1.1.3.2.html">
+                    <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
+                  </td>
                 </tr>
-                <tr class="clickable-row" data-href="10.1.1.3.1.html">
-                  <th class="text-center off" scope="row">綜合性服務</th>
-                  <th class="text-center text-truncate">吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</th>
-                  <td class="text-center text-truncate">2020/04/13</td>
-                  <td class="text-center">52</td>
+                <tr>
+                  <th class="text-center off clickable-row" data-href="10.1.1.3.1.html" scope="row">綜合性服務</th>
+                  <th class="text-center text-truncate clickable-row" data-href="10.1.1.3.1.html">吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</th>
+                  <td class="text-center text-truncate clickable-row" data-href="10.1.1.3.1.html">2020/04/13</td>
+                  <td class="text-center off clickable-row" data-href="10.1.1.3.1.html">52</td>
+                  <td class="text-center clickable-row" data-href="10.1.1.3.2.html">
+                    <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
+                  </td>
                 </tr>
-                <tr class="clickable-row" data-href="10.1.1.3.1.html">
-                  <th class="text-center off" scope="row">綜合性服務</th>
-                  <th class="text-center text-truncate">第四屆「堉璘台灣奉獻獎」公開徵選</th>
-                  <td class="text-center text-truncate">2020/04/13</td>
-                  <td class="text-center">107</td>
+                <tr>
+                  <th class="text-center off clickable-row" data-href="10.1.1.3.1.html" scope="row">綜合性服務</th>
+                  <th class="text-center text-truncate clickable-row" data-href="10.1.1.3.1.html">第四屆「堉璘台灣奉獻獎」公開徵選</th>
+                  <td class="text-center text-truncate clickable-row" data-href="10.1.1.3.1.html">2020/04/13</td>
+                  <td class="text-center off clickable-row" data-href="10.1.1.3.1.html">107</td>
+                  <td class="text-center clickable-row" data-href="10.1.1.3.2.html">
+                    <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
+                  </td>
                 </tr>
-                <tr class="clickable-row" data-href="10.1.1.3.1.html">
-                  <th class="text-center off" scope="row">綜合性服務</th>
-                  <th class="text-center text-truncate">吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</th>
-                  <td class="text-center text-truncate">2020/04/13</td>
-                  <td class="text-center">52</td>
+                <tr>
+                  <th class="text-center off clickable-row" data-href="10.1.1.3.1.html" scope="row">綜合性服務</th>
+                  <th class="text-center text-truncate clickable-row" data-href="10.1.1.3.1.html">吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</th>
+                  <td class="text-center text-truncate clickable-row" data-href="10.1.1.3.1.html">2020/04/13</td>
+                  <td class="text-center off clickable-row" data-href="10.1.1.3.1.html">52</td>
+                  <td class="text-center clickable-row" data-href="10.1.1.3.2.html">
+                    <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
+                  </td>
                 </tr>
-                <tr class="clickable-row" data-href="10.1.1.3.1.html">
-                  <th class="text-center off" scope="row">綜合性服務</th>
-                  <th class="text-center text-truncate">第四屆「堉璘台灣奉獻獎」公開徵選</th>
-                  <td class="text-center text-truncate">2020/04/13</td>
-                  <td class="text-center">107</td>
+                <tr>
+                  <th class="text-center off clickable-row" data-href="10.1.1.3.1.html" scope="row">綜合性服務</th>
+                  <th class="text-center text-truncate clickable-row" data-href="10.1.1.3.1.html">第四屆「堉璘台灣奉獻獎」公開徵選</th>
+                  <td class="text-center text-truncate clickable-row" data-href="10.1.1.3.1.html">2020/04/13</td>
+                  <td class="text-center off clickable-row" data-href="10.1.1.3.1.html">107</td>
+                  <td class="text-center clickable-row" data-href="10.1.1.3.2.html">
+                    <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
+                  </td>
                 </tr>
-                <tr class="clickable-row" data-href="10.1.1.3.1.html">
-                  <th class="text-center off" scope="row">綜合性服務</th>
-                  <th class="text-center text-truncate">吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</th>
-                  <td class="text-center text-truncate">2020/04/13</td>
-                  <td class="text-center">52</td>
+                <tr>
+                  <th class="text-center off clickable-row" data-href="10.1.1.3.1.html" scope="row">綜合性服務</th>
+                  <th class="text-center text-truncate clickable-row" data-href="10.1.1.3.1.html">吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</th>
+                  <td class="text-center text-truncate clickable-row" data-href="10.1.1.3.1.html">2020/04/13</td>
+                  <td class="text-center off clickable-row" data-href="10.1.1.3.1.html">52</td>
+                  <td class="text-center clickable-row" data-href="10.1.1.3.2.html">
+                    <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
+                  </td>
                 </tr>
-                <tr class="clickable-row" data-href="10.1.1.3.1.html">
-                  <th class="text-center off" scope="row">綜合性服務</th>
-                  <th class="text-center text-truncate">第四屆「堉璘台灣奉獻獎」公開徵選</th>
-                  <td class="text-center text-truncate">2020/04/13</td>
-                  <td class="text-center">107</td>
+                <tr>
+                  <th class="text-center off clickable-row" data-href="10.1.1.3.1.html" scope="row">綜合性服務</th>
+                  <th class="text-center text-truncate clickable-row" data-href="10.1.1.3.1.html">第四屆「堉璘台灣奉獻獎」公開徵選</th>
+                  <td class="text-center text-truncate clickable-row" data-href="10.1.1.3.1.html">2020/04/13</td>
+                  <td class="text-center off clickable-row" data-href="10.1.1.3.1.html">107</td>
+                  <td class="text-center clickable-row" data-href="10.1.1.3.2.html">
+                    <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
+                  </td>
                 </tr>
-                <tr class="clickable-row" data-href="10.1.1.3.1.html">
-                  <th class="text-center off" scope="row">綜合性服務</th>
-                  <th class="text-center text-truncate">吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</th>
-                  <td class="text-center text-truncate">2020/04/13</td>
-                  <td class="text-center">52</td>
+                <tr>
+                  <th class="text-center off clickable-row" data-href="10.1.1.3.1.html" scope="row">綜合性服務</th>
+                  <th class="text-center text-truncate clickable-row" data-href="10.1.1.3.1.html">吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</th>
+                  <td class="text-center text-truncate clickable-row" data-href="10.1.1.3.1.html">2020/04/13</td>
+                  <td class="text-center off clickable-row" data-href="10.1.1.3.1.html">52</td>
+                  <td class="text-center clickable-row" data-href="10.1.1.3.2.html">
+                    <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
+                  </td>
                 </tr>
-                <tr class="clickable-row" data-href="10.1.1.3.1.html">
-                  <th class="text-center off" scope="row">綜合性服務</th>
-                  <th class="text-center text-truncate">第四屆「堉璘台灣奉獻獎」公開徵選</th>
-                  <td class="text-center text-truncate">2020/04/13</td>
-                  <td class="text-center">107</td>
+                <tr>
+                  <th class="text-center off clickable-row" data-href="10.1.1.3.1.html" scope="row">綜合性服務</th>
+                  <th class="text-center text-truncate clickable-row" data-href="10.1.1.3.1.html">第四屆「堉璘台灣奉獻獎」公開徵選</th>
+                  <td class="text-center text-truncate clickable-row" data-href="10.1.1.3.1.html">2020/04/13</td>
+                  <td class="text-center off clickable-row" data-href="10.1.1.3.1.html">107</td>
+                  <td class="text-center clickable-row" data-href="10.1.1.3.2.html">
+                    <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
+                  </td>
                 </tr>
               </tbody>
             </table>

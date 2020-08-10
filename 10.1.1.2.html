@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>前台-機構-志工招募-列表</title>
+    <title>前台-機構-廣告刊登-列表</title>
     <!-- bootstrap v4.41-->
     <link rel="stylesheet" href="./css/bootstrap.css">
     <!-- slick v1.8-->
@@ -139,10 +139,10 @@
         </div>
       </div>
     </nav>
-    <section class="member_same container" id="font_end_org_volunteer_list">
+    <section class="member_same container" id="font_end_org_ad_list">
       <div class="row">
         <div class="content_top col-12">
-          <h2 class="content_title col-12">志工招募</h2>
+          <h2 class="content_title col-12">廣告刊登</h2>
           <!-- 左側-->
           <div class="left col-12 col-lg-3">
             <!-- pc版導覽列-->
@@ -166,14 +166,14 @@
             <!-- 手機版導覽列-->
             <select class="selectpicker phone_nav" onchange="location.href=this.options[this.selectedIndex].value">
               <option value="10.1.1.1.html">修改組織基本資料</option>
-              <option value="10.1.1.2.html">廣告刊登</option>
+              <option value="10.1.1.2.html" selected>廣告刊登</option>
               <option value="10.1.1.3.html"> 最新活動</option>
               <option value="10.1.1.4.html"> 公益影片</option>
               <option value="10.1.1.5.html"> 補助公告</option>
               <option value="10.1.1.6.html"> 救助公告</option>
               <option value="10.1.1.7.html"> 獎助公告</option>
               <option value="10.1.1.8.html"> 物資需求</option>
-              <option value="10.1.1.9.html" selected> 志工招募</option>
+              <option value="10.1.1.9.html"> 志工招募</option>
               <option value="10.1.1.10.html"> 全職工作</option>
               <option value="10.1.1.11.html"> 兼職工作</option>
               <option value="10.1.1.12.html"> 公益商城</option>
@@ -196,123 +196,139 @@
                   <option>2016</option>
                   <option>2015</option>
                 </select>
-                <button class="btn btn-sm" type="button" onclick="javascript:location.href='10.1.1.9.1.html'">新增</button>
+                <button class="btn btn-sm" type="button" onclick="javascript:location.href='10.1.1.2.1.html'">新增</button>
               </div>
-              <div class="right_2"><span>每月發佈限</span><span class="max_piece">10</span><span>則, 本月已發佈</span><span class="now_piece">0</span><span>則</span></div>
+              <div class="right_2"><span>每月發佈限</span><span class="max_piece">5</span><span>則, 本月已發佈</span><span class="now_piece">0</span><span>則</span></div>
             </div>
             <div class="warring_rule">
               <h4>注意事項</h4>
-              <p>請各單位招募志工時留意，依據志願服務法，志工應有以下之權利，請大家與志工伙伴充份溝通。</p>
               <ol>
-                <li>接受足以擔任所從事工作之教育訓練。</li>
-                <li>一視同仁，尊重其自由、尊嚴、隱私及信仰。</li>
-                <li>依據工作之性質與特點，確保在適當之安全與衛生條件下從事工作。</li>
-                <li>獲得從事服務之完整資訊。</li>
-                <li>參與所從事之志願服務計畫之擬定、設計、執行及評估。</li>
+                <li>本服務提供每個會員每月發佈5則公益廣告。</li>
+                <li>每則公益廣告託播期限為1個月。</li>
+                <li>本中心屬於非營利性質，故禁止發佈具有營利性質之公益廣告。</li>
+                <li>本中心保有所有會員發佈之廣告的審核權力。</li>
               </ol>
             </div>
-            <table class="table col-12">
-              <thead class="thead-color text-center">
-                <tr>
-                  <th class="type_width off" scope="col">職缺類別</th>
-                  <th scope="col">職務名稱</th>
-                  <th scope="col">發佈時間</th>
-                  <th class="type_width" scope="col">點閱次數</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="clickable-row" data-href="10.1.1.9.1.html">
-                  <th class="text-center off" scope="row">綜合性服務</th>
-                  <th class="text-center text-truncate">第四屆「堉璘台灣奉獻獎」公開徵選</th>
-                  <td class="text-center text-truncate">2020/04/13</td>
-                  <td class="text-center">107</td>
-                </tr>
-                <tr class="clickable-row" data-href="10.1.1.9.1.html">
-                  <th class="text-center off" scope="row">綜合性服務</th>
-                  <th class="text-center text-truncate">吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</th>
-                  <td class="text-center text-truncate">2020/04/13</td>
-                  <td class="text-center">52</td>
-                </tr>
-                <tr class="clickable-row" data-href="10.1.1.9.1.html">
-                  <th class="text-center off" scope="row">綜合性服務</th>
-                  <th class="text-center text-truncate">第四屆「堉璘台灣奉獻獎」公開徵選</th>
-                  <td class="text-center text-truncate">2020/04/13</td>
-                  <td class="text-center">107</td>
-                </tr>
-                <tr class="clickable-row" data-href="10.1.1.9.1.html">
-                  <th class="text-center off" scope="row">綜合性服務</th>
-                  <th class="text-center text-truncate">吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</th>
-                  <td class="text-center text-truncate">2020/04/13</td>
-                  <td class="text-center">52</td>
-                </tr>
-                <tr class="clickable-row" data-href="10.1.1.9.1.html">
-                  <th class="text-center off" scope="row">綜合性服務</th>
-                  <th class="text-center text-truncate">第四屆「堉璘台灣奉獻獎」公開徵選</th>
-                  <td class="text-center text-truncate">2020/04/13</td>
-                  <td class="text-center">107</td>
-                </tr>
-                <tr class="clickable-row" data-href="10.1.1.9.1.html">
-                  <th class="text-center off" scope="row">綜合性服務</th>
-                  <th class="text-center text-truncate">吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</th>
-                  <td class="text-center text-truncate">2020/04/13</td>
-                  <td class="text-center">52</td>
-                </tr>
-                <tr class="clickable-row" data-href="10.1.1.9.1.html">
-                  <th class="text-center off" scope="row">綜合性服務</th>
-                  <th class="text-center text-truncate">第四屆「堉璘台灣奉獻獎」公開徵選</th>
-                  <td class="text-center text-truncate">2020/04/13</td>
-                  <td class="text-center">107</td>
-                </tr>
-                <tr class="clickable-row" data-href="10.1.1.9.1.html">
-                  <th class="text-center off" scope="row">綜合性服務</th>
-                  <th class="text-center text-truncate">吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</th>
-                  <td class="text-center text-truncate">2020/04/13</td>
-                  <td class="text-center">52</td>
-                </tr>
-                <tr class="clickable-row" data-href="10.1.1.9.1.html">
-                  <th class="text-center off" scope="row">綜合性服務</th>
-                  <th class="text-center text-truncate">第四屆「堉璘台灣奉獻獎」公開徵選</th>
-                  <td class="text-center text-truncate">2020/04/13</td>
-                  <td class="text-center">107</td>
-                </tr>
-                <tr class="clickable-row" data-href="10.1.1.9.1.html">
-                  <th class="text-center off" scope="row">綜合性服務</th>
-                  <th class="text-center text-truncate">吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</th>
-                  <td class="text-center text-truncate">2020/04/13</td>
-                  <td class="text-center">52</td>
-                </tr>
-                <tr class="clickable-row" data-href="10.1.1.9.1.html">
-                  <th class="text-center off" scope="row">綜合性服務</th>
-                  <th class="text-center text-truncate">第四屆「堉璘台灣奉獻獎」公開徵選</th>
-                  <td class="text-center text-truncate">2020/04/13</td>
-                  <td class="text-center">107</td>
-                </tr>
-                <tr class="clickable-row" data-href="10.1.1.9.1.html">
-                  <th class="text-center off" scope="row">綜合性服務</th>
-                  <th class="text-center text-truncate">吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</th>
-                  <td class="text-center text-truncate">2020/04/13</td>
-                  <td class="text-center">52</td>
-                </tr>
-                <tr class="clickable-row" data-href="10.1.1.9.1.html">
-                  <th class="text-center off" scope="row">綜合性服務</th>
-                  <th class="text-center text-truncate">第四屆「堉璘台灣奉獻獎」公開徵選</th>
-                  <td class="text-center text-truncate">2020/04/13</td>
-                  <td class="text-center">107</td>
-                </tr>
-                <tr class="clickable-row" data-href="10.1.1.9.1.html">
-                  <th class="text-center off" scope="row">綜合性服務</th>
-                  <th class="text-center text-truncate">吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</th>
-                  <td class="text-center text-truncate">2020/04/13</td>
-                  <td class="text-center">52</td>
-                </tr>
-                <tr class="clickable-row" data-href="10.1.1.9.1.html">
-                  <th class="text-center off" scope="row">綜合性服務</th>
-                  <th class="text-center text-truncate">第四屆「堉璘台灣奉獻獎」公開徵選</th>
-                  <td class="text-center text-truncate">2020/04/13</td>
-                  <td class="text-center">107</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="table">
+                <thead class="thead-color text-center">
+                  <tr>
+                    <th class="text-nowrap" scope="col">廣告類別</th>
+                    <th class="text-nowrap" scope="col">標題</th>
+                    <th class="text-nowrap" scope="col">刊登時間</th>
+                    <th class="text-nowrap" scope="col">點閱次數</th>
+                    <th class="text-nowrap" scope="col">審核狀態</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="clickable-row" data-href="10.1.1.2.1.html">
+                    <td class="text-center text-nowrap" scope="row">首頁主視覺</td>
+                    <td class="text-center text-truncate text-nowrap">第四屆「堉璘台灣奉獻獎」公開徵選</td>
+                    <td class="text-center text-truncate text-nowrap">2020/04/13</td>
+                    <td class="text-center text-nowrap">107</td>
+                    <td class="text-center text-nowrap">Y</td>
+                  </tr>
+                  <tr class="clickable-row" data-href="10.1.1.2.1.html">
+                    <td class="text-center text-nowrap" scope="row">首頁主視覺</td>
+                    <td class="text-center text-truncate text-nowrap">第四屆「堉璘台灣奉獻獎」公開徵選</td>
+                    <td class="text-center text-truncate text-nowrap">2020/04/13</td>
+                    <td class="text-center text-nowrap">107</td>
+                    <td class="text-center text-nowrap">Y</td>
+                  </tr>
+                  <tr class="clickable-row" data-href="10.1.1.2.1.html">
+                    <td class="text-center text-nowrap" scope="row">首頁主視覺</td>
+                    <td class="text-center text-truncate text-nowrap">第四屆「堉璘台灣奉獻獎」公開徵選</td>
+                    <td class="text-center text-truncate text-nowrap">2020/04/13</td>
+                    <td class="text-center text-nowrap">107</td>
+                    <td class="text-center text-nowrap">Y</td>
+                  </tr>
+                  <tr class="clickable-row" data-href="10.1.1.2.1.html">
+                    <td class="text-center text-nowrap" scope="row">首頁主視覺</td>
+                    <td class="text-center text-truncate text-nowrap">第四屆「堉璘台灣奉獻獎」公開徵選</td>
+                    <td class="text-center text-truncate text-nowrap">2020/04/13</td>
+                    <td class="text-center text-nowrap">107</td>
+                    <td class="text-center text-nowrap">Y</td>
+                  </tr>
+                  <tr class="clickable-row" data-href="10.1.1.2.1.html">
+                    <td class="text-center text-nowrap" scope="row">首頁主視覺</td>
+                    <td class="text-center text-truncate text-nowrap">第四屆「堉璘台灣奉獻獎」公開徵選</td>
+                    <td class="text-center text-truncate text-nowrap">2020/04/13</td>
+                    <td class="text-center text-nowrap">107</td>
+                    <td class="text-center text-nowrap">Y</td>
+                  </tr>
+                  <tr class="clickable-row" data-href="10.1.1.2.1.html">
+                    <td class="text-center text-nowrap" scope="row">首頁主視覺</td>
+                    <td class="text-center text-truncate text-nowrap">第四屆「堉璘台灣奉獻獎」公開徵選</td>
+                    <td class="text-center text-truncate text-nowrap">2020/04/13</td>
+                    <td class="text-center text-nowrap">107</td>
+                    <td class="text-center text-nowrap">Y</td>
+                  </tr>
+                  <tr class="clickable-row" data-href="10.1.1.2.1.html">
+                    <td class="text-center text-nowrap" scope="row">首頁主視覺</td>
+                    <td class="text-center text-truncate text-nowrap">第四屆「堉璘台灣奉獻獎」公開徵選</td>
+                    <td class="text-center text-truncate text-nowrap">2020/04/13</td>
+                    <td class="text-center text-nowrap">107</td>
+                    <td class="text-center text-nowrap">Y</td>
+                  </tr>
+                  <tr class="clickable-row" data-href="10.1.1.2.1.html">
+                    <td class="text-center text-nowrap" scope="row">首頁主視覺</td>
+                    <td class="text-center text-truncate text-nowrap">第四屆「堉璘台灣奉獻獎」公開徵選</td>
+                    <td class="text-center text-truncate text-nowrap">2020/04/13</td>
+                    <td class="text-center text-nowrap">107</td>
+                    <td class="text-center text-nowrap">Y</td>
+                  </tr>
+                  <tr class="clickable-row" data-href="10.1.1.2.1.html">
+                    <td class="text-center text-nowrap" scope="row">首頁主視覺</td>
+                    <td class="text-center text-truncate text-nowrap">第四屆「堉璘台灣奉獻獎」公開徵選</td>
+                    <td class="text-center text-truncate text-nowrap">2020/04/13</td>
+                    <td class="text-center text-nowrap">107</td>
+                    <td class="text-center text-nowrap">Y</td>
+                  </tr>
+                  <tr class="clickable-row" data-href="10.1.1.2.1.html">
+                    <td class="text-center text-nowrap" scope="row">首頁主視覺</td>
+                    <td class="text-center text-truncate text-nowrap">第四屆「堉璘台灣奉獻獎」公開徵選</td>
+                    <td class="text-center text-truncate text-nowrap">2020/04/13</td>
+                    <td class="text-center text-nowrap">107</td>
+                    <td class="text-center text-nowrap">Y</td>
+                  </tr>
+                  <tr class="clickable-row" data-href="10.1.1.2.1.html">
+                    <td class="text-center text-nowrap" scope="row">首頁主視覺</td>
+                    <td class="text-center text-truncate text-nowrap">第四屆「堉璘台灣奉獻獎」公開徵選</td>
+                    <td class="text-center text-truncate text-nowrap">2020/04/13</td>
+                    <td class="text-center text-nowrap">107</td>
+                    <td class="text-center text-nowrap">Y</td>
+                  </tr>
+                  <tr class="clickable-row" data-href="10.1.1.2.1.html">
+                    <td class="text-center text-nowrap" scope="row">首頁主視覺</td>
+                    <td class="text-center text-truncate text-nowrap">第四屆「堉璘台灣奉獻獎」公開徵選</td>
+                    <td class="text-center text-truncate text-nowrap">2020/04/13</td>
+                    <td class="text-center text-nowrap">107</td>
+                    <td class="text-center text-nowrap">Y</td>
+                  </tr>
+                  <tr class="clickable-row" data-href="10.1.1.2.1.html">
+                    <td class="text-center text-nowrap" scope="row">首頁主視覺</td>
+                    <td class="text-center text-truncate text-nowrap">第四屆「堉璘台灣奉獻獎」公開徵選</td>
+                    <td class="text-center text-truncate text-nowrap">2020/04/13</td>
+                    <td class="text-center text-nowrap">107</td>
+                    <td class="text-center text-nowrap">Y</td>
+                  </tr>
+                  <tr class="clickable-row" data-href="10.1.1.2.1.html">
+                    <td class="text-center text-nowrap" scope="row">首頁主視覺</td>
+                    <td class="text-center text-truncate text-nowrap">第四屆「堉璘台灣奉獻獎」公開徵選</td>
+                    <td class="text-center text-truncate text-nowrap">2020/04/13</td>
+                    <td class="text-center text-nowrap">107</td>
+                    <td class="text-center text-nowrap">Y</td>
+                  </tr>
+                  <tr class="clickable-row" data-href="10.1.1.2.1.html">
+                    <td class="text-center text-nowrap" scope="row">首頁主視覺</td>
+                    <td class="text-center text-truncate text-nowrap">第四屆「堉璘台灣奉獻獎」公開徵選</td>
+                    <td class="text-center text-truncate text-nowrap">2020/04/13</td>
+                    <td class="text-center text-nowrap">107</td>
+                    <td class="text-center text-nowrap">Y</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <!-- 分頁-->
             <div id="page">
               <ul class="pagination">
