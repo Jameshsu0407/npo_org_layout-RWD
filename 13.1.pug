@@ -3,7 +3,7 @@ html(lang="en")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
-		title 企業-物資提供-列表
+		title 企業-企業提供-列表
 		//- 匯入連結
 		include header.pug
 	body#top
@@ -19,90 +19,62 @@ html(lang="en")
 						// <img src="./img/fakeimg/200x1000.png" class="img-fluid fixed_size">
 						img.img-fluid.fixed_size(src="./img/fakeimg/800x800.png")
 						.profile.off
-							h3 台積電
+							h3 財團法人桃園市幸福社會福利基金會
 							h3 服務項目：其他
 							h3 聯絡人：陳正評
 							h3 聯絡電話：0938-938-938
 							h3 Email：sinfu@gmail.com
 							h3
 								| 網站：
-								a(href="") 台積電官方網站
+								a(href="") 幸福基金會官方網站
 							h3 地址：台北市中山區ＸＸＸＸＸ
+							h3
+								| 商城連結：
+								a(href="") 蝦皮商城
 							.embed-responsive.embed-responsive-16by9
 								iframe.embed-responsive-item(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.041949327373!2d121.52049035066808!3d25.066567283878328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x140dd0f467a85e51%3A0x721f721f1255cf08!2z57ay6Luf6IKh5Lu95pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1592899753483!5m2!1szh-TW!2stw")
 					.col-12.col-lg-8.right
 						// 手機版導覽列
 						.phone_top_nav
 							select.form-control.selectpicker(onchange="location.href=this.options[this.selectedIndex].value" data-size="5")
-								option(selected="selected" value="13.1.html") 物資提供
+								option(selected="selected" value="13.1.html") 企業提供
 						// pc版導覽列
 						.pc_top_nav
 							.col-2
 								a.actived(href="13.1.html")
-									h3 物資提供
+									h3 企業提供
 						// 內文
 						.content
 							a(href="13.1.1.html")
 								.post.col-12
-									.col-6.col-md-5.col-lg-4.post_left
-										.time_box
-											span.year 2020
-											span.date 06/15
-										// 建議尺寸800x450
-										.pic
-											img.img-fluid.fixed_size(src="./img/fakeimg/800x450.png")
-									.col-6.col-md-7.col-lg-8.post_right
-										h3 標題標題標題
-										p
-											| 內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
+									h3 物資名稱：標題標題標題
+									span.time 刊登時間：2020/08/08
+									p.content
+										| 詳細說明：內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
 							a(href="13.1.1.html")
 								.post.col-12
-									.col-6.col-md-5.col-lg-4.post_left
-										.time_box
-											span.year 2020
-											span.date 06/15
-										// 建議尺寸800x450
-										.pic
-											img.img-fluid.fixed_size(src="./img/fakeimg/200x1000.png")
-									.col-6.col-md-7.col-lg-8.post_right
-										h3 標題標題標題
-										p 內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
+									h3 物資名稱：標題標題標題
+									span.time 刊登時間：2020/08/08
+									p.content
+										| 詳細說明：內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
 							a(href="13.1.1.html")
 								.post.col-12
-									.col-6.col-md-5.col-lg-4.post_left
-										.time_box
-											span.year 2020
-											span.date 06/15
-										// 建議尺寸800x450
-										.pic
-											img.img-fluid.fixed_size(src="./img/fakeimg/200x1000.png")
-									.col-6.col-md-7.col-lg-8.post_right
-										h3 標題標題標題
-										p 內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
+									h3 物資名稱：標題標題標題
+									span.time 刊登時間：2020/08/08
+									p.content
+										| 詳細說明：內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
 							a(href="13.1.1.html")
 								.post.col-12
-									.col-6.col-md-5.col-lg-4.post_left
-										.time_box
-											span.year 2020
-											span.date 06/15
-										// 建議尺寸800x450
-										.pic
-											img.img-fluid.fixed_size(src="./img/fakeimg/800x800.png")
-									.col-6.col-md-7.col-lg-8.post_right
-										h3 標題標題標題
-										p 內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
+									h3 物資名稱：標題標題標題
+									span.time 刊登時間：2020/08/08
+									p.content
+										| 詳細說明：內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
 							a(href="13.1.1.html")
 								.post.col-12
-									.col-6.col-md-5.col-lg-4.post_left
-										.time_box
-											span.year 2020
-											span.date 06/15
-										// 建議尺寸800x450
-										.pic
-											img.img-fluid.fixed_size(src="./img/videos/v1.jpg" alt="")
-									.col-6.col-md-7.col-lg-8.post_right
-										h3 標題標題標題
-										p 內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
+									h3 物資名稱：標題標題標題
+									span.time 刊登時間：2020/08/08
+									p.content
+										| 詳細說明：內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
 							include page.pug
 		
 		//- 匯入底部廣告

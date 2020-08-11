@@ -216,6 +216,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		fixedWeekCount: false,
 		// 高度
 		contentHeight: 450,
+		// 選到日期
 		dateClick: function (info) {
             // alert("clicked " + info.dateStr);
             window.location.href = "#";
@@ -225,7 +226,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 day.classList.remove("selectedDate");
             });
             info.dayEl.classList.add("selectedDate");
-        },
+		},
+		// 選到事件
+		eventClick: function(info){
+			var selectedContainer = findContainerForDate(calEvent.start);
+			$(".fc-highlight").removeClass("fc-highlight");
+			$(selectedContainer).addClass("fc-highlight");
+		},
         // 標記
 		events: [
 			{
@@ -244,3 +251,9 @@ document.addEventListener("DOMContentLoaded", function () {
 	// 中文語系
 	calendar.setOption("locale", "zh-tw");
 });
+
+// 履歷查詢readonly
+$('#font_end_org_resume_search_unit input').attr('readonly', 'readonly');
+$('#font_end_org_resume_search_unit input').attr('disabled', 'disabled');
+$('#font_end_org_resume_search_unit textarea').attr('disabled', 'disabled');
+$('#font_end_org_resume_search_unit select').attr('disabled', 'disabled');

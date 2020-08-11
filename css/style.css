@@ -6931,6 +6931,141 @@ footer .copyright p {
   color: #ffd56f;
 }
 
+#font_end_org_resume_search_unit .left .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item {
+  color: #343A40;
+  padding: 10px 12px;
+}
+
+#font_end_org_resume_search_unit .left .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item:active {
+  background-color: #ffe4a2;
+}
+
+#font_end_org_resume_search_unit .left .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item.active {
+  background-color: #ffe4a2;
+}
+
+#font_end_org_resume_search_unit .left .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item.active:active {
+  background-color: #ffe4a2;
+}
+
+#font_end_org_resume_search_unit .right .member_resume {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+#font_end_org_resume_search_unit .right .member_resume h4 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  #font_end_org_resume_search_unit .right .member_resume .col-12 {
+    padding: 0;
+  }
+}
+
+#font_end_org_resume_search_unit .right .member_resume .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item {
+  color: #343A40;
+  padding: 10px 12px;
+}
+
+#font_end_org_resume_search_unit .right .member_resume .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item:active {
+  background-color: #ffe4a2;
+}
+
+#font_end_org_resume_search_unit .right .member_resume .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item.active {
+  background-color: #ffe4a2;
+}
+
+#font_end_org_resume_search_unit .right .member_resume .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item.active:active {
+  background-color: #ffe4a2;
+}
+
+#font_end_org_resume_search_unit .right .member_resume .solider .form-check {
+  display: inline-block;
+  position: relative;
+  margin: 5px 5px 5px 0;
+}
+
+#font_end_org_resume_search_unit .right .member_resume .solider .form-group.form-check {
+  margin: 5px 10px 5px 0;
+}
+
+#font_end_org_resume_search_unit .right .member_resume .custom-file input.custom-file-input {
+  cursor: pointer;
+}
+
+#font_end_org_resume_search_unit .right .member_resume .custom-file label {
+  cursor: pointer;
+}
+
+#font_end_org_resume_search_unit .right .member_resume .custom-file label::after {
+  content: "選擇檔案";
+}
+
+#font_end_org_resume_search_unit .right .member_resume .custom-file .custom-file-input:focus ~ .custom-file-label {
+  border-color: #d4d4d4;
+  box-shadow: none;
+}
+
+#font_end_org_resume_search_unit .right .member_resume .input-group {
+  width: calc( 100% - 30px);
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 992px) {
+  #font_end_org_resume_search_unit .right .member_resume .input-group {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #font_end_org_resume_search_unit .right .member_resume .input-group {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #font_end_org_resume_search_unit .right .member_resume .input-group {
+    width: 100%;
+  }
+}
+
+#font_end_org_resume_search_unit .right .member_resume .input-group .input-group-text {
+  border: none;
+  width: 100px;
+  background-color: #ffe4a2;
+}
+
+#font_end_org_resume_search_unit .right .member_resume .checkpin_switch {
+  position: relative;
+  width: 85px;
+}
+
+#font_end_org_resume_search_unit .right .member_resume .checkpin_switch .checkpin {
+  width: 70%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#font_end_org_resume_search_unit .right .member_resume .login_button {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 4px 25px;
+  background-color: #ffd56f;
+  transition: 0.5s;
+}
+
+#font_end_org_resume_search_unit .right .member_resume .login_button:hover {
+  background-color: #ffe4a2;
+}
+
 #font_end_com_information .left .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item {
   color: #343A40;
   padding: 10px 12px;
@@ -9623,8 +9758,6 @@ footer .copyright p {
 }
 
 #com_donate_list .content a .post {
-  display: flex;
-  flex-wrap: wrap;
   border: 1px solid #d4d4d4;
   transition: 0.5s;
   margin-bottom: 30px;
@@ -9636,65 +9769,19 @@ footer .copyright p {
   transform: scale(1.03);
 }
 
-#com_donate_list .content a .post .post_left {
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding: 0;
-}
-
-#com_donate_list .content a .post .post_left .time_box {
-  position: absolute;
-  background-color: rgba(247, 194, 128, 0.8);
-  top: 0;
-  padding: 5px;
-}
-
-#com_donate_list .content a .post .post_left .time_box span {
-  color: #fff;
-  text-align: center;
-  display: block;
-  text-align: center;
-}
-
-#com_donate_list .content a .post .post_left .time_box span.year {
-  font-size: 14px;
-  margin-bottom: -5px;
-}
-
-#com_donate_list .content a .post .post_left .time_box span.date {
-  font-size: 20px;
-  font-weight: 700;
-}
-
-#com_donate_list .content a .post .post_left .pic {
-  width: 240.81px;
-  height: 135.45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#com_donate_list .content a .post .post_left .pic .width_100 {
-  width: 100%;
-}
-
-#com_donate_list .content a .post .post_left .pic .height_100 {
-  height: 100%;
-}
-
-#com_donate_list .content a .post .post_right {
-  padding-right: 0;
-}
-
-#com_donate_list .content a .post .post_right h3 {
+#com_donate_list .content a .post h3 {
   font-weight: 600;
   font-size: 18px;
   margin-bottom: 0;
-  margin: 10px 0;
+  color: #FA9C25;
 }
 
-#com_donate_list .content a .post .post_right p {
+#com_donate_list .content a .post span.time {
+  font-size: 14px;
+  color: #B5B8A3;
+}
+
+#com_donate_list .content a .post p.content {
   margin: 10px 0;
   overflow: hidden;
   white-space: nowrap;
@@ -9705,7 +9792,11 @@ footer .copyright p {
   /* autoprefixer: off */
   white-space: normal;
   line-height: 25px;
-  height: 78px;
+  height: 50px;
+}
+
+#com_donate_list #page {
+  margin: 0 auto;
 }
 
 #com_donate_unit .pc_top_nav {

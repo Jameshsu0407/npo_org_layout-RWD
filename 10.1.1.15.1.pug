@@ -3,17 +3,17 @@ html(lang="en")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
-		title 前台-會員-履歷登錄
+		title 前台-機構-履歷查詢-單元頁
 		//- 匯入連結
 		include header.pug
 	body#top
 		//- 匯入導覽列+gototop
 		include nav.pug
 
-		section#font_end_member_resume.member_same.container
+		section#font_end_org_resume_search_unit.member_same.container
 			.row
 				.content_top.col-12
-					h2.content_title.col-12 履歷登錄
+					h2.content_title.col-12 履歷查詢
 					// 左側
 					.left.col-12.col-lg-3
 						// pc版導覽列
@@ -143,12 +143,12 @@ html(lang="en")
 								.form-group
 									label 工作專長
 									textarea.form-control(rows="5")
-							.col-12
-								.form-group
-									label 上傳證書
-									.custom-file 
-										input.custom-file-input(type="file")
-										label.custom-file-label 若有多份證書，請彙整成pdf檔上傳
+							//- .col-12
+							//- 	.form-group
+							//- 		label 上傳證書
+							//- 		.custom-file 
+							//- 			input.custom-file-input(type="file")
+							//- 			label.custom-file-label 若有多份證書，請彙整成pdf檔上傳
 							.col-12
 								.form-group
 									label 駕照種類
@@ -162,21 +162,19 @@ html(lang="en")
 									label 電腦能力
 									textarea.form-control(rows="5")
 							h4.col-12 其他
-							.col-12
-								.form-group
-									label 上傳自傳
-									.custom-file 
-										input.custom-file-input(type="file")
-										label.custom-file-label 上傳自傳
+							//- .col-12
+							//- 	.form-group
+							//- 		label 上傳自傳
+							//- 		.custom-file 
+							//- 			input.custom-file-input(type="file")
+							//- 			label.custom-file-label 上傳自傳
 							.col-12.col-md-6
 								.form-group
 									label 行業類別
 									select.form-control.selectpicker(data-size="5")
 										option(selected="" disabled="") 行業類別
-										option 醫護
-										option 照護
-										option 社工
 										option 行政
+										option 總務
 										option 財會
 										option 行銷
 										option 企劃
@@ -186,20 +184,19 @@ html(lang="en")
 										option 傳媒
 										option 美編
 										option 資訊
-										option 講師
+										option 教職
+										option 醫療
+										option 社工
 										option 其他
 							.col-12.col-md-6
 								.form-group
 									label 期望薪資
 									input.form-control(type="text")
-							.input-group.mb-3
-								.input-group-prepend
-									span.input-group-text 驗證碼
-								input.form-control(type="text" placeholder="請輸入驗證碼")
-								.input-group-append
-									a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")
-										img.checkpin(src="./img/checkpin.png", alt="")
-							button.btn.login_button(type="button" onclick="javascript:location.href=''") 儲存
+							h4.col-12 附件
+							a.col-12(href="#") 查看履歷
+							a.col-12(href="#") 查看證書
+
+
 		//- 匯入底部廣告
 		include footer_ad.pug
 		//- 匯入footer+script

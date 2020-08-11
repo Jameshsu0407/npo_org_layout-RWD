@@ -4636,6 +4636,101 @@ footer
                         &:hover
                             color: $color_yellow
 // -----------------------------------------------------        
+// 10.1.1.15.1前台-機構-履歷查詢-單元頁
+#font_end_org_resume_search_unit
+    .left
+        .dropdown.bootstrap-select
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+    .right
+        // 包整個表單
+        .member_resume
+            display: flex
+            flex-wrap: wrap
+            margin: 10px 0
+            h4
+                +title
+                margin-bottom: 10px
+            .col-12
+                @media screen and ( max-width: 576px )
+                    padding: 0
+            .dropdown.bootstrap-select
+                ul.dropdown-menu.inner.show
+                    li
+                        a.dropdown-item
+                            &:active
+                                background-color: lighten($color_yellow,10% )
+                            color: $color_black
+                            padding: 10px 12px
+                        a.dropdown-item.active
+                            background-color: lighten($color_yellow,10% )
+                            &:active
+                                background-color: lighten($color_yellow,10% )
+            // radio 兵役狀況
+            .solider
+                .form-check
+                    display: inline-block
+                    position: relative
+                    margin: 5px 5px 5px 0
+
+                .form-group.form-check
+                    margin: 5px 10px 5px 0
+            .form-check-input
+                &:focus,&:checked
+                    
+            // 上傳檔案
+            .custom-file
+                input.custom-file-input
+                        cursor: pointer
+                label
+                    cursor: pointer
+                    &::after
+                        content: "選擇檔案"
+                .custom-file-input:focus ~ .custom-file-label
+                        border-color: $color_light_gray
+                        box-shadow: none
+            // 驗證碼
+            .input-group
+                width: calc( 100% - 30px )
+                @media screen and ( max-width: 992px )
+                    width: 60%
+                @media screen and ( max-width: 768px )
+                    width: 80%
+                @media screen and ( max-width: 576px )
+                    width: 100%
+                margin: 0 auto
+                .input-group-text
+                    border: none
+                    width: 100px
+                    background-color: lighten($color_yellow,10% )
+            .checkpin_switch
+                position: relative
+                width: 85px
+                .checkpin
+                    width: 70%
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%,-50%)
+            .login_button
+                display: block
+                margin: 0 auto
+                margin-bottom: 20px
+                padding: 4px 25px
+                background-color: $color_yellow
+                transition: 0.5s
+                &:hover
+                    background-color: lighten($color_yellow,10% )
+// -----------------------------------------------------        
 // 10.1.2.1前台-企業-修改公司基本資料
 #font_end_com_information
     .left
@@ -6368,7 +6463,7 @@ footer
             h4
                 padding: 10px 20px
 // -----------------------------------------------------        
-// 13.1企業-物資提供-列表                           
+// 13.1企業-企業提供-列表                           
 #com_donate_list
     .pc_top_nav
         padding-bottom: 30px
@@ -6378,8 +6473,6 @@ footer
             &:hover
                 color: $color_black
             .post
-                display: flex
-                flex-wrap: wrap
                 border: 1px solid $color_light_gray
                 transition: 0.5s
                 margin-bottom: 30px
@@ -6387,56 +6480,28 @@ footer
                 padding: 15px
                 &:hover
                     transform: scale(1.03)
-                .post_left
-                    position: relative
-                    display: flex
-                    align-items: center
-                    padding: 0
-                    .time_box
-                        position: absolute
-                        background-color: rgba(247,194 ,128 ,0.8 )
-                        top: 0
-                        padding: 5px
-                        span
-                            color: $color_white
-                            text-align: center
-                            display: block
-                            text-align: center
-                        span.year
-                            font-size: 14px
-                            margin-bottom: -5px
-                        span.date
-                            font-size: 20px
-                            font-weight: 700
-                    .pic
-                        width: 240.81px
-                        height: 135.45px
-                        display: flex
-                        justify-content: center
-                        align-items: center
-                        .width_100
-                            width: 100%
-                        .height_100
-                            height: 100%
-                .post_right
-                    padding-right: 0
-                    h3
-                        +title
-                        margin: 10px 0
-                    p
-                        margin: 10px 0
-                        overflow: hidden
-                        white-space: nowrap
-                        text-overflow: ellipsis
-                        display: -webkit-box
-                        -webkit-line-clamp: 2
-                        -webkit-box-orient: vertical
-                        /* autoprefixer: off */
-                        white-space: normal
-                        line-height: 25px
-                        height: 78px
+                h3
+                    +title  
+                    color: $color_dark_orange
+                span.time
+                    font-size: 14px
+                    color: $color_gray
+                p.content
+                    margin: 10px 0
+                    overflow: hidden
+                    white-space: nowrap
+                    text-overflow: ellipsis
+                    display: -webkit-box
+                    -webkit-line-clamp: 2
+                    -webkit-box-orient: vertical
+                    /* autoprefixer: off */
+                    white-space: normal
+                    line-height: 25px
+                    height: 50px
+    #page
+        margin: 0 auto
 // ----------------------------------------------------- 
-// 13.1.1組織-物資募集-單元頁
+// 13.1.1組織-企業提供-單元頁
 #com_donate_unit
     .pc_top_nav
         padding-bottom: 30px
