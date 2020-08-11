@@ -9429,6 +9429,50 @@ footer .copyright p {
   line-height: 28px;
 }
 
+#org_activities_unit .content form {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  padding: 0 5px;
+  border-bottom: 1px solid #B5B8A3;
+}
+
+#org_activities_unit .content form h4.apply {
+  padding: 0 0 15px 15px;
+  border-bottom: none;
+}
+
+#org_activities_unit .content form label {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+#org_activities_unit .content form .checkpin_switch {
+  position: relative;
+  width: 85px;
+}
+
+#org_activities_unit .content form .checkpin_switch .checkpin {
+  width: 70%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#org_activities_unit .content form .login_button {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: block;
+  padding: 4px 25px;
+  background-color: #ffd56f;
+  transition: 0.5s;
+}
+
+#org_activities_unit .content form .login_button:hover {
+  background-color: #ffe4a2;
+}
+
 #org_activities_unit .content .map {
   margin: 20px 0;
 }

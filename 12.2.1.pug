@@ -111,9 +111,31 @@ html(lang="en")
 								|               * 供應點心、茶水及午餐
 							h4 參加對象：凡居住在或戶籍在鳥松區65歲以上的長輩，歡迎報名！
 							h4 活動費用：免費
-							h4
-								| 活動網站：
-								a(href="http://docs.google.com/forms/d/17avIPJ7i_6v7YoSGwFIyaIixVKwLZ5r3F8GYWc117vM/edit") 前往報名
+							form
+								h4.col-12.apply 我要報名：
+								.col-12.col-md-6
+									.form-group
+										label 姓名
+										input.form-control(type="text")
+								.col-12.col-md-6
+									.form-group
+										label 手機
+										input.form-control(type="text")
+								.col-12
+									.form-group
+										label email
+										input.form-control(type="email")
+								.col-6
+									.form-group
+										label 驗證碼
+										.input-group
+											input.form-control(type="text")
+											.input-group-append
+												a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")
+													img.checkpin(src="./img/checkpin.png", alt="")
+								.col-12
+									button.btn.login_button(type="button" onclick="javascript:location.href=''") 送出
+
 							// 回上一頁
 							#back
 								a(href="12.2.html")
