@@ -92,22 +92,22 @@ html(lang="en")
 							// 必填
 							.col-12
 								.form-group
-									label 使用者名稱
+									label.required_star 使用者名稱
 									input.form-control(type="text")
 							// 必填
 							.col-12
 								.form-group
-									label 職稱
+									label.required_star 職稱
 									input.form-control(type="text")
 							// 必填
 							.col-12
 								.form-group
-									label 電話
+									label.required_star 電話
 									input.form-control(type="text")
 							// 必填
 							.col-12
 								.form-group
-									label Email
+									label.required_star Email
 									input.form-control(type="email")
 							// 必填
 							.col-12
@@ -117,7 +117,7 @@ html(lang="en")
 							// 必填
 							.col-12
 								.form-group
-									label 確認密碼
+									label.required_star 確認密碼
 									input.form-control(type="password")
 							.col-12
 								.form-group
@@ -129,7 +129,7 @@ html(lang="en")
 									textarea.form-control(rows="5")
 							.input-group.mb-3
 								.input-group-prepend
-									span.input-group-text 驗證碼
+									span.input-group-text.required_star 驗證碼
 								input.form-control(type="text" placeholder="請輸入驗證碼")
 								.input-group-append
 									a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")

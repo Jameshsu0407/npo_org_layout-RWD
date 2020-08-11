@@ -77,7 +77,7 @@ html(lang="en")
 								// 一般會員申請說明 結束
 								.form-group.form-check
 									input.form-check-input(type="checkbox")
-									label.form-check-label 我已閱讀
+									label.form-check-label.required_stars 我已閱讀
 								button.btn.explanation_submit(onclick="javascript:location.href=''") 下一步
 							// 機構註冊 開始
 							// 機構註冊完後還需要創建使用者
@@ -86,7 +86,7 @@ html(lang="en")
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 機構名稱(中)
+										label.required_star 機構名稱(中)
 										input.form-control(type="text")
 								.col-12.col-md-6
 									.form-group
@@ -95,37 +95,37 @@ html(lang="en")
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 創辦人(中)
+										label.required_star 創辦人(中)
 										input.form-control(type="text")
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 創辦人(英)
+										label.required_star 創辦人(英)
 										input.form-control(type="text")
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 執行長(中)
+										label.required_star 執行長(中)
 										input.form-control(type="text")
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 執行長(英)
+										label.required_star 執行長(英)
 										input.form-control(type="text")
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 聯絡人(中)
+										label.required_star 聯絡人(中)
 										input.form-control(type="text")
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 聯絡人(英)
+										label.required_star 聯絡人(英)
 										input.form-control(type="text")
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 電話
+										label.required_star 電話
 										input.form-control(type="text")
 								.col-12.col-md-6
 									.form-group
@@ -134,17 +134,17 @@ html(lang="en")
 								// 必填
 								.col-12
 									.form-group
-										label 傳真
+										label.required_star 傳真
 										input.form-control(type="text")
 								// 必填
 								.col-12
 									.form-group
-										label 統一編號
+										label.required_star 統一編號
 										input.form-control(type="text")
 								// 必填
 								.col-6.col-md-3.left
 									.form-group
-										label 地址(中)
+										label.required_star 地址(中)
 										select.form-control.selectpicker(data-size="5")
 											option(selected disabled) 縣市
 											option 台北市
@@ -171,22 +171,22 @@ html(lang="en")
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 成立日期
+										label.required_star 成立日期
 										input.form-control(type="date")
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 立案字號
+										label.required_star 立案字號
 										input.form-control(type="text")
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 許可機關(中)
+										label.required_star 許可機關(中)
 										input.form-control(type="text")
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 許可機關(英)
+										label.required_star 許可機關(英)
 										input.form-control(type="text")
 								.col-12.col-md-6
 									.form-group
@@ -203,7 +203,7 @@ html(lang="en")
 								// 必填
 								.col-12
 									.form-group
-										label 電子郵件
+										label.required_star 電子郵件
 										input.form-control(type="email")
 								.col-12
 									.form-group
@@ -212,7 +212,7 @@ html(lang="en")
 								// 必填
 								.col-12
 									.form-group
-										label 成立主旨(中)
+										label.required_star 成立主旨(中)
 										textarea.form-control(rows="5")
 								.col-12
 									.form-group
@@ -221,20 +221,20 @@ html(lang="en")
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 上傳Logo
+										label.required_star 上傳Logo
 										.custom-file
 											input.custom-file-input(type="file")
 											label.custom-file-label 尺寸800X800px
 								.col-12.col-md-6
 									.form-group
-										label 上傳證書
+										label.required_star 上傳證書
 										.custom-file
 											input.custom-file-input(type="file")
 											label.custom-file-label 上傳證書
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 機構屬性
+										label.required_star 機構屬性
 										select.form-control.selectpicker(data-size="5")
 											option(selected disabled) 請選擇
 											option 粽合性服務
@@ -258,7 +258,7 @@ html(lang="en")
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 性質
+										label.required_star 性質
 										select.form-control.selectpicker(data-size="5")
 											option(selected disabled) 請選擇
 											option (財團法人)基金會
@@ -272,7 +272,7 @@ html(lang="en")
 										input.form-control(type="text")
 								// 必填
 								.col-12
-									label 服務區域
+									label.required_star 服務區域
 									.region
 										.form-group.form-check
 											input.form-check-input(type="checkbox")
@@ -348,7 +348,7 @@ html(lang="en")
 											label.form-check-label 連江縣
 								// 必填
 								.col-12
-									label 服務項目
+									label.required_star 服務項目
 									.service
 										.form-group.form-check
 											input.form-check-input(type="checkbox")
@@ -587,9 +587,9 @@ html(lang="en")
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 服務對象
+										label.required_star 服務對象
 										br
-										label 性別
+										label.required_star 性別
 										.gender
 											.form-check
 												input.form-check-input(type="radio" name="gender")
@@ -601,7 +601,7 @@ html(lang="en")
 												input.form-check-input(type="radio" name="gender")
 												label.form-check-label 女性
 										br
-										label 年齡
+										label.required_star 年齡
 										.age
 											.form-check
 												input.form-check-input(type="radio" name="age")
@@ -621,7 +621,7 @@ html(lang="en")
 								// 必填
 								.col-12
 									.form-group
-										label 工作重點
+										label.required_star 工作重點
 										textarea.form-control(rows="5")
 								.col-12
 									.form-group
@@ -637,7 +637,7 @@ html(lang="en")
 										textarea.form-control(rows="5")
 								.input-group.mb-3
 									.input-group-prepend
-										span.input-group-text 驗證碼
+										span.input-group-text.required_star 驗證碼
 									input.form-control(type="text" placeholder="請輸入驗證碼")
 									.input-group-append
 										a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")
@@ -651,36 +651,36 @@ html(lang="en")
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 使用者名稱
+										label.required_star 使用者名稱
 										input.form-control(type="text")
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 職稱
+										label.required_star 職稱
 										input.form-control(type="text")
 								// 必填
 								.col-12
 									.form-group
-										label 電話
+										label.required_star 電話
 										input.form-control(type="text")
 								// 必填
 								.col-12
 									.form-group
-										label Email
+										label.required_star Email
 										input.form-control(type="email")
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 密碼
+										label.required_star 密碼
 										input.form-control(type="password")
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 確認密碼
+										label.required_star 確認密碼
 										input.form-control(type="password")
 								.input-group.mb-3
 									.input-group-prepend
-										span.input-group-text 驗證碼
+										span.input-group-text.required_star 驗證碼
 									input.form-control(type="text" placeholder="請輸入驗證碼")
 									.input-group-append
 										a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")
@@ -695,51 +695,51 @@ html(lang="en")
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 企業名稱
+										label.required_star 企業名稱
 										input.form-control(type="text")
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 企業統編
+										label.required_star 企業統編
 										input.form-control(type="text")
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 上傳Logo
+										label.required_star 上傳Logo
 										.custom-file
 											input.custom-file-input(type="file")
 											label.custom-file-label 建議尺寸800X800px
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 上傳登記證
+										label.required_star 上傳登記證
 										.custom-file
 											input.custom-file-input(type="file")
 											label.custom-file-label 上傳證書
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 負責人
+										label.required_star 負責人
 										input.form-control(type="text")
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 聯絡人
+										label.required_star 聯絡人
 										input.form-control(type="text")
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 電話
+										label.required_star 電話
 										input.form-control(type="text")
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 傳真
+										label.required_star 傳真
 										input.form-control(type="text")
 								// 必填
 								.col-6.col-md-3.left
 									.form-group
-										label 地址(中)
+										label.required_star 地址(中)
 										select.form-control.selectpicker(data-size="5")
 											option(selected disabled) 縣市
 											option 台北市
@@ -762,7 +762,7 @@ html(lang="en")
 								// 必填
 								.col-12
 									.form-group
-										label Email
+										label.required_star Email
 										input.form-control(type="email")
 								.col-12
 									.form-group
@@ -770,7 +770,7 @@ html(lang="en")
 										textarea.form-control(rows="5")
 								.input-group.mb-3
 									.input-group-prepend
-										span.input-group-text 驗證碼
+										span.input-group-text.required_star 驗證碼
 									input.form-control(type="text" placeholder="請輸入驗證碼")
 									.input-group-append
 										a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")
@@ -784,36 +784,36 @@ html(lang="en")
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 使用者名稱
+										label.required_star 使用者名稱
 										input.form-control(type="text")
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 職稱
+										label.required_star 職稱
 										input.form-control(type="text")
 								// 必填
 								.col-12
 									.form-group
-										label 電話
+										label.required_star 電話
 										input.form-control(type="text")
 								// 必填
 								.col-12
 									.form-group
-										label Email
+										label.required_star Email
 										input.form-control(type="email")
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 密碼
+										label.required_star 密碼
 										input.form-control(type="password")
 								// 必填
 								.col-12.col-md-6
 									.form-group
-										label 確認密碼
+										label.required_star 確認密碼
 										input.form-control(type="password")
 								.input-group.mb-3
 									.input-group-prepend
-										span.input-group-text 驗證碼
+										span.input-group-text.required_star 驗證碼
 									input.form-control(type="text" placeholder="請輸入驗證碼")
 									.input-group-append
 										a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")
@@ -827,32 +827,32 @@ html(lang="en")
 								// 必填
 								.col-12
 									.form-group
-										label 姓名
+										label.required_star 姓名
 										input.form-control(type="text")
 								// 必填
 								.col-12
 									.form-group
-										label 出生日期
+										label.required_star 出生日期
 										input.form-control(type="date")
 								// 必填
 								.col-12
 									.form-group
-										label 電話
+										label.required_star 電話
 										input.form-control(type="text")
 								// 必填
 								.col-12
 									.form-group
-										label Email
+										label.required_star Email
 										input.form-control(type="email")
 								// 必填
 								.col-12
 									.form-group
-										label 密碼
+										label.required_star 密碼
 										input.form-control(type="password")
 								// 必填
 								.col-12
 									.form-group
-										label 確認密碼
+										label.required_star 確認密碼
 										input.form-control(type="password")
 								.col-12
 									.form-group
@@ -860,7 +860,7 @@ html(lang="en")
 										textarea.form-control(rows="5")
 								.input-group.mb-3
 									.input-group-prepend
-										span.input-group-text 驗證碼
+										span.input-group-text.required_star 驗證碼
 									input.form-control(type="text" placeholder="請輸入驗證碼")
 									.input-group-append
 										a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")

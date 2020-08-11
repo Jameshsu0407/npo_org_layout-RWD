@@ -91,12 +91,12 @@ html(lang="en")
 							// 必填
 							.col-12
 								.form-group
-									label 刊登日期
+									label.required_star 刊登日期
 									input.form-control(type="date")
 							// 必填
 							.col-12
 								.form-group
-									label 刊登天數
+									label.required_star 刊登天數
 									.post_duration
 										.form-check
 											input.form-check-input(type="radio" name="post_duration")
@@ -110,17 +110,17 @@ html(lang="en")
 							// 必填
 							.col-12
 								.form-group
-									label 職務名稱
+									label.required_star 職務名稱
 									input.form-control(type="text")
 							// 必填
 							.col-12
 								.form-group
-									label 職務部門
+									label.required_star 職務部門
 									input.form-control(type="text")
 							// 必填
 							.col-12
 								.form-group
-									label 性別
+									label.required_star 性別
 									.gender
 										.form-check
 											input.form-check-input(type="radio" name="gender")
@@ -163,7 +163,7 @@ html(lang="en")
 							// 必填
 							.col-12
 								.form-group
-									label 福利
+									label.required_star 福利
 									input.form-control(type="text")
 							.col-12
 								.form-group
@@ -172,7 +172,7 @@ html(lang="en")
 							// 必填
 							.col-12
 								.form-group
-									label 休假制度
+									label.required_star 休假制度
 									input.form-control(type="text")
 							.col-12
 								.form-group
@@ -189,7 +189,7 @@ html(lang="en")
 							// 必填
 							.col-12
 								.form-group
-									label 詳細說明
+									label.required_star 詳細說明
 									input.form-control(type="text")
 							.col-12
 								.form-group
@@ -201,7 +201,7 @@ html(lang="en")
 									textarea.form-control(rows="5")
 							// 必填
 							.col-12
-								label 工作地點
+								label.required_star 工作地點
 								.region
 									.form-group.form-check
 										input.form-check-input(type="checkbox")
@@ -275,12 +275,12 @@ html(lang="en")
 							// 必填
 							.col-12
 								.form-group
-									label 聯絡人
+									label.required_star 聯絡人
 									input.form-control(type="text")
 							// 必填
 							.col-12.col-md-6
 								.form-group
-									label 連絡電話
+									label.required_star 連絡電話
 									input.form-control(type="text")
 							.col-12.col-md-6
 								.form-group
@@ -293,18 +293,16 @@ html(lang="en")
 							// 必填
 							.col-12
 								.form-group
-									label 連絡Email
+									label.required_star 連絡Email
 									input.form-control(type="email")
 							.input-group.mb-3
 								.input-group-prepend
-									span.input-group-text 驗證碼
+									span.input-group-text.required_star 驗證碼
 								input.form-control(type="text" placeholder="請輸入驗證碼")
 								.input-group-append
 									a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")
 										img.checkpin(src="./img/checkpin.png", alt="")
 							button.btn.login_button(type="button" onclick="javascript:location.href=''") 送出
-
-
 		//- 匯入底部廣告
 		include footer_ad.pug
 		//- 匯入footer+script

@@ -464,6 +464,11 @@ select:focus, select:active, textarea:focus, textarea:active, input:focus, input
   border-bottom: 1px solid #B5B8A3;
 }
 
+.required_star::before {
+  content: "*";
+  color: red;
+}
+
 nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
   min-width: 110px;
 }

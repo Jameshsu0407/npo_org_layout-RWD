@@ -42,20 +42,20 @@ html(lang="en")
 							h4.col-12 基本資料
 							.col-12
 								.form-group
-									label 姓名
+									label.required_star 姓名
 									input.form-control(type="text")
 							
 							.col-12
 								.form-group
-									label 電話
+									label.required_star 電話
 									input.form-control(type="text")
 							.col-12
 								.form-group
-									label Email
+									label.required_star Email
 									input.form-control(type="email")
 							.col-12
 								.form-group
-									label 兵役狀況
+									label.required_star 兵役狀況
 									.solider
 										.form-check
 											input.form-check-input(type="radio" name="solider")
@@ -68,7 +68,7 @@ html(lang="en")
 											label.form-check-label 免役
 							.col-12
 								.form-group
-									label 最高學歷
+									label.required_star 最高學歷
 									select.form-control.selectpicker(data-size="5")
 										option 博士
 										option 碩士
@@ -81,11 +81,11 @@ html(lang="en")
 										option 其他
 							.col-12.col-md-6
 								.form-group
-									label 學歷/科系
+									label.required_star 學歷/科系
 									input.form-control(type="text")
 							.col-12.col-md-6
 								.form-group
-									label 就學情況
+									label.required_star 就學情況
 									input.form-control(type="text" placeholder="哪一年必/肆業、就學中")
 							h4.col-12 工作經歷1
 							.col-12.col-md-6
@@ -164,13 +164,13 @@ html(lang="en")
 							h4.col-12 其他
 							.col-12
 								.form-group
-									label 上傳自傳
+									label.required_star 上傳自傳
 									.custom-file 
 										input.custom-file-input(type="file")
 										label.custom-file-label 上傳自傳
 							.col-12.col-md-6
 								.form-group
-									label 行業類別
+									label.required_star 行業類別
 									select.form-control.selectpicker(data-size="5")
 										option(selected="" disabled="") 行業類別
 										option 醫護
@@ -194,7 +194,7 @@ html(lang="en")
 									input.form-control(type="text")
 							.input-group.mb-3
 								.input-group-prepend
-									span.input-group-text 驗證碼
+									span.input-group-text.required_star 驗證碼
 								input.form-control(type="text" placeholder="請輸入驗證碼")
 								.input-group-append
 									a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")

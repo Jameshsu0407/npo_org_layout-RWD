@@ -91,7 +91,7 @@ html(lang="en")
 							// 必填
 							.col-12
 								.form-group
-									label 刊登日期
+									label.required_star 刊登日期
 									input.form-control(type="date")
 							
 							.col-12
@@ -103,7 +103,7 @@ html(lang="en")
 							// 必填
 							.col-12
 								.form-group
-									label 刊登天數
+									label.required_star 刊登天數
 									.post_duration
 										.form-check
 											input.form-check-input(type="radio" name="post_duration")
@@ -116,7 +116,7 @@ html(lang="en")
 											label.form-check-label 56天
 							// 必填
 							.col-12
-								label 影片屬性
+								label.required_star 影片屬性
 								.video_characteristic
 									.form-group.form-check
 										input.form-check-input(type="checkbox")
@@ -175,12 +175,12 @@ html(lang="en")
 							// 必填
 							.col-12
 								.form-group
-									label 影片標題
+									label.required_star 影片標題
 									input.form-control(type="text")
 							// 必填
 							.col-12
 								.form-group
-									label Youtube連結
+									label.required_star Youtube連結
 									input.form-control(type="text" placeholder="在Youtubeu影片按右鍵，點選複製嵌入程式碼並將它貼上")
 							.col-12
 								.form-group
@@ -189,7 +189,7 @@ html(lang="en")
 							// 必填
 							.input-group.mb-3
 								.input-group-prepend
-									span.input-group-text 驗證碼
+									span.input-group-text.required_star 驗證碼
 								input.form-control(type="text" placeholder="請輸入驗證碼")
 								.input-group-append
 									a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")

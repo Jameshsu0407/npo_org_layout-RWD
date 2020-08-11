@@ -91,12 +91,12 @@ html(lang="en")
 							// 必填
 							.col-12
 								.form-group
-									label 刊登日期
+									label.required_star 刊登日期
 									input.form-control(type="date")
 							// 必填
 							.col-12
 								.form-group
-									label 刊登天數
+									label.required_star 刊登天數
 									.post_duration
 										.form-check
 											input.form-check-input(type="radio" name="post_duration")
@@ -110,17 +110,17 @@ html(lang="en")
 							// 必填
 							.col-12
 								.form-group
-									label 補助標題
+									label.required_star 補助標題
 									input.form-control(type="text")
 							// 必填
 							.col-12
 								.form-group
-									label 補助內容
+									label.required_star 補助內容
 									textarea.form-control(rows="5")
 							// 必填
 							.input-group.mb-3
 								.input-group-prepend
-									span.input-group-text 驗證碼
+									span.input-group-text.required_star 驗證碼
 								input.form-control(type="text" placeholder="請輸入驗證碼")
 								.input-group-append
 									a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")
