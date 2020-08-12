@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>組織-公益商城-列表</title>
+    <title>組織-公益商城-單元頁</title>
     <!-- bootstrap v4.41-->
     <link rel="stylesheet" href="./css/bootstrap.css">
     <!-- slick v1.8-->
@@ -139,7 +139,7 @@
         </div>
       </div>
     </nav>
-    <section class="container org_same_list" id="org_shop_list">
+    <section class="container org_same_list" id="org_shop_unit">
       <div class="row">
         <div class="content_top">
           <div class="col-12 col-lg-4 left">
@@ -207,65 +207,16 @@
             </div>
             <!-- 內文-->
             <div class="content">
-              <div class="good_list col-12 col-md-6 col-lg-4"><a class="good" href="12.11.1.html">
-                  <div class="pic"><img class="img-fluid" src="./img/product/pd1.jpg"></div>
-                  <h3 class="title">商品名稱</h3></a></div>
-              <div class="good_list col-12 col-md-6 col-lg-4"><a class="good" href="12.11.1.html">
-                  <div class="pic"><img class="img-fluid" src="./img/product/pd2.jpg"></div>
-                  <h3 class="title">商品名稱</h3></a></div>
-              <div class="good_list col-12 col-md-6 col-lg-4"><a class="good" href="12.11.1.html">
-                  <div class="pic"><img class="img-fluid" src="./img/product/pd3.jpg"></div>
-                  <h3 class="title">商品名稱</h3></a></div>
-              <div class="good_list col-12 col-md-6 col-lg-4"><a class="good" href="12.11.1.html">
-                  <div class="pic"><img class="img-fluid" src="./img/product/pd4.jpg"></div>
-                  <h3 class="title">商品名稱</h3></a></div>
-              <div class="good_list col-12 col-md-6 col-lg-4"><a class="good" href="12.11.1.html">
-                  <div class="pic"><img class="img-fluid" src="./img/fakeimg/800x800.png"></div>
-                  <h3 class="title">商品名稱</h3></a></div>
-              <div class="good_list col-12 col-md-6 col-lg-4"><a class="good" href="12.11.1.html">
-                  <div class="pic"><img class="img-fluid" src="./img/fakeimg/800x450.png"></div>
-                  <h3 class="title">商品名稱</h3></a></div>
-              <div class="good_list col-12 col-md-6 col-lg-4"><a class="good" href="12.11.1.html">
-                  <div class="pic"><img class="img-fluid" src="./img/fakeimg/1000x200.png"></div>
-                  <h3 class="title">商品名稱</h3></a></div>
-              <div class="good_list col-12 col-md-6 col-lg-4"><a class="good" href="12.11.1.html">
-                  <div class="pic"><img class="img-fluid" src="./img/fakeimg/200x1000.png"></div>
-                  <h3 class="title">商品名稱</h3></a></div>
-              <div class="good_list col-12 col-md-6 col-lg-4"><a class="good" href="12.11.1.html">
-                  <div class="pic"><img class="img-fluid" src="./img/fakeimg/800x800.png"></div>
-                  <h3 class="title">商品名稱</h3></a></div>
-              <!-- 分頁-->
-              <div id="page">
-                <ul class="pagination">
-                  <li><a href="#"><i class="fa fa-angle-double-left fa-lg" aria-hidden="true"></i><span class="sr-only">第一頁</span></a></li>
-                  <li><a href="#"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i><span class="sr-only">上一頁</span></a></li>
-                  <!-- 使用者輸入-->
-                  <!-- <li><a><input type="text" placeholder="" size="1">&nbsp;&nbsp;<span>/&nbsp;&nbsp;15</span></a></li>-->
-                  <!-- select-->
-                  <li>
-                    <select class="select_css" onchange="location.href=this.options[this.selectedIndex].value">
-                      <option selected="selected" value="#">1</option>
-                      <option value="#">2</option>
-                      <option value="#">3</option>
-                      <option value="#">4</option>
-                      <option value="#">5</option>
-                      <option value="#">6</option>
-                      <option value="#">7</option>
-                      <option value="#">8</option>
-                      <option value="#">9</option>
-                      <option value="#">10</option>
-                      <option value="#">11</option>
-                      <option value="#">12</option>
-                      <option value="#">13</option>
-                      <option value="#">14</option>
-                      <option value="#">15</option>
-                    </select><span>/  15</span>
-                  </li>
-                  <li><a href="#"><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i><span class="sr-only">下一頁</span></a></li>
-                  <li><a href="#"><i class="fa fa-angle-double-right fa-lg" aria-hidden="true"></i><span class="sr-only">最後一頁</span></a></li>
-                </ul>
+              <div class="col-12 col-md-6 left"><img class="img-fluid" src="./img/product/pd1.jpg" alt=""></div>
+              <div class="col-12 col-md-6 right">
+                <h3>商品名稱商品名稱</h3><span class="date">2020/08/12</span>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil tempora magni alias libero nesciunt delectus eius quaerat, magnam nostrum tenetur praesentium porro assumenda sequi. Mollitia magnam nobis quaerat ipsum omnis.</p><span class="warring">最終交易金額以實際付款金額為主</span><span class="cost">售價：1500</span>
+                <button class="btn btn-md" type="button" onclick="javascript:location.href=''">前往購買</button>
               </div>
-              <!--分頁-->
+              <!-- 回上一頁-->
+              <div id="back"><a href="12.11.html">
+                  <h4>回列表頁</h4></a></div>
+              <!-- 回上一頁-->
             </div>
           </div>
         </div>

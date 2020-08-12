@@ -3,14 +3,14 @@ html(lang="en")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
-		title 組織-公益商城-列表
+		title 組織-公益商城-單元頁
 		//- 匯入連結
 		include header.pug
 	body#top
 		//- 匯入導覽列+gototop
 		include nav.pug
 
-		section#org_shop_list.container.org_same_list
+		section#org_shop_unit.container.org_same_list
 			.row
 				.content_top
 					.col-12.col-lg-4.left
@@ -89,52 +89,21 @@ html(lang="en")
 									h3 機構介紹
 						// 內文
 						.content
-							.good_list.col-12.col-md-6.col-lg-4
-								a.good(href="12.11.1.html")
-									.pic
-										img.img-fluid(src="./img/product/pd1.jpg")
-									h3.title 商品名稱
-							.good_list.col-12.col-md-6.col-lg-4
-								a.good(href="12.11.1.html")
-									.pic
-										img.img-fluid(src="./img/product/pd2.jpg")
-									h3.title 商品名稱
-							.good_list.col-12.col-md-6.col-lg-4
-								a.good(href="12.11.1.html")
-									.pic
-										img.img-fluid(src="./img/product/pd3.jpg")
-									h3.title 商品名稱
-							.good_list.col-12.col-md-6.col-lg-4
-								a.good(href="12.11.1.html")
-									.pic
-										img.img-fluid(src="./img/product/pd4.jpg")
-									h3.title 商品名稱
-							.good_list.col-12.col-md-6.col-lg-4
-								a.good(href="12.11.1.html")
-									.pic
-										img.img-fluid(src="./img/fakeimg/800x800.png")
-									h3.title 商品名稱
-							.good_list.col-12.col-md-6.col-lg-4
-								a.good(href="12.11.1.html")
-									.pic
-										img.img-fluid(src="./img/fakeimg/800x450.png")
-									h3.title 商品名稱
-							.good_list.col-12.col-md-6.col-lg-4
-								a.good(href="12.11.1.html")
-									.pic
-										img.img-fluid(src="./img/fakeimg/1000x200.png")
-									h3.title 商品名稱
-							.good_list.col-12.col-md-6.col-lg-4
-								a.good(href="12.11.1.html")
-									.pic
-										img.img-fluid(src="./img/fakeimg/200x1000.png")
-									h3.title 商品名稱
-							.good_list.col-12.col-md-6.col-lg-4
-								a.good(href="12.11.1.html")
-									.pic
-										img.img-fluid(src="./img/fakeimg/800x800.png")
-									h3.title 商品名稱
-							include page.pug
+							.col-12.col-md-6.left
+								img.img-fluid(src="./img/product/pd1.jpg", alt="")
+								//- img.img-fluid(src="./img/fakeimg/800X800.png", alt="")
+							.col-12.col-md-6.right
+								h3 商品名稱商品名稱
+								span.date 2020/08/12
+								p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil tempora magni alias libero nesciunt delectus eius quaerat, magnam nostrum tenetur praesentium porro assumenda sequi. Mollitia magnam nobis quaerat ipsum omnis.
+								span.warring 最終交易金額以實際付款金額為主
+								span.cost 售價：1500
+								button.btn.btn-md(type="button" onclick="javascript:location.href=''") 前往購買
+							// 回上一頁
+							#back
+								a(href="12.11.html")
+									h4 回列表頁
+							// 回上一頁
 		
 		//- 匯入底部廣告
 		include footer_ad.pug

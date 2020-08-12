@@ -9810,6 +9810,73 @@ footer .copyright p {
   padding: 10px 20px;
 }
 
+#org_shop_unit .content {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#org_shop_unit .content .left {
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  #org_shop_unit .content .left {
+    padding: 0;
+  }
+}
+
+#org_shop_unit .content .left img {
+  margin: 0 auto;
+  padding: 0;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+  #org_shop_unit .content .right {
+    padding: 0;
+    margin-top: 20px;
+  }
+}
+
+#org_shop_unit .content .right h3 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+#org_shop_unit .content .right span.date {
+  color: #B5B8A3;
+  font-size: 14px;
+}
+
+#org_shop_unit .content .right span.cost {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#org_shop_unit .content .right span.warring {
+  color: red;
+  display: block;
+}
+
+#org_shop_unit .content .right button.btn {
+  display: block;
+  padding: 2px 10px;
+  margin-top: 5px;
+  background-color: #ffd56f;
+  transition: 0.5s;
+}
+
+#org_shop_unit .content .right button.btn:hover {
+  background-color: #ffe4a2;
+}
+
+#org_shop_unit .content #back {
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
 #com_donate_list .pc_top_nav {
   padding-bottom: 30px;
 }
