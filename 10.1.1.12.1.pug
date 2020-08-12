@@ -96,7 +96,7 @@ html(lang="en")
 							
 							.col-12
 									.form-group
-										label 上傳圖片
+										label.required_star 上傳圖片
 										.custom-file
 											input.custom-file-input(type="file")
 											label.custom-file-label 圖片建議尺寸800X800px
@@ -114,6 +114,9 @@ html(lang="en")
 										.form-check
 											input.form-check-input(type="radio" name="post_duration")
 											label.form-check-label 56天
+										// 延後日期，只有在修改頁面才會出現
+										.postpone
+											button.search_btn(onclick="location.href=''") 延長
 							// 必填
 							.col-12
 								.form-group
@@ -123,6 +126,11 @@ html(lang="en")
 							.col-12
 								.form-group
 									label.required_star 價錢
+									input.form-control(type="text")
+							// 必填
+							.col-12
+								.form-group
+									label.required_star 詳細說明
 									textarea.form-control(rows="5")
 							// 必填
 							.col-12

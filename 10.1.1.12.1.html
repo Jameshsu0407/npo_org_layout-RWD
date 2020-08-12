@@ -196,7 +196,7 @@
               </div>
               <div class="col-12">
                 <div class="form-group">
-                  <label>上傳圖片</label>
+                  <label class="required_star">上傳圖片</label>
                   <div class="custom-file">
                     <input class="custom-file-input" type="file">
                     <label class="custom-file-label">圖片建議尺寸800X800px</label>
@@ -220,6 +220,10 @@
                       <input class="form-check-input" type="radio" name="post_duration">
                       <label class="form-check-label">56天</label>
                     </div>
+                    <!-- 延後日期，只有在修改頁面才會出現-->
+                    <div class="postpone">
+                      <button class="search_btn" onclick="location.href=''">延長</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -234,6 +238,13 @@
               <div class="col-12">
                 <div class="form-group">
                   <label class="required_star">價錢</label>
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <!-- 必填-->
+              <div class="col-12">
+                <div class="form-group">
+                  <label class="required_star">詳細說明</label>
                   <textarea class="form-control" rows="5"></textarea>
                 </div>
               </div>

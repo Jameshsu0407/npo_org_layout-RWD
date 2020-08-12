@@ -3495,112 +3495,115 @@ footer .copyright p {
   color: #ffd56f;
 }
 
-#font_end_org_newpost_add .left .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item {
+#font_end_org_ad_add .left .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item {
   color: #343A40;
   padding: 10px 12px;
 }
 
-#font_end_org_newpost_add .left .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item:active {
+#font_end_org_ad_add .left .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item:active {
   background-color: #ffe4a2;
 }
 
-#font_end_org_newpost_add .left .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item.active {
+#font_end_org_ad_add .left .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item.active {
   background-color: #ffe4a2;
 }
 
-#font_end_org_newpost_add .left .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item.active:active {
+#font_end_org_ad_add .left .dropdown.bootstrap-select ul.dropdown-menu.inner.show li a.dropdown-item.active:active {
   background-color: #ffe4a2;
 }
 
-#font_end_org_newpost_add .right .newpost_add {
+#font_end_org_ad_add .right .newpost_add {
   display: flex;
   flex-wrap: wrap;
   margin: 10px 0;
 }
 
 @media screen and (max-width: 576px) {
-  #font_end_org_newpost_add .right .newpost_add .col-12 {
+  #font_end_org_ad_add .right .newpost_add .col-12 {
     padding: 0;
   }
 }
 
-#font_end_org_newpost_add .right .newpost_add .post_duration .form-check, #font_end_org_newpost_add .right .newpost_add .type .form-check, #font_end_org_newpost_add .right .newpost_add .region .form-check {
+#font_end_org_ad_add .right .newpost_add .post_duration .form-check, #font_end_org_ad_add .right .newpost_add .post_duration .postpone {
   display: inline-block;
   position: relative;
   margin: 5px 5px 5px 0;
 }
 
-#font_end_org_newpost_add .right .newpost_add .post_duration .form-check .need_admission, #font_end_org_newpost_add .right .newpost_add .type .form-check .need_admission, #font_end_org_newpost_add .right .newpost_add .region .form-check .need_admission {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 110px;
-  height: 30px;
-  width: 80px;
+#font_end_org_ad_add .right .newpost_add .post_duration .form-check button.search_btn, #font_end_org_ad_add .right .newpost_add .post_duration .postpone button.search_btn {
+  padding: 3px 15px;
+  background-color: #ffd56f;
+  border: none;
+  border-radius: 5px;
+  transition: 0.5s;
 }
 
-#font_end_org_newpost_add .right .newpost_add .donate_characteristic {
+#font_end_org_ad_add .right .newpost_add .post_duration .form-check button.search_btn:hover, #font_end_org_ad_add .right .newpost_add .post_duration .postpone button.search_btn:hover {
+  background-color: #ffe4a2;
+}
+
+#font_end_org_ad_add .right .newpost_add .donate_characteristic {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 16px;
 }
 
-#font_end_org_newpost_add .right .newpost_add .donate_characteristic .form-group.form-check {
+#font_end_org_ad_add .right .newpost_add .donate_characteristic .form-group.form-check {
   margin: 5px 10px 5px 0;
 }
 
-#font_end_org_newpost_add .right .newpost_add .custom-file input.custom-file-input {
+#font_end_org_ad_add .right .newpost_add .custom-file input.custom-file-input {
   cursor: pointer;
 }
 
-#font_end_org_newpost_add .right .newpost_add .custom-file label {
+#font_end_org_ad_add .right .newpost_add .custom-file label {
   cursor: pointer;
 }
 
-#font_end_org_newpost_add .right .newpost_add .custom-file label::after {
+#font_end_org_ad_add .right .newpost_add .custom-file label::after {
   content: "選擇檔案";
 }
 
-#font_end_org_newpost_add .right .newpost_add .custom-file .custom-file-input:focus ~ .custom-file-label {
+#font_end_org_ad_add .right .newpost_add .custom-file .custom-file-input:focus ~ .custom-file-label {
   border-color: #d4d4d4;
   box-shadow: none;
 }
 
-#font_end_org_newpost_add .right .newpost_add .input-group {
+#font_end_org_ad_add .right .newpost_add .input-group {
   width: calc( 100% - 30px);
   margin: 0 auto;
 }
 
 @media screen and (max-width: 992px) {
-  #font_end_org_newpost_add .right .newpost_add .input-group {
+  #font_end_org_ad_add .right .newpost_add .input-group {
     width: 60%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #font_end_org_newpost_add .right .newpost_add .input-group {
+  #font_end_org_ad_add .right .newpost_add .input-group {
     width: 80%;
   }
 }
 
 @media screen and (max-width: 576px) {
-  #font_end_org_newpost_add .right .newpost_add .input-group {
+  #font_end_org_ad_add .right .newpost_add .input-group {
     width: 100%;
   }
 }
 
-#font_end_org_newpost_add .right .newpost_add .input-group .input-group-text {
+#font_end_org_ad_add .right .newpost_add .input-group .input-group-text {
   border: none;
   width: 100px;
   background-color: #ffe4a2;
 }
 
-#font_end_org_newpost_add .right .newpost_add .checkpin_switch {
+#font_end_org_ad_add .right .newpost_add .checkpin_switch {
   position: relative;
   width: 85px;
 }
 
-#font_end_org_newpost_add .right .newpost_add .checkpin_switch .checkpin {
+#font_end_org_ad_add .right .newpost_add .checkpin_switch .checkpin {
   width: 70%;
   position: absolute;
   left: 50%;
@@ -3608,7 +3611,7 @@ footer .copyright p {
   transform: translate(-50%, -50%);
 }
 
-#font_end_org_newpost_add .right .newpost_add .login_button {
+#font_end_org_ad_add .right .newpost_add .login_button {
   display: block;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -3617,7 +3620,7 @@ footer .copyright p {
   transition: 0.5s;
 }
 
-#font_end_org_newpost_add .right .newpost_add .login_button:hover {
+#font_end_org_ad_add .right .newpost_add .login_button:hover {
   background-color: #ffe4a2;
 }
 
@@ -3759,21 +3762,6 @@ footer .copyright p {
 
 #font_end_org_activities_list table.table {
   margin-top: 20px;
-  table-layout: fixed;
-}
-
-#font_end_org_activities_list table.table .thead-color .type_width {
-  width: 120px;
-}
-
-#font_end_org_activities_list table.table .thead-color .small_width {
-  width: 120px;
-}
-
-@media screen and (max-width: 576px) {
-  #font_end_org_activities_list table.table .thead-color .small_width {
-    width: 90px;
-  }
 }
 
 #font_end_org_activities_list table.table .clickable-row {
@@ -3825,19 +3813,31 @@ footer .copyright p {
   }
 }
 
-#font_end_org_activities_add .right .activities_add .post_duration .form-check, #font_end_org_activities_add .right .activities_add .activities_type .form-check, #font_end_org_activities_add .right .activities_add .admission .form-check {
+#font_end_org_activities_add .right .activities_add .post_duration .form-check, #font_end_org_activities_add .right .activities_add .post_duration .postpone, #font_end_org_activities_add .right .activities_add .activities_type .form-check, #font_end_org_activities_add .right .activities_add .activities_type .postpone, #font_end_org_activities_add .right .activities_add .admission .form-check, #font_end_org_activities_add .right .activities_add .admission .postpone {
   display: inline-block;
   position: relative;
   margin: 5px 5px 5px 0;
 }
 
-#font_end_org_activities_add .right .activities_add .post_duration .form-check .need_admission, #font_end_org_activities_add .right .activities_add .activities_type .form-check .need_admission, #font_end_org_activities_add .right .activities_add .admission .form-check .need_admission {
+#font_end_org_activities_add .right .activities_add .post_duration .form-check .need_admission, #font_end_org_activities_add .right .activities_add .post_duration .postpone .need_admission, #font_end_org_activities_add .right .activities_add .activities_type .form-check .need_admission, #font_end_org_activities_add .right .activities_add .activities_type .postpone .need_admission, #font_end_org_activities_add .right .activities_add .admission .form-check .need_admission, #font_end_org_activities_add .right .activities_add .admission .postpone .need_admission {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 110px;
   height: 30px;
   width: 80px;
+}
+
+#font_end_org_activities_add .right .activities_add .post_duration .form-check button.search_btn, #font_end_org_activities_add .right .activities_add .post_duration .postpone button.search_btn, #font_end_org_activities_add .right .activities_add .activities_type .form-check button.search_btn, #font_end_org_activities_add .right .activities_add .activities_type .postpone button.search_btn, #font_end_org_activities_add .right .activities_add .admission .form-check button.search_btn, #font_end_org_activities_add .right .activities_add .admission .postpone button.search_btn {
+  padding: 3px 15px;
+  background-color: #ffd56f;
+  border: none;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+#font_end_org_activities_add .right .activities_add .post_duration .form-check button.search_btn:hover, #font_end_org_activities_add .right .activities_add .post_duration .postpone button.search_btn:hover, #font_end_org_activities_add .right .activities_add .activities_type .form-check button.search_btn:hover, #font_end_org_activities_add .right .activities_add .activities_type .postpone button.search_btn:hover, #font_end_org_activities_add .right .activities_add .admission .form-check button.search_btn:hover, #font_end_org_activities_add .right .activities_add .admission .postpone button.search_btn:hover {
+  background-color: #ffe4a2;
 }
 
 #font_end_org_activities_add .right .activities_add .activities_characteristic, #font_end_org_activities_add .right .activities_add .region {
@@ -4485,11 +4485,6 @@ footer .copyright p {
 
 #font_end_org_allowance_announcement_list table.table {
   margin-top: 20px;
-  table-layout: fixed;
-}
-
-#font_end_org_allowance_announcement_list table.table .thead-color .type_width {
-  width: 120px;
 }
 
 #font_end_org_allowance_announcement_list table.table .clickable-row {
@@ -4529,19 +4524,22 @@ footer .copyright p {
   }
 }
 
-#font_end_org_allowance_announcement_add .right .allowance_announcement_add .post_duration .form-check, #font_end_org_allowance_announcement_add .right .allowance_announcement_add .type .form-check, #font_end_org_allowance_announcement_add .right .allowance_announcement_add .region .form-check {
+#font_end_org_allowance_announcement_add .right .allowance_announcement_add .post_duration .form-check, #font_end_org_allowance_announcement_add .right .allowance_announcement_add .post_duration .postpone, #font_end_org_allowance_announcement_add .right .allowance_announcement_add .type .form-check, #font_end_org_allowance_announcement_add .right .allowance_announcement_add .type .postpone, #font_end_org_allowance_announcement_add .right .allowance_announcement_add .region .form-check, #font_end_org_allowance_announcement_add .right .allowance_announcement_add .region .postpone {
   display: inline-block;
   position: relative;
   margin: 5px 5px 5px 0;
 }
 
-#font_end_org_allowance_announcement_add .right .allowance_announcement_add .post_duration .form-check .need_admission, #font_end_org_allowance_announcement_add .right .allowance_announcement_add .type .form-check .need_admission, #font_end_org_allowance_announcement_add .right .allowance_announcement_add .region .form-check .need_admission {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 110px;
-  height: 30px;
-  width: 80px;
+#font_end_org_allowance_announcement_add .right .allowance_announcement_add .post_duration .form-check button.search_btn, #font_end_org_allowance_announcement_add .right .allowance_announcement_add .post_duration .postpone button.search_btn, #font_end_org_allowance_announcement_add .right .allowance_announcement_add .type .form-check button.search_btn, #font_end_org_allowance_announcement_add .right .allowance_announcement_add .type .postpone button.search_btn, #font_end_org_allowance_announcement_add .right .allowance_announcement_add .region .form-check button.search_btn, #font_end_org_allowance_announcement_add .right .allowance_announcement_add .region .postpone button.search_btn {
+  padding: 3px 15px;
+  background-color: #ffd56f;
+  border: none;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+#font_end_org_allowance_announcement_add .right .allowance_announcement_add .post_duration .form-check button.search_btn:hover, #font_end_org_allowance_announcement_add .right .allowance_announcement_add .post_duration .postpone button.search_btn:hover, #font_end_org_allowance_announcement_add .right .allowance_announcement_add .type .form-check button.search_btn:hover, #font_end_org_allowance_announcement_add .right .allowance_announcement_add .type .postpone button.search_btn:hover, #font_end_org_allowance_announcement_add .right .allowance_announcement_add .region .form-check button.search_btn:hover, #font_end_org_allowance_announcement_add .right .allowance_announcement_add .region .postpone button.search_btn:hover {
+  background-color: #ffe4a2;
 }
 
 #font_end_org_allowance_announcement_add .right .allowance_announcement_add .donate_characteristic {
@@ -4764,11 +4762,6 @@ footer .copyright p {
 
 #font_end_org_rescue_announcement_list table.table {
   margin-top: 20px;
-  table-layout: fixed;
-}
-
-#font_end_org_rescue_announcement_list table.table .thead-color .type_width {
-  width: 120px;
 }
 
 #font_end_org_rescue_announcement_list table.table .clickable-row {
@@ -4808,19 +4801,22 @@ footer .copyright p {
   }
 }
 
-#font_end_org_rescue_announcement_add .right .rescue_announcement_add .post_duration .form-check, #font_end_org_rescue_announcement_add .right .rescue_announcement_add .type .form-check, #font_end_org_rescue_announcement_add .right .rescue_announcement_add .region .form-check {
+#font_end_org_rescue_announcement_add .right .rescue_announcement_add .post_duration .form-check, #font_end_org_rescue_announcement_add .right .rescue_announcement_add .post_duration .postpone, #font_end_org_rescue_announcement_add .right .rescue_announcement_add .type .form-check, #font_end_org_rescue_announcement_add .right .rescue_announcement_add .type .postpone, #font_end_org_rescue_announcement_add .right .rescue_announcement_add .region .form-check, #font_end_org_rescue_announcement_add .right .rescue_announcement_add .region .postpone {
   display: inline-block;
   position: relative;
   margin: 5px 5px 5px 0;
 }
 
-#font_end_org_rescue_announcement_add .right .rescue_announcement_add .post_duration .form-check .need_admission, #font_end_org_rescue_announcement_add .right .rescue_announcement_add .type .form-check .need_admission, #font_end_org_rescue_announcement_add .right .rescue_announcement_add .region .form-check .need_admission {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 110px;
-  height: 30px;
-  width: 80px;
+#font_end_org_rescue_announcement_add .right .rescue_announcement_add .post_duration .form-check button.search_btn, #font_end_org_rescue_announcement_add .right .rescue_announcement_add .post_duration .postpone button.search_btn, #font_end_org_rescue_announcement_add .right .rescue_announcement_add .type .form-check button.search_btn, #font_end_org_rescue_announcement_add .right .rescue_announcement_add .type .postpone button.search_btn, #font_end_org_rescue_announcement_add .right .rescue_announcement_add .region .form-check button.search_btn, #font_end_org_rescue_announcement_add .right .rescue_announcement_add .region .postpone button.search_btn {
+  padding: 3px 15px;
+  background-color: #ffd56f;
+  border: none;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+#font_end_org_rescue_announcement_add .right .rescue_announcement_add .post_duration .form-check button.search_btn:hover, #font_end_org_rescue_announcement_add .right .rescue_announcement_add .post_duration .postpone button.search_btn:hover, #font_end_org_rescue_announcement_add .right .rescue_announcement_add .type .form-check button.search_btn:hover, #font_end_org_rescue_announcement_add .right .rescue_announcement_add .type .postpone button.search_btn:hover, #font_end_org_rescue_announcement_add .right .rescue_announcement_add .region .form-check button.search_btn:hover, #font_end_org_rescue_announcement_add .right .rescue_announcement_add .region .postpone button.search_btn:hover {
+  background-color: #ffe4a2;
 }
 
 #font_end_org_rescue_announcement_add .right .rescue_announcement_add .donate_characteristic {
@@ -5043,11 +5039,6 @@ footer .copyright p {
 
 #font_end_org_scholarship_announcement_list table.table {
   margin-top: 20px;
-  table-layout: fixed;
-}
-
-#font_end_org_scholarship_announcement_list table.table .thead-color .type_width {
-  width: 120px;
 }
 
 #font_end_org_scholarship_announcement_list table.table .clickable-row {
@@ -5087,19 +5078,22 @@ footer .copyright p {
   }
 }
 
-#font_end_org_scholarship_announcement_add .right .scholarship_announcement_add .post_duration .form-check, #font_end_org_scholarship_announcement_add .right .scholarship_announcement_add .type .form-check, #font_end_org_scholarship_announcement_add .right .scholarship_announcement_add .region .form-check {
+#font_end_org_scholarship_announcement_add .right .scholarship_announcement_add .post_duration .form-check, #font_end_org_scholarship_announcement_add .right .scholarship_announcement_add .post_duration .postpone, #font_end_org_scholarship_announcement_add .right .scholarship_announcement_add .type .form-check, #font_end_org_scholarship_announcement_add .right .scholarship_announcement_add .type .postpone, #font_end_org_scholarship_announcement_add .right .scholarship_announcement_add .region .form-check, #font_end_org_scholarship_announcement_add .right .scholarship_announcement_add .region .postpone {
   display: inline-block;
   position: relative;
   margin: 5px 5px 5px 0;
 }
 
-#font_end_org_scholarship_announcement_add .right .scholarship_announcement_add .post_duration .form-check .need_admission, #font_end_org_scholarship_announcement_add .right .scholarship_announcement_add .type .form-check .need_admission, #font_end_org_scholarship_announcement_add .right .scholarship_announcement_add .region .form-check .need_admission {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 110px;
-  height: 30px;
-  width: 80px;
+#font_end_org_scholarship_announcement_add .right .scholarship_announcement_add .post_duration .form-check button.search_btn, #font_end_org_scholarship_announcement_add .right .scholarship_announcement_add .post_duration .postpone button.search_btn, #font_end_org_scholarship_announcement_add .right .scholarship_announcement_add .type .form-check button.search_btn, #font_end_org_scholarship_announcement_add .right .scholarship_announcement_add .type .postpone button.search_btn, #font_end_org_scholarship_announcement_add .right .scholarship_announcement_add .region .form-check button.search_btn, #font_end_org_scholarship_announcement_add .right .scholarship_announcement_add .region .postpone button.search_btn {
+  padding: 3px 15px;
+  background-color: #ffd56f;
+  border: none;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+#font_end_org_scholarship_announcement_add .right .scholarship_announcement_add .post_duration .form-check button.search_btn:hover, #font_end_org_scholarship_announcement_add .right .scholarship_announcement_add .post_duration .postpone button.search_btn:hover, #font_end_org_scholarship_announcement_add .right .scholarship_announcement_add .type .form-check button.search_btn:hover, #font_end_org_scholarship_announcement_add .right .scholarship_announcement_add .type .postpone button.search_btn:hover, #font_end_org_scholarship_announcement_add .right .scholarship_announcement_add .region .form-check button.search_btn:hover, #font_end_org_scholarship_announcement_add .right .scholarship_announcement_add .region .postpone button.search_btn:hover {
+  background-color: #ffe4a2;
 }
 
 #font_end_org_scholarship_announcement_add .right .scholarship_announcement_add .donate_characteristic {
@@ -6422,7 +6416,6 @@ footer .copyright p {
 
 #font_end_org_shop_list table.table {
   margin-top: 20px;
-  table-layout: fixed;
 }
 
 #font_end_org_shop_list table.table .thead-color .type_width {
@@ -6466,10 +6459,22 @@ footer .copyright p {
   }
 }
 
-#font_end_org_shop_add .right .shop_add .post_duration .form-check {
+#font_end_org_shop_add .right .shop_add .post_duration .form-check, #font_end_org_shop_add .right .shop_add .post_duration .postpone {
   display: inline-block;
   position: relative;
   margin: 5px 5px 5px 0;
+}
+
+#font_end_org_shop_add .right .shop_add .post_duration .form-check button.search_btn, #font_end_org_shop_add .right .shop_add .post_duration .postpone button.search_btn {
+  padding: 3px 15px;
+  background-color: #ffd56f;
+  border: none;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+#font_end_org_shop_add .right .shop_add .post_duration .form-check button.search_btn:hover, #font_end_org_shop_add .right .shop_add .post_duration .postpone button.search_btn:hover {
+  background-color: #ffe4a2;
 }
 
 #font_end_org_shop_add .right .shop_add .custom-file input.custom-file-input {
@@ -9465,13 +9470,24 @@ footer .copyright p {
   transform: translate(-50%, -50%);
 }
 
+#org_activities_unit .content form .color_white {
+  color: white;
+}
+
 #org_activities_unit .content form .login_button {
-  margin: 0 auto;
-  margin-bottom: 20px;
   display: block;
+  margin-top: 32px;
+  margin-bottom: 30px;
   padding: 4px 25px;
   background-color: #ffd56f;
   transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+  #org_activities_unit .content form .login_button {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
 }
 
 #org_activities_unit .content form .login_button:hover {

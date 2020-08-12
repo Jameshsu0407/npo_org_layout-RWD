@@ -139,7 +139,7 @@
         </div>
       </div>
     </nav>
-    <section class="member_same container" id="font_end_org_newpost_add">
+    <section class="member_same container" id="font_end_org_ad_add">
       <div class="row">
         <div class="content_top col-12">
           <h2 class="content_title col-12">廣告刊登</h2>
@@ -192,6 +192,30 @@
                 <div class="form-group">
                   <label class="required_star">刊登日期</label>
                   <input class="form-control" type="date">
+                </div>
+              </div>
+              <!-- 必填-->
+              <div class="col-12">
+                <div class="form-group">
+                  <label class="required_star">刊登天數</label>
+                  <div class="post_duration">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="post_duration">
+                      <label class="form-check-label">14天</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="post_duration">
+                      <label class="form-check-label">28天</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="post_duration">
+                      <label class="form-check-label">56天</label>
+                    </div>
+                    <!-- 延後日期，只有在修改頁面才會出現-->
+                    <div class="postpone">
+                      <button class="search_btn" onclick="location.href=''">延長</button>
+                    </div>
+                  </div>
                 </div>
               </div>
               <!-- 必填-->
