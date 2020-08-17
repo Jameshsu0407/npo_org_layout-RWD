@@ -1640,6 +1640,7 @@ footer .copyright p {
 #about_us .content_top img {
   display: block;
   margin: auto;
+  width: 30%;
 }
 
 #about_us .content_top p {

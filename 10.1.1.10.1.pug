@@ -87,12 +87,16 @@ html(lang="en")
 					// 右側
 					.right.col-12.col-lg-9
 						form.full_work_add
-							
 							// 必填
 							.col-12
 								.form-group
 									label.required_star 刊登日期
 									input.form-control(type="date")
+							// 修改頁程式自動帶出
+							.col-12
+								.form-group
+									label 結束日期
+									input.form-control(type="date" readonly)
 							// 必填
 							.col-12
 								.form-group
