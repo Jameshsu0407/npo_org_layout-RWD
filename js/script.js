@@ -4,13 +4,14 @@ $(document).ready(function ($) {
 		window.document.location = $(this).data("href");
 	});
 
-	// selectpicker手機原生選單
 	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+		// selectpicker手機原生選單
 		$(".selectpicker").selectpicker("mobile");
 	} else {
 		// selectpicker初始化
 		$(".selectpicker").selectpicker("refresh");
 	}
+
 });
 
 // 首頁上方輪播圖
@@ -139,8 +140,11 @@ $('a[href*="#"]')
 
 // 當視窗滾動時
 $(window).scroll(function () {
-	// 滑動導覽列上縮
-	HideNav();
+	
+	if($(window).width() < 576){
+		// 滑動導覽列上縮
+		HideNav();
+	}
 	// GoToTop漸入漸出
 	FadeGoToTop();
 });
@@ -237,7 +241,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		events: [
 			{
 				description: "蝦皮618活動！全館滿千送百",
-                start: "2020-08-01",
+				start: "2020-08-01",
 				url: "#",
 			},
 			{

@@ -2,25 +2,56 @@
 footer
     .container
         .row
-            .footer-left.col-12.col-lg-5
-                p 財團法人喜瑪拉雅研究發展基金會建置
-                p 網軟股份有限公司營運維護
-            .footer-right.col-12.col-lg-7
-                p.npotimes NPOTIMES電子報訂閱
-                .input-group
-                    input.form-control(type="email" placeholder="請輸入電子信箱")
-                    .input-group-append
-                        button#suscribe.btn.lookmore(type="button") 訂閱！
-            .bottom-bar.col-12.col-md-8.mx-auto
-                .col-4
-                    a(href="11.1.html")
-                        | 使用說明
-                .col-4
-                    a(href="11.2.html")
-                        | 服務條款
-                .col-4
-                    a(href="11.3.html")
-                        | 隱私權政策
+            .footer-left.col-12.col-lg-7
+                a(href="11.1.html")
+                    | 使用說明
+                a(href="11.2.html")
+                    | 服務條款
+                a(href="11.3.html")
+                    | 隱私權政策
+                p.d-none.d-lg-block 財團法人喜瑪拉雅研究發展基金會建置&nbsp;&nbsp;&nbsp;&nbsp;網軟股份有限公司營運維護
+                p.first.d-block.d-lg-none 財團法人喜瑪拉雅研究發展基金會建置
+                p.sec.d-block.d-lg-none 網軟股份有限公司營運維護
+                .box_share
+                    a.ig_box(href="https://www.instagram.com/npois_tw/" target="_blank")
+                        .icon
+                            i.fab.fa-instagram
+                        .text
+                            span.text-nowrap @npois_tw
+                    a.fb_box(href="https://www.facebook.com/npotw/" target="_blank")
+                        .icon
+                            i.fab.fa-facebook
+                        .text
+                            span.text-nowrap @npotw
+                    a.yt_box(href="https://www.youtube.com/user/npotw/featured" target="_blank")
+                        .icon
+                            i.fab.fa-youtube
+                        .text
+                            span.text-nowrap 台灣公益資訊中心
+            .footer-right.col-12.col-lg-5
+                form
+                    //- p.npotimes NPOTIMES電子報訂閱
+                    //- input.form-control(type="email" placeholder="請輸入電子信箱")
+                    .form-group.mb-3.col-12
+                        label NPOTIMES電子報訂閱
+                        input.form-control(type="email" placeholder="請輸入Email")
+                    .form-group.mb-3.col-12
+                        .input-group
+                            select.selectpicker(multiple data-actions-box="true" data-width="100%" title="選擇想要訂閱的類別")
+                                //- option(value="" selected disabled) 選擇想要訂閱的類別
+                                option(value="") 最新消息
+                                option(value="") 扶助專區
+                                option(value="") 物資募集
+                                option(value="") 人力銀行
+                                option(value="") 公益商城
+                    .form-group.m-0.col-12
+                        .input-group
+                            input.form-control(type="text" placeholder="請輸入驗證碼")
+                            .input-group-append
+                                a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")
+                                    img.checkpin(src="./img/checkpin.png", alt="")
+                            button.btn.login_button(type="button" onclick="javascript:location.href=''") 送出 
+            
     .copyright.col-12
         p.copyright-en Copyright © 2020 Taiwan NPO Information Platform. All Rights Reserved. 
 // jq

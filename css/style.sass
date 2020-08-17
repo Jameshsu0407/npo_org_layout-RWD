@@ -599,6 +599,7 @@ ul.nav.navbar-nav
     padding: 10px 0
     .navbar-header
         button.navbar-toggle
+            margin-right: -200px 
             &:focus
                 // 漢堡不要有外框
                 outline: none
@@ -935,55 +936,211 @@ footer
     @media screen and ( max-width: 992px )
         padding: 10px 0 0 0
     .footer-left
-        padding-top: 40px
+        display: grid
+        grid-template-columns: 70px 70px auto
+        grid-template-rows: 32px 35px 35px auto
+        grid-column-gap: 15px
+        padding: 0 15px
         @media screen and ( max-width: 992px )
-            padding-top: 10px
+            grid-template-columns: auto auto auto
+            grid-template-rows: 32px 35px 35px 35px 50px
+            justify-items: center
+        @media screen and ( max-width: 768px )
+            grid-template-rows: 32px 35px 35px 35px 100px
+        @media screen and ( max-width: 576px )
+            grid-template-rows: 32px 35px 35px 35px 150px
         p
-            padding: 0
-            margin-bottom: 5px
+            grid-column: 1/4
+            margin: 0
+            grid-row: 3
+        p.first
+            grid-row: 3
+        p.sec
+            grid-row: 4
+        a
+            // justify-self: left
+            align-self: start
+            grid-row: 2
+        .box_share
+            grid-row: 4
+            grid-column: 1/4
+            align-self: end
+            @media screen and ( max-width: 992px )
+                grid-row: 5
+            .ig_box
+                margin-left: 10px
+                display: inline-block
+                transition: 0.5s
+                &:hover
+                    transform: scale(1.05)
+                .icon
+                    display: inline-block
+                    background-color: white
+                    position: relative
+                    box-shadow: 10px 10px 10px rgba(0,0,0,0.1)
+                    padding: 27px 20px
+                    z-index: 0
+                    transform: skew(20deg)
+                    i
+                        color: transparent
+                        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)
+                        background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)
+                        background-clip: text
+                        -webkit-background-clip: text
+                        font-size: 30px
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%,-50%) skew(-20deg)
+                .text
+                    display: inline-block
+                    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)
+                    box-shadow: 10px 10px 10px rgba(0,0,0,0.1)
+                    z-index: 0
+                    position: relative
+                    padding: 27px 10px
+                    transform: skew(20deg)
+                    width: 120px
+                    span
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%,-50%) skew(-20deg)
+                        color: white
+                        +title
+            .fb_box
+                margin-left: 10px
+                display: inline-block
+                transition: 0.5s
+                &:hover
+                    transform: scale(1.05)
+                .icon
+                    display: inline-block
+                    background-color: white
+                    position: relative
+                    box-shadow: 10px 10px 10px rgba(0,0,0,0.1)
+                    padding: 27px 20px
+                    z-index: 0
+                    transform: skew(20deg)
+                    i
+                        color: #4267B2
+                        font-size: 30px
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%,-50%) skew(-20deg)
+                .text
+                    display: inline-block
+                    background-color: #4267B2
+                    box-shadow: 10px 10px 10px rgba(0,0,0,0.1)
+                    z-index: 0
+                    position: relative
+                    padding: 27px 10px
+                    transform: skew(20deg)
+                    width: 120px
+                    span
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%,-50%) skew(-20deg)
+                        color: white
+                        +title
+            .yt_box
+                margin-left: 10px
+                display: inline-block
+                transition: 0.5s
+                &:hover
+                    transform: scale(1.05)
+                .icon
+                    display: inline-block
+                    background-color: white
+                    position: relative
+                    box-shadow: 10px 10px 10px rgba(0,0,0,0.1)
+                    padding: 27px 21px
+                    z-index: 0
+                    transform: skew(20deg)
+                    i
+                        color: #FF331F
+                        font-size: 30px
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%,-50%) skew(-20deg)
+                .text
+                    display: inline-block
+                    background-color: #FF331F
+                    box-shadow: 10px 10px 10px rgba(0,0,0,0.1)
+                    z-index: 0
+                    position: relative
+                    padding: 27px 10px
+                    transform: skew(20deg)
+                    width: 180px
+                    span
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%,-50%) skew(-20deg)
+                        color: white
+                        +title
+            @media screen and ( max-width: 1200px )
+                .ig_box,.fb_box,.yt_box
+                    .icon
+                        padding: 20px
+                    .text
+                        padding: 20px
+              
 
     .footer-right
-        .npotimes
-            text-align: right
-            margin-bottom: 15px
-        .input-group
-            margin-bottom: 15px
-            #suscribe
-                margin: 0
-    .bottom-bar
-        display: flex
-        flex-wrap: wrap
-        text-align: center
-        align-items: center
-        padding: 20px 0 0 0
-        max-width: 500px
-        a
+        text-align: right
+        @media screen and ( max-width: 992px )
+            margin-top: 20px
+            text-align: left
+        label
+            display: block
+        .form-group
+            float: right
+            padding: 0
+        .checkpin_switch
+            position: relative
+            padding: 0
+            width: 85px
+            .checkpin
+                width: 100%
+                position: absolute
+                left: 50%
+                top: 50%
+                transform: translate(-50%,-50%)
+        .login_button
+            display: block
+            margin-left: 20px
+            padding: 4px 25px
+            background-color: $color_dark_orange
             transition: 0.5s
             &:hover
-                color: $color_dark_orange
+                background-color: lighten($color_dark_orange,10% )
+        .dropdown.bootstrap-select
+            padding: 0
+            button.dropdown-toggle
+                background: white
+            ul.dropdown-menu.inner.show
+                li
+                    a.dropdown-item
+                        &:active
+                            background-color: lighten($color_yellow,10% )
+                        color: $color_black
+                        padding: 10px 12px
+                    a.dropdown-item.active
+                        background-color: lighten($color_yellow,10% )
+                        &:active
+                            background-color: lighten($color_yellow,10% )
     .copyright
         text-align: center
         margin-top: 10px
         background-color: $color_yellow
         p
             margin: 0
-            padding: 8px 0
+            padding: 20px 0 10px 0
 
-@media screen and ( max-width: 992px )
-    footer
-        .footer-left
-            p
-                text-align: center
-        .footer-right
-            .npotimes
-                text-align: center
-        .bottom-bar
-            display: flex
-            bottom: 0
-            width: 100%
-            text-align: center
-            .col-4
-                padding: 0 5px
 // -----------------------------------------------------        
 // 2.1關於我們
 #about_us

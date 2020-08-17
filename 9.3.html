@@ -194,23 +194,43 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="footer-left col-12 col-lg-5">
-            <p>財團法人喜瑪拉雅研究發展基金會建置</p>
-            <p>網軟股份有限公司營運維護</p>
+          <div class="footer-left col-12 col-lg-7"><a href="11.1.html">使用說明</a><a href="11.2.html">服務條款</a><a href="11.3.html">隱私權政策</a>
+            <p class="d-none d-lg-block">財團法人喜瑪拉雅研究發展基金會建置&nbsp;&nbsp;&nbsp;&nbsp;網軟股份有限公司營運維護</p>
+            <p class="first d-block d-lg-none">財團法人喜瑪拉雅研究發展基金會建置</p>
+            <p class="sec d-block d-lg-none">網軟股份有限公司營運維護</p>
+            <div class="box_share"><a class="ig_box" href="https://www.instagram.com/npois_tw/" target="_blank">
+                <div class="icon"><i class="fab fa-instagram"></i></div>
+                <div class="text"><span class="text-nowrap">@npois_tw</span></div></a><a class="fb_box" href="https://www.facebook.com/npotw/" target="_blank">
+                <div class="icon"><i class="fab fa-facebook"></i></div>
+                <div class="text"><span class="text-nowrap">@npotw</span></div></a><a class="yt_box" href="https://www.youtube.com/user/npotw/featured" target="_blank">
+                <div class="icon"><i class="fab fa-youtube"></i></div>
+                <div class="text"><span class="text-nowrap">台灣公益資訊中心</span></div></a></div>
           </div>
-          <div class="footer-right col-12 col-lg-7">
-            <p class="npotimes">NPOTIMES電子報訂閱</p>
-            <div class="input-group">
-              <input class="form-control" type="email" placeholder="請輸入電子信箱">
-              <div class="input-group-append">
-                <button class="btn lookmore" id="suscribe" type="button">訂閱！</button>
+          <div class="footer-right col-12 col-lg-5">
+            <form>
+              <div class="form-group mb-3 col-12">
+                <label>NPOTIMES電子報訂閱</label>
+                <input class="form-control" type="email" placeholder="請輸入Email">
               </div>
-            </div>
-          </div>
-          <div class="bottom-bar col-12 col-md-8 mx-auto">
-            <div class="col-4"><a href="11.1.html">使用說明</a></div>
-            <div class="col-4"><a href="11.2.html">服務條款</a></div>
-            <div class="col-4"><a href="11.3.html">隱私權政策</a></div>
+              <div class="form-group mb-3 col-12">
+                <div class="input-group">
+                  <select class="selectpicker" multiple data-actions-box="true" data-width="100%" title="選擇想要訂閱的類別">
+                    <option value="">最新消息</option>
+                    <option value="">扶助專區</option>
+                    <option value="">物資募集</option>
+                    <option value="">人力銀行</option>
+                    <option value="">公益商城</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group m-0 col-12">
+                <div class="input-group">
+                  <input class="form-control" type="text" placeholder="請輸入驗證碼">
+                  <div class="input-group-append"><a class="checkpin_switch btn" href="#" title="按一下更改驗證碼"><img class="checkpin" src="./img/checkpin.png" alt=""></a></div>
+                  <button class="btn login_button" type="button" onclick="javascript:location.href=''">送出 </button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
