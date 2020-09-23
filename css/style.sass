@@ -627,6 +627,9 @@ ul.nav.navbar-nav
                 @media screen and ( max-width: 340px )
                     width: 220px
                     height: 70px
+                @media screen and ( max-width: 300px )
+                    width: 210px
+                    height: 70px
 
 @media (max-width: 992px) 
 	nav.navbar.bootsnav .navbar-collapse.collapse.show 
@@ -948,20 +951,23 @@ footer
         padding: 10px 0 0 0
     .footer-left
         display: grid
-        grid-template-columns: 70px 70px auto
+        grid-template-columns: 70px 70px 80px auto
         grid-template-rows: 32px 35px 35px auto
         grid-column-gap: 15px
         padding: 0 15px
         @media screen and ( max-width: 992px )
-            grid-template-columns: auto auto auto
-            grid-template-rows: 32px 35px 35px 35px 50px
+            grid-template-columns: repeat(3,1fr)
+            grid-template-rows: repeat(5,auto)
+            grid-column-gap: 0
+            grid-row-gap: 15px
             justify-items: center
-        @media screen and ( max-width: 768px )
-            grid-template-rows: 32px 35px 35px 35px 100px
-        @media screen and ( max-width: 576px )
-            grid-template-rows: 32px 35px 35px 35px 150px
+            text-align: center
+        // @media screen and ( max-width: 768px )
+        //     grid-template-rows: 32px 35px 35px 35px 100px
+        // @media screen and ( max-width: 576px )
+        //     grid-template-rows: 32px 35px 35px 35px 150px
         p
-            grid-column: 1/4
+            grid-column: 1/5
             margin: 0
             grid-row: 3
         p.first
@@ -972,12 +978,18 @@ footer
             // justify-self: left
             align-self: start
             grid-row: 2
+            display: inline
         .box_share
             grid-row: 4
-            grid-column: 1/4
+            grid-column: 1/5
             align-self: end
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            align-content: space-around
             @media screen and ( max-width: 992px )
                 grid-row: 5
+                justify-content: center
             .ig_box
                 margin-left: 10px
                 display: inline-block
