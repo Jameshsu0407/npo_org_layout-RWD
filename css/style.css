@@ -636,6 +636,19 @@ ul.nav.navbar-nav {
   align-items: center;
 }
 
+ul.nav.navbar-nav li.no-dropdown {
+  padding: 8px 10px 0 10px;
+}
+
+ul.nav.navbar-nav li.no-dropdown a {
+  padding: 0 !important;
+  color: black !important;
+}
+
+ul.nav.navbar-nav li.no-dropdown a::after {
+  display: none;
+}
+
 ul.nav.navbar-nav li.dropdown {
   padding: 8px 12px 0 12px;
 }
@@ -743,6 +756,12 @@ ul.nav.navbar-nav li.dropdown ul.dropdown-menu li.dropdown ul.dropdown-menu {
 @media screen and (max-width: 992px) {
   ul.nav.navbar-nav {
     display: block;
+  }
+  ul.nav.navbar-nav li.no-dropdown {
+    padding: 0;
+  }
+  ul.nav.navbar-nav li.no-dropdown a {
+    padding: 20px 0 !important;
   }
   ul.nav.navbar-nav li.dropdown {
     padding: 0;

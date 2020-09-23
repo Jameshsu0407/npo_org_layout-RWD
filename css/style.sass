@@ -484,6 +484,13 @@ ul.drop-down-menu-top
 ul.nav.navbar-nav
     align-items: center
     // 第一層下拉式選單內容
+    li.no-dropdown
+        padding: 8px 10px 0 10px
+        a
+            padding: 0 !important
+            color: black !important
+            &::after
+                display: none
     li.dropdown
         padding: 8px 12px 0 12px
         a.dropdown-toggle
@@ -568,6 +575,10 @@ ul.nav.navbar-nav
     // 第一層下拉式選單
     ul.nav.navbar-nav
         display: block
+        li.no-dropdown
+            padding: 0
+            a
+                padding: 20px 0 !important
         // 第一層下拉式選單內容
         li.dropdown
             padding: 0
