@@ -1,24 +1,24 @@
 doctype html
-html(lang="en")
+html(lang="zh-tw")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
-		title 志工招募
+		title 全職工作
 		//- 匯入連結
 		include header.pug
 	body#top
 		//- 匯入導覽列+gototop
 		include nav.pug
-
-		section#bank_full_work.container
+		.mt-135
+		section.container
 			.row
-				.content_top.col-12
-					h2.content_title.col-12 全職工作
-					.table.col-12
-						form.form-inline.col-12.selector
-							
-							.select_wrap.col-12.col-md-2
-								select.col-12.selectpicker(data-size="5")
+				.title.col-12
+					h2 全職工作
+				.content.col-12
+					form
+						.selector.flex-wrap
+							.col-wrap.col-12.col-md-2
+								select.selectpicker(data-size="5" data-width="100%")
 									option(selected="" disabled="") 工作地點
 									option 全部
 									option 全球性
@@ -45,8 +45,8 @@ html(lang="en")
 									option 澎湖縣
 									option 金門縣
 									option 連江縣
-							.select_wrap.col-12.col-md-2
-								select.col-12.selectpicker(data-size="5")
+							.col-wrap.col-12.col-md-2
+								select.selectpicker(data-size="5" data-width="100%")
 									option(selected="" disabled="") 職務類別
 									option 全部
 									option 不拘
@@ -56,8 +56,8 @@ html(lang="en")
 									option 資訊
 									option 美工
 									option 其他
-							.select_wrap.col-12.col-md-2
-								select.col-12.selectpicker(data-size="5")
+							.col-wrap.col-12.col-md-2
+								select.selectpicker(data-size="5" data-width="100%")
 									option(selected="" disabled="") 組織屬性
 									option 綜合性服務
 									option 兒童青少年福利
@@ -78,95 +78,26 @@ html(lang="en")
 									option 性別平等
 									option 政府單位
 									option 動物保護
-							.select_wrap.col-12.col-md-4
-								input.form-control.col-12(type="text" placeholder="關鍵字")
-							.select_wrap.col-12.col-md-2
-								button.btn.lookmore.col-12.m-0(type="button") 送出
-						table.table.col-12
-							thead.thead-color.text-center
-								tr
-									th.type_width.off(scope="col") 刊登日期
-									th(scope="col") 職務名稱
-									th(scope="col") 組織名稱
-									th.type_width(scope="col") 工作地區
-							tbody
-								tr.clickable-row(data-href="12.9.1.html")
-									th.text-center.off(scope="row") 2020/06/15
-									th.text-truncate 社工-福安兒服中心
-									td.text-truncate 靖娟兒童安全文教基金會
-									td.text-center 台北市
-								tr.clickable-row(data-href="12.9.1.html")
-									th.text-center.off(scope="row") 2020/06/15
-									th.text-truncate 社工員-131親子館
-									td.text-truncate 靖娟兒童安全文教基金會
-									td.text-center 台北市
-								tr.clickable-row(data-href="12.9.1.html")
-									th.text-center.off(scope="row") 2020/06/15
-									th.text-truncate 社工/育兒輔導員-桃
-									td.text-truncate 靖娟兒童安全文教基金會
-									td.text-center 台北市
-								tr.clickable-row(data-href="12.9.1.html")
-									th.text-center.off(scope="row") 2020/06/13
-									th.text-truncate 社工員
-									td.text-truncate 台北市私立松湛園老人養護所
-									td.text-center 新北市
-								tr.clickable-row(data-href="12.9.1.html")
-									th.text-center.off(scope="row") 2020/06/12
-									th.text-truncate 親密關係暴力社工員-
-									td.text-truncate 社團法人榮欣社會福利服務促進協
-									td.text-center 桃園市
-								tr.clickable-row(data-href="12.9.1.html")
-									th.text-center.off(scope="row") 2020/06/12
-									th.text-truncate 老人保護社工員-
-									td.text-truncate 社團法人榮欣社會福利服務促進協
-									td.text-center 桃園市
-								tr.clickable-row(data-href="12.9.1.html")
-									th.text-center.off(scope="row") 2020/06/11
-									th.text-truncate 基隆A單位個管員-
-									td.text-truncate 財團法人台北市中國基督教靈糧世
-									td.text-center 基隆市
-								tr.clickable-row(data-href="12.9.1.html")
-									th.text-center.off(scope="row") 2020/06/11
-									th.text-truncate 社工幹事-
-									td.text-truncate 台北市晚晴婦女協會
-									td.text-center 台北市
-								tr.clickable-row(data-href="12.9.1.html")
-									th.text-center.off(scope="row") 2020/06/15
-									th.text-truncate 社工員-131親子館
-									td.text-truncate 靖娟兒童安全文教基金會
-									td.text-center 台北市
-								tr.clickable-row(data-href="12.9.1.html")
-									th.text-center.off(scope="row") 2020/06/15
-									th.text-truncate 社工/育兒輔導員-桃
-									td.text-truncate 靖娟兒童安全文教基金會
-									td.text-center 台北市
-								tr.clickable-row(data-href="12.9.1.html")
-									th.text-center.off(scope="row") 2020/06/13
-									th.text-truncate 社工員
-									td.text-truncate 台北市私立松湛園老人養護所
-									td.text-center 新北市
-								tr.clickable-row(data-href="12.9.1.html")
-									th.text-center.off(scope="row") 2020/06/12
-									th.text-truncate 親密關係暴力社工員-
-									td.text-truncate 社團法人榮欣社會福利服務促進協
-									td.text-center 桃園市
-								tr.clickable-row(data-href="12.9.1.html")
-									th.text-center.off(scope="row") 2020/06/12
-									th.text-truncate 老人保護社工員-
-									td.text-truncate 社團法人榮欣社會福利服務促進協
-									td.text-center 桃園市
-								tr.clickable-row(data-href="12.9.1.html")
-									th.text-center.off(scope="row") 2020/06/11
-									th.text-truncate 基隆A單位個管員-
-									td.text-truncate 財團法人台北市中國基督教靈糧世
-									td.text-center 基隆市
-								tr.clickable-row(data-href="12.9.1.html")
-									th.text-center.off(scope="row") 2020/06/11
-									th.text-truncate 社工幹事-
-									td.text-truncate 台北市晚晴婦女協會
-									td.text-center 台北市
-					include page.pug
-		
+							.col-wrap.col-12.col-md-4
+								input.form-control(type="text" placeholder="關鍵字")
+							.col-wrap.col-12.col-md-2
+								button.btn.selector-button(type="button") 送出
+						.list
+							table.table.table-striped
+								thead
+									tr
+										th.text-center(scope="col" style="width: 20%") 刊登日期
+										th(scope="col" style="width: 30%") 職務名稱
+										th(scope="col" style="width: 30%") 組織名稱
+										th.text-center(scope="col" style="width: 20%") 工作地區
+								tbody
+									- for ( var i=1 ; i<=15 ; i++)
+										tr(onclick="document.location = '12.9.1.html';")
+											td.text-center(data-th="刊登日期") 2020 / 06 / 05
+											td.text-truncate(data-th="職務名稱") 社工-福安兒服中心
+											td.text-truncate(data-th="組織名稱") 靖娟兒童安全文教基金會
+											td.text-center(data-th="工作地區") 台北市
+						include page.pug
 		//- 匯入底部廣告
 		include footer_ad.pug
 		//- 匯入footer+script

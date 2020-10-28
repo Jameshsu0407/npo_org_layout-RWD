@@ -1,5 +1,5 @@
 doctype html
-html(lang="en")
+html(lang="zh-tw")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
@@ -9,197 +9,224 @@ html(lang="en")
 	body#top
 		//- 匯入導覽列+gototop
 		include nav.pug
-
-		section#font_end_member_resume.member_same.container
+		.mt-135
+		section.container
 			.row
-				.content_top.col-12
-					h2.content_title.col-12 履歷登錄
-					// 左側
-					.left.col-12.col-lg-3
-						// pc版導覽列
-						ul.pc_nav
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.3.1.html") 修改基本資料
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.3.2.html") 履歷登錄
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.3.3.html") 修改密碼
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.html") 登出
-						// 手機版導覽列
-						select.selectpicker.phone_nav(onchange="location.href=this.options[this.selectedIndex].value")
-							option(value="10.1.3.1.html" selected) 修改基本資料
-							option(value="10.1.3.2.html")  履歷登陸
-							option(value="10.1.3.3.html")  修改密碼
-							option(value="10.1.html")  登出
-					// 右側
-					.right.col-12.col-lg-9
-						form.member_resume
-							h4.col-12 基本資料
-							.col-12
-								.form-group
-									label.required_star 姓名
-									input.form-control(type="text")
-							
-							.col-12
-								.form-group
-									label.required_star 電話
-									input.form-control(type="text")
-							.col-12
-								.form-group
-									label.required_star Email
-									input.form-control(type="email")
-							.col-12
-								.form-group
-									label.required_star 兵役狀況
-									.solider
-										.form-check
-											input.form-check-input(type="radio" name="solider")
-											label.form-check-label 役畢
-										.form-check
-											input.form-check-input(type="radio" name="solider")
-											label.form-check-label 未役
-										.form-check
-											input.form-check-input(type="radio" name="solider")
-											label.form-check-label 免役
-							.col-12
-								.form-group
-									label.required_star 最高學歷
-									select.form-control.selectpicker(data-size="5")
-										option 博士
-										option 碩士
-										option 大學
-										option 專科
-										option 高中
-										option 高職
-										option 國中
-										option 國小
-										option 其他
-							.col-12.col-md-6
-								.form-group
-									label.required_star 學歷/科系
-									input.form-control(type="text")
-							.col-12.col-md-6
-								.form-group
-									label.required_star 就學情況
-									input.form-control(type="text" placeholder="哪一年必/肆業、就學中")
-							h4.col-12 工作經歷1
-							.col-12.col-md-6
-								.form-group
-									label 公司名稱
-									input.form-control(type="text")
-							.col-12.col-md-6
-								.form-group
-									label 行業別
-									input.form-control(type="text")
-							.col-12.col-md-6
-								.form-group
-									label 工作職稱
-									input.form-control(type="text")
-							.col-12.col-md-6
-								.form-group
-									label 工作期間
-									input.form-control(type="text")
-							h4.col-12 工作經歷2
-							.col-12.col-md-6
-								.form-group
-									label 公司名稱
-									input.form-control(type="text")
-							.col-12.col-md-6
-								.form-group
-									label 行業別
-									input.form-control(type="text")
-							.col-12.col-md-6
-								.form-group
-									label 工作職稱
-									input.form-control(type="text")
-							.col-12.col-md-6
-								.form-group
-									label 工作期間
-									input.form-control(type="text")
-							h4.col-12 工作經歷3
-							.col-12.col-md-6
-								.form-group
-									label 公司名稱
-									input.form-control(type="text")
-							.col-12.col-md-6
-								.form-group
-									label 行業別
-									input.form-control(type="text")
-							.col-12.col-md-6
-								.form-group
-									label 工作職稱
-									input.form-control(type="text")
-							.col-12.col-md-6
-								.form-group
-									label 工作期間
-									input.form-control(type="text")
-							h4.col-12 背景及專長
-							.col-12
-								.form-group
-									label 工作專長
-									textarea.form-control(rows="5")
-							.col-12
-								.form-group
-									label 上傳證書
-									.custom-file 
-										input.custom-file-input(type="file")
-										label.custom-file-label 若有多份證書，請彙整成pdf檔上傳
-							.col-12
-								.form-group
-									label 駕照種類
-									textarea.form-control(rows="5")
-							.col-12
-								.form-group
-									label 語文能力
-									textarea.form-control(rows="5")
-							.col-12
-								.form-group
-									label 電腦能力
-									textarea.form-control(rows="5")
-							h4.col-12 其他
-							.col-12
-								.form-group
-									label.required_star 上傳自傳
-									.custom-file 
-										input.custom-file-input(type="file")
-										label.custom-file-label 上傳自傳
-							.col-12.col-md-6
-								.form-group
-									label.required_star 行業類別
-									select.form-control.selectpicker(data-size="5")
-										option(selected="" disabled="") 行業類別
-										option 醫護
-										option 照護
-										option 社工
-										option 行政
-										option 財會
-										option 行銷
-										option 企劃
-										option 人資
-										option 業務
-										option 客服
-										option 傳媒
-										option 美編
-										option 資訊
-										option 講師
-										option 其他
-							.col-12.col-md-6
-								.form-group
-									label 期望薪資
-									input.form-control(type="text")
-							.input-group.mb-3
-								.input-group-prepend
-									span.input-group-text.required_star 驗證碼
-								input.form-control(type="text" placeholder="請輸入驗證碼")
-								.input-group-append
-									a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")
-										img.checkpin(src="./img/checkpin.png", alt="")
-							button.btn.login_button(type="button" onclick="javascript:location.href=''") 儲存
+				.title.col-12
+					h2 履歷登錄
+				.content.col-12
+					.member_same
+						// 左側
+						.left
+							// pc版導覽列
+							ul.pc_nav
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.3.1.html") 修改基本資料
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.3.2.html") 履歷登錄
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.3.3.html") 修改密碼
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.html") 登出
+							// 手機版導覽列
+							select.selectpicker.phone_nav(onchange="location.href=this.options[this.selectedIndex].value")
+								option(value="10.1.3.1.html") 修改基本資料
+								option(value="10.1.3.2.html" selected)  履歷登錄
+								option(value="10.1.3.3.html")  修改密碼
+								option(value="10.1.html")  登出
+						// 右側
+						.right
+							form
+								.resume.flex-wrap
+									h4.col-12 基本資料
+									.col-12
+										.form-group
+											label.required_star 姓名
+											input.form-control(type="text")
+									
+									.col-12
+										.form-group
+											label.required_star 電話
+											input.form-control(type="text")
+									.col-12
+										.form-group
+											label.required_star Email
+											input.form-control(type="email")
+									.col-12
+										.form-group
+											label.required_star 兵役狀況
+											.radio_box
+												.form-check
+													input.form-check-input(type="radio" name="solider")
+													label.form-check-label 役畢
+												.form-check
+													input.form-check-input(type="radio" name="solider")
+													label.form-check-label 未役
+												.form-check
+													input.form-check-input(type="radio" name="solider")
+													label.form-check-label 免役
+									.col-12
+										.form-group
+											label.required_star 最高學歷
+											select.form-control.selectpicker(data-size="5")
+												option 博士
+												option 碩士
+												option 大學
+												option 專科
+												option 高中
+												option 高職
+												option 國中
+												option 國小
+												option 其他
+									.col-12.col-md-6
+										.form-group
+											label.required_star 學歷/科系
+											input.form-control(type="text")
+									.col-12.col-md-6
+										.form-group
+											label.required_star 就學情況
+											input.form-control(type="text" placeholder="哪一年必/肆業、就學中")
+									h4.col-12 工作經歷1
+									.col-12.col-md-6
+										.form-group
+											label 公司名稱
+											input.form-control(type="text")
+									.col-12.col-md-6
+										.form-group
+											label 行業別
+											input.form-control(type="text")
+									.col-12.col-md-6
+										.form-group
+											label 工作職稱
+											input.form-control(type="text")
+									.col-12.col-md-6
+										.form-group
+											label 工作期間
+											input.form-control(type="text")
+									h4.col-12 工作經歷2
+									.col-12.col-md-6
+										.form-group
+											label 公司名稱
+											input.form-control(type="text")
+									.col-12.col-md-6
+										.form-group
+											label 行業別
+											input.form-control(type="text")
+									.col-12.col-md-6
+										.form-group
+											label 工作職稱
+											input.form-control(type="text")
+									.col-12.col-md-6
+										.form-group
+											label 工作期間
+											input.form-control(type="text")
+									h4.col-12 工作經歷3
+									.col-12.col-md-6
+										.form-group
+											label 公司名稱
+											input.form-control(type="text")
+									.col-12.col-md-6
+										.form-group
+											label 行業別
+											input.form-control(type="text")
+									.col-12.col-md-6
+										.form-group
+											label 工作職稱
+											input.form-control(type="text")
+									.col-12.col-md-6
+										.form-group
+											label 工作期間
+											input.form-control(type="text")
+									h4.col-12 背景及專長
+									.col-12
+										.form-group
+											label 工作專長
+											textarea.form-control(rows="5")
+									.col-12
+										.form-group
+											label 上傳證書
+											.custom-file 
+												input.custom-file-input(type="file")
+												label.custom-file-label 若有多份證書，請彙整成pdf檔上傳
+									.col-12
+										.form-group
+											label 駕照種類
+											textarea.form-control(rows="5")
+									.col-12
+										.form-group
+											label 語文能力
+											textarea.form-control(rows="5")
+									.col-12
+										.form-group
+											label 電腦能力
+											textarea.form-control(rows="5")
+									h4.col-12 其他
+									.col-12
+										.form-group
+											label.required_star 上傳自傳
+											.custom-file 
+												input.custom-file-input(type="file")
+												label.custom-file-label 上傳自傳
+									.col-12
+										.form-group
+											label.required_star 行業類別
+											.check_box
+												.form-group.form-check
+													input.form-check-input(type="checkbox")
+													label.form-check-label 醫護
+												.form-group.form-check
+													input.form-check-input(type="checkbox")
+													label.form-check-label 照護	
+												.form-group.form-check
+													input.form-check-input(type="checkbox")
+													label.form-check-label 社工
+												.form-group.form-check
+													input.form-check-input(type="checkbox")
+													label.form-check-label 行政
+												.form-group.form-check
+													input.form-check-input(type="checkbox")
+													label.form-check-label 財會
+												.form-group.form-check
+													input.form-check-input(type="checkbox")
+													label.form-check-label 企劃
+												.form-group.form-check
+													input.form-check-input(type="checkbox")
+													label.form-check-label 人資
+												.form-group.form-check
+													input.form-check-input(type="checkbox")
+													label.form-check-label 業務
+												.form-group.form-check
+													input.form-check-input(type="checkbox")
+													label.form-check-label 客服
+												.form-group.form-check
+													input.form-check-input(type="checkbox")
+													label.form-check-label 傳媒
+												.form-group.form-check
+													input.form-check-input(type="checkbox")
+													label.form-check-label 美編
+												.form-group.form-check
+													input.form-check-input(type="checkbox")
+													label.form-check-label 資訊
+												.form-group.form-check
+													input.form-check-input(type="checkbox")
+													label.form-check-label 講師
+												.form-group.form-check
+													input.form-check-input(type="checkbox")
+													label.form-check-label 其他
+									.col-12
+										.form-group
+											label 期望薪資
+											input.form-control(type="text")
+									.input-group.mb-3
+										.input-group-prepend
+											span.input-group-text.required_star 驗證碼
+										input.form-control(type="text" placeholder="請輸入驗證碼")
+									.col-12
+										button.btn.login_button(type="button" onclick="javascript:location.href=''") 儲存
 		//- 匯入底部廣告
 		include footer_ad.pug
 		//- 匯入footer+script

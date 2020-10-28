@@ -1,9 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>關於我們</title>
+    <!-- favicon-->
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico">
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="./img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/favicon-152-precomposed.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/favicon-144-precomposed.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/favicon-120-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/favicon-114-precomposed.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/favicon-180-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/favicon-72-precomposed.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/favicon-57.png">
+    <link rel="icon" sizes="32x32" href="./img/favicon/favicon-32.png">
     <!-- bootstrap v4.41-->
     <link rel="stylesheet" href="./css/bootstrap.css">
     <!-- slick v1.8-->
@@ -140,18 +151,43 @@
         </div>
       </div>
     </nav>
-    <section class="container" id="about_us">
+    <div class="mt-135"></div>
+    <section class="container">
       <div class="row">
-        <div class="content_top col-12">
-          <h2 class="content_title col-12">關於我們</h2><img src="./img/logo/NPOlogo.svg" alt="">
-          <p class="col-12">台灣最大公益社群入口</p>
-          <p class="col-12">台灣公益資訊中心係財團法人喜瑪拉雅研究發展基金會所建置，成立於西元1999年，為服務台灣非營利組織的大型公益資訊交流平台。免費提供公益團體發佈公益新聞、活動、人才招募...等訊息，以加強公益團體的資訊流通及行銷，並藉以縮減公益團體間的數位落差。</p>
-          <p class="col-12">使命<br>          1.加強公益資訊傳播<br>          2.協助公益團體e化<br>          3.縮減公益團體數位落差</p>
+        <div class="title col-12">
+          <h2>關於我們</h2>
+        </div>
+        <!-- 手機版社群分享-->
+        <div class="d-lg-none col-12" id="phone_social_share"><a href="#">
+            <div class="fb" title="臉書分享"><i class="fab fa-facebook"></i></div></a><a href="#">
+            <div class="line" title="line分享"><i class="fab fa-line"></i></div></a><a href="#">
+            <div class="twitter" title="推特分享"><i class="fab fa-twitter"></i></div></a><a href="#">
+            <div class="weibo" title="微博分享"><i class="fab fa-weibo"></i></div></a></div>
+        <!-- 手機版社群分享-->
+        <div class="content col-12">
+          <p>台灣最大公益社群入口</p>
+          <p>台灣公益資訊中心係財團法人喜瑪拉雅研究發展基金會所建置，成立於西元1999年，為服務台灣非營利組織的大型公益資訊交流平台。免費提供公益團體發佈公益新聞、活動、人才招募...等訊息，以加強公益團體的資訊流通及行銷，並藉以縮減公益團體間的數位落差。</p>
+          <p>使命<br>          1.加強公益資訊傳播<br>          2.協助公益團體e化<br>          3.縮減公益團體數位落差</p>
         </div>
       </div>
     </section>
+    <!-- pc版社群分享-->
+    <div class="d-none d-lg-block" id="pc_social_share"><a href="#">
+        <div class="fb"><i class="fab fa-facebook"></i>
+          <p>臉書分享</p>
+        </div></a><a href="#">
+        <div class="line"><i class="fab fa-line"></i>
+          <p>line分享</p>
+        </div></a><a href="#">
+        <div class="twitter"><i class="fab fa-twitter"></i>
+          <p>推特分享</p>
+        </div></a><a href="#">
+        <div class="weibo"><i class="fab fa-weibo"></i>
+          <p>微博分享</p>
+        </div></a></div>
+    <!-- pc版社群分享-->
     <!-- 底部廣告-->
-    <section class="container" id="bottom_ads"><img class="img-fluid clickable-row" src="./img/fakeimg/350x150.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad1.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad2.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad3.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"></section>
+    <section class="container" id="bottom_ads"><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a></section>
     <!-- footer-->
     <footer>
       <div class="container">

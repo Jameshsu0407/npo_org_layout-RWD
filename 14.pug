@@ -1,5 +1,5 @@
 doctype html
-html(lang="en")
+html(lang="zh-tw")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
@@ -9,13 +9,14 @@ html(lang="en")
 	body#top
 		//- 匯入導覽列+gototop
 		include nav.pug
-
-		section#site_tour.container
+		.mt-135
+		section.container
 			.row
-				.content_top.col-12
-					h2.content_title.col-12 網站導覽
-					.sitemap_content.col-12
-						.col-6.col-md-4.col-lg-2.sidemap_list
+				.title.col-12
+					h2 網站導覽
+				.content.col-12
+					.site-tour
+						.sidemap_list
 							h3 關於我們
 							ul
 								li 
@@ -35,7 +36,7 @@ html(lang="en")
 								li
 									a(href="2.3.3.html")
 											i.fas.fa-caret-right.sub &nbsp;喜馬拉雅	
-						.col-6.col-md-4.col-lg-2.sidemap_list
+						.sidemap_list
 							h3 最新消息
 							ul
 								li 
@@ -47,7 +48,7 @@ html(lang="en")
 								li 
 									a(href="3.1.html")
 										i.fas.fa-chevron-right &nbsp;公益影片
-						.col-6.col-md-4.col-lg-2.sidemap_list
+						.sidemap_list
 							h3 扶助專區
 							ul
 								li 
@@ -80,7 +81,7 @@ html(lang="en")
 								li
 									a(href="4.3.3.html")
 											i.fas.fa-caret-right.sub &nbsp;獎助行事曆
-						.col-6.col-md-4.col-lg-2.sidemap_list
+						.sidemap_list
 							h3 物資募集
 							ul
 								li 
@@ -89,7 +90,7 @@ html(lang="en")
 								li 
 									a(href="5.2.html")
 										i.fas.fa-chevron-right &nbsp;企業提供
-						.col-6.col-md-4.col-lg-2.sidemap_list
+						.sidemap_list
 							h3 人力銀行
 							ul
 								li 
@@ -101,7 +102,7 @@ html(lang="en")
 								li 
 									a(href="6.3.html")
 										i.fas.fa-chevron-right &nbsp;兼職工作
-						.col-6.col-md-4.col-lg-2.sidemap_list
+						.sidemap_list
 							h3 非營利組織
 							ul
 								li 
@@ -110,7 +111,7 @@ html(lang="en")
 								li 
 									a(href="7.html")
 										i.fas.fa-chevron-right &nbsp;公益商城
-						.col-6.col-md-4.col-lg-2.sidemap_list
+						.sidemap_list
 							h3 支援服務
 							ul
 								li 
@@ -122,30 +123,6 @@ html(lang="en")
 								li 
 									a(href="9.3.html")
 										i.fas.fa-chevron-right &nbsp;線上客服
-						.col-6.col-md-4.col-lg-2.sidemap_list
-							h3 會員專區
-							ul
-								li 
-									a(href="10.1.html")
-										i.fas.fa-chevron-right &nbsp;會員登錄
-								li 
-									a(href="10.2.html")
-										i.fas.fa-chevron-right &nbsp;會員申請流程說明
-								li 
-									a(href="10.3.html")
-										i.fas.fa-chevron-right &nbsp;申請會員
-						.col-6.col-md-4.col-lg-2.sidemap_list
-							h3 其他
-							ul
-								li 
-									a(href="11.1.html")
-										i.fas.fa-chevron-right &nbsp;使用説明
-								li 
-									a(href="11.2.html")
-										i.fas.fa-chevron-right &nbsp;服務條款
-								li 
-									a(href="11.3.html")
-										i.fas.fa-chevron-right &nbsp;隱私權政策
 						
 
 		//- 匯入底部廣告

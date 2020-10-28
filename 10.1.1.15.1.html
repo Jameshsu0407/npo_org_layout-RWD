@@ -1,9 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>前台-機構-履歷查詢-單元頁</title>
+    <!-- favicon-->
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico">
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="./img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/favicon-152-precomposed.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/favicon-144-precomposed.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/favicon-120-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/favicon-114-precomposed.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/favicon-180-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/favicon-72-precomposed.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/favicon-57.png">
+    <link rel="icon" sizes="32x32" href="./img/favicon/favicon-32.png">
     <!-- bootstrap v4.41-->
     <link rel="stylesheet" href="./css/bootstrap.css">
     <!-- slick v1.8-->
@@ -140,258 +151,243 @@
         </div>
       </div>
     </nav>
-    <section class="member_same container" id="font_end_org_resume_search_unit">
+    <div class="mt-135"></div>
+    <section class="container">
       <div class="row">
-        <div class="content_top col-12">
-          <h2 class="content_title col-12">履歷查詢</h2>
-          <!-- 左側-->
-          <div class="left col-12 col-lg-3">
-            <!-- pc版導覽列-->
-            <ul class="pc_nav">
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.1.html">修改機構基本資料</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.3.html">最新活動</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.4.html">公益影片</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.5.html">補助公告</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.6.html">救助公告</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.7.html">獎助公告</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.8.html">物資需求</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.9.html">志工招募</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.10.html">全職工作</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.11.html">兼職工作</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.15.html">履歷查詢</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.12.html">公益商城</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.13.html">機構使用者維護</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.2.html">廣告刊登</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.14.html">修改密碼</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.html">登出</a></li>
-            </ul>
-            <!-- 手機版導覽列-->
-            <select class="selectpicker phone_nav" onchange="location.href=this.options[this.selectedIndex].value">
-              <option value="10.1.1.1.html">修改機構基本資料</option>
-              <option value="10.1.1.3.html"> 最新活動</option>
-              <option value="10.1.1.4.html"> 公益影片</option>
-              <option value="10.1.1.5.html"> 補助公告</option>
-              <option value="10.1.1.6.html"> 救助公告</option>
-              <option value="10.1.1.7.html"> 獎助公告</option>
-              <option value="10.1.1.8.html"> 物資需求</option>
-              <option value="10.1.1.9.html"> 志工招募</option>
-              <option value="10.1.1.10.html"> 全職工作</option>
-              <option value="10.1.1.11.html"> 兼職工作</option>
-              <option value="10.1.1.15.html" selected> 履歷查詢</option>
-              <option value="10.1.1.12.html"> 公益商城</option>
-              <option value="10.1.1.13.html"> 機構使用者維護</option>
-              <option value="10.1.1.2.html">廣告刊登</option>
-              <option value="10.1.1.14.html"> 修改密碼</option>
-              <option value="10.1.html"> 登出</option>
-            </select>
-          </div>
-          <!-- 右側-->
-          <div class="right col-12 col-lg-9">
-            <form class="member_resume">
-              <h4 class="col-12">基本資料</h4>
-              <div class="col-12">
-                <div class="form-group">
-                  <label>姓名</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="form-group">
-                  <label>電話</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="form-group">
-                  <label>Email</label>
-                  <input class="form-control" type="email">
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="form-group">
-                  <label>兵役狀況</label>
-                  <div class="solider">
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="solider">
-                      <label class="form-check-label">役畢</label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="solider">
-                      <label class="form-check-label">未役</label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="solider">
-                      <label class="form-check-label">免役</label>
+        <div class="title col-12">
+          <h2>履歷查詢</h2>
+        </div>
+        <div class="content col-12">
+          <div class="member_same">
+            <!-- 左側-->
+            <div class="left">
+              <!-- pc版導覽列-->
+              <ul class="pc_nav">
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.1.html">修改機構基本資料</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.3.html">最新活動</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.4.html">公益影片</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.5.html">補助公告</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.6.html">救助公告</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.7.html">獎助公告</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.8.html">物資需求</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.9.html">志工招募</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.10.html">全職工作</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.11.html">兼職工作</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.15.html">履歷查詢</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.12.html">公益商城</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.13.html">機構使用者維護</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.2.html">廣告刊登</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.14.html">修改密碼</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.html">登出</a></li>
+              </ul>
+              <!-- 手機版導覽列-->
+              <select class="selectpicker phone_nav" onchange="location.href=this.options[this.selectedIndex].value">
+                <option value="10.1.1.1.html">修改機構基本資料</option>
+                <option value="10.1.1.3.html"> 最新活動</option>
+                <option value="10.1.1.4.html"> 公益影片</option>
+                <option value="10.1.1.5.html"> 補助公告</option>
+                <option value="10.1.1.6.html"> 救助公告</option>
+                <option value="10.1.1.7.html"> 獎助公告</option>
+                <option value="10.1.1.8.html"> 物資需求</option>
+                <option value="10.1.1.9.html"> 志工招募</option>
+                <option value="10.1.1.10.html"> 全職工作</option>
+                <option value="10.1.1.11.html"> 兼職工作</option>
+                <option value="10.1.1.15.html" selected> 履歷查詢</option>
+                <option value="10.1.1.12.html"> 公益商城</option>
+                <option value="10.1.1.13.html"> 機構使用者維護</option>
+                <option value="10.1.1.2.html">廣告刊登</option>
+                <option value="10.1.1.14.html"> 修改密碼</option>
+                <option value="10.1.html"> 登出</option>
+              </select>
+            </div>
+            <!-- 右側-->
+            <div class="right">
+              <form>
+                <div class="front_end_org_resume read_only">
+                  <h4>基本資料</h4>
+                  <div class="form-group">
+                    <label>姓名</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label>電話</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label>Email</label>
+                    <input class="form-control" type="email">
+                  </div>
+                  <div class="form-group">
+                    <label>兵役狀況</label>
+                    <div class="radio_box">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="solider">
+                        <label class="form-check-label">役畢</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="solider">
+                        <label class="form-check-label">未役</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="solider">
+                        <label class="form-check-label">免役</label>
+                      </div>
                     </div>
                   </div>
+                  <div class="form-group">
+                    <label>最高學歷</label>
+                    <select class="form-control selectpicker" data-size="5">
+                      <option>博士</option>
+                      <option>碩士</option>
+                      <option>大學</option>
+                      <option>專科</option>
+                      <option>高中</option>
+                      <option>高職</option>
+                      <option>國中</option>
+                      <option>國小</option>
+                      <option>其他									</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>學歷/科系</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label>就學情況</label>
+                    <input class="form-control" type="text" placeholder="哪一年必/肆業、就學中">
+                  </div>
+                  <h4>工作經歷1</h4>
+                  <div class="form-group">
+                    <label>公司名稱</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label>行業別</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label>工作職稱</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label>工作期間</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <h4>工作經歷2</h4>
+                  <div class="form-group">
+                    <label>公司名稱</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label>行業別</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label>工作職稱</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label>工作期間</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <h4>工作經歷3</h4>
+                  <div class="form-group">
+                    <label>公司名稱</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label>行業別</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label>工作職稱</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label>工作期間</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <h4>背景及專長</h4>
+                  <div class="form-group">
+                    <label>工作專長</label>
+                    <textarea class="form-control" rows="5"></textarea>
+                  </div>
+                  <h4>其他</h4>
+                  <div class="form-group">
+                    <label>行業類別</label>
+                    <div class="check_box">
+                      <div class="form-group form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">醫護</label>
+                      </div>
+                      <div class="form-group form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">照護	</label>
+                      </div>
+                      <div class="form-group form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">社工</label>
+                      </div>
+                      <div class="form-group form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">行政</label>
+                      </div>
+                      <div class="form-group form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">財會</label>
+                      </div>
+                      <div class="form-group form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">企劃</label>
+                      </div>
+                      <div class="form-group form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">人資</label>
+                      </div>
+                      <div class="form-group form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">業務</label>
+                      </div>
+                      <div class="form-group form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">客服</label>
+                      </div>
+                      <div class="form-group form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">傳媒</label>
+                      </div>
+                      <div class="form-group form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">美編</label>
+                      </div>
+                      <div class="form-group form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">資訊</label>
+                      </div>
+                      <div class="form-group form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">講師</label>
+                      </div>
+                      <div class="form-group form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">其他</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>期望薪資</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <h4>附件</h4><a href="#">查看履歷</a><br><a href="#">查看證書</a>
                 </div>
-              </div>
-              <div class="col-12">
-                <div class="form-group">
-                  <label>最高學歷</label>
-                  <select class="form-control selectpicker" data-size="5">
-                    <option>博士</option>
-                    <option>碩士</option>
-                    <option>大學</option>
-                    <option>專科</option>
-                    <option>高中</option>
-                    <option>高職</option>
-                    <option>國中</option>
-                    <option>國小</option>
-                    <option>其他</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="form-group">
-                  <label>學歷/科系</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="form-group">
-                  <label>就學情況</label>
-                  <input class="form-control" type="text" placeholder="哪一年必/肆業、就學中">
-                </div>
-              </div>
-              <h4 class="col-12">工作經歷1</h4>
-              <div class="col-12 col-md-6">
-                <div class="form-group">
-                  <label>公司名稱</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="form-group">
-                  <label>行業別</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="form-group">
-                  <label>工作職稱</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="form-group">
-                  <label>工作期間</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <h4 class="col-12">工作經歷2</h4>
-              <div class="col-12 col-md-6">
-                <div class="form-group">
-                  <label>公司名稱</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="form-group">
-                  <label>行業別</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="form-group">
-                  <label>工作職稱</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="form-group">
-                  <label>工作期間</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <h4 class="col-12">工作經歷3</h4>
-              <div class="col-12 col-md-6">
-                <div class="form-group">
-                  <label>公司名稱</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="form-group">
-                  <label>行業別</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="form-group">
-                  <label>工作職稱</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="form-group">
-                  <label>工作期間</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <h4 class="col-12">背景及專長</h4>
-              <div class="col-12">
-                <div class="form-group">
-                  <label>工作專長</label>
-                  <textarea class="form-control" rows="5"></textarea>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="form-group">
-                  <label>駕照種類</label>
-                  <textarea class="form-control" rows="5"></textarea>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="form-group">
-                  <label>語文能力</label>
-                  <textarea class="form-control" rows="5"></textarea>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="form-group">
-                  <label>電腦能力</label>
-                  <textarea class="form-control" rows="5"></textarea>
-                </div>
-              </div>
-              <h4 class="col-12">其他</h4>
-              <div class="col-12 col-md-6">
-                <div class="form-group">
-                  <label>行業類別</label>
-                  <select class="form-control selectpicker" data-size="5">
-                    <option selected="" disabled="">行業類別</option>
-                    <option>行政</option>
-                    <option>總務</option>
-                    <option>財會</option>
-                    <option>行銷</option>
-                    <option>企劃</option>
-                    <option>人資</option>
-                    <option>業務</option>
-                    <option>客服</option>
-                    <option>傳媒</option>
-                    <option>美編</option>
-                    <option>資訊</option>
-                    <option>教職</option>
-                    <option>醫療</option>
-                    <option>社工</option>
-                    <option>其他</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="form-group">
-                  <label>期望薪資</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <h4 class="col-12">附件</h4><a class="col-12" href="#">查看履歷</a><a class="col-12" href="#">查看證書</a>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- 底部廣告-->
-    <section class="container" id="bottom_ads"><img class="img-fluid clickable-row" src="./img/fakeimg/350x150.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad1.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad2.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad3.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"></section>
+    <section class="container" id="bottom_ads"><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a></section>
     <!-- footer-->
     <footer>
       <div class="container">

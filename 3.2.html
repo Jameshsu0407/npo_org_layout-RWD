@@ -1,9 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>最新活動</title>
+    <!-- favicon-->
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico">
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="./img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/favicon-152-precomposed.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/favicon-144-precomposed.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/favicon-120-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/favicon-114-precomposed.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/favicon-180-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/favicon-72-precomposed.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/favicon-57.png">
+    <link rel="icon" sizes="32x32" href="./img/favicon/favicon-32.png">
     <!-- bootstrap v4.41-->
     <link rel="stylesheet" href="./css/bootstrap.css">
     <!-- slick v1.8-->
@@ -140,24 +151,27 @@
         </div>
       </div>
     </nav>
-    <section class="container" id="npo_activities">
+    <div class="mt-135"></div>
+    <section class="container">
       <div class="row">
-        <div class="content_top col-12">
-          <h2 class="content_title col-12">最新活動</h2>
-          <div class="table col-12">
-            <form class="form-inline col-12 selector">
-              <div class="select_wrap col-12 col-md-2">
-                <select class="col-12 selectpicker" data-size="5">
+        <div class="title col-12">
+          <h2>最新活動</h2>
+        </div>
+        <div class="content col-12">
+          <form>
+            <div class="selector flex-wrap">
+              <div class="col-wrap col-12 col-md-2">
+                <select class="selectpicker" data-size="5" data-width="100%">
                   <option selected="" disabled="">類型</option>
                   <option>活動</option>
                   <option>研習</option>
                   <option>會議</option>
                   <option>演講</option>
-                  <option>座談</option>
+                  <option>座談								</option>
                 </select>
               </div>
-              <div class="select_wrap col-12 col-md-2">
-                <select class="col-12 selectpicker" data-size="5">
+              <div class="col-wrap col-12 col-md-2">
+                <select class="selectpicker" data-size="5" data-width="100%">
                   <option selected="" disabled="">年份</option>
                   <option>2020</option>
                   <option>2019</option>
@@ -166,8 +180,8 @@
                   <option>2016</option>
                 </select>
               </div>
-              <div class="select_wrap col-12 col-md-2">
-                <select class="col-12 selectpicker" data-size="5">
+              <div class="col-wrap col-12 col-md-2">
+                <select class="selectpicker" data-size="5" data-width="100%">
                   <option selected="" disabled="">月份</option>
                   <option>1</option>
                   <option>2</option>
@@ -183,163 +197,125 @@
                   <option>12</option>
                 </select>
               </div>
-              <div class="select_wrap col-12 col-md-4">
-                <input class="form-control col-12" type="text" placeholder="關鍵字">
+              <div class="col-wrap col-12 col-md-4">
+                <input class="form-control" type="text" placeholder="關鍵字">
               </div>
-              <div class="select_wrap col-12 col-md-2">
-                <button class="btn lookmore col-12 m-0" type="button">送出</button>
+              <div class="col-wrap col-12 col-md-2">
+                <button class="btn selector-button" type="button">送出</button>
               </div>
-            </form>
-          </div>
-          <div class="content">
-            <div class="col-12 col-lg-6"><a href="12.2.1.html">
-                <div class="post">
-                  <div class="col-12 col-md-5 post_left">
-                    <div class="time_box"><span class="year">2020</span><span class="date">06/15</span></div>
-                    <!-- 建議尺寸800x450--><img class="img-fluid" src="./img/activitypic/act1.png" alt="">
-                  </div>
-                  <div class="col-12 col-md-7 post_right">
-                    <h3>標題標題標題</h3>
-                    <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
-                  </div>
-                </div></a></div>
-            <div class="col-12 col-lg-6"><a href="12.2.1.html">
-                <div class="post">
-                  <div class="col-12 col-md-5 post_left">
-                    <div class="time_box"><span class="year">2020</span><span class="date">06/15</span></div>
-                    <!-- 建議尺寸800x450--><img class="img-fluid" src="./img/activitypic/act2.png" alt="">
-                  </div>
-                  <div class="col-12 col-md-7 post_right">
-                    <h3>標題標題標題</h3>
-                    <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
-                  </div>
-                </div></a></div>
-            <div class="col-12 col-lg-6"><a href="12.2.1.html">
-                <div class="post">
-                  <div class="col-12 col-md-5 post_left">
-                    <div class="time_box"><span class="year">2020</span><span class="date">06/15</span></div>
-                    <!-- 建議尺寸800x450--><img class="img-fluid" src="./img/activitypic/act1.png" alt="">
-                  </div>
-                  <div class="col-12 col-md-7 post_right">
-                    <h3>標題標題標題</h3>
-                    <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
-                  </div>
-                </div></a></div>
-            <div class="col-12 col-lg-6"><a href="12.2.1.html">
-                <div class="post">
-                  <div class="col-12 col-md-5 post_left">
-                    <div class="time_box"><span class="year">2020</span><span class="date">06/15</span></div>
-                    <!-- 建議尺寸800x450--><img class="img-fluid" src="./img/activitypic/act2.png" alt="">
-                  </div>
-                  <div class="col-12 col-md-7 post_right">
-                    <h3>標題標題標題</h3>
-                    <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
-                  </div>
-                </div></a></div>
-            <div class="col-12 col-lg-6"><a href="12.2.1.html">
-                <div class="post">
-                  <div class="col-12 col-md-5 post_left">
-                    <div class="time_box"><span class="year">2020</span><span class="date">06/15</span></div>
-                    <!-- 建議尺寸800x450--><img class="img-fluid" src="./img/fakeimg/800x450.png" alt="">
-                  </div>
-                  <div class="col-12 col-md-7 post_right">
-                    <h3>標題標題標題</h3>
-                    <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
-                  </div>
-                </div></a></div>
-            <div class="col-12 col-lg-6"><a href="12.2.1.html">
-                <div class="post">
-                  <div class="col-12 col-md-5 post_left">
-                    <div class="time_box"><span class="year">2020</span><span class="date">06/15</span></div>
-                    <!-- 建議尺寸800x450--><img class="img-fluid" src="./img/fakeimg/800x800.png" alt="">
-                  </div>
-                  <div class="col-12 col-md-7 post_right">
-                    <h3>標題標題標題</h3>
-                    <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
-                  </div>
-                </div></a></div>
-            <div class="col-12 col-lg-6"><a href="12.2.1.html">
-                <div class="post">
-                  <div class="col-12 col-md-5 post_left">
-                    <div class="time_box"><span class="year">2020</span><span class="date">06/15</span></div>
-                    <!-- 建議尺寸800x450--><img class="img-fluid" src="./img/fakeimg/800x800.png" alt="">
-                  </div>
-                  <div class="col-12 col-md-7 post_right">
-                    <h3>標題標題標題</h3>
-                    <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
-                  </div>
-                </div></a></div>
-            <div class="col-12 col-lg-6"><a href="12.2.1.html">
-                <div class="post">
-                  <div class="col-12 col-md-5 post_left">
-                    <div class="time_box"><span class="year">2020</span><span class="date">06/15</span></div>
-                    <!-- 建議尺寸800x450--><img class="img-fluid" src="./img/fakeimg/1000x200.png" alt="">
-                  </div>
-                  <div class="col-12 col-md-7 post_right">
-                    <h3>標題標題標題</h3>
-                    <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
-                  </div>
-                </div></a></div>
-            <div class="col-12 col-lg-6"><a href="12.2.1.html">
-                <div class="post">
-                  <div class="col-12 col-md-5 post_left">
-                    <div class="time_box"><span class="year">2020</span><span class="date">06/15</span></div>
-                    <!-- 建議尺寸800x450--><img class="img-fluid" src="./img/fakeimg/200x1000.png" alt="">
-                  </div>
-                  <div class="col-12 col-md-7 post_right">
-                    <h3>標題標題標題</h3>
-                    <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
-                  </div>
-                </div></a></div>
-            <div class="col-12 col-lg-6"><a href="12.2.1.html">
-                <div class="post">
-                  <div class="col-12 col-md-5 post_left">
-                    <div class="time_box"><span class="year">2020</span><span class="date">06/15</span></div>
-                    <!-- 建議尺寸800x450--><img class="img-fluid" src="./img/fakeimg/800x800.png" alt="">
-                  </div>
-                  <div class="col-12 col-md-7 post_right">
-                    <h3>標題標題標題</h3>
-                    <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
-                  </div>
-                </div></a></div>
-          </div>
-          <!-- 分頁-->
-          <div id="page">
-            <ul class="pagination">
-              <li><a href="#"><i class="fa fa-angle-double-left fa-lg" aria-hidden="true"></i><span class="sr-only">第一頁</span></a></li>
-              <li><a href="#"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i><span class="sr-only">上一頁</span></a></li>
-              <!-- 使用者輸入-->
-              <!-- <li><a><input type="text" placeholder="" size="1">&nbsp;&nbsp;<span>/&nbsp;&nbsp;15</span></a></li>-->
-              <!-- select-->
-              <li>
-                <select class="select_css" onchange="location.href=this.options[this.selectedIndex].value">
-                  <option selected="selected" value="#">1</option>
-                  <option value="#">2</option>
-                  <option value="#">3</option>
-                  <option value="#">4</option>
-                  <option value="#">5</option>
-                  <option value="#">6</option>
-                  <option value="#">7</option>
-                  <option value="#">8</option>
-                  <option value="#">9</option>
-                  <option value="#">10</option>
-                  <option value="#">11</option>
-                  <option value="#">12</option>
-                  <option value="#">13</option>
-                  <option value="#">14</option>
-                  <option value="#">15</option>
-                </select><span>/  15</span>
-              </li>
-              <li><a href="#"><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i><span class="sr-only">下一頁</span></a></li>
-              <li><a href="#"><i class="fa fa-angle-double-right fa-lg" aria-hidden="true"></i><span class="sr-only">最後一頁</span></a></li>
-            </ul>
-          </div>
-          <!--分頁-->
+            </div>
+            <div class="list">
+              <div class="square-list"><a href="12.2.1.html">
+                  <div class="post">
+                    <div class="post-left"><img class="img-fluid" src="./img/activitypic/act1.png" alt=""></div>
+                    <div class="post-right">
+                      <h3 class="text-truncate">標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱</h3><span class="date">2020/10/02</span>
+                      <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+                    </div>
+                  </div></a><a href="12.2.1.html">
+                  <div class="post">
+                    <div class="post-left"><img class="img-fluid" src="./img/activitypic/act1.png" alt=""></div>
+                    <div class="post-right">
+                      <h3 class="text-truncate">標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱</h3><span class="date">2020/10/02</span>
+                      <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+                    </div>
+                  </div></a><a href="12.2.1.html">
+                  <div class="post">
+                    <div class="post-left"><img class="img-fluid" src="./img/activitypic/act1.png" alt=""></div>
+                    <div class="post-right">
+                      <h3 class="text-truncate">標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱</h3><span class="date">2020/10/02</span>
+                      <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+                    </div>
+                  </div></a><a href="12.2.1.html">
+                  <div class="post">
+                    <div class="post-left"><img class="img-fluid" src="./img/activitypic/act1.png" alt=""></div>
+                    <div class="post-right">
+                      <h3 class="text-truncate">標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱</h3><span class="date">2020/10/02</span>
+                      <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+                    </div>
+                  </div></a><a href="12.2.1.html">
+                  <div class="post">
+                    <div class="post-left"><img class="img-fluid" src="./img/activitypic/act1.png" alt=""></div>
+                    <div class="post-right">
+                      <h3 class="text-truncate">標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱</h3><span class="date">2020/10/02</span>
+                      <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+                    </div>
+                  </div></a><a href="12.2.1.html">
+                  <div class="post">
+                    <div class="post-left"><img class="img-fluid" src="./img/activitypic/act1.png" alt=""></div>
+                    <div class="post-right">
+                      <h3 class="text-truncate">標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱</h3><span class="date">2020/10/02</span>
+                      <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+                    </div>
+                  </div></a><a href="12.2.1.html">
+                  <div class="post">
+                    <div class="post-left"><img class="img-fluid" src="./img/activitypic/act1.png" alt=""></div>
+                    <div class="post-right">
+                      <h3 class="text-truncate">標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱</h3><span class="date">2020/10/02</span>
+                      <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+                    </div>
+                  </div></a><a href="12.2.1.html">
+                  <div class="post">
+                    <div class="post-left"><img class="img-fluid" src="./img/activitypic/act1.png" alt=""></div>
+                    <div class="post-right">
+                      <h3 class="text-truncate">標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱</h3><span class="date">2020/10/02</span>
+                      <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+                    </div>
+                  </div></a><a href="12.2.1.html">
+                  <div class="post">
+                    <div class="post-left"><img class="img-fluid" src="./img/activitypic/act1.png" alt=""></div>
+                    <div class="post-right">
+                      <h3 class="text-truncate">標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱</h3><span class="date">2020/10/02</span>
+                      <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+                    </div>
+                  </div></a><a href="12.2.1.html">
+                  <div class="post">
+                    <div class="post-left"><img class="img-fluid" src="./img/activitypic/act1.png" alt=""></div>
+                    <div class="post-right">
+                      <h3 class="text-truncate">標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱</h3><span class="date">2020/10/02</span>
+                      <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+                    </div>
+                  </div></a>
+              </div>
+            </div>
+            <!-- 分頁-->
+            <div id="page">
+              <ul class="pagination">
+                <li><a href="#"><i class="fa fa-angle-double-left fa-lg" aria-hidden="true"></i><span class="sr-only">第一頁</span></a></li>
+                <li><a href="#"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i><span class="sr-only">上一頁</span></a></li>
+                <!-- 使用者輸入-->
+                <!-- <li><a><input type="text" placeholder="" size="1">&nbsp;&nbsp;<span>/&nbsp;&nbsp;15</span></a></li>-->
+                <!-- select-->
+                <li>
+                  <select class="select_css" onchange="location.href=this.options[this.selectedIndex].value">
+                    <option selected="selected" value="#">1</option>
+                    <option value="#">2</option>
+                    <option value="#">3</option>
+                    <option value="#">4</option>
+                    <option value="#">5</option>
+                    <option value="#">6</option>
+                    <option value="#">7</option>
+                    <option value="#">8</option>
+                    <option value="#">9</option>
+                    <option value="#">10</option>
+                    <option value="#">11</option>
+                    <option value="#">12</option>
+                    <option value="#">13</option>
+                    <option value="#">14</option>
+                    <option value="#">15</option>
+                  </select><span>/  15</span>
+                </li>
+                <li><a href="#"><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i><span class="sr-only">下一頁</span></a></li>
+                <li><a href="#"><i class="fa fa-angle-double-right fa-lg" aria-hidden="true"></i><span class="sr-only">最後一頁</span></a></li>
+              </ul>
+            </div>
+            <!--分頁-->
+          </form>
         </div>
       </div>
     </section>
     <!-- 底部廣告-->
-    <section class="container" id="bottom_ads"><img class="img-fluid clickable-row" src="./img/fakeimg/350x150.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad1.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad2.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad3.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"></section>
+    <section class="container" id="bottom_ads"><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a></section>
     <!-- footer-->
     <footer>
       <div class="container">

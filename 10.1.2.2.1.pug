@@ -1,5 +1,5 @@
 doctype html
-html(lang="en")
+html(lang="zh-tw")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
@@ -9,293 +9,298 @@ html(lang="en")
 	body#top
 		//- 匯入導覽列+gototop
 		include nav.pug
-
-		section#font_end_com_donate_add.member_same.container
+		.mt-135
+		section.container
 			.row
-				.content_top.col-12
-					h2.content_title.col-12 企業提供
-					// 左側
-					.left.col-12.col-lg-3
-						// pc版導覽列
-						ul.pc_nav
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.2.1.html") 修改企業基本資料
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.2.2.html") 企業提供
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.2.3.html") 企業使用者維護
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.2.4.html") 修改密碼
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.html") 登出
-						// 手機版導覽列
-						select.selectpicker.phone_nav(onchange="location.href=this.options[this.selectedIndex].value")
-							option(value="10.1.2.1.html") 修改企業基本資料
-							option(value="10.1.2.2.html" selected) 企業提供
-							option(value="10.1.2.3.html") 企業使用者維護
-							option(value="10.1.2.4.html") 修改密碼
-							option(value="10.1.html")  登出
-					// 右側
-					.right.col-12.col-lg-9
-						form.com_donate_add
-							
-							// 必填
-							.col-12
-								.form-group
-									label.required_star 刊登日期
-									input.form-control(type="date")
-							// 修改頁程式自動帶出
-							.col-12
-								.form-group
-									label 結束日期
-									input.form-control(type="date" readonly)
-							.col-12
+				.title.col-12 
+					h2 企業提供
+				.content.col-12
+					.member_same
+						// 左側
+						.left
+							// pc版導覽列
+							ul.pc_nav
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.2.1.html") 修改企業基本資料
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.2.2.html") 企業提供
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.2.3.html") 企業使用者維護
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.2.4.html") 修改密碼
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.html") 登出
+							// 手機版導覽列
+							select.selectpicker.phone_nav(onchange="location.href=this.options[this.selectedIndex].value")
+								option(value="10.1.2.1.html") 修改企業基本資料
+								option(value="10.1.2.2.html" selected) 企業提供
+								option(value="10.1.2.3.html") 企業使用者維護
+								option(value="10.1.2.4.html") 修改密碼
+								option(value="10.1.html")  登出
+						// 右側
+						.right
+							form
+								.front_end_edit
+									// 必填
 									.form-group
-										label 上傳圖片
-										.custom-file
-											input.custom-file-input(type="file")
-											label.custom-file-label 圖片建議尺寸800X450px
-							// 必填
-							.col-12
-								.form-group
-									label.required_star 刊登天數
-									.post_duration
-										.form-check
-											input.form-check-input(type="radio" name="post_duration")
-											label.form-check-label 14天
-										.form-check
-											input.form-check-input(type="radio" name="post_duration")
-											label.form-check-label 28天
-										.form-check
-											input.form-check-input(type="radio" name="post_duration")
-											label.form-check-label 56天
-							// 必填
-							.col-12
-								.form-group
-									label.required_star 物資類別
-									.type
-										.form-check
-											input.form-check-input(type="radio" name="type")
-											label.form-check-label 活動
-										.form-check
-											input.form-check-input(type="radio" name="type")
-											label.form-check-label 餐廚
-										.form-check
-											input.form-check-input(type="radio" name="type")
-											label.form-check-label 衣物
-										.form-check
-											input.form-check-input(type="radio" name="type")
-											label.form-check-label 鞋襪
-										.form-check
-											input.form-check-input(type="radio" name="type")
-											label.form-check-label 傢俱
-										.form-check
-											input.form-check-input(type="radio" name="type")
-											label.form-check-label 寢飾
-										.form-check
-											input.form-check-input(type="radio" name="type")
-											label.form-check-label 衛生
-										.form-check
-											input.form-check-input(type="radio" name="type")
-											label.form-check-label 清潔
-										.form-check
-											input.form-check-input(type="radio" name="type")
-											label.form-check-label 家電
-										.form-check
-											input.form-check-input(type="radio" name="type")
-											label.form-check-label 3C
-										.form-check
-											input.form-check-input(type="radio" name="type")
-											label.form-check-label 圖書
-										.form-check
-											input.form-check-input(type="radio" name="type")
-											label.form-check-label 文具
-										.form-check
-											input.form-check-input(type="radio" name="type")
-											label.form-check-label 娛樂
-										.form-check
-											input.form-check-input(type="radio" name="type")
-											label.form-check-label 其他
-										.form-check
-											input.form-check-input(type="radio" name="type")
-											label.form-check-label 輔具
-										.form-check
-											input.form-check-input(type="radio" name="type")
-											label.form-check-label 運輸
-							// 必填
-							.col-12.col-md-6
-								.form-group
-									label.required_star 物資名稱
-									input.form-control(type="text")
-							// 必填
-							.col-12.col-md-6
-								.form-group
-									label.required_star 數量
-									input.form-control(type="text")
-							// 必填
-							.col-12
-								.form-group
-									label.required_star 地點
-									input.form-control(type="text" placeholder="本地址將作為GoogleMaps定位使用，請輸入完整的地址")
-							// 必填
-							.col-12
-								.form-group
-									label.required_star 地區
-									.region
-										.form-check
-											input.form-check-input(type="radio" name="region")
-											label.form-check-label 台北市
-										.form-check
-											input.form-check-input(type="radio" name="region")
-											label.form-check-label 新北市
-										.form-check
-											input.form-check-input(type="radio" name="region")
-											label.form-check-label 基隆市
-										.form-check
-											input.form-check-input(type="radio" name="region")
-											label.form-check-label 宜蘭縣
-										.form-check
-											input.form-check-input(type="radio" name="region")
-											label.form-check-label 桃園市
-										.form-check
-											input.form-check-input(type="radio" name="region")
-											label.form-check-label 新竹市
-										.form-check
-											input.form-check-input(type="radio" name="region")
-											label.form-check-label 新竹縣
-										.form-check
-											input.form-check-input(type="radio" name="region")
-											label.form-check-label 苗栗縣
-										.form-check
-											input.form-check-input(type="radio" name="region")
-											label.form-check-label 台中市
-										.form-check
-											input.form-check-input(type="radio" name="region")
-											label.form-check-label 彰化縣
-										.form-check
-											input.form-check-input(type="radio" name="region")
-											label.form-check-label 南投縣
-										.form-check
-											input.form-check-input(type="radio" name="region")
-											label.form-check-label 雲林縣
-										.form-check
-											input.form-check-input(type="radio" name="region")
-											label.form-check-label 嘉義市
-										.form-check
-											input.form-check-input(type="radio" name="region")
-											label.form-check-label 嘉義縣
-										.form-check
-											input.form-check-input(type="radio" name="region")
-											label.form-check-label 台南市
-										.form-check
-											input.form-check-input(type="radio" name="region")
-											label.form-check-label 高雄市
-										.form-check
-											input.form-check-input(type="radio" name="region")
-											label.form-check-label 屏東縣
-										.form-check
-											input.form-check-input(type="radio" name="region")
-											label.form-check-label 台東縣
-										.form-check
-											input.form-check-input(type="radio" name="region")
-											label.form-check-label 花蓮縣
-										.form-check
-											input.form-check-input(type="radio" name="region")
-											label.form-check-label 澎湖縣
-										.form-check
-											input.form-check-input(type="radio" name="region")
-											label.form-check-label 金門縣
-										.form-check
-											input.form-check-input(type="radio" name="region")
-											label.form-check-label 連江縣
-							.col-12
-								label 類型
-								.donate_characteristic
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 綜合性服務
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 兒童青少年福利	
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 婦女福利
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 老人福利
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 身心障礙福利
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 家庭福利
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 健康醫療
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 心理衛生
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 社區規劃(營造)
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 環境保護
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 國際合作交流
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 教育與科學
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 文化藝術
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 人權和平
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 消費者保護
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 性別平等
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 政府單位
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 動物保護
-							// 必填
-							.col-12.col-md-6
-								.form-group
-									label.required_star 聯絡人
-									input.form-control(type="text")
-							// 必填
-							.col-12.col-md-6
-								.form-group
-									label.required_star 電話
-									input.form-control(type="text")
-							// 必填
-							.col-12
-								.form-group
-									label.required_star 詳細說明
-									textarea.form-control(rows="5")
+										label.required_star 刊登日期
+										input.form-control(type="date")
+									// 修改頁程式自動帶出
+									.form-group
+										label 結束日期
+										input.form-control(type="date" readonly)
+										.form-group
+											label 上傳圖片
+											.custom-file
+												input.custom-file-input(type="file")
+												label.custom-file-label 圖片建議尺寸800X450px
+									// 必填
+									.form-group
+										label.required_star 刊登天數
+										.radio_box
+											.form-check
+												input.form-check-input(type="radio" name="post_duration")
+												label.form-check-label 14天
+											.form-check
+												input.form-check-input(type="radio" name="post_duration")
+												label.form-check-label 28天
+											.form-check
+												input.form-check-input(type="radio" name="post_duration")
+												label.form-check-label 56天
+									// 必填
+									.form-group
+										label.required_star 物資類別
+										.radio_box
+											.form-check
+												input.form-check-input(type="radio" name="type")
+												label.form-check-label 活動
+											.form-check
+												input.form-check-input(type="radio" name="type")
+												label.form-check-label 餐廚
+											.form-check
+												input.form-check-input(type="radio" name="type")
+												label.form-check-label 衣物
+											.form-check
+												input.form-check-input(type="radio" name="type")
+												label.form-check-label 鞋襪
+											.form-check
+												input.form-check-input(type="radio" name="type")
+												label.form-check-label 傢俱
+											.form-check
+												input.form-check-input(type="radio" name="type")
+												label.form-check-label 寢飾
+											.form-check
+												input.form-check-input(type="radio" name="type")
+												label.form-check-label 衛生
+											.form-check
+												input.form-check-input(type="radio" name="type")
+												label.form-check-label 清潔
+											.form-check
+												input.form-check-input(type="radio" name="type")
+												label.form-check-label 家電
+											.form-check
+												input.form-check-input(type="radio" name="type")
+												label.form-check-label 3C
+											.form-check
+												input.form-check-input(type="radio" name="type")
+												label.form-check-label 圖書
+											.form-check
+												input.form-check-input(type="radio" name="type")
+												label.form-check-label 文具
+											.form-check
+												input.form-check-input(type="radio" name="type")
+												label.form-check-label 娛樂
+											.form-check
+												input.form-check-input(type="radio" name="type")
+												label.form-check-label 其他
+											.form-check
+												input.form-check-input(type="radio" name="type")
+												label.form-check-label 輔具
+											.form-check
+												input.form-check-input(type="radio" name="type")
+												label.form-check-label 運輸
+									// 必填
+									.form-group
+										label.required_star 物資名稱
+										input.form-control(type="text")
+									// 必填
+									.form-group
+										label.required_star 數量
+										input.form-control(type="text")
+									//- 地址
+									.address
+										label.required_star.address_text 地點
+										.form-group
+											input.form-control(placeholder="郵遞區號" type="number")
+										.form-group
+											select.form-control.selectpicker(data-size="5")
+												option(selected disabled) 縣市
+												option 台北市
+												option 新北市
+												option 桃園市
+												option 我都行
+										.form-group
+											select.form-control.selectpicker(data-size="5")
+												option(selected disabled) 行政區
+												option 台中市
+												option 台南市
+												option 高雄市
+												option 我都愛
+										.form-group.detail_address
+											input.form-control(type="text")
+									// 必填
+									.form-group
+										label.required_star 地區
+										.radio_box
+											.form-check
+												input.form-check-input(type="radio" name="region")
+												label.form-check-label 台北市
+											.form-check
+												input.form-check-input(type="radio" name="region")
+												label.form-check-label 新北市
+											.form-check
+												input.form-check-input(type="radio" name="region")
+												label.form-check-label 基隆市
+											.form-check
+												input.form-check-input(type="radio" name="region")
+												label.form-check-label 宜蘭縣
+											.form-check
+												input.form-check-input(type="radio" name="region")
+												label.form-check-label 桃園市
+											.form-check
+												input.form-check-input(type="radio" name="region")
+												label.form-check-label 新竹市
+											.form-check
+												input.form-check-input(type="radio" name="region")
+												label.form-check-label 新竹縣
+											.form-check
+												input.form-check-input(type="radio" name="region")
+												label.form-check-label 苗栗縣
+											.form-check
+												input.form-check-input(type="radio" name="region")
+												label.form-check-label 台中市
+											.form-check
+												input.form-check-input(type="radio" name="region")
+												label.form-check-label 彰化縣
+											.form-check
+												input.form-check-input(type="radio" name="region")
+												label.form-check-label 南投縣
+											.form-check
+												input.form-check-input(type="radio" name="region")
+												label.form-check-label 雲林縣
+											.form-check
+												input.form-check-input(type="radio" name="region")
+												label.form-check-label 嘉義市
+											.form-check
+												input.form-check-input(type="radio" name="region")
+												label.form-check-label 嘉義縣
+											.form-check
+												input.form-check-input(type="radio" name="region")
+												label.form-check-label 台南市
+											.form-check
+												input.form-check-input(type="radio" name="region")
+												label.form-check-label 高雄市
+											.form-check
+												input.form-check-input(type="radio" name="region")
+												label.form-check-label 屏東縣
+											.form-check
+												input.form-check-input(type="radio" name="region")
+												label.form-check-label 台東縣
+											.form-check
+												input.form-check-input(type="radio" name="region")
+												label.form-check-label 花蓮縣
+											.form-check
+												input.form-check-input(type="radio" name="region")
+												label.form-check-label 澎湖縣
+											.form-check
+												input.form-check-input(type="radio" name="region")
+												label.form-check-label 金門縣
+											.form-check
+												input.form-check-input(type="radio" name="region")
+												label.form-check-label 連江縣
+									.form-group
+										label 類型
+										.check_box
+											.form-group.form-check
+												input.form-check-input(type="checkbox")
+												label.form-check-label 綜合性服務
+											.form-group.form-check
+												input.form-check-input(type="checkbox")
+												label.form-check-label 兒童青少年福利	
+											.form-group.form-check
+												input.form-check-input(type="checkbox")
+												label.form-check-label 婦女福利
+											.form-group.form-check
+												input.form-check-input(type="checkbox")
+												label.form-check-label 老人福利
+											.form-group.form-check
+												input.form-check-input(type="checkbox")
+												label.form-check-label 身心障礙福利
+											.form-group.form-check
+												input.form-check-input(type="checkbox")
+												label.form-check-label 家庭福利
+											.form-group.form-check
+												input.form-check-input(type="checkbox")
+												label.form-check-label 健康醫療
+											.form-group.form-check
+												input.form-check-input(type="checkbox")
+												label.form-check-label 心理衛生
+											.form-group.form-check
+												input.form-check-input(type="checkbox")
+												label.form-check-label 社區規劃(營造)
+											.form-group.form-check
+												input.form-check-input(type="checkbox")
+												label.form-check-label 環境保護
+											.form-group.form-check
+												input.form-check-input(type="checkbox")
+												label.form-check-label 國際合作交流
+											.form-group.form-check
+												input.form-check-input(type="checkbox")
+												label.form-check-label 教育與科學
+											.form-group.form-check
+												input.form-check-input(type="checkbox")
+												label.form-check-label 文化藝術
+											.form-group.form-check
+												input.form-check-input(type="checkbox")
+												label.form-check-label 人權和平
+											.form-group.form-check
+												input.form-check-input(type="checkbox")
+												label.form-check-label 消費者保護
+											.form-group.form-check
+												input.form-check-input(type="checkbox")
+												label.form-check-label 性別平等
+											.form-group.form-check
+												input.form-check-input(type="checkbox")
+												label.form-check-label 政府單位
+											.form-group.form-check
+												input.form-check-input(type="checkbox")
+												label.form-check-label 動物保護
+									// 必填
+									.form-group
+										label.required_star 聯絡人
+										input.form-control(type="text")
+									// 必填
+									.form-group
+										label.required_star 電話
+										input.form-control(type="text")
+									// 必填
+									.form-group
+										label.required_star 詳細說明
+										textarea.form-control(rows="5")
 
-							.input-group.mb-3
-								.input-group-prepend
-									span.input-group-text.required_star 驗證碼
-								input.form-control(type="text" placeholder="請輸入驗證碼")
-								.input-group-append
-									a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")
-										img.checkpin(src="./img/checkpin.png", alt="")
-							button.btn.login_button(type="button" onclick="javascript:location.href=''") 送出
-
-
+									.input-group.mb-3
+										.input-group-prepend
+											span.input-group-text.required_star 驗證碼
+										input.form-control(type="text" placeholder="請輸入驗證碼")
+										.input-group-append
+											a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")
+												img.checkpin(src="./img/checkpin.png", alt="")
+									button.btn.login_button(type="button" onclick="javascript:location.href=''") 送出
 		//- 匯入底部廣告
 		include footer_ad.pug
 		//- 匯入footer+script

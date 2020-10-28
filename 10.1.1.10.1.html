@@ -1,9 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>前台-機構-全職工作-新增</title>
+    <!-- favicon-->
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico">
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="./img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/favicon-152-precomposed.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/favicon-144-precomposed.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/favicon-120-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/favicon-114-precomposed.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/favicon-180-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/favicon-72-precomposed.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/favicon-57.png">
+    <link rel="icon" sizes="32x32" href="./img/favicon/favicon-32.png">
     <!-- bootstrap v4.41-->
     <link rel="stylesheet" href="./css/bootstrap.css">
     <!-- slick v1.8-->
@@ -140,365 +151,341 @@
         </div>
       </div>
     </nav>
-    <section class="member_same container" id="font_end_org_full_work_add">
+    <div class="mt-135"></div>
+    <section class="container">
       <div class="row">
-        <div class="content_top col-12">
-          <h2 class="content_title col-12">全職工作</h2>
-          <!-- 左側-->
-          <div class="left col-12 col-lg-3">
-            <!-- pc版導覽列-->
-            <ul class="pc_nav">
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.1.html">修改機構基本資料</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.3.html">最新活動</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.4.html">公益影片</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.5.html">補助公告</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.6.html">救助公告</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.7.html">獎助公告</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.8.html">物資需求</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.9.html">志工招募</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.10.html">全職工作</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.11.html">兼職工作</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.15.html">履歷查詢</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.12.html">公益商城</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.13.html">機構使用者維護</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.2.html">廣告刊登</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.14.html">修改密碼</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.html">登出</a></li>
-            </ul>
-            <!-- 手機版導覽列-->
-            <select class="selectpicker phone_nav" onchange="location.href=this.options[this.selectedIndex].value">
-              <option value="10.1.1.1.html">修改機構基本資料</option>
-              <option value="10.1.1.3.html"> 最新活動</option>
-              <option value="10.1.1.4.html"> 公益影片</option>
-              <option value="10.1.1.5.html"> 補助公告</option>
-              <option value="10.1.1.6.html"> 救助公告</option>
-              <option value="10.1.1.7.html"> 獎助公告</option>
-              <option value="10.1.1.8.html"> 物資需求</option>
-              <option value="10.1.1.9.html"> 志工招募</option>
-              <option value="10.1.1.10.html" selected> 全職工作</option>
-              <option value="10.1.1.11.html"> 兼職工作</option>
-              <option value="10.1.1.15.html"> 履歷查詢</option>
-              <option value="10.1.1.12.html"> 公益商城</option>
-              <option value="10.1.1.13.html"> 機構使用者維護</option>
-              <option value="10.1.1.2.html">廣告刊登</option>
-              <option value="10.1.1.14.html"> 修改密碼</option>
-              <option value="10.1.html"> 登出</option>
-            </select>
-          </div>
-          <!-- 右側-->
-          <div class="right col-12 col-lg-9">
-            <form class="full_work_add">
-              <!-- 必填-->
-              <div class="col-12">
-                <div class="form-group">
-                  <label class="required_star">刊登日期</label>
-                  <input class="form-control" type="date">
-                </div>
-              </div>
-              <!-- 修改頁程式自動帶出-->
-              <div class="col-12">
-                <div class="form-group">
-                  <label>結束日期</label>
-                  <input class="form-control" type="date" readonly>
-                </div>
-              </div>
-              <!-- 必填-->
-              <div class="col-12">
-                <div class="form-group">
-                  <label class="required_star">刊登天數</label>
-                  <div class="post_duration">
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="post_duration">
-                      <label class="form-check-label">14天</label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="post_duration">
-                      <label class="form-check-label">28天</label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="post_duration">
-                      <label class="form-check-label">56天</label>
+        <div class="title col-12">
+          <h2>全職工作</h2>
+        </div>
+        <div class="content col-12">
+          <div class="member_same">
+            <!-- 左側-->
+            <div class="left">
+              <!-- pc版導覽列-->
+              <ul class="pc_nav">
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.1.html">修改機構基本資料</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.3.html">最新活動</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.4.html">公益影片</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.5.html">補助公告</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.6.html">救助公告</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.7.html">獎助公告</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.8.html">物資需求</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.9.html">志工招募</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.10.html">全職工作</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.11.html">兼職工作</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.15.html">履歷查詢</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.12.html">公益商城</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.13.html">機構使用者維護</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.2.html">廣告刊登</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.14.html">修改密碼</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.html">登出</a></li>
+              </ul>
+              <!-- 手機版導覽列-->
+              <select class="selectpicker phone_nav" onchange="location.href=this.options[this.selectedIndex].value">
+                <option value="10.1.1.1.html">修改機構基本資料</option>
+                <option value="10.1.1.3.html"> 最新活動</option>
+                <option value="10.1.1.4.html"> 公益影片</option>
+                <option value="10.1.1.5.html"> 補助公告</option>
+                <option value="10.1.1.6.html"> 救助公告</option>
+                <option value="10.1.1.7.html"> 獎助公告</option>
+                <option value="10.1.1.8.html"> 物資需求</option>
+                <option value="10.1.1.9.html"> 志工招募</option>
+                <option value="10.1.1.10.html" selected> 全職工作</option>
+                <option value="10.1.1.11.html"> 兼職工作</option>
+                <option value="10.1.1.15.html"> 履歷查詢</option>
+                <option value="10.1.1.12.html"> 公益商城</option>
+                <option value="10.1.1.13.html"> 機構使用者維護</option>
+                <option value="10.1.1.2.html">廣告刊登</option>
+                <option value="10.1.1.14.html"> 修改密碼</option>
+                <option value="10.1.html"> 登出</option>
+              </select>
+            </div>
+            <!-- 右側-->
+            <div class="right">
+              <form>
+                <div class="front_end_edit">
+                  <!-- 必填									-->
+                  <div class="form-group">
+                    <label class="required_star">刊登日期</label>
+                    <input class="form-control" type="date">
+                  </div>
+                  <!-- 修改頁程式自動帶出									-->
+                  <div class="form-group">
+                    <label>結束日期</label>
+                    <input class="form-control" type="date" readonly>
+                  </div>
+                  <!-- 必填									-->
+                  <div class="form-group">
+                    <label class="required_star">刊登天數</label>
+                    <div class="radio_box">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="post_duration">
+                        <label class="form-check-label">14天</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="post_duration">
+                        <label class="form-check-label">28天</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="post_duration">
+                        <label class="form-check-label">56天</label>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <!-- 必填-->
-              <div class="col-12">
-                <div class="form-group">
-                  <label class="required_star">職務名稱</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <!-- 必填-->
-              <div class="col-12">
-                <div class="form-group">
-                  <label class="required_star">職務部門</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <!-- 必填-->
-              <div class="col-12">
-                <div class="form-group">
-                  <label class="required_star">性別</label>
-                  <div class="gender">
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gender">
-                      <label class="form-check-label">男</label>
+                  <!-- 必填									-->
+                  <div class="form-group">
+                    <label class="required_star">職務名稱</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <!-- 必填									-->
+                  <div class="form-group">
+                    <label class="required_star">職務部門</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <!-- 必填									-->
+                  <div class="form-group">
+                    <label class="required_star">性別</label>
+                    <div class="radio_box">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender">
+                        <label class="form-check-label">男</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender">
+                        <label class="form-check-label">女</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender">
+                        <label class="form-check-label">不限									</label>
+                      </div>
                     </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gender">
-                      <label class="form-check-label">女</label>
+                  </div>
+                  <div class="form-group">
+                    <label>學歷/科系</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label>職務類別</label>
+                    <div class="radio_box">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="work_type">
+                        <label class="form-check-label">不拘</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="work_type">
+                        <label class="form-check-label">社工</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="work_type">
+                        <label class="form-check-label">行政</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="work_type">
+                        <label class="form-check-label">會計 </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="work_type">
+                        <label class="form-check-label">資訊</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="work_type">
+                        <label class="form-check-label">美工</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="work_type">
+                        <label class="form-check-label">其他</label>
+                      </div>
                     </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gender">
+                  </div>
+                  <!-- 必填									-->
+                  <div class="form-group">
+                    <label class="required_star">福利</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label>薪水</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <!-- 必填									-->
+                  <div class="form-group">
+                    <label class="required_star">休假制度</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label>工作經驗</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label>具備駕照</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label>備註</label>
+                    <textarea class="form-control" rows="5"></textarea>
+                  </div>
+                  <!-- 必填									-->
+                  <div class="form-group">
+                    <label class="required_star">詳細說明</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label>其他需求</label>
+                    <textarea class="form-control" rows="5"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label>備註</label>
+                    <textarea class="form-control" rows="5"></textarea>
+                  </div>
+                  <!-- 必填									-->
+                  <label class="required_star">工作地點</label>
+                  <div class="check_box">
+                    <div class="form-group form-check">
+                      <input class="form-check-input" type="checkbox">
+                      <label class="form-check-label">台北市</label>
+                    </div>
+                    <div class="form-group form-check">
+                      <input class="form-check-input" type="checkbox">
+                      <label class="form-check-label">新北市	</label>
+                    </div>
+                    <div class="form-group form-check">
+                      <input class="form-check-input" type="checkbox">
+                      <label class="form-check-label">基隆市</label>
+                    </div>
+                    <div class="form-group form-check">
+                      <input class="form-check-input" type="checkbox">
+                      <label class="form-check-label">宜蘭縣</label>
+                    </div>
+                    <div class="form-group form-check">
+                      <input class="form-check-input" type="checkbox">
+                      <label class="form-check-label">桃園市</label>
+                    </div>
+                    <div class="form-group form-check">
+                      <input class="form-check-input" type="checkbox">
+                      <label class="form-check-label">新竹市</label>
+                    </div>
+                    <div class="form-group form-check">
+                      <input class="form-check-input" type="checkbox">
+                      <label class="form-check-label">新竹縣</label>
+                    </div>
+                    <div class="form-group form-check">
+                      <input class="form-check-input" type="checkbox">
+                      <label class="form-check-label">苗栗縣</label>
+                    </div>
+                    <div class="form-group form-check">
+                      <input class="form-check-input" type="checkbox">
+                      <label class="form-check-label">台中市</label>
+                    </div>
+                    <div class="form-group form-check">
+                      <input class="form-check-input" type="checkbox">
+                      <label class="form-check-label">彰化縣</label>
+                    </div>
+                    <div class="form-group form-check">
+                      <input class="form-check-input" type="checkbox">
+                      <label class="form-check-label">南投縣</label>
+                    </div>
+                    <div class="form-group form-check">
+                      <input class="form-check-input" type="checkbox">
+                      <label class="form-check-label">雲林縣</label>
+                    </div>
+                    <div class="form-group form-check">
+                      <input class="form-check-input" type="checkbox">
+                      <label class="form-check-label">嘉義市</label>
+                    </div>
+                    <div class="form-group form-check">
+                      <input class="form-check-input" type="checkbox">
+                      <label class="form-check-label">嘉義縣</label>
+                    </div>
+                    <div class="form-group form-check">
+                      <input class="form-check-input" type="checkbox">
+                      <label class="form-check-label">台南市</label>
+                    </div>
+                    <div class="form-group form-check">
+                      <input class="form-check-input" type="checkbox">
+                      <label class="form-check-label">高雄市</label>
+                    </div>
+                    <div class="form-group form-check">
+                      <input class="form-check-input" type="checkbox">
+                      <label class="form-check-label">屏東縣</label>
+                    </div>
+                    <div class="form-group form-check">
+                      <input class="form-check-input" type="checkbox">
+                      <label class="form-check-label">台東縣</label>
+                    </div>
+                    <div class="form-group form-check">
+                      <input class="form-check-input" type="checkbox">
                       <label class="form-check-label">不限</label>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="form-group">
-                  <label>學歷/科系</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="form-group">
-                  <label>職務類別</label>
-                  <div class="work_type">
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="work_type">
-                      <label class="form-check-label">不拘</label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="work_type">
-                      <label class="form-check-label">社工</label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="work_type">
-                      <label class="form-check-label">行政</label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="work_type">
-                      <label class="form-check-label">會計 </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="work_type">
-                      <label class="form-check-label">資訊</label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="work_type">
-                      <label class="form-check-label">美工</label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="work_type">
-                      <label class="form-check-label">其他</label>
+                    <div class="form-group form-check">
+                      <input class="form-check-input" type="checkbox">
+                      <label class="form-check-label">海外：</label>
+                      <input class="form-check-label foreign" type="text">
                     </div>
                   </div>
+                  <div class="address">
+                    <label class="required_star address_text">工作地址</label>
+                    <div class="form-group">
+                      <input class="form-control" placeholder="郵遞區號" type="number">
+                    </div>
+                    <div class="form-group">
+                      <select class="form-control selectpicker" data-size="5">
+                        <option selected disabled>縣市</option>
+                        <option>台北市</option>
+                        <option>新北市</option>
+                        <option>桃園市</option>
+                        <option>我都行</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <select class="form-control selectpicker" data-size="5">
+                        <option selected disabled>行政區</option>
+                        <option>台中市</option>
+                        <option>台南市</option>
+                        <option>高雄市</option>
+                        <option>我都愛</option>
+                      </select>
+                    </div>
+                    <div class="form-group detail_address">
+                      <input class="form-control" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>工作時間</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <!-- 必填									-->
+                  <div class="form-group">
+                    <label class="required_star">聯絡人</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <!-- 必填	-->
+                  <div class="form-group">
+                    <label class="required_star">連絡電話</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label>傳真</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <!-- 必填									-->
+                  <div class="form-group">
+                    <label class="required_star">連絡Email</label>
+                    <input class="form-control" type="email">
+                  </div>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend"><span class="input-group-text required_star">驗證碼</span></div>
+                    <input class="form-control" type="text" placeholder="請輸入驗證碼">
+                    <div class="input-group-append"><a class="checkpin_switch btn" href="#" title="按一下更改驗證碼"><img class="checkpin" src="./img/checkpin.png" alt=""></a></div>
+                  </div>
+                  <button class="btn login_button" type="button" onclick="javascript:location.href=''">送出</button>
                 </div>
-              </div>
-              <!-- 必填-->
-              <div class="col-12">
-                <div class="form-group">
-                  <label class="required_star">福利</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="form-group">
-                  <label>薪水</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <!-- 必填-->
-              <div class="col-12">
-                <div class="form-group">
-                  <label class="required_star">休假制度</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="form-group">
-                  <label>工作經驗</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="form-group">
-                  <label>具備駕照</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="form-group">
-                  <label>備註</label>
-                  <textarea class="form-control" rows="5"></textarea>
-                </div>
-              </div>
-              <!-- 必填-->
-              <div class="col-12">
-                <div class="form-group">
-                  <label class="required_star">詳細說明</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="form-group">
-                  <label>其他需求</label>
-                  <textarea class="form-control" rows="5"></textarea>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="form-group">
-                  <label>備註</label>
-                  <textarea class="form-control" rows="5"></textarea>
-                </div>
-              </div>
-              <!-- 必填-->
-              <div class="col-12">
-                <label class="required_star">工作地點</label>
-                <div class="region">
-                  <div class="form-group form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">台北市</label>
-                  </div>
-                  <div class="form-group form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">新北市	</label>
-                  </div>
-                  <div class="form-group form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">基隆市</label>
-                  </div>
-                  <div class="form-group form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">宜蘭縣</label>
-                  </div>
-                  <div class="form-group form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">桃園市</label>
-                  </div>
-                  <div class="form-group form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">新竹市</label>
-                  </div>
-                  <div class="form-group form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">新竹縣</label>
-                  </div>
-                  <div class="form-group form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">苗栗縣</label>
-                  </div>
-                  <div class="form-group form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">台中市</label>
-                  </div>
-                  <div class="form-group form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">彰化縣</label>
-                  </div>
-                  <div class="form-group form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">南投縣</label>
-                  </div>
-                  <div class="form-group form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">雲林縣</label>
-                  </div>
-                  <div class="form-group form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">嘉義市</label>
-                  </div>
-                  <div class="form-group form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">嘉義縣</label>
-                  </div>
-                  <div class="form-group form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">台南市</label>
-                  </div>
-                  <div class="form-group form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">高雄市</label>
-                  </div>
-                  <div class="form-group form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">屏東縣</label>
-                  </div>
-                  <div class="form-group form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">台東縣</label>
-                  </div>
-                  <div class="form-group form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">不限</label>
-                  </div>
-                  <div class="form-group form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label foreign">海外：</label>
-                    <input class="form-control foreign_input" type="text">
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="form-group">
-                  <label>工作地址</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="form-group">
-                  <label>工作時間</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <!-- 必填-->
-              <div class="col-12">
-                <div class="form-group">
-                  <label class="required_star">聯絡人</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <!-- 必填-->
-              <div class="col-12 col-md-6">
-                <div class="form-group">
-                  <label class="required_star">連絡電話</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="form-group">
-                  <label>傳真</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="form-group">
-                  <label>工作地址</label>
-                  <input class="form-control" type="text">
-                </div>
-              </div>
-              <!-- 必填-->
-              <div class="col-12">
-                <div class="form-group">
-                  <label class="required_star">連絡Email</label>
-                  <input class="form-control" type="email">
-                </div>
-              </div>
-              <div class="input-group mb-3">
-                <div class="input-group-prepend"><span class="input-group-text required_star">驗證碼</span></div>
-                <input class="form-control" type="text" placeholder="請輸入驗證碼">
-                <div class="input-group-append"><a class="checkpin_switch btn" href="#" title="按一下更改驗證碼"><img class="checkpin" src="./img/checkpin.png" alt=""></a></div>
-              </div>
-              <button class="btn login_button" type="button" onclick="javascript:location.href=''">送出</button>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- 底部廣告-->
-    <section class="container" id="bottom_ads"><img class="img-fluid clickable-row" src="./img/fakeimg/350x150.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad1.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad2.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad3.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"></section>
+    <section class="container" id="bottom_ads"><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a></section>
     <!-- footer-->
     <footer>
       <div class="container">

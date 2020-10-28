@@ -1,5 +1,5 @@
 doctype html
-html(lang="en")
+html(lang="zh-tw")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
@@ -38,114 +38,52 @@ html(lang="en")
 						input.form-control(type="text" placeholder="搜尋組織" aria-label="搜尋組織" aria-describedby="button-addon2")
 						.input-group-append
 							button#button-addon2.btn.lookmore(type="button" style="margin-top: 0;") 搜尋
+
 		// 最新活動＋物資募集＋人力銀行
 		section.container
 			// 最新活動
 			.row
 				// 最新活動 開始
 				#newpost.col-12
-					h2.col-12 最新活動
+					h2.col-12.p-0 最新活動
 					// 左側卡片
 					#activity_card.newpostpic.col-12.col-lg-6.col-xl-5
-						.card
-							.pic
-								img.img-fluid.clickable-row(src="./img/activitypic/act1.png" data-href="12.2.1.html")
-							.card-body.clickable-row(data-href="12.2.1.html")
-								h3.card-title.text-truncate
-									span.date 2020-06-20
-									|  「任林電影院」6/12週五電影賞析
-								p.card-text 致，我最愛的家人』，從簡單易懂的電影中，看見豐富無比的課題，透過帶領人的引導，輕鬆聊聊影片與自己產生的共鳴，短短三個小時帶給您一想不到的生命學習。致，我最愛的家人』，從簡單易懂的電影中，看見豐富無比的課題，透過帶領人的引導，輕鬆聊聊影片與自己產生的共鳴，短短三個小時帶給您一想不到的生命學習。致，我最愛的家人』，從簡單易懂的電影中，看見豐富無比的課題，透過帶領人的引導，輕鬆聊聊影片與自己產生的共鳴，短短三個小時帶給您一想不到的生命學習。
-						.card
-							.pic
-								img.img-fluid.clickable-row(src="./img/fakeimg/800x450.png" data-href="12.2.1.html")
-							.card-body.clickable-row(data-href="12.2.1.html")
-								h3.card-title.text-truncate
-									span.date 2020-06-20
-									|  「任林電影院」6/12週五電影賞析
-								p.card-text 致，我最愛的家人』，從簡單易懂的電影中，看見豐富無比的課題，透過帶領人的引導，輕鬆聊聊影片與自己產生的共鳴，短短三個小時帶給您一想不到的生命學習。致，我最愛的家人』，從簡單易懂的電影中，看見豐富無比的課題，透過帶領人的引導，輕鬆聊聊影片與自己產生的共鳴，短短三個小時帶給您一想不到的生命學習。致，我最愛的家人』，從簡單易懂的電影中，看見豐富無比的課題，透過帶領人的引導，輕鬆聊聊影片與自己產生的共鳴，短短三個小時帶給您一想不到的生命學習。
-						.card
-							.pic
-								img.img-fluid.clickable-row(src="./img/fakeimg/1000x200.png" data-href="12.2.1.html")
-							.card-body.clickable-row(data-href="12.2.1.html")
-								h3.card-title.text-truncate
-									span.date 2020-06-20
-									|  「任林電影院」6/12週五電影賞析
-								p.card-text 致，我最愛的家人』，從簡單易懂的電影中，看見豐富無比的課題，透過帶領人的引導，輕鬆聊聊影片與自己產生的共鳴，短短三個小時帶給您一想不到的生命學習。致，我最愛的家人』，從簡單易懂的電影中，看見豐富無比的課題，透過帶領人的引導，輕鬆聊聊影片與自己產生的共鳴，短短三個小時帶給您一想不到的生命學習。致，我最愛的家人』，從簡單易懂的電影中，看見豐富無比的課題，透過帶領人的引導，輕鬆聊聊影片與自己產生的共鳴，短短三個小時帶給您一想不到的生命學習。
-						.card
-							.pic
-								img.img-fluid.clickable-row(src="./img/fakeimg/200x1000.png" data-href="12.2.1.html")
-							.card-body.clickable-row(data-href="12.2.1.html")
-								h3.card-title.text-truncate
-									span.date 2020-06-20
-									|  「任林電影院」6/12週五電影賞析
-								p.card-text 致，我最愛的家人』，從簡單易懂的電影中，看見豐富無比的課題，透過帶領人的引導，輕鬆聊聊影片與自己產生的共鳴，短短三個小時帶給您一想不到的生命學習。
-						.card
-							.pic
-								img.img-fluid.clickable-row(src="./img/fakeimg/800x800.png" data-href="12.2.1.html")
-							.card-body.clickable-row(data-href="12.2.1.html")
-								h3.card-title.text-truncate
-									span.date 2020-06-20
-									|  「任林電影院」6/12週五電影賞析
-								p.card-text 致，我最愛的家人』，從簡單易懂的電影中，看見豐富無比的課題，透過帶領人的引導，輕鬆聊聊影片與自己產生的共鳴，短短三個小時帶給您一想不到的生命學習。
+						- for ( var i=1 ; i<=5 ; i++)
+							.card
+								.pic
+									img.img-fluid.clickable-row(src="./img/activitypic/act1.png" data-href="12.2.1.html")
+								.card-body.clickable-row(data-href="12.2.1.html")
+									h3.card-title.text-truncate
+										span.date 2020-06-20
+										|  「任林電影院」6/12週五電影賞析
+									p.card-text 致，我最愛的家人』，從簡單易懂的電影中，看見豐富無比的課題，透過帶領人的引導，輕鬆聊聊影片與自己產生的共鳴，短短三個小時帶給您一想不到的生命學習。致，我最愛的家人』，從簡單易懂的電影中，看見豐富無比的課題，透過帶領人的引導，輕鬆聊聊影片與自己產生的共鳴，短短三個小時帶給您一想不到的生命學習。致，我最愛的家人』，從簡單易懂的電影中，看見豐富無比的課題，透過帶領人的引導，輕鬆聊聊影片與自己產生的共鳴，短短三個小時帶給您一想不到的生命學習。						
 					// 右側活動說明
 					.newpostlist.col-12.col-lg-6.col-xl-7
-						.list.clickable-row(data-href="12.2.1.html")
-							h3.text-truncate.title
-								span.date 2020-05-23
-								|  志工特殊訓練-穿越時空到未來
-							p.text.text-truncate 正值青春年華的你/妳，能想像50年後的自己會是什麼樣子嗎?趕快來~~~變裝體驗爺奶生活+欣賞不老超級任務
-						.list.clickable-row(data-href="12.2.1.html")
-							h3.text-truncate.title
-								span.date 2020-05-28
-								|  109年桃園市NPO知識學院 開課啦！
-							p.text.text-truncate 透過專業引導了解NPO的多元發展性！融合學術與工具，從基礎打造好功夫！充實自我、展現團隊、發揮影響力！
-						.list.clickable-row(data-href="12.2.1.html")
-							h3.text-truncate.title
-								span.date 2020-05-30
-								|  「自組團隊提案說明會」- 志願服務與生存價值
-							p.text.text-truncate 本場次為青年志工培力工作坊，109年度青年發展署提供「獎勵青年自組團隊參與志工行動計畫」方案，獎勵青年勇於付諸行動、鼓勵青年投入服務活動
-						.list.clickable-row(data-href="12.2.1.html")
-							h3.text-truncate.title
-								span.date 2020-05-30
-								|  2020後現代治療系列—搞懂敘事治療
-							p.text.text-truncate 生命是一連串故事的組合，故事裡夾藏著多元的可能。面臨挑戰的人，不吐不快的心聲猶似迴盪在心版上的低音，悶響著。
-					button.btn.btn-sm.lookmore.clickable-row(type="button" data-href="3.2.html") 查看更多
+						- for ( var i=1 ; i<=4 ; i++)
+							a(href="12.2.1.html")
+								.list
+									h3.text-truncate.title
+										span.date 2020-05-23
+										|  志工特殊訓練-穿越時空到未來
+									p.text.text-truncate 正值青春年華的你/妳，能想像50年後的自己會是什麼樣子嗎?趕快來~~~變裝體驗爺奶生活+欣賞不老超級任務
+					button.btn.btn-sm.lookmore(onclick="document.location = '3.2.html';") 查看更多
 				// 最新活動 結束
 				// 物資募集＋人力銀行
 				// 物資募集 開始
 				#donate.col-12.col-md-4
-					h2.col-12 物資募集
+					h2.col-12.p-0 物資募集
 					// list
 					.list-wrap
-						.list.col-12.clickable-row(data-href="12.7.1.html")
-							h3.donatetitle.text-truncate 分離式冷氣機
-							h4.donateorg.text-truncate 社團法人大臺南熱蘭遮失智症協會
-							p.donatenumber.text-truncate
-								| 數量：
-								span 2
-								| 個
-						.list.col-12.clickable-row(data-href="12.7.1.html")
-							h3.donatetitle.text-truncate 攝影器材
-							h4.donateorg.text-truncate 中華民國更生少年關懷協會
-							p.donatenumber.text-truncate
-								| 數量：
-								span 2
-								| 個
-						.list.col-12.clickable-row(data-href="12.7.1.html")
-							h3.donatetitle.text-truncate 白米
-							h4.donateorg.text-truncate 屏東縣關懷弱勢福利促進協會
-							p.donatenumber.text-truncate
-								| 數量：
-								span 60
-								| 公斤
-						.list.col-12.clickable-row(data-href="12.7.1.html")
-							h3.donatetitle.text-truncate 浴巾
-							h4.donateorg.text-truncate 屏東基督教勝利之家
-							p.donatenumber.text-truncate
-								| 數量：
-								span 100
-								| 條
-					button.btn.btn-sm.lookmore.clickable-row(type="button" data-href="5.1.html") 查看更多
+						- for ( var i=1 ; i<=4 ; i++)
+							a(href="12.7.1.html")
+								.list.col-12
+									h3.donatetitle.text-truncate 分離式冷氣機
+									h4.donateorg.text-truncate 社團法人大臺南熱蘭遮失智症協會
+									p.donatenumber.text-truncate
+										| 數量：
+										span 2
+										| 個						
+					button.btn.btn-sm.lookmore(onclick="document.location = '5.1.html';") 查看更多
 				// 物資募集 結束
 				// 人力銀行 開始
 				#bank.col-12.col-md-8
@@ -153,203 +91,84 @@ html(lang="en")
 					.list-wrap
 						// left list
 						.col-12.col-md-6
-							.list.col-12.clickable-row(data-href="12.9.1.html")
-								h3.jobname.text-truncate
-									span.job-type 正職
-									|  居服督導
-								h4.joborg.text-truncate 財團法人老五老基金會
-								p.jobtext.text-truncate 負責南投縣信義鄉和水里鄉長照業務
-							.list.col-12.clickable-row(data-href="12.9.1.html")
-								h3.jobname.text-truncate
-									span.job-type 正職
-									|  黎明教養院班導1名
-								h4.joborg.text-truncate 財團法人台灣基督教門諾會附設花
-								p.jobtext.text-truncate 黎明教養院班導1名(薪資30000元-35000元)
-							.list.col-12.clickable-row(data-href="12.10.1.html")
-								h3.jobname.text-truncate
-									span.job-type 兼職
-									|  社工員
-								h4.joborg.text-truncate 社團法人臺北市觀音線心理暨社會
-								p.jobtext.text-truncate 長者社團與團體活動方案規劃、執行與成果報告
-							.list.col-12.clickable-row(data-href="12.10.1.html")
-								h3.jobname.text-truncate
-									span.job-type 兼職
-									|  國文-課輔老師
-								h4.joborg.text-truncate 米可之家
-								p.jobtext.text-truncate 補救教學之課業輔導
+							- for ( var i=1 ; i<=4 ; i++)
+									a(href="12.9.1.html")
+										.list.col-12
+											h3.jobname.text-truncate
+												span.job-type 正職
+												|  居服督導
+											h4.joborg.text-truncate 財團法人老五老基金會
+											p.jobtext.text-truncate 負責南投縣信義鄉和水里鄉長照業務
 						// right list
 						.col-12.col-md-6
-							.list.col-12.clickable-row(data-href="12.8.1.html")
-								h3.jobname.text-truncate
-									span.job-type 志工
-									|  冷氣修繕志工
-								h4.joborg.text-truncate 財團法人高雄市私立星星兒社會福
-								p.jobtext.text-truncate
-									| 夏天將至，炎熱的高溫已讓機構中的服務對象受不了，教室中的冷氣有一台壞掉了，導致服務對象的情緒越來越不穩定，若您有修理冷氣的專長，也願意到星星兒的家來看看，歡迎您來協助我們檢測及維修冷氣
-							.list.col-12.clickable-row(data-href="12.8.1.html")
-								h3.jobname.text-truncate
-									span.job-type 志工
-									|  樂齡志工
-								h4.joborg.text-truncate 董氏基金會
-								p.jobtext.text-truncate 50歲以上，以65歲以上為優先。表達能力佳、熱愛學習、有服務熱忱、喜愛團體合作、分享經驗，並針對志工工作項目有專長或具濃厚興趣者。
-							.list.col-12.clickable-row(data-href="12.8.1.html")
-								h3.jobname.text-truncate
-									span.job-type 志工
-									|  蒲公英希望基地籌備志工
-								h4.joborg.text-truncate 財團法人蒲公英希望基金會
-								p.jobtext.text-truncate 打造一個充份利用自然資源、永續循環、自給自足，讓一般低收戶也能供得起的生活環境!
-							.list.col-12.clickable-row(data-href="12.8.1.html")
-								h3.jobname.text-truncate
-									span.job-type 志工
-									|  餐飲服務送餐志工
-								h4.joborg.text-truncate 財團法人新北市私立雙連社會福利
-								p.jobtext.text-truncate 老人及身障者送餐服務
-					button.btn.btn-sm.lookmore.clickable-row(type="button" data-href="6.1.html") 查看更多
+							- for ( var i=1 ; i<=4 ; i++)
+								a(href="12.8.1.html")
+									.list.col-12
+										h3.jobname.text-truncate
+											span.job-type 志工
+											|  冷氣修繕志工
+										h4.joborg.text-truncate 財團法人高雄市私立星星兒社會福
+										p.jobtext.text-truncate
+											| 夏天將至，炎熱的高溫已讓機構中的服務對象受不了，教室中的冷氣有一台壞掉了，導致服務對象的情緒越來越不穩定，若您有修理冷氣的專長，也願意到星星兒的家來看看，歡迎您來協助我們檢測及維修冷氣
+					button.btn.btn-sm.lookmore(onclick="document.location = '6.1.html';") 查看更多
 				// 人力銀行 結束
 		// 公益商城
 		section.container
 			.row
 				// 公益商城
 				#shop.col-12
-					h2.col-12 公益商城
+					h2.col-12.p-0 公益商城
 					.shop_slick
-						.card
-							a(href="https://shopee.tw/" target="_blank")
-								.pic
-									img.card-img-top.img-fluid.fixed_size(src="./img/product/pd1.jpg")
-								h3.title 手工餅乾
-								p.text NT$150
-						.card
-							a(href="https://shopee.tw/" target="_blank")
-								.pic
-									img.card-img-top.img-fluid.fixed_size(src="./img/product/pd2.jpg")
-								h3.title 手工餅乾
-								p.text NT$150
-						.card
-							a(href="https://shopee.tw/" target="_blank")
-								.pic
-									img.card-img-top.img-fluid.fixed_size(src="./img/product/pd3.jpg")
-								h3.title 手工餅乾
-								p.text NT$150
-						.card
-							a(href="https://shopee.tw/" target="_blank")
-								.pic
-									img.card-img-top.img-fluid.fixed_size(src="./img/product/pd1.jpg")
-								h3.title 手工餅乾
-								p.text NT$150
-						.card
-							a(href="https://shopee.tw/" target="_blank")
-								.pic
-									img.card-img-top.img-fluid.fixed_size(src="./img/fakeimg/800x800.png")
-								h3.title 手工餅乾
-								p.text NT$150
-						.card
-							a(href="https://shopee.tw/" target="_blank")
-								.pic
-									img.card-img-top.img-fluid.fixed_size(src="./img/fakeimg/800x800.png")
-								h3.title 手工餅乾
-								p.text NT$150
-						.card
-							a(href="https://shopee.tw/" target="_blank")
-								.pic
-									img.card-img-top.img-fluid.fixed_size(src="./img/fakeimg/800x800.png")
-								h3.title 手工餅乾
-								p.text NT$150
-						.card
-							a(href="https://shopee.tw/" target="_blank")
-								.pic
-									img.card-img-top.img-fluid.fixed_size(src="./img/product/pd1.jpg")
-								h3.title 手工餅乾
-								p.text NT$150
-						
-						
-						
-					button.btn.btn-sm.lookmore.clickable-row(type="button" data-href="7.html") 查看更多
+						- for ( var i=1 ; i<=8 ; i++)
+							.card
+								a(href="12.11.1.html")
+									.pic
+										img.card-img-top.img-fluid.fixed_size(src="./img/product/pd1.jpg")
+									h3.title 手工餅乾
+									p.text NT$150
+					button.btn.btn-sm.lookmore(onclick="document.location = '7.html';") 查看更多
 		// 公益新訊＋急難救助＋獎助學金
 		section.container
 			.row
 				// 公益新訊 開始
 				#news.col-12.col-md-4
-					h2.col-12 公益新訊
+					h2.col-12.p-0 公益新訊
 					// list
-					.list.col-12.clickable-row(data-href="12.1.1.html")
-						h3.title.text-truncate
-							span.date 2020/04/13
-							| 第四屆「堉璘台灣奉獻獎」公開徵選
-						p.text.text-truncate
-							| 為鼓勵在各領域無私為台灣奉獻的個人或單位，公益信託林堉璘宏泰教育文化公益基金攜手林堉璘宏泰教育基金會成立了「堉璘台灣奉獻獎」，自2017年起每年辦理一次，得主可獲得3000萬獎金進而擴大自身影響力。
-					.list.col-12.clickable-row(data-href="12.1.1.html")
-						h3.title.text-truncate
-							span.date 2020/04/13
-							| 吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線
-						p.text.text-truncate
-							| 近日因新型冠狀病毒疫情緊張，台灣進入半鎖國狀態，糧食自給率更形重要。然而，目前台灣約有13萬家違章工廠佔據農地，而根據台灣環境資訊協會研究調查，自2011年起，每年平均新增約5,000到6,000家，然而2017年農委會核定的「保護農地－拆除農地上新增違規工廠行動方案」卻僅拆除16家。
-					.list.col-12.clickable-row(data-href="12.1.1.html")
-						h3.title.text-truncate
-							span.date 2019/12/19
-							| 堉璘台灣奉獻獎公布 2019 年獲獎名單
-						p.text.text-truncate
-							| （2019/12/17，台北訊）基於「取之於社會，用之於社會」的理念而成立的堉璘台灣奉獻
-							| 獎，今日公布第三屆獲獎名單並於新北市淡水美麗新淡海影城舉行頒獎典禮。
-					.list.col-12.clickable-row(data-href="12.1.1.html")
-						h3.title.text-truncate
-							span.date 2019/12/03
-							| 2020年全聯實物銀行徵選開放線上申請!(12/1-12/31)
-						p.text.text-truncate
-							| 2020年全聯物資銀行_「實物銀行」徵選開放線上申請囉!2019年12月1日起開放非營利組織進行提案，每年度將有三個合作機會，每間單位可獲得超過百萬物資(依單位需求提供)。
-					button.btn.btn-sm.lookmore.clickable-row(type="button" data-href="3.1.html") 查看更多
+					- for ( var i=1 ; i<=4 ; i++)
+						a(href="12.1.1.html")
+							.list.col-12
+								h3.title.text-truncate
+									span.date 2020/04/13
+									| 第四屆「堉璘台灣奉獻獎」公開徵選
+								p.text.text-truncate
+									| 為鼓勵在各領域無私為台灣奉獻的個人或單位，公益信託林堉璘宏泰教育文化公益基金攜手林堉璘宏泰教育基金會成立了「堉璘台灣奉獻獎」，自2017年起每年辦理一次，得主可獲得3000萬獎金進而擴大自身影響力。
+					button.btn.btn-sm.lookmore(onclick="document.location = '3.1.html';") 查看更多
 				// 公益新訊 結束
 				// 急難救助 開始
 				#help.col-12.col-md-4
-					h2.col-12 急難救助
+					h2.col-12.p-0 救助公告
 					// list
-					.list.col-12.clickable-row(data-href="12.5.1.html")
-						h3.title.text-truncate
-							span.date 2020-07-31
-							| 新北市申請急難救助
-						p.text.text-truncate 設籍並居住於新北市之市民符合下列情形之一者，請於事實發生日起3個月內檢具相關證明文件向戶籍地區公所申請急難救助
-					.list.col-12.clickable-row(data-href="12.5.1.html")
-						h3.title.text-truncate
-							span.date 2020-01-08
-							| 智邦公益館-急難救助申請
-						p.text.text-truncate 智邦公益館將結合網路上許許多多的愛心人士，為您或您身邊的人，在生命最黑暗的時刻，用一盞盞的燭光照亮人生。
-					.list.col-12.clickable-row(data-href="12.5.1.html")
-						h3.title.text-truncate
-							span.date 2020-04-13
-							| 衛生福利部中央健康保險署
-						p.text.text-truncate 投保單位或被保險人因受疫情影響，致遞延繳納或無力繳納健保費者，請填具「全民健康保險保險費緩繳申請書」
-					.list.col-12.clickable-row(data-href="12.5.1.html")
-						h3.title.text-truncate
-							span.date 2020-08-22
-							| 勞動部「受嚴重特殊傳染性肺炎影響勞工紓困貸款」
-						p.text.text-truncate 本國籍勞工年滿 20 歲，受嚴重特殊傳染性肺炎疫情影響者
-					button.btn.btn-sm.lookmore.clickable-row(type="button" data-href="4.2.2.html") 查看更多
+					- for ( var i=1 ; i<=4 ; i++)
+						a(href="12.5.1.html")
+							.list.col-12
+								h3.title.text-truncate
+									span.date 2020-07-31
+									| 新北市申請急難救助
+								p.text.text-truncate 設籍並居住於新北市之市民符合下列情形之一者，請於事實發生日起3個月內檢具相關證明文件向戶籍地區公所申請急難救助
+					button.btn.btn-sm.lookmore(onclick="document.location = '4.2.2.html';") 查看更多
 				// 急難救助 結束
 				// 獎助學金 開始
 				#scholarship.col-12.col-md-4
-					h2.col-12 獎助學金
+					h2.col-12.p-0 獎助公告
 					// list
-					.list.col-12.clickable-row(data-href="12.6.1.html")
-						h3.title.text-truncate
-							span.date 2020-02-24
-							| 霍寶樹先生獎學金
-						p.text.text-truncate 獎勵清華大學電機系博士生
-					.list.col-12.clickable-row(data-href="12.6.1.html")
-						h3.title.text-truncate
-							span.date 2020-03-12
-							| 張煥麟先生獎學金
-						p.text.text-truncate 獎勵宜蘭大學電子系三年級學生
-					.list.col-12.clickable-row(data-href="12.6.1.html")
-						h3.title.text-truncate
-							span.date 2020-04-07
-							| 甘露獎學金
-						p.text.text-truncate 獎勵嘉義高商職校父母雙亡、父亡由母扶養、成績優良學生
-					.list.col-12.clickable-row(data-href="12.6.1.html")
-						h3.title.text-truncate
-							span.date 2020-01-13
-							| 戴仲玉先生獎學金
-						p.text.text-truncate 各公私立大學校院、專科，以福建省籍學業成績較優學生
-					button.btn.btn-sm.lookmore.clickable-row(type="button" data-href="4.3.2.html") 查看更多
+					- for ( var i=1 ; i<=4 ; i++)
+						a(href="12.6.1.html")
+							.list.col-12
+								h3.title.text-truncate
+									span.date 2020-02-24
+									| 霍寶樹先生獎學金
+								p.text.text-truncate 獎勵清華大學電機系博士生獎勵清華大學電機系博士生獎勵清華大學電機系博士生
+					button.btn.btn-sm.lookmore(onclick="document.location = '4.3.2.html';") 查看更多
 				// 獎助學金 結束
 		
 		//- 匯入底部廣告

@@ -1,5 +1,5 @@
 doctype html
-html(lang="en")
+html(lang="zh-tw")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
@@ -9,41 +9,44 @@ html(lang="en")
 	body#top
 		//- 匯入導覽列+gototop
 		include nav.pug
-		section#intersoft.container
+		.mt-135
+		section.container
 			.row
-				.content_top.col-12
-					h2.content_title.col-12 網軟
-					.col-12.col-lg-6.office
-						img.img-fluid(src="./img/about/intersoft/about_office.jpg", alt="")
-					.col-12.col-lg-6
-						p &nbsp;&nbsp;&nbsp;&nbsp;「網軟股份有限公司」係由喜瑪拉雅基金會所成立的社會企業，協助非營利組織解決資訊化過程中，所面臨的許多困難，包括缺乏相關應用軟體、缺乏資訊人才、網路公司不穩定、網路資料安全、以及缺乏足夠的市場吸引專業網路公司投入...等問題，並藉以降低公益團體的數位落差。成立至今，已成功的協助許多公益團體設置內部管理網站系統，簡化日常工作流程，降低行政成本，以及提升工作的效率與品質。
-						p &nbsp;&nbsp;&nbsp;&nbsp; 為公益團體帶來資訊化是網軟公司的使命，應用各種開發軟體來降低勞動強度、提高效率，為所有公益團體服務，希望能創造雙贏局面，使公益團體能藉由我們提供的系統來服務更多社會上的弱勢族群。2009年網軟公司進入了另一個嶄新的年代，台灣軟體服務界的翹楚「叡揚資訊 Galaxy Software Services」加入成為「網軟公司」的策略合夥人，希望結合「叡揚資訊」在資訊領域20多年的經驗、知識和產品研發規劃能力，在未來的日子裏帶給所有非營利組織更完善的解決方案，提昇e化能力。
-					.value
-						.col-12.col-lg-8.order-2.order-lg-1
-							.value_group
-								.col-3.col-md-2
-									img.img-fluid(src="./img/about/intersoft/about_corevalue_welfare.png", alt="")
-								.col-9.col-md-10
-									p 我們用愛心經營企業，善盡社會責任，為社會「創造經濟價值」的同時也「創造社會價值」。網軟公司有責任為公益團體提供良好的科技環境而努力，符合成立宗旨的長期社會關懷，是網軟公司持續不斷努力的目標。
-							.value_group
-								.col-3.col-md-2
-									img.img-fluid(src="./img/about/intersoft/about_corevalue_info.png", alt="")
-								.col-9.col-md-10
-									p 資訊科技應用是我們的專業，如何將資訊導入非營利組織，使組織強化內部作業效率，並將組織透過網路行銷到世界，是網軟的企業責任，期許更多的非營利組織能藉由我們的服務，幫助需要更多關懷的人。
-							.value_group
-								.col-3.col-md-2
-									img.img-fluid(src="./img/about/intersoft/about_corevalue_design.png", alt="")
-								.col-9.col-md-10
-									p 除了資訊科技外，我們更重視的是非營利組織的文化與精神，我們擁有服務公益團體多年的專家，了解非營利組織營運的需求，使我們可以提供更貼心、更優質的專業NPO資訊服務。
-						.col-12.col-lg-4.order-1.order-lg-2
-							img.img-fluid(src="./img/about/intersoft/about_corevalue.png", alt="")
-					#back
+				.title.col-12
+					h2 網軟
+				//- 匯入手機版社群分享
+				include phone_social_share.pug
+				.content.col-12
+					.intersoft.flex-wrap
+						.col-12.col-lg-6.p-0.building
+							img.img-fluid(src="./img/about/intersoft/about_office.jpg", alt="")
+						.col-12.col-lg-6.text
+							p &nbsp;&nbsp;&nbsp;&nbsp;「網軟股份有限公司」係由喜瑪拉雅基金會所成立的社會企業，協助非營利組織解決資訊化過程中，所面臨的許多困難，包括缺乏相關應用軟體、缺乏資訊人才、網路公司不穩定、網路資料安全、以及缺乏足夠的市場吸引專業網路公司投入...等問題，並藉以降低公益團體的數位落差。成立至今，已成功的協助許多公益團體設置內部管理網站系統，簡化日常工作流程，降低行政成本，以及提升工作的效率與品質。
+							p &nbsp;&nbsp;&nbsp;&nbsp; 為公益團體帶來資訊化是網軟公司的使命，應用各種開發軟體來降低勞動強度、提高效率，為所有公益團體服務，希望能創造雙贏局面，使公益團體能藉由我們提供的系統來服務更多社會上的弱勢族群。2009年網軟公司進入了另一個嶄新的年代，台灣軟體服務界的翹楚「叡揚資訊 Galaxy Software Services」加入成為「網軟公司」的策略合夥人，希望結合「叡揚資訊」在資訊領域20多年的經驗、知識和產品研發規劃能力，在未來的日子裏帶給所有非營利組織更完善的解決方案，提昇e化能力。
+						.value.flex-wrap
+							.col-12.col-lg-8.p-0
+								.value_group.flex-wrap
+									.col-12.col-sm-3.col-md-2
+										img.img-fluid(src="./img/about/intersoft/about_corevalue_welfare.png", alt="")
+									.col-12.col-sm-9.col-md-10
+										p 我們用愛心經營企業，善盡社會責任，為社會「創造經濟價值」的同時也「創造社會價值」。網軟公司有責任為公益團體提供良好的科技環境而努力，符合成立宗旨的長期社會關懷，是網軟公司持續不斷努力的目標。
+								.value_group.flex-wrap
+									.col-12.col-sm-3.col-md-2
+										img.img-fluid(src="./img/about/intersoft/about_corevalue_info.png", alt="")
+									.col-12.col-sm-9.col-md-10
+										p 資訊科技應用是我們的專業，如何將資訊導入非營利組織，使組織強化內部作業效率，並將組織透過網路行銷到世界，是網軟的企業責任，期許更多的非營利組織能藉由我們的服務，幫助需要更多關懷的人。
+								.value_group.flex-wrap
+									.col-12.col-sm-3.col-md-2
+										img.img-fluid(src="./img/about/intersoft/about_corevalue_design.png", alt="")
+									.col-12.col-sm-9.col-md-10
+										p 除了資訊科技外，我們更重視的是非營利組織的文化與精神，我們擁有服務公益團體多年的專家，了解非營利組織營運的需求，使我們可以提供更貼心、更優質的專業NPO資訊服務。
+							.col-12.col-lg-4.p-0
+								img.img-fluid(src="./img/about/intersoft/about_corevalue.png", alt="")
+					#link
 						a(href="http://www.intersoft.com.tw" target="_blank")
-							h4 了解更多
-
-					
-				
-
+							h4 了解更多	
+		//- 匯入pc版社群分享
+		include pc_social_share.pug
 		//- 匯入底部廣告
 		include footer_ad.pug
 		//- 匯入footer+script

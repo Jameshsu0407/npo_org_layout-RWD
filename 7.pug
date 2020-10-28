@@ -1,5 +1,5 @@
 doctype html
-html(lang="en")
+html(lang="zh-tw")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
@@ -9,15 +9,16 @@ html(lang="en")
 	body#top
 		//- 匯入導覽列+gototop
 		include nav.pug
-
-		section#welfare_shop.container
+		.mt-135
+		section.container
 			.row
-				.content_top.col-12
-					h2.content_title.col-12 公益商城
-					.col-12
-						form.form-inline.col-12.selector
-							.select_wrap.col-12.col-md-3
-								select.col-12.selectpicker(data-size="5")
+				.title.col-12
+					h2 公益商城
+				.content.col-12
+					form
+						.selector.flex-wrap
+							.col-wrap.col-12.col-md-3
+								select.selectpicker(data-size="5" data-width="100%")
 									option(selected="" disabled="") 機構類別
 									option 綜合性服務
 									option 兒童青少年福利
@@ -37,118 +38,30 @@ html(lang="en")
 									option 教育與科學
 									option 性別平等
 									option 政府單位
-									option 動物保護
-							.select_wrap.col-12.col-md-3
-								select.col-12.selectpicker(data-size="5")
+									option 動物保護									
+							.col-wrap.col-12.col-md-3
+								select.selectpicker(data-size="5" data-width="100%")
 									option(selected="" disabled="") 商品類別
 									option 食品
 									option 衣物
 									option 用品
 									option 書籍
 									option 配件
-							.select_wrap.col-12.col-md-4
-								input.form-control.col-12(type="text" placeholder="關鍵字")
-							.select_wrap.col-12.col-md-2
-								button.btn.lookmore.col-12.m-0(type="button") 送出
-					.products
-						.col-12.col-sm-6.col-md-4.col-lg-3
-							a(href="12.11.1.html")
-								.pic
-									img.img-fluid(src="./img/product/pd1.jpg")
-								h3.title 商品名稱
-								p.text 商品價錢
-						.col-12.col-sm-6.col-md-4.col-lg-3
-							a(href="12.11.1.html")
-								.pic
-									img.img-fluid(src="./img/product/pd2.jpg")
-								h3.title 商品名稱
-								p.text 商品價錢
-						.col-12.col-sm-6.col-md-4.col-lg-3
-							a(href="12.11.1.html")
-								.pic
-									img.img-fluid(src="./img/product/pd3.jpg")
-								h3.title 商品名稱
-								p.text 商品價錢
-						.col-12.col-sm-6.col-md-4.col-lg-3
-							a(href="12.11.1.html")
-								.pic
-									img.img-fluid(src="./img/product/pd1.jpg")
-								h3.title 商品名稱
-								p.text 商品價錢
-						.col-12.col-sm-6.col-md-4.col-lg-3
-							a(href="12.11.1.html")
-								.pic
-									img.img-fluid(src="./img/product/pd2.jpg")
-								h3.title 商品名稱
-								p.text 商品價錢
-						.col-12.col-sm-6.col-md-4.col-lg-3
-							a(href="12.11.1.html")
-								.pic
-									img.img-fluid(src="./img/product/pd3.jpg")
-								h3.title 商品名稱
-								p.text 商品價錢
-						.col-12.col-sm-6.col-md-4.col-lg-3
-							a(href="12.11.1.html")
-								.pic
-									img.img-fluid(src="./img/product/pd1.jpg")
-								h3.title 商品名稱
-								p.text 商品價錢
-						.col-12.col-sm-6.col-md-4.col-lg-3
-							a(href="12.11.1.html")
-								.pic
-									img.img-fluid(src="./img/product/pd2.jpg")
-								h3.title 商品名稱
-								p.text 商品價錢
-						.col-12.col-sm-6.col-md-4.col-lg-3
-							a(href="12.11.1.html")
-								.pic
-									img.img-fluid(src="./img/fakeimg/800x800.png")
-								h3.title 商品名稱
-								p.text 商品價錢
-						.col-12.col-sm-6.col-md-4.col-lg-3
-							a(href="12.11.1.html")
-								.pic
-									img.img-fluid(src="./img/fakeimg/800x450.png")
-								h3.title 商品名稱
-								p.text 商品價錢
-						.col-12.col-sm-6.col-md-4.col-lg-3
-							a(href="12.11.1.html")
-								.pic
-									img.img-fluid(src="./img/fakeimg/1000x200.png")
-								h3.title 商品名稱
-								p.text 商品價錢
-						.col-12.col-sm-6.col-md-4.col-lg-3
-							a(href="12.11.1.html")
-								.pic
-									img.img-fluid(src="./img/fakeimg/200x1000.png")
-								h3.title 商品名稱
-								p.text 商品價錢
-						.col-12.col-sm-6.col-md-4.col-lg-3
-							a(href="12.11.1.html")
-								.pic
-									img.img-fluid(src="./img/fakeimg/800x800.png")
-								h3.title 商品名稱
-								p.text 商品價錢
-						.col-12.col-sm-6.col-md-4.col-lg-3
-							a(href="12.11.1.html")
-								.pic
-									img.img-fluid(src="./img/fakeimg/800x800.png")
-								h3.title 商品名稱
-								p.text 商品價錢
-						.col-12.col-sm-6.col-md-4.col-lg-3
-							a(href="12.11.1.html")
-								.pic
-									img.img-fluid(src="./img/fakeimg/800x800.png")
-								h3.title 商品名稱
-								p.text 商品價錢
-						.col-12.col-sm-6.col-md-4.col-lg-3
-							a(href="12.11.1.html")
-								.pic
-									img.img-fluid(src="./img/fakeimg/800x800.png")
-								h3.title 商品名稱
-								p.text 商品價錢
-					include page.pug
-		
+							.col-wrap.col-12.col-md-4
+								input.form-control(type="text" placeholder="關鍵字")
+							.col-wrap.col-12.col-md-2
+								button.btn.selector-button(type="button") 送出
+						.list
+							.four-list
+								- for ( var i=1 ; i<=20 ; i++)
+									.four-list-wrap
+										a(href="12.12.html")
+											.post
+												.pic
+													img.img-fluid(src="./img/product/pd1.jpg", alt="")
+												h3.text-truncate.text-center 商品名稱商品名稱商品名稱商品名稱商品名稱商品名稱商品名稱
+												h4.text-truncate.text-center 商品價錢商品價錢商品價錢商品價錢商品價錢商品價錢商品價錢
+						include page.pug
 		//- 匯入底部廣告
 		include footer_ad.pug
 		//- 匯入footer+script

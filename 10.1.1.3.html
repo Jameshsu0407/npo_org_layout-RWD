@@ -1,9 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>前台-機構-最新活動-列表</title>
+    <!-- favicon-->
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico">
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="./img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/favicon-152-precomposed.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/favicon-144-precomposed.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/favicon-120-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/favicon-114-precomposed.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/favicon-180-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/favicon-72-precomposed.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/favicon-57.png">
+    <link rel="icon" sizes="32x32" href="./img/favicon/favicon-32.png">
     <!-- bootstrap v4.41-->
     <link rel="stylesheet" href="./css/bootstrap.css">
     <!-- slick v1.8-->
@@ -140,282 +151,287 @@
         </div>
       </div>
     </nav>
-    <section class="member_same container" id="font_end_org_activities_list">
+    <div class="mt-135"></div>
+    <section class="container">
       <div class="row">
-        <div class="content_top col-12">
-          <h2 class="content_title col-12">最新活動</h2>
-          <!-- 左側-->
-          <div class="left col-12 col-lg-3">
-            <!-- pc版導覽列-->
-            <ul class="pc_nav">
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.1.html">修改機構基本資料</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.3.html">最新活動</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.4.html">公益影片</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.5.html">補助公告</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.6.html">救助公告</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.7.html">獎助公告</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.8.html">物資需求</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.9.html">志工招募</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.10.html">全職工作</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.11.html">兼職工作</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.15.html">履歷查詢</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.12.html">公益商城</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.13.html">機構使用者維護</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.2.html">廣告刊登</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.14.html">修改密碼</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.html">登出</a></li>
-            </ul>
-            <!-- 手機版導覽列-->
-            <select class="selectpicker phone_nav" onchange="location.href=this.options[this.selectedIndex].value">
-              <option value="10.1.1.1.html">修改機構基本資料</option>
-              <option value="10.1.1.3.html" selected> 最新活動</option>
-              <option value="10.1.1.4.html"> 公益影片</option>
-              <option value="10.1.1.5.html"> 補助公告</option>
-              <option value="10.1.1.6.html"> 救助公告</option>
-              <option value="10.1.1.7.html"> 獎助公告</option>
-              <option value="10.1.1.8.html"> 物資需求</option>
-              <option value="10.1.1.9.html"> 志工招募</option>
-              <option value="10.1.1.10.html"> 全職工作</option>
-              <option value="10.1.1.11.html"> 兼職工作</option>
-              <option value="10.1.1.15.html"> 履歷查詢</option>
-              <option value="10.1.1.12.html"> 公益商城</option>
-              <option value="10.1.1.13.html"> 機構使用者維護</option>
-              <option value="10.1.1.2.html">廣告刊登</option>
-              <option value="10.1.1.14.html"> 修改密碼</option>
-              <option value="10.1.html"> 登出</option>
-            </select>
-          </div>
-          <!-- 右側-->
-          <div class="right col-12 col-lg-9">
-            <div class="top_information">
-              <h4>機構代碼&nbsp;&nbsp;176</h4>
-              <h4>機構名稱&nbsp;&nbsp;喜瑪拉雅研究發展基金會</h4>
-              <div class="right_1"><span>年度</span>
-                <select class="selectpicker post_year" data-size="5">
-                  <option>2020</option>
-                  <option>2019</option>
-                  <option>2018</option>
-                  <option>2017</option>
-                  <option>2016</option>
-                  <option>2015</option>
-                </select>
-                <button class="btn btn-sm" type="button" onclick="javascript:location.href='10.1.1.3.1.html'">新增</button>
-              </div>
-              <div class="right_2"><span>每月發佈限</span><span class="max_piece">10</span><span>則, 本月已發佈</span><span class="now_piece">0</span><span>則</span></div>
-            </div>
-            <div class="warring_rule">
-              <h4>注意事項</h4>
-              <ol>
-                <li>與公益無相關之活動，請勿刊登在此。</li>
-                <li>本服務僅供發佈非營利性質活動資訊，且活動費用每日不得超過新台幣3,000元，營利性質活動請勿刊登。</li>
-                <li>台灣公益資訊中心保有審核權力。</li>
-                <li>發佈活動訊息前，請詳閱台灣公益資訊中心發佈訊息規則。</li>
-              </ol>
-            </div>
-            <div class="table-responsive">
-              <table class="table">
-                <thead class="thead-color text-center">
-                  <tr>
-                    <th class="text-nowrap" scope="col">類別</th>
-                    <th class="text-nowrap" scope="col">活動標題</th>
-                    <th class="text-nowrap" scope="col">活動時間</th>
-                    <th class="text-nowrap" scope="col">點閱次數</th>
-                    <th class="text-nowrap" scope="col">審核狀態</th>
-                    <th class="text-nowrap" scope="col">報名人數</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">綜合性服務</th>
-                    <th class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">第四屆「堉璘台灣奉獻獎」公開徵選</th>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">2020/04/13</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">107</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">審核中</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.2.html">
-                      <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">綜合性服務</th>
-                    <th class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</th>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">2020/04/13</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">52</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">通過</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.2.html">
-                      <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">綜合性服務</th>
-                    <th class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">第四屆「堉璘台灣奉獻獎」公開徵選</th>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">2020/04/13</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">107</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">審核中</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.2.html">
-                      <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">綜合性服務</th>
-                    <th class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</th>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">2020/04/13</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">52</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">通過</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.2.html">
-                      <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">綜合性服務</th>
-                    <th class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">第四屆「堉璘台灣奉獻獎」公開徵選</th>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">2020/04/13</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">107</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">審核中</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.2.html">
-                      <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">綜合性服務</th>
-                    <th class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</th>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">2020/04/13</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">52</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">通過</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.2.html">
-                      <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">綜合性服務</th>
-                    <th class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">第四屆「堉璘台灣奉獻獎」公開徵選</th>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">2020/04/13</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">107</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">審核中</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.2.html">
-                      <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">綜合性服務</th>
-                    <th class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</th>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">2020/04/13</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">52</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">通過</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.2.html">
-                      <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">綜合性服務</th>
-                    <th class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">第四屆「堉璘台灣奉獻獎」公開徵選</th>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">2020/04/13</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">107</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">審核中</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.2.html">
-                      <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">綜合性服務</th>
-                    <th class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</th>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">2020/04/13</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">52</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">通過</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.2.html">
-                      <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">綜合性服務</th>
-                    <th class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">第四屆「堉璘台灣奉獻獎」公開徵選</th>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">2020/04/13</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">107</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">審核中</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.2.html">
-                      <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">綜合性服務</th>
-                    <th class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</th>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">2020/04/13</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">52</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">通過</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.2.html">
-                      <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">綜合性服務</th>
-                    <th class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">第四屆「堉璘台灣奉獻獎」公開徵選</th>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">2020/04/13</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">107</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">審核中</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.2.html">
-                      <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">綜合性服務</th>
-                    <th class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線</th>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">2020/04/13</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">52</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">通過</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.2.html">
-                      <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">綜合性服務</th>
-                    <th class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">第四屆「堉璘台灣奉獻獎」公開徵選</th>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">2020/04/13</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">107</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.1.html">審核中</td>
-                    <td class="text-nowrap text-center clickable-row" data-href="10.1.1.3.2.html">
-                      <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <!-- 分頁-->
-            <div id="page">
-              <ul class="pagination">
-                <li><a href="#"><i class="fa fa-angle-double-left fa-lg" aria-hidden="true"></i><span class="sr-only">第一頁</span></a></li>
-                <li><a href="#"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i><span class="sr-only">上一頁</span></a></li>
-                <!-- 使用者輸入-->
-                <!-- <li><a><input type="text" placeholder="" size="1">&nbsp;&nbsp;<span>/&nbsp;&nbsp;15</span></a></li>-->
-                <!-- select-->
-                <li>
-                  <select class="select_css" onchange="location.href=this.options[this.selectedIndex].value">
-                    <option selected="selected" value="#">1</option>
-                    <option value="#">2</option>
-                    <option value="#">3</option>
-                    <option value="#">4</option>
-                    <option value="#">5</option>
-                    <option value="#">6</option>
-                    <option value="#">7</option>
-                    <option value="#">8</option>
-                    <option value="#">9</option>
-                    <option value="#">10</option>
-                    <option value="#">11</option>
-                    <option value="#">12</option>
-                    <option value="#">13</option>
-                    <option value="#">14</option>
-                    <option value="#">15</option>
-                  </select><span>/  15</span>
-                </li>
-                <li><a href="#"><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i><span class="sr-only">下一頁</span></a></li>
-                <li><a href="#"><i class="fa fa-angle-double-right fa-lg" aria-hidden="true"></i><span class="sr-only">最後一頁</span></a></li>
+        <div class="title col-12"> 
+          <h2>最新活動</h2>
+        </div>
+        <div class="content col-12">
+          <div class="member_same">
+            <!-- 左側-->
+            <div class="left">
+              <!-- pc版導覽列-->
+              <ul class="pc_nav">
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.1.html">修改機構基本資料</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.3.html">最新活動</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.4.html">公益影片</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.5.html">補助公告</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.6.html">救助公告</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.7.html">獎助公告</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.8.html">物資需求</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.9.html">志工招募</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.10.html">全職工作</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.11.html">兼職工作</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.15.html">履歷查詢</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.12.html">公益商城</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.13.html">機構使用者維護</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.2.html">廣告刊登</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.14.html">修改密碼</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.html">登出</a></li>
               </ul>
+              <!-- 手機版導覽列-->
+              <select class="selectpicker phone_nav" onchange="location.href=this.options[this.selectedIndex].value">
+                <option value="10.1.1.1.html">修改機構基本資料</option>
+                <option value="10.1.1.3.html" selected> 最新活動</option>
+                <option value="10.1.1.4.html"> 公益影片</option>
+                <option value="10.1.1.5.html"> 補助公告</option>
+                <option value="10.1.1.6.html"> 救助公告</option>
+                <option value="10.1.1.7.html"> 獎助公告</option>
+                <option value="10.1.1.8.html"> 物資需求</option>
+                <option value="10.1.1.9.html"> 志工招募</option>
+                <option value="10.1.1.10.html"> 全職工作</option>
+                <option value="10.1.1.11.html"> 兼職工作</option>
+                <option value="10.1.1.15.html"> 履歷查詢</option>
+                <option value="10.1.1.12.html"> 公益商城</option>
+                <option value="10.1.1.13.html"> 機構使用者維護</option>
+                <option value="10.1.1.2.html">廣告刊登</option>
+                <option value="10.1.1.14.html"> 修改密碼</option>
+                <option value="10.1.html"> 登出</option>
+              </select>
             </div>
-            <!--分頁-->
+            <!-- 右側-->
+            <div class="right">
+              <div class="front_end_list">
+                <div class="top_information">
+                  <h4 class="npo_id">機構代碼&nbsp;&nbsp;176</h4>
+                  <h4 class="npo_name">機構名稱&nbsp;&nbsp;喜瑪拉雅研究發展基金會</h4>
+                  <div class="top_information_year"><span>年度</span>
+                    <select class="selectpicker post_year" data-size="5">
+                      <option>2020</option>
+                      <option>2019</option>
+                      <option>2018</option>
+                      <option>2017</option>
+                      <option>2016</option>
+                      <option>2015</option>
+                    </select>
+                    <button class="btn btn-sm" type="button" onclick="javascript:location.href='10.1.1.3.1.html'">新增</button>
+                  </div>
+                  <div class="top_information_post_count"><span>每月發佈限</span><span class="max_piece">10</span><span>則, 本月已發佈</span><span class="now_piece">0</span><span>則</span></div>
+                </div>
+                <div class="warring_rule">
+                  <h4>注意事項</h4>
+                  <ol>
+                    <li>與公益無相關之活動，請勿刊登在此。</li>
+                    <li>本服務僅供發佈非營利性質活動資訊，且活動費用每日不得超過新台幣3,000元，營利性質活動請勿刊登。</li>
+                    <li>台灣公益資訊中心保有審核權力。</li>
+                    <li>發佈活動訊息前，請詳閱台灣公益資訊中心發佈訊息規則。</li>
+                  </ol>
+                </div>
+                <table class="table table-striped">
+                  <thead>
+                    <tr class="text-center">
+                      <th scope="col" style="width: 15%">類別</th>
+                      <th class="text-left" scope="col" style="width: 25%">活動標題</th>
+                      <th scope="col" style="width: 15%">活動時間</th>
+                      <th scope="col" style="width: 15%">點閱次數</th>
+                      <th scope="col" style="width: 15%">審核狀態</th>
+                      <th scope="col" style="width: 15%">報名人數</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="text-center">
+                      <td data-th="類別">綜合性服務</td>
+                      <td class="text-left text-truncate" data-th="活動標題" onclick="location.href='10.1.1.3.1.html'">第四屆「堉璘台灣奉獻獎」公開徵選公開徵選</td>
+                      <td data-th="活動時間" onclick="location.href='10.1.1.3.1.html'">2020/04/13</td>
+                      <td data-th="點閱次數" onclick="location.href='10.1.1.3.1.html'">107</td>
+                      <td data-th="審核狀態" onclick="location.href='10.1.1.3.1.html'">審核中</td>
+                      <td data-th="報名人數">
+                        <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
+                      </td>
+                    </tr>
+                    <tr class="text-center">
+                      <td data-th="類別">綜合性服務</td>
+                      <td class="text-left text-truncate" data-th="活動標題" onclick="location.href='10.1.1.3.1.html'">第四屆「堉璘台灣奉獻獎」公開徵選公開徵選</td>
+                      <td data-th="活動時間" onclick="location.href='10.1.1.3.1.html'">2020/04/13</td>
+                      <td data-th="點閱次數" onclick="location.href='10.1.1.3.1.html'">107</td>
+                      <td data-th="審核狀態" onclick="location.href='10.1.1.3.1.html'">審核中</td>
+                      <td data-th="報名人數">
+                        <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
+                      </td>
+                    </tr>
+                    <tr class="text-center">
+                      <td data-th="類別">綜合性服務</td>
+                      <td class="text-left text-truncate" data-th="活動標題" onclick="location.href='10.1.1.3.1.html'">第四屆「堉璘台灣奉獻獎」公開徵選公開徵選</td>
+                      <td data-th="活動時間" onclick="location.href='10.1.1.3.1.html'">2020/04/13</td>
+                      <td data-th="點閱次數" onclick="location.href='10.1.1.3.1.html'">107</td>
+                      <td data-th="審核狀態" onclick="location.href='10.1.1.3.1.html'">審核中</td>
+                      <td data-th="報名人數">
+                        <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
+                      </td>
+                    </tr>
+                    <tr class="text-center">
+                      <td data-th="類別">綜合性服務</td>
+                      <td class="text-left text-truncate" data-th="活動標題" onclick="location.href='10.1.1.3.1.html'">第四屆「堉璘台灣奉獻獎」公開徵選公開徵選</td>
+                      <td data-th="活動時間" onclick="location.href='10.1.1.3.1.html'">2020/04/13</td>
+                      <td data-th="點閱次數" onclick="location.href='10.1.1.3.1.html'">107</td>
+                      <td data-th="審核狀態" onclick="location.href='10.1.1.3.1.html'">審核中</td>
+                      <td data-th="報名人數">
+                        <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
+                      </td>
+                    </tr>
+                    <tr class="text-center">
+                      <td data-th="類別">綜合性服務</td>
+                      <td class="text-left text-truncate" data-th="活動標題" onclick="location.href='10.1.1.3.1.html'">第四屆「堉璘台灣奉獻獎」公開徵選公開徵選</td>
+                      <td data-th="活動時間" onclick="location.href='10.1.1.3.1.html'">2020/04/13</td>
+                      <td data-th="點閱次數" onclick="location.href='10.1.1.3.1.html'">107</td>
+                      <td data-th="審核狀態" onclick="location.href='10.1.1.3.1.html'">審核中</td>
+                      <td data-th="報名人數">
+                        <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
+                      </td>
+                    </tr>
+                    <tr class="text-center">
+                      <td data-th="類別">綜合性服務</td>
+                      <td class="text-left text-truncate" data-th="活動標題" onclick="location.href='10.1.1.3.1.html'">第四屆「堉璘台灣奉獻獎」公開徵選公開徵選</td>
+                      <td data-th="活動時間" onclick="location.href='10.1.1.3.1.html'">2020/04/13</td>
+                      <td data-th="點閱次數" onclick="location.href='10.1.1.3.1.html'">107</td>
+                      <td data-th="審核狀態" onclick="location.href='10.1.1.3.1.html'">審核中</td>
+                      <td data-th="報名人數">
+                        <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
+                      </td>
+                    </tr>
+                    <tr class="text-center">
+                      <td data-th="類別">綜合性服務</td>
+                      <td class="text-left text-truncate" data-th="活動標題" onclick="location.href='10.1.1.3.1.html'">第四屆「堉璘台灣奉獻獎」公開徵選公開徵選</td>
+                      <td data-th="活動時間" onclick="location.href='10.1.1.3.1.html'">2020/04/13</td>
+                      <td data-th="點閱次數" onclick="location.href='10.1.1.3.1.html'">107</td>
+                      <td data-th="審核狀態" onclick="location.href='10.1.1.3.1.html'">審核中</td>
+                      <td data-th="報名人數">
+                        <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
+                      </td>
+                    </tr>
+                    <tr class="text-center">
+                      <td data-th="類別">綜合性服務</td>
+                      <td class="text-left text-truncate" data-th="活動標題" onclick="location.href='10.1.1.3.1.html'">第四屆「堉璘台灣奉獻獎」公開徵選公開徵選</td>
+                      <td data-th="活動時間" onclick="location.href='10.1.1.3.1.html'">2020/04/13</td>
+                      <td data-th="點閱次數" onclick="location.href='10.1.1.3.1.html'">107</td>
+                      <td data-th="審核狀態" onclick="location.href='10.1.1.3.1.html'">審核中</td>
+                      <td data-th="報名人數">
+                        <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
+                      </td>
+                    </tr>
+                    <tr class="text-center">
+                      <td data-th="類別">綜合性服務</td>
+                      <td class="text-left text-truncate" data-th="活動標題" onclick="location.href='10.1.1.3.1.html'">第四屆「堉璘台灣奉獻獎」公開徵選公開徵選</td>
+                      <td data-th="活動時間" onclick="location.href='10.1.1.3.1.html'">2020/04/13</td>
+                      <td data-th="點閱次數" onclick="location.href='10.1.1.3.1.html'">107</td>
+                      <td data-th="審核狀態" onclick="location.href='10.1.1.3.1.html'">審核中</td>
+                      <td data-th="報名人數">
+                        <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
+                      </td>
+                    </tr>
+                    <tr class="text-center">
+                      <td data-th="類別">綜合性服務</td>
+                      <td class="text-left text-truncate" data-th="活動標題" onclick="location.href='10.1.1.3.1.html'">第四屆「堉璘台灣奉獻獎」公開徵選公開徵選</td>
+                      <td data-th="活動時間" onclick="location.href='10.1.1.3.1.html'">2020/04/13</td>
+                      <td data-th="點閱次數" onclick="location.href='10.1.1.3.1.html'">107</td>
+                      <td data-th="審核狀態" onclick="location.href='10.1.1.3.1.html'">審核中</td>
+                      <td data-th="報名人數">
+                        <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
+                      </td>
+                    </tr>
+                    <tr class="text-center">
+                      <td data-th="類別">綜合性服務</td>
+                      <td class="text-left text-truncate" data-th="活動標題" onclick="location.href='10.1.1.3.1.html'">第四屆「堉璘台灣奉獻獎」公開徵選公開徵選</td>
+                      <td data-th="活動時間" onclick="location.href='10.1.1.3.1.html'">2020/04/13</td>
+                      <td data-th="點閱次數" onclick="location.href='10.1.1.3.1.html'">107</td>
+                      <td data-th="審核狀態" onclick="location.href='10.1.1.3.1.html'">審核中</td>
+                      <td data-th="報名人數">
+                        <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
+                      </td>
+                    </tr>
+                    <tr class="text-center">
+                      <td data-th="類別">綜合性服務</td>
+                      <td class="text-left text-truncate" data-th="活動標題" onclick="location.href='10.1.1.3.1.html'">第四屆「堉璘台灣奉獻獎」公開徵選公開徵選</td>
+                      <td data-th="活動時間" onclick="location.href='10.1.1.3.1.html'">2020/04/13</td>
+                      <td data-th="點閱次數" onclick="location.href='10.1.1.3.1.html'">107</td>
+                      <td data-th="審核狀態" onclick="location.href='10.1.1.3.1.html'">審核中</td>
+                      <td data-th="報名人數">
+                        <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
+                      </td>
+                    </tr>
+                    <tr class="text-center">
+                      <td data-th="類別">綜合性服務</td>
+                      <td class="text-left text-truncate" data-th="活動標題" onclick="location.href='10.1.1.3.1.html'">第四屆「堉璘台灣奉獻獎」公開徵選公開徵選</td>
+                      <td data-th="活動時間" onclick="location.href='10.1.1.3.1.html'">2020/04/13</td>
+                      <td data-th="點閱次數" onclick="location.href='10.1.1.3.1.html'">107</td>
+                      <td data-th="審核狀態" onclick="location.href='10.1.1.3.1.html'">審核中</td>
+                      <td data-th="報名人數">
+                        <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
+                      </td>
+                    </tr>
+                    <tr class="text-center">
+                      <td data-th="類別">綜合性服務</td>
+                      <td class="text-left text-truncate" data-th="活動標題" onclick="location.href='10.1.1.3.1.html'">第四屆「堉璘台灣奉獻獎」公開徵選公開徵選</td>
+                      <td data-th="活動時間" onclick="location.href='10.1.1.3.1.html'">2020/04/13</td>
+                      <td data-th="點閱次數" onclick="location.href='10.1.1.3.1.html'">107</td>
+                      <td data-th="審核狀態" onclick="location.href='10.1.1.3.1.html'">審核中</td>
+                      <td data-th="報名人數">
+                        <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
+                      </td>
+                    </tr>
+                    <tr class="text-center">
+                      <td data-th="類別">綜合性服務</td>
+                      <td class="text-left text-truncate" data-th="活動標題" onclick="location.href='10.1.1.3.1.html'">第四屆「堉璘台灣奉獻獎」公開徵選公開徵選</td>
+                      <td data-th="活動時間" onclick="location.href='10.1.1.3.1.html'">2020/04/13</td>
+                      <td data-th="點閱次數" onclick="location.href='10.1.1.3.1.html'">107</td>
+                      <td data-th="審核狀態" onclick="location.href='10.1.1.3.1.html'">審核中</td>
+                      <td data-th="報名人數">
+                        <button class="search_btn" onclick="location.href='10.1.1.3.2.html'">查詢</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- 分頁-->
+              <div id="page">
+                <ul class="pagination">
+                  <li><a href="#"><i class="fa fa-angle-double-left fa-lg" aria-hidden="true"></i><span class="sr-only">第一頁</span></a></li>
+                  <li><a href="#"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i><span class="sr-only">上一頁</span></a></li>
+                  <!-- 使用者輸入-->
+                  <!-- <li><a><input type="text" placeholder="" size="1">&nbsp;&nbsp;<span>/&nbsp;&nbsp;15</span></a></li>-->
+                  <!-- select-->
+                  <li>
+                    <select class="select_css" onchange="location.href=this.options[this.selectedIndex].value">
+                      <option selected="selected" value="#">1</option>
+                      <option value="#">2</option>
+                      <option value="#">3</option>
+                      <option value="#">4</option>
+                      <option value="#">5</option>
+                      <option value="#">6</option>
+                      <option value="#">7</option>
+                      <option value="#">8</option>
+                      <option value="#">9</option>
+                      <option value="#">10</option>
+                      <option value="#">11</option>
+                      <option value="#">12</option>
+                      <option value="#">13</option>
+                      <option value="#">14</option>
+                      <option value="#">15</option>
+                    </select><span>/  15</span>
+                  </li>
+                  <li><a href="#"><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i><span class="sr-only">下一頁</span></a></li>
+                  <li><a href="#"><i class="fa fa-angle-double-right fa-lg" aria-hidden="true"></i><span class="sr-only">最後一頁</span></a></li>
+                </ul>
+              </div>
+              <!--分頁-->
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- 底部廣告-->
-    <section class="container" id="bottom_ads"><img class="img-fluid clickable-row" src="./img/fakeimg/350x150.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad1.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad2.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad3.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"></section>
+    <section class="container" id="bottom_ads"><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a></section>
     <!-- footer-->
     <footer>
       <div class="container">

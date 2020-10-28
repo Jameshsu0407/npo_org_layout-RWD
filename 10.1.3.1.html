@@ -1,9 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>前台-會員-修改基本資料</title>
+    <!-- favicon-->
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico">
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="./img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/favicon-152-precomposed.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/favicon-144-precomposed.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/favicon-120-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/favicon-114-precomposed.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/favicon-180-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/favicon-72-precomposed.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/favicon-57.png">
+    <link rel="icon" sizes="32x32" href="./img/favicon/favicon-32.png">
     <!-- bootstrap v4.41-->
     <link rel="stylesheet" href="./css/bootstrap.css">
     <!-- slick v1.8-->
@@ -140,79 +151,88 @@
         </div>
       </div>
     </nav>
-    <section class="member_same container" id="font_end_member_information">
+    <div class="mt-135"></div>
+    <section class="container">
       <div class="row">
-        <div class="content_top col-12">
-          <h2 class="content_title col-12">修改基本資料</h2>
-          <!-- 左側-->
-          <div class="left col-12 col-lg-3">
-            <!-- pc版導覽列-->
-            <ul class="pc_nav">
-              <li><i class="fa fa-caret-right"></i><a href="10.1.3.1.html">修改基本資料</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.3.2.html">履歷登錄</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.3.3.html">修改密碼</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.html">登出</a></li>
-            </ul>
-            <!-- 手機版導覽列-->
-            <select class="selectpicker phone_nav" onchange="location.href=this.options[this.selectedIndex].value">
-              <option value="10.1.3.1.html" selected>修改基本資料</option>
-              <option value="10.1.3.2.html"> 履歷登錄</option>
-              <option value="10.1.3.3.html"> 修改密碼</option>
-              <option value="10.1.html"> 登出</option>
-            </select>
-          </div>
-          <!-- 右側-->
-          <div class="right col-12 col-lg-9">
-            <form>
-              <div class="register_form">
-                <!-- 必填-->
-                <div class="col-12">
-                  <div class="form-group">
-                    <label class="required_star">姓名</label>
-                    <input class="form-control" type="text">
+        <div class="title col-12">
+          <h2>修改基本資料</h2>
+        </div>
+        <div class="content col-12">
+          <div class="member_same">
+            <!-- 左側-->
+            <div class="left">
+              <!-- pc版導覽列-->
+              <ul class="pc_nav">
+                <li><i class="fa fa-caret-right"></i><a href="10.1.3.1.html">修改基本資料</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.3.2.html">履歷登錄</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.3.3.html">修改密碼</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.html">登出</a></li>
+              </ul>
+              <!-- 手機版導覽列-->
+              <select class="selectpicker phone_nav" onchange="location.href=this.options[this.selectedIndex].value">
+                <option value="10.1.3.1.html" selected>修改基本資料</option>
+                <option value="10.1.3.2.html"> 履歷登錄</option>
+                <option value="10.1.3.3.html"> 修改密碼</option>
+                <option value="10.1.html"> 登出</option>
+              </select>
+            </div>
+            <!-- 右側-->
+            <div class="right">
+              <form>
+                <div class="front_end_information">
+                  <div class="register_form flex-wrap">
+                    <!-- 必填-->
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label class="required_star">姓名</label>
+                        <input class="form-control" type="text">
+                      </div>
+                    </div>
+                    <!-- 必填-->
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label class="required_star">出生日期</label>
+                        <input class="form-control" type="date">
+                      </div>
+                    </div>
+                    <!-- 必填-->
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label class="required_star">電話</label>
+                        <input class="form-control" type="text">
+                      </div>
+                    </div>
+                    <!-- 必填-->
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label class="required_star">Email</label>
+                        <input class="form-control" type="email">
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label>備註</label>
+                        <textarea class="form-control" rows="5"></textarea>
+                      </div>
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text required_star">驗證碼</span></div>
+                      <input class="form-control" type="text" placeholder="請輸入驗證碼">
+                      <div class="input-group-append"><a class="checkpin_switch btn" href="#" title="按一下更改驗證碼"><img class="checkpin" src="./img/checkpin.png" alt=""></a></div>
+                    </div>
+                    <div class="col-12">
+                      <button class="btn login_button" type="button" onclick="javascript:location.href=''">送出</button>
+                    </div>
                   </div>
                 </div>
-                <!-- 必填-->
-                <div class="col-12">
-                  <div class="form-group">
-                    <label class="required_star">出生日期</label>
-                    <input class="form-control" type="date">
-                  </div>
-                </div>
-                <!-- 必填-->
-                <div class="col-12">
-                  <div class="form-group">
-                    <label class="required_star">電話</label>
-                    <input class="form-control" type="text">
-                  </div>
-                </div>
-                <!-- 必填-->
-                <div class="col-12">
-                  <div class="form-group">
-                    <label class="required_star">Email</label>
-                    <input class="form-control" type="email">
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-group">
-                    <label>備註</label>
-                    <textarea class="form-control" rows="5"></textarea>
-                  </div>
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text required_star">驗證碼</span></div>
-                  <input class="form-control" type="text" placeholder="請輸入驗證碼">
-                  <div class="input-group-append"><a class="checkpin_switch btn" href="#" title="按一下更改驗證碼"><img class="checkpin" src="./img/checkpin.png" alt=""></a></div>
-                </div>
-                <button class="btn login_button" type="button" onclick="javascript:location.href=''">送出</button>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- 底部廣告-->
-    <section class="container" id="bottom_ads"><img class="img-fluid clickable-row" src="./img/fakeimg/350x150.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad1.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad2.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad3.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"></section>
+    <section class="container" id="bottom_ads"><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a></section>
     <!-- footer-->
     <footer>
       <div class="container">

@@ -1,5 +1,5 @@
 doctype html
-html(lang="en")
+html(lang="zh-tw")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
@@ -9,198 +9,129 @@ html(lang="en")
 	body#top
 		//- 匯入導覽列+gototop
 		include nav.pug
-
-		section#font_end_org_full_work_list.member_same.container
+		.mt-135
+		section.container
 			.row
-				.content_top.col-12
-					h2.content_title.col-12 全職工作
-					// 左側
-					.left.col-12.col-lg-3
-						// pc版導覽列
-						ul.pc_nav
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.1.html") 修改機構基本資料
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.3.html") 最新活動
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.4.html") 公益影片
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.5.html") 補助公告
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.6.html") 救助公告
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.7.html") 獎助公告
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.8.html") 物資需求
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.9.html") 志工招募
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.10.html") 全職工作
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.11.html") 兼職工作
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.15.html") 履歷查詢
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.12.html") 公益商城
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.13.html") 機構使用者維護
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.2.html") 廣告刊登
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.14.html") 修改密碼
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.html") 登出
-						// 手機版導覽列
-						select.selectpicker.phone_nav(onchange="location.href=this.options[this.selectedIndex].value")
-							option(value="10.1.1.1.html") 修改機構基本資料
-							option(value="10.1.1.3.html")  最新活動
-							option(value="10.1.1.4.html")  公益影片
-							option(value="10.1.1.5.html")  補助公告
-							option(value="10.1.1.6.html")  救助公告
-							option(value="10.1.1.7.html")  獎助公告
-							option(value="10.1.1.8.html")  物資需求
-							option(value="10.1.1.9.html")  志工招募
-							option(value="10.1.1.10.html" selected)  全職工作
-							option(value="10.1.1.11.html")  兼職工作
-							option(value="10.1.1.15.html")  履歷查詢
-							option(value="10.1.1.12.html")  公益商城
-							option(value="10.1.1.13.html")  機構使用者維護
-							option(value="10.1.1.2.html") 廣告刊登
-							option(value="10.1.1.14.html")  修改密碼
-							option(value="10.1.html")  登出
-					// 右側
-					.right.col-12.col-lg-9
-						.top_information
-							h4 機構代碼&nbsp;&nbsp;176
-							h4 機構名稱&nbsp;&nbsp;喜瑪拉雅研究發展基金會
-							.right_1
-								span 年度
-								select.selectpicker.post_year(data-size="5")
-									option 2020
-									option 2019
-									option 2018
-									option 2017
-									option 2016
-									option 2015
-								button.btn.btn-sm(type="button" onclick="javascript:location.href='10.1.1.10.1.html'") 新增
-							.right_2
-								span 每月發佈限
-								span.max_piece 10
-								span 則, 本月已發佈
-								span.now_piece 0
-								span 則
-						.warring_rule
-							h4 注意事項
-							ol
-								li 禁止張貼違反「就業服務法」、「性別平等工作法」、「勞基法」與其他法律之文章，發文者已同意一切遵循現行法律，並確知文責自負。
-								li 提醒您，為保障國民就業機會平等，雇主對求職人或所僱用員工，不得以種族、階級、語言、思想、宗教、黨派、籍貫、出生地、性別、性傾向、年齡、婚姻、容貌、五官、身心障礙或以往工會會員身分為由，予以歧視；但工作性質僅適合特定性別者，不在此限。
-								li 依據工作之性質與特點，確保在適當之安全與衛生條件下從事工作。
-								li 請利用左方選單「發佈志工招募」單元發佈志工招募訊息，違者原文恕刪。
-						table.table.col-12
-							thead.thead-color.text-center
-								tr
-									th.type_width.off(scope="col") 職缺類別
-									th(scope="col") 職務名稱
-									th(scope="col") 發佈時間
-									th.type_width(scope="col") 點閱次數
-							tbody
-								tr.clickable-row(data-href="10.1.1.10.1.html")
-									th.text-center.off(scope="row") 綜合性服務
-									th.text-center.text-truncate 第四屆「堉璘台灣奉獻獎」公開徵選
-									td.text-center.text-truncate 2020/04/13
-									td.text-center 107
-								tr.clickable-row(data-href="10.1.1.10.1.html")
-									th.text-center.off(scope="row") 綜合性服務
-									th.text-center.text-truncate 吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線
-									td.text-center.text-truncate 2020/04/13
-									td.text-center 52
-								tr.clickable-row(data-href="10.1.1.10.1.html")
-									th.text-center.off(scope="row") 綜合性服務
-									th.text-center.text-truncate 第四屆「堉璘台灣奉獻獎」公開徵選
-									td.text-center.text-truncate 2020/04/13
-									td.text-center 107
-								tr.clickable-row(data-href="10.1.1.10.1.html")
-									th.text-center.off(scope="row") 綜合性服務
-									th.text-center.text-truncate 吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線
-									td.text-center.text-truncate 2020/04/13
-									td.text-center 52
-								tr.clickable-row(data-href="10.1.1.10.1.html")
-									th.text-center.off(scope="row") 綜合性服務
-									th.text-center.text-truncate 第四屆「堉璘台灣奉獻獎」公開徵選
-									td.text-center.text-truncate 2020/04/13
-									td.text-center 107
-								tr.clickable-row(data-href="10.1.1.10.1.html")
-									th.text-center.off(scope="row") 綜合性服務
-									th.text-center.text-truncate 吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線
-									td.text-center.text-truncate 2020/04/13
-									td.text-center 52
-								tr.clickable-row(data-href="10.1.1.10.1.html")
-									th.text-center.off(scope="row") 綜合性服務
-									th.text-center.text-truncate 第四屆「堉璘台灣奉獻獎」公開徵選
-									td.text-center.text-truncate 2020/04/13
-									td.text-center 107
-								tr.clickable-row(data-href="10.1.1.10.1.html")
-									th.text-center.off(scope="row") 綜合性服務
-									th.text-center.text-truncate 吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線
-									td.text-center.text-truncate 2020/04/13
-									td.text-center 52
-								tr.clickable-row(data-href="10.1.1.10.1.html")
-									th.text-center.off(scope="row") 綜合性服務
-									th.text-center.text-truncate 第四屆「堉璘台灣奉獻獎」公開徵選
-									td.text-center.text-truncate 2020/04/13
-									td.text-center 107
-								tr.clickable-row(data-href="10.1.1.10.1.html")
-									th.text-center.off(scope="row") 綜合性服務
-									th.text-center.text-truncate 吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線
-									td.text-center.text-truncate 2020/04/13
-									td.text-center 52
-								tr.clickable-row(data-href="10.1.1.10.1.html")
-									th.text-center.off(scope="row") 綜合性服務
-									th.text-center.text-truncate 第四屆「堉璘台灣奉獻獎」公開徵選
-									td.text-center.text-truncate 2020/04/13
-									td.text-center 107
-								tr.clickable-row(data-href="10.1.1.10.1.html")
-									th.text-center.off(scope="row") 綜合性服務
-									th.text-center.text-truncate 吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線
-									td.text-center.text-truncate 2020/04/13
-									td.text-center 52
-								tr.clickable-row(data-href="10.1.1.10.1.html")
-									th.text-center.off(scope="row") 綜合性服務
-									th.text-center.text-truncate 第四屆「堉璘台灣奉獻獎」公開徵選
-									td.text-center.text-truncate 2020/04/13
-									td.text-center 107
-								tr.clickable-row(data-href="10.1.1.10.1.html")
-									th.text-center.off(scope="row") 綜合性服務
-									th.text-center.text-truncate 吹哨遊戲開跑 即刻為農地止血 農地違章舉報上線
-									td.text-center.text-truncate 2020/04/13
-									td.text-center 52
-								tr.clickable-row(data-href="10.1.1.10.1.html")
-									th.text-center.off(scope="row") 綜合性服務
-									th.text-center.text-truncate 第四屆「堉璘台灣奉獻獎」公開徵選
-									td.text-center.text-truncate 2020/04/13
-									td.text-center 107
-						include page.pug
-
-
-
-
-
+				.title.col-12 
+					h2 全職工作
+				.content.col-12
+					.member_same
+						// 左側
+						.left
+							// pc版導覽列
+							ul.pc_nav
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.1.html") 修改機構基本資料
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.3.html") 最新活動
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.4.html") 公益影片
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.5.html") 補助公告
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.6.html") 救助公告
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.7.html") 獎助公告
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.8.html") 物資需求
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.9.html") 志工招募
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.10.html") 全職工作
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.11.html") 兼職工作
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.15.html") 履歷查詢
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.12.html") 公益商城
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.13.html") 機構使用者維護
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.2.html") 廣告刊登
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.14.html") 修改密碼
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.html") 登出
+							// 手機版導覽列
+							select.selectpicker.phone_nav(onchange="location.href=this.options[this.selectedIndex].value")
+								option(value="10.1.1.1.html") 修改機構基本資料
+								option(value="10.1.1.3.html")  最新活動
+								option(value="10.1.1.4.html")  公益影片
+								option(value="10.1.1.5.html")  補助公告
+								option(value="10.1.1.6.html")  救助公告
+								option(value="10.1.1.7.html")  獎助公告
+								option(value="10.1.1.8.html")  物資需求
+								option(value="10.1.1.9.html")  志工招募
+								option(value="10.1.1.10.html" selected)  全職工作
+								option(value="10.1.1.11.html")  兼職工作
+								option(value="10.1.1.15.html")  履歷查詢
+								option(value="10.1.1.12.html")  公益商城
+								option(value="10.1.1.13.html")  機構使用者維護
+								option(value="10.1.1.2.html") 廣告刊登
+								option(value="10.1.1.14.html")  修改密碼
+								option(value="10.1.html")  登出
+						// 右側
+						.right
+							.front_end_list
+								.top_information
+									h4.npo_id 機構代碼&nbsp;&nbsp;176
+									h4.npo_name 機構名稱&nbsp;&nbsp;喜瑪拉雅研究發展基金會
+									.top_information_year
+										span 年度
+										select.selectpicker.post_year(data-size="5")
+											option 2020
+											option 2019
+											option 2018
+											option 2017
+											option 2016
+											option 2015
+										button.btn.btn-sm(type="button" onclick="javascript:location.href='10.1.1.10.1.html'") 新增
+									.top_information_post_count
+										span 每月發佈限
+										span.max_piece 10
+										span 則, 本月已發佈
+										span.now_piece 0
+										span 則
+								.warring_rule
+									h4 注意事項
+									ol
+										li 禁止張貼違反「就業服務法」、「性別平等工作法」、「勞基法」與其他法律之文章，發文者已同意一切遵循現行法律，並確知文責自負。
+										li 提醒您，為保障國民就業機會平等，雇主對求職人或所僱用員工，不得以種族、階級、語言、思想、宗教、黨派、籍貫、出生地、性別、性傾向、年齡、婚姻、容貌、五官、身心障礙或以往工會會員身分為由，予以歧視；但工作性質僅適合特定性別者，不在此限。
+										li 依據工作之性質與特點，確保在適當之安全與衛生條件下從事工作。
+										li 請利用左方選單「發佈志工招募」單元發佈志工招募訊息，違者原文恕刪。
+								table.table.table-striped
+									thead
+										tr.text-center
+											th(scope="col" style="width: 20%") 職缺類別
+											th.text-left(scope="col" style="width: 35%") 職務名稱
+											th(scope="col" style="width: 15%") 發佈時間
+											th(scope="col" style="width: 15%") 結束時間
+											th(scope="col" style="width: 15%") 點閱次數
+									tbody
+										- for ( var i=1 ; i<=15 ; i++)
+											tr.text-center(onclick="document.location = '10.1.1.9.1.html';")
+												td(data-th="職缺類別") 綜合性服務
+												td.text-left.text-truncate(data-th="職務名稱") 第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選
+												td(data-th="發佈時間") 2020/04/13
+												td(data-th="結束時間") 2020/05/28
+												td(data-th="點閱次數") 107
+							include page.pug
 		//- 匯入底部廣告
 		include footer_ad.pug
 		//- 匯入footer+script

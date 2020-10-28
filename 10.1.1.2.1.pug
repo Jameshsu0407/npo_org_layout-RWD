@@ -1,5 +1,5 @@
 doctype html
-html(lang="en")
+html(lang="zh-tw")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
@@ -9,148 +9,145 @@ html(lang="en")
 	body#top
 		//- 匯入導覽列+gototop
 		include nav.pug
-
-		section#font_end_org_ad_add.member_same.container
+		.mt-135
+		section.container
 			.row
-				.content_top.col-12
-					h2.content_title.col-12 廣告刊登
-					// 左側
-					.left.col-12.col-lg-3
-						// pc版導覽列
-						ul.pc_nav
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.1.html") 修改機構基本資料
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.3.html") 最新活動
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.4.html") 公益影片
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.5.html") 補助公告
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.6.html") 救助公告
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.7.html") 獎助公告
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.8.html") 物資需求
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.9.html") 志工招募
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.10.html") 全職工作
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.11.html") 兼職工作
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.15.html") 履歷查詢
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.12.html") 公益商城
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.13.html") 機構使用者維護
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.2.html") 廣告刊登
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.14.html") 修改密碼
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.html") 登出
-						// 手機版導覽列
-						select.selectpicker.phone_nav(onchange="location.href=this.options[this.selectedIndex].value")
-							option(value="10.1.1.1.html") 修改機構基本資料
-							option(value="10.1.1.3.html")  最新活動
-							option(value="10.1.1.4.html")  公益影片
-							option(value="10.1.1.5.html")  補助公告
-							option(value="10.1.1.6.html")  救助公告
-							option(value="10.1.1.7.html")  獎助公告
-							option(value="10.1.1.8.html")  物資需求
-							option(value="10.1.1.9.html")  志工招募
-							option(value="10.1.1.10.html")  全職工作
-							option(value="10.1.1.11.html")  兼職工作
-							option(value="10.1.1.15.html")  履歷查詢
-							option(value="10.1.1.12.html")  公益商城
-							option(value="10.1.1.13.html")  機構使用者維護
-							option(value="10.1.1.2.html" selected) 廣告刊登
-							option(value="10.1.1.14.html")  修改密碼
-							option(value="10.1.html")  登出
-					// 右側
-					.right.col-12.col-lg-9
-						form.newpost_add
-							
-							// 必填
-							.col-12
-								.form-group
-									label.required_star 刊登日期
-									input.form-control(type="date")
-							// 修改頁程式自動帶出
-							.col-12
-								.form-group
-									label 結束日期
-									input.form-control(type="date" readonly)
-							// 必填
-							.col-12
-								.form-group
-									label.required_star 刊登天數
-									.post_duration
-										.form-check
-											input.form-check-input(type="radio" name="post_duration")
-											label.form-check-label 14天
-										.form-check
-											input.form-check-input(type="radio" name="post_duration")
-											label.form-check-label 28天
-										.form-check
-											input.form-check-input(type="radio" name="post_duration")
-											label.form-check-label 56天
-										// 延後日期，只有在修改頁面才會出現
-										.postpone
-											button.search_btn(onclick="location.href=''") 延長
-							// 必填
-							.col-12
-								.form-group
-									label.required_star 廣告標題
-									input.form-control(type="text")
-							// 必填
-							.col-12
-								.form-group
-									label.required_star 廣告類別
-									.post_duration
-										.form-check
-											input.form-check-input(type="radio" name="post_duration")
-											label.form-check-label 首頁主視覺（尺寸：1920X600px）
-										.form-check
-											input.form-check-input(type="radio" name="post_duration")
-											label.form-check-label 次頁底部輪播（尺寸：350X150px）
-							// 必填
-							.col-12
-								.form-group
-									label.required_star 上傳廣告圖片
-									.custom-file
-										input.custom-file-input(type="file")
-										label.custom-file-label 上傳廣告圖片
-							.col-12
-								.form-group
-									label 備註
-									textarea.form-control(rows="5")
-							// 必填
-							.input-group.mb-3
-								.input-group-prepend
-									span.input-group-text.required_star 驗證碼
-								input.form-control(type="text" placeholder="請輸入驗證碼")
-								.input-group-append
-									a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")
-										img.checkpin(src="./img/checkpin.png", alt="")
-							button.btn.login_button(type="button" onclick="javascript:location.href=''") 送出
+				.title.col-12
+					h2 廣告刊登
+				.content.col-12
+					.member_same
+						// 左側
+						.left
+							// pc版導覽列
+							ul.pc_nav
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.1.html") 修改機構基本資料
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.3.html") 最新活動
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.4.html") 公益影片
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.5.html") 補助公告
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.6.html") 救助公告
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.7.html") 獎助公告
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.8.html") 物資需求
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.9.html") 志工招募
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.10.html") 全職工作
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.11.html") 兼職工作
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.15.html") 履歷查詢
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.12.html") 公益商城
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.13.html") 機構使用者維護
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.2.html") 廣告刊登
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.14.html") 修改密碼
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.html") 登出
+							// 手機版導覽列
+							select.selectpicker.phone_nav(onchange="location.href=this.options[this.selectedIndex].value")
+								option(value="10.1.1.1.html") 修改機構基本資料
+								option(value="10.1.1.3.html")  最新活動
+								option(value="10.1.1.4.html")  公益影片
+								option(value="10.1.1.5.html")  補助公告
+								option(value="10.1.1.6.html")  救助公告
+								option(value="10.1.1.7.html")  獎助公告
+								option(value="10.1.1.8.html")  物資需求
+								option(value="10.1.1.9.html")  志工招募
+								option(value="10.1.1.10.html")  全職工作
+								option(value="10.1.1.11.html")  兼職工作
+								option(value="10.1.1.15.html")  履歷查詢
+								option(value="10.1.1.12.html")  公益商城
+								option(value="10.1.1.13.html")  機構使用者維護
+								option(value="10.1.1.2.html" selected) 廣告刊登
+								option(value="10.1.1.14.html")  修改密碼
+								option(value="10.1.html")  登出
+						// 右側
+						.right
+							form
+								.front_end_edit
+									// 必填									
+									.form-group
+										label.required_star 刊登日期
+										input.form-control(type="date")
+									// 修改頁程式自動帶出									
+									.form-group
+										label 結束日期
+										input.form-control(type="date" readonly)
+									// 必填									
+									.form-group
+										label.required_star 刊登天數
+										.radio_box
+											.form-check
+												input.form-check-input(type="radio" name="post_duration")
+												label.form-check-label 14天
+											.form-check
+												input.form-check-input(type="radio" name="post_duration")
+												label.form-check-label 28天
+											.form-check
+												input.form-check-input(type="radio" name="post_duration")
+												label.form-check-label 56天
+											// 延後日期，只有在修改頁面才會出現
+											.postpone
+												button.search_btn(onclick="location.href=''") 延長
+									// 必填									
+									.form-group
+										label.required_star 廣告標題
+										input.form-control(type="text")
+									// 必填									
+									.form-group
+										label.required_star 廣告類別
+										.radio_box
+											.form-check
+												input.form-check-input(type="radio" name="post_duration")
+												label.form-check-label 首頁主視覺（尺寸：1920X600px）
+											.form-check
+												input.form-check-input(type="radio" name="post_duration")
+												label.form-check-label 次頁底部輪播（尺寸：350X150px）
+									// 必填									
+									.form-group
+										label.required_star 上傳廣告圖片
+										.custom-file
+											input.custom-file-input(type="file")
+											label.custom-file-label 上傳廣告圖片
+										.show_img.mt-3
+											img.img-fluid(src="./img/ads/ad1.png", alt="")
+									.form-group
+										label 備註
+										textarea.form-control(rows="5")
+									// 必填
+									.input-group.mb-3
+										.input-group-prepend
+											span.input-group-text.required_star 驗證碼
+										input.form-control(type="text" placeholder="請輸入驗證碼")
+										.input-group-append
+											a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")
+												img.checkpin(src="./img/checkpin.png", alt="")
+									button.btn.login_button(type="button" onclick="javascript:location.href=''") 送出
 
 
 		//- 匯入底部廣告

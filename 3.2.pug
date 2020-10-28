@@ -1,5 +1,5 @@
 doctype html
-html(lang="en")
+html(lang="zh-tw")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
@@ -9,32 +9,32 @@ html(lang="en")
 	body#top
 		//- 匯入導覽列+gototop
 		include nav.pug
-
-		section#npo_activities.container
+		.mt-135
+		section.container
 			.row
-				.content_top.col-12
-					h2.content_title.col-12 最新活動
-					.table.col-12
-						form.form-inline.col-12.selector
-							
-							.select_wrap.col-12.col-md-2
-								select.col-12.selectpicker(data-size="5")
+				.title.col-12
+					h2 最新活動
+				.content.col-12
+					form
+						.selector.flex-wrap
+							.col-wrap.col-12.col-md-2
+								select.selectpicker(data-size="5" data-width="100%")
 									option(selected="" disabled="") 類型
 									option 活動
 									option 研習
 									option 會議
 									option 演講
-									option 座談
-							.select_wrap.col-12.col-md-2
-								select.col-12.selectpicker(data-size="5")
+									option 座談								
+							.col-wrap.col-12.col-md-2
+								select.selectpicker(data-size="5" data-width="100%")
 									option(selected="" disabled="") 年份
 									option 2020
 									option 2019
 									option 2018
 									option 2017
 									option 2016
-							.select_wrap.col-12.col-md-2
-								select.col-12.selectpicker(data-size="5")
+							.col-wrap.col-12.col-md-2
+								select.selectpicker(data-size="5" data-width="100%")
 									option(selected="" disabled="") 月份
 									option 1
 									option 2
@@ -48,137 +48,22 @@ html(lang="en")
 									option 10
 									option 11
 									option 12
-							.select_wrap.col-12.col-md-4
-								input.form-control.col-12(type="text" placeholder="關鍵字")
-							.select_wrap.col-12.col-md-2
-								button.btn.lookmore.col-12.m-0(type="button") 送出
-					.content
-						.col-12.col-lg-6
-							a(href="12.2.1.html")
-								.post
-									.col-12.col-md-5.post_left
-										.time_box
-											span.year 2020
-											span.date 06/15
-										// 建議尺寸800x450
-										img.img-fluid(src="./img/activitypic/act1.png" alt="")
-									.col-12.col-md-7.post_right
-										h3 標題標題標題
-										p 內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
-						.col-12.col-lg-6
-							a(href="12.2.1.html")
-								.post
-									.col-12.col-md-5.post_left
-										.time_box
-											span.year 2020
-											span.date 06/15
-										// 建議尺寸800x450
-										img.img-fluid(src="./img/activitypic/act2.png" alt="")
-									.col-12.col-md-7.post_right
-										h3 標題標題標題
-										p 內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
-						.col-12.col-lg-6
-							a(href="12.2.1.html")
-								.post
-									.col-12.col-md-5.post_left
-										.time_box
-											span.year 2020
-											span.date 06/15
-										// 建議尺寸800x450
-										img.img-fluid(src="./img/activitypic/act1.png" alt="")
-									.col-12.col-md-7.post_right
-										h3 標題標題標題
-										p 內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
-						.col-12.col-lg-6
-							a(href="12.2.1.html")
-								.post
-									.col-12.col-md-5.post_left
-										.time_box
-											span.year 2020
-											span.date 06/15
-										// 建議尺寸800x450
-										img.img-fluid(src="./img/activitypic/act2.png" alt="")
-									.col-12.col-md-7.post_right
-										h3 標題標題標題
-										p 內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
-						.col-12.col-lg-6
-							a(href="12.2.1.html")
-								.post
-									.col-12.col-md-5.post_left
-										.time_box
-											span.year 2020
-											span.date 06/15
-										// 建議尺寸800x450
-										img.img-fluid(src="./img/fakeimg/800x450.png" alt="")
-									.col-12.col-md-7.post_right
-										h3 標題標題標題
-										p 內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
-						.col-12.col-lg-6
-							a(href="12.2.1.html")
-								.post
-									.col-12.col-md-5.post_left
-										.time_box
-											span.year 2020
-											span.date 06/15
-										// 建議尺寸800x450
-										img.img-fluid(src="./img/fakeimg/800x800.png" alt="")
-									.col-12.col-md-7.post_right
-										h3 標題標題標題
-										p 內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
-						.col-12.col-lg-6
-							a(href="12.2.1.html")
-								.post
-									.col-12.col-md-5.post_left
-										.time_box
-											span.year 2020
-											span.date 06/15
-										// 建議尺寸800x450
-										img.img-fluid(src="./img/fakeimg/800x800.png" alt="")
-									.col-12.col-md-7.post_right
-										h3 標題標題標題
-										p 內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
-						.col-12.col-lg-6
-							a(href="12.2.1.html")
-								.post
-									.col-12.col-md-5.post_left
-										.time_box
-											span.year 2020
-											span.date 06/15
-										// 建議尺寸800x450
-										img.img-fluid(src="./img/fakeimg/1000x200.png" alt="")
-									.col-12.col-md-7.post_right
-										h3 標題標題標題
-										p 內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
-						.col-12.col-lg-6
-							a(href="12.2.1.html")
-								.post
-									.col-12.col-md-5.post_left
-										.time_box
-											span.year 2020
-											span.date 06/15
-										// 建議尺寸800x450
-										img.img-fluid(src="./img/fakeimg/200x1000.png" alt="")
-									.col-12.col-md-7.post_right
-										h3 標題標題標題
-										p 內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
-						.col-12.col-lg-6
-							a(href="12.2.1.html")
-								.post
-									.col-12.col-md-5.post_left
-										.time_box
-											span.year 2020
-											span.date 06/15
-										// 建議尺寸800x450
-										img.img-fluid(src="./img/fakeimg/800x800.png" alt="")
-									.col-12.col-md-7.post_right
-										h3 標題標題標題
-										p 內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
-						
-						
-						
-					//- 匯入分頁
-					include page.pug
-		
+							.col-wrap.col-12.col-md-4
+								input.form-control(type="text" placeholder="關鍵字")
+							.col-wrap.col-12.col-md-2
+								button.btn.selector-button(type="button") 送出
+						.list
+							.square-list
+								- for ( var i=1 ; i<=10 ; i++)
+									a(href="12.2.1.html")
+										.post
+											.post-left
+												img.img-fluid(src="./img/activitypic/act1.png", alt="")
+											.post-right
+												h3.text-truncate 標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱
+												span.date 2020/10/02
+												p 內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
+						include page.pug
 		//- 匯入底部廣告
 		include footer_ad.pug
 		//- 匯入footer+script

@@ -1,9 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>物資募集</title>
+    <!-- favicon-->
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico">
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="./img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/favicon-152-precomposed.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/favicon-144-precomposed.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/favicon-120-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/favicon-114-precomposed.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/favicon-180-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/favicon-72-precomposed.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/favicon-57.png">
+    <link rel="icon" sizes="32x32" href="./img/favicon/favicon-32.png">
     <!-- bootstrap v4.41-->
     <link rel="stylesheet" href="./css/bootstrap.css">
     <!-- slick v1.8-->
@@ -140,14 +151,17 @@
         </div>
       </div>
     </nav>
-    <section class="container" id="npo_donate">
+    <div class="mt-135"></div>
+    <section class="container">
       <div class="row">
-        <div class="content_top col-12">
-          <h2 class="content_title col-12">物資募集</h2>
-          <div class="table col-12">
-            <form class="form-inline col-12 selector">
-              <div class="select_wrap col-12 col-md-2">
-                <select class="col-12 selectpicker" data-size="5">
+        <div class="title col-12">
+          <h2>物資募集</h2>
+        </div>
+        <div class="content col-12">
+          <form>
+            <div class="selector flex-wrap">
+              <div class="col-wrap col-12 col-md-2">
+                <select class="selectpicker" data-size="5" data-width="100%">
                   <option selected="" disabled="">類型</option>
                   <option>食品</option>
                   <option>餐廚</option>
@@ -167,8 +181,8 @@
                   <option>運輸</option>
                 </select>
               </div>
-              <div class="select_wrap col-12 col-md-2">
-                <select class="col-12 selectpicker" data-size="5">
+              <div class="col-wrap col-12 col-md-2">
+                <select class="selectpicker" data-size="5" data-width="100%">
                   <option selected="" disabled="">年份</option>
                   <option>2020</option>
                   <option>2019</option>
@@ -177,8 +191,8 @@
                   <option>2016</option>
                 </select>
               </div>
-              <div class="select_wrap col-12 col-md-2">
-                <select class="col-12 selectpicker" data-size="5">
+              <div class="col-wrap col-12 col-md-2">
+                <select class="selectpicker" data-size="5" data-width="100%">
                   <option selected="" disabled="">月份</option>
                   <option>1</option>
                   <option>2</option>
@@ -194,169 +208,171 @@
                   <option>12</option>
                 </select>
               </div>
-              <div class="select_wrap col-12 col-md-4">
-                <input class="form-control col-12" type="text" placeholder="關鍵字">
+              <div class="col-wrap col-12 col-md-4">
+                <input class="form-control" type="text" placeholder="關鍵字">
               </div>
-              <div class="select_wrap col-12 col-md-2">
-                <button class="btn lookmore col-12 m-0" type="button">送出</button>
+              <div class="col-wrap col-12 col-md-2">
+                <button class="btn selector-button" type="button">送出</button>
               </div>
-            </form>
-            <table class="table col-12">
-              <thead class="thead-color text-center">
-                <tr>
-                  <th class="type_width" scope="col">物資類型</th>
-                  <th scope="col">物資名稱</th>
-                  <th class="type_width off" scope="col">開始日期</th>
-                  <th class="type_width" scope="col">結束日期</th>
-                  <th class="type_width off" scope="col">募集地區</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="clickable-row" data-href="12.7.1.html">
-                  <th class="text-center" scope="row">家電</th>
-                  <th class="text-truncate">筆記型電腦</th>
-                  <td class="text-center off">2020/06/05</td>
-                  <td class="text-center">2020/06/19</td>
-                  <td class="text-center off">台北市</td>
-                </tr>
-                <tr class="clickable-row" data-href="12.7.1.html">
-                  <th class="text-center" scope="row">家電</th>
-                  <th class="text-truncate">冰箱</th>
-                  <td class="text-center off">2020/06/05</td>
-                  <td class="text-center">2020/06/19</td>
-                  <td class="text-center off">台南市</td>
-                </tr>
-                <tr class="clickable-row" data-href="12.7.1.html">
-                  <th class="text-center" scope="row">家電</th>
-                  <th class="text-truncate">除濕機</th>
-                  <td class="text-center off">2020/06/04</td>
-                  <td class="text-center">2020/07/30</td>
-                  <td class="text-center off">雲林縣</td>
-                </tr>
-                <tr class="clickable-row" data-href="12.7.1.html">
-                  <th class="text-center" scope="row">家電</th>
-                  <th class="text-truncate">分離式冷氣機</th>
-                  <td class="text-center off">2020/06/04</td>
-                  <td class="text-center">2020/07/30</td>
-                  <td class="text-center off">雲林縣</td>
-                </tr>
-                <tr class="clickable-row" data-href="12.7.1.html">
-                  <th class="text-center" scope="row">衛生</th>
-                  <th class="text-truncate">成人紙尿褲(L-XL)、替換式小尿片</th>
-                  <td class="text-center off">2020/06/02</td>
-                  <td class="text-center">2020/07/28</td>
-                  <td class="text-center off">彰化縣</td>
-                </tr>
-                <tr class="clickable-row" data-href="12.7.1.html">
-                  <th class="text-center" scope="row">食品</th>
-                  <th class="text-truncate">三多奶蛋白/三多優蛋白/一般奶粉</th>
-                  <td class="text-center off">2020/06/02</td>
-                  <td class="text-center">2020/07/28</td>
-                  <td class="text-center off">彰化縣</td>
-                </tr>
-                <tr class="clickable-row" data-href="12.7.1.html">
-                  <th class="text-center" scope="row">3C</th>
-                  <th class="text-truncate">二手筆電</th>
-                  <td class="text-center off">2020/05/29</td>
-                  <td class="text-center">2020/06/26</td>
-                  <td class="text-center off"> 屏東縣</td>
-                </tr>
-                <tr class="clickable-row" data-href="12.7.1.html">
-                  <th class="text-center" scope="row">衛生</th>
-                  <th class="text-truncate">浴巾</th>
-                  <td class="text-center off">2020/05/29</td>
-                  <td class="text-center">2020/06/12</td>
-                  <td class="text-center off">屏東縣</td>
-                </tr>
-                <tr class="clickable-row" data-href="12.7.1.html">
-                  <th class="text-center" scope="row">食品</th>
-                  <th class="text-truncate">豆漿、牛奶等飲品</th>
-                  <td class="text-center off">2020/05/29</td>
-                  <td class="text-center">2020/06/12</td>
-                  <td class="text-center off"> 屏東縣</td>
-                </tr>
-                <tr class="clickable-row" data-href="12.7.1.html">
-                  <th class="text-center" scope="row">3C</th>
-                  <th class="text-truncate">碎紙機</th>
-                  <td class="text-center off">2020/05/28</td>
-                  <td class="text-center">2020/06/11</td>
-                  <td class="text-center off">高雄市</td>
-                </tr>
-                <tr class="clickable-row" data-href="12.7.1.html">
-                  <th class="text-center" scope="row">3C</th>
-                  <th class="text-truncate">手提式行動擴音機</th>
-                  <td class="text-center off">2020/05/28</td>
-                  <td class="text-center">2020/06/11</td>
-                  <td class="text-center off">高雄市</td>
-                </tr>
-                <tr class="clickable-row" data-href="12.7.1.html">
-                  <th class="text-center" scope="row">3C</th>
-                  <th class="text-truncate">A4護貝機</th>
-                  <td class="text-center off">2020/05/28</td>
-                  <td class="text-center">2020/06/11</td>
-                  <td class="text-center off">高雄市</td>
-                </tr>
-                <tr class="clickable-row" data-href="12.7.1.html">
-                  <th class="text-center" scope="row">文具</th>
-                  <th class="text-truncate">A4護貝膠膜</th>
-                  <td class="text-center off">2020/05/28</td>
-                  <td class="text-center">2020/06/11</td>
-                  <td class="text-center off"> 高雄市</td>
-                </tr>
-                <tr class="clickable-row" data-href="12.7.1.html">
-                  <th class="text-center" scope="row">家電</th>
-                  <th class="text-truncate">16吋立扇電風扇</th>
-                  <td class="text-center off">2020/05/26</td>
-                  <td class="text-center">2020/07/21</td>
-                  <td class="text-center off">宜蘭縣</td>
-                </tr>
-                <tr class="clickable-row" data-href="12.7.1.html">
-                  <th class="text-center" scope="row">食品</th>
-                  <th class="text-truncate">米、麵、罐頭、泡麵、即時調理包</th>
-                  <td class="text-center off">2020/05/26</td>
-                  <td class="text-center">2020/07/21</td>
-                  <td class="text-center off"> 桃園市</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <!-- 分頁-->
-          <div id="page">
-            <ul class="pagination">
-              <li><a href="#"><i class="fa fa-angle-double-left fa-lg" aria-hidden="true"></i><span class="sr-only">第一頁</span></a></li>
-              <li><a href="#"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i><span class="sr-only">上一頁</span></a></li>
-              <!-- 使用者輸入-->
-              <!-- <li><a><input type="text" placeholder="" size="1">&nbsp;&nbsp;<span>/&nbsp;&nbsp;15</span></a></li>-->
-              <!-- select-->
-              <li>
-                <select class="select_css" onchange="location.href=this.options[this.selectedIndex].value">
-                  <option selected="selected" value="#">1</option>
-                  <option value="#">2</option>
-                  <option value="#">3</option>
-                  <option value="#">4</option>
-                  <option value="#">5</option>
-                  <option value="#">6</option>
-                  <option value="#">7</option>
-                  <option value="#">8</option>
-                  <option value="#">9</option>
-                  <option value="#">10</option>
-                  <option value="#">11</option>
-                  <option value="#">12</option>
-                  <option value="#">13</option>
-                  <option value="#">14</option>
-                  <option value="#">15</option>
-                </select><span>/  15</span>
-              </li>
-              <li><a href="#"><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i><span class="sr-only">下一頁</span></a></li>
-              <li><a href="#"><i class="fa fa-angle-double-right fa-lg" aria-hidden="true"></i><span class="sr-only">最後一頁</span></a></li>
-            </ul>
-          </div>
-          <!--分頁-->
+            </div>
+            <div class="list">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th class="text-center" scope="col" style="width: 20%">物資類型</th>
+                    <th scope="col" style="width: 35%">物資名稱</th>
+                    <th class="text-center" scope="col" style="width: 20%">開始日期</th>
+                    <th class="text-center" scope="col" style="width: 20%">結束日期</th>
+                    <th class="text-center" scope="col" style="width: 15%">募集地區</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr onclick="document.location = '12.7.1.html';">
+                    <td class="text-center" data-th="物資類型">家電</td>
+                    <td class="text-truncate" data-th="物資名稱">筆記型電腦(27寸大小)筆記型電腦(27寸大小)</td>
+                    <td class="text-center" data-th="開始日期">2020 / 06 / 05</td>
+                    <td class="text-center" data-th="結束日期">2020 / 06 / 19</td>
+                    <td class="text-center" data-th="募集地區">台北市</td>
+                  </tr>
+                  <tr onclick="document.location = '12.7.1.html';">
+                    <td class="text-center" data-th="物資類型">家電</td>
+                    <td class="text-truncate" data-th="物資名稱">筆記型電腦(27寸大小)筆記型電腦(27寸大小)</td>
+                    <td class="text-center" data-th="開始日期">2020 / 06 / 05</td>
+                    <td class="text-center" data-th="結束日期">2020 / 06 / 19</td>
+                    <td class="text-center" data-th="募集地區">台北市</td>
+                  </tr>
+                  <tr onclick="document.location = '12.7.1.html';">
+                    <td class="text-center" data-th="物資類型">家電</td>
+                    <td class="text-truncate" data-th="物資名稱">筆記型電腦(27寸大小)筆記型電腦(27寸大小)</td>
+                    <td class="text-center" data-th="開始日期">2020 / 06 / 05</td>
+                    <td class="text-center" data-th="結束日期">2020 / 06 / 19</td>
+                    <td class="text-center" data-th="募集地區">台北市</td>
+                  </tr>
+                  <tr onclick="document.location = '12.7.1.html';">
+                    <td class="text-center" data-th="物資類型">家電</td>
+                    <td class="text-truncate" data-th="物資名稱">筆記型電腦(27寸大小)筆記型電腦(27寸大小)</td>
+                    <td class="text-center" data-th="開始日期">2020 / 06 / 05</td>
+                    <td class="text-center" data-th="結束日期">2020 / 06 / 19</td>
+                    <td class="text-center" data-th="募集地區">台北市</td>
+                  </tr>
+                  <tr onclick="document.location = '12.7.1.html';">
+                    <td class="text-center" data-th="物資類型">家電</td>
+                    <td class="text-truncate" data-th="物資名稱">筆記型電腦(27寸大小)筆記型電腦(27寸大小)</td>
+                    <td class="text-center" data-th="開始日期">2020 / 06 / 05</td>
+                    <td class="text-center" data-th="結束日期">2020 / 06 / 19</td>
+                    <td class="text-center" data-th="募集地區">台北市</td>
+                  </tr>
+                  <tr onclick="document.location = '12.7.1.html';">
+                    <td class="text-center" data-th="物資類型">家電</td>
+                    <td class="text-truncate" data-th="物資名稱">筆記型電腦(27寸大小)筆記型電腦(27寸大小)</td>
+                    <td class="text-center" data-th="開始日期">2020 / 06 / 05</td>
+                    <td class="text-center" data-th="結束日期">2020 / 06 / 19</td>
+                    <td class="text-center" data-th="募集地區">台北市</td>
+                  </tr>
+                  <tr onclick="document.location = '12.7.1.html';">
+                    <td class="text-center" data-th="物資類型">家電</td>
+                    <td class="text-truncate" data-th="物資名稱">筆記型電腦(27寸大小)筆記型電腦(27寸大小)</td>
+                    <td class="text-center" data-th="開始日期">2020 / 06 / 05</td>
+                    <td class="text-center" data-th="結束日期">2020 / 06 / 19</td>
+                    <td class="text-center" data-th="募集地區">台北市</td>
+                  </tr>
+                  <tr onclick="document.location = '12.7.1.html';">
+                    <td class="text-center" data-th="物資類型">家電</td>
+                    <td class="text-truncate" data-th="物資名稱">筆記型電腦(27寸大小)筆記型電腦(27寸大小)</td>
+                    <td class="text-center" data-th="開始日期">2020 / 06 / 05</td>
+                    <td class="text-center" data-th="結束日期">2020 / 06 / 19</td>
+                    <td class="text-center" data-th="募集地區">台北市</td>
+                  </tr>
+                  <tr onclick="document.location = '12.7.1.html';">
+                    <td class="text-center" data-th="物資類型">家電</td>
+                    <td class="text-truncate" data-th="物資名稱">筆記型電腦(27寸大小)筆記型電腦(27寸大小)</td>
+                    <td class="text-center" data-th="開始日期">2020 / 06 / 05</td>
+                    <td class="text-center" data-th="結束日期">2020 / 06 / 19</td>
+                    <td class="text-center" data-th="募集地區">台北市</td>
+                  </tr>
+                  <tr onclick="document.location = '12.7.1.html';">
+                    <td class="text-center" data-th="物資類型">家電</td>
+                    <td class="text-truncate" data-th="物資名稱">筆記型電腦(27寸大小)筆記型電腦(27寸大小)</td>
+                    <td class="text-center" data-th="開始日期">2020 / 06 / 05</td>
+                    <td class="text-center" data-th="結束日期">2020 / 06 / 19</td>
+                    <td class="text-center" data-th="募集地區">台北市</td>
+                  </tr>
+                  <tr onclick="document.location = '12.7.1.html';">
+                    <td class="text-center" data-th="物資類型">家電</td>
+                    <td class="text-truncate" data-th="物資名稱">筆記型電腦(27寸大小)筆記型電腦(27寸大小)</td>
+                    <td class="text-center" data-th="開始日期">2020 / 06 / 05</td>
+                    <td class="text-center" data-th="結束日期">2020 / 06 / 19</td>
+                    <td class="text-center" data-th="募集地區">台北市</td>
+                  </tr>
+                  <tr onclick="document.location = '12.7.1.html';">
+                    <td class="text-center" data-th="物資類型">家電</td>
+                    <td class="text-truncate" data-th="物資名稱">筆記型電腦(27寸大小)筆記型電腦(27寸大小)</td>
+                    <td class="text-center" data-th="開始日期">2020 / 06 / 05</td>
+                    <td class="text-center" data-th="結束日期">2020 / 06 / 19</td>
+                    <td class="text-center" data-th="募集地區">台北市</td>
+                  </tr>
+                  <tr onclick="document.location = '12.7.1.html';">
+                    <td class="text-center" data-th="物資類型">家電</td>
+                    <td class="text-truncate" data-th="物資名稱">筆記型電腦(27寸大小)筆記型電腦(27寸大小)</td>
+                    <td class="text-center" data-th="開始日期">2020 / 06 / 05</td>
+                    <td class="text-center" data-th="結束日期">2020 / 06 / 19</td>
+                    <td class="text-center" data-th="募集地區">台北市</td>
+                  </tr>
+                  <tr onclick="document.location = '12.7.1.html';">
+                    <td class="text-center" data-th="物資類型">家電</td>
+                    <td class="text-truncate" data-th="物資名稱">筆記型電腦(27寸大小)筆記型電腦(27寸大小)</td>
+                    <td class="text-center" data-th="開始日期">2020 / 06 / 05</td>
+                    <td class="text-center" data-th="結束日期">2020 / 06 / 19</td>
+                    <td class="text-center" data-th="募集地區">台北市</td>
+                  </tr>
+                  <tr onclick="document.location = '12.7.1.html';">
+                    <td class="text-center" data-th="物資類型">家電</td>
+                    <td class="text-truncate" data-th="物資名稱">筆記型電腦(27寸大小)筆記型電腦(27寸大小)</td>
+                    <td class="text-center" data-th="開始日期">2020 / 06 / 05</td>
+                    <td class="text-center" data-th="結束日期">2020 / 06 / 19</td>
+                    <td class="text-center" data-th="募集地區">台北市</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- 分頁-->
+            <div id="page">
+              <ul class="pagination">
+                <li><a href="#"><i class="fa fa-angle-double-left fa-lg" aria-hidden="true"></i><span class="sr-only">第一頁</span></a></li>
+                <li><a href="#"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i><span class="sr-only">上一頁</span></a></li>
+                <!-- 使用者輸入-->
+                <!-- <li><a><input type="text" placeholder="" size="1">&nbsp;&nbsp;<span>/&nbsp;&nbsp;15</span></a></li>-->
+                <!-- select-->
+                <li>
+                  <select class="select_css" onchange="location.href=this.options[this.selectedIndex].value">
+                    <option selected="selected" value="#">1</option>
+                    <option value="#">2</option>
+                    <option value="#">3</option>
+                    <option value="#">4</option>
+                    <option value="#">5</option>
+                    <option value="#">6</option>
+                    <option value="#">7</option>
+                    <option value="#">8</option>
+                    <option value="#">9</option>
+                    <option value="#">10</option>
+                    <option value="#">11</option>
+                    <option value="#">12</option>
+                    <option value="#">13</option>
+                    <option value="#">14</option>
+                    <option value="#">15</option>
+                  </select><span>/  15</span>
+                </li>
+                <li><a href="#"><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i><span class="sr-only">下一頁</span></a></li>
+                <li><a href="#"><i class="fa fa-angle-double-right fa-lg" aria-hidden="true"></i><span class="sr-only">最後一頁</span></a></li>
+              </ul>
+            </div>
+            <!--分頁-->
+          </form>
         </div>
       </div>
     </section>
     <!-- 底部廣告-->
-    <section class="container" id="bottom_ads"><img class="img-fluid clickable-row" src="./img/fakeimg/350x150.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad1.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad2.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad3.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"></section>
+    <section class="container" id="bottom_ads"><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a></section>
     <!-- footer-->
     <footer>
       <div class="container">

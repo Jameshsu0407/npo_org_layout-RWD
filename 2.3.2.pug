@@ -1,5 +1,5 @@
 doctype html
-html(lang="en")
+html(lang="zh-tw")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
@@ -9,19 +9,22 @@ html(lang="en")
 	body#top
 		//- 匯入導覽列+gototop
 		include nav.pug
-		section#gss.container
+		.mt-135
+		section.container
 			.row
-				.content_top.col-12
-					h2.content_title.col-12 叡揚資訊
-					h3.col-12 標題
-					p.col-12 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde illum, eum ex explicabo sit nam voluptatum asperiores magni distinctio! Veniam quod odio pariatur consequuntur ratione nisi odit quis ut id nam rerum consequatur expedita placeat aliquam quisquam facere, ea cum, laudantium nemo dicta iusto a! Praesentium illum quisquam dolores nam laudantium expedita libero voluptatibus provident quas accusamus ipsa incidunt quae saepe ab, sapiente deserunt, assumenda aperiam qui veritatis adipisci sint ullam eius! Illo repellat explicabo alias minima libero pariatur recusandae inventore nesciunt nostrum iste, ipsa provident ullam iusto mollitia porro laudantium ex corrupti obcaecati accusantium dolore similique, aliquam ut atque. Unde suscipit, autem quas facere et eaque nostrum voluptatem, sequi praesentium consequuntur aperiam, rem reiciendis sint sunt aliquam totam aspernatur amet cumque accusantium. Quibusdam, dolorem mollitia sequi rerum magnam laudantium a quod corrupti ab? Modi itaque, error ducimus fugit tempora esse architecto iure qui cum tenetur deleniti nihil quos minima similique unde maiores assumenda debitis. Maxime minima, officia impedit enim voluptas incidunt velit placeat eligendi voluptates, eveniet perferendis. Repellendus dolorum perferendis dicta rem unde fugiat dolor consequatur atque consectetur est? Totam qui repellendus nesciunt. Molestias eius culpa sapiente iure illum veritatis, consequatur est dolore sed, qui in commodi ipsa sit aliquid, odit eos libero nisi? Ullam id ipsam ducimus officia dolores doloremque quas animi quia maiores eaque reiciendis vel, numquam nulla eos, assumenda, at exercitationem non. Nam, laborum nulla. Neque ab ducimus maiores illum impedit qui itaque quibusdam praesentium perferendis, quam eligendi reprehenderit atque alias aut natus placeat eos vitae autem nemo ipsam dolorum aperiam, suscipit ipsa. Consectetur accusantium ab a repellat natus ea voluptatum tempora iusto quibusdam libero, laudantium laborum sit omnis, saepe, neque voluptates praesentium. Tempore illum nesciunt cupiditate maiores sequi dolores repellendus explicabo, aut corporis delectus eos perspiciatis illo saepe, dolorum autem libero enim deserunt vero consequatur?
-					#back
-							a(href="https://www.gss.com.tw/" target="_blank")
-								h4 了解更多
-
-					
-				
-
+				.title.col-12
+					h2 叡揚資訊
+				//- 匯入手機版社群分享
+				include phone_social_share.pug
+				.content.col-12
+					.gss
+						h3 標題
+						p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde illum, eum ex explicabo sit nam voluptatum asperiores magni distinctio! Veniam quod odio pariatur consequuntur ratione nisi odit quis ut id nam rerum consequatur expedita placeat aliquam quisquam facere, ea cum, laudantium nemo dicta iusto a! Praesentium illum quisquam dolores nam laudantium expedita libero voluptatibus provident quas accusamus ipsa incidunt quae saepe ab, sapiente deserunt, assumenda aperiam qui veritatis adipisci sint ullam eius! Illo repellat explicabo alias minima libero pariatur recusandae inventore nesciunt nostrum iste, ipsa provident ullam iusto mollitia porro laudantium ex corrupti obcaecati accusantium dolore similique, aliquam ut atque. Unde suscipit, autem quas facere et eaque nostrum voluptatem, sequi praesentium consequuntur aperiam, rem reiciendis sint sunt aliquam totam aspernatur amet cumque accusantium. Quibusdam, dolorem mollitia sequi rerum magnam laudantium a quod corrupti ab? Modi itaque, error ducimus fugit tempora esse architecto iure qui cum tenetur deleniti nihil quos minima similique unde maiores assumenda debitis. Maxime minima, officia impedit enim voluptas incidunt velit placeat eligendi voluptates, eveniet perferendis. Repellendus dolorum perferendis dicta rem unde fugiat dolor consequatur atque consectetur est? Totam qui repellendus nesciunt. Molestias eius culpa sapiente iure illum veritatis, consequatur est dolore sed, qui in commodi ipsa sit aliquid, odit eos libero nisi? Ullam id ipsam ducimus officia dolores doloremque quas animi quia maiores eaque reiciendis vel, numquam nulla eos, assumenda, at exercitationem non. Nam, laborum nulla. Neque ab ducimus maiores illum impedit qui itaque quibusdam praesentium perferendis, quam eligendi reprehenderit atque alias aut natus placeat eos vitae autem nemo ipsam dolorum aperiam, suscipit ipsa. Consectetur accusantium ab a repellat natus ea voluptatum tempora iusto quibusdam libero, laudantium laborum sit omnis, saepe, neque voluptates praesentium. Tempore illum nesciunt cupiditate maiores sequi dolores repellendus explicabo, aut corporis delectus eos perspiciatis illo saepe, dolorum autem libero enim deserunt vero consequatur?
+					#link
+						a(href="https://www.gss.com.tw/" target="_blank")
+							h4 了解更多
+		//- 匯入pc版社群分享
+		include pc_social_share.pug
 		//- 匯入底部廣告
 		include footer_ad.pug
 		//- 匯入footer+script

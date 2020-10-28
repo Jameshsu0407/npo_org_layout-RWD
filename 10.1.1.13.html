@@ -1,9 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>前台-機構-機構使用者維護-列表</title>
+    <!-- favicon-->
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico">
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="./img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/favicon-152-precomposed.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/favicon-144-precomposed.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/favicon-120-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/favicon-114-precomposed.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/favicon-180-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/favicon-72-precomposed.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/favicon-57.png">
+    <link rel="icon" sizes="32x32" href="./img/favicon/favicon-32.png">
     <!-- bootstrap v4.41-->
     <link rel="stylesheet" href="./css/bootstrap.css">
     <!-- slick v1.8-->
@@ -140,95 +151,102 @@
         </div>
       </div>
     </nav>
-    <section class="member_same container" id="font_end_org_acount_maintain_list">
+    <div class="mt-135"></div>
+    <section class="container">
       <div class="row">
-        <div class="content_top col-12">
-          <h2 class="content_title col-12">機構使用者維護</h2>
-          <!-- 左側-->
-          <div class="left col-12 col-lg-3">
-            <!-- pc版導覽列-->
-            <ul class="pc_nav">
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.1.html">修改機構基本資料</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.3.html">最新活動</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.4.html">公益影片</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.5.html">補助公告</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.6.html">救助公告</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.7.html">獎助公告</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.8.html">物資需求</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.9.html">志工招募</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.10.html">全職工作</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.11.html">兼職工作</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.15.html">履歷查詢</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.12.html">公益商城</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.13.html">機構使用者維護</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.2.html">廣告刊登</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.1.14.html">修改密碼</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.1.html">登出</a></li>
-            </ul>
-            <!-- 手機版導覽列-->
-            <select class="selectpicker phone_nav" onchange="location.href=this.options[this.selectedIndex].value">
-              <option value="10.1.1.1.html">修改機構基本資料</option>
-              <option value="10.1.1.3.html"> 最新活動</option>
-              <option value="10.1.1.4.html"> 公益影片</option>
-              <option value="10.1.1.5.html"> 補助公告</option>
-              <option value="10.1.1.6.html"> 救助公告</option>
-              <option value="10.1.1.7.html"> 獎助公告</option>
-              <option value="10.1.1.8.html"> 物資需求</option>
-              <option value="10.1.1.9.html"> 志工招募</option>
-              <option value="10.1.1.10.html"> 全職工作</option>
-              <option value="10.1.1.11.html"> 兼職工作</option>
-              <option value="10.1.1.15.html"> 履歷查詢</option>
-              <option value="10.1.1.12.html"> 公益商城</option>
-              <option value="10.1.1.13.html" selected> 機構使用者維護</option>
-              <option value="10.1.1.2.html">廣告刊登</option>
-              <option value="10.1.1.14.html"> 修改密碼</option>
-              <option value="10.1.html"> 登出</option>
-            </select>
-          </div>
-          <!-- 右側-->
-          <div class="right col-12 col-lg-9">
-            <div class="top_information">
-              <h4>機構代碼&nbsp;&nbsp;176</h4>
-              <h4>機構名稱&nbsp;&nbsp;喜瑪拉雅研究發展基金會</h4>
-              <div class="right_2"><span>可建置</span><span class="max_piece">2</span><span>個帳號,已使用</span><span class="now_piece">3</span><span>個帳號</span></div>
+        <div class="title col-12"> 
+          <h2>機構使用者維護</h2>
+        </div>
+        <div class="content col-12">
+          <div class="member_same">
+            <!-- 左側-->
+            <div class="left">
+              <!-- pc版導覽列-->
+              <ul class="pc_nav">
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.1.html">修改機構基本資料</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.3.html">最新活動</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.4.html">公益影片</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.5.html">補助公告</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.6.html">救助公告</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.7.html">獎助公告</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.8.html">物資需求</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.9.html">志工招募</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.10.html">全職工作</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.11.html">兼職工作</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.15.html">履歷查詢</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.12.html">公益商城</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.13.html">機構使用者維護</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.2.html">廣告刊登</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.1.14.html">修改密碼</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.1.html">登出</a></li>
+              </ul>
+              <!-- 手機版導覽列-->
+              <select class="selectpicker phone_nav" onchange="location.href=this.options[this.selectedIndex].value">
+                <option value="10.1.1.1.html">修改機構基本資料</option>
+                <option value="10.1.1.3.html"> 最新活動</option>
+                <option value="10.1.1.4.html"> 公益影片</option>
+                <option value="10.1.1.5.html"> 補助公告</option>
+                <option value="10.1.1.6.html"> 救助公告</option>
+                <option value="10.1.1.7.html"> 獎助公告</option>
+                <option value="10.1.1.8.html"> 物資需求</option>
+                <option value="10.1.1.9.html"> 志工招募</option>
+                <option value="10.1.1.10.html"> 全職工作</option>
+                <option value="10.1.1.11.html"> 兼職工作</option>
+                <option value="10.1.1.15.html"> 履歷查詢</option>
+                <option value="10.1.1.12.html"> 公益商城</option>
+                <option value="10.1.1.13.html" selected> 機構使用者維護</option>
+                <option value="10.1.1.2.html">廣告刊登</option>
+                <option value="10.1.1.14.html"> 修改密碼</option>
+                <option value="10.1.html"> 登出</option>
+              </select>
             </div>
-            <table class="table col-12">
-              <thead class="thead-color text-center">
-                <tr>
-                  <th class="type_width off" scope="col">使用者名稱</th>
-                  <th scope="col">Email</th>
-                  <th scope="col">最後登入時間</th>
-                  <th class="type_width" scope="col">狀態</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="clickable-row" data-href="10.1.1.13.2.html">
-                  <th class="text-center off" scope="row">Nina</th>
-                  <th class="text-center text-truncate">nina_hsieh@npois.com.tw</th>
-                  <td class="text-center text-truncate">2018/8/29 下午 03:27:06</td>
-                  <td class="text-center">正常</td>
-                </tr>
-                <tr class="clickable-row" data-href="10.1.1.13.2.html">
-                  <th class="text-center off" scope="row">Dennis</th>
-                  <th class="text-center text-truncate">dennis@intersoft.com.tw</th>
-                  <td class="text-center text-truncate">2020/5/5 下午 03:42:54</td>
-                  <td class="text-center">正常</td>
-                </tr>
-                <tr class="clickable-row" data-href="10.1.1.13.2.html">
-                  <th class="text-center off" scope="row">James</th>
-                  <th class="text-center text-truncate">james@intersoft.com.tw</th>
-                  <td class="text-center text-truncate">2020/7/15 上午 10:10:51</td>
-                  <td class="text-center">正常</td>
-                </tr>
-              </tbody>
-            </table>
-            <button class="btn btn-md" type="button" onclick="javascript:location.href='10.1.1.13.1.html'">新增</button>
+            <!-- 右側-->
+            <div class="right">
+              <div class="front_end_list">
+                <div class="top_information">
+                  <h4 class="npo_id">機構代碼&nbsp;&nbsp;176</h4>
+                  <h4 class="npo_name">機構名稱&nbsp;&nbsp;喜瑪拉雅研究發展基金會</h4>
+                  <div class="top_information_account"><span>可建置</span><span class="can_create_account">2</span><span>個帳號,已使用</span><span class="now_account_number">3</span><span>個帳號</span></div>
+                </div>
+                <table class="table table-striped">
+                  <thead>
+                    <tr class="text-center">
+                      <th scope="col" style="width: 20%">使用者名稱</th>
+                      <th class="text-left" scope="col" style="width: 30%">Email</th>
+                      <th class="text-left" scope="col" style="width: 30%">最後登入時間</th>
+                      <th scope="col" style="width: 20%">狀態</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="text-center" onclick="document.location = '10.1.1.13.2.html';">
+                      <td data-th="使用者名稱">Nina</td>
+                      <td class="text-left text-truncate" data-th="Email">nina_hsieh@npois.com.tw</td>
+                      <td class="text-left text-truncate" data-th="最後登入時間">2018/8/29 下午 03:27:06</td>
+                      <td data-th="狀態">正常</td>
+                    </tr>
+                    <tr class="text-center" onclick="document.location = '10.1.1.13.2.html';">
+                      <td data-th="使用者名稱">Nina</td>
+                      <td class="text-left text-truncate" data-th="Email">nina_hsieh@npois.com.tw</td>
+                      <td class="text-left text-truncate" data-th="最後登入時間">2018/8/29 下午 03:27:06</td>
+                      <td data-th="狀態">正常</td>
+                    </tr>
+                    <tr class="text-center" onclick="document.location = '10.1.1.13.2.html';">
+                      <td data-th="使用者名稱">Nina</td>
+                      <td class="text-left text-truncate" data-th="Email">nina_hsieh@npois.com.tw</td>
+                      <td class="text-left text-truncate" data-th="最後登入時間">2018/8/29 下午 03:27:06</td>
+                      <td data-th="狀態">正常</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <button class="btn btn-add" onclick="document.location = '10.1.1.13.1.html';">新增</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- 底部廣告-->
-    <section class="container" id="bottom_ads"><img class="img-fluid clickable-row" src="./img/fakeimg/350x150.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad1.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad2.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad3.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"></section>
+    <section class="container" id="bottom_ads"><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a></section>
     <!-- footer-->
     <footer>
       <div class="container">

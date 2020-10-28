@@ -1,5 +1,5 @@
 doctype html
-html(lang="en")
+html(lang="zh-tw")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
@@ -9,307 +9,297 @@ html(lang="en")
 	body#top
 		//- 匯入導覽列+gototop
 		include nav.pug
-
-		section#font_end_org_part_time_add.member_same.container
+		.mt-135
+		section.container
 			.row
-				.content_top.col-12
-					h2.content_title.col-12 兼職工作
-					// 左側
-					.left.col-12.col-lg-3
-						// pc版導覽列
-						ul.pc_nav
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.1.html") 修改機構基本資料
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.3.html") 最新活動
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.4.html") 公益影片
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.5.html") 補助公告
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.6.html") 救助公告
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.7.html") 獎助公告
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.8.html") 物資需求
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.9.html") 志工招募
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.10.html") 全職工作
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.11.html") 兼職工作
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.15.html") 履歷查詢
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.12.html") 公益商城
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.13.html") 機構使用者維護
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.2.html") 廣告刊登
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.1.14.html") 修改密碼
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.html") 登出
-						// 手機版導覽列
-						select.selectpicker.phone_nav(onchange="location.href=this.options[this.selectedIndex].value")
-							option(value="10.1.1.1.html") 修改機構基本資料
-							option(value="10.1.1.3.html")  最新活動
-							option(value="10.1.1.4.html")  公益影片
-							option(value="10.1.1.5.html")  補助公告
-							option(value="10.1.1.6.html")  救助公告
-							option(value="10.1.1.7.html")  獎助公告
-							option(value="10.1.1.8.html")  物資需求
-							option(value="10.1.1.9.html")  志工招募
-							option(value="10.1.1.10.html")  全職工作
-							option(value="10.1.1.11.html" selected)  兼職工作
-							option(value="10.1.1.15.html")  履歷查詢
-							option(value="10.1.1.12.html")  公益商城
-							option(value="10.1.1.13.html")  機構使用者維護
-							option(value="10.1.1.2.html") 廣告刊登
-							option(value="10.1.1.14.html")  修改密碼
-							option(value="10.1.html")  登出
-					// 右側
-					.right.col-12.col-lg-9
-						form.part_time_add
-							
-							// 必填
-							.col-12
-								.form-group
-									label.required_star 刊登日期
-									input.form-control(type="date")
-							// 修改頁程式自動帶出
-							.col-12
-								.form-group
-									label 結束日期
-									input.form-control(type="date" readonly)
-							// 必填
-							.col-12
-								.form-group
-									label.required_star 刊登天數
-									.post_duration
-										.form-check
-											input.form-check-input(type="radio" name="post_duration")
-											label.form-check-label 14天
-										.form-check
-											input.form-check-input(type="radio" name="post_duration")
-											label.form-check-label 28天
-										.form-check
-											input.form-check-input(type="radio" name="post_duration")
-											label.form-check-label 56天
-							// 必填
-							.col-12
-								.form-group
-									label.required_star 職務名稱
-									input.form-control(type="text")
-							// 必填
-							.col-12
-								.form-group
-									label.required_star 職務部門
-									input.form-control(type="text")
-							// 必填
-							.col-12
-								.form-group
-									label.required_star 性別
-									.gender
-										.form-check
-											input.form-check-input(type="radio" name="gender")
-											label.form-check-label 男
-										.form-check
-											input.form-check-input(type="radio" name="gender")
-											label.form-check-label 女
-										.form-check
-											input.form-check-input(type="radio" name="gender")
+				.title.col-12
+					h2 兼職工作
+				.content.col-12
+					.member_same
+						// 左側
+						.left
+							// pc版導覽列
+							ul.pc_nav
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.1.html") 修改機構基本資料
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.3.html") 最新活動
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.4.html") 公益影片
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.5.html") 補助公告
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.6.html") 救助公告
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.7.html") 獎助公告
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.8.html") 物資需求
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.9.html") 志工招募
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.10.html") 全職工作
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.11.html") 兼職工作
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.15.html") 履歷查詢
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.12.html") 公益商城
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.13.html") 機構使用者維護
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.2.html") 廣告刊登
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.1.14.html") 修改密碼
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.html") 登出
+							// 手機版導覽列
+							select.selectpicker.phone_nav(onchange="location.href=this.options[this.selectedIndex].value")
+								option(value="10.1.1.1.html") 修改機構基本資料
+								option(value="10.1.1.3.html")  最新活動
+								option(value="10.1.1.4.html")  公益影片
+								option(value="10.1.1.5.html")  補助公告
+								option(value="10.1.1.6.html")  救助公告
+								option(value="10.1.1.7.html")  獎助公告
+								option(value="10.1.1.8.html")  物資需求
+								option(value="10.1.1.9.html")  志工招募
+								option(value="10.1.1.10.html")  全職工作
+								option(value="10.1.1.11.html" selected)  兼職工作
+								option(value="10.1.1.15.html")  履歷查詢
+								option(value="10.1.1.12.html")  公益商城
+								option(value="10.1.1.13.html")  機構使用者維護
+								option(value="10.1.1.2.html") 廣告刊登
+								option(value="10.1.1.14.html")  修改密碼
+								option(value="10.1.html")  登出
+						// 右側
+						.right
+							form
+								.front_end_edit
+									// 必填									
+									.form-group
+										label.required_star 刊登日期
+										input.form-control(type="date")
+									// 修改頁程式自動帶出									
+									.form-group
+										label 結束日期
+										input.form-control(type="date" readonly)
+									// 必填									
+									.form-group
+										label.required_star 刊登天數
+										.radio_box
+											.form-check
+												input.form-check-input(type="radio" name="post_duration")
+												label.form-check-label 14天
+											.form-check
+												input.form-check-input(type="radio" name="post_duration")
+												label.form-check-label 28天
+											.form-check
+												input.form-check-input(type="radio" name="post_duration")
+												label.form-check-label 56天
+									// 必填									
+									.form-group
+										label.required_star 職務名稱
+										input.form-control(type="text")
+									// 必填									
+									.form-group
+										label.required_star 職務部門
+										input.form-control(type="text")
+									// 必填									
+									.form-group
+										label.required_star 性別
+										.radio_box
+											.form-check
+												input.form-check-input(type="radio" name="gender")
+												label.form-check-label 男
+											.form-check
+												input.form-check-input(type="radio" name="gender")
+												label.form-check-label 女
+											.form-check
+												input.form-check-input(type="radio" name="gender")
+												label.form-check-label 不限									
+									.form-group
+										label 學歷/科系
+										input.form-control(type="text")
+									.form-group
+										label 職務類別
+										.radio_box
+											.form-check
+												input.form-check-input(type="radio" name="work_type")
+												label.form-check-label 不拘
+											.form-check
+												input.form-check-input(type="radio" name="work_type")
+												label.form-check-label 社工
+											.form-check
+												input.form-check-input(type="radio" name="work_type")
+												label.form-check-label 行政
+											.form-check
+												input.form-check-input(type="radio" name="work_type")
+												label.form-check-label 會計 
+											.form-check
+												input.form-check-input(type="radio" name="work_type")
+												label.form-check-label 資訊
+											.form-check
+												input.form-check-input(type="radio" name="work_type")
+												label.form-check-label 美工
+											.form-check
+												input.form-check-input(type="radio" name="work_type")
+												label.form-check-label 其他
+									// 必填									
+									.form-group
+										label.required_star 福利
+										input.form-control(type="text")
+									.form-group
+										label 薪水
+										input.form-control(type="text")
+									// 必填									
+									.form-group
+										label.required_star 休假制度
+										input.form-control(type="text")
+									.form-group
+										label 工作經驗
+										input.form-control(type="text")
+									.form-group
+										label 具備駕照
+										input.form-control(type="text")
+									.form-group
+										label 備註
+										textarea.form-control(rows="5")
+									// 必填									
+									.form-group
+										label.required_star 詳細說明
+										input.form-control(type="text")
+									.form-group
+										label 其他需求
+										textarea.form-control(rows="5")
+									.form-group
+										label 備註
+										textarea.form-control(rows="5")
+									// 必填									
+									label.required_star 工作地點
+									.check_box
+										.form-group.form-check
+											input.form-check-input(type="checkbox")
+											label.form-check-label 台北市
+										.form-group.form-check
+											input.form-check-input(type="checkbox")
+											label.form-check-label 新北市	
+										.form-group.form-check
+											input.form-check-input(type="checkbox")
+											label.form-check-label 基隆市
+										.form-group.form-check
+											input.form-check-input(type="checkbox")
+											label.form-check-label 宜蘭縣
+										.form-group.form-check
+											input.form-check-input(type="checkbox")
+											label.form-check-label 桃園市
+										.form-group.form-check
+											input.form-check-input(type="checkbox")
+											label.form-check-label 新竹市
+										.form-group.form-check
+											input.form-check-input(type="checkbox")
+											label.form-check-label 新竹縣
+										.form-group.form-check
+											input.form-check-input(type="checkbox")
+											label.form-check-label 苗栗縣
+										.form-group.form-check
+											input.form-check-input(type="checkbox")
+											label.form-check-label 台中市
+										.form-group.form-check
+											input.form-check-input(type="checkbox")
+											label.form-check-label 彰化縣
+										.form-group.form-check
+											input.form-check-input(type="checkbox")
+											label.form-check-label 南投縣
+										.form-group.form-check
+											input.form-check-input(type="checkbox")
+											label.form-check-label 雲林縣
+										.form-group.form-check
+											input.form-check-input(type="checkbox")
+											label.form-check-label 嘉義市
+										.form-group.form-check
+											input.form-check-input(type="checkbox")
+											label.form-check-label 嘉義縣
+										.form-group.form-check
+											input.form-check-input(type="checkbox")
+											label.form-check-label 台南市
+										.form-group.form-check
+											input.form-check-input(type="checkbox")
+											label.form-check-label 高雄市
+										.form-group.form-check
+											input.form-check-input(type="checkbox")
+											label.form-check-label 屏東縣
+										.form-group.form-check
+											input.form-check-input(type="checkbox")
+											label.form-check-label 台東縣
+										.form-group.form-check
+											input.form-check-input(type="checkbox")
 											label.form-check-label 不限
-							.col-12
-								.form-group
-									label 學歷/科系
-									input.form-control(type="text")
-							.col-12
-								.form-group
-									label 職務類別
-									.work_type
-										.form-check
-											input.form-check-input(type="radio" name="work_type")
-											label.form-check-label 不拘
-										.form-check
-											input.form-check-input(type="radio" name="work_type")
-											label.form-check-label 社工
-										.form-check
-											input.form-check-input(type="radio" name="work_type")
-											label.form-check-label 行政
-										.form-check
-											input.form-check-input(type="radio" name="work_type")
-											label.form-check-label 會計 
-										.form-check
-											input.form-check-input(type="radio" name="work_type")
-											label.form-check-label 資訊
-										.form-check
-											input.form-check-input(type="radio" name="work_type")
-											label.form-check-label 美工
-										.form-check
-											input.form-check-input(type="radio" name="work_type")
-											label.form-check-label 其他
-							// 必填
-							.col-12
-								.form-group
-									label.required_star 福利
-									input.form-control(type="text")
-							.col-12
-								.form-group
-									label 薪水
-									input.form-control(type="text")
-							// 必填
-							.col-12
-								.form-group
-									label.required_star 休假制度
-									input.form-control(type="text")
-							.col-12
-								.form-group
-									label 工作經驗
-									input.form-control(type="text")
-							.col-12
-								.form-group
-									label 具備駕照
-									input.form-control(type="text")
-							.col-12
-								.form-group
-									label 備註
-									textarea.form-control(rows="5")
-							// 必填
-							.col-12
-								.form-group
-									label.required_star 詳細說明
-									input.form-control(type="text")
-							.col-12
-								.form-group
-									label 其他需求
-									textarea.form-control(rows="5")
-							.col-12
-								.form-group
-									label 備註
-									textarea.form-control(rows="5")
-							// 必填
-							.col-12
-								label.required_star 工作地點
-								.region
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 台北市
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 新北市	
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 基隆市
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 宜蘭縣
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 桃園市
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 新竹市
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 新竹縣
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 苗栗縣
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 台中市
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 彰化縣
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 南投縣
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 雲林縣
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 嘉義市
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 嘉義縣
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 台南市
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 高雄市
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 屏東縣
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 台東縣
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label 不限
-									.form-group.form-check
-										input.form-check-input(type="checkbox")
-										label.form-check-label.foreign 海外：
-										input.form-control.foreign_input(type="text")
-							.col-12
-								.form-group
-									label 工作地址
-									input.form-control(type="text")
-							.col-12
-								.form-group
-									label 工作時間
-									input.form-control(type="text")
-							// 必填
-							.col-12
-								.form-group
-									label.required_star 聯絡人
-									input.form-control(type="text")
-							// 必填
-							.col-12.col-md-6
-								.form-group
-									label.required_star 連絡電話
-									input.form-control(type="text")
-							.col-12.col-md-6
-								.form-group
-									label 傳真
-									input.form-control(type="text")
-							.col-12
-								.form-group
-									label 工作地址
-									input.form-control(type="text")
-							// 必填
-							.col-12
-								.form-group
-									label.required_star 連絡Email
-									input.form-control(type="email")
-							.input-group.mb-3
-								.input-group-prepend
-									span.input-group-text.required_star 驗證碼
-								input.form-control(type="text" placeholder="請輸入驗證碼")
-								.input-group-append
-									a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")
-										img.checkpin(src="./img/checkpin.png", alt="")
-							button.btn.login_button(type="button" onclick="javascript:location.href=''") 送出
-
-
+										.form-group.form-check
+											input.form-check-input(type="checkbox")
+											label.form-check-label 海外：
+											input.form-check-label.foreign(type="text")
+									//- 地址
+									.address
+										label.required_star.address_text 活動地址
+										.form-group
+											input.form-control(placeholder="郵遞區號" type="number")
+										.form-group
+											select.form-control.selectpicker(data-size="5")
+												option(selected disabled) 縣市
+												option 台北市
+												option 新北市
+												option 桃園市
+												option 我都行
+										.form-group
+											select.form-control.selectpicker(data-size="5")
+												option(selected disabled) 行政區
+												option 台中市
+												option 台南市
+												option 高雄市
+												option 我都愛
+										.form-group.detail_address
+											input.form-control(type="text")
+									.form-group
+										label 工作時間
+										input.form-control(type="text")
+									// 必填									
+									.form-group
+										label.required_star 聯絡人
+										input.form-control(type="text")
+									// 必填	
+									.form-group
+										label.required_star 連絡電話
+										input.form-control(type="text")
+									.form-group
+										label 傳真
+										input.form-control(type="text")
+									// 必填									
+									.form-group
+										label.required_star 連絡Email
+										input.form-control(type="email")
+									.input-group.mb-3
+										.input-group-prepend
+											span.input-group-text.required_star 驗證碼
+										input.form-control(type="text" placeholder="請輸入驗證碼")
+										.input-group-append
+											a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")
+												img.checkpin(src="./img/checkpin.png", alt="")
+									button.btn.login_button(type="button" onclick="javascript:location.href=''") 送出
 		//- 匯入底部廣告
 		include footer_ad.pug
 		//- 匯入footer+script

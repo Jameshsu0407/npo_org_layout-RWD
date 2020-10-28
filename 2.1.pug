@@ -1,5 +1,5 @@
 doctype html
-html(lang="en")
+html(lang="zh-tw")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
@@ -9,16 +9,18 @@ html(lang="en")
 	body#top
 		//- 匯入導覽列+gototop
 		include nav.pug
-
-		section#about_us.container
+		.mt-135
+		section.container
 			.row
-				.content_top.col-12
-					h2.content_title.col-12 關於我們
-					img(src="./img/logo/NPOlogo.svg", alt="")
-					p.col-12 台灣最大公益社群入口
-					p.col-12
+				.title.col-12
+					h2 關於我們
+				//- 匯入手機版社群分享
+				include phone_social_share.pug
+				.content.col-12
+					p 台灣最大公益社群入口
+					p
 						| 台灣公益資訊中心係財團法人喜瑪拉雅研究發展基金會所建置，成立於西元1999年，為服務台灣非營利組織的大型公益資訊交流平台。免費提供公益團體發佈公益新聞、活動、人才招募...等訊息，以加強公益團體的資訊流通及行銷，並藉以縮減公益團體間的數位落差。
-					p.col-12
+					p
 						| 使命
 						br
 						|           1.加強公益資訊傳播
@@ -26,7 +28,8 @@ html(lang="en")
 						|           2.協助公益團體e化
 						br
 						|           3.縮減公益團體數位落差
-
+		//- 匯入pc版社群分享
+		include pc_social_share.pug
 		//- 匯入底部廣告
 		include footer_ad.pug
 		//- 匯入footer+script

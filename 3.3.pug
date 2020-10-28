@@ -1,5 +1,5 @@
 doctype html
-html(lang="en")
+html(lang="zh-tw")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
@@ -9,15 +9,16 @@ html(lang="en")
 	body#top
 		//- 匯入導覽列+gototop
 		include nav.pug
-
-		section#npo_video.container
+		.mt-135
+		section.container
 			.row
-				.content_top.col-12
-					h2.content_title.col-12 公益影片
-					.col-12
-						form.form-inline.col-12.selector
-							.select_wrap.col-12.col-md-2
-								select.col-12.selectpicker(data-size="5")
+				.title.col-12
+					h2 公益影片
+				.content.col-12
+					form
+						.selector.flex-wrap
+							.col-wrap.col-12.col-md-2
+								select.selectpicker(data-size="5" data-width="100%")
 									option(selected="" disabled="") 影片屬性
 									option 綜合性服務
 									option 兒童青少年福利
@@ -38,16 +39,16 @@ html(lang="en")
 									option 性別平等
 									option 政府單位
 									option 動物保護
-							.select_wrap.col-12.col-md-2
-								select.col-12.selectpicker(data-size="5")
+							.col-wrap.col-12.col-md-2
+								select.selectpicker(data-size="5" data-width="100%")
 									option(selected="" disabled="") 年份
 									option 2020
 									option 2019
 									option 2018
 									option 2017
 									option 2016
-							.select_wrap.col-12.col-md-2
-								select.col-12.selectpicker(data-size="5")
+							.col-wrap.col-12.col-md-2
+								select.selectpicker(data-size="5" data-width="100%")
 									option(selected="" disabled="") 月份
 									option 1
 									option 2
@@ -61,86 +62,21 @@ html(lang="en")
 									option 10
 									option 11
 									option 12
-							.select_wrap.col-12.col-md-4
-								input.form-control.col-12(type="text" placeholder="關鍵字")
-							.select_wrap.col-12.col-md-2
-								button.btn.lookmore.col-12.m-0(type="button") 送出
-					.videos_img
-						.col-12.col-md-6.col-xl-4
-							a.video(href="12.3.1.html")
-								.pic
-									img.img-fluid(src="./img/videos/v1.jpg")
-								h3.title 一日黑嘉嘉
-								p.text 木曜四超完
-						.col-12.col-md-6.col-xl-4
-							a.video(href="12.3.1.html")
-								.pic
-									img.img-fluid(src="./img/videos/v2.jpg")
-								h3.title 一日黑嘉嘉
-								p.text 木曜四超完
-						.col-12.col-md-6.col-xl-4
-							a.video(href="12.3.1.html")
-								.pic
-									img.img-fluid(src="./img/videos/v3.jpg")
-								h3.title 一日黑嘉嘉
-								p.text 木曜四超完
-						.col-12.col-md-6.col-xl-4
-							a.video(href="12.3.1.html")
-								.pic
-									img.img-fluid(src="./img/videos/v1.jpg")
-								h3.title 一日黑嘉嘉
-								p.text 木曜四超完
-						.col-12.col-md-6.col-xl-4
-							a.video(href="12.3.1.html")
-								.pic
-									img.img-fluid(src="./img/videos/v2.jpg")
-								h3.title 一日黑嘉嘉
-								p.text 木曜四超完
-						.col-12.col-md-6.col-xl-4
-							a.video(href="12.3.1.html")
-								.pic
-									img.img-fluid(src="./img/videos/v3.jpg")
-								h3.title 一日黑嘉嘉
-								p.text 木曜四超完
-						.col-12.col-md-6.col-xl-4
-							a.video(href="12.3.1.html")
-								.pic
-									img.img-fluid(src="./img/fakeimg/800x450.png")
-								h3.title 一日黑嘉嘉
-								p.text 木曜四超完
-						.col-12.col-md-6.col-xl-4
-							a.video(href="12.3.1.html")
-								.pic
-									img.img-fluid(src="./img/fakeimg/1000x200.png")
-								h3.title 一日黑嘉嘉
-								p.text 木曜四超完
-						.col-12.col-md-6.col-xl-4
-							a.video(href="12.3.1.html")
-								.pic
-									img.img-fluid(src="./img/fakeimg/200x1000.png")
-								h3.title 一日黑嘉嘉
-								p.text 木曜四超完
-						.col-12.col-md-6.col-xl-4
-							a.video(href="12.3.1.html")
-								.pic
-									img.img-fluid(src="./img/fakeimg/800x800.png")
-								h3.title 一日黑嘉嘉
-								p.text 木曜四超完
-						.col-12.col-md-6.col-xl-4
-							a.video(href="12.3.1.html")
-								.pic
-									img.img-fluid(src="./img/fakeimg/800x450.png")
-								h3.title 一日黑嘉嘉
-								p.text 木曜四超完
-						.col-12.col-md-6.col-xl-4
-							a.video(href="12.3.1.html")
-								.pic
-									img.img-fluid(src="./img/fakeimg/800x450.png")
-								h3.title 一日黑嘉嘉
-								p.text 木曜四超完
-						
-					include page.pug
-		
+							.col-wrap.col-12.col-md-4
+								input.form-control(type="text" placeholder="關鍵字")
+							.col-wrap.col-12.col-md-2
+								button.btn.selector-button(type="button") 送出
+						.list
+							.three-list
+								- for ( var i=1 ; i<=12 ; i++)
+									.three-list-wrap
+										a(href="12.3.1.html")
+											.post
+												.pic
+													img.img-fluid(src="./img/videos/v1.jpg", alt="")
+												h3.text-truncate.text-center 標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱標題名稱
+												h4.text-truncate.text-center 機構名稱機構名稱機構名稱機構名稱機構名稱機構名稱機構名稱
+						include page.pug
 		//- 匯入底部廣告
 		include footer_ad.pug
 		//- 匯入footer+script

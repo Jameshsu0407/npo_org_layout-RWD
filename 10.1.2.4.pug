@@ -1,5 +1,5 @@
 doctype html
-html(lang="en")
+html(lang="zh-tw")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
@@ -9,68 +9,67 @@ html(lang="en")
 	body#top
 		//- 匯入導覽列+gototop
 		include nav.pug
-
-		section#font_end_com_reset_password.member_same.container
+		.mt-135
+		section.container
 			.row
-				.content_top.col-12
-					h2.content_title.col-12 修改密碼
-					// 左側
-					.left.col-12.col-lg-3
-						// pc版導覽列
-						ul.pc_nav
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.2.1.html") 修改企業基本資料
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.2.2.html") 企業提供
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.2.3.html") 企業使用者維護
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.2.4.html") 修改密碼
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.html") 登出
-						// 手機版導覽列
-						select.selectpicker.phone_nav(onchange="location.href=this.options[this.selectedIndex].value")
-							option(value="10.1.2.1.html") 修改企業基本資料
-							option(value="10.1.2.2.html") 企業提供
-							option(value="10.1.2.3.html") 企業使用者維護
-							option(value="10.1.2.4.html" selected) 修改密碼
-							option(value="10.1.html")  登出
-					// 右側
-					.right.col-12.col-lg-9
-						.top_information
-							h4 企業名稱&nbsp;&nbsp;網軟企業
-						form
-							.input-group.mb-3
-								.input-group-prepend
-									span.input-group-text.required_star 舊密碼
-								input.form-control(type="password")
-							.input-group.mb-3
-								.input-group-prepend
-									span.input-group-text.required_star 新密碼
-								input.form-control(type="password")
-							.input-group.mb-3
-								.input-group-prepend
-									span.input-group-text.required_star 確認密碼
-								input.form-control(type="password")
-							.input-group.mb-3
-								.input-group-prepend
-									span.input-group-text.required_star 驗證碼
-								input.form-control(type="text" placeholder="請輸入驗證碼")
-								.input-group-append
-									a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")
-										img.checkpin(src="./img/checkpin.png", alt="")
-							button.btn.submit(type="button" onclick="javascript:location.href=''") 送出
-
-
-
-
-
-
+				.title.col-12 
+					h2 修改密碼
+				.content.col-12
+					.member_same
+						// 左側
+						.left
+							// pc版導覽列
+							ul.pc_nav
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.2.1.html") 修改企業基本資料
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.2.2.html") 企業提供
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.2.3.html") 企業使用者維護
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.2.4.html") 修改密碼
+								li
+									i.fa.fa-caret-right
+									a(href="10.1.html") 登出
+							// 手機版導覽列
+							select.selectpicker.phone_nav(onchange="location.href=this.options[this.selectedIndex].value")
+								option(value="10.1.2.1.html") 修改企業基本資料
+								option(value="10.1.2.2.html") 企業提供
+								option(value="10.1.2.3.html") 企業使用者維護
+								option(value="10.1.2.4.html" selected) 修改密碼
+								option(value="10.1.html")  登出
+						// 右側
+						.right
+							.front_end_list
+								.top_information
+									h4 企業名稱&nbsp;&nbsp;網軟企業
+								.change_password
+									.all-login
+										form
+											.input-group.mb-3
+												.input-group-prepend
+													span.input-group-text.required_star 舊密碼
+												input.form-control(type="password")
+											.input-group.mb-3
+												.input-group-prepend
+													span.input-group-text.required_star 新密碼
+												input.form-control(type="password")
+											.input-group.mb-3
+												.input-group-prepend
+													span.input-group-text.required_star 確認密碼
+												input.form-control(type="password")
+											.input-group.mb-3
+												.input-group-prepend
+													span.input-group-text.required_star 驗證碼
+												input.form-control(type="text" placeholder="請輸入驗證碼")
+												.input-group-append
+													a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")
+														img.checkpin(src="./img/checkpin.png", alt="")
+											button.btn.login_button(type="button" onclick="javascript:location.href=''") 送出
 		//- 匯入底部廣告
 		include footer_ad.pug
 		//- 匯入footer+script

@@ -1,9 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>合作提案</title>
+    <!-- favicon-->
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico">
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="./img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/favicon-152-precomposed.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/favicon-144-precomposed.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/favicon-120-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/favicon-114-precomposed.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/favicon-180-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/favicon-72-precomposed.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/favicon-57.png">
+    <link rel="icon" sizes="32x32" href="./img/favicon/favicon-32.png">
     <!-- bootstrap v4.41-->
     <link rel="stylesheet" href="./css/bootstrap.css">
     <!-- slick v1.8-->
@@ -140,61 +151,62 @@
         </div>
       </div>
     </nav>
-    <section class="container" id="coorperate">
+    <div class="mt-135"></div>
+    <section class="container">
       <div class="row">
-        <div class="content_top col-12">
-          <h2 class="content_title col-12">合作提案</h2>
-          <p class="col-12">台灣公益資訊中心歡迎各公益團體結盟合作，攜手一同為公益盡一份心力，若有需求，歡迎來信洽談合作事宜。</p>
-          <form class="box">
-            <!-- left box-->
-            <div class="left-box col-12 col-md-6">
-              <div class="form-group col-12">
-                <label class="required_star">名字</label>
-                <input class="form-control" type="text" placeholder="請輸入姓名" required="required">
+        <div class="title col-12">
+          <h2>合作提案</h2>
+        </div>
+        <div class="content col-12">
+          <div class="list">
+            <p>台灣公益資訊中心歡迎各公益團體結盟合作，攜手一同為公益盡一份心力，若有需求，歡迎來信洽談合作事宜。</p>
+            <form>
+              <div class="contact-form">
+                <div class="form-group">
+                  <label class="required_star">名字</label>
+                  <input class="form-control" type="text" placeholder="請輸入姓名" required="required">
+                </div>
+                <div class="form-group">
+                  <label class="required_star">Email</label>
+                  <input class="form-control" type="email" placeholder="請輸入Email" required="required">
+                </div>
+                <div class="form-group">
+                  <label class="required_star">公益團體</label>
+                  <input class="form-control" type="text" placeholder="請輸入公益團體" required="required">
+                </div>
+                <div class="form-group">
+                  <label class="required_star">聯絡人</label>
+                  <input class="form-control" type="text" placeholder="請輸入聯絡人" required="required">
+                </div>
+                <div class="form-group">
+                  <label class="required_star">電話</label>
+                  <input class="form-control" type="tel" placeholder="請輸入電話" required="required">
+                </div>
+                <div class="form-group">
+                  <label class="required_star">主旨</label>
+                  <input class="form-control" type="text" placeholder="請輸入主旨" required="required">
+                </div>
+                <div class="form-group">
+                  <label class="required_star">說明</label>
+                  <textarea class="form-control" cols="30" rows="8" placeholder="請輸入想說的內容" required="required"></textarea>
+                </div>
+                <div class="form-group">
+                  <label class="required_star d-block">驗證碼</label>
+                  <input class="form-control col-6 d-inline" type="text" placeholder="請輸入驗證碼" required="required"><img class="img-fluid col-2 d-inline" src="./img/checkpin.png" alt="">
+                  <!-- button-->
+                  <div class="contact-form-btns">
+                    <button class="contact-form-reset btn" type="reset">取消</button>
+                    <button class="contact-form-submit btn" type="submit">送出</button>
+                  </div>
+                </div>
               </div>
-              <div class="form-group col-12">
-                <label class="required_star">Email</label>
-                <input class="form-control" type="email" placeholder="請輸入Email" required="required">
-              </div>
-              <div class="form-group col-12">
-                <label class="required_star">公益團體</label>
-                <input class="form-control" type="text" placeholder="請輸入公益團體" required="required">
-              </div>
-              <div class="form-group col-12">
-                <label class="required_star">聯絡人</label>
-                <input class="form-control" type="text" placeholder="請輸入聯絡人" required="required">
-              </div>
-              <div class="form-group col-12">
-                <label class="required_star">電話</label>
-                <input class="form-control" type="tel" placeholder="請輸入電話" required="required">
-              </div>
-            </div>
-            <!-- right box-->
-            <div class="right-box col-12 col-md-6">
-              <div class="form-group col-12">
-                <label class="required_star">主旨</label>
-                <input class="form-control" type="text" placeholder="請輸入主旨" required="required">
-              </div>
-              <div class="form-group col-12">
-                <label class="required_star">說明</label>
-                <textarea class="form-control" cols="30" rows="8" placeholder="請輸入想說的內容" required="required"></textarea>
-              </div>
-              <div class="form-group col-8">
-                <label class="required_star">驗證碼</label>
-                <input class="form-control" type="text" required="required">
-              </div>
-            </div>
-            <!-- button-->
-            <div class="btns col-12">
-              <button class="btn cooperate_button" id="cooperate_reset" type="reset">取消</button>
-              <button class="btn cooperate_button" id="cooperate_submit" type="submit">送出</button>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </section>
     <!-- 底部廣告-->
-    <section class="container" id="bottom_ads"><img class="img-fluid clickable-row" src="./img/fakeimg/350x150.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad1.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad2.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad3.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"></section>
+    <section class="container" id="bottom_ads"><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a></section>
     <!-- footer-->
     <footer>
       <div class="container">

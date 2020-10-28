@@ -1,5 +1,5 @@
 doctype html
-html(lang="en")
+html(lang="zh-tw")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
@@ -9,45 +9,45 @@ html(lang="en")
 	body#top
 		//- 匯入導覽列+gototop
 		include nav.pug
-
-		section#coorperate.container
+		.mt-135
+		section.container
 			.row
-				.content_top.col-12
-					h2.content_title.col-12 合作提案
-					p.col-12 台灣公益資訊中心歡迎各公益團體結盟合作，攜手一同為公益盡一份心力，若有需求，歡迎來信洽談合作事宜。
-					form.box
-						// left box
-						.left-box.col-12.col-md-6
-							.form-group.col-12
-								label.required_star 名字
-								input.form-control(type="text" placeholder="請輸入姓名" required="required")
-							.form-group.col-12
-								label.required_star Email
-								input.form-control(type="email" placeholder="請輸入Email" required="required")
-							.form-group.col-12
-								label.required_star 公益團體
-								input.form-control(type="text" placeholder="請輸入公益團體" required="required")
-							.form-group.col-12
-								label.required_star 聯絡人
-								input.form-control(type="text" placeholder="請輸入聯絡人" required="required")
-							.form-group.col-12
-								label.required_star 電話
-								input.form-control(type="tel" placeholder="請輸入電話" required="required")
-						// right box
-						.right-box.col-12.col-md-6
-							.form-group.col-12
-								label.required_star 主旨
-								input.form-control(type="text" placeholder="請輸入主旨" required="required")
-							.form-group.col-12
-								label.required_star 說明
-								textarea.form-control(cols="30" rows="8" placeholder="請輸入想說的內容" required="required")
-							.form-group.col-8
-								label.required_star 驗證碼
-								input.form-control(type="text" required="required")
-						// button
-						.btns.col-12
-							button#cooperate_reset.btn.cooperate_button(type="reset") 取消
-							button#cooperate_submit.btn.cooperate_button(type="submit") 送出
+				.title.col-12
+					h2 合作提案
+				.content.col-12
+					.list
+						p 台灣公益資訊中心歡迎各公益團體結盟合作，攜手一同為公益盡一份心力，若有需求，歡迎來信洽談合作事宜。
+						form
+							.contact-form
+								.form-group
+									label.required_star 名字
+									input.form-control(type="text" placeholder="請輸入姓名" required="required")
+								.form-group
+									label.required_star Email
+									input.form-control(type="email" placeholder="請輸入Email" required="required")
+								.form-group
+									label.required_star 公益團體
+									input.form-control(type="text" placeholder="請輸入公益團體" required="required")
+								.form-group
+									label.required_star 聯絡人
+									input.form-control(type="text" placeholder="請輸入聯絡人" required="required")
+								.form-group
+									label.required_star 電話
+									input.form-control(type="tel" placeholder="請輸入電話" required="required")
+								.form-group
+									label.required_star 主旨
+									input.form-control(type="text" placeholder="請輸入主旨" required="required")
+								.form-group
+									label.required_star 說明
+									textarea.form-control(cols="30" rows="8" placeholder="請輸入想說的內容" required="required")
+								.form-group
+									label.required_star.d-block 驗證碼
+									input.form-control.col-6.d-inline(type="text"  placeholder="請輸入驗證碼" required="required")
+									img.img-fluid.col-2.d-inline(src="./img/checkpin.png", alt="")
+									// button
+									.contact-form-btns
+										button.contact-form-reset.btn(type="reset") 取消
+										button.contact-form-submit.btn(type="submit") 送出
 
 		//- 匯入底部廣告
 		include footer_ad.pug

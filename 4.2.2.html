@@ -1,9 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>救助公告</title>
+    <!-- favicon-->
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico">
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="./img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/favicon-152-precomposed.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/favicon-144-precomposed.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/favicon-120-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/favicon-114-precomposed.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/favicon-180-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/favicon-72-precomposed.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/favicon-57.png">
+    <link rel="icon" sizes="32x32" href="./img/favicon/favicon-32.png">
     <!-- bootstrap v4.41-->
     <link rel="stylesheet" href="./css/bootstrap.css">
     <!-- slick v1.8-->
@@ -140,17 +151,17 @@
         </div>
       </div>
     </nav>
-    <section class="container" id="npo_rescue_announcement">
+    <div class="mt-135"></div>
+    <section class="container">
       <div class="row">
-        <div class="content_top col-12">
-          <h2 class="content_title col-12">救助公告</h2>
-          <div class="table col-12">
-            <form class="form-inline col-12 selector">
-              <div class="select_wrap col-12 col-md-4">
-                <input class="form-control col-12" type="text" placeholder="關鍵字">
-              </div>
-              <div class="select_wrap col-12 col-md-3">
-                <select class="col-12 selectpicker" data-size="5">
+        <div class="title col-12">
+          <h2>救助公告</h2>
+        </div>
+        <div class="content col-12">
+          <form>
+            <div class="selector flex-wrap">
+              <div class="col-wrap col-12 col-md-3">
+                <select class="selectpicker" data-size="5" data-width="100%">
                   <option selected="" disabled="">年份</option>
                   <option>2020</option>
                   <option>2019</option>
@@ -159,8 +170,8 @@
                   <option>2016</option>
                 </select>
               </div>
-              <div class="select_wrap col-12 col-md-3">
-                <select class="col-12 selectpicker" data-size="5">
+              <div class="col-wrap col-12 col-md-3">
+                <select class="selectpicker" data-size="5" data-width="100%">
                   <option selected="" disabled="">月份</option>
                   <option>1</option>
                   <option>2</option>
@@ -176,118 +187,123 @@
                   <option>12</option>
                 </select>
               </div>
-              <div class="select_wrap col-12 col-md-2">
-                <button class="btn lookmore col-12 m-0" type="button">送出</button>
+              <div class="col-wrap col-12 col-md-4">
+                <input class="form-control" type="text" placeholder="關鍵字">
               </div>
-            </form>
-            <table class="table col-12">
-              <thead class="thead-color text-center">
-                <tr>
-                  <th class="type_width" scope="col">公告時間</th>
-                  <th scope="col">公告內容</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="clickable-row" data-href="12.4.1.html">
-                  <th class="text-center" scope="row">2020/07/01</th>
-                  <th class="text-truncate">行政院振興三倍卷自7/1日起開放預購，12/31前需使用完畢</th>
-                </tr>
-                <tr class="clickable-row" data-href="12.4.1.html">
-                  <th class="text-center" scope="row">2020/05/04</th>
-                  <th class="text-truncate">「藝文紓困2.0」補助申請須知今日公告 5月4日起受理申請</th>
-                </tr>
-                <tr class="clickable-row" data-href="12.4.1.html">
-                  <th class="text-center" scope="row">2020/07/07</th>
-                  <th class="text-truncate">109年度補助民間團體及地方政府辦理毒品防治服務計畫</th>
-                </tr>
-                <tr class="clickable-row" data-href="12.4.1.html">
-                  <th class="text-center" scope="row">2020/06/06</th>
-                  <th class="text-truncate">高雄市第3屆市長韓國瑜罷免案之投票日期、投票起、止時間、罷免理由書、答辯書、罷免活動期間之起、止日期及每日罷免活動之起、止時間等事項</th>
-                </tr>
-                <tr class="clickable-row" data-href="12.4.1.html">
-                  <th class="text-center" scope="row">2020/06/15</th>
-                  <th class="text-truncate">109學年度感恩基金會獎助學金申請辦法公告</th>
-                </tr>
-                <tr class="clickable-row" data-href="12.4.1.html">
-                  <th class="text-center" scope="row">2020/06/13</th>
-                  <th class="text-truncate">桃園市109年傑出非營利組織徵選實施計畫~</th>
-                </tr>
-                <tr class="clickable-row" data-href="12.4.1.html">
-                  <th class="text-center" scope="row">2020/07/01</th>
-                  <th class="text-truncate">行政院振興三倍卷自7/1日起開放預購，12/31前需使用完畢</th>
-                </tr>
-                <tr class="clickable-row" data-href="12.4.1.html">
-                  <th class="text-center" scope="row">2020/05/04</th>
-                  <th class="text-truncate">「藝文紓困2.0」補助申請須知今日公告 5月4日起受理申請</th>
-                </tr>
-                <tr class="clickable-row" data-href="12.4.1.html">
-                  <th class="text-center" scope="row">2020/07/07</th>
-                  <th class="text-truncate">109年度補助民間團體及地方政府辦理毒品防治服務計畫</th>
-                </tr>
-                <tr class="clickable-row" data-href="12.4.1.html">
-                  <th class="text-center" scope="row">2020/06/06</th>
-                  <th class="text-truncate">高雄市第3屆市長韓國瑜罷免案之投票日期、投票起、止時間、罷免理由書、答辯書、罷免活動期間之起、止日期及每日罷免活動之起、止時間等事項</th>
-                </tr>
-                <tr class="clickable-row" data-href="12.4.1.html">
-                  <th class="text-center" scope="row">2020/06/15</th>
-                  <th class="text-truncate">109學年度感恩基金會獎助學金申請辦法公告</th>
-                </tr>
-                <tr class="clickable-row" data-href="12.4.1.html">
-                  <th class="text-center" scope="row">2020/06/13</th>
-                  <th class="text-truncate">桃園市109年傑出非營利組織徵選實施計畫~</th>
-                </tr>
-                <tr class="clickable-row" data-href="12.4.1.html">
-                  <th class="text-center" scope="row">2020/06/06</th>
-                  <th class="text-truncate">高雄市第3屆市長韓國瑜罷免案之投票日期、投票起、止時間、罷免理由書、答辯書、罷免活動期間之起、止日期及每日罷免活動之起、止時間等事項</th>
-                </tr>
-                <tr class="clickable-row" data-href="12.4.1.html">
-                  <th class="text-center" scope="row">2020/06/15</th>
-                  <th class="text-truncate">109學年度感恩基金會獎助學金申請辦法公告</th>
-                </tr>
-                <tr class="clickable-row" data-href="12.4.1.html">
-                  <th class="text-center" scope="row">2020/06/13</th>
-                  <th class="text-truncate">桃園市109年傑出非營利組織徵選實施計畫~</th>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <!-- 分頁-->
-          <div id="page">
-            <ul class="pagination">
-              <li><a href="#"><i class="fa fa-angle-double-left fa-lg" aria-hidden="true"></i><span class="sr-only">第一頁</span></a></li>
-              <li><a href="#"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i><span class="sr-only">上一頁</span></a></li>
-              <!-- 使用者輸入-->
-              <!-- <li><a><input type="text" placeholder="" size="1">&nbsp;&nbsp;<span>/&nbsp;&nbsp;15</span></a></li>-->
-              <!-- select-->
-              <li>
-                <select class="select_css" onchange="location.href=this.options[this.selectedIndex].value">
-                  <option selected="selected" value="#">1</option>
-                  <option value="#">2</option>
-                  <option value="#">3</option>
-                  <option value="#">4</option>
-                  <option value="#">5</option>
-                  <option value="#">6</option>
-                  <option value="#">7</option>
-                  <option value="#">8</option>
-                  <option value="#">9</option>
-                  <option value="#">10</option>
-                  <option value="#">11</option>
-                  <option value="#">12</option>
-                  <option value="#">13</option>
-                  <option value="#">14</option>
-                  <option value="#">15</option>
-                </select><span>/  15</span>
-              </li>
-              <li><a href="#"><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i><span class="sr-only">下一頁</span></a></li>
-              <li><a href="#"><i class="fa fa-angle-double-right fa-lg" aria-hidden="true"></i><span class="sr-only">最後一頁</span></a></li>
-            </ul>
-          </div>
-          <!--分頁-->
+              <div class="col-wrap col-12 col-md-2">
+                <button class="btn selector-button" type="button">送出</button>
+              </div>
+            </div>
+            <div class="list">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th class="text-center" scope="col" style="width: 20%">公告時間</th>
+                    <th class="text-center" scope="col" style="width: 80%">公告內容</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr onclick="document.location = '12.5.1.html';">
+                    <td class="text-center" data-th="公告時間">2020 / 07 / 01</td>
+                    <td class="text-truncate" data-th="公告內容">第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選</td>
+                  </tr>
+                  <tr onclick="document.location = '12.5.1.html';">
+                    <td class="text-center" data-th="公告時間">2020 / 07 / 01</td>
+                    <td class="text-truncate" data-th="公告內容">第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選</td>
+                  </tr>
+                  <tr onclick="document.location = '12.5.1.html';">
+                    <td class="text-center" data-th="公告時間">2020 / 07 / 01</td>
+                    <td class="text-truncate" data-th="公告內容">第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選</td>
+                  </tr>
+                  <tr onclick="document.location = '12.5.1.html';">
+                    <td class="text-center" data-th="公告時間">2020 / 07 / 01</td>
+                    <td class="text-truncate" data-th="公告內容">第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選</td>
+                  </tr>
+                  <tr onclick="document.location = '12.5.1.html';">
+                    <td class="text-center" data-th="公告時間">2020 / 07 / 01</td>
+                    <td class="text-truncate" data-th="公告內容">第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選</td>
+                  </tr>
+                  <tr onclick="document.location = '12.5.1.html';">
+                    <td class="text-center" data-th="公告時間">2020 / 07 / 01</td>
+                    <td class="text-truncate" data-th="公告內容">第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選</td>
+                  </tr>
+                  <tr onclick="document.location = '12.5.1.html';">
+                    <td class="text-center" data-th="公告時間">2020 / 07 / 01</td>
+                    <td class="text-truncate" data-th="公告內容">第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選</td>
+                  </tr>
+                  <tr onclick="document.location = '12.5.1.html';">
+                    <td class="text-center" data-th="公告時間">2020 / 07 / 01</td>
+                    <td class="text-truncate" data-th="公告內容">第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選</td>
+                  </tr>
+                  <tr onclick="document.location = '12.5.1.html';">
+                    <td class="text-center" data-th="公告時間">2020 / 07 / 01</td>
+                    <td class="text-truncate" data-th="公告內容">第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選</td>
+                  </tr>
+                  <tr onclick="document.location = '12.5.1.html';">
+                    <td class="text-center" data-th="公告時間">2020 / 07 / 01</td>
+                    <td class="text-truncate" data-th="公告內容">第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選</td>
+                  </tr>
+                  <tr onclick="document.location = '12.5.1.html';">
+                    <td class="text-center" data-th="公告時間">2020 / 07 / 01</td>
+                    <td class="text-truncate" data-th="公告內容">第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選</td>
+                  </tr>
+                  <tr onclick="document.location = '12.5.1.html';">
+                    <td class="text-center" data-th="公告時間">2020 / 07 / 01</td>
+                    <td class="text-truncate" data-th="公告內容">第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選</td>
+                  </tr>
+                  <tr onclick="document.location = '12.5.1.html';">
+                    <td class="text-center" data-th="公告時間">2020 / 07 / 01</td>
+                    <td class="text-truncate" data-th="公告內容">第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選</td>
+                  </tr>
+                  <tr onclick="document.location = '12.5.1.html';">
+                    <td class="text-center" data-th="公告時間">2020 / 07 / 01</td>
+                    <td class="text-truncate" data-th="公告內容">第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選</td>
+                  </tr>
+                  <tr onclick="document.location = '12.5.1.html';">
+                    <td class="text-center" data-th="公告時間">2020 / 07 / 01</td>
+                    <td class="text-truncate" data-th="公告內容">第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- 分頁-->
+            <div id="page">
+              <ul class="pagination">
+                <li><a href="#"><i class="fa fa-angle-double-left fa-lg" aria-hidden="true"></i><span class="sr-only">第一頁</span></a></li>
+                <li><a href="#"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i><span class="sr-only">上一頁</span></a></li>
+                <!-- 使用者輸入-->
+                <!-- <li><a><input type="text" placeholder="" size="1">&nbsp;&nbsp;<span>/&nbsp;&nbsp;15</span></a></li>-->
+                <!-- select-->
+                <li>
+                  <select class="select_css" onchange="location.href=this.options[this.selectedIndex].value">
+                    <option selected="selected" value="#">1</option>
+                    <option value="#">2</option>
+                    <option value="#">3</option>
+                    <option value="#">4</option>
+                    <option value="#">5</option>
+                    <option value="#">6</option>
+                    <option value="#">7</option>
+                    <option value="#">8</option>
+                    <option value="#">9</option>
+                    <option value="#">10</option>
+                    <option value="#">11</option>
+                    <option value="#">12</option>
+                    <option value="#">13</option>
+                    <option value="#">14</option>
+                    <option value="#">15</option>
+                  </select><span>/  15</span>
+                </li>
+                <li><a href="#"><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i><span class="sr-only">下一頁</span></a></li>
+                <li><a href="#"><i class="fa fa-angle-double-right fa-lg" aria-hidden="true"></i><span class="sr-only">最後一頁</span></a></li>
+              </ul>
+            </div>
+            <!--分頁-->
+          </form>
         </div>
       </div>
     </section>
     <!-- 底部廣告-->
-    <section class="container" id="bottom_ads"><img class="img-fluid clickable-row" src="./img/fakeimg/350x150.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad1.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad2.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad3.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"></section>
+    <section class="container" id="bottom_ads"><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a></section>
     <!-- footer-->
     <footer>
       <div class="container">

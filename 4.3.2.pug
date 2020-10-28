@@ -1,5 +1,5 @@
 doctype html
-html(lang="en")
+html(lang="zh-tw")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
@@ -9,25 +9,24 @@ html(lang="en")
 	body#top
 		//- 匯入導覽列+gototop
 		include nav.pug
-
-		section#npo_scholarship_announcement.container
+		.mt-135
+		section.container
 			.row
-				.content_top.col-12
-					h2.content_title.col-12 獎助公告
-					.table.col-12
-						form.form-inline.col-12.selector
-							.select_wrap.col-12.col-md-4
-								input.form-control.col-12(type="text" placeholder="請關鍵字")
-							.select_wrap.col-12.col-md-3
-								select.col-12.selectpicker(data-size="5")
+				.title.col-12
+					h2 獎助公告
+				.content.col-12
+					form
+						.selector.flex-wrap
+							.col-wrap.col-12.col-md-3
+								select.selectpicker(data-size="5" data-width="100%")
 									option(selected="" disabled="") 年份
 									option 2020
 									option 2019
 									option 2018
 									option 2017
 									option 2016
-							.select_wrap.col-12.col-md-3
-								select.col-12.selectpicker(data-size="5")
+							.col-wrap.col-12.col-md-3
+								select.selectpicker(data-size="5" data-width="100%")
 									option(selected="" disabled="") 月份
 									option 1
 									option 2
@@ -41,60 +40,22 @@ html(lang="en")
 									option 10
 									option 11
 									option 12
-							.select_wrap.col-12.col-md-2
-								button.btn.lookmore.col-12.m-0(type="button") 送出
-						table.table.col-12
-							thead.thead-color.text-center
-								tr
-									th.type_width(scope="col") 公告時間
-									th(scope="col") 公告內容
-							tbody
-								tr.clickable-row(data-href="12.4.1.html")
-									th.text-center(scope="row") 2020/07/01
-									th.text-truncate 行政院振興三倍卷自7/1日起開放預購，12/31前需使用完畢
-								tr.clickable-row(data-href="12.4.1.html")
-									th.text-center(scope="row") 2020/05/04
-									th.text-truncate 「藝文紓困2.0」補助申請須知今日公告 5月4日起受理申請
-								tr.clickable-row(data-href="12.4.1.html")
-									th.text-center(scope="row") 2020/07/07
-									th.text-truncate 109年度補助民間團體及地方政府辦理毒品防治服務計畫
-								tr.clickable-row(data-href="12.4.1.html")
-									th.text-center(scope="row") 2020/06/06
-									th.text-truncate 高雄市第3屆市長韓國瑜罷免案之投票日期、投票起、止時間、罷免理由書、答辯書、罷免活動期間之起、止日期及每日罷免活動之起、止時間等事項
-								tr.clickable-row(data-href="12.4.1.html")
-									th.text-center(scope="row") 2020/06/15
-									th.text-truncate 109學年度感恩基金會獎助學金申請辦法公告
-								tr.clickable-row(data-href="12.4.1.html")
-									th.text-center(scope="row") 2020/06/13
-									th.text-truncate 桃園市109年傑出非營利組織徵選實施計畫~
-								tr.clickable-row(data-href="12.4.1.html")
-									th.text-center(scope="row") 2020/07/01
-									th.text-truncate 行政院振興三倍卷自7/1日起開放預購，12/31前需使用完畢
-								tr.clickable-row(data-href="12.4.1.html")
-									th.text-center(scope="row") 2020/05/04
-									th.text-truncate 「藝文紓困2.0」補助申請須知今日公告 5月4日起受理申請
-								tr.clickable-row(data-href="12.4.1.html")
-									th.text-center(scope="row") 2020/07/07
-									th.text-truncate 109年度補助民間團體及地方政府辦理毒品防治服務計畫
-								tr.clickable-row(data-href="12.4.1.html")
-									th.text-center(scope="row") 2020/06/06
-									th.text-truncate 高雄市第3屆市長韓國瑜罷免案之投票日期、投票起、止時間、罷免理由書、答辯書、罷免活動期間之起、止日期及每日罷免活動之起、止時間等事項
-								tr.clickable-row(data-href="12.4.1.html")
-									th.text-center(scope="row") 2020/06/15
-									th.text-truncate 109學年度感恩基金會獎助學金申請辦法公告
-								tr.clickable-row(data-href="12.4.1.html")
-									th.text-center(scope="row") 2020/06/13
-									th.text-truncate 桃園市109年傑出非營利組織徵選實施計畫~
-								tr.clickable-row(data-href="12.4.1.html")
-									th.text-center(scope="row") 2020/06/06
-									th.text-truncate 高雄市第3屆市長韓國瑜罷免案之投票日期、投票起、止時間、罷免理由書、答辯書、罷免活動期間之起、止日期及每日罷免活動之起、止時間等事項
-								tr.clickable-row(data-href="12.4.1.html")
-									th.text-center(scope="row") 2020/06/15
-									th.text-truncate 109學年度感恩基金會獎助學金申請辦法公告
-								tr.clickable-row(data-href="12.4.1.html")
-									th.text-center(scope="row") 2020/06/13
-									th.text-truncate 桃園市109年傑出非營利組織徵選實施計畫~
-					include page.pug
+							.col-wrap.col-12.col-md-4
+								input.form-control(type="text" placeholder="關鍵字")
+							.col-wrap.col-12.col-md-2
+								button.btn.selector-button(type="button") 送出
+						.list
+							table.table.table-striped
+								thead
+									tr
+										th.text-center(scope="col" style="width: 20%") 公告時間
+										th.text-center(scope="col" style="width: 80%") 公告內容
+								tbody
+									- for ( var i=1 ; i<=15 ; i++)
+										tr(onclick="document.location = '12.6.1.html';")
+											td.text-center(data-th="公告時間") 2020 / 07 / 01
+											td.text-truncate(data-th="公告內容") 第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選第四屆「堉璘台灣奉獻獎」公開徵選
+						include page.pug
 		//- 匯入底部廣告
 		include footer_ad.pug
 		//- 匯入footer+script

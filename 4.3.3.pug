@@ -1,5 +1,5 @@
 doctype html
-html(lang="en")
+html(lang="zh-tw")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
@@ -9,53 +9,56 @@ html(lang="en")
 	body#top
 		//- 匯入導覽列+gototop
 		include nav.pug
-
-		section#npo_scholarship_calendar.container
+		.mt-135
+		section.container
 			.row
-				.content_top.col-12
-					h2.content_title.col-12 獎助行事曆
-					.col-12.col-lg-6.content_left
-						#calendar
-					.col-12.col-lg-6.content_right.calendar_list
-						.comming_allowance
-							.col-3
-								span.date 18
-								span.month 2020/06
-							.col-9
-								h3 蝦皮618活動！全館滿千送百
-								p
-									| 618最早是源自京東的週年慶，因為1998年6月18日，劉強東在中關村創業，成立京東公司，所以每年618就是京東的生日，京東選這天進行大促，淘寶天貓、蘇寧、拼多多等電商平台陸續加入，成為網購的年中購物節。
-								span
-									a(href="12.4.1.html") +查看更多
-						.comming_allowance
-							.col-3
-								span.date 22
-								span.month 2020/06
-							.col-9
-								h3 WWDC 2020
-								p 蘋果全球開發者大會是蘋果公司每年定期在美國加州舉辦的會議活動，向全球的軟體的設計師展示蘋果公司最新的軟體和技術。
-								span
-									a(href="12.4.1.html") +查看更多
-						.comming_allowance
-							.col-3
-								span.date 18
-								span.month 2020/06
-							.col-9
-								h3 蝦皮618活動！全館滿千送百
-								p
-									| 618最早是源自京東的週年慶，因為1998年6月18日，劉強東在中關村創業，成立京東公司，所以每年618就是京東的生日，京東選這天進行大促，淘寶天貓、蘇寧、拼多多等電商平台陸續加入，成為網購的年中購物節。
-								span
-									a(href="12.4.1.html") +查看更多
-						.comming_allowance
-							.col-3
-								span.date 22
-								span.month 2020/06
-							.col-9
-								h3 WWDC 2020
-								p 蘋果全球開發者大會是蘋果公司每年定期在美國加州舉辦的會議活動，向全球的軟體的設計師展示蘋果公司最新的軟體和技術。
-								span
-									a(href="12.4.1.html") +查看更多
-
+				.title.col-12
+					h2 獎助行事曆
+				.content.col-12
+					.list
+						.calendar
+							// 點選橘色槓槓，右邊才會顯示該活動內容
+							.content_left
+								#calendar
+							.content_right.calendar_list
+								.comming_allowance
+									.col-3
+										span.date 18
+										span.month 2020/06
+									.col-9
+										h3 蝦皮618活動！全館滿千送百
+										p
+											| 618最早是源自京東的週年慶，因為1998年6月18日，劉強東在中關村創業，成立京東公司，所以每年618就是京東的生日，京東選這天進行大促，淘寶天貓、蘇寧、拼多多等電商平台陸續加入，成為網購的年中購物節。
+										span
+											a(href="12.4.1.html") +查看更多
+								.comming_allowance
+									.col-3
+										span.date 22
+										span.month 2020/06
+									.col-9
+										h3 WWDC 2020
+										p 蘋果全球開發者大會是蘋果公司每年定期在美國加州舉辦的會議活動，向全球的軟體的設計師展示蘋果公司最新的軟體和技術。
+										span
+											a(href="12.4.1.html") +查看更多
+								.comming_allowance
+									.col-3
+										span.date 18
+										span.month 2020/06
+									.col-9
+										h3 蝦皮618活動！全館滿千送百
+										p
+											| 618最早是源自京東的週年慶，因為1998年6月18日，劉強東在中關村創業，成立京東公司，所以每年618就是京東的生日，京東選這天進行大促，淘寶天貓、蘇寧、拼多多等電商平台陸續加入，成為網購的年中購物節。
+										span
+											a(href="12.4.1.html") +查看更多
+								.comming_allowance
+									.col-3
+										span.date 22
+										span.month 2020/06
+									.col-9
+										h3 WWDC 2020
+										p 蘋果全球開發者大會是蘋果公司每年定期在美國加州舉辦的會議活動，向全球的軟體的設計師展示蘋果公司最新的軟體和技術。
+										span
+											a(href="12.4.1.html") +查看更多
 		//- 匯入底部廣告
 		include footer_ad.pug
 		//- 匯入footer+script

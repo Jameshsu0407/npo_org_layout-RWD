@@ -1,5 +1,5 @@
 doctype html
-html(lang="en")
+html(lang="zh-Hant-TW")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
@@ -9,864 +9,861 @@ html(lang="en")
 	body#top
 		//- 匯入導覽列+gototop
 		include nav.pug
-
-		section#register.member_same.container
+		.mt-135
+		section.container
 			.row
-				.content_top.col-12
-					h2.content_title.col-12 申請會員
-					// 左側
-					.left.col-12.col-lg-3
-						// pc版導覽列
-						ul.pc_nav
-							li
-								i.fa.fa-caret-right
-								a(href="10.1.html") 會員登錄
-							li
-								i.fa.fa-caret-right
-								a(href="10.2.html") 申請會員
-						// 手機版導覽列
-						select.selectpicker.phone_nav(onchange="location.href=this.options[this.selectedIndex].value")
-							option(value="10.1.html") 會員登錄
-							option(value="10.2.html"  selected)  申請會員
+				.title.col-12 
+					h2 申請會員
+				.content.col-12
+					.member_same
+							// 左側
+							.left
+								// pc版導覽列
+								ul.pc_nav
+									li
+										i.fa.fa-caret-right
+										a(href="10.1.html") 會員登錄
+									li
+										i.fa.fa-caret-right
+										a(href="10.2.html") 申請會員
+								// 手機版導覽列
+								select.selectpicker.phone_nav(onchange="location.href=this.options[this.selectedIndex].value")
+									option(value="10.1.html") 會員登錄
+									option(value="10.2.html"  selected)  申請會員
 
-					// 右側
-					.right.col-12.col-lg-9
-						form
-							// 會員申請說明
-							// 使用者依照資格選擇要申請的種類，看完說明、同意完條款就進到填表階段
-							.register_explanation
-								h3.col-12 會員申請流程說明
-								// 機構專區申請說明 開始
-								.org_explanation
-									.input-group.mb-3
-										.input-group-prepend
-											span.input-group-text 會員類別
-										select.form-control.selectpicker
-											option(data-icon="fas fa-users" selected) 機構專區
-											option(data-icon="far fa-building") 企業專區
-											option(data-icon="far fa-user") 一般會員
-									img.img-fluid.col-12(src="./img/fakeimg/800x450.png")
-									p.col-12 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, consequatur! Hic, soluta reprehenderit harum sapiente ut distinctio assumenda tempora possimus nulla dolores? Tenetur ut, praesentium adipisci consequuntur, odio at nihil cumque aspernatur sed vero ipsam quo repellendus necessitatibus sapiente excepturi fugit eum consequatur doloribus veritatis numquam voluptatibus. Perspiciatis, recusandae earum?
-									p.col-12 Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis deleniti a voluptatum aliquid nihil libero, porro veniam earum fugit tempora.
-								// 機構專區申請說明 結束
-								// 企業專區申請說明 開始
-								.com_explanation
-									.input-group.mb-3
-										.input-group-prepend
-											span.input-group-text 會員類別
-										select.form-control.selectpicker
-											option(data-icon="fas fa-users") 機構專區
-											option(data-icon="far fa-building" selected) 企業專區
-											option(data-icon="far fa-user") 一般會員
-									img.img-fluid.col-12(src="./img/fakeimg/800x450.png")
-									p.col-12 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, consequatur! Hic, soluta reprehenderit harum sapiente ut distinctio assumenda tempora possimus nulla dolores? Tenetur ut, praesentium adipisci consequuntur, odio at nihil cumque aspernatur sed vero ipsam quo repellendus necessitatibus sapiente excepturi fugit eum consequatur doloribus veritatis numquam voluptatibus. Perspiciatis, recusandae earum?
-									p.col-12 Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis deleniti a voluptatum aliquid nihil libero, porro veniam earum fugit tempora.
-								// 企業專區申請說明 結束
-								// 一般會員申請說明 開始
-								.member_explanation
-									.input-group.mb-3
-										.input-group-prepend
-											span.input-group-text 會員類別
-										select.form-control.selectpicker
-											option(data-icon="fas fa-users") 機構專區
-											option(data-icon="far fa-building") 企業專區
-											option(data-icon="far fa-user" selected) 一般會員
-									img.img-fluid.col-12(src="./img/fakeimg/800x450.png")
-									p.col-12 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, consequatur! Hic, soluta reprehenderit harum sapiente ut distinctio assumenda tempora possimus nulla dolores? Tenetur ut, praesentium adipisci consequuntur, odio at nihil cumque aspernatur sed vero ipsam quo repellendus necessitatibus sapiente excepturi fugit eum consequatur doloribus veritatis numquam voluptatibus. Perspiciatis, recusandae earum?
-									p.col-12 Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis deleniti a voluptatum aliquid nihil libero, porro veniam earum fugit tempora.
-								// 一般會員申請說明 結束
-								.form-group.form-check
-									input.form-check-input(type="checkbox")
-									label.form-check-label.required_stars 我已閱讀
-								button.btn.explanation_submit(onclick="javascript:location.href=''") 下一步
-							// 機構註冊 開始
-							// 機構註冊完後還需要創建使用者
-							.org_register_form
-								h3.col-12 機構建檔
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 機構名稱(中)
-										input.form-control(type="text")
-								.col-12.col-md-6
-									.form-group
-										label 機構名稱(英)
-										input.form-control(type="text")
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 創辦人(中)
-										input.form-control(type="text")
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 創辦人(英)
-										input.form-control(type="text")
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 執行長(中)
-										input.form-control(type="text")
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 執行長(英)
-										input.form-control(type="text")
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 聯絡人(中)
-										input.form-control(type="text")
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 聯絡人(英)
-										input.form-control(type="text")
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 電話
-										input.form-control(type="text")
-								.col-12.col-md-6
-									.form-group
-										label 分機
-										input.form-control(type="text")
-								// 必填
-								.col-12
-									.form-group
-										label.required_star 傳真
-										input.form-control(type="text")
-								// 必填
-								.col-12
-									.form-group
-										label.required_star 統一編號
-										input.form-control(type="text")
-								// 必填
-								.col-6.col-md-3.left
-									.form-group
-										label.required_star 地址(中)
-										select.form-control.selectpicker(data-size="5")
-											option(selected disabled) 縣市
-											option 台北市
-											option 新北市
-											option 桃園市
-											option 我都行
-								.col-6.col-md-3.right
-									.form-group
-										label.invisiable 地址(中)
-										select.form-control.selectpicker(data-size="5")
-											option(selected disabled) 行政區
-											option 台中市
-											option 台南市
-											option 高雄市
-											option 我都愛
-								.col-12.col-md-6
-									.form-group
-										label.invisiable 地址(中)
-										input.form-control(type="text")
-								.col-12
-									.form-group
-										label 地址(英)
-										input.form-control(type="text")
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 成立日期
-										input.form-control(type="date")
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 立案字號
-										input.form-control(type="text")
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 許可機關(中)
-										input.form-control(type="text")
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 許可機關(英)
-										input.form-control(type="text")
-								.col-12.col-md-6
-									.form-group
-										label 郵政劃撥
-										input.form-control(type="text" placeholder="帳號")
-								.col-12.col-md-6
-									.form-group
-										label.invisiable 郵政劃撥
-										input.form-control(type="text" placeholder="戶名")
-								.col-12
-									.form-group
-										label 網址
-										input.form-control(type="url")
-								// 必填
-								.col-12
-									.form-group
-										label.required_star 電子郵件
-										input.form-control(type="email")
-								.col-12
-									.form-group
-										label GoogleMap
-										input.form-control(type="text" placeholder="請貼上embed裡src裡面的網址")
-								// 必填
-								.col-12
-									.form-group
-										label.required_star 成立主旨(中)
-										textarea.form-control(rows="5")
-								.col-12
-									.form-group
-										label 成立主旨(英)
-										textarea.form-control(rows="5")
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 上傳Logo
-										.custom-file
-											input.custom-file-input(type="file")
-											label.custom-file-label 尺寸800X800px
-								.col-12.col-md-6
-									.form-group
-										label.required_star 上傳證書
-										.custom-file
-											input.custom-file-input(type="file")
-											label.custom-file-label 上傳證書
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 機構屬性
-										select.form-control.selectpicker(data-size="5")
-											option(selected disabled) 請選擇
-											option 粽合性服務
-											option 兒童青少年福利
-											option 婦女福利
-											option 老人福利
-											option 身心障礙福利
-											option 家庭福利
-											option 健康醫療
-											option 心理衛生
-											option 社區規劃(營造)
-											option 環境保護
-											option 國際合作交流
-											option 教育與科學
-											option 文化藝術
-											option 人權和平
-											option 消費者保護
-											option 性別平等
-											option 政府單位
-											option 動物保護
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 性質
-										select.form-control.selectpicker(data-size="5")
-											option(selected disabled) 請選擇
-											option (財團法人)基金會
-											option (社團法人)協會
-											option 機構
-											option 社政單位
-											option 學校
-								.col-12
-									.form-group
-										label 財物規模
-										input.form-control(type="text")
-								// 必填
-								.col-12
-									label.required_star 服務區域
-									.region
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 全球性
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 全國性
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 基隆市
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 新北市
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 台北市
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 桃園市
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 新竹市
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 新竹縣
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 苗栗縣
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 台中市
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 彰化縣
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 南投縣
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 雲林縣
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 嘉義市
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 嘉義縣
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 台南市
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 高雄市
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 屏東縣
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 宜蘭縣
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 花蓮縣
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 台東縣
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 澎湖縣
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 金門縣
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 連江縣
-								// 必填
-								.col-12
-									label.required_star 服務項目
-									.service
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 心理輔導
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 個案輔導
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 個案管理
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 心理治療
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 遊戲治療
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 團體輔導
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 家族治療
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 親職教育
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 鑑別診斷
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 早期療育
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 兒童托育
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 日間照顧
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 課後照顧
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 收容收養
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 寄養服務
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 兒童保護
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 緊急庇護
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 中途之家
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 家務助理
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 在宅服務
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 居家護理
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 安寧照顧
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 暫托服務
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 關懷專線
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 喘息服務
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 臨時住宿
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 交通接送
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 送餐服務
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 休閒娛樂
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 營隊活動
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 聯誼活動
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 婚姻協談
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 家庭輔導
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 婦女救援
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 自殺防治
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 戒毒戒癮
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 犯罪矯治
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 急難救助
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 醫療補助
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 生活扶助
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 獎助學金
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 喪葬補助
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 復健服務
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 輔助器具
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 物理治療
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 職能治療
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 語言治療
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 手語傳譯
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 性向測驗
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 生涯規劃
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 職能評估
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 職業訓練
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 職訓補助
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 就業資訊
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 就業輔導
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 庇護工廠
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 特殊教育
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 教學研究
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 社工實習
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 學校社工
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 志願服務
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 聯合勸募
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 醫療諮詢
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 法律諮詢
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 營養諮詢
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 社區服務
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 社教宣導
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 專業訓練
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 社福資訊
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 權益倡導
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 政策分析
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 海外救援
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 國際交流
-										.form-group.form-check
-											input.form-check-input(type="checkbox")
-											label.form-check-label 其他
-								.col-12
-									label 機構是否有以下業務
-									.support
-										.form-group.form-check
-												input.form-check-input(type="checkbox")
-												label.form-check-label 補助機構
-										.form-group.form-check
-												input.form-check-input(type="checkbox")
-												label.form-check-label 急難救助
-										.form-group.form-check
-												input.form-check-input(type="checkbox")
-												label.form-check-label 獎助學金
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 服務對象
-										br
-										label.required_star 性別
-										.gender
-											.form-check
-												input.form-check-input(type="radio" name="gender")
-												label.form-check-label 不限
-											.form-check
-												input.form-check-input(type="radio" name="gender")
-												label.form-check-label 男性
-											.form-check
-												input.form-check-input(type="radio" name="gender")
-												label.form-check-label 女性
-										br
-										label.required_star 年齡
-										.age
-											.form-check
-												input.form-check-input(type="radio" name="age")
-												label.form-check-label 不限
-											.form-check
-												input.form-check-input(type="radio" name="age")
-												label.form-check-label 限
-												.age_range
+							// 右側
+							.right
+								.register
+									form
+										// 會員申請說明
+										// 使用者依照資格選擇要申請的種類，看完說明、同意完條款就進到填表階段
+										.register_explanation
+											h3.col-12 會員申請流程說明
+											// 機構專區申請說明 開始
+											.org_explanation
+												.input-group.mb-3
+													.input-group-prepend
+														span.input-group-text 會員類別
+													select.form-control.selectpicker
+														option(data-icon="fas fa-users fa-fw" selected) 機構專區
+														option(data-icon="far fa-building fa-fw") 企業專區
+														option(data-icon="far fa-user fa-fw") 一般會員
+												div.col-12.mb-3
+													iframe(src="1.html" id="iframe_member" scrolling="auto" width="100%" height="250px")
+											// 機構專區申請說明 結束
+											// 企業專區申請說明 開始
+											.com_explanation
+												.input-group.mb-3
+													.input-group-prepend
+														span.input-group-text 會員類別
+													select.form-control.selectpicker
+														option(data-icon="fas fa-users fa-fw") 機構專區
+														option(data-icon="far fa-building fa-fw" selected) 企業專區
+														option(data-icon="far fa-user fa-fw") 一般會員
+												div.col-12.mb-3
+													iframe(src="1.html" id="iframe_member" scrolling="auto" width="100%" height="250px")
+											// 企業專區申請說明 結束
+											// 一般會員申請說明 開始
+											.member_explanation
+												.input-group.mb-3
+													.input-group-prepend
+														span.input-group-text 會員類別
+													select.form-control.selectpicker
+														option(data-icon="fas fa-users fa-fw") 機構專區
+														option(data-icon="far fa-building fa-fw") 企業專區
+														option(data-icon="far fa-user fa-fw" selected) 一般會員
+												div.col-12.mb-3
+													iframe(src="1.html" id="iframe_member" scrolling="auto" width="100%" height="250px")
+											// 一般會員申請說明 結束
+											.form-group.form-check
+												input#i-read.form-check-input(type="checkbox")
+												label.form-check-label.required_stars(for="i-read") 我已閱讀
+											.next.d-block.mx-auto
+												button.btn.explanation_submit(onclick="javascript:location.href=''") 下一步
+										// 機構註冊 開始
+										// 機構註冊完後還需要創建使用者
+										.org_register_form
+											h3.col-12 機構建檔
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 機構名稱(中)
 													input.form-control(type="text")
-													label 歲至
+											.col-12.col-md-6
+												.form-group
+													label 機構名稱(英)
 													input.form-control(type="text")
-													label 歲
-								.col-12
-									.form-group
-										label 附屬設施
-										textarea.form-control(rows="5")
-								// 必填
-								.col-12
-									.form-group
-										label.required_star 工作重點
-										textarea.form-control(rows="5")
-								.col-12
-									.form-group
-										label 出版品
-										textarea.form-control(rows="5")
-								.col-12
-									.form-group
-										label 其他
-										textarea.form-control(rows="5")
-								.col-12
-									.form-group
-										label 備註
-										textarea.form-control(rows="5")
-								.input-group.mb-3
-									.input-group-prepend
-										span.input-group-text.required_star 驗證碼
-									input.form-control(type="text" placeholder="請輸入驗證碼")
-									.input-group-append
-										a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")
-											img.checkpin(src="./img/checkpin.png", alt="")
-								button.btn.login_button(type="button" onclick="javascript:location.href=''") 送出
-							// 機構註冊 結束
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 創辦人(中)
+													input.form-control(type="text")
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 創辦人(英)
+													input.form-control(type="text")
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 執行長(中)
+													input.form-control(type="text")
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 執行長(英)
+													input.form-control(type="text")
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 聯絡人(中)
+													input.form-control(type="text")
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 聯絡人(英)
+													input.form-control(type="text")
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 電話
+													input.form-control(type="text")
+											.col-12.col-md-6
+												.form-group
+													label 分機
+													input.form-control(type="text")
+											// 必填
+											.col-12
+												.form-group
+													label.required_star 傳真
+													input.form-control(type="text")
+											// 必填
+											.col-12
+												.form-group
+													label.required_star 統一編號
+													input.form-control(type="text")
+											//- 地址
+											.address
+												label.required_star.address_text 地址(中)
+												.form-group
+													input.form-control(placeholder="郵遞區號" type="number")
+												.form-group
+													select.form-control.selectpicker(data-size="5")
+														option(selected disabled) 縣市
+														option 台北市
+														option 新北市
+														option 桃園市
+														option 我都行
+												.form-group
+													select.form-control.selectpicker(data-size="5")
+														option(selected disabled) 行政區
+														option 台中市
+														option 台南市
+														option 高雄市
+														option 我都愛
+												.form-group.detail_address
+													input.form-control(type="text")
+											.col-12
+												.form-group
+													label 地址(英)
+													input.form-control(type="text")
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 成立日期
+													input.form-control(type="date")
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 立案字號
+													input.form-control(type="text")
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 許可機關(中)
+													input.form-control(type="text")
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 許可機關(英)
+													input.form-control(type="text")
+											.col-12.col-md-6
+												.form-group
+													label 郵政劃撥
+													input.form-control(type="text" placeholder="帳號")
+											.col-12.col-md-6
+												.form-group
+													label.invisiable 郵政劃撥
+													input.form-control(type="text" placeholder="戶名")
+											.col-12
+												.form-group
+													label 網址
+													input.form-control(type="url")
+											// 必填
+											.col-12
+												.form-group
+													label.required_star 電子郵件
+													input.form-control(type="email")
+											.col-12
+												.form-group
+													label GoogleMap
+													input.form-control(type="text" placeholder="請貼上embed裡src裡面的網址")
+											// 必填
+											.col-12
+												.form-group
+													label.required_star 成立主旨(中)
+													textarea.form-control(rows="5")
+											.col-12
+												.form-group
+													label 成立主旨(英)
+													textarea.form-control(rows="5")
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 上傳Logo
+													.custom-file
+														input.custom-file-input(type="file")
+														label.custom-file-label 尺寸800X800px
+											.col-12.col-md-6
+												.form-group
+													label.required_star 上傳證書
+													.custom-file
+														input.custom-file-input(type="file")
+														label.custom-file-label 上傳證書
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 機構屬性
+													select.form-control.selectpicker(data-size="5")
+														option(selected disabled) 請選擇
+														option 粽合性服務
+														option 兒童青少年福利
+														option 婦女福利
+														option 老人福利
+														option 身心障礙福利
+														option 家庭福利
+														option 健康醫療
+														option 心理衛生
+														option 社區規劃(營造)
+														option 環境保護
+														option 國際合作交流
+														option 教育與科學
+														option 文化藝術
+														option 人權和平
+														option 消費者保護
+														option 性別平等
+														option 政府單位
+														option 動物保護
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 性質
+													select.form-control.selectpicker(data-size="5")
+														option(selected disabled) 請選擇
+														option (財團法人)基金會
+														option (社團法人)協會
+														option 機構
+														option 社政單位
+														option 學校
+											.col-12
+												.form-group
+													label 財物規模
+													input.form-control(type="text")
+											// 必填
+											.col-12
+												label.required_star 服務區域
+												.region
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 全球性
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 全國性
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 基隆市
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 新北市
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 台北市
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 桃園市
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 新竹市
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 新竹縣
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 苗栗縣
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 台中市
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 彰化縣
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 南投縣
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 雲林縣
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 嘉義市
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 嘉義縣
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 台南市
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 高雄市
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 屏東縣
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 宜蘭縣
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 花蓮縣
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 台東縣
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 澎湖縣
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 金門縣
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 連江縣
+											// 必填
+											.col-12
+												label.required_star 服務項目
+												.service
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 心理輔導
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 個案輔導
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 個案管理
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 心理治療
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 遊戲治療
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 團體輔導
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 家族治療
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 親職教育
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 鑑別診斷
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 早期療育
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 兒童托育
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 日間照顧
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 課後照顧
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 收容收養
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 寄養服務
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 兒童保護
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 緊急庇護
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 中途之家
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 家務助理
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 在宅服務
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 居家護理
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 安寧照顧
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 暫托服務
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 關懷專線
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 喘息服務
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 臨時住宿
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 交通接送
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 送餐服務
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 休閒娛樂
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 營隊活動
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 聯誼活動
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 婚姻協談
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 家庭輔導
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 婦女救援
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 自殺防治
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 戒毒戒癮
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 犯罪矯治
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 急難救助
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 醫療補助
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 生活扶助
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 獎助學金
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 喪葬補助
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 復健服務
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 輔助器具
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 物理治療
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 職能治療
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 語言治療
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 手語傳譯
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 性向測驗
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 生涯規劃
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 職能評估
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 職業訓練
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 職訓補助
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 就業資訊
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 就業輔導
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 庇護工廠
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 特殊教育
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 教學研究
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 社工實習
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 學校社工
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 志願服務
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 聯合勸募
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 醫療諮詢
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 法律諮詢
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 營養諮詢
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 社區服務
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 社教宣導
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 專業訓練
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 社福資訊
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 權益倡導
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 政策分析
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 海外救援
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 國際交流
+													.form-group.form-check
+														input.form-check-input(type="checkbox")
+														label.form-check-label 其他
+											.col-12
+												label 機構是否有以下業務
+												.support
+													.form-group.form-check
+															input.form-check-input(type="checkbox")
+															label.form-check-label 補助機構
+													.form-group.form-check
+															input.form-check-input(type="checkbox")
+															label.form-check-label 急難救助
+													.form-group.form-check
+															input.form-check-input(type="checkbox")
+															label.form-check-label 獎助學金
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 服務對象
+													br
+													label.required_star 性別
+													.gender
+														.form-check
+															input.form-check-input(type="radio" name="gender")
+															label.form-check-label 不限
+														.form-check
+															input.form-check-input(type="radio" name="gender")
+															label.form-check-label 男性
+														.form-check
+															input.form-check-input(type="radio" name="gender")
+															label.form-check-label 女性
+													br
+													label.required_star 年齡
+													.age
+														.form-check
+															input.form-check-input(type="radio" name="age")
+															label.form-check-label 不限
+														.form-check
+															input.form-check-input(type="radio" name="age")
+															label.form-check-label 限
+															.age_range
+																input.form-control(type="text")
+																label 歲至
+																input.form-control(type="text")
+																label 歲
+											.col-12
+												.form-group
+													label 附屬設施
+													textarea.form-control(rows="5")
+											// 必填
+											.col-12
+												.form-group
+													label.required_star 工作重點
+													textarea.form-control(rows="5")
+											.col-12
+												.form-group
+													label 出版品
+													textarea.form-control(rows="5")
+											.col-12
+												.form-group
+													label 其他
+													textarea.form-control(rows="5")
+											.col-12
+												.form-group
+													label 備註
+													textarea.form-control(rows="5")
+											.input-group.mb-3
+												.input-group-prepend
+													span.input-group-text.required_star 驗證碼
+												input.form-control(type="text" placeholder="請輸入驗證碼")
+												.input-group-append
+													a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")
+														img.checkpin(src="./img/checkpin.png", alt="")
+											button.btn.login_button(type="button" onclick="javascript:location.href=''") 送出
+										// 機構註冊 結束
 
-							// 機構註冊-創建使用者 開始
-							.org_register_account
-								h3.col-12 使用者創建
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 使用者名稱
-										input.form-control(type="text")
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 職稱
-										input.form-control(type="text")
-								// 必填
-								.col-12
-									.form-group
-										label.required_star 電話
-										input.form-control(type="text")
-								// 必填
-								.col-12
-									.form-group
-										label.required_star Email
-										input.form-control(type="email")
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 密碼
-										input.form-control(type="password")
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 確認密碼
-										input.form-control(type="password")
-								.input-group.mb-3
-									.input-group-prepend
-										span.input-group-text.required_star 驗證碼
-									input.form-control(type="text" placeholder="請輸入驗證碼")
-									.input-group-append
-										a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")
-											img.checkpin(src="./img/checkpin.png", alt="")
-								button.btn.login_button(type="button" onclick="javascript:location.href=''") 送出
-							// 機構註冊-創建使用者 結束
+										// 機構註冊-創建使用者 開始
+										.org_register_account
+											h3.col-12 使用者創建
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 使用者名稱
+													input.form-control(type="text")
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 職稱
+													input.form-control(type="text")
+											// 必填
+											.col-12
+												.form-group
+													label.required_star 電話
+													input.form-control(type="text")
+											// 必填
+											.col-12
+												.form-group
+													label.required_star Email
+													input.form-control(type="email")
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 密碼
+													input.form-control(type="password")
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 確認密碼
+													input.form-control(type="password")
+											.input-group.mb-3
+												.input-group-prepend
+													span.input-group-text.required_star 驗證碼
+												input.form-control(type="text" placeholder="請輸入驗證碼")
+												.input-group-append
+													a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")
+														img.checkpin(src="./img/checkpin.png", alt="")
+											button.btn.login_button(type="button" onclick="javascript:location.href=''") 送出
+										// 機構註冊-創建使用者 結束
 
-							// 企業註冊 開始
-							// 企業註冊完後還需要創建使用者
-							.com_register_form
-								h3.col-12 企業建檔
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 企業名稱
-										input.form-control(type="text")
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 企業統編
-										input.form-control(type="text")
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 上傳Logo
-										.custom-file
-											input.custom-file-input(type="file")
-											label.custom-file-label 建議尺寸800X800px
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 上傳登記證
-										.custom-file
-											input.custom-file-input(type="file")
-											label.custom-file-label 上傳證書
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 負責人
-										input.form-control(type="text")
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 聯絡人
-										input.form-control(type="text")
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 電話
-										input.form-control(type="text")
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 傳真
-										input.form-control(type="text")
-								// 必填
-								.col-6.col-md-3.left
-									.form-group
-										label.required_star 地址(中)
-										select.form-control.selectpicker(data-size="5")
-											option(selected disabled) 縣市
-											option 台北市
-											option 新北市
-											option 桃園市
-											option 我都行
-								.col-6.col-md-3.right
-									.form-group
-										label.invisiable 地址(中)
-										select.form-control.selectpicker(data-size="5")
-											option(selected disabled) 行政區
-											option 台中市
-											option 台南市
-											option 高雄市
-											option 我都愛
-								.col-12.col-md-6
-									.form-group
-										label.invisiable 地址(中)
-										input.form-control(type="text")
-								// 必填
-								.col-12
-									.form-group
-										label.required_star Email
-										input.form-control(type="email")
-								.col-12
-									.form-group
-										label 備註
-										textarea.form-control(rows="5")
-								.input-group.mb-3
-									.input-group-prepend
-										span.input-group-text.required_star 驗證碼
-									input.form-control(type="text" placeholder="請輸入驗證碼")
-									.input-group-append
-										a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")
-											img.checkpin(src="./img/checkpin.png", alt="")
-								button.btn.login_button(type="button" onclick="javascript:location.href=''") 送出
-							// 企業註冊 結束
+										// 企業註冊 開始
+										// 企業註冊完後還需要創建使用者
+										.com_register_form
+											h3.col-12 企業建檔
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 企業名稱
+													input.form-control(type="text")
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 企業統編
+													input.form-control(type="text")
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 上傳Logo
+													.custom-file
+														input.custom-file-input(type="file")
+														label.custom-file-label 建議尺寸800X800px
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 上傳登記證
+													.custom-file
+														input.custom-file-input(type="file")
+														label.custom-file-label 上傳證書
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 負責人
+													input.form-control(type="text")
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 聯絡人
+													input.form-control(type="text")
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 電話
+													input.form-control(type="text")
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 傳真
+													input.form-control(type="text")
+											//- 地址
+											.address
+												label.required_star.address_text 地址(中)
+												.form-group
+													input.form-control(placeholder="郵遞區號" type="number")
+												.form-group
+													select.form-control.selectpicker(data-size="5")
+														option(selected disabled) 縣市
+														option 台北市
+														option 新北市
+														option 桃園市
+														option 我都行
+												.form-group
+													select.form-control.selectpicker(data-size="5")
+														option(selected disabled) 行政區
+														option 台中市
+														option 台南市
+														option 高雄市
+														option 我都愛
+												.form-group.detail_address
+													input.form-control(type="text")
+											// 必填
+											.col-12
+												.form-group
+													label.required_star Email
+													input.form-control(type="email")
+											.col-12
+												.form-group
+													label 備註
+													textarea.form-control(rows="5")
+											.input-group.mb-3
+												.input-group-prepend
+													span.input-group-text.required_star 驗證碼
+												input.form-control(type="text" placeholder="請輸入驗證碼")
+												.input-group-append
+													a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")
+														img.checkpin(src="./img/checkpin.png", alt="")
+											button.btn.login_button(type="button" onclick="javascript:location.href=''") 送出
+										// 企業註冊 結束
 
-							// 企業註冊-創建使用者 開始
-							.com_register_account
-								h3.col-12 使用者創建
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 使用者名稱
-										input.form-control(type="text")
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 職稱
-										input.form-control(type="text")
-								// 必填
-								.col-12
-									.form-group
-										label.required_star 電話
-										input.form-control(type="text")
-								// 必填
-								.col-12
-									.form-group
-										label.required_star Email
-										input.form-control(type="email")
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 密碼
-										input.form-control(type="password")
-								// 必填
-								.col-12.col-md-6
-									.form-group
-										label.required_star 確認密碼
-										input.form-control(type="password")
-								.input-group.mb-3
-									.input-group-prepend
-										span.input-group-text.required_star 驗證碼
-									input.form-control(type="text" placeholder="請輸入驗證碼")
-									.input-group-append
-										a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")
-											img.checkpin(src="./img/checkpin.png", alt="")
-								button.btn.login_button(type="button" onclick="javascript:location.href=''") 送出
-							// 企業註冊-創建使用者 結束
+										// 企業註冊-創建使用者 開始
+										.com_register_account
+											h3.col-12 使用者創建
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 使用者名稱
+													input.form-control(type="text")
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 職稱
+													input.form-control(type="text")
+											// 必填
+											.col-12
+												.form-group
+													label.required_star 電話
+													input.form-control(type="text")
+											// 必填
+											.col-12
+												.form-group
+													label.required_star Email
+													input.form-control(type="email")
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 密碼
+													input.form-control(type="password")
+											// 必填
+											.col-12.col-md-6
+												.form-group
+													label.required_star 確認密碼
+													input.form-control(type="password")
+											.input-group.mb-3
+												.input-group-prepend
+													span.input-group-text.required_star 驗證碼
+												input.form-control(type="text" placeholder="請輸入驗證碼")
+												.input-group-append
+													a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")
+														img.checkpin(src="./img/checkpin.png", alt="")
+											button.btn.login_button(type="button" onclick="javascript:location.href=''") 送出
+										// 企業註冊-創建使用者 結束
 
-							// 一般會員 開始
-							.member_register_form
-								h3.col-12 一般會員註冊
-								// 必填
-								.col-12
-									.form-group
-										label.required_star 姓名
-										input.form-control(type="text")
-								// 必填
-								.col-12
-									.form-group
-										label.required_star 出生日期
-										input.form-control(type="date")
-								// 必填
-								.col-12
-									.form-group
-										label.required_star 電話
-										input.form-control(type="text")
-								// 必填
-								.col-12
-									.form-group
-										label.required_star Email
-										input.form-control(type="email")
-								// 必填
-								.col-12
-									.form-group
-										label.required_star 密碼
-										input.form-control(type="password")
-								// 必填
-								.col-12
-									.form-group
-										label.required_star 確認密碼
-										input.form-control(type="password")
-								.col-12
-									.form-group
-										label 備註
-										textarea.form-control(rows="5")
-								.input-group.mb-3
-									.input-group-prepend
-										span.input-group-text.required_star 驗證碼
-									input.form-control(type="text" placeholder="請輸入驗證碼")
-									.input-group-append
-										a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")
-											img.checkpin(src="./img/checkpin.png", alt="")
-								button.btn.login_button(type="button" onclick="javascript:location.href=''") 送出
-							// 一般會員 結束
+										// 一般會員 開始
+										.member_register_form
+											h3.col-12 一般會員註冊
+											// 必填
+											.col-12
+												.form-group
+													label.required_star 姓名
+													input.form-control(type="text")
+											// 必填
+											.col-12
+												.form-group
+													label.required_star 出生日期
+													input.form-control(type="date")
+											// 必填
+											.col-12
+												.form-group
+													label.required_star 電話
+													input.form-control(type="text")
+											// 必填
+											.col-12
+												.form-group
+													label.required_star Email
+													input.form-control(type="email")
+											// 必填
+											.col-12
+												.form-group
+													label.required_star 密碼
+													input.form-control(type="password")
+											// 必填
+											.col-12
+												.form-group
+													label.required_star 確認密碼
+													input.form-control(type="password")
+											.col-12
+												.form-group
+													label 備註
+													textarea.form-control(rows="5")
+											.input-group.mb-3
+												.input-group-prepend
+													span.input-group-text.required_star 驗證碼
+												input.form-control(type="text" placeholder="請輸入驗證碼")
+												.input-group-append
+													a.checkpin_switch.btn(href="#" title="按一下更改驗證碼")
+														img.checkpin(src="./img/checkpin.png", alt="")
+											button.btn.login_button(type="button" onclick="javascript:location.href=''") 送出
+										// 一般會員 結束								
 		//- 匯入底部廣告
 		include footer_ad.pug
 		//- 匯入footer+script

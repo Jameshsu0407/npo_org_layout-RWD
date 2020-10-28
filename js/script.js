@@ -11,7 +11,17 @@ $(document).ready(function ($) {
 		// selectpicker初始化
 		$(".selectpicker").selectpicker("refresh");
 	}
+});
 
+$(window).resize( function (){
+	if ($(window).width() > 992) {
+		// 移除手機版table樣式
+		$("table.table.table-striped").removeClass("rwd-table");
+	}
+	else if($(window).width() <= 992){
+		// 手機版table樣式
+		$("table.table.table-striped").addClass("rwd-table");
+	}
 });
 
 // 首頁上方輪播圖
@@ -69,6 +79,7 @@ $("#bottom_ads").slick({
 	autoplaySpeed: 2000,
 	slidesToShow: 3,
 	slidesToScroll: 1,
+	infinite: true,
 	responsive: [
 		{
 			breakpoint: 768,
@@ -141,10 +152,10 @@ $('a[href*="#"]')
 // 當視窗滾動時
 $(window).scroll(function () {
 	
-	if($(window).width() < 576){
-		// 滑動導覽列上縮
-		HideNav();
-	}
+	// if($(window).width() < 576){
+	// 	// 滑動導覽列上縮
+	// 	HideNav();
+	// }
 	// GoToTop漸入漸出
 	FadeGoToTop();
 });
@@ -208,6 +219,12 @@ if ($(window).width() > 992) {
 			.removeClass("dropdown on")
 			.addClass("dropdown");
 	});
+	// 移除手機版table樣式
+	$("table.table.table-striped").removeClass("rwd-table");
+}
+else if($(window).width() <= 992){
+	// 手機版table樣式
+	$("table.table.table-striped").addClass("rwd-table");
 }
 
 // fullcalendar初始化
@@ -257,7 +274,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // 履歷查詢readonly
-$('#font_end_org_resume_search_unit input').attr('readonly', 'readonly');
-$('#font_end_org_resume_search_unit input').attr('disabled', 'disabled');
-$('#font_end_org_resume_search_unit textarea').attr('disabled', 'disabled');
-$('#font_end_org_resume_search_unit select').attr('disabled', 'disabled');
+$('.read_only input').attr('readonly', 'readonly');
+$('.read_only input').attr('disabled', 'disabled');
+$('.read_only textarea').attr('disabled', 'disabled');
+$('.read_only select').attr('disabled', 'disabled');

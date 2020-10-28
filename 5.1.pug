@@ -1,5 +1,5 @@
 doctype html
-html(lang="en")
+html(lang="zh-tw")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
@@ -9,16 +9,16 @@ html(lang="en")
 	body#top
 		//- 匯入導覽列+gototop
 		include nav.pug
-
-		section#npo_donate.container
+		.mt-135
+		section.container
 			.row
-				.content_top.col-12
-					h2.content_title.col-12 物資募集
-					.table.col-12
-						form.form-inline.col-12.selector
-							
-							.select_wrap.col-12.col-md-2
-								select.col-12.selectpicker(data-size="5")
+				.title.col-12
+					h2 物資募集
+				.content.col-12
+					form
+						.selector.flex-wrap
+							.col-wrap.col-12.col-md-2
+								select.selectpicker(data-size="5" data-width="100%")
 									option(selected="" disabled="") 類型
 									option 食品
 									option 餐廚
@@ -36,16 +36,16 @@ html(lang="en")
 									option 其他
 									option 輔具
 									option 運輸
-							.select_wrap.col-12.col-md-2
-								select.col-12.selectpicker(data-size="5")
+							.col-wrap.col-12.col-md-2
+								select.selectpicker(data-size="5" data-width="100%")
 									option(selected="" disabled="") 年份
 									option 2020
 									option 2019
 									option 2018
 									option 2017
 									option 2016
-							.select_wrap.col-12.col-md-2
-								select.col-12.selectpicker(data-size="5")
+							.col-wrap.col-12.col-md-2
+								select.selectpicker(data-size="5" data-width="100%")
 									option(selected="" disabled="") 月份
 									option 1
 									option 2
@@ -59,111 +59,28 @@ html(lang="en")
 									option 10
 									option 11
 									option 12
-							.select_wrap.col-12.col-md-4
-								input.form-control.col-12(type="text" placeholder="關鍵字")
-							.select_wrap.col-12.col-md-2
-								button.btn.lookmore.col-12.m-0(type="button") 送出
-						table.table.col-12
-							thead.thead-color.text-center
-								tr
-									th.type_width(scope="col") 物資類型
-									th(scope="col") 物資名稱
-									th.type_width.off(scope="col") 開始日期
-									th.type_width(scope="col") 結束日期
-									th.type_width.off(scope="col") 募集地區
-							tbody
-								tr.clickable-row(data-href="12.7.1.html")
-									th.text-center(scope="row") 家電
-									th.text-truncate 筆記型電腦
-									td.text-center.off 2020/06/05
-									td.text-center 2020/06/19
-									td.text-center.off 台北市
-								tr.clickable-row(data-href="12.7.1.html")
-									th.text-center(scope="row") 家電
-									th.text-truncate 冰箱
-									td.text-center.off 2020/06/05
-									td.text-center 2020/06/19
-									td.text-center.off 台南市
-								tr.clickable-row(data-href="12.7.1.html")
-									th.text-center(scope="row") 家電
-									th.text-truncate 除濕機
-									td.text-center.off 2020/06/04
-									td.text-center 2020/07/30
-									td.text-center.off 雲林縣
-								tr.clickable-row(data-href="12.7.1.html")
-									th.text-center(scope="row") 家電
-									th.text-truncate 分離式冷氣機
-									td.text-center.off 2020/06/04
-									td.text-center 2020/07/30
-									td.text-center.off 雲林縣
-								tr.clickable-row(data-href="12.7.1.html")
-									th.text-center(scope="row") 衛生
-									th.text-truncate 成人紙尿褲(L-XL)、替換式小尿片
-									td.text-center.off 2020/06/02
-									td.text-center 2020/07/28
-									td.text-center.off 彰化縣
-								tr.clickable-row(data-href="12.7.1.html")
-									th.text-center(scope="row") 食品
-									th.text-truncate 三多奶蛋白/三多優蛋白/一般奶粉
-									td.text-center.off 2020/06/02
-									td.text-center 2020/07/28
-									td.text-center.off 彰化縣
-								tr.clickable-row(data-href="12.7.1.html")
-									th.text-center(scope="row") 3C
-									th.text-truncate 二手筆電
-									td.text-center.off 2020/05/29
-									td.text-center 2020/06/26
-									td.text-center.off  屏東縣
-								tr.clickable-row(data-href="12.7.1.html")
-									th.text-center(scope="row") 衛生
-									th.text-truncate 浴巾
-									td.text-center.off 2020/05/29
-									td.text-center 2020/06/12
-									td.text-center.off 屏東縣
-								tr.clickable-row(data-href="12.7.1.html")
-									th.text-center(scope="row") 食品
-									th.text-truncate 豆漿、牛奶等飲品
-									td.text-center.off 2020/05/29
-									td.text-center 2020/06/12
-									td.text-center.off  屏東縣
-								tr.clickable-row(data-href="12.7.1.html")
-									th.text-center(scope="row") 3C
-									th.text-truncate 碎紙機
-									td.text-center.off 2020/05/28
-									td.text-center 2020/06/11
-									td.text-center.off 高雄市
-								tr.clickable-row(data-href="12.7.1.html")
-									th.text-center(scope="row") 3C
-									th.text-truncate 手提式行動擴音機
-									td.text-center.off 2020/05/28
-									td.text-center 2020/06/11
-									td.text-center.off 高雄市
-								tr.clickable-row(data-href="12.7.1.html")
-									th.text-center(scope="row") 3C
-									th.text-truncate A4護貝機
-									td.text-center.off 2020/05/28
-									td.text-center 2020/06/11
-									td.text-center.off 高雄市
-								tr.clickable-row(data-href="12.7.1.html")
-									th.text-center(scope="row") 文具
-									th.text-truncate A4護貝膠膜
-									td.text-center.off 2020/05/28
-									td.text-center 2020/06/11
-									td.text-center.off  高雄市
-								tr.clickable-row(data-href="12.7.1.html")
-									th.text-center(scope="row") 家電
-									th.text-truncate 16吋立扇電風扇
-									td.text-center.off 2020/05/26
-									td.text-center 2020/07/21
-									td.text-center.off 宜蘭縣
-								tr.clickable-row(data-href="12.7.1.html")
-									th.text-center(scope="row") 食品
-									th.text-truncate 米、麵、罐頭、泡麵、即時調理包
-									td.text-center.off 2020/05/26
-									td.text-center 2020/07/21
-									td.text-center.off  桃園市
-					include page.pug
-		
+							.col-wrap.col-12.col-md-4
+								input.form-control(type="text" placeholder="關鍵字")
+							.col-wrap.col-12.col-md-2
+								button.btn.selector-button(type="button") 送出
+						.list
+							table.table.table-striped
+								thead
+									tr
+										th.text-center(scope="col" style="width: 20%") 物資類型
+										th(scope="col" style="width: 35%") 物資名稱
+										th.text-center(scope="col" style="width: 20%") 開始日期
+										th.text-center(scope="col" style="width: 20%") 結束日期
+										th.text-center(scope="col" style="width: 15%") 募集地區
+								tbody
+									- for ( var i=1 ; i<=15 ; i++)
+										tr(onclick="document.location = '12.7.1.html';")
+											td.text-center(data-th="物資類型") 家電
+											td.text-truncate(data-th="物資名稱") 筆記型電腦(27寸大小)筆記型電腦(27寸大小)
+											td.text-center(data-th="開始日期") 2020 / 06 / 05
+											td.text-center(data-th="結束日期") 2020 / 06 / 19
+											td.text-center(data-th="募集地區") 台北市
+						include page.pug
 		//- 匯入底部廣告
 		include footer_ad.pug
 		//- 匯入footer+script

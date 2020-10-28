@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>會員登錄</title>
+    <!-- favicon-->
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico">
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="./img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/favicon-152-precomposed.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/favicon-144-precomposed.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/favicon-120-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/favicon-114-precomposed.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/favicon-180-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/favicon-72-precomposed.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/favicon-57.png">
+    <link rel="icon" sizes="32x32" href="./img/favicon/favicon-32.png">
     <!-- bootstrap v4.41-->
     <link rel="stylesheet" href="./css/bootstrap.css">
     <!-- slick v1.8-->
@@ -140,363 +151,380 @@
         </div>
       </div>
     </nav>
-    <section class="member_same container" id="all_login">
+    <div class="mt-135"></div>
+    <section class="container">
       <div class="row">
-        <div class="content_top col-12">
-          <h2 class="content_title col-12">會員登錄</h2>
-          <!-- 左側-->
-          <div class="left col-12 col-lg-3">
-            <!-- pc版導覽列-->
-            <ul class="pc_nav">
-              <li><i class="fa fa-caret-right"></i><a href="10.1.html">會員登錄</a></li>
-              <li><i class="fa fa-caret-right"></i><a href="10.2.html">申請會員</a></li>
-            </ul>
-            <!-- 手機版導覽列-->
-            <select class="selectpicker phone_nav" onchange="location.href=this.options[this.selectedIndex].value">
-              <option value="10.1.html" selected>會員登錄</option>
-              <option value="10.2.html"> 申請會員</option>
-            </select>
-          </div>
-          <!-- 右側-->
-          <div class="right col-12 col-lg-9">
-            <form>
-              <!--機構專區登錄 開始-->
-              <div class="org_login">
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">會員類別</span></div>
-                  <select class="form-control selectpicker">
-                    <option data-icon="fas fa-users" selected>機構專區</option>
-                    <option data-icon="far fa-building">企業專區</option>
-                    <option data-icon="far fa-user">一般會員</option>
-                  </select>
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">機構代碼</span></div>
-                  <input class="form-control" type="text" placeholder="請輸入機構代碼">
-                  <div class="input-group-append"><a class="search btn" href="8.html" target="_balnk">查詢代碼</a></div>
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">帳號</span></div>
-                  <input class="form-control" type="email" placeholder="請輸入帳號，帳號為email">
-                  <div class="input-group-append"><a class="search btn" href="#">忘記帳號</a></div>
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">密碼</span></div>
-                  <input class="form-control" type="password" placeholder="請輸入密碼">
-                  <div class="input-group-append"><a class="search btn" href="#">忘記密碼</a></div>
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">驗證碼</span></div>
-                  <input class="form-control" type="text" placeholder="請輸入驗證碼">
-                  <div class="input-group-append"><a class="checkpin_switch btn" href="#" title="按一下更改驗證碼"><img class="checkpin" src="./img/checkpin.png" alt=""></a></div>
-                </div>
-                <button class="btn login_button" type="button" onclick="javascript:location.href='10.1.1.1.html'">登錄</button>
+        <div class="title col-12"> 
+          <h2>會員登錄</h2>
+        </div>
+        <div class="content col-12">
+          <div class="member_same">
+            <!-- 左側-->
+            <div class="left">
+              <!-- pc版導覽列-->
+              <ul class="pc_nav">
+                <li><i class="fa fa-caret-right"></i><a href="10.1.html">會員登錄</a></li>
+                <li><i class="fa fa-caret-right"></i><a href="10.2.html">申請會員</a></li>
+              </ul>
+              <!-- 手機版導覽列-->
+              <select class="selectpicker phone_nav" onchange="location.href=this.options[this.selectedIndex].value">
+                <option value="10.1.html" selected>會員登錄</option>
+                <option value="10.2.html"> 申請會員</option>
+              </select>
+            </div>
+            <!-- 右側-->
+            <div class="right">
+              <div class="all-login">
+                <form>
+                  <!--機構專區登錄 開始-->
+                  <div class="org_login">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">會員類別</span></div>
+                      <select class="form-control selectpicker">
+                        <option data-icon="fas fa-users fa-fw" selected>機構專區</option>
+                        <option data-icon="far fa-building fa-fw">企業專區</option>
+                        <option data-icon="far fa-user fa-fw">一般會員</option>
+                      </select>
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">機構代碼</span></div>
+                      <input class="form-control" type="text" placeholder="請輸入機構代碼">
+                      <div class="input-group-append"><a class="search btn" href="8.html" target="_balnk">查詢代碼</a></div>
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">帳號</span></div>
+                      <input class="form-control" type="email" placeholder="請輸入帳號，帳號為email">
+                      <div class="input-group-append"><a class="search btn" href="#">忘記帳號</a></div>
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">密碼</span></div>
+                      <input class="form-control" type="password" placeholder="請輸入密碼">
+                      <div class="input-group-append"><a class="search btn" href="#">忘記密碼</a></div>
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">驗證碼</span></div>
+                      <input class="form-control" type="text" placeholder="請輸入驗證碼">
+                      <div class="input-group-append"><a class="checkpin_switch btn" href="#" title="按一下更改驗證碼"><img class="checkpin" src="./img/checkpin.png" alt=""></a></div>
+                    </div>
+                    <button class="btn login_button" type="button" onclick="javascript:location.href='10.1.1.1.html'">登錄</button>
+                  </div>
+                  <!--機構專區登錄 結束-->
+                  <!--企業專區登錄 開始-->
+                  <div class="com_login">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">會員類別</span></div>
+                      <select class="form-control selectpicker">
+                        <option data-icon="fas fa-users fa-fw">機構專區</option>
+                        <option data-icon="far fa-building fa-fw" selected>企業專區</option>
+                        <option data-icon="far fa-user fa-fw">一般會員</option>
+                      </select>
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">企業統編</span></div>
+                      <input class="form-control" type="text" placeholder="請輸入企業統編">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">帳號</span></div>
+                      <input class="form-control" type="email" placeholder="請輸入帳號，帳號為email">
+                      <div class="input-group-append"><a class="search btn" href="#">忘記帳號</a></div>
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">密碼</span></div>
+                      <input class="form-control" type="password" placeholder="請輸入密碼">
+                      <div class="input-group-append"><a class="search btn" href="#">忘記密碼</a></div>
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">驗證碼</span></div>
+                      <input class="form-control" type="text" placeholder="請輸入驗證碼">
+                      <div class="input-group-append"><a class="checkpin_switch btn" href="#" title="按一下更改驗證碼"><img class="checkpin" src="./img/checkpin.png" alt=""></a></div>
+                    </div>
+                    <button class="btn login_button" type="button" onclick="javascript:location.href='10.1.2.1.html'">登錄</button>
+                  </div>
+                  <!--企業專區登錄 結束-->
+                  <!--會員登錄 開始-->
+                  <div class="member_login">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">會員類別</span></div>
+                      <select class="form-control selectpicker">
+                        <option data-icon="fas fa-users fa-fw">機構專區</option>
+                        <option data-icon="far fa-building fa-fw">企業專區</option>
+                        <option data-icon="far fa-user fa-fw" selected>一般會員</option>
+                      </select>
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">帳號</span></div>
+                      <input class="form-control" type="email" placeholder="請輸入帳號，帳號為email">
+                      <div class="input-group-append"><a class="search btn" href="#">忘記帳號</a></div>
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">密碼</span></div>
+                      <input class="form-control" type="password" placeholder="請輸入密碼">
+                      <div class="input-group-append"><a class="search btn" href="#">忘記密碼</a></div>
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">驗證碼</span></div>
+                      <input class="form-control" type="text" placeholder="請輸入驗證碼">
+                      <div class="input-group-append"><a class="checkpin_switch btn" href="#" title="按一下更改驗證碼"><img class="checkpin" src="./img/checkpin.png" alt=""></a></div>
+                    </div>
+                    <button class="btn login_button" type="button" onclick="javascript:location.href='10.1.3.1.html'">登錄</button>
+                  </div>
+                  <!--會員登錄 結束-->
+                  <!-- 機構 > 忘記帳號 開始-->
+                  <!-- 程式不用去擋機構已經註冊的人數，dennis會去手動聯絡他們-->
+                  <div class="org_login_forgot_email">
+                    <h3>忘記帳號</h3>
+                    <p>
+                      您已要求重新設定台灣公益資訊中心的使用者登入資料：<br>1.先填妥機構代碼，並選擇上傳機構證明文件後送出。<br>
+                      2.文件上傳後，下一步填寫申請人資料。<br>
+                      若台灣公益資訊中心沒有收到以上所列之傳真文件，為了保護之前的使用者資料，恕不接受重新設定使用者資料之要求。
+                    </p>
+                    <h3>重新申請</h3>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">機構代碼</span></div>
+                      <input class="form-control" type="text" placeholder="請輸入機構代碼">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">機構名稱</span></div>
+                      <input class="form-control" type="text" placeholder="請輸入機構名稱">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">email</span></div>
+                      <input class="form-control" type="email" placeholder="請輸入email">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">管理者名稱</span></div>
+                      <input class="form-control" type="text" placeholder="請輸入管理者名稱">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">職稱</span></div>
+                      <input class="form-control" type="text" placeholder="請輸入職稱">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">電話</span></div>
+                      <input class="form-control" type="text" placeholder="請輸入電話">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">傳真</span></div>
+                      <input class="form-control" type="text" placeholder="請輸入傳真，非必填">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">密碼</span></div>
+                      <input class="form-control" type="password" placeholder="請輸入密碼">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">確認密碼</span></div>
+                      <input class="form-control" type="password" placeholder="請再次輸入密碼">
+                    </div>
+                    <div class="custom-file mb-3">
+                      <input class="custom-file-input" type="file">
+                      <label class="custom-file-label" for="customFile">請上傳證書</label>
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">驗證碼</span></div>
+                      <input class="form-control" type="text" placeholder="請輸入驗證碼">
+                      <div class="input-group-append"><a class="checkpin_switch btn" href="#" title="按一下更改驗證碼"><img class="checkpin" src="./img/checkpin.png" alt=""></a></div>
+                    </div>
+                    <!-- allert會有專人為您服務-->
+                    <button class="btn login_button" type="button" onclick="javascript:location.href=''">送出</button>
+                  </div>
+                  <!-- 機構 > 忘記帳號 結束-->
+                  <!-- 企業 > 忘記帳號 開始-->
+                  <!-- 程式不用去擋機構已經註冊的人數，dennis會去手動聯絡他們-->
+                  <div class="org_login_forgot_email">
+                    <h3>忘記帳號</h3>
+                    <p>
+                      您已要求重新設定台灣公益資訊中心的使用者登入資料：<br>1.先填妥機構代碼，並選擇上傳機構證明文件後送出。<br>
+                      2.文件上傳後，下一步填寫申請人資料。<br>
+                      若台灣公益資訊中心沒有收到以上所列之傳真文件，為了保護之前的使用者資料，恕不接受重新設定使用者資料之要求。
+                    </p>
+                    <h3>重新申請</h3>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">企業統編</span></div>
+                      <input class="form-control" type="text" placeholder="請輸入企業統編">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">企業名稱</span></div>
+                      <input class="form-control" type="text" placeholder="請輸入企業名稱">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">email</span></div>
+                      <input class="form-control" type="email" placeholder="請輸入email">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">管理者名稱</span></div>
+                      <input class="form-control" type="text" placeholder="請輸入管理者名稱">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">職稱</span></div>
+                      <input class="form-control" type="text" placeholder="請輸入職稱">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">電話</span></div>
+                      <input class="form-control" type="text" placeholder="請輸入電話">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">傳真</span></div>
+                      <input class="form-control" type="text" placeholder="請輸入傳真，非必填">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">密碼</span></div>
+                      <input class="form-control" type="password" placeholder="請輸入密碼">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">確認密碼</span></div>
+                      <input class="form-control" type="password" placeholder="請再次輸入密碼">
+                    </div>
+                    <div class="custom-file mb-3">
+                      <input class="custom-file-input" type="file">
+                      <label class="custom-file-label" for="customFile">請上傳營業證書</label>
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">驗證碼</span></div>
+                      <input class="form-control" type="text" placeholder="請輸入驗證碼">
+                      <div class="input-group-append"><a class="checkpin_switch btn" href="#" title="按一下更改驗證碼"><img class="checkpin" src="./img/checkpin.png" alt=""></a></div>
+                    </div>
+                    <!-- allert會有專人為您服務-->
+                    <div class="btns">
+                      <button class="btn login_button" type="button" onclick="javascript:location.href=''">返回</button>
+                      <button class="btn login_button" type="button" onclick="javascript:location.href=''">送出</button>
+                    </div>
+                  </div>
+                  <!-- 企業 > 忘記帳號 結束-->
+                  <!-- 一般會員 > 忘記帳號 開始-->
+                  <!-- 程式不用去擋機構已經註冊的人數，dennis會去手動聯絡他們-->
+                  <div class="member_login_forgot_email">
+                    <h3>忘記帳號</h3>
+                    <p>
+                      您已要求重新設定台灣公益資訊中心的使用者登入資料：<br>1.先填妥機構代碼，並選擇上傳機構證明文件後送出。<br>
+                      2.文件上傳後，下一步填寫申請人資料。<br>
+                      若台灣公益資訊中心沒有收到以上所列之傳真文件，為了保護之前的使用者資料，恕不接受重新設定使用者資料之要求。
+                    </p>
+                    <h3>重新申請</h3>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">email</span></div>
+                      <input class="form-control" type="email" placeholder="請輸入email">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">姓名</span></div>
+                      <input class="form-control" type="text" placeholder="請輸入姓名">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">出生入期</span></div>
+                      <input class="form-control" type="date" placeholder="請輸入生日，範例：2021/01/01">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">電話</span></div>
+                      <input class="form-control" type="text" placeholder="請輸入電話">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">密碼</span></div>
+                      <input class="form-control" type="password" placeholder="請輸入密碼">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">確認密碼</span></div>
+                      <input class="form-control" type="password" placeholder="請再次輸入密碼">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">驗證碼</span></div>
+                      <input class="form-control" type="text" placeholder="請輸入驗證碼">
+                      <div class="input-group-append"><a class="checkpin_switch btn" href="#" title="按一下更改驗證碼"><img class="checkpin" src="./img/checkpin.png" alt=""></a></div>
+                    </div>
+                    <!-- allert會有專人為您服務-->
+                    <div class="btns">
+                      <button class="btn login_button" type="button" onclick="javascript:location.href=''">返回</button>
+                      <button class="btn login_button" type="button" onclick="javascript:location.href=''">送出</button>
+                    </div>
+                  </div>
+                  <!-- 一般會員 > 忘記帳號 結束-->
+                  <!-- 機構 > 忘記密碼 開始-->
+                  <div class="org_login_forgot_password">
+                    <h3>忘記密碼</h3>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">會員類別</span></div>
+                      <select class="form-control selectpicker">
+                        <option data-icon="fas fa-users fa-fw" selected>機構專區</option>
+                        <option data-icon="far fa-building fa-fw">企業專區</option>
+                        <option data-icon="far fa-user fa-fw">一般會員</option>
+                      </select>
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">機構代碼</span></div>
+                      <input class="form-control" type="text" placeholder="請輸入機構代碼">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">email</span></div>
+                      <input class="form-control" type="email" placeholder="請輸入email">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">驗證碼</span></div>
+                      <input class="form-control" type="text" placeholder="請輸入驗證碼">
+                      <div class="input-group-append"><a class="checkpin_switch btn" href="#" title="按一下更改驗證碼"><img class="checkpin" src="./img/checkpin.png" alt=""></a></div>
+                    </div>
+                    <!-- alert寄出密碼信件-->
+                    <button class="btn login_button" type="button" onclick="javascript:location.href=''">送出</button>
+                  </div>
+                  <!-- 機構 > 忘記密碼 結束-->
+                  <!-- 企業 > 忘記密碼 開始-->
+                  <div class="com_login_forgot_password">
+                    <h3>忘記密碼</h3>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">會員類別</span></div>
+                      <select class="form-control selectpicker">
+                        <option data-icon="fas fa-users fa-fw">機構專區</option>
+                        <option data-icon="far fa-building fa-fw" selected>企業專區</option>
+                        <option data-icon="far fa-user fa-fw">一般會員</option>
+                      </select>
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">企業統編</span></div>
+                      <input class="form-control" type="text" placeholder="請輸入企業統編">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">email</span></div>
+                      <input class="form-control" type="email" placeholder="請輸入email">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">驗證碼</span></div>
+                      <input class="form-control" type="text" placeholder="請輸入驗證碼">
+                      <div class="input-group-append"><a class="checkpin_switch btn" href="#" title="按一下更改驗證碼"><img class="checkpin" src="./img/checkpin.png" alt=""></a></div>
+                    </div>
+                    <!-- alert寄出密碼信件-->
+                    <button class="btn login_button" type="button" onclick="javascript:location.href=''">送出</button>
+                  </div>
+                  <!-- 企業 > 忘記密碼 結束-->
+                  <!-- 一般會員 > 忘記密碼 開始-->
+                  <div class="member_login_forgot_password">
+                    <h3>忘記密碼</h3>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">會員類別</span></div>
+                      <select class="form-control selectpicker">
+                        <option data-icon="fas fa-users fa-fw">機構專區</option>
+                        <option data-icon="far fa-building fa-fw">企業專區</option>
+                        <option data-icon="far fa-user fa-fw" selected>一般會員</option>
+                      </select>
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">email</span></div>
+                      <input class="form-control" type="email" placeholder="請輸入email">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">驗證碼</span></div>
+                      <input class="form-control" type="text" placeholder="請輸入驗證碼">
+                      <div class="input-group-append"><a class="checkpin_switch btn" href="#" title="按一下更改驗證碼"><img class="checkpin" src="./img/checkpin.png" alt=""></a></div>
+                    </div>
+                    <!-- alert寄出密碼信件-->
+                    <button class="btn login_button" type="button" onclick="javascript:location.href=''">送出</button>
+                  </div>
+                  <!-- 一般會員 > 忘記密碼 結束-->
+                </form>
               </div>
-              <!--機構專區登錄 結束-->
-              <!--企業專區登錄 開始-->
-              <div class="com_login">
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">會員類別</span></div>
-                  <select class="form-control selectpicker">
-                    <option data-icon="fas fa-users">機構專區</option>
-                    <option data-icon="far fa-building" selected>企業專區</option>
-                    <option data-icon="far fa-user">一般會員</option>
-                  </select>
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">企業統編</span></div>
-                  <input class="form-control" type="text" placeholder="請輸入企業統編">
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">帳號</span></div>
-                  <input class="form-control" type="email" placeholder="請輸入帳號，帳號為email">
-                  <div class="input-group-append"><a class="search btn" href="#">忘記帳號</a></div>
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">密碼</span></div>
-                  <input class="form-control" type="password" placeholder="請輸入密碼">
-                  <div class="input-group-append"><a class="search btn" href="#">忘記密碼</a></div>
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">驗證碼</span></div>
-                  <input class="form-control" type="text" placeholder="請輸入驗證碼">
-                  <div class="input-group-append"><a class="checkpin_switch btn" href="#" title="按一下更改驗證碼"><img class="checkpin" src="./img/checkpin.png" alt=""></a></div>
-                </div>
-                <button class="btn login_button" type="button" onclick="javascript:location.href='10.1.2.1.html'">登錄</button>
-              </div>
-              <!--企業專區登錄 結束-->
-              <!--會員登錄 開始-->
-              <div class="member_login">
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">會員類別</span></div>
-                  <select class="form-control selectpicker">
-                    <option data-icon="fas fa-users">機構專區</option>
-                    <option data-icon="far fa-building">企業專區</option>
-                    <option data-icon="far fa-user" selected>一般會員</option>
-                  </select>
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">帳號</span></div>
-                  <input class="form-control" type="email" placeholder="請輸入帳號，帳號為email">
-                  <div class="input-group-append"><a class="search btn" href="#">忘記帳號</a></div>
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">密碼</span></div>
-                  <input class="form-control" type="password" placeholder="請輸入密碼">
-                  <div class="input-group-append"><a class="search btn" href="#">忘記密碼</a></div>
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">驗證碼</span></div>
-                  <input class="form-control" type="text" placeholder="請輸入驗證碼">
-                  <div class="input-group-append"><a class="checkpin_switch btn" href="#" title="按一下更改驗證碼"><img class="checkpin" src="./img/checkpin.png" alt=""></a></div>
-                </div>
-                <button class="btn login_button" type="button" onclick="javascript:location.href='10.1.3.1.html'">登錄</button>
-              </div>
-              <!--會員登錄 結束-->
-              <!-- 機構 > 忘記帳號 開始-->
-              <!-- 程式不用去擋機構已經註冊的人數，dennis會去手動聯絡他們-->
-              <div class="org_login_forgot_email">
-                <h3>忘記帳號</h3>
-                <p>
-                  您已要求重新設定台灣公益資訊中心的使用者登入資料：<br>1.先填妥機構代碼，並選擇上傳機構證明文件後送出。<br>
-                  2.文件上傳後，下一步填寫申請人資料。<br>
-                  若台灣公益資訊中心沒有收到以上所列之傳真文件，為了保護之前的使用者資料，恕不接受重新設定使用者資料之要求。
-                </p>
-                <h3>重新申請</h3>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">機構代碼</span></div>
-                  <input class="form-control" type="text" placeholder="請輸入機構代碼">
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">機構名稱</span></div>
-                  <input class="form-control" type="text" placeholder="請輸入機構名稱">
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">email</span></div>
-                  <input class="form-control" type="email" placeholder="請輸入email">
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">管理者名稱</span></div>
-                  <input class="form-control" type="text" placeholder="請輸入管理者名稱">
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">職稱</span></div>
-                  <input class="form-control" type="text" placeholder="請輸入職稱">
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">電話</span></div>
-                  <input class="form-control" type="text" placeholder="請輸入電話">
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">傳真</span></div>
-                  <input class="form-control" type="text" placeholder="請輸入傳真，非必填">
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">密碼</span></div>
-                  <input class="form-control" type="password" placeholder="請輸入密碼">
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">確認密碼</span></div>
-                  <input class="form-control" type="password" placeholder="請再次輸入密碼">
-                </div>
-                <div class="custom-file mb-3">
-                  <input class="custom-file-input" type="file">
-                  <label class="custom-file-label" for="customFile">請上傳證書</label>
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">驗證碼</span></div>
-                  <input class="form-control" type="text" placeholder="請輸入驗證碼">
-                  <div class="input-group-append"><a class="checkpin_switch btn" href="#" title="按一下更改驗證碼"><img class="checkpin" src="./img/checkpin.png" alt=""></a></div>
-                </div>
-                <!-- allert會有專人為您服務-->
-                <button class="btn login_button" type="button" onclick="javascript:location.href=''">送出</button>
-              </div>
-              <!-- 機構 > 忘記帳號 結束-->
-              <!-- 企業 > 忘記帳號 開始-->
-              <!-- 程式不用去擋機構已經註冊的人數，dennis會去手動聯絡他們-->
-              <div class="org_login_forgot_email">
-                <h3>忘記帳號</h3>
-                <p>
-                  您已要求重新設定台灣公益資訊中心的使用者登入資料：<br>1.先填妥機構代碼，並選擇上傳機構證明文件後送出。<br>
-                  2.文件上傳後，下一步填寫申請人資料。<br>
-                  若台灣公益資訊中心沒有收到以上所列之傳真文件，為了保護之前的使用者資料，恕不接受重新設定使用者資料之要求。
-                </p>
-                <h3>重新申請</h3>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">企業統編</span></div>
-                  <input class="form-control" type="text" placeholder="請輸入企業統編">
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">企業名稱</span></div>
-                  <input class="form-control" type="text" placeholder="請輸入企業名稱">
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">email</span></div>
-                  <input class="form-control" type="email" placeholder="請輸入email">
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">管理者名稱</span></div>
-                  <input class="form-control" type="text" placeholder="請輸入管理者名稱">
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">職稱</span></div>
-                  <input class="form-control" type="text" placeholder="請輸入職稱">
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">電話</span></div>
-                  <input class="form-control" type="text" placeholder="請輸入電話">
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">傳真</span></div>
-                  <input class="form-control" type="text" placeholder="請輸入傳真，非必填">
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">密碼</span></div>
-                  <input class="form-control" type="password" placeholder="請輸入密碼">
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">確認密碼</span></div>
-                  <input class="form-control" type="password" placeholder="請再次輸入密碼">
-                </div>
-                <div class="custom-file mb-3">
-                  <input class="custom-file-input" type="file">
-                  <label class="custom-file-label" for="customFile">請上傳營業證書</label>
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">驗證碼</span></div>
-                  <input class="form-control" type="text" placeholder="請輸入驗證碼">
-                  <div class="input-group-append"><a class="checkpin_switch btn" href="#" title="按一下更改驗證碼"><img class="checkpin" src="./img/checkpin.png" alt=""></a></div>
-                </div>
-                <!-- allert會有專人為您服務-->
-                <button class="btn login_button" type="button" onclick="javascript:location.href=''">送出</button>
-              </div>
-              <!-- 企業 > 忘記帳號 結束-->
-              <!-- 一般會員 > 忘記帳號 開始-->
-              <!-- 程式不用去擋機構已經註冊的人數，dennis會去手動聯絡他們-->
-              <div class="member_login_forgot_email">
-                <h3>忘記帳號</h3>
-                <p>
-                  您已要求重新設定台灣公益資訊中心的使用者登入資料：<br>1.先填妥機構代碼，並選擇上傳機構證明文件後送出。<br>
-                  2.文件上傳後，下一步填寫申請人資料。<br>
-                  若台灣公益資訊中心沒有收到以上所列之傳真文件，為了保護之前的使用者資料，恕不接受重新設定使用者資料之要求。
-                </p>
-                <h3>重新申請</h3>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">email</span></div>
-                  <input class="form-control" type="email" placeholder="請輸入email">
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">姓名</span></div>
-                  <input class="form-control" type="text" placeholder="請輸入姓名">
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">電話</span></div>
-                  <input class="form-control" type="text" placeholder="請輸入電話">
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">密碼</span></div>
-                  <input class="form-control" type="password" placeholder="請輸入密碼">
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">確認密碼</span></div>
-                  <input class="form-control" type="password" placeholder="請再次輸入密碼">
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">驗證碼</span></div>
-                  <input class="form-control" type="text" placeholder="請輸入驗證碼">
-                  <div class="input-group-append"><a class="checkpin_switch btn" href="#" title="按一下更改驗證碼"><img class="checkpin" src="./img/checkpin.png" alt=""></a></div>
-                </div>
-                <!-- allert會有專人為您服務-->
-                <button class="btn login_button" type="button" onclick="javascript:location.href=''">送出</button>
-              </div>
-              <!-- 一般會員 > 忘記帳號 結束-->
-              <!-- 機構 > 忘記密碼 開始-->
-              <div class="org_login_forgot_password">
-                <h3>忘記密碼</h3>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">會員類別</span></div>
-                  <select class="form-control selectpicker">
-                    <option data-icon="fas fa-users" selected>機構專區</option>
-                    <option data-icon="far fa-building">企業專區</option>
-                    <option data-icon="far fa-user">一般會員</option>
-                  </select>
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">機構代碼</span></div>
-                  <input class="form-control" type="text" placeholder="請輸入機構代碼">
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">email</span></div>
-                  <input class="form-control" type="email" placeholder="請輸入email">
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">驗證碼</span></div>
-                  <input class="form-control" type="text" placeholder="請輸入驗證碼">
-                  <div class="input-group-append"><a class="checkpin_switch btn" href="#" title="按一下更改驗證碼"><img class="checkpin" src="./img/checkpin.png" alt=""></a></div>
-                </div>
-                <!-- alert寄出密碼信件-->
-                <button class="btn login_button" type="button" onclick="javascript:location.href=''">送出</button>
-              </div>
-              <!-- 機構 > 忘記密碼 結束-->
-              <!-- 企業 > 忘記密碼 開始-->
-              <div class="com_login_forgot_password">
-                <h3>忘記密碼</h3>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">會員類別</span></div>
-                  <select class="form-control selectpicker">
-                    <option data-icon="fas fa-users">機構專區</option>
-                    <option data-icon="far fa-building" selected>企業專區</option>
-                    <option data-icon="far fa-user">一般會員</option>
-                  </select>
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">企業統編</span></div>
-                  <input class="form-control" type="text" placeholder="請輸入企業統編">
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">email</span></div>
-                  <input class="form-control" type="email" placeholder="請輸入email">
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">驗證碼</span></div>
-                  <input class="form-control" type="text" placeholder="請輸入驗證碼">
-                  <div class="input-group-append"><a class="checkpin_switch btn" href="#" title="按一下更改驗證碼"><img class="checkpin" src="./img/checkpin.png" alt=""></a></div>
-                </div>
-                <!-- alert寄出密碼信件-->
-                <button class="btn login_button" type="button" onclick="javascript:location.href=''">送出</button>
-              </div>
-              <!-- 企業 > 忘記密碼 結束-->
-              <!-- 一般會員 > 忘記密碼 開始-->
-              <div class="member_login_forgot_password">
-                <h3>忘記密碼</h3>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">會員類別</span></div>
-                  <select class="form-control selectpicker">
-                    <option data-icon="fas fa-users">機構專區</option>
-                    <option data-icon="far fa-building">企業專區</option>
-                    <option data-icon="far fa-user" selected>一般會員</option>
-                  </select>
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">email</span></div>
-                  <input class="form-control" type="email" placeholder="請輸入email">
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend"><span class="input-group-text">驗證碼</span></div>
-                  <input class="form-control" type="text" placeholder="請輸入驗證碼">
-                  <div class="input-group-append"><a class="checkpin_switch btn" href="#" title="按一下更改驗證碼"><img class="checkpin" src="./img/checkpin.png" alt=""></a></div>
-                </div>
-                <!-- alert寄出密碼信件-->
-                <button class="btn login_button" type="button" onclick="javascript:location.href=''">送出</button>
-              </div>
-              <!-- 一般會員 > 忘記密碼 結束-->
-            </form>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- 底部廣告-->
-    <section class="container" id="bottom_ads"><img class="img-fluid clickable-row" src="./img/fakeimg/350x150.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad1.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad2.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"><img class="img-fluid clickable-row" src="./img/ads/ad3.png" data-href="https://ads.google.com/intl/zh-TW_tw/getstarted/?subid=tw-zh-ha-aw-bk-a-h00!o3~Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB~85321806891~kwd-13277302638~6845600875~434120186856&amp;gclid=Cj0KCQjw6PD3BRDPARIsAN8pHuEPfomXmIk-ubL9Yg9aAsf3fAAMQ2dvVqXz9a9qj-767n-WavqLf7oaAl3fEALw_wcB&amp;gclsrc=aw.ds"></section>
+    <section class="container" id="bottom_ads"><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a><a href="#" target="_blank"><img class="img-fluid" src="./img/fakeimg/350x150.png"></a></section>
     <!-- footer-->
     <footer>
       <div class="container">

@@ -1,5 +1,5 @@
 doctype html
-html(lang="en")
+html(lang="zh-tw")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
@@ -9,15 +9,16 @@ html(lang="en")
 	body#top
 		//- 匯入導覽列+gototop
 		include nav.pug
-
-		section#npo_list.container
+		.mt-135
+		section.container
 			.row
-				.content_top.col-12
-					h2.content_title.col-12 非營利組織名錄
-					.table.col-12
-						form.form-inline.col-12.selector
-							.select_wrap.col-12.col-md-3
-								select.col-12.selectpicker(data-size="5")
+				.title.col-12
+					h2 非營利組織名錄
+				.content.col-12
+					form
+						.selector.flex-wrap
+							.col-wrap.col-12.col-md-2
+								select.selectpicker(data-size="5" data-width="100%")
 									option(selected="" disabled="") 組織類型
 									option 綜合性服務
 									option 兒童青少年福利
@@ -38,8 +39,8 @@ html(lang="en")
 									option 性別平等
 									option 政府單位
 									option 動物保護
-							.select_wrap.col-12.col-md-3
-								select.col-12.selectpicker(data-size="5")
+							.col-wrap.col-12.col-md-2
+								select.selectpicker(data-size="5" data-width="100%")
 									option(selected="" disabled="") 地區
 									option 全部
 									option 全球性
@@ -66,79 +67,28 @@ html(lang="en")
 									option 澎湖縣
 									option 金門縣
 									option 連江縣
-							.select_wrap.col-12.col-md-4
-								input.form-control.col-12(type="text" placeholder="關鍵字")
-							.select_wrap.col-12.col-md-2
-								button.btn.lookmore.col-12.m-0(type="button") 送出
-						table.table.col-12
-							thead.thead-color.text-center
-								tr
-									th.type_width 組織類型
-									th 非營利組織
-									th.type_width 地區
-							tbody
-								tr.clickable-row(data-href="12.12.html")
-									th.text-center.text-truncate 綜合性服務
-									td.text-center.text-truncat 中華全球生命教育推動協會
-									td.text-center.text-truncate 北區+中區+南區+東部
-								tr.clickable-row(data-href="12.12.html")
-									th.text-center.text-truncate 綜合性服務
-									td.text-center.text-truncat 新北市私立松樹老人長期照顧中心
-									td.text-center.text-truncate 北區
-								tr.clickable-row(data-href="12.12.html")
-									th.text-center.text-truncate 身心障礙福利
-									td.text-center.text-truncat 台灣博物館教育發展協會
-									td.text-center.text-truncate 全球性
-								tr.clickable-row(data-href="12.12.html")
-									th.text-center.text-truncate 綜政府單位
-									td.text-center.text-truncat 有限責任新北市全人長照服務勞動合作社
-									td.text-center.text-truncate 北區
-								tr.clickable-row(data-href="12.12.html")
-									th.text-center.text-truncate 性別平等
-									td.text-center.text-truncat 財團法人新北市悅融社會福利基金會
-									td.text-center.text-truncate 新北市
-								tr.clickable-row(data-href="12.12.html")
-									th.text-center.text-truncate 綜合性服務
-									td.text-center.text-truncat 社團法人中華民國國際慈善文教協會
-									td.text-center.text-truncate 全球性
-								tr.clickable-row(data-href="12.12.html")
-									th.text-center.text-truncate 身心障礙福利
-									td.text-center.text-truncat 財團法人友友錦錄教育基金會
-									td.text-center.text-truncate 中區+南區
-								tr.clickable-row(data-href="12.12.html")
-									th.text-center.text-truncate 性別平等
-									td.text-center.text-truncat 社團法人中華民國反棄養寵物協會
-									td.text-center.text-truncate 全國性
-								tr.clickable-row(data-href="12.12.html")
-									th.text-center.text-truncate 綜合性服務
-									td.text-center.text-truncat 中華宗德倫理道德培育推廣協會
-									td.text-center.text-truncate 中區+南區
-								tr.clickable-row(data-href="12.12.html")
-									th.text-center.text-truncate 性別平等
-									td.text-center.text-truncat 山達基教會台北中心
-									td.text-center.text-truncate 北區
-								tr.clickable-row(data-href="12.12.html")
-									th.text-center.text-truncate 綜合性服務
-									td.text-center.text-truncat 藝術養生推廣協會
-									td.text-center.text-truncate 北區+中區
-								tr.clickable-row(data-href="12.12.html")
-									th.text-center.text-truncate 綜合性服務
-									td.text-center.text-truncat 社團法人中華民國學貓過貓咪中途愛心照護協會
-									td.text-center.text-truncate 台北市
-								tr.clickable-row(data-href="12.12.html")
-									th.text-center.text-truncate 身心障礙福利
-									td.text-center.text-truncat 財團法人新北市自強基督教板橋浸禮聖經會
-									td.text-center.text-truncate 新北市
-								tr.clickable-row(data-href="12.12.html")
-									th.text-center.text-truncate 政府單位
-									td.text-center.text-truncat 財團法人嘉宜社會福利基金會
-									td.text-center.text-truncate 台北市
-								tr.clickable-row(data-href="12.12.html")
-									th.text-center.text-truncate 政府單位
-									td.text-center.text-truncat 肯納園社會企業股份有限公司
-									td.text-center.text-truncate 全國性		
-					include page.pug
-		
+							.col-wrap.col-12.col-md-2
+								input.form-control(type="text" placeholder="機構代碼")
+							.col-wrap.col-12.col-md-4
+								input.form-control(type="text" placeholder="關鍵字")
+							.col-wrap.col-12.col-md-2
+								button.btn.selector-button(type="button") 送出
+						.list
+							table.table.table-striped
+								thead
+									tr
+										th.text-center(scope="col" style="width: 10%") 機構代碼
+										th.text-center(scope="col" style="width: 20%") 組織類型
+										th(scope="col" style="width: 40%") 非營利組織
+										th(scope="col" style="width: 30%") 地區
+								tbody
+									- for ( var i=1 ; i<=15 ; i++)
+										tr(onclick="document.location = '12.12.html';")
+											td.text-center(data-th="機構代碼") 176
+											td.text-center(data-th="組織類型") 綜合性服務
+											td.text-truncate(data-th="非營利組織") 中華全球生命教育推動協會
+											td(data-th="地區") 台北市、新北市
+						include page.pug
 		//- 匯入底部廣告
 		include footer_ad.pug
 		//- 匯入footer+script
